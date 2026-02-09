@@ -1,0 +1,48 @@
+import { lazy } from 'react';
+
+export const ROUTES = {
+  HOME: '/',
+  USERS: '/users',
+  MERCHANT: '/merchant',
+  COUPON: '/coupon',
+  FRANCHISEE: '/franchisee',
+  PURCHASE: '/purchase',
+  RIDERS: '/riders',
+  ORDERS: '/orders',
+  MALL: '/mall',
+  WITHDRAW: '/withdraw',
+  TRANSACTION: '/transaction',
+  NEWS: '/news',
+  LOTTERY: '/lottery',
+  LOTTERY_SETTING: '/lottery-setting',
+  SETTINGS: '/settings',
+  CAROUSEL: '/carousel',
+  DRUGS: '/drugs',
+  STOCK: '/stock',
+  RECORDS: '/records',
+  PERSONNEL: '/personnel',
+  SALES: '/sales'
+};
+
+export const routeConfig = [
+  { path: ROUTES.USERS, component: lazy(() => import('../pages/UserManage')), meta: { title: '用户管理' } },
+  { path: ROUTES.MERCHANT, component: lazy(() => import('../pages/MerchantManage')), meta: { title: '商家管理' } },
+  { path: ROUTES.COUPON, component: lazy(() => import('../pages/CouponOrder')), meta: { title: '积分券订单' } },
+  { path: ROUTES.FRANCHISEE, component: lazy(() => import('../pages/FranchiseeManage')), meta: { title: '加盟商管理' } },
+  { path: ROUTES.PURCHASE, component: lazy(() => import('../pages/PurchaseOrder')), meta: { title: '进货订单' } },
+  { path: ROUTES.RIDERS, component: lazy(() => import('../pages/RiderManage')), meta: { title: '骑手管理' } },
+  { path: ROUTES.ORDERS, component: lazy(() => import('../pages/OrderManage')), meta: { title: '订单管理' } },
+  { path: ROUTES.MALL, component: lazy(() => import('../pages/MerchantManage')), meta: { title: '商城管理' } },
+  { path: ROUTES.WITHDRAW, component: lazy(() => import('../pages/WithdrawManage')), meta: { title: '提现管理' } },
+  { path: ROUTES.TRANSACTION, component: lazy(() => import('../pages/TransactionManage')), meta: { title: '流水管理' } },
+  { path: ROUTES.NEWS, component: lazy(() => import('../pages/NewsManage')), meta: { title: '新闻管理' } },
+  { path: ROUTES.LOTTERY, component: lazy(() => import('../pages/LotteryCenter')), meta: { title: '抽奖中心' } },
+  { path: ROUTES.LOTTERY_SETTING, component: lazy(() => import('../pages/LotterySetting')), meta: { title: '抽奖设置' } },
+  { path: ROUTES.SETTINGS, component: lazy(() => import('../pages/Settings')), meta: { title: '系统设置' } },
+  { path: ROUTES.CAROUSEL, component: lazy(() => import('../pages/CarouselManage')), meta: { title: '首页轮播' } },
+  { path: ROUTES.DRUGS, component: lazy(() => import('../pages/DrugManage')), meta: { title: '药品管理' } },
+  { path: ROUTES.STOCK, component: lazy(() => import('../pages/StockQuery')), meta: { title: '库存查询' } },
+  { path: ROUTES.RECORDS, component: lazy(() => import('../pages/RecordManage')), meta: { title: '出入库记录' } },
+  { path: ROUTES.PERSONNEL, component: lazy(() => import('../pages/PersonnelManage')), meta: { title: '人员管理' } },
+  { path: ROUTES.SALES, component: lazy(() => import('../pages/SalesQuery')), meta: { title: '销售统计' } }
+];

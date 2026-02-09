@@ -1,0 +1,1 @@
+import{j as a}from"./index-CCd4Oha5.js";import{D as t}from"./DynamicTable-kSqCCx95.js";import"./index-BZx4XB_2.js";function e(){return a.jsx(t,{module:"withdrawals",dataApi:"/withdrawals",pagination:{pageSize:15}})}export{e as default};

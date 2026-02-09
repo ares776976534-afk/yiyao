@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "backend": "lsof -ti:3001 | xargs kill -9 2>/dev/null; cd backend && node server.js",
+    "frontend": "cd frontend && npm run dev",
+    "start": "lsof -ti:3001 | xargs kill -9 2>/dev/null; cd backend && node server.js & sleep 2 && cd frontend && npm run dev"
+  }
+}
