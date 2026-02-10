@@ -52,18 +52,22 @@ export default function Sidebar() {
   const pathname = location.pathname || '/';
 
   return (
-    <Sider collapsible collapsed={collapsed} onCollapse={setCollapsed} theme="dark" width={220}>
-      <div style={{ height: 48, margin: 16, color: '#fff', fontSize: 18, fontWeight: 600, lineHeight: '48px', textAlign: 'center' }}>
-        医药后台
+    <Sider collapsible collapsed={collapsed} onCollapse={setCollapsed} theme="dark" width={220} style={{ height: '100vh', overflow: 'hidden' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+        <div style={{ height: 48, margin: 16, color: '#fff', fontSize: 18, fontWeight: 600, lineHeight: '48px', textAlign: 'center', flexShrink: 0 }}>
+          医药后台
+        </div>
+        <div style={{ flex: 1, overflow: 'auto' }}>
+          <Menu
+            theme="dark"
+            mode="inline"
+            selectedKeys={getSelectedKeys(pathname)}
+            defaultOpenKeys={[]}
+            items={buildMenuItems(menuConfig, navigate)}
+            style={{ borderRight: 0 }}
+          />
+        </div>
       </div>
-      <Menu
-        theme="dark"
-        mode="inline"
-        selectedKeys={getSelectedKeys(pathname)}
-        defaultOpenKeys={['merchant', 'franchisee', 'mall', 'lottery', 'settings']}
-        items={buildMenuItems(menuConfig, navigate)}
-        style={{ height: 'calc(100vh - 80px)', borderRight: 0 }}
-      />
     </Sider>
   );
 }

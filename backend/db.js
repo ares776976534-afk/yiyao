@@ -11,7 +11,7 @@ const defaultData = {
   users: [], merchants: [], franchisees: [], riders: [],
   purchase_orders: [], coupon_orders: [], orders: [],
   withdrawals: [], transactions: [], news: [],
-  lottery: [], carousel: [],
+  lottery: [], carousel: [], promotions: [],
   settings: {}, lottery_settings: {}
 };
 

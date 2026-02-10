@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     path: '/',
     element: <MainLayout />,
     children: [
-      { index: true, element: <Navigate to={ROUTES.DRUGS} replace /> },
+      { index: true, element: <Navigate to={ROUTES.DASHBOARD} replace /> },
       ...routeConfig
         .filter(r => r.path !== ROUTES.HOME)
         .map(({ path, component: Component }) => ({

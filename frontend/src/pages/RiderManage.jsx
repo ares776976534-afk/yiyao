@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button, Modal, Form, Input, message } from 'antd';
+import { Button, Modal, Form, Input, Select, message } from 'antd';
 import DynamicTable from '../components/DynamicTable';
 import { post, put, del } from '../api/request';
 
@@ -36,9 +36,17 @@ export default function RiderManage() {
         )}
       />
       <Modal title={editing ? '编辑骑手' : '新增骑手'} open={modalOpen} onOk={handleSubmit} onCancel={() => { setModalOpen(false); setEditing(null); }}>
-        <Form form={form} layout="vertical">
+        <Form form={form} layout="vertical" initialValues={{ status: 'active' }}>
           <Form.Item name="name" label="姓名" rules={[{ required: true }]}><Input /></Form.Item>
           <Form.Item name="phone" label="电话"><Input /></Form.Item>
+          <Form.Item name="area" label="配送区域"><Input /></Form.Item>
+          <Form.Item name="status" label="状态">
+            <Select>
+              <Select.Option value="active">在线</Select.Option>
+              <Select.Option value="rest">休息</Select.Option>
+              <Select.Option value="inactive">离职</Select.Option>
+            </Select>
+          </Form.Item>
         </Form>
       </Modal>
     </>

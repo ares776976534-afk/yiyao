@@ -42,9 +42,11 @@ export const tableSchema = {
     columns: [
       { title: 'ID', dataIndex: 'id', width: 60 },
       { title: '姓名', dataIndex: 'name' },
-      { title: '电话', dataIndex: 'phone' }
+      { title: '电话', dataIndex: 'phone' },
+      { title: '类型', dataIndex: 'type', width: 100 },
+      { title: '创建时间', dataIndex: 'created_at', width: 180 }
     ],
-    searchFields: ['name', 'phone']
+    searchFields: ['name', 'phone', 'type']
   },
   'sales-by-personnel': {
     columns: [
@@ -61,55 +63,80 @@ export const tableSchema = {
       { title: 'ID', dataIndex: 'id', width: 60 },
       { title: '商家名称', dataIndex: 'name' },
       { title: '联系人', dataIndex: 'contact' },
-      { title: '电话', dataIndex: 'phone' }
+      { title: '电话', dataIndex: 'phone' },
+      { title: '地址', dataIndex: 'address', ellipsis: true }
     ],
-    searchFields: ['name', 'contact', 'phone']
+    searchFields: ['name', 'contact', 'phone', 'address']
   },
   franchisees: {
     columns: [
       { title: 'ID', dataIndex: 'id', width: 60 },
       { title: '加盟商名称', dataIndex: 'name' },
       { title: '联系人', dataIndex: 'contact' },
-      { title: '电话', dataIndex: 'phone' }
+      { title: '电话', dataIndex: 'phone' },
+      { title: '分销类型', dataIndex: 'dist_type', width: 100 },
+      { title: '下级成员', dataIndex: 'sub_count', width: 80 },
+      { title: '分销订单', dataIndex: 'order_count', width: 80 },
+      { title: '累计金额', dataIndex: 'total_amount', width: 100 },
+      { title: '已结算', dataIndex: 'settled_amount', width: 100 },
+      { title: '地址', dataIndex: 'address', ellipsis: true }
     ],
-    searchFields: ['name', 'contact', 'phone']
+    searchFields: ['name', 'contact', 'phone', 'dist_type']
   },
   users: {
     columns: [
       { title: 'ID', dataIndex: 'id', width: 60 },
       { title: '用户名', dataIndex: 'username' },
-      { title: '电话', dataIndex: 'phone' }
+      { title: '电话', dataIndex: 'phone' },
+      { title: '角色', dataIndex: 'role', width: 80, render: { type: 'map', map: { admin: '管理员', manager: '经理', staff: '员工', member: '会员' } } },
+      { title: '状态', dataIndex: 'status', width: 80, render: { type: 'map', map: { active: '正常', inactive: '停用', banned: '封禁' } } },
+      { title: '渠道', dataIndex: 'channel', width: 80 },
+      { title: '性别', dataIndex: 'gender', width: 60, render: { type: 'map', map: { male: '男', female: '女' } } },
+      { title: '年龄', dataIndex: 'age', width: 60 },
+      { title: '城市', dataIndex: 'city', width: 80 }
     ],
-    searchFields: ['username', 'phone']
+    searchFields: ['username', 'phone', 'channel', 'city']
   },
   riders: {
     columns: [
       { title: 'ID', dataIndex: 'id', width: 60 },
       { title: '姓名', dataIndex: 'name' },
-      { title: '电话', dataIndex: 'phone' }
+      { title: '电话', dataIndex: 'phone' },
+      { title: '状态', dataIndex: 'status', width: 80, render: { type: 'map', map: { active: '在线', rest: '休息', inactive: '离职' } } },
+      { title: '配送区域', dataIndex: 'area', width: 100 }
     ],
-    searchFields: ['name', 'phone']
+    searchFields: ['name', 'phone', 'area']
   },
   news: {
     columns: [
       { title: 'ID', dataIndex: 'id', width: 60 },
-      { title: '标题', dataIndex: 'title' }
+      { title: '标题', dataIndex: 'title' },
+      { title: '作者', dataIndex: 'author', width: 80 },
+      { title: '分类', dataIndex: 'category', width: 100 },
+      { title: '状态', dataIndex: 'status', width: 80, render: { type: 'map', map: { published: '已发布', draft: '草稿' } } },
+      { title: '创建时间', dataIndex: 'created_at', width: 180 }
     ],
-    searchFields: ['title', 'content']
+    searchFields: ['title', 'author', 'content']
   },
   lottery: {
     columns: [
       { title: 'ID', dataIndex: 'id', width: 60 },
-      { title: '活动名称', dataIndex: 'name' }
+      { title: '活动名称', dataIndex: 'name' },
+      { title: '状态', dataIndex: 'status', width: 80, render: { type: 'map', map: { active: '进行中', ended: '已结束', upcoming: '待开始' } } },
+      { title: '开始日期', dataIndex: 'start_date', width: 110 },
+      { title: '结束日期', dataIndex: 'end_date', width: 110 },
+      { title: '奖品', dataIndex: 'prize', ellipsis: true }
     ],
-    searchFields: ['name']
+    searchFields: ['name', 'prize']
   },
   carousel: {
     columns: [
       { title: 'ID', dataIndex: 'id', width: 60 },
       { title: '标题', dataIndex: 'title' },
       { title: '图片链接', dataIndex: 'image_url', ellipsis: true },
-      { title: '排序', dataIndex: 'sort', width: 80 }
+      { title: '跳转链接', dataIndex: 'link_url', width: 100 },
+      { title: '排序', dataIndex: 'sort', width: 60 },
+      { title: '状态', dataIndex: 'status', width: 80, render: { type: 'map', map: { active: '启用', inactive: '禁用' } } }
     ],
     searchFields: ['title', 'image_url']
   },
@@ -119,6 +146,7 @@ export const tableSchema = {
       { title: '药品', dataIndex: 'drug_name' },
       { title: '供应商', dataIndex: 'merchant_name' },
       { title: '数量', dataIndex: 'quantity', width: 80 },
+      { title: '状态', dataIndex: 'status', width: 80, render: { type: 'map', map: { pending: '待确认', confirmed: '已确认', shipped: '已发货', completed: '已完成' } } },
       { title: '日期', dataIndex: 'order_date', width: 110 }
     ],
     searchFields: ['order_no', 'drug_name', 'merchant_name']
@@ -162,5 +190,18 @@ export const tableSchema = {
       { title: '时间', dataIndex: 'created_at', width: 180 }
     ],
     searchFields: ['trans_no', 'type', 'note']
+  },
+  promotions: {
+    columns: [
+      { title: 'ID', dataIndex: 'id', width: 60 },
+      { title: '计划名称', dataIndex: 'name' },
+      { title: '推广类型', dataIndex: 'type', width: 80 },
+      { title: '投入金额', dataIndex: 'input', width: 100 },
+      { title: '产出金额', dataIndex: 'output', width: 100 },
+      { title: '月份', dataIndex: 'month', width: 100 },
+      { title: '状态', dataIndex: 'status', width: 80, render: { type: 'map', map: { active: '进行中', paused: '暂停', completed: '已完成' } } },
+      { title: '创建时间', dataIndex: 'created_at', width: 180 }
+    ],
+    searchFields: ['name', 'type', 'month']
   }
 };

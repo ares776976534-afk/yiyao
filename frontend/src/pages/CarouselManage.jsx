@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button, Modal, Form, Input, message } from 'antd';
+import { Button, Modal, Form, Input, Select, message } from 'antd';
 import DynamicTable from '../components/DynamicTable';
 import { post, put, del } from '../api/request';
 
@@ -36,10 +36,17 @@ export default function CarouselManage() {
         )}
       />
       <Modal title={editing ? '编辑轮播' : '新增轮播'} open={modalOpen} onOk={handleSubmit} onCancel={() => { setModalOpen(false); setEditing(null); }}>
-        <Form form={form} layout="vertical">
+        <Form form={form} layout="vertical" initialValues={{ sort: 0, status: 'active' }}>
           <Form.Item name="title" label="标题" rules={[{ required: true }]}><Input /></Form.Item>
           <Form.Item name="image_url" label="图片链接"><Input /></Form.Item>
-          <Form.Item name="sort" label="排序" initialValue={0}><Input type="number" /></Form.Item>
+          <Form.Item name="link_url" label="跳转链接"><Input /></Form.Item>
+          <Form.Item name="sort" label="排序"><Input type="number" /></Form.Item>
+          <Form.Item name="status" label="状态">
+            <Select>
+              <Select.Option value="active">启用</Select.Option>
+              <Select.Option value="inactive">禁用</Select.Option>
+            </Select>
+          </Form.Item>
         </Form>
       </Modal>
     </>

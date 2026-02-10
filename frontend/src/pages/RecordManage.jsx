@@ -25,6 +25,7 @@ export default function RecordManage() {
       batch_no: v.batch_no,
       record_date: v.record_date?.format('YYYY-MM-DD') || dayjs().format('YYYY-MM-DD'),
       personnel_id: v.type === 'out' ? v.personnel_id : null,
+      city: v.city,
       note: v.note
     };
     await post('/records', body);
@@ -60,6 +61,7 @@ export default function RecordManage() {
               </Form.Item>
             )}
           </Form.Item>
+          <Form.Item name="city" label="城市"><Input placeholder="如：广州市" /></Form.Item>
           <Form.Item name="note" label="备注"><Input.TextArea /></Form.Item>
         </Form>
       </Modal>

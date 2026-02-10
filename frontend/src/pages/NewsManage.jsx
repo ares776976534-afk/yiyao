@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button, Modal, Form, Input, message } from 'antd';
+import { Button, Modal, Form, Input, Select, message } from 'antd';
 import DynamicTable from '../components/DynamicTable';
 import { post, put, del } from '../api/request';
 
@@ -35,10 +35,25 @@ export default function NewsManage() {
           </>
         )}
       />
-      <Modal title={editing ? '编辑新闻' : '新增新闻'} open={modalOpen} onOk={handleSubmit} onCancel={() => { setModalOpen(false); setEditing(null); }}>
-        <Form form={form} layout="vertical">
+      <Modal title={editing ? '编辑新闻' : '新增新闻'} open={modalOpen} onOk={handleSubmit} onCancel={() => { setModalOpen(false); setEditing(null); }} width={600}>
+        <Form form={form} layout="vertical" initialValues={{ status: 'draft', category: '公司动态' }}>
           <Form.Item name="title" label="标题" rules={[{ required: true }]}><Input /></Form.Item>
-          <Form.Item name="content" label="内容"><Input.TextArea rows={4} /></Form.Item>
+          <Form.Item name="author" label="作者"><Input /></Form.Item>
+          <Form.Item name="category" label="分类">
+            <Select>
+              <Select.Option value="公司动态">公司动态</Select.Option>
+              <Select.Option value="行业新闻">行业新闻</Select.Option>
+              <Select.Option value="政策法规">政策法规</Select.Option>
+              <Select.Option value="健康知识">健康知识</Select.Option>
+            </Select>
+          </Form.Item>
+          <Form.Item name="status" label="状态">
+            <Select>
+              <Select.Option value="published">已发布</Select.Option>
+              <Select.Option value="draft">草稿</Select.Option>
+            </Select>
+          </Form.Item>
+          <Form.Item name="content" label="内容"><Input.TextArea rows={6} /></Form.Item>
         </Form>
       </Modal>
     </>

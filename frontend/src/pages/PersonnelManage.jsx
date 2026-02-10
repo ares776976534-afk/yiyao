@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button, Modal, Form, Input, message } from 'antd';
+import { Button, Modal, Form, Input, Select, message } from 'antd';
 import DynamicTable from '../components/DynamicTable';
 import { post, put, del } from '../api/request';
 
@@ -36,9 +36,17 @@ export default function PersonnelManage() {
         )}
       />
       <Modal title={editing ? '编辑人员' : '新增人员'} open={modalOpen} onOk={handleSubmit} onCancel={() => { setModalOpen(false); setEditing(null); }}>
-        <Form form={form} layout="vertical">
+        <Form form={form} layout="vertical" initialValues={{ type: '本地管家' }}>
           <Form.Item name="name" label="姓名" rules={[{ required: true }]}><Input /></Form.Item>
           <Form.Item name="phone" label="电话"><Input /></Form.Item>
+          <Form.Item name="type" label="类型">
+            <Select>
+              <Select.Option value="导游管家">导游管家</Select.Option>
+              <Select.Option value="导购管家">导购管家</Select.Option>
+              <Select.Option value="本地管家">本地管家</Select.Option>
+              <Select.Option value="分销管家">分销管家</Select.Option>
+            </Select>
+          </Form.Item>
         </Form>
       </Modal>
     </>

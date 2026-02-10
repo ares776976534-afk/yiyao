@@ -40,6 +40,7 @@ export default function MerchantManage() {
           <Form.Item name="name" label="商家名称" rules={[{ required: true }]}><Input /></Form.Item>
           <Form.Item name="contact" label="联系人"><Input /></Form.Item>
           <Form.Item name="phone" label="电话"><Input /></Form.Item>
+          <Form.Item name="address" label="地址"><Input /></Form.Item>
         </Form>
       </Modal>
     </>

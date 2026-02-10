@@ -21,7 +21,11 @@ export const ROUTES = {
   STOCK: '/stock',
   RECORDS: '/records',
   PERSONNEL: '/personnel',
-  SALES: '/sales'
+  SALES: '/sales',
+  SALES_DASHBOARD: '/sales-dashboard',
+  DASHBOARD: '/dashboard',
+  PROMOTIONS: '/promotions',
+  VISUALIZATION: '/visualization'
 };
 
 export const routeConfig = [
@@ -44,5 +48,9 @@ export const routeConfig = [
   { path: ROUTES.STOCK, component: lazy(() => import('../pages/StockQuery')), meta: { title: '库存查询' } },
   { path: ROUTES.RECORDS, component: lazy(() => import('../pages/RecordManage')), meta: { title: '出入库记录' } },
   { path: ROUTES.PERSONNEL, component: lazy(() => import('../pages/PersonnelManage')), meta: { title: '人员管理' } },
-  { path: ROUTES.SALES, component: lazy(() => import('../pages/SalesQuery')), meta: { title: '销售统计' } }
+  { path: ROUTES.SALES, component: lazy(() => import('../pages/SalesQuery')), meta: { title: '销售统计' } },
+  { path: ROUTES.SALES_DASHBOARD, component: lazy(() => import('../pages/SalesDashboard')), meta: { title: '销售看板' } },
+  { path: ROUTES.DASHBOARD, component: lazy(() => import('../pages/Dashboard')), meta: { title: '数据看板' } },
+  { path: ROUTES.PROMOTIONS, component: lazy(() => import('../pages/PromotionManage')), meta: { title: '推广投放' } },
+  { path: ROUTES.VISUALIZATION, component: lazy(() => import('../pages/DataVisualization')), meta: { title: '数据可视化' } }
 ];
