@@ -36,6 +36,26 @@ const EC = React.memo(function EC({ option, style }) {
   return <div ref={el} style={style} />;
 });
 
+function AnimNum({ value, duration = 1200 }) {
+  const [display, setDisplay] = useState(0);
+  const prev = useRef(0);
+  useEffect(() => {
+    const from = prev.current;
+    const to = typeof value === 'number' ? value : parseInt(value) || 0;
+    if (from === to) return;
+    const start = performance.now();
+    const step = (now) => {
+      const p = Math.min((now - start) / duration, 1);
+      const ease = 1 - Math.pow(1 - p, 3);
+      setDisplay(Math.round(from + (to - from) * ease));
+      if (p < 1) requestAnimationFrame(step);
+      else prev.current = to;
+    };
+    requestAnimationFrame(step);
+  }, [value, duration]);
+  return <>{display.toLocaleString()}</>;
+}
+
 function Panel({ title, en, children, style }) {
   return (
     <div className="dv-panel" style={style}>
@@ -129,11 +149,22 @@ export default function DataVisualization() {
   const [vis, setVis] = useState(null);
   const [outPage, setOutPage] = useState(0);
   const [inPage, setInPage] = useState(0);
+  const outTotal = Math.ceil((vis?.cityOutRank || []).length / PAGE_SIZE) || 1;
+  const inTotal = Math.ceil((vis?.cityInRank || []).length / PAGE_SIZE) || 1;
+  useEffect(() => {
+    const t = setInterval(() => {
+      setOutPage(p => (p + 1) % outTotal);
+      setInPage(p => (p + 1) % inTotal);
+    }, 6000);
+    return () => clearInterval(t);
+  }, [outTotal, inTotal]);
 
   useEffect(() => { const t = setInterval(() => setTime(dayjs()), 1000); return () => clearInterval(t); }, []);
   useEffect(() => {
-    get('/dashboard').then(setData);
-    get('/vis/all').then(setVis);
+    const fetch = () => { get('/dashboard').then(setData); get('/vis/all').then(setVis); };
+    fetch();
+    const t = setInterval(fetch, 8000);
+    return () => clearInterval(t);
   }, []);
 
   const o = data?.overview || {};
@@ -168,7 +199,9 @@ export default function DataVisualization() {
     { label: '入库总量', value: o.totalIn || 0, unit: '件' },
   ];
 
-  const provinces = useMemo(() => buildProvinces(o), [o.totalOut, o.totalIn]);
+  const [tick, setTick] = useState(0);
+  useEffect(() => { const t = setInterval(() => setTick(v => v + 1), 5000); return () => clearInterval(t); }, []);
+  const provinces = useMemo(() => buildProvinces(o), [o.totalOut, o.totalIn, tick]);
 
   const donutOpt = (d) => ({
     color: COLORS,
@@ -189,21 +222,28 @@ export default function DataVisualization() {
     ]
   }), [ageData]);
 
+  const scatterData = useMemo(() => {
+    const coords = {
+      '北京市':[116.46,39.92],'上海市':[121.48,31.22],'广东省':[113.23,23.16],'四川省':[104.06,30.67],
+      '浙江省':[120.19,30.26],'江苏省':[118.78,32.04],'山东省':[117,36.65],'河南省':[113.65,34.76],
+      '湖北省':[114.31,30.52],'湖南省':[113,28.21],'福建省':[119.3,26.08],'重庆市':[106.54,29.59],
+      '陕西省':[108.95,34.27],'云南省':[102.73,25.04],'辽宁省':[123.38,41.8],'黑龙江省':[126.63,45.75],
+      '河北省':[114.48,38.03],'安徽省':[117.27,31.86],'江西省':[115.89,28.68],'贵州省':[106.71,26.57],
+    };
+    return provinces.filter(p => coords[p.name]).map(p => ({ name: p.name, value: [...coords[p.name], p.value] }));
+  }, [provinces]);
   const mapOpt = useMemo(() => ({
     tooltip: {
       trigger: 'item', ...TT, enterable: true, hideDelay: 200, confine: true,
-      formatter: p => p.data ? `<div style="font-weight:700;color:#00d4ff;margin-bottom:4px">${p.name}</div>数据量: <b style="color:#00d4ff">${p.value}</b>` : p.name
+      formatter: p => p.data ? `<div style="font-weight:700;color:#00d4ff;margin-bottom:4px">${p.name}</div>数据量: <b style="color:#00d4ff">${p.value || (p.data.value && p.data.value[2])}</b>` : p.name
     },
-    visualMap: { min: 0, max: 300, show: false, inRange: { color: ['#041a30','#0a2e50','#0e4070','#1565a0','#00b4ff'] } },
-    series: [{
-      type: 'map', map: 'china', roam: false, zoom: 1.2, center: [104, 36],
-      data: provinces,
-      emphasis: { disabled: false, itemStyle: { areaColor: '#1a6aaa', borderColor: '#00d4ff', borderWidth: 1.5 }, label: { show: true, color: '#fff', fontSize: vw(14), fontWeight: 700 } },
-      itemStyle: { areaColor: '#0a2e50', borderColor: 'rgba(0,180,255,0.25)', borderWidth: 0.5 },
-      label: { show: true, color: 'rgba(255,255,255,0.25)', fontSize: vw(8) },
-      select: { disabled: true }
-    }]
-  }), [provinces]);
+    geo: { map: 'china', roam: false, zoom: 1.2, center: [104, 36], itemStyle: { areaColor: '#0a2e50', borderColor: 'rgba(0,180,255,0.25)', borderWidth: 0.5 }, emphasis: { itemStyle: { areaColor: '#1a6aaa', borderColor: '#00d4ff', borderWidth: 1.5 }, label: { show: true, color: '#fff', fontSize: vw(14), fontWeight: 700 } }, label: { show: true, color: 'rgba(255,255,255,0.25)', fontSize: vw(8) }, select: { disabled: true } },
+    visualMap: { min: 0, max: 300, show: false, inRange: { color: ['#041a30','#0a2e50','#0e4070','#1565a0','#00b4ff'] }, seriesIndex: 0 },
+    series: [
+      { type: 'map', map: 'china', geoIndex: 0, data: provinces, tooltip: { show: true } },
+      { type: 'effectScatter', coordinateSystem: 'geo', data: scatterData, symbolSize: v => Math.max(4, Math.min(v[2] / 10, 16)), rippleEffect: { brushType: 'stroke', period: 3, scale: 4 }, itemStyle: { color: '#00d4ff', shadowBlur: 10, shadowColor: '#00b4ff' }, zlevel: 1 }
+    ]
+  }), [provinces, scatterData]);
 
   const hBarOpt = (d) => ({
     grid: { top: 2, bottom: 2, left: 52, right: 40 },
@@ -265,7 +305,7 @@ export default function DataVisualization() {
       <div className="dv-top-stats">
         {topStats.map((s, i) => (
           <div key={i} className="dv-stat-card">
-            <div className="dv-stat-val" style={{ color: s.color }}>{s.value}<span className="dv-stat-unit">{s.unit}</span></div>
+            <div className="dv-stat-val" style={{ color: s.color }}>{typeof s.value === 'number' ? <AnimNum value={s.value} /> : s.value}<span className="dv-stat-unit">{s.unit}</span></div>
             <div className="dv-stat-label">{s.label}</div>
           </div>
         ))}
@@ -277,7 +317,7 @@ export default function DataVisualization() {
             <div className="dv-today-grid">
               {todayItems.map((it, i) => (
                 <div key={i} className="dv-today-item">
-                  <div className="dv-today-val">{it.value}<span>{it.unit}</span></div>
+                  <div className="dv-today-val"><AnimNum value={it.value} /><span>{it.unit}</span></div>
                   <div className="dv-today-label">{it.label}</div>
                 </div>
               ))}
@@ -304,8 +344,8 @@ export default function DataVisualization() {
           <div style={{ flex: 1, position: 'relative', minHeight: 0 }}>
             <EC option={mapOpt} style={{ width: '100%', height: '100%' }} />
             <div className="dv-map-stats">
-              <div>总出库: <span>{o.totalOut || 0}</span> 件</div>
-              <div>总入库: <span>{o.totalIn || 0}</span> 件</div>
+              <div>总出库: <span><AnimNum value={o.totalOut || 0} /></span> 件</div>
+              <div>总入库: <span><AnimNum value={o.totalIn || 0} /></span> 件</div>
             </div>
           </div>
           <Panel title="分销榜单" en="DISTRIBUTION RANKING">
