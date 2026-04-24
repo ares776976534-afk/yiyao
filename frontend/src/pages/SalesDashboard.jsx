@@ -6,7 +6,7 @@ import dayjs from 'dayjs';
 import { get } from '../api/request';
 
 export default function SalesDashboard() {
-  const [range, setRange] = useState([dayjs().subtract(30, 'day'), dayjs()]);
+  const [range, setRange] = useState([dayjs().subtract(180, 'day'), dayjs()]);
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
 
