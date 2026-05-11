@@ -25,7 +25,8 @@ export const ROUTES = {
   SALES_DASHBOARD: '/sales-dashboard',
   DASHBOARD: '/dashboard',
   PROMOTIONS: '/promotions',
-  VISUALIZATION: '/visualization'
+  VISUALIZATION: '/visualization',
+  IDCARD: '/idcard'
 };
 
 export const routeConfig = [
@@ -52,5 +53,6 @@ export const routeConfig = [
   { path: ROUTES.SALES_DASHBOARD, component: lazy(() => import('../pages/SalesDashboard')), meta: { title: '销售看板' } },
   { path: ROUTES.DASHBOARD, component: lazy(() => import('../pages/Dashboard')), meta: { title: '数据看板' } },
   { path: ROUTES.PROMOTIONS, component: lazy(() => import('../pages/PromotionManage')), meta: { title: '推广投放' } },
-  { path: ROUTES.VISUALIZATION, component: lazy(() => import('../pages/DataVisualization')), meta: { title: '数据可视化' } }
+  { path: ROUTES.VISUALIZATION, component: lazy(() => import('../pages/DataVisualization')), meta: { title: '数据可视化' } },
+  { path: ROUTES.IDCARD, component: lazy(() => import('../pages/IdCardQuery')), meta: { title: '身份证查询' } }
 ];

@@ -346,5 +346,38 @@ app.post('/api/settings', (req, res) => { db.data.settings = { ...db.data.settin
 app.get('/api/lottery-settings', (req, res) => res.json(db.data.lottery_settings || {}));
 app.post('/api/lottery-settings', (req, res) => { db.data.lottery_settings = { ...db.data.lottery_settings, ...req.body }; db.write(); res.json({ ok: true }); });
 
+app.get('/api/idcard', async (req, res) => {
+  try {
+    const id = req.query.id;
+    const r = await fetch(`https://api.nxvav.cn/api/idcard/?id=${encodeURIComponent(id)}`).then(r => r.json()).catch(() => null);
+    const remote = r?.code === 200 ? r.data : {};
+
+    const birthday = remote.birthday || `${id.slice(6,10)}-${id.slice(10,12)}-${id.slice(12,14)}`;
+    const gender = remote.sex || (+id[16] % 2 === 1 ? '男' : '女');
+    const bd = new Date(birthday);
+    const now = new Date();
+    let age = remote.age || now.getFullYear() - bd.getFullYear();
+    if (now.getMonth() < bd.getMonth() || (now.getMonth() === bd.getMonth() && now.getDate() < bd.getDate())) age--;
+
+    const animals = ['猴','鸡','狗','猪','鼠','牛','虎','兔','龙','蛇','马','羊'];
+    const zodiac = animals[bd.getFullYear() % 12];
+
+    const m = bd.getMonth() + 1, d = bd.getDate();
+    const md = m * 100 + d;
+    const constellation = md >= 120 && md <= 218 ? '水瓶座' : md <= 320 ? '双鱼座' : md <= 419 ? '白羊座' :
+      md <= 520 ? '金牛座' : md <= 621 ? '双子座' : md <= 722 ? '巨蟹座' : md <= 822 ? '狮子座' :
+      md <= 922 ? '处女座' : md <= 1023 ? '天秤座' : md <= 1122 ? '天蝎座' : md <= 1221 ? '射手座' : '摩羯座';
+
+    res.json({
+      code: 200,
+      data: {
+        idCardNum: id,
+        address: remote.address || '',
+        gender, birthday, age, zodiac, constellation
+      }
+    });
+  } catch { res.json({ code: 400, msg: '查询失败' }); }
+});
+
 const PORT = 3001;
 app.listen(PORT, () => console.log(`API http://localhost:${PORT}`));

@@ -2,7 +2,7 @@ import {
   DashboardOutlined, MedicineBoxOutlined, TeamOutlined, ShopOutlined,
   ShoppingCartOutlined, FileTextOutlined, DollarOutlined, BarChartOutlined,
   GiftOutlined, CarOutlined, BankOutlined, TrophyOutlined, SettingOutlined,
-  PictureOutlined, UserOutlined, NotificationOutlined
+  PictureOutlined, UserOutlined, NotificationOutlined, IdcardOutlined
 } from '@ant-design/icons';
 import { ROUTES } from './routes';
 
@@ -93,5 +93,6 @@ export const menuConfig = [
       { key: ROUTES.SETTINGS, label: '系统设置' }
     ]
   },
-  { key: ROUTES.VISUALIZATION, icon: BarChartOutlined, label: '数据可视化' }
+  { key: ROUTES.VISUALIZATION, icon: BarChartOutlined, label: '数据可视化' },
+  { key: ROUTES.IDCARD, icon: IdcardOutlined, label: '身份证查询' }
 ];
