@@ -1,1 +1,0 @@
-import{r as t,j as o}from"./index-CCd4Oha5.js";import{g as s,D as r}from"./DynamicTable-kSqCCx95.js";import"./index-BZx4XB_2.js";function m(){const[a,e]=t.useState([]);return t.useEffect(()=>{s("/stock").then(e)},[]),o.jsx(r,{module:"stock",data:a,pagination:{pageSize:20}})}export{m as default};

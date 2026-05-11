@@ -1,5 +1,7 @@
+import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
+import tencentcloud from 'tencentcloud-sdk-nodejs';
 import db from './db.js';
 import { tableSchema } from './schema.js';
 
@@ -8,6 +10,16 @@ app.use(cors());
 app.use(express.json());
 
 const nextId = (arr) => (arr.length ? Math.max(...arr.map(x => x.id)) : 0) + 1;
+const FaceIdClient = tencentcloud.faceid.v20180301.Client;
+const faceIdMissingConfig = () => ['TENCENTCLOUD_SECRET_ID', 'TENCENTCLOUD_SECRET_KEY', 'TENCENT_FACEID_RULE_ID'].filter(k => !process.env[k]);
+
+const createFaceIdClient = () => new FaceIdClient({
+  credential: {
+    secretId: process.env.TENCENTCLOUD_SECRET_ID,
+    secretKey: process.env.TENCENTCLOUD_SECRET_KEY
+  },
+  profile: { httpProfile: { endpoint: 'faceid.tencentcloudapi.com' } }
+});
 
 app.get('/api/drugs', (req, res) => {
   res.json([...db.data.drugs].reverse());
@@ -377,6 +389,63 @@ app.get('/api/idcard', async (req, res) => {
       }
     });
   } catch { res.json({ code: 400, msg: '查询失败' }); }
+});
+
+app.get('/api/idcard/face-config', (req, res) => {
+  const missing = faceIdMissingConfig();
+  res.json({ code: 200, data: { configured: missing.length === 0, missing } });
+});
+
+app.post('/api/idcard/face-auth', async (req, res) => {
+  try {
+    const { id, name } = req.body;
+    const ruleId = process.env.TENCENT_FACEID_RULE_ID;
+    const missing = faceIdMissingConfig();
+    if (missing.length) {
+      return res.json({ code: 400, msg: `缺少腾讯云实名核身配置：${missing.join('、')}` });
+    }
+    if (!/^\d{17}[\dXx]$/.test(id || '') || !name) return res.json({ code: 400, msg: '姓名或身份证号不正确' });
+
+    const data = await createFaceIdClient().DetectAuth({
+      RuleId: ruleId,
+      IdCard: id,
+      Name: name,
+      RedirectUrl: process.env.TENCENT_FACEID_REDIRECT_URL || 'https://cloud.tencent.com/product/faceid'
+    });
+    res.json({ code: 200, data: { bizToken: data.BizToken, url: data.Url } });
+  } catch (e) {
+    res.json({ code: 400, msg: e.message || '生成核身二维码失败' });
+  }
+});
+
+app.get('/api/idcard/face-result', async (req, res) => {
+  try {
+    const ruleId = process.env.TENCENT_FACEID_RULE_ID;
+    const missing = faceIdMissingConfig();
+    if (missing.length) {
+      return res.json({ code: 400, msg: `缺少腾讯云实名核身配置：${missing.join('、')}` });
+    }
+    const data = await createFaceIdClient().GetDetectInfoEnhanced({
+      BizToken: req.query.bizToken,
+      RuleId: ruleId,
+      InfoType: '1'
+    });
+    const text = data.Text || {};
+    res.json({
+      code: 200,
+      data: {
+        verified: text.ErrCode === 0 && text.LiveStatus === 0 && text.Comparestatus === 0,
+        name: text.Name,
+        idCard: text.IdCard,
+        sim: text.Sim,
+        liveMsg: text.LiveMsg,
+        compareMsg: text.Comparemsg,
+        errMsg: text.ErrMsg
+      }
+    });
+  } catch (e) {
+    res.json({ code: 400, msg: e.message || '获取核身结果失败' });
+  }
 });
 
 const PORT = 3001;
