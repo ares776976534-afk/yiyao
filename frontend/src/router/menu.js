@@ -2,7 +2,7 @@ import {
   DashboardOutlined, MedicineBoxOutlined, TeamOutlined, ShopOutlined,
   ShoppingCartOutlined, FileTextOutlined, DollarOutlined, BarChartOutlined,
   GiftOutlined, CarOutlined, BankOutlined, TrophyOutlined, SettingOutlined,
-  PictureOutlined, UserOutlined, NotificationOutlined, IdcardOutlined
+  PictureOutlined, UserOutlined, NotificationOutlined, IdcardOutlined, PlayCircleOutlined
 } from '@ant-design/icons';
 import { ROUTES } from './routes';
 
@@ -94,5 +94,20 @@ export const menuConfig = [
     ]
   },
   { key: ROUTES.VISUALIZATION, icon: BarChartOutlined, label: '数据可视化' },
-  { key: ROUTES.IDCARD, icon: IdcardOutlined, label: '身份证查询' }
+  { key: ROUTES.IDCARD, icon: IdcardOutlined, label: '身份证查询' },
+  {
+    key: 'game-manage',
+    icon: PlayCircleOutlined,
+    label: '游戏中心',
+    children: [
+      { key: ROUTES.TETRIS, label: '俄罗斯方块' },
+      { key: ROUTES.GOMOKU, label: '五子棋' },
+      { key: ROUTES.SPIDER, label: '蜘蛛纸牌' },
+      { key: ROUTES.ONESTROKE, label: '一笔连珠' },
+      { key: ROUTES.PLANE, label: '飞机大战' },
+      { key: ROUTES.XIANGQI, label: '中国象棋' },
+      { key: ROUTES.JUNQI, label: '军棋' },
+      { key: ROUTES.CHESS, label: '国际象棋' }
+    ]
+  }
 ];

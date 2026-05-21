@@ -26,7 +26,15 @@ export const ROUTES = {
   DASHBOARD: '/dashboard',
   PROMOTIONS: '/promotions',
   VISUALIZATION: '/visualization',
-  IDCARD: '/idcard'
+  IDCARD: '/idcard',
+  TETRIS: '/games/tetris',
+  GOMOKU: '/games/gomoku',
+  SPIDER: '/games/spider',
+  ONESTROKE: '/games/one-stroke',
+  PLANE: '/games/plane-war',
+  XIANGQI: '/games/chinese-chess',
+  JUNQI: '/games/junqi',
+  CHESS: '/games/chess'
 };
 
 export const routeConfig = [
@@ -54,5 +62,13 @@ export const routeConfig = [
   { path: ROUTES.DASHBOARD, component: lazy(() => import('../pages/Dashboard')), meta: { title: '数据看板' } },
   { path: ROUTES.PROMOTIONS, component: lazy(() => import('../pages/PromotionManage')), meta: { title: '推广投放' } },
   { path: ROUTES.VISUALIZATION, component: lazy(() => import('../pages/DataVisualization')), meta: { title: '数据可视化' } },
-  { path: ROUTES.IDCARD, component: lazy(() => import('../pages/IdCardQuery')), meta: { title: '身份证查询' } }
+  { path: ROUTES.IDCARD, component: lazy(() => import('../pages/IdCardQuery')), meta: { title: '身份证查询' } },
+  { path: ROUTES.TETRIS, component: lazy(() => import('../pages/games/Tetris')), meta: { title: '俄罗斯方块' } },
+  { path: ROUTES.GOMOKU, component: lazy(() => import('../pages/games/Gomoku')), meta: { title: '五子棋' } },
+  { path: ROUTES.SPIDER, component: lazy(() => import('../pages/games/SpiderSolitaire')), meta: { title: '蜘蛛纸牌' } },
+  { path: ROUTES.ONESTROKE, component: lazy(() => import('../pages/games/OneStroke')), meta: { title: '一笔连珠' } },
+  { path: ROUTES.PLANE, component: lazy(() => import('../pages/games/PlaneWar')), meta: { title: '飞机大战' } },
+  { path: ROUTES.XIANGQI, component: lazy(() => import('../pages/games/ChineseChess')), meta: { title: '中国象棋' } },
+  { path: ROUTES.JUNQI, component: lazy(() => import('../pages/games/Junqi')), meta: { title: '军棋' } },
+  { path: ROUTES.CHESS, component: lazy(() => import('../pages/games/Chess')), meta: { title: '国际象棋' } }
 ];
