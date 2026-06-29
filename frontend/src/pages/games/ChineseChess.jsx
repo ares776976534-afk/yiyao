@@ -4,16 +4,16 @@ import boardImg from './images/board.jpg';
 import rKImg from './images/rk.gif';
 import rAImg from './images/ra.gif';
 import rEImg from './images/rb.gif';
-import rHImg from './images/rr.gif'; // 车
-import rCImg from './images/rc.gif';
-import rNImg from './images/rn.gif';
+import rHImg from './images/rn.gif'; // 马
+import rCImg from './images/rr.gif'; // 车
+import rNImg from './images/rc.gif'; // 炮
 import rSImg from './images/rp.gif';
 import bKImg from './images/bk.gif';
 import bAImg from './images/ba.gif';
 import bEImg from './images/bb.gif';
-import bHImg from './images/br.gif'; // 车
-import bCImg from './images/bc.gif';
-import bNImg from './images/bn.gif';
+import bHImg from './images/bn.gif'; // 马
+import bCImg from './images/br.gif'; // 车
+import bNImg from './images/bc.gif'; // 炮
 import bSImg from './images/bp.gif';
 
 const BOARD_ROWS = 10;
@@ -24,30 +24,30 @@ const PIECE_IMG = {
   rK: rKImg,
   rA: rAImg,
   rE: rEImg,
-  rH: rHImg, // 车
-  rC: rCImg,
-  rN: rNImg,
+  rH: rHImg, // 马
+  rC: rCImg, // 车
+  rN: rNImg, // 炮
   rS: rSImg,
   bK: bKImg,
   bA: bAImg,
   bE: bEImg,
-  bH: bHImg, // 车
-  bC: bCImg,
-  bN: bNImg,
+  bH: bHImg, // 马
+  bC: bCImg, // 车
+  bN: bNImg, // 炮
   bS: bSImg,
 };
 
 const INIT_BOARD = [
-  ['rC', 'rH', 'rE', 'rA', 'rK', 'rA', 'rE', 'rH', 'rC'],
-  [null, null, null, null, null, null, null, null, null],
-  [null, 'rN', null, null, null, null, null, 'rN', null],
-  ['rS', null, 'rS', null, 'rS', null, 'rS', null, 'rS'],
-  [null, null, null, null, null, null, null, null, null],
-  [null, null, null, null, null, null, null, null, null],
-  ['bS', null, 'bS', null, 'bS', null, 'bS', null, 'bS'],
-  [null, 'bN', null, null, null, null, null, 'bN', null],
-  [null, null, null, null, null, null, null, null, null],
   ['bC', 'bH', 'bE', 'bA', 'bK', 'bA', 'bE', 'bH', 'bC'],
+  [null, null, null, null, null, null, null, null, null],
+  [null, 'bN', null, null, null, null, null, 'bN', null],
+  ['bS', null, 'bS', null, 'bS', null, 'bS', null, 'bS'],
+  [null, null, null, null, null, null, null, null, null],
+  [null, null, null, null, null, null, null, null, null],
+  ['rS', null, 'rS', null, 'rS', null, 'rS', null, 'rS'],
+  [null, 'rN', null, null, null, null, null, 'rN', null],
+  [null, null, null, null, null, null, null, null, null],
+  ['rC', 'rH', 'rE', 'rA', 'rK', 'rA', 'rE', 'rH', 'rC'],
 ];
 
 const getColor = (piece) => piece ? piece[0] : null;
@@ -59,7 +59,7 @@ function getMoves(board, x, y) {
   if (!piece) return [];
   const color = getColor(piece);
   const moves = [];
-  // 这里只实现了车、马、炮、兵/卒、将/帅的基本走法
+  // 实现了车、马、炮、兵/卒、将/帅、象/相、士/仕的基本走法
   if (piece[1] === 'C') { // 车
     // 横向
     for (let i = x - 1; i >= 0; i--) {
@@ -146,8 +146,30 @@ function getMoves(board, x, y) {
       if (board[i][y]) { ok = false; break; }
     }
     if (ok && board[oppX][y] && board[oppX][y][1] === 'K') moves.push([oppX, y]);
+  } else if (piece[1] === 'E') { // 象/相
+    // 田字走法，不能过河，塞象眼
+    const elephant = [[-2, -2], [-2, 2], [2, -2], [2, 2]];
+    for (const [dx, dy] of elephant) {
+      const nx = x + dx, ny = y + dy;
+      if (!inBoard(nx, ny)) continue;
+      // 不能过河
+      if (color === 'r' && nx < 5) continue;
+      if (color === 'b' && nx > 4) continue;
+      // 塞象眼
+      if (board[x + dx / 2][y + dy / 2]) continue;
+      if (!isSameColor(piece, board[nx][ny])) moves.push([nx, ny]);
+    }
+  } else if (piece[1] === 'A') { // 士/仕
+    // 九宫格内斜走一步
+    const palace = color === 'r' ? [7, 9, 3, 5] : [0, 2, 3, 5];
+    const dirs = [[-1, -1], [-1, 1], [1, -1], [1, 1]];
+    for (const [dx, dy] of dirs) {
+      const nx = x + dx, ny = y + dy;
+      if (nx >= palace[0] && nx <= palace[1] && ny >= palace[2] && ny <= palace[3]) {
+        if (!isSameColor(piece, board[nx][ny])) moves.push([nx, ny]);
+      }
+    }
   }
-  // 其他棋子可自行扩展
   return moves;
 }
 
@@ -228,13 +250,11 @@ export default function ChineseChess() {
         border: '2px solid #888',
       }}>
         {/* 棋子 */}
-        {[...board].reverse().map((row, i) =>
+        {board.map((row, i) =>
           row.map((piece, j) => {
-            // 反转后，实际棋盘行号为 BOARD_ROWS-1-i
-            const realI = BOARD_ROWS - 1 - i;
             return piece ? (
               <img
-                key={piece + '-' + realI + '-' + j}
+                key={piece + '-' + i + '-' + j}
                 src={PIECE_IMG[piece]}
                 alt={piece}
                 style={{
@@ -245,13 +265,13 @@ export default function ChineseChess() {
                   height: CELL_SIZE,
                   zIndex: 2,
                   cursor: winner ? 'not-allowed' : getColor(piece) === turn ? 'pointer' : 'default',
-                  boxShadow: selected && selected[0] === realI && selected[1] === j ? '0 0 8px 4px #ffe066' : undefined,
+                  boxShadow: selected && selected[0] === i && selected[1] === j ? '0 0 8px 4px #ffe066' : undefined,
                   borderRadius: '50%',
-                  border: selected && selected[0] === realI && selected[1] === j ? '2px solid #ffe066' : undefined,
+                  border: selected && selected[0] === i && selected[1] === j ? '2px solid #ffe066' : undefined,
                 }}
                 onClick={() => {
                   if (winner) return;
-                  if (getColor(piece) === turn) handleSelect(realI, j);
+                  if (getColor(piece) === turn) handleSelect(i, j);
                 }}
               />
             ) : null;
@@ -264,7 +284,7 @@ export default function ChineseChess() {
             style={{
               position: 'absolute',
               left: my * CELL_SIZE,
-              top: (BOARD_ROWS - 1 - mx) * CELL_SIZE,
+              top: mx * CELL_SIZE,
               width: CELL_SIZE,
               height: CELL_SIZE,
               background: 'rgba(50,200,255,0.35)',
@@ -283,7 +303,7 @@ export default function ChineseChess() {
             style={{
               position: 'absolute',
               left: my * CELL_SIZE,
-              top: (BOARD_ROWS - 1 - mx) * CELL_SIZE,
+              top: mx * CELL_SIZE,
               width: CELL_SIZE,
               height: CELL_SIZE,
               zIndex: 1,
