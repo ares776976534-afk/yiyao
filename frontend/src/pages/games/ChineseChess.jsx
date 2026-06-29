@@ -194,6 +194,7 @@ export default function ChineseChess() {
   const [selected, setSelected] = useState(null);
   const [moves, setMoves] = useState([]);
   const [winner, setWinner] = useState(null);
+  const [history, setHistory] = useState([]);
 
   // 选中棋子
   const handleSelect = (x, y) => {
@@ -210,6 +211,7 @@ export default function ChineseChess() {
     const [sx, sy] = selected;
     if (sx === x && sy === y) { setSelected(null); setMoves([]); return; }
     if (!moves.some(([mx, my]) => mx === x && my === y)) return;
+    setHistory(prev => [...prev, { board, turn, selected, moves, winner }]);
     const newBoard = board.map(row => row.slice());
     newBoard[x][y] = newBoard[sx][sy];
     newBoard[sx][sy] = null;
@@ -225,6 +227,18 @@ export default function ChineseChess() {
     }
   };
 
+  // 悔棋
+  const handleUndo = () => {
+    if (!history.length) return;
+    const state = history[history.length - 1];
+    setBoard(state.board);
+    setTurn(state.turn);
+    setSelected(state.selected);
+    setMoves(state.moves);
+    setWinner(state.winner);
+    setHistory(history.slice(0, -1));
+  };
+
   // 重置
   const handleReset = () => {
     setBoard(JSON.parse(JSON.stringify(INIT_BOARD)));
@@ -232,11 +246,17 @@ export default function ChineseChess() {
     setSelected(null);
     setMoves([]);
     setWinner(null);
+    setHistory([]);
   };
 
   // 棋盘渲染
   return (
-    <Card title="中国象棋" extra={<Button onClick={handleReset}>重置</Button>} style={{ maxWidth: CELL_SIZE * BOARD_COLS + 32, margin: '0 auto' }}>
+    <Card title="中国象棋" extra={
+      <Space>
+        <Button onClick={handleUndo} disabled={!history.length}>悔棋</Button>
+        <Button onClick={handleReset}>重置</Button>
+      </Space>
+    } style={{ maxWidth: CELL_SIZE * BOARD_COLS + 32, margin: '0 auto' }}>
       <div style={{ marginBottom: 12 }}>
         {winner ? <b style={{ color: 'red' }}>{winner}</b> : `当前回合：${turn === 'r' ? '红方' : '黑方'}`}
       </div>
