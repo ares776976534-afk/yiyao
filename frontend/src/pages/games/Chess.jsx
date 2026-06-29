@@ -399,6 +399,7 @@ export default function Chess() {
   const [promo, setPromo] = useState(null);
   const [moveCount, setMoveCount] = useState(0);
   const [flipped, setFlipped] = useState(false);
+  const [history, setHistory] = useState([]);
 
   const reset = () => {
     setBoard(initBoard());
@@ -412,6 +413,7 @@ export default function Chess() {
     setLastMove(null);
     setPromo(null);
     setMoveCount(0);
+    setHistory([]);
   };
 
   const finishMove = useCallback((m, who, b, ca, e, promoPiece = 'Q') => {
@@ -431,7 +433,9 @@ export default function Chess() {
 
   const apply = useCallback((m, who, b, ca, e) => {
     const p = b[m.fr][m.fc];
-    if (p.t === 'P' && (m.tr === 0 || m.tr === 7)) {
+    const isPromo = p.t === 'P' && (m.tr === 0 || m.tr === 7);
+    setHistory(prev => [...prev, { board: b, castle: ca, ep: e, turn: who, moveCount, lastMove, winner, promo }]);
+    if (isPromo) {
       if (mode === 'ai' && who === BLACK) {
         finishMove(m, who, b, ca, e, 'Q');
       } else {
@@ -440,7 +444,7 @@ export default function Chess() {
       return;
     }
     finishMove(m, who, b, ca, e);
-  }, [mode, finishMove]);
+  }, [mode, finishMove, moveCount, lastMove, winner, promo]);
 
   const handlePromo = (piece) => {
     if (!promo) return;
@@ -475,6 +479,40 @@ export default function Chess() {
     } else { setSel(null); setHints([]); }
   };
 
+  const undo = () => {
+    if (!history.length || thinking) return;
+    setThinking(false);
+    setSel(null);
+    setHints([]);
+
+    if (mode === 'ai') {
+      let idx = history.length - 1;
+      while (idx >= 0 && history[idx].turn !== WHITE) idx--;
+      if (idx < 0) idx = 0;
+      const state = history[idx];
+      setBoard(state.board);
+      setCastle(state.castle);
+      setEp(state.ep);
+      setTurn(state.turn);
+      setMoveCount(state.moveCount);
+      setLastMove(state.lastMove);
+      setWinner(state.winner);
+      setPromo(state.promo);
+      setHistory(history.slice(0, idx));
+    } else {
+      const state = history[history.length - 1];
+      setBoard(state.board);
+      setCastle(state.castle);
+      setEp(state.ep);
+      setTurn(state.turn);
+      setMoveCount(state.moveCount);
+      setLastMove(state.lastMove);
+      setWinner(state.winner);
+      setPromo(state.promo);
+      setHistory(history.slice(0, -1));
+    }
+  };
+
   const { byWhite, byBlack } = useMemo(() => getCaptured(board), [board]);
   const matDiff = byWhite.reduce((s, p) => s + VAL_DISP[p.t], 0) - byBlack.reduce((s, p) => s + VAL_DISP[p.t], 0);
   const checkColor = !winner && inCheck(board, turn) ? turn : null;
@@ -503,6 +541,7 @@ export default function Chess() {
         <Space wrap>
           <Segmented value={mode} onChange={v => { setMode(v); reset(); }} options={[{ label: '人机', value: 'ai' }, { label: '双人', value: 'pvp' }]} size="small" />
           <Button size="small" onClick={() => setFlipped(f => !f)}>翻转</Button>
+          <Button size="small" onClick={undo} disabled={!history.length || thinking}>悔棋</Button>
           <Button size="small" onClick={reset}>重开</Button>
         </Space>
       }>

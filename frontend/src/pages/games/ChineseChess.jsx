@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Card, Button, Space, message } from 'antd';
+import React, { useState, useEffect } from 'react';
+import { Card, Button, Space, message, Segmented } from 'antd';
 import boardImg from './images/board.jpg';
 import rKImg from './images/rk.gif';
 import rAImg from './images/ra.gif';
@@ -187,18 +187,114 @@ function checkWinner(board) {
   return null;
 }
 
+// AI 相关
+const PIECE_VALUE = { K: 10000, C: 90, H: 40, N: 45, E: 20, A: 20, S: 10 };
+
+function evalBoard(board) {
+  let score = 0;
+  for (let r = 0; r < BOARD_ROWS; r++) {
+    for (let c = 0; c < BOARD_COLS; c++) {
+      const p = board[r][c];
+      if (!p) continue;
+      const color = p[0];
+      const type = p[1];
+      const base = PIECE_VALUE[type];
+      let bonus = 0;
+      if (type === 'S') {
+        if (color === 'b') {
+          bonus += r * 2;
+          if (r >= 5) bonus += 25;
+        } else {
+          bonus += (9 - r) * 2;
+          if (r <= 4) bonus += 25;
+        }
+      }
+      if (type === 'H' || type === 'C' || type === 'N') {
+        bonus += (color === 'b' ? r : 9 - r) * 0.5;
+      }
+      if (color === 'b') score += base + bonus;
+      else score -= base + bonus;
+    }
+  }
+  return score;
+}
+
+function allMoves(board, color) {
+  const moves = [];
+  for (let r = 0; r < BOARD_ROWS; r++) {
+    for (let c = 0; c < BOARD_COLS; c++) {
+      const p = board[r][c];
+      if (!p || p[0] !== color) continue;
+      for (const [tr, tc] of getMoves(board, r, c)) {
+        moves.push({ fr: r, fc: c, tr, tc });
+      }
+    }
+  }
+  return moves;
+}
+
+function makeMove(board, m) {
+  const nb = board.map(row => row.slice());
+  nb[m.tr][m.tc] = nb[m.fr][m.fc];
+  nb[m.fr][m.fc] = null;
+  return nb;
+}
+
+function aiMove(board) {
+  const moves = allMoves(board, 'b');
+  if (!moves.length) return null;
+  let best = null;
+  let bestScore = Infinity;
+  for (const m of moves) {
+    const nb = makeMove(board, m);
+    if (checkWinner(nb) === '黑方胜') return m;
+    const replies = allMoves(nb, 'r');
+    let worst = -Infinity;
+    for (const r of replies.slice(0, 24)) {
+      const rb = makeMove(nb, r);
+      const s = evalBoard(rb);
+      if (s > worst) worst = s;
+    }
+    const score = replies.length ? worst : evalBoard(nb);
+    if (score < bestScore) {
+      bestScore = score;
+      best = m;
+    }
+  }
+  return best;
+}
+
 // 棋盘主组件
 export default function ChineseChess() {
+  const [mode, setMode] = useState('ai');
   const [board, setBoard] = useState(JSON.parse(JSON.stringify(INIT_BOARD)));
   const [turn, setTurn] = useState('r');
   const [selected, setSelected] = useState(null);
   const [moves, setMoves] = useState([]);
   const [winner, setWinner] = useState(null);
   const [history, setHistory] = useState([]);
+  const [thinking, setThinking] = useState(false);
+
+  // 应用一步棋
+  const applyMove = (m, who, b, prevSelected = null, prevMoves = []) => {
+    const nb = makeMove(b, m);
+    setHistory(prev => [...prev, { board: b, turn: who, selected: prevSelected, moves: prevMoves, winner }]);
+    setBoard(nb);
+    setSelected(null);
+    setMoves([]);
+    const win = checkWinner(nb);
+    if (win) {
+      setWinner(win);
+      message.success(win);
+    } else {
+      setTurn(who === 'r' ? 'b' : 'r');
+    }
+  };
 
   // 选中棋子
   const handleSelect = (x, y) => {
-    if (winner) return;
+    if (winner || thinking) return;
+    if (mode === 'ai' && turn !== 'r') return;
     const piece = board[x][y];
     if (!piece || getColor(piece) !== turn) return;
     setSelected([x, y]);
@@ -207,36 +303,51 @@ export default function ChineseChess() {
 
   // 落子
   const handleMove = (x, y) => {
-    if (!selected) return;
+    if (!selected || thinking) return;
+    if (mode === 'ai' && turn !== 'r') return;
     const [sx, sy] = selected;
     if (sx === x && sy === y) { setSelected(null); setMoves([]); return; }
     if (!moves.some(([mx, my]) => mx === x && my === y)) return;
-    setHistory(prev => [...prev, { board, turn, selected, moves, winner }]);
-    const newBoard = board.map(row => row.slice());
-    newBoard[x][y] = newBoard[sx][sy];
-    newBoard[sx][sy] = null;
-    setBoard(newBoard);
-    setSelected(null);
-    setMoves([]);
-    const win = checkWinner(newBoard);
-    if (win) {
-      setWinner(win);
-      message.success(win);
-    } else {
-      setTurn(turn === 'r' ? 'b' : 'r');
-    }
+    applyMove({ fr: sx, fc: sy, tr: x, tc: y }, turn, board, selected, moves);
   };
+
+  // AI 行棋
+  useEffect(() => {
+    if (mode !== 'ai' || turn !== 'b' || winner) return;
+    setThinking(true);
+    const t = setTimeout(() => {
+      const m = aiMove(board);
+      if (m) applyMove(m, 'b', board);
+      setThinking(false);
+    }, 400);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mode, turn, winner, board]);
 
   // 悔棋
   const handleUndo = () => {
-    if (!history.length) return;
-    const state = history[history.length - 1];
-    setBoard(state.board);
-    setTurn(state.turn);
-    setSelected(state.selected);
-    setMoves(state.moves);
-    setWinner(state.winner);
-    setHistory(history.slice(0, -1));
+    if (!history.length || thinking) return;
+    setThinking(false);
+    if (mode === 'ai') {
+      let idx = history.length - 1;
+      while (idx >= 0 && history[idx].turn !== 'r') idx--;
+      if (idx < 0) idx = 0;
+      const state = history[idx];
+      setBoard(state.board);
+      setTurn(state.turn);
+      setSelected(state.selected);
+      setMoves(state.moves);
+      setWinner(state.winner);
+      setHistory(history.slice(0, idx));
+    } else {
+      const state = history[history.length - 1];
+      setBoard(state.board);
+      setTurn(state.turn);
+      setSelected(state.selected);
+      setMoves(state.moves);
+      setWinner(state.winner);
+      setHistory(history.slice(0, -1));
+    }
   };
 
   // 重置
@@ -247,18 +358,20 @@ export default function ChineseChess() {
     setMoves([]);
     setWinner(null);
     setHistory([]);
+    setThinking(false);
   };
 
   // 棋盘渲染
   return (
     <Card title="中国象棋" extra={
       <Space>
-        <Button onClick={handleUndo} disabled={!history.length}>悔棋</Button>
-        <Button onClick={handleReset}>重置</Button>
+        <Segmented value={mode} onChange={v => { setMode(v); handleReset(); }} options={[{ label: '人机', value: 'ai' }, { label: '双人', value: 'pvp' }]} size="small" />
+        <Button size="small" onClick={handleUndo} disabled={!history.length || thinking}>悔棋</Button>
+        <Button size="small" onClick={handleReset}>重置</Button>
       </Space>
     } style={{ maxWidth: CELL_SIZE * BOARD_COLS + 32, margin: '0 auto' }}>
       <div style={{ marginBottom: 12 }}>
-        {winner ? <b style={{ color: 'red' }}>{winner}</b> : `当前回合：${turn === 'r' ? '红方' : '黑方'}`}
+        {winner ? <b style={{ color: 'red' }}>{winner}</b> : thinking ? '电脑思考中…' : `当前回合：${turn === 'r' ? '红方' : '黑方'}`}
       </div>
       <div style={{
         position: 'relative',
@@ -290,7 +403,7 @@ export default function ChineseChess() {
                   border: selected && selected[0] === i && selected[1] === j ? '2px solid #ffe066' : undefined,
                 }}
                 onClick={() => {
-                  if (winner) return;
+                  if (winner || thinking) return;
                   if (getColor(piece) === turn) handleSelect(i, j);
                 }}
               />
