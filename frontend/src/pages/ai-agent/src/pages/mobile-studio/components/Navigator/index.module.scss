@@ -1,0 +1,84 @@
+.navigator {
+  color: var(--block-color, #1b1c1d);
+  &.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--page-bg-color, #fff);
+  }
+
+  :global {
+    .adm-nav-bar {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 44rpx;
+      position: relative;
+      padding: 0;
+    }
+
+    .adm-nav-bar-title {
+      flex-shrink: 1;
+      width: 100%;
+      padding: 0 4rpx;
+    }
+
+    .adm-nav-bar-left {
+      flex-shrink: 0;
+      margin-left: 10px;
+
+      .adm-nav-bar-back {
+        margin: 0 0;
+        padding: 0 0;
+      }
+
+      .adm-nav-bar-back-arrow {
+        display: inline-flex;
+        margin: 0;
+      }
+    }
+
+    .adm-nav-bar-right {
+      flex-shrink: 0;
+      margin-right: 12rpx;
+      color: var(--block-color, #1b1c1d);
+    }
+  }
+
+  .navigatorTitle {
+    display: flex;
+    align-items: center;
+    line-height: 24rpx;
+  }
+
+  .navigatorTitleContent {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 24rpx;
+    font-weight: 500;
+    font-size: 16rpx;
+    text-align: left;
+  }
+
+  .actionArea {
+    display: flex;
+    align-items: center;
+    gap: 16rpx;
+  }
+
+  .actionIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24rpx;
+    height: 24rpx;
+
+    &.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+}

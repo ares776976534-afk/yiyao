@@ -1,0 +1,26 @@
+.welgth-table {
+  .next-table td .next-table-cell-wrapper {
+    padding: 0;
+  }
+  .next-table td {
+    color: #333;
+  }
+  .next-table table tr td:first-child {
+    padding: 16px;
+  }
+  .next-table table tr td:nth-child(2) {
+    vertical-align: top;
+  }
+  .next-table-row.selected {
+    background-color: #fff;
+  }
+  .next-table th .next-table-cell-wrapper {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    padding: 12px 14px;
+  }
+  .next-table .next-table-header tr:last-child th .next-table-cell-wrapper {
+    font-weight: 400;
+  }
+}

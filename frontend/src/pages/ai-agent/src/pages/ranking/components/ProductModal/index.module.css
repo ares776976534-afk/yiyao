@@ -1,0 +1,154 @@
+.productModal {
+  :global(.ant-modal-content) {
+    padding: 20px;
+    border-radius: 16px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  :global(.ant-modal-header) {
+    margin-bottom: 21px;
+  }
+  :global(.ant-modal-close) {
+    top: 20px !important;
+    inset-inline-end: 20px !important;
+    border-radius: 6px !important;
+    width: 24px !important;
+    height: 24px !important;
+  }
+}
+
+.productModalTable {
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid var(--border-secondary);
+  width: max-content;
+  width: 100%;
+  :global(.ant-table) {
+    border-radius: 8px;
+  }
+  :global(.ant-table-thead tr > th) {
+    background: var(--fill-secondary);
+    padding: 12px;
+    white-space: nowrap;
+  }
+  :global(.ant-table-tbody > tr > td) {
+    white-space: nowrap;
+  }
+  :global(.ant-table-thead tr > th::before) {
+    display: none;
+  }
+  :global(.ant-table-tbody > tr:last-child > td) {
+    border-bottom: none;
+  }
+}
+
+.modalTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.modalTitleImage {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.modalTitleText {
+  font-family: PingFang SC;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: normal;
+  color: #1B1C1D;
+}
+
+.productModalContent {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.productModalContentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productModalContentHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.productModalContentHeaderLeftIcon {
+  width: 6px;
+  height: 6px;
+  background: #D15700;
+  border-radius: 50%;
+}
+
+.productModalContentHeaderLeftText {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.productModalContentHeaderRight {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.productModalContentHeaderRightText {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #D15700;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 125px;
+  height: 125px;
+  cursor: pointer;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.titleName {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.titleIcon {
+  width: 14px;
+  height: 14px;
+}

@@ -1,0 +1,199 @@
+@import "@/styles/studio/base.scss";
+
+.material {
+  --inputChat-box-width: 800px;
+  margin-bottom: 101px;
+
+  .inputChatBox {
+    --padding-size: 16px;
+    --chat-caret-color: var(--color-brand-1);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -44px;
+      left: 50%;
+      z-index: -1;
+      transform: translateX(-50%);
+      width: 850px;
+      height: 211px;
+      background: url(https://img.alicdn.com/imgextra/i2/O1CN01Ss6wWf1m70Cd7s9s6_!!6000000004906-55-tps-850-211.svg) no-repeat 0 / 100%;
+    }
+
+    .inputChatInnerBox {
+      position: relative;
+      width: var(--agentsContainer-width);
+      border-radius: 24px;
+      border: 1px solid #EEEFFE;
+      // 背景颜色
+      background: #fff;
+    }
+
+    [class*="inputChatContainer"] {
+      min-height: 138px;
+
+      [class*="inputChatInner"] {
+        [class*="inputChat"] {
+          [class*="inputChatTextarea"] {
+            height: 60px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #1D2129;
+
+            &::placeholder {
+              color: #BBBDCA;
+            }
+          }
+        }
+
+        [class*="operateContainer"] {
+
+          [class*="smartModeContainer"],
+          [data-role="uploadOffer"],
+          [data-role="uploadImage"] {
+            height: 36px;
+            font-size: 14px;
+          }
+        }
+
+        [class*="send-disabled"] {
+          --send-bg-color: rgba(0, 0, 0, 0.15);
+        }
+      }
+    }
+  }
+
+  .extraBox {
+    position: relative;
+    width: var(--inputChat-box-width);
+    margin: 0 auto;
+  }
+
+  .promptList {
+    margin-top: 32px;
+  }
+
+  .offerLinkAnalysisBox {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 235px;
+    margin-top: 12px;
+  }
+
+  .fitContainer {
+    --left-side-width: 64px;
+
+    // 宽度不能使用100%，会因为父容器变化而抖动，直接撑开容器
+    width: calc(100vw - var(--left-side-width));
+    min-width: calc(1280px - var(--left-side-width));
+    max-width: calc(1920px - var(--left-side-width));
+    padding-left: calc(var(--excase-margin-side));
+    padding-right: var(--excase-margin-side);
+  }
+
+  .caseToolsContainer {
+    margin-top: 100px;
+
+    [data-role="case-tools"] {
+      width: 100%;
+    }
+
+    [data-role="case-tool-title"] {
+      padding-right: 96px;
+      font-size: 14px;
+    }
+
+    [data-role="case-tool-image"] {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  .excellentCaseContainer {
+    margin-top: 44px;
+
+    .excellentCasesTitle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 20px;
+      letter-spacing: normal;
+      color: #7C7F9A;
+
+      &::before,
+      &::after {
+        content: '';
+        width: 160px;
+        height: 1px;
+        background: linear-gradient(270deg, #E7E8EE 30%, rgba(243, 243, 246, 0) 107%);
+      }
+
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+
+    .excellentCaseContent {
+      width: 100%;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #BBBDCA;
+  }
+}
+
+@media (min-width: 1920px) {
+  .fitContainer {
+    --excase-margin-side: 150px;
+  }
+
+  .excellentCaseContent {
+    --excase-item-count: 5;
+  }
+}
+
+@media (max-width: 1919px) {
+  .fitContainer {
+    --excase-margin-side: 120px;
+  }
+
+  .excellentCaseContent {
+    --excase-item-count: 4;
+  }
+}
+
+@media (max-width: 1699px) {
+  .fitContainer {
+    --excase-margin-side: 90px;
+  }
+
+  .excellentCaseContent {
+    --excase-item-count: 4;
+  }
+}
+
+@media (max-width: 1439px) {
+  .fitContainer {
+    --excase-margin-side: 60px;
+  }
+
+  .excellentCaseContent {
+    --excase-item-count: 3;
+  }
+}

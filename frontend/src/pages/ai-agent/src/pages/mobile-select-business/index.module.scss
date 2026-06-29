@@ -1,0 +1,36 @@
+.selectBusinessContainer {
+  // :global {
+  //   .adm-safe-area  {
+  //     flex-shrink: 0;
+  //   }
+  // }
+
+  .selectBusinessContent {
+    padding: 20rpx;
+  }
+
+  .userQuery {
+    margin-bottom: 20rpx;
+    border-radius: 16rpx;
+    background: #FBFBFD;
+    box-sizing: border-box;
+    border: 1rpx solid #EEEFFE;
+    font-family: PingFang SC;
+    font-size: 13rpx;
+    font-weight: normal;
+    line-height: 22rpx;
+    letter-spacing: normal;
+    color: #1B1C1D;
+    padding: 14rpx 16rpx;
+    display: flex;
+    gap: 12rpx;
+
+    img {
+      flex-shrink: 0;
+      border-radius: 6rpx;
+      width: 72rpx;
+      height: 72rpx;
+      object-fit: cover;
+    }
+  }
+}

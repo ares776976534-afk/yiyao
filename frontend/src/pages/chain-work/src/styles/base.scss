@@ -1,0 +1,17 @@
+@import './flex-layout.scss';
+@import './size.scss';
+
+$theme-color: #07f;
+
+a, a:link, a:visited, a:hover, a:active {
+  color: unset;
+  text-decoration: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.link, a.link {
+  color: $theme-color;
+}

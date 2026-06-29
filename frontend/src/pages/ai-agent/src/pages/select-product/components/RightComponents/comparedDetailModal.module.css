@@ -1,0 +1,28 @@
+.comparedDetailTable {
+    overflow: scroll;
+    flex: 1;
+}
+
+/* 使用Antd Table实际渲染的DOM结构 */
+.comparedDetailTable :global(.ant-table-wrapper) {
+    overflow: scroll !important;
+}
+
+.comparedDetailTable :global(.ant-table-container) {
+    overflow: scroll !important;
+}
+
+/* Spin组件宽度设置铺满 - 针对表格内的Spin */
+.comparedDetailTable :global(.ant-spin-nested-loading) {
+    min-width: 936px !important;
+    height: calc(100vh - 132px);
+}
+
+.comparedDetailTable :global(.ant-modal-content) {
+    height: calc(100vh - 24px);
+}
+
+.migratedDetailModalContentContainer :global(.ant-modal-content) {
+    padding: 20px;
+    border-radius: 12px;
+}

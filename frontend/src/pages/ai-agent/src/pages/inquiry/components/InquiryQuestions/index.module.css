@@ -1,0 +1,443 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 12px;
+    width: 100%;
+}
+
+.sectionHeader {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 12px;
+    align-items: center;
+    height: 24px;
+}
+
+.sectionTitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #1d2129;
+}
+
+.sectionSubtitle {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #7b7b8d;
+}
+
+.questionsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    /* width: 100%; */
+    margin-left: 30px;
+}
+
+.questionItem {
+    border-radius: 8px;
+    border: 1px solid #e7e8ee;
+    background: #ffffff;
+    padding: 8px 12px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    color: #1d2129;
+    line-height: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    white-space: nowrap;
+    position: relative;
+    gap: 8px;
+}
+
+.customQuestionItem {
+    padding-right: 8px;
+}
+
+.questionText {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.questionActions {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.questionActionsIcon {
+    width: 16px;
+    height: 16px;
+}
+
+.editButton,
+.deleteButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 0;
+    color: #7b7b8d;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.editButton:hover {
+    background: #f5f5f5;
+    color: #6E50FF;
+}
+
+.deleteButton:hover {
+    background: #fff1f0;
+    color: #ff4d4f;
+}
+
+.editButton:active,
+.deleteButton:active {
+    transform: scale(0.95);
+}
+
+.questionItem:hover {
+    border-color: #6E50FF !important;
+}
+
+.questionItem.selected {
+    border-color: #6E50FF;
+    color: #6E50FF;
+}
+
+.questionItem.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.questionItem.disabled:hover {
+    border-color: #e7e8ee;
+    background: #ffffff;
+}
+
+.customQuestionButton {
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px dashed #e7e8ee;
+    color: #7b7b8d;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.customQuestionButton:hover {
+    background: #fbfbfd;
+}
+
+.customQuestionButtonText {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+}
+
+/* 询盘需求输入区域 */
+.requirementContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* width: 100%; */
+    position: relative;
+}
+
+.textAreaWrapper {
+    position: relative;
+    /* width: 100%; */
+    margin-left: 30px;
+}
+
+.requirementTextArea {
+    width: 100%;
+    border-radius: 12px;
+    background: #ffffff;
+    box-sizing: border-box;
+    border: 1px solid #e7e8ee !important;
+    padding: 12px;
+    padding-bottom: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1d2129;
+    resize: none;
+}
+
+/* .requirementTextArea:hover:not(.ant-input-status-error) {
+  border-color: #6150FF !important;
+} */
+
+.requirementTextArea:focus:not(.ant-input-status-error) {
+    border-color: none !important;
+    box-shadow: none !important;
+}
+
+.requirementTextArea::placeholder {
+    color: #BBBDCA !important;
+}
+
+.sendOriginalSwitch {
+    position: absolute;
+    bottom: 16px;
+    left: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-end;
+    border-top: 1px solid #F3F3F6;
+    padding-top: 16px;
+    box-sizing: content-box;
+}
+
+.switchLabel {
+    font-size: 14px;
+    line-height: 20px;
+    color: #1d2129;
+    margin-right: 4px;
+}
+
+.customSwitch :global(.ant-switch) {
+    width: 40px;
+    height: 24px;
+    min-width: 40px;
+}
+
+.customSwitch :global(.ant-switch-handle) {
+    width: 20px;
+    height: 20px;
+}
+
+.customSwitch :global(.ant-switch-handle::before) {
+    width: 20px;
+    height: 20px;
+}
+
+.customSwitch :global(.ant-switch.ant-switch-checked .ant-switch-handle) {
+    inset-inline-start: calc(100% - 22px);
+}
+
+.customSwitch :global(.ant-switch:focus) {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* 去掉开关的水波扩散动画 */
+.customSwitch :global(.ant-wave) {
+    display: none;
+}
+
+/* .customSwitch :global(.ant-switch > :first-child) {
+    display: none !important;
+}
+
+.customSwitch :global(.ant-switch-handle) {
+    display: block !important;
+} */
+
+.questionsPrompt {
+    font-family: PingFang SC;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: #7c7f9a;
+    margin-left: 6px;
+}
+
+.moreText {
+    font-size: 14px;
+    line-height: 20px;
+    color: #7c7f9a;
+    margin-top: 8px;
+    margin-left: 30px;
+}
+
+.tooltipTrigger {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.customTooltip :global(.ant-popover-inner) {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 0;
+    color: #1d2129;
+    font-size: 14px;
+    line-height: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 300px;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.customTooltip :global(.ant-popover-arrow::before) {
+    background: #ffffff;
+}
+
+.customPopover :global(.ant-popover-inner) {
+    border-radius: 16px;
+    border: 1px solid #F3F3F6;
+    box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.03);
+}
+
+.popoverContent {
+    box-sizing: border-box;
+
+    width: 640px;
+    /* height: 480px; */
+    /* 自动布局 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 8px 12px 8px;
+    gap: 16px;
+
+    /* 16px */
+    /* 样式描述：对话气泡, 发送框, COT, 对话框, 大弹窗 */
+    border-radius: 16px;
+    background: #ffffff;
+    box-sizing: border-box;
+    /* Border/Secondary */
+}
+
+.chatMessage {
+    position: relative;
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 10px 12px;
+    padding-top: 10px;
+    padding-right: 40px;
+    min-height: 40px;
+    box-sizing: border-box;
+}
+
+.userMessage {
+    background: #ffffff;
+    border: 1px solid #e7e8ee;
+    padding-right: 12px;
+}
+
+.aiBadge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 600;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.messageText {
+    color: #1d2129;
+    font-size: 14px;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.popoverTitle {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #1d1e29;
+}
+
+.popoverContentText {
+    border-radius: 12px;
+    background: #f7f7fa;
+    width: 100%;
+    padding: 12px;
+
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #1d1e29;
+}
+
+.iconWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popoverCoreWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popoverCoreItem {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popoverCoreDes {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: normal;
+    /* Text/Secondary */
+    /* 样式描述：三级 */
+    color: #7c7f9a;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 12px;
+    margin-top: 4px;
+}
+
+.popoverCoreImg {
+    width: 100%;
+    object-fit: cover;
+}
+
+.errorMessage {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ff4d4f;
+    margin-top: 8px;
+    margin-left: 30px;
+}

@@ -1,0 +1,127 @@
+.content {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  box-sizing: border-box;
+}
+
+.contentInner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 16px;
+  flex: 1;
+}
+
+.googleTrendsHeader {
+  border-radius: 8px;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.googleIcon {
+  width: 12px;
+  height: 12px;
+}
+
+.googleTrendsText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #000000DE;
+  white-space: nowrap;
+  margin-left: 4px;
+}
+
+.dataSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 24px;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 16px;
+  align-items: center;
+  flex: 1;
+}
+
+.dataItem {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 4px;
+  flex: 1;
+  width: 178px;
+  min-height: 47px;
+}
+
+.dataLabel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  min-width: 28px;
+  min-height: 20px;
+}
+
+.labelText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #7C7F9A;
+  white-space: nowrap;
+}
+
+.dataValue {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  min-width: 69px;
+  min-height: 23px;
+}
+
+.valueText {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  color: #1B1C1D;
+  white-space: nowrap;
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 4px;
+  flex: 1;
+  width: 372px;
+}
+
+.chartLabel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  min-width: 127px;
+  min-height: 20px;
+}

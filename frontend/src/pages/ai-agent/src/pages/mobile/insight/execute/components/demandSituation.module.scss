@@ -1,0 +1,93 @@
+.demandSituationContent {
+  display: flex;
+  padding: 14rpx 16rpx;
+  gap: 12rpx;
+  border-radius: 16rpx;
+  background: #FBFBFD;
+}
+
+.demandSituationItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+  flex: 1;
+}
+
+.demandSituationItemTitle {
+  font-size: 14rpx;
+  font-weight: 500;
+  line-height: 20rpx;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  align-items: center;
+  gap: 4rpx;
+}
+
+.demandSituationItemTitleIcon {
+  width: 12rpx;
+  height: 12rpx;
+}
+
+.demandSituationItemContent {
+  display: flex;
+  flex-direction: column;
+  padding: 0rpx;
+  gap: 16rpx;
+}
+
+.demandSituationItemContentItem {
+  display: flex;
+  flex-direction: column;
+  padding: 0rpx;
+  gap: 4rpx;
+}
+
+.demandSituationItemSubTitle {
+  font-size: 14rpx;
+  font-weight: normal;
+  line-height: 20rpx;
+  letter-spacing: normal;
+  color: var(--text-tertiary);
+}
+
+.demandSituationItemValue {
+  font-size: 18rpx;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  font-family: AlibabaSans102;
+}
+
+.demandSituationItemLine {
+  height: 135rpx;
+  flex-shrink: 0;
+  margin-top: 14rpx;
+}
+
+.demandSituationItemArea {
+  display: flex;
+  flex-direction: column;
+  padding: 0rpx;
+  gap: 8rpx;
+  min-width: 0; /* 确保能够收缩 */
+  overflow: hidden; /* 防止内容溢出 */
+}
+
+.demandSituationItemAreaTitle {
+  font-size: 14rpx;
+  font-weight: normal;
+  line-height: 20rpx;
+  letter-spacing: normal;
+  color: var(--text-tertiary);
+}
+
+.demandSituationItemAreaEmpty {
+  font-size: 13rpx;
+  font-weight: normal;
+  line-height: 20rpx;
+  letter-spacing: normal;
+  height: 25rpx;
+  color: var(--text-tertiary-4);
+}

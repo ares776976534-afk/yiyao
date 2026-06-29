@@ -1,0 +1,64 @@
+.taskSummary {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headerAccent {
+  width: 4px;
+  height: 12px;
+  border-radius: 1px;
+  background: #6e50ff;
+}
+
+.headerTitle {
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #1d1e29;
+  margin: 0;
+}
+
+.summaryCard {
+  border-radius: 8px;
+  background: #fbfbfd;
+  /* padding: 16px; */
+  width: 100%;
+  border: none !important;
+}
+
+.summaryCard :global(.ant-card-bordered) {
+  border: none !important;
+}
+
+.summaryCard :global(.ant-card-body) {
+  padding: 8px 16px;
+}
+
+.summaryContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* .summaryContent :global(h1){
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: var(--icon-primary);
+  margin-bottom: 12px;
+} */
+
+/* .summaryContent p{
+  margin: 0 0 6px 0 !important;
+} */

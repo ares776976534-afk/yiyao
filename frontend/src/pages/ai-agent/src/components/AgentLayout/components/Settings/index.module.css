@@ -1,0 +1,157 @@
+.container {
+  background: var(--fill-white);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 24px;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1B1C1D;
+  white-space: nowrap;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: center;
+  width: 560px;
+  min-height: 24px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+.settingsItems {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  justify-content: space-between;
+}
+
+  .settingsItemSelect {
+      width: 228px;
+      height: 36px;
+      /* 自动布局 */
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 8px;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      /* Border/Primary */
+      border: 1px solid #E7E8EE;
+  }
+
+  .settingsItemSelect :global(.ant-select-selector) {
+      border: none !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      background: transparent !important;
+      padding: 8px 12px !important;
+  }
+  
+  .settingsItemSelect :global(.ant-select-arrow) {
+      color: var(--text-tertiary);
+  }
+  
+  .settingsSelectDropdown {
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 20px;
+      letter-spacing: normal;
+      color: var(--text-primary);
+      padding: 8px !important;
+      border-radius: 16px !important;
+      border: 1px solid #F3F3F6 !important;
+      box-shadow: 0px 4px 16px 0px rgba(187, 189, 202, 0.16) !important;
+  }
+
+  .settingsSelectDropdown :global(.rc-virtual-list-holder-inner) {
+      gap: 2px
+  }
+ 
+  .settingsSelectDropdown :global(.ant-select-item) {
+      display: flex;
+      align-items: center;
+      padding: 10px 12px;
+      border-radius: 8px;
+  }
+
+  .settingsSelectDropdown :global(.ant-select-item):hover {
+      background: #F7F7FA;
+  }
+
+  .settingsSelectDropdown :global(.ant-select-item-option-selected) {
+      background: #F7F7FA !important;
+      font-weight: normal !important;
+  }
+  
+
+  .settingsContent {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      justify-content: space-between;
+  }
+
+  .settingsItemContent {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+  }
+
+  .settingsItemContentTitle {
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 20px;
+      letter-spacing: normal;
+      color: var(--text-primary);
+  }
+
+  .settingsItemContentDescription {
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 18px;
+      letter-spacing: normal;
+      color: var(--text-tertiary);
+  }
+
+  .settingsItemSwitch {
+      width: 34px;
+      height: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      padding: 1.67px 2px;
+      min-width: unset;
+  }
+  .settingsItemSwitch :global(.ant-switch-handle) {
+      width: 16px;
+      height: 16px;
+  }

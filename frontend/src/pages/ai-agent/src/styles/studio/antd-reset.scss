@@ -1,0 +1,285 @@
+// token以外的antd样式
+
+:global {
+  .studio-modal {
+    .studio-modal-close {
+      // 设置关闭按钮的上边距计算最终坐标
+      --studio-padding: 20px;
+      color: var(--modal-close-color);
+
+      &:hover {
+        color: var(--modal-close-hover-color);
+        background: var(--modal-close-hover-bg);
+      }
+    }
+
+    .studio-modal-content {
+      background-color: var(--modal-content-bg);
+    }
+
+    .studio-modal-title,
+    .studio-modal-confirm-title {
+      color: var(--modal-title-color);
+    }
+
+    .studio-modal-body {
+      .studio-modal-confirm-title-icon {
+        flex-shrink: 0;
+        margin-right: 8px;
+        color: var(--modal-color);
+        transform: translateY(calc((var(--studio-line-height-heading-5) * var(--studio-font-size-heading-5) - 100%) / 2));
+      }
+
+      .studio-checkbox-wrapper,
+      .studio-modal-confirm-content {
+        color: var(--modal-color);
+        font-size: 13px;
+      }
+
+      .studio-modal-confirm-body+* {
+        margin-top: 28px;
+      }
+
+      .studio-checkbox {
+        .studio-checkbox-inner {
+          --studio-color-bg-container: transparent;
+          --studio-color-border: var(--color-white-12);
+          border-radius: 50%;
+          border: var(--control-border);
+          background-color: transparent;
+        }
+
+        &.studio-checkbox-checked {
+          .studio-checkbox-inner {
+            background-color: var(--color-brand-1);
+            border-color: var(--color-brand-1);
+          }
+        }
+      }
+
+      .studio-checkbox-wrapper:hover {
+        .studio-checkbox .studio-checkbox-inner {
+          border-color: var(--color-brand-1);
+        }
+      }
+
+      .footer-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 8px;
+      }
+
+      .footer-between {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+
+  .studio-modal-root {
+    .studio-modal-mask {
+      pointer-events: auto;
+    }
+  }
+
+  .studio-input {
+    --studio-color-bg-container: var(--color-black-40);
+  }
+
+  .studio-checkbox {
+    .studio-checkbox-inner {
+      outline: none;
+    }
+  }
+
+  .studio-switch {
+
+    // 禁用
+    &-disabled {
+      opacity: 0.3;
+    }
+
+    // 去掉开关的水波扩散动画
+    .studio-wave {
+      display: none;
+    }
+  }
+
+  .studio-select {
+    .studio-select-arrow {
+      width: 16px;
+      height: 16px;
+      mask: url(https://img.alicdn.com/imgextra/i4/O1CN01LjS3qE1XdJvdw7ZoK_!!6000000002946-55-tps-16-16.svg) 0 -2px/100% no-repeat;
+      background-color: #fff;
+
+      .studio-select-suffix {
+        display: none;
+      }
+    }
+  }
+
+  .studio-select-dropdown {
+    padding: 8px;
+    border: var(--select-dropdown-border);
+
+    .rc-virtual-list-holder-inner {
+      gap: 4px;
+    }
+  }
+
+  .studio-tooltip {
+    --studio-color-bg-spotlight: rgba(255, 255, 255, .25);
+    --studio-border-radius: 12px;
+    max-width: 300px;
+
+    .studio-tooltip-inner {
+      padding: 12px;
+    }
+  }
+
+  .studio-menu-light.studio-menu-root.studio-menu-inline,
+  .studio-menu-light>.studio-menu.studio-menu-root.studio-menu-inline,
+  .studio-menu-light.studio-menu-root.studio-menu-vertical,
+  .studio-menu-light>.studio-menu.studio-menu-root.studio-menu-vertical {
+    border-right: none;
+  }
+
+  .studio-menu,
+  .studio-dropdown,
+  .studio-dropdown-menu-submenu {
+    .studio-dropdown-menu {
+      --studio-menu-item-color: var(--menu-item-color);
+      --studio-control-item-bg-hover: var(--menu-hover-bg);
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 4px;
+      gap: 4px;
+      background: var(--menu-bg);
+      backdrop-filter: var(--menu-backdrop-filter);
+      border-radius: 12px;
+      // box-shadow: var(--menu-box-shadow);
+
+      .studio-dropdown-menu-item {
+        --studio-menu-item-border-radius: 8px;
+        --studio-line-height: 18px;
+
+        display: flex;
+        align-items: center;
+        padding: 7px 10px;
+        line-height: var(--studio-line-height);
+        color: var(--studio-menu-item-color);
+      }
+    }
+
+    &.studio-menu-light,
+    &.studio-dropdown-menu-light {
+      --studio-menu-item-margin-inline: 0;
+      --studio-menu-item-margin-block: 0;
+      --studio-menu-item-padding-inline: 10px;
+      --studio-menu-item-padding-block: 6px;
+      --studio-menu-item-color: var(--menu-item-color);
+      --studio-menu-item-hover-bg: var(--menu-hover-bg);
+      --studio-menu-item-hover-color: var(--menu-item-hover-color);
+      --studio-menu-item-active-bg: var(--menu-hover-bg);
+      --studio-menu-item-active-color: var(--menu-item-active-color);
+      --studio-control-padding-horizontal: var(--studio-menu-item-padding-inline);
+      --studio-dropdown-padding-block: var(--studio-menu-item-padding-block);
+      --studio-menu-item-width: 100%;
+    }
+  }
+
+  .studio-tree {
+    --studio-color-text: var(--block-color);
+    --studio-control-item-bg-hover: var(--tree-control-item-bg-hover);
+
+    .studio-tree-treenode-selected {
+      background: transparent;
+    }
+  }
+
+  .studio-bubble {
+
+    .studio-bubble-content-filled,
+    .studio-bubble-content-outlined,
+    .studio-bubble-content-shadow {
+      background-color: transparent;
+      border-radius: 0;
+    }
+  }
+
+  .studio-btn {
+    border-radius: 8px;
+    
+    &.studio-btn-default:disabled {
+      [data-theme="dark"] & {
+        background: rgba(255, 255, 255, 0.08);
+        color: rgba(255, 255, 255, 0.2);
+        border-color: transparent;
+      }
+
+      [data-theme="light"] & {
+        background: #fff;
+        color: #BBBDCA;
+        border-color: var(--block-border-color);
+      }
+    }
+
+    &.studio-btn-primary {
+      &.studio-btn-background-ghost:not(:disabled):not(.studio-btn-disabled):hover {
+        color: var(--color-brand-1);
+        border-color: var(--color-brand-1);
+        background-color: #f5f5ff;
+      }
+
+      &:disabled {
+        border-color: transparent;
+      }
+    }
+  }
+
+  // 暗色模式
+  [data-theme="dark"] {
+    .studio-modal-root {
+      .studio-btn-default {
+        border: none;
+      }
+    }
+  }
+
+  // 亮色模式
+  [data-theme="light"] {
+    .studio-input {
+      --studio-color-bg-container: #fff;
+    }
+
+    .studio-select {
+      color: #7c7f9a;
+
+      .studio-select-arrow {
+        background-color: #7C7F9A;
+      }
+    }
+
+    .studio-tooltip {
+      // 文字颜色
+      --studio-color-text-light-solid: rgba(0, 0, 0, .87);
+      // 背景颜色
+      --studio-color-bg-spotlight: #fff;
+      // 阴影
+      --studio-box-shadow-secondary: box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.09);
+    }
+  }
+
+  // 移动端模式禁用图片预览
+  [data-platform="mobile"] {
+    .studio-image {
+      .studio-image-mask {
+        display: none !important;
+      }
+    }
+  }
+}

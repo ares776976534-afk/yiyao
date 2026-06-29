@@ -1,0 +1,48 @@
+.userInfoContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 12px;
+
+  .userInfoPortal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    cursor: pointer;
+
+    .userImg {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      overflow: hidden;
+      object-fit: cover;
+    }
+  }
+
+  .unloginPortal {
+    button {
+      font-size: 12px;
+    }
+
+    // box-shadow: 0px 2px 30px 0px rgba(83, 99, 245, 0.8);
+    filter: drop-shadow(0px 2px 30px rgba(83, 99, 245, 0.8));
+  }
+}
+
+.dropdown {
+  padding: 8px !important;
+  gap: 6px !important;
+  background: var(--menu-untransparent-bg) !important;
+  box-shadow: none !important;
+  :global {
+    .studio-dropdown-menu-item {
+      min-width: 180px;
+    }
+  }
+  .dropdownItem {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+  }
+}

@@ -1,0 +1,63 @@
+.dataInsights {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headerIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.headerTitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1d2129;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+  width: 100%;
+}
+
+.metricCard {
+  border-radius: 8px;
+  background: #fbfbfd;
+  padding: 16px;
+  flex: 1;
+  min-width: 0;
+}
+
+.metricCard :global(.ant-card-body) {
+  padding: 0;
+}
+
+.metricContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.metricLabel {
+  font-size: 14px;
+  color: #7b7b8d;
+  white-space: nowrap;
+}
+
+.metricValue {
+  font-size: 18px;
+  font-family: 'AlibabaSans102-Medium', sans-serif;
+  line-height: 25px;
+  color: #1d2129;
+  font-weight: bold;
+}

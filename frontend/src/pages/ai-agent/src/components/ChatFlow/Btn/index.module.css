@@ -1,0 +1,105 @@
+.btnText {
+  flex: 1 1 0;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: inherit;
+}
+
+.mainBtn {
+    font-weight: 500;
+    line-height: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-width: 0;
+    padding: 8px 20px;
+    gap: 6px;
+    border-radius: 8px;
+    background: #6E50FF;
+}
+
+.mainBtn :global(.ant-btn-icon) {
+  flex-shrink: 0;
+}
+
+.mainBtn:hover {
+    background: #866CFF !important;
+}
+
+.mainBtn:disabled {
+    color: var(--text-tertiary) !important;
+    background: #E7E8EE !important;
+    cursor: not-allowed !important;
+}
+
+.secondaryBtn {
+    color: #6E50FF;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-width: 0;
+    padding: 8px 20px;
+    gap: 6px;
+    border-radius: 8px;
+    background: var(--fill-white);
+    box-sizing: border-box;
+    border: 1px solid #6E50FF;
+}
+
+.secondaryBtn :global(.ant-btn-icon) {
+  flex-shrink: 0;
+}
+
+.secondaryBtn:hover {
+    color: #6E50FF !important;
+    background: #F5F5FF !important;
+    border: 1px solid #866CFF !important;
+}
+
+.secondaryBtn:disabled {
+    color: var(--text-tertiary-4) !important;
+    border: 1px solid var(--border-primary) !important;
+    cursor: not-allowed;
+}
+
+.assistanceBtn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-width: 0;
+    padding: 8px 20px;
+    gap: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px solid var(--border-primary);
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+    background: var(--fill-white);
+}
+
+.assistanceBtn :global(.ant-btn-icon) {
+  flex-shrink: 0;
+}
+
+.assistanceBtn:hover {
+    color: var(--text-primary) !important;
+    background: var(--text-tertiary-hover) !important;
+}
+
+.assistanceBtn:disabled {
+    background: var(--fill-white) !important;
+    color: var(--text-tertiary-4) !important;
+    cursor: not-allowed;;
+}

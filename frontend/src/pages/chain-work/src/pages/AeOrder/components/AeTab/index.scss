@@ -1,0 +1,83 @@
+@import "../../../../styles/base.scss";
+
+.ae-tabs-container {
+  display: flex;
+  margin-bottom: 16px;
+  .ae-tab-item {
+    position: relative;
+    width: 50%;
+    height: 90px;
+    padding: 20px 16px;
+    overflow: hidden;
+    border-radius: 6px;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    transition: all 0.1s linear;
+    cursor: pointer;
+    &:first-of-type {
+      margin-right: 12px;
+    }
+    &.active {
+      box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+      border-color: $theme-color;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -25px;
+        right: -25px;
+        width: 50px;
+        height: 50px;
+        -webkit-font-smoothing: antialiased;
+        background-color: $theme-color;
+        transform: rotate(45deg);
+        animation: fadeInRightForTag 0.4s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+      }
+      &::after {
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        -webkit-font-smoothing: antialiased;
+        content: "\E632";
+        transform: scale(0.6);
+        color: #fff;
+        font-family: NextIcon;
+        font-size: 28px;
+        line-height: 1;
+        animation: zoomIn 0.4s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+      }
+    }
+    .ae-tab-title {
+      margin-bottom: 8px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #333;
+    }
+    .ae-sub-tab-title {
+      font-size: 14px;
+      color: #666;
+    }
+  }
+}
+
+@keyframes fadeInRightForTag {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(45deg) translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,144 @@
+.usercenterModal :global(.ant-modal-content) {
+  height: 540px;
+  padding: 0;
+  border-radius: 16px;
+}
+
+.usercenterModalContent {
+  padding: 8px;
+}
+
+.usercenterModalContent :global(.ant-modal-close) {
+  width: 24px;
+  height: 24px;
+  color: var(--icon-primary);
+  border-radius: 6px;
+  top: 20px;
+  inset-inline-end: 20px;
+}
+.usercenterModalContent :global(.ant-modal-close):hover {
+  background: var(--fill-accent);
+}
+
+.layoutSiderMenuItemLabel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.layoutSiderMenuItemArrow {
+    display: none !important;
+    transform: rotate(-45deg);
+    transition: opacity 0.2s ease;
+}
+
+.layoutSiderContainer {
+    background: var(--fill-white) !important;
+    border-right: 1px solid var(--border-secondary);
+    padding: 8px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.layoutSiderHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 12px;
+  height: 48px;
+}
+/* 
+.layoutSiderHeaderLogo {
+  width: 66.38px;
+  height: 18px;
+} */
+
+.layoutSiderContent {
+    display: flex;
+    flex-direction: column;
+}
+  
+.layoutSiderContent ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border-inline-end: 0 !important;
+}
+  
+.layoutSiderContent ul::before {
+    content: none;
+}
+
+.antdMenu {
+    border: none !important;
+    background: transparent !important;
+}
+  
+.antdMenu :global(.ant-menu-item) {
+    border-radius: 12px !important;
+    height: 40px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 10px 12px !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    letter-spacing: normal !important;
+    color: var(--text-primary) !important;
+    margin: 0 !important;
+}
+
+.antdMenu :global(.ant-menu-item):hover {
+  color: #6E50FF !important;
+  background: var(--fill-accent) !important;
+}
+
+.antdMenu :global(.ant-menu-item):hover .layoutSiderMenuItemArrow {
+  display: block !important;
+}
+  
+  /* 展开状态：显示菜单文字 */
+.antdMenu :global(.ant-menu-title-content) {
+    margin-inline-start: 0 !important;
+    margin-left: 8px !important;
+}
+
+.antdMenu :global(.ant-menu-item-selected) {
+    background: var(--fill-accent) !important;
+    color: #6E50FF !important;
+  }
+  
+  .antdMenu :global(.ant-menu-item-selected:hover) {
+    background: var(--fill-accent) !important;
+    color: #6E50FF !important;
+  }
+  
+  .antdMenu :global(.ant-menu-item-icon) {
+    font-size: 20px !important;
+  }
+  
+  .antdMenu :global(.ant-menu-divider) {
+    margin: 8px 24px !important;
+    background: #F3F3F6 !important;
+  }
+
+  .antdMenu :global(.ant-menu-item):hover  {
+    .menuItemArrow {
+      display: block !important;
+    }
+  }
+
+  .layoutSiderDivider {
+    border: 0.5px solid #F3F3F6;
+    width: 164px;
+    height: 0px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+  }
+
+  .layoutSiderContainer:global(.ant-layout-sider-children) {
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+  }

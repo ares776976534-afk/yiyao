@@ -1,0 +1,297 @@
+// @import '../../responsive.scss';
+
+.btn {
+  width: 274px;
+  height: 53px;
+  border-radius: 63px;
+  background: linear-gradient(180deg, #FFFFFF 38%, rgba(255, 255, 255, 0) 78%);
+  border: 0.6px solid;
+  border-color: linear-gradient(101deg, rgba(253, 108, 255, 0.8) -4%, rgba(253, 108, 255, 0.8) 1%, rgba(201, 87, 255, 0.8) 25%, rgba(110, 80, 255, 0.8) 69%, rgba(64, 195, 255, 0.8) 95%) 0.6;
+  backdrop-filter: blur(6px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 16px;
+  margin-top: 139px;
+}
+
+.btnIcon {
+  width: 23.33px;
+  height: 26px;
+}
+
+.btnText {
+  font-family: Andale Mono;
+  font-size: 28px;
+  text-transform: capitalize;
+  color: #000000;
+
+  -webkit-text-stroke: #000000 0.8px;
+}
+
+.btnArrow {
+  width: 25.5px;
+  height: 0px;
+  transform: rotate(90deg);
+  border: 1px dashed rgba(83, 99, 245, 0.2);
+}
+
+.btnText2 {
+  font-family: Poppins;
+  font-size: 16px;
+  text-transform: capitalize;
+  background: linear-gradient(140deg, #FEA7FF -6%, #6E50FF 34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.btnText3 {
+  font-family: FZLTHProS;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+  /* Text/主要 color-text-1 */
+  color: #1D2129;
+}
+
+.btnText4 {
+  font-family: FZLTHProS;
+  font-size: 56px;
+  height: 63px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+}
+
+.btnText5 {
+  font-family: Poppins-medium;
+  font-size: 70px;
+  height: 62px;
+  color: #000000;
+  margin: 0 6px;
+  display: flex;
+  align-items: center;
+}
+
+.btnText6 {
+  margin-left: 6px;
+  font-family: Poppins;
+  font-size: 70px;
+  height: 89px;
+  background: linear-gradient(148deg, #FEA7FF -8%, #6E50FF 43%), #6E50FF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.contentWrapper {
+  background: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  // margin-top: 235px;
+  height: 63px;
+}
+
+.btnText7 {
+  font-family: FZLTHProR;
+  font-size: 20px;
+  color: #1B1C1D;
+  margin-top: 26px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: fit-content;
+  gap: 24px;
+  align-items: center;
+  min-height: 310px;
+  z-index: 2;
+
+  margin-top: 100px;
+}
+
+.agentsContainer {
+  --agentsContainer-width: 800px;
+}
+
+.agentsWrapper {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.navigationCustom {
+  // 在这里添加需要覆盖 Navigation 组件的样式
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bottomBg {
+  background-image: url('https://img.alicdn.com/imgextra/i2/O1CN01HZk8B51qSJ5hRwH8P_!!6000000005494-2-tps-3840-1560.png');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.bottomBg2 {
+  background-image: url('https://img.alicdn.com/imgextra/i4/O1CN014wShRB1YZUDS4fmmW_!!6000000003073-2-tps-3040-880.png');
+  width: 100%;
+  height: 440px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  opacity: .8;
+}
+
+.inputChatBox {
+  --padding-size: 16px;
+  position: relative;
+  display: flex;
+  width: var(--inputChat-box-width);
+
+  .inputChatInnerBox {
+    position: relative;
+    width: 800px;
+    background: #fff;
+    border: 1px solid #F3F3F6;
+    border-radius: 24px;
+    box-shadow: 0px 4px 16px 0px rgba(222, 216, 255, 0.3);
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -44px;
+      left: 50%;
+      z-index: -1;
+      transform: translateX(-50%);
+      width: 850px;
+      height: 211px;
+      background: url(https://img.alicdn.com/imgextra/i2/O1CN01Ss6wWf1m70Cd7s9s6_!!6000000004906-55-tps-850-211.svg) no-repeat;
+    }
+
+    [class*="inputChatContainer"] {
+      min-height: 140px;
+
+      [class*="inputChatInner"] {
+        [class*="smartModeContainer"],
+        [data-role="uploadOffer"],
+        [data-role="uploadImage"] {
+          height: 36px;
+          font-size: 14px;
+        }
+  
+        [class*=inputChat] [class*=inputChatTextarea] {
+          font-size: 16px;
+  
+          &::placeholder {
+            color: #BBBDCA;
+          }
+  
+          ;
+        }
+      }
+    }
+  }
+}
+
+.titleImg {
+  margin-top: 138px;
+  margin-bottom: 49px;
+}
+
+.titleGlobal {
+  position: relative;
+  cursor: pointer;
+}
+
+.titleGlobalImg {
+  width: 348px;
+  height: 53px;
+}
+
+.globalpm {
+  position: absolute;
+  top: 16.5px;
+  left: 34.33px;
+}
+
+.titleGlobalPm {
+  position: absolute;
+  top: 11px;
+  left: 59px;
+}
+
+.titleCn {
+  position: relative;
+  cursor: pointer;
+}
+
+.titleCnImg {
+  width: 274px;
+  height: 53px;
+}
+
+.cnpm {
+  position: absolute;
+  top: 16.5px;
+  left: 34.33px;
+}
+
+.titleCnlPm {
+  position: absolute;
+  top: 11px;
+  left: 59px;
+}
+
+.pm {
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: normal;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  color: #FFFFFF;
+}
+
+.titlePm {
+  font-family: Andale Mono;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: normal;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  color: #000000;
+}

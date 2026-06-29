@@ -1,0 +1,54 @@
+.commentAnalysisContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 42px;
+}
+
+.commentTitle {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 4px;
+    gap: 8px;
+}
+
+.Icon {
+    width: 4px;
+    height: 12px;
+    border-radius: 1px;
+    background: var(--icon-accent);
+}
+
+.commentTitleText {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: var(--icon-primary);
+}
+
+.keywordImproveSuggestionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 48px;
+}
+
+.improvedProductAnalysisContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.reviewStatsTableContainer {
+    display: flex;
+    gap: 16px;
+}
+
+.improvedProductAnalysisItemLine {
+    border: 0.5px solid var(--border-primary);
+    width: 100%;
+    height: 0px;
+    margin: 36px 0;
+}

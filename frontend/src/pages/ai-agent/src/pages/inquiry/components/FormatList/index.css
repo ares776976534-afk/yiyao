@@ -1,0 +1,14 @@
+/* 覆写 select-product 页面中 Markdown 组件的 margin 样式 */
+/* 在 inquiry 页面中，不需要 margin: 0 16px */
+.plan-content-item-MARKDOWN_TEXT .markdown-component {
+  margin: 0 !important;
+}
+
+/* 覆写 inquiry 页面中 MARKDOWN_TEXT 的 p 标签样式 */
+/* 取消 padding，添加 margin-bottom */
+.plan-content-item-MARKDOWN_TEXT .markdown-component p {
+  padding: 0 !important;
+  margin-bottom: 12px !important;
+  width: 334px!important;
+}
+

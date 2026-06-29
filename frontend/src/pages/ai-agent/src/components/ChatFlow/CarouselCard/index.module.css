@@ -1,0 +1,75 @@
+/* 轮播容器 */
+.carousel {
+    width: 100%;
+}
+
+.carousel :global(.slick-list .slick-slide) {
+    pointer-events: unset !important;
+}
+
+/* 轨道容器 */ 
+.carousel :global(.slick-track) {
+    display: flex !important;
+    align-items: center;
+}
+
+/* 列表容器 */
+.carousel :global(.slick-list) {
+    /* margin: 0 -6px; */
+}
+
+/* 箭头样式 */
+.carousel :global(.slick-prev),
+.carousel :global(.slick-next) {
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel :global(.slick-prev) {
+    left: 0;
+    width: 100px;
+    height: 100%;
+    color: #666;
+    opacity: 1;
+    background: linear-gradient(90deg, #FFFFFF 2%, rgba(255, 255, 255, 0) 100%);
+}
+
+.carousel :global(.slick-next) {
+    right: 0;
+    width: 100px;
+    height: 100%;
+    color: #666;
+    opacity: 1;
+    background: linear-gradient(270deg, #FFFFFF 2%, rgba(255, 255, 255, 0) 100%);
+}
+
+.carousel :global(.slick-prev::after){
+    top: 50%;
+    left: 4px;
+    border-inline-start-width: 1px;
+    border-block-start-width: 1px;
+    width: 8px;
+    height: 8px;
+}
+
+.carousel :global(.slick-next::after) {
+    top: 50%;
+    left: 82px;
+    border-inline-start-width: 1px;
+    border-block-start-width: 1px;
+    width: 8px;
+    height: 8px;
+}
+
+.carousel :global(.slick-prev:before),
+.carousel :global(.slick-next:before) {
+    font-size: 24px;
+    color: #666;
+    display: none;
+}
+
+.carousel :global(.slick-prev:hover:before),
+.carousel :global(.slick-next:hover:before) {
+    color: #1890ff;
+}

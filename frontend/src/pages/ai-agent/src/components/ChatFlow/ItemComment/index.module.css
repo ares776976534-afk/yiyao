@@ -1,0 +1,37 @@
+.itemComment {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 32px;
+    flex-grow: 1;
+}
+
+.itemCommentContent {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 12px;
+}
+
+.itemCommentHeader {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.itemCommentHeaderText {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.87);
+    margin-right: 8px;
+}
+
+.itemCommentContent {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #1D2129;
+}

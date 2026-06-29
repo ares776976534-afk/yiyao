@@ -1,0 +1,42 @@
+.initiateInquiry {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 36px;
+    padding: 12px 8px;
+    border: 1px solid var(--text-accent);
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(82, 98, 244, 0.06);
+    }
+}
+
+.text {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-accent);
+}
+
+.colorfulCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    gap: 20px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #6150FF -230%, rgba(255, 255, 255, 0) 26%), #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid #EEEFFE;
+    width: 100%;
+
+    margin-bottom: 48px;
+}
+
+.bmBtn {
+    display: flex;
+    margin-top: 20px;
+}

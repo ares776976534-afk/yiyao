@@ -1,0 +1,11 @@
+.exchangeTable :global(.ant-table-tbody > tr > td) {
+  height: 80px !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  color: #000000de !important;
+  border-right: 1px solid #f3f3f6 !important;
+  border-bottom: 1px solid #0000000a !important;
+  text-align: center !important;
+  padding: 12px !important;
+}

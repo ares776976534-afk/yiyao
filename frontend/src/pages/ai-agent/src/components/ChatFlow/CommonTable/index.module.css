@@ -1,0 +1,58 @@
+.commonTable {
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px solid #F3F3F6;
+    width: 100%;
+}
+
+.commonTable :global(.ant-table) {
+    border-radius: 8px;
+}
+
+.commonTable :global(.ant-table-content) {
+    border-radius: 8px;
+}
+
+.commonTable :global(.ant-table-cell::before) {
+    width: 0 !important;
+   
+}
+
+.commonTable :global(.ant-table-thead > tr > th) {
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1D2129;
+    background: #FBFBFD;
+    box-sizing: border-box;
+    border-bottom: 1px solid #F3F3F6;
+    line-height: 20px;
+}
+
+.commonTable :global(.ant-table-tbody > tr > td) {
+    padding: 12px;
+    border-bottom: 1px solid #F3F3F6;
+    font-size: 14px;
+}
+
+/* 移除最后一行的底部边框 */
+.commonTable :global(.ant-table-tbody > tr:last-child > td) {
+    border-bottom: none !important;
+}
+
+.columnGroup {
+    border-bottom: 1px solid #F3F3F6 !important;
+}
+
+/* 覆盖antd Table选中行的默认蓝色背景 */
+.commonTable :global(.ant-table-tbody > tr.ant-table-row-selected) {
+    background-color: transparent !important;
+}
+
+.commonTable :global(.ant-table-tbody > tr.ant-table-row-selected > td) {
+    background-color: transparent !important;
+}
+
+.commonTable :global(.ant-table-tbody .ant-table-row> .ant-table-cell-row-hover) {
+    background-color: #fff !important;
+}

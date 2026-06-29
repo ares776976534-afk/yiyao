@@ -1,0 +1,33 @@
+.commonTable {
+  .c-itemBlock.hasBorder {
+    box-shadow: none;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+  }
+  .dataTable {
+    padding-bottom: 0;
+    .dataTable-header {
+      border-top: 0;
+      padding-top: 0;
+    }
+  }
+}
+
+.btn-group {
+  .next-btn.next-btn-primary {
+    font-size: 12px;
+    height: 24px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+}
+
+.btn-group-no {
+  .next-btn.next-btn-primary {
+    font-size: 13px;
+  }
+}

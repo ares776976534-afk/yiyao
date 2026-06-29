@@ -1,0 +1,314 @@
+.requirementFormCard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.requirementFormCard :global(.ant-input) {
+    border-radius: 8px !important;
+    border-color: #E7E8EE !important;
+    height: 36px !important;
+}
+
+.requirementFormCardTitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: #1D2129;
+}
+
+.requirementFormCardLabel {
+    display: flex;
+    align-items: center;
+}
+
+.requirementFormCardLabelText {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #1D2129;
+    margin-left: 6px;
+}
+
+.requirementFormCardLabelRequired {
+    color: #FF4D4F;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    margin-left: 2px;
+}
+
+/* Radio Button 自定义样式 */
+.radioGroup {
+  display: flex;
+  gap: 8px; /* 每个按钮间隔8px */
+  flex-wrap: wrap;
+}
+
+/* 强制重置所有Radio Button的默认样式 */
+.radioGroup :global(.ant-radio-group) {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.radioGroup :global(.ant-radio-group) :global(.ant-radio-button-wrapper) {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* 覆盖 Antd Radio Button 样式 */
+.radioGroup :global(.ant-radio-button-wrapper) {
+  border-radius: 8px !important;
+  border: 1px solid #E7E8EE !important;
+  margin-right: 0 !important; /* 移除默认间距，使用gap控制 */
+  transition: all 0.3s ease !important;
+  height: 36px !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  padding: 8px 12px !important;
+}
+
+.radioGroup :global(.ant-radio-button-wrapper)::before {
+    width: 0 !important;
+    background-color: transparent !important;
+}
+
+/* 选中状态样式 */
+.radioGroup :global(.ant-radio-button-wrapper-checked) {
+  color: #000000 !important; /* 选中字体为黑色 */
+  border: 1px solid #6150FF !important; /* 选中边框为 #6150FF */
+  background-color: #ffffff !important; /* 背景色保持为白色 */
+  /* box-shadow: 0 0 0 2px rgba(83, 99, 245, 0.2) !important; 外发光效果 */
+  z-index: 1 !important;
+}
+
+/* 强制清除选中按钮的伪元素边框 */
+.radioGroup :global(.ant-radio-button-wrapper-checked)::before {
+  width: 0 !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* 悬停状态 */
+.radioGroup :global(.ant-radio-button-wrapper:hover:not(.ant-radio-button-wrapper-checked)) {
+  border: 1px solid #6150FF !important;
+  color: var(--text-checked) !important;
+  background-color: #ffffff !important;
+}
+
+/* 选中且悬停状态 */
+.radioGroup :global(.ant-radio-button-wrapper-checked:hover) {
+  color: #000000 !important; /* 保持黑色字体 */
+  border: 1px solid #6150FF !important;
+  background-color: #ffffff !important; /* 背景色保持为白色 */
+  z-index: 1 !important;
+}
+
+/* 禁用状态保持原样 */
+.radioGroup :global(.ant-radio-button-wrapper-disabled) {
+  color: rgba(0, 0, 0, 0.25) !important;
+  background-color: #f5f5f5 !important;
+}
+
+/* 聚焦状态 */
+.radioGroup :global(.ant-radio-button-wrapper:focus-within) {
+  border-color: #6150FF !important;
+  /* box-shadow: 0 0 0 2px rgba(83, 99, 245, 0.2) !important; */
+}
+
+.title {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #1D2129;
+    margin-bottom: 8px;
+}
+
+.titleText {
+    margin-left: 8px;
+}
+
+.newStyle :global(.ant-form-item-label) {
+    padding-bottom: 4px !important;
+}
+
+.itemLabel {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #7B7B8D;
+}
+
+.wave1 {
+    margin-left: 6px;
+    margin-right: 6px;
+    padding-top: 6px;
+}
+
+/* .wave {
+    margin-left: 6px;
+    margin-right: 6px;
+} */
+
+/* 评分输入框容器样式 */
+.ratingInputContainer {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 8px;
+}
+
+.ratingInputContainer :global(.ant-form-item) {
+    margin-bottom: 0;
+    flex: 0 0 auto;
+}
+
+.ratingInputContainer :global(.ant-form-item-control) :global(.ant-input-number-affix-wrapper) {
+    width: 163px !important;
+    height: 36px !important;
+    border-radius: 8px;
+    border-color: #E7E8EE;
+}
+
+.ratingInputContainer :global(.ant-form-item-control) :global(.ant-input-number) {
+    width: 163px !important;
+    height: 36px !important;
+}
+
+/* InputNumber 圆角样式 */
+/* 这些样式已合并到下面的更强选择器中 */
+
+/* 一行展示的表单项容器 */
+.newStyle .requirementTop {
+    display: flex !important;
+    gap: 24px !important;
+    align-items: flex-start !important;
+    flex-wrap: wrap !important;
+    margin-top: 8px;
+}
+
+.newStyle .requirementTop :global(.ant-form-item) {
+    margin-bottom: 0 !important;
+    flex: 0 0 auto !important; /* 不伸缩，根据内容自适应 */
+    width: 48.36% !important;
+}
+
+/* 让标题部分自适应宽度并完全可见，精确控制8px间距 */
+.newStyle .requirementTop :global(.ant-form-item-label) {
+    width: auto !important;
+    min-width: auto !important;
+    flex: 0 0 auto !important;
+    white-space: nowrap !important; /* 标题不换行 */
+    margin-bottom: 0 !important; /* 重置 margin */
+    padding-bottom: 8px !important; /* 精确的8px间距，覆盖newStyle的4px */
+    line-height: 20px !important; /* 控制行高 */
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    clip: auto !important;
+    clipPath: none !important;
+}
+
+/* 确保标题文字完全可见 */
+.newStyle .requirementTop :global(.ant-form-item-label) > label {
+    width: auto;
+    overflow: visible;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    text-overflow: clip;
+    height: 18px;
+}
+
+/* 内部InputNumber的样式 */
+.newStyle .requirementTop :global(.ant-form-item-control) :global(.ant-input-number-affix-wrapper) {
+    height: 36px !important;
+    border-radius: 8px;
+    border-color: #E7E8EE;
+}
+
+.newStyle .requirementTop :global(.ant-form-item-control) :global(.ant-input-number) {
+    height: 36px !important;
+    border-radius: 8px;
+    border-color: #E7E8EE;
+}
+
+/* 内层Form.Item的布局 */
+.newStyle .requirementTop :global(.ant-form-item-control) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.monthlySalesRange {
+    margin-top: 8px;
+}
+
+.imgIcon {
+    width: 16px;
+    height: 16px;
+}
+
+.confirmBtn {
+    height: 40px;
+    /* 自动布局 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: normal;
+    color: var(--text-white) !important;
+    /* Brand/常规 color-brand-1 */
+    background: var(--dt-colors-brand-primary) !important;
+    &:hover {
+        background: var(--dt-colors-brand-primaryHover) !important;
+    }
+}
+
+.confirmBtn:disabled {
+    opacity: 0.4;
+    /* Brand/常规 color-brand-1 */
+    background: var(--dt-colors-brand-primary) !important;
+}
+
+
+/* 隐藏 Ant Design Form 默认的 required 星号 */
+.requirementFormCard :global(.ant-form-item-label > label.ant-form-item-required::before) {
+    display: none !important;
+}
+
+/* 修复 InputNumber 高度样式，使用更强的选择器优先级 */
+.requirementFormCard :global(.ant-input-number-affix-wrapper) {
+    height: 36px !important;
+}
+
+.requirementFormCard :global(.ant-input-number) {
+    height: 36px !important;
+}
+
+.requirementFormCard :global(.ant-input-number-affix-wrapper) :global(.ant-input-number-input) {
+    height: 36px !important; /* 减去边框的高度 */
+    line-height: 36px !important;
+}
+
+.requirementFormCard :global(.ant-input-number) :global(.ant-input-number-input) {
+    height: 36px !important;
+    line-height: 36px !important;
+}
+.requirementFormCard :global(.ant-form-item-control-input-content) {
+    display: flex;
+    align-items: center;
+}

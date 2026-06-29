@@ -1,0 +1,42 @@
+.modalConfirm {
+  :global {
+    .studio-modal-confirm-paragraph {
+      gap: 12px;
+    }
+
+    .studio-modal-confirm-title,
+    .studio-modal-confirm-content {
+      color: var(--block-color) !important;
+    }
+
+    .studio-modal-close {
+      color: var(--block-color);
+
+      &:hover {
+        background: var(--block-hover-bg);
+        color: var(--block-color);
+      }
+    }
+  }
+}
+
+.shareContent {
+  word-break: break-word;
+}
+
+.shareFooter {
+  display: flex;
+  margin-top: 28px;
+
+  :global {
+    .studio-btn {
+      width: 100%;
+    }
+  }
+
+  .linkIcon {
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+  }
+}

@@ -1,0 +1,4 @@
+.initiateInquiryModal :global(.ant-table-content) {
+    height: calc(100vh - 164px);
+    overflow: scroll !important;
+}

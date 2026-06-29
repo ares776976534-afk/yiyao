@@ -1,0 +1,62 @@
+@use "variables" as *;
+
+// ==========================================================================
+// Text — paragraphs, inline formatting, links
+// ==========================================================================
+
+.alpha-markdown {
+  p {
+    margin: 0 0 $spacing-paragraph;
+  }
+
+  strong, b {
+    font-weight: 600;
+    color: var(--am-color-text-primary);
+  }
+
+  em, i {
+    font-style: italic;
+  }
+
+  del, s {
+    text-decoration: line-through;
+    color: var(--am-color-text-tertiary);
+  }
+
+  a {
+    color: var(--am-color-text-accent);
+    text-decoration: none;
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: var(--am-color-text-accent-hover);
+      text-decoration: underline;
+    }
+  }
+
+  mark {
+    background-color: #FFF8E1;
+    padding: 1px 4px;
+    border-radius: 2px;
+  }
+
+  sup, sub {
+    font-size: 0.75em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+
+  sup {
+    top: -0.5em;
+  }
+
+  sub {
+    bottom: -0.25em;
+  }
+
+  abbr[title] {
+    text-decoration: underline dotted;
+    cursor: help;
+  }
+}

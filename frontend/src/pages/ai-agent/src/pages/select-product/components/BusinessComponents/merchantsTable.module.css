@@ -1,0 +1,173 @@
+
+.commonTable .ant-table-tbody > tr > td{
+    position: relative;
+}
+
+.itemContainer {
+    display: flex;
+    gap: 8px;
+}
+
+.itemTag {
+    height: 19px;
+    display: flex;
+    align-items: center;
+    padding: 3px 4px;
+    gap: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0px 0px 2px 0px;
+    background: #FFF3EB;
+}
+
+.itemTagText {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 13px;
+    letter-spacing: normal;
+    color: #6150FF;
+}
+
+.itemTagNumber {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: normal;
+    color: rgba(83, 99, 245, 0.6);
+}
+
+.itemImage {
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.itemTitle {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #1D2129;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.itemPrice {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #1D2129;
+    font-family: AlibabaSans102;
+}
+
+.merchantInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.merchantName {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #1D2129;
+    cursor: pointer;
+}
+
+.merchantTag {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.merchantTagItem {
+    display: flex;
+    padding: 1px 3px;
+    border-radius: 2px;
+    letter-spacing: -0.05em;
+    font-size: 12px;
+    line-height: 14px;
+    gap: 2px;
+}
+
+/** 标签颜色 */
+.pmplus {
+    background: linear-gradient(114deg, #1A006B 4%, #12014C 28%, #020218 87%);
+    font-weight: bold;
+    color: #EACBA9;
+}
+
+.sourceProvider {
+    font-weight: 600;
+    color: #22AC60;
+    background: #E8F7ED;
+    filter: blur(0px);
+}
+
+.pm {
+    background: #FF1C2A;
+    filter: blur(0px);
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.tp {
+    background: #F9F9FB;
+    box-sizing: border-box;
+    border: 0.5px solid #E7E8EE;
+    font-weight: 500;
+    color: #7B7B8D;
+}
+
+.titleContainer {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 闪烁高亮样式 */
+@keyframes flashBackground {
+    0% { 
+        background: transparent;
+    }
+    50% { 
+        background: linear-gradient(0deg, rgba(83, 99, 245, 0.04), rgba(83, 99, 245, 0.04));
+    }
+    100% { 
+        background: transparent;
+    }
+}
+
+.flashingRow {
+    animation: flashBackground 0.8s ease-in-out infinite !important;
+}
+
+.flashingRow td {
+    animation: flashBackground 0.8s ease-in-out infinite !important;
+}
+
+/* 全局样式确保在ant-design表格中正确显示 */
+:global(.ant-table-tbody > tr.flashingRow) {
+    animation: flashBackground 0.8s ease-in-out infinite !important;
+}
+
+:global(.ant-table-tbody > tr.flashingRow > td) {
+    animation: flashBackground 0.8s ease-in-out infinite !important;
+}

@@ -1,0 +1,920 @@
+{
+  "success": true,
+  "language": "zh_CN",
+  "invokeTime": null,
+  "costTime": null,
+  "retCode": "S0000",
+  "retMsg": null,
+  "exception": null,
+  "result": {
+      "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+      "title": "秋日厨房穿搭",
+      "sessionImage": "https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/wKD4dV4C6kjmNuCQFyEN8JApKjJccnatUcP2janAjEVKT2HEYYoADTdMguVEPPdhJ07hiCUec05guFQ.jpeg",
+      "messages": [
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "resp",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "attachments": [
+                  {
+                      "sourceUrl": "https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/wKD4dV4C6kjmNuCQFyEN8JApKjJccnatUcP2janAjEVKT2HEYYoADTdMguVEPPdhJ07hiCUec05guFQ.jpeg",
+                      "width": 2622,
+                      "mimeType": "image/jpeg",
+                      "height": 4096
+                  }
+              ],
+              "offerInfos": [],
+              "messageType": "USER",
+              "query": "保持人物面部五官不变，换上时尚秋装穿搭，在家厨房场景中生成5张厨房做饭角色照片，风格自然又时髦~"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "text",
+              "content": "保持五官不变，为你生成5张自然时髦的秋装厨房做饭照，穿搭和场景都会精心匹配哦~"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "end"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "intent",
+              "intent": "mediaTask",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "https://img.alicdn.com/imgextra/i4/O1CN01b8Lcgv1M7IRvC42ez_!!6000000001387-55-tps-14-14.svg",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "title": "图片理解",
+              "type": "design_analyzer",
+              "contentType": "text",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "https://img.alicdn.com/imgextra/i4/O1CN01b8Lcgv1M7IRvC42ez_!!6000000001387-55-tps-14-14.svg",
+              "id": 8,
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "title": "图片理解",
+              "type": "design_analyzer",
+              "contentType": "text",
+              "content": "{\"content\":\"- 用户上传图片1： 一位年轻男性身着复古军装，站在绘有鲨鱼嘴的旧式炮车前，背景是民国风格的街道与招牌。人物面部清晰，五官立体，发型利落。需保留其面部特征，将其换装为时尚秋装（如针织衫、牛仔裤、围裙等），并置于现代温馨厨房场景中，进行5张不同做饭姿态的自然时髦风格生成，如切菜、炒锅、端盘等，营造居家生活感。\",\"toolResultType\":\"text\"}",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "end"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "title": "任务规划",
+              "type": "plan_stream",
+              "contentType": "text",
+              "content": "{\"planId\":\"plan_c4e8601a\",\"planTitle\":\"厨房穿搭写真\",\"stepNum\":5,\"steps\":[{\"agentName\":\"IMAGE_GENERATE_AGENT\",\"displayContent\":\"以用户上传图片1为基础，保持人物面部五官不变，更换为时尚秋装（针织衫+围裙），置于现代厨房中，生成切菜动作，风格自然时髦。\",\"displayTitle\":\"第1步：生成切菜姿势\",\"stepId\":1,\"stepTitle\":\"生成切菜姿势\"},{\"agentName\":\"IMAGE_GENERATE_AGENT\",\"displayContent\":\"保持面部一致，穿着同系列秋装，在厨房灶台前炒菜，手持锅铲，背景有油烟与灯光效果，营造真实做饭氛围。\",\"displayTitle\":\"第2步：生成炒菜姿势\",\"stepId\":2,\"stepTitle\":\"生成炒菜姿势\"},{\"agentName\":\"IMAGE_GENERATE_AGENT\",\"displayContent\":\"人物换姿为端出热菜，穿着时尚围裙装，表情轻松，厨房背景有餐桌与餐具，突出居家生活感，保持面部特征一致。\",\"displayTitle\":\"第3步：生成端盘姿势\",\"stepId\":3,\"stepTitle\":\"生成端盘姿势\"},{\"agentName\":\"IMAGE_GENERATE_AGENT\",\"displayContent\":\"人物在厨房水槽前洗菜，服装与风格延续秋装时髦感，手势自然，背景有蔬菜与水珠细节，增强生活真实感。\",\"displayTitle\":\"第4步：生成洗菜姿势\",\"stepId\":4,\"stepTitle\":\"生成洗菜姿势\"},{\"agentName\":\"IMAGE_GENERATE_AGENT\",\"displayContent\":\"人物正在灶前调味，手持调料瓶，神情专注，厨房环境温暖明亮，服装与前四张一致，确保系列感与风格统一。\",\"displayTitle\":\"第5步：生成调味姿势\",\"stepId\":5,\"stepTitle\":\"生成调味姿势\"}],\"taskId\":\"9f8d199b-e37a-4fbb-b65a-9cebb211ca02\",\"thought\":\"保持面部不变，更换服装与场景，生成5种做饭姿态\"}",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "end"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "text",
+              "contentType": "text",
+              "content": "**正在设计**：厨房切菜姿势写真\n**设计思路**：\n- 整体风格: 自然实感+时髦穿搭；\n- 内容: 保留用户上传图片1的面部特征，更换为针织衫+围裙的秋装，在现代厨房中进行切菜动作；\n- 光影效果: 柔和自然光，模拟厨房窗边 daylight 环境，突出人物轮廓与细节。",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "end"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "https://img.alicdn.com/imgextra/i2/O1CN018rihcR1FrpMX2k7HC_!!6000000000541-2-tps-40-40.png",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "title": "图像创作",
+              "type": "design",
+              "contentType": "image",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "startTime": 1764639531584,
+              "endTime": 1764640474917,
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "percent_loading",
+              "percent": 30,
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "context": {
+                  "waitingUtil": 1764639535558
+              },
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "stopForWaiting"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "title": "",
+              "type": "design",
+              "contentType": "image",
+              "content": "{\"mediaModel\":{\"height\":1184,\"mediaCoverUrl\":\"https://img.alicdn.com/imgextra/i3/6000000001811/O1CN01D3v0np1PFUNpiEeET_!!6000000001811-2-cbu_global_ai_agent.png\",\"mediaId\":\"ff314ae0-f24b-47df-b104-55ec4eae0058\",\"mediaUrl\":\"https://img.alicdn.com/imgextra/i3/6000000001811/O1CN01D3v0np1PFUNpiEeET_!!6000000001811-2-cbu_global_ai_agent.png\",\"width\":864},\"toolResultType\":\"image\"}",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "end"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "text",
+              "contentType": "text",
+              "content": "**正在设计**：厨房切菜姿势写真\n**设计思路**：\n- 整体风格: 自然实感+时髦穿搭；\n- 内容: 保留用户上传图片1的面部特征，更换为针织衫+围裙的秋装，在现代厨房中进行切菜动作；\n- 光影效果: 柔和自然光，模拟厨房窗边 daylight 环境，突出人物轮廓与细节。",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "end"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "https://img.alicdn.com/imgextra/i2/O1CN018rihcR1FrpMX2k7HC_!!6000000000541-2-tps-40-40.png",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "title": "图像创作",
+              "type": "design",
+              "contentType": "image",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "startTime": 1764639562866,
+              "endTime": 1764640461866,
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "percent_loading",
+              "percent": 30,
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "context": {
+                  "waitingUtil": 1764639566837
+              },
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "stopForWaiting"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "title": "",
+              "type": "design",
+              "contentType": "image",
+              "content": "{\"mediaModel\":{\"height\":1184,\"mediaCoverUrl\":\"https://img.alicdn.com/imgextra/i4/6000000001873/O1CN01q8HbGb1PhswK0EbP8_!!6000000001873-2-cbu_global_ai_agent.png\",\"mediaId\":\"99730070-1341-4eab-91d9-b6641addd2eb\",\"mediaUrl\":\"https://img.alicdn.com/imgextra/i4/6000000001873/O1CN01q8HbGb1PhswK0EbP8_!!6000000001873-2-cbu_global_ai_agent.png\",\"width\":864},\"toolResultType\":\"image\"}",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "end"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "text",
+              "contentType": "text",
+              "content": "**正在设计**：厨房切菜姿势写真\n**设计思路**：\n- 整体风格: 自然实感+时髦穿搭；\n- 内容: 保留用户上传图片1的面部特征，更换为针织衫+围裙的秋装，在现代厨房中进行切菜动作；\n- 光影效果: 柔和自然光，模拟厨房窗边 daylight 环境，突出人物轮廓与细节。",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "end"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "https://img.alicdn.com/imgextra/i2/O1CN018rihcR1FrpMX2k7HC_!!6000000000541-2-tps-40-40.png",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "title": "图像创作",
+              "type": "design",
+              "contentType": "image",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "startTime": 1764639589399,
+              "endTime": 1764640467399,
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "percent_loading",
+              "percent": 30,
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "context": {
+                  "waitingUtil": 1764639593374
+              },
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "stopForWaiting"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "title": "",
+              "type": "design",
+              "contentType": "image",
+              "content": "{\"mediaModel\":{\"height\":1184,\"mediaCoverUrl\":\"https://img.alicdn.com/imgextra/i4/6000000008116/O1CN011Rhqv329pBZucxtZ1_!!6000000008116-2-cbu_global_ai_agent.png\",\"mediaId\":\"d9d6540e-d362-44bf-89cf-4900acd7cd76\",\"mediaUrl\":\"https://img.alicdn.com/imgextra/i4/6000000008116/O1CN011Rhqv329pBZucxtZ1_!!6000000008116-2-cbu_global_ai_agent.png\",\"width\":864},\"toolResultType\":\"image\"}",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "end"
+          },
+          {
+              "totalStepNum": 5,
+              "messageType": "ASSISTANT",
+              "finishedStepNum": 1,
+              "stepId": 1,
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "plan_status",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "FINISH"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "2",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "2",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "text",
+              "contentType": "text",
+              "content": "**正在设计**：厨房炒菜姿势写真\n**设计思路**：\n- 整体风格: 自然实感+时髦穿搭；\n- 内容: 保留用户上传图片1的面部特征，穿着同系列秋装，在现代厨房灶台前手持锅铲炒菜；\n- 光影效果: 模拟厨房暖光与灶火光影，增强真实做饭氛围。",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "2",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "end"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "2",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "https://img.alicdn.com/imgextra/i2/O1CN018rihcR1FrpMX2k7HC_!!6000000000541-2-tps-40-40.png",
+              "stepId": "2",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "title": "图像创作",
+              "type": "design",
+              "contentType": "image",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "2",
+              "planId": "plan_c4e8601a",
+              "startTime": 1764639624236,
+              "endTime": 1764640644569,
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "percent_loading",
+              "percent": 30,
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "context": {
+                  "waitingUtil": 1764639628211
+              },
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "stopForWaiting"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "",
+              "stepId": "2",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "title": "",
+              "type": "design",
+              "contentType": "image",
+              "content": "{\"mediaModel\":{\"height\":1184,\"mediaCoverUrl\":\"https://img.alicdn.com/imgextra/i3/6000000004361/O1CN01pbN6Nu1i5OLpo0PAu_!!6000000004361-2-cbu_global_ai_agent.png\",\"mediaId\":\"ca56329a-e282-415f-9311-620e322b528a\",\"mediaUrl\":\"https://img.alicdn.com/imgextra/i3/6000000004361/O1CN01pbN6Nu1i5OLpo0PAu_!!6000000004361-2-cbu_global_ai_agent.png\",\"width\":864},\"toolResultType\":\"image\"}",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "2",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "end"
+          },
+          {
+              "totalStepNum": 5,
+              "messageType": "ASSISTANT",
+              "finishedStepNum": 2,
+              "stepId": 2,
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "plan_status",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "FINISH"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "3",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "3",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "text",
+              "contentType": "text",
+              "content": "**正在设计**：厨房端盘姿势写真\n**设计思路**：\n- 整体风格: 自然实感+时髦穿搭；\n- 内容: 保留用户上传图片1的面部特征，穿着同系列时尚秋装与围裙，端出热菜，表情轻松；\n- 场景细节: 厨房背景包含餐桌与餐具，增强居家生活氛围；\n- 光影效果: 柔和暖光，模拟午后厨房光线，突出温馨感。",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "3",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "end"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "3",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "https://img.alicdn.com/imgextra/i2/O1CN018rihcR1FrpMX2k7HC_!!6000000000541-2-tps-40-40.png",
+              "stepId": "3",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "title": "图像创作",
+              "type": "design",
+              "contentType": "image",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "3",
+              "planId": "plan_c4e8601a",
+              "startTime": 1764639664386,
+              "endTime": 1764640611052,
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "percent_loading",
+              "percent": 30,
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "context": {
+                  "waitingUtil": 1764639668354
+              },
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "stopForWaiting"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "",
+              "stepId": "3",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "title": "",
+              "type": "design",
+              "contentType": "image",
+              "content": "{\"mediaModel\":{\"height\":1184,\"mediaCoverUrl\":\"https://img.alicdn.com/imgextra/i2/6000000000777/O1CN016HTWzd1HbuqqbgXxu_!!6000000000777-2-cbu_global_ai_agent.png\",\"mediaId\":\"1c5c6452-08eb-4333-9bd3-66aa6360f9b7\",\"mediaUrl\":\"https://img.alicdn.com/imgextra/i2/6000000000777/O1CN016HTWzd1HbuqqbgXxu_!!6000000000777-2-cbu_global_ai_agent.png\",\"width\":864},\"toolResultType\":\"image\"}",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "3",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "end"
+          },
+          {
+              "totalStepNum": 5,
+              "messageType": "ASSISTANT",
+              "finishedStepNum": 3,
+              "stepId": 3,
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "plan_status",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "FINISH"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "4",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "4",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "text",
+              "contentType": "text",
+              "content": "**正在设计**：厨房洗菜姿势写真\n**设计思路**：\n- 整体风格: 自然实感+时髦穿搭；\n- 内容: 保留用户上传图片1的面部特征，穿着同系列秋装，在现代厨房水槽前清洗蔬菜，手势自然；\n- 场景细节: 背景包含新鲜蔬菜与飞溅水珠，增强生活真实感；\n- 光影效果: 柔和顶光与窗边自然光结合，突出水流与肌肤质感。",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "4",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "end"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "4",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "https://img.alicdn.com/imgextra/i2/O1CN018rihcR1FrpMX2k7HC_!!6000000000541-2-tps-40-40.png",
+              "stepId": "4",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "title": "图像创作",
+              "type": "design",
+              "contentType": "image",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "4",
+              "planId": "plan_c4e8601a",
+              "startTime": 1764639704643,
+              "endTime": 1764640725309,
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "percent_loading",
+              "percent": 30,
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "context": {
+                  "waitingUtil": 1764639708618
+              },
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "stopForWaiting"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "",
+              "stepId": "4",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "title": "",
+              "type": "design",
+              "contentType": "image",
+              "content": "{\"mediaModel\":{\"height\":1184,\"mediaCoverUrl\":\"https://img.alicdn.com/imgextra/i1/6000000002006/O1CN01aVpedV1QgncGMjbcK_!!6000000002006-2-cbu_global_ai_agent.png\",\"mediaId\":\"055e0f99-d3fc-4192-86d6-0b70d3dab797\",\"mediaUrl\":\"https://img.alicdn.com/imgextra/i1/6000000002006/O1CN01aVpedV1QgncGMjbcK_!!6000000002006-2-cbu_global_ai_agent.png\",\"width\":864},\"toolResultType\":\"image\"}",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "4",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "end"
+          },
+          {
+              "totalStepNum": 5,
+              "messageType": "ASSISTANT",
+              "finishedStepNum": 4,
+              "stepId": 4,
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "plan_status",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "FINISH"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "5",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "5",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "text",
+              "contentType": "text",
+              "content": "**正在设计**：厨房调味姿势写真\n**设计思路**：\n- 整体风格: 自然实感+时髦穿搭；\n- 内容: 保留用户上传图片1的面部特征，穿着同系列秋装，在灶台前专注调味，手持调料瓶；\n- 光影效果: 温暖明亮厨房光，突出动作细节与环境氛围。",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "5",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "end"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "5",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "https://img.alicdn.com/imgextra/i2/O1CN018rihcR1FrpMX2k7HC_!!6000000000541-2-tps-40-40.png",
+              "stepId": "5",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "title": "图像创作",
+              "type": "design",
+              "contentType": "image",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "5",
+              "planId": "plan_c4e8601a",
+              "startTime": 1764639741400,
+              "endTime": 1764640652400,
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "percent_loading",
+              "percent": 30,
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "context": {
+                  "waitingUtil": 1764639745371
+              },
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "stopForWaiting"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "",
+              "stepId": "5",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "title": "",
+              "type": "design",
+              "contentType": "image",
+              "content": "{\"mediaModel\":{\"height\":1024,\"mediaCoverUrl\":\"https://img.alicdn.com/imgextra/i3/6000000003350/O1CN01oCpR441acLveCLABo_!!6000000003350-2-cbu_global_ai_agent.png\",\"mediaId\":\"494cb2c1-2998-427f-b2ff-216a57f11487\",\"mediaUrl\":\"https://img.alicdn.com/imgextra/i3/6000000003350/O1CN01oCpR441acLveCLABo_!!6000000003350-2-cbu_global_ai_agent.png\",\"width\":1024},\"toolResultType\":\"image\"}",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "5",
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "end"
+          },
+          {
+              "totalStepNum": 5,
+              "messageType": "ASSISTANT",
+              "finishedStepNum": 5,
+              "stepId": 5,
+              "planId": "plan_c4e8601a",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "plan_status",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "FINISH"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "text",
+              "content": "已基于用户上传图片，在保留原始面部五官不变的前提下，成功生成5张自然又时髦的厨房做饭角色照片。每张均换搭统一风格的时尚秋装（针织衫+围裙），并分别呈现切菜、炒菜、端盘、洗菜与调味五种典型厨房动作，场景细节与光影氛围贴合居家厨房环境，整体风格协调统一。",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "end"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "e3743ac4-778f-4ec0-b458-9dc7abb26c20",
+              "type": "statusChange",
+              "taskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+              "status": "allDone"
+          }
+      ],
+      "createdTime": 1764639493000,
+      "latestTaskId": "9f8d199b-e37a-4fbb-b65a-9cebb211ca02",
+      "taskStatus": "COMPLETED",
+      "latestEventId": 85,
+      "isOfficial": false,
+      "official": false
+  }
+}
+
+
+// 页面内容
+保持人物面部五官不变，换上时尚秋装穿搭，在家厨房场景中生成5张厨房做饭角色照片，风格自然又时髦~
+保持五官不变，为你生成5张自然时髦的秋装厨房做饭照，穿搭和场景都会精心匹配哦~
+
+图片理解
+用户上传图片1： 一位年轻男性身着复古军装，站在绘有鲨鱼嘴的旧式炮车前，背景是民国风格的街道与招牌。人物面部清晰，五官立体，发型利落。需保留其面部特征，将其换装为时尚秋装（如针织衫、牛仔裤、围裙等），并置于现代温馨厨房场景中，进行5张不同做饭姿态的自然时髦风格生成，如切菜、炒锅、端盘等，营造居家生活感。
+任务规划
+第1步：生成切菜姿势
+以用户上传图片1为基础，保持人物面部五官不变，更换为时尚秋装（针织衫+围裙），置于现代厨房中，生成切菜动作，风格自然时髦。
+第2步：生成炒菜姿势
+保持面部一致，穿着同系列秋装，在厨房灶台前炒菜，手持锅铲，背景有油烟与灯光效果，营造真实做饭氛围。
+第3步：生成端盘姿势
+人物换姿为端出热菜，穿着时尚围裙装，表情轻松，厨房背景有餐桌与餐具，突出居家生活感，保持面部特征一致。
+第4步：生成洗菜姿势
+人物在厨房水槽前洗菜，服装与风格延续秋装时髦感，手势自然，背景有蔬菜与水珠细节，增强生活真实感。
+第5步：生成调味姿势
+人物正在灶前调味，手持调料瓶，神情专注，厨房环境温暖明亮，服装与前四张一致，确保系列感与风格统一。
+第1步：生成切菜姿势
+
+预览
+watermark
+
+预览
+watermark
+
+预览
+watermark
+正在设计：厨房切菜姿势写真 设计思路：
+
+整体风格: 自然实感+时髦穿搭；
+内容: 保留用户上传图片1的面部特征，更换为针织衫+围裙的秋装，在现代厨房中进行切菜动作；
+光影效果: 柔和自然光，模拟厨房窗边 daylight 环境，突出人物轮廓与细节。正在设计：厨房切菜姿势写真 设计思路：
+整体风格: 自然实感+时髦穿搭；
+内容: 保留用户上传图片1的面部特征，更换为针织衫+围裙的秋装，在现代厨房中进行切菜动作；
+光影效果: 柔和自然光，模拟厨房窗边 daylight 环境，突出人物轮廓与细节。正在设计：厨房切菜姿势写真 设计思路：
+整体风格: 自然实感+时髦穿搭；
+内容: 保留用户上传图片1的面部特征，更换为针织衫+围裙的秋装，在现代厨房中进行切菜动作；
+光影效果: 柔和自然光，模拟厨房窗边 daylight 环境，突出人物轮廓与细节。
+第2步：生成炒菜姿势
+
+预览
+watermark
+正在设计：厨房炒菜姿势写真 设计思路：
+
+整体风格: 自然实感+时髦穿搭；
+内容: 保留用户上传图片1的面部特征，穿着同系列秋装，在现代厨房灶台前手持锅铲炒菜；
+光影效果: 模拟厨房暖光与灶火光影，增强真实做饭氛围。
+第3步：生成端盘姿势
+
+预览
+watermark
+正在设计：厨房端盘姿势写真 设计思路：
+
+整体风格: 自然实感+时髦穿搭；
+内容: 保留用户上传图片1的面部特征，穿着同系列时尚秋装与围裙，端出热菜，表情轻松；
+场景细节: 厨房背景包含餐桌与餐具，增强居家生活氛围；
+光影效果: 柔和暖光，模拟午后厨房光线，突出温馨感。
+第4步：生成洗菜姿势
+
+预览
+watermark
+正在设计：厨房洗菜姿势写真 设计思路：
+
+整体风格: 自然实感+时髦穿搭；
+内容: 保留用户上传图片1的面部特征，穿着同系列秋装，在现代厨房水槽前清洗蔬菜，手势自然；
+场景细节: 背景包含新鲜蔬菜与飞溅水珠，增强生活真实感；
+光影效果: 柔和顶光与窗边自然光结合，突出水流与肌肤质感。
+第5步：生成调味姿势
+
+预览
+watermark
+正在设计：厨房调味姿势写真 设计思路：
+
+整体风格: 自然实感+时髦穿搭；
+内容: 保留用户上传图片1的面部特征，穿着同系列秋装，在灶台前专注调味，手持调料瓶；
+光影效果: 温暖明亮厨房光，突出动作细节与环境氛围。
+已基于用户上传图片，在保留原始面部五官不变的前提下，成功生成5张自然又时髦的厨房做饭角色照片。每张均换搭统一风格的时尚秋装（针织衫+围裙），并分别呈现切菜、炒菜、端盘、洗菜与调味五种典型厨房动作，场景细节与光影氛围贴合居家厨房环境，整体风格协调统一。
+
+任务已结束

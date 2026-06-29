@@ -1,0 +1,114 @@
+.creditOverview {
+  background: #fff;
+  border-radius: 12px;
+  padding: 83px 36px 36px 33px;
+}
+
+.creditTotal {
+  display: flex;
+  margin-bottom: 37px;
+  flex-direction: column;
+}
+
+.creditNumber {
+  font-size: 48px;
+  line-height: 56px;
+  color: #000000DE;
+  font-family: 'AlibabaSans102-Medium', sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.creditProgress {
+  flex: 1;
+  margin-left: 27px;
+}
+
+.creditProgress :global( .ant-progress-bg) {
+  background: linear-gradient(90deg, #A9EDB9 0%, #66AFFA 100%) !important;
+  border-radius: 8px !important;
+}
+
+.creditProgress :global(.ant-progress-success-bg) {
+  background: linear-gradient(100deg, #A0EDC2 11%, #72E5A5 94%) !important;
+  border-radius: 8px !important;
+}
+
+.creditProgress :global( .ant-progress-outer) {
+  height: 16px !important;
+}
+
+.creditProgress :global( .ant-progress-inner) {
+  border-radius: 8px !important;
+}
+
+.creditInfo {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #00000066;
+  text-align: right;
+}
+
+.creditCards {
+  display: flex;
+  gap: 22px;
+}
+
+.creditCard {
+  flex: 1;
+  border-radius: 16px;
+  padding: 20px;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.creditCard.using {
+  background: linear-gradient(104deg, #ECFCF0, #F5FFF8);
+  border: 1px solid #A9EDB9;
+}
+
+.creditCard.used {
+  background: linear-gradient(105deg, #EFF7FD, #F3F9FF);
+  border: 1px solid #66AFFA;
+}
+
+.creditCard.remaining {
+  background: #FAFAFA;
+  border: 1px solid #E7E8EE;
+}
+
+.creditCardContent {
+  text-align: center;
+}
+
+.creditCardNumber {
+  font-size: 32px;
+  line-height: 1;
+  color: #000000DE;
+  font-family: 'AlibabaSans102-Medium', sans-serif;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.creditCardLabel {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000000DE;
+}
+
+.creditProgressContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.creditTotalTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 16px;
+}

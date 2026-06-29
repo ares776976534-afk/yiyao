@@ -1,0 +1,67 @@
+.jit-order-list {
+  .next-table .next-table-header tr:first-child th:first-child {
+    border-top-left-radius: 6px;
+  }
+  .next-table.only-bottom-border .next-table-header tr th:last-child {
+    border-top-right-radius: 6px;
+  }
+  .next-table .next-table-header th {
+    border-bottom: none;
+    height: 49px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    .next-table-cell-wrapper {
+      padding-left: 0;
+    }
+  }
+  .next-table-group-header {
+    .next-table-cell-wrapper {
+      display: flex;
+      align-items: center;
+      height: 49px;
+      padding: 0;
+      background: #ebf6ff;
+    }
+  }
+  .next-table-cell.first {
+    border-left: 1px solid #e6e7eb !important;
+    .next-table-cell-wrapper {
+      padding-right: 16px !important;
+      padding-left: 16px !important;
+    }
+  }
+  .next-table td {
+    border-right: 1px solid #e6e7eb !important;
+  }
+}
+
+.products-business-tooltips {
+  .next-balloon-arrow-content {
+    background-color: #333 !important;
+  }
+}
+
+.next-date-picker2-input.next-date-picker2-input-medium {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.next-date-picker2-input .next-input {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.next-number-picker-normal .next-input {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}

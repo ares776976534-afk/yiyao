@@ -1,0 +1,257 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+}
+
+.tableContainer {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 32px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+:global(.ant-table) {
+  border-radius: 6px !important;
+  overflow: hidden;
+}
+
+:global(.ant-table-thead > tr > th) {
+  background: #FBFBFD !important;
+  border-bottom: 1px solid #F3F3F6 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #000000DE !important;
+  text-align: center !important;
+  padding: 12px !important;
+  height: 60px !important;
+}
+
+:global(.ant-table-tbody > tr:not(:first-child) > td) {
+  background: #FFFFFF !important;
+  border-bottom: 1px solid #0000000A !important;
+  text-align: center !important;
+  padding: 12px !important;
+  min-height: 100px !important;
+  vertical-align: middle !important;
+}
+
+:global(.ant-table-tbody > tr:last-child > td) {
+  border-bottom: none !important;
+}
+
+.customTable {
+  flex: 1;
+}
+
+.keyContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0 39px;
+}
+
+.keyRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyLabel {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #0000004D;
+  margin-right: 16px;
+}
+
+.keyValue {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000000DE;
+  flex: 1;
+  text-align: left;
+}
+
+.copyIcon {
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  color: #666;
+  margin-left: 16px;
+}
+
+.copyIcon:hover {
+  opacity: 0.7;
+  color: #2265FE;
+}
+
+:global(.ant-tag.ant-tag) {
+  background: #9EF8FC47 !important;
+  border-radius: 24px !important;
+  padding: 6px 16px !important;
+  border: none !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  color: #04B1CB !important;
+  margin: 0 !important;
+}
+
+.actionItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.actionItem:hover {
+  opacity: 0.7;
+}
+
+.actionIcon {
+  font-size: 16px;
+  color: #00000066;
+}
+
+.editText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #2265FE;
+}
+
+.deleteText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #00000066;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+}
+
+.summaryText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #00000099;
+}
+
+.summaryNumber {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #0072FD;
+}
+
+.updateTime {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #0000004D;
+}
+
+.createButton {
+  background: linear-gradient(93deg, #62ACFF -20%, #2163FE 133%);
+  border-radius: 8px;
+  border: none;
+  height: 48px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #FFFFFF;
+  align-self: flex-start;
+}
+
+.createButton:hover {
+  background: #4A9AFF !important;
+  color: #FFFFFF !important;
+}
+
+.createApiKeyModal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.createApiKeyModalTitle {
+  font-size: 14px;
+  color: #1D2129;
+  margin-right: 12px;
+}
+
+.createApiKeyModalButton {
+  font-size: 16px;
+  font-weight: 600;
+  height: 40px;
+  padding: 0 20px;
+}
+
+.createApiKeyModalInput {
+  padding: 14.5px 16px;
+}
+
+.createApiKeyModalContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.createApiKeyModalContentTip {
+  font-size: 14px;
+  line-height: 22px;
+  color: #7B7B8D;
+  margin-bottom: 32px;
+}
+
+.createApiKeyModalContentKeys {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 32px;
+  background: #F8F8F9;
+  border-radius: 6px;
+}
+
+.createApiKeyModalContentKeyLabel {
+  font-size: 14px;
+  line-height: 20px;
+  color: #CCCCD4;
+  margin-right: 16px;
+}
+
+.createApiKeyModalContentKeyValue {
+  font-size: 14px;
+  line-height: 20px;
+  color: #1D2129;
+}
+
+.createApiKeyModalContentKey:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  padding-bottom: 20px;
+}
+
+.createApiKeyModalContentFooter {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}

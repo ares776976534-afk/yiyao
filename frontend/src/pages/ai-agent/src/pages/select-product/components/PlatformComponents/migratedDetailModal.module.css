@@ -1,0 +1,4 @@
+.migratedDetailModalContentContainer:global(.ant-modal-content) {
+    padding: 20px;
+    border-radius: 12px;
+}

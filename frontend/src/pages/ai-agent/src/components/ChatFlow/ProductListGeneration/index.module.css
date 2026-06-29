@@ -1,0 +1,40 @@
+.productListGeneration {
+    border-radius: 12px;
+    background: var(--fill-white);
+    box-sizing: border-box;
+    border: 1px solid var(--border-primary);
+    padding: 12px;
+}
+
+.productListGenerationContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.productListGenerationItem {
+    flex: 1;
+}
+
+.productListGenerationContentItem {
+    display: flex;
+    align-items: center;
+}
+
+.productListGenerationContentItemText {
+    font-size: 12px;
+    color: #7C7F9A;
+}
+
+.productListGenerationTitle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.productListGenerationTitleContent {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}

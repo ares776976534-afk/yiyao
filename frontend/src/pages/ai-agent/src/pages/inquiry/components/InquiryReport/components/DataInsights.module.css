@@ -1,0 +1,86 @@
+.dataInsights {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.headerAccent {
+    width: 4px;
+    height: 12px;
+    border-radius: 1px;
+    background: #6E50FF;
+}
+
+.headerTitle {
+    font-family: PingFang SC;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: #1d1e29;
+    margin: 0;
+}
+
+.metricsGrid {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+}
+
+.metricCard {
+    border-radius: 8px;
+    background: #fbfbfd;
+    padding: 16px;
+    flex: 1;
+    min-width: 0;
+    border: none !important;
+}
+
+.metricCard :global(.ant-card-bordered) {
+    border: none !important;
+}
+
+.metricCard :global(.ant-card-body) {
+    padding: 0;
+}
+
+.metricContent {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.metricLabel {
+    font-family: PingFang SC;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/Secondary */
+    /* 样式描述：三级 */
+    color: #7c7f9a;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+}
+
+.metricValue {
+    font-family: AlibabaSans102;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    /* Text/Main */
+    /* 样式描述：一级 */
+    color: #1d1e29;
+}

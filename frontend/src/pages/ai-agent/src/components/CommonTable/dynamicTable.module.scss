@@ -1,0 +1,230 @@
+.agentCommonTable {
+
+  &+& {
+    margin-top: 30px;
+  }
+
+  &.hasFooter {
+    :global {
+      .ant-table {
+        .ant-table-body {
+          border-bottom: none;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+
+  :global {
+    .ant-table {
+      font-size: 13px;
+      // border: 1px solid #F3F3F6;
+
+      // &.ant-table-container:not(:has(.ant-table-footer)) {
+      //   border-bottom: none;
+      // }
+
+      .ant-table-header {
+        border: 1px solid #F3F3F6;
+        border-bottom: none;
+        border-radius: 8px 8px 0 0;
+      }
+
+      .ant-table-body {
+        border: 1px solid #F3F3F6;
+        border-top: none;
+        border-radius: 0 0 8px 8px;
+      }
+
+      .ant-table-thead>tr {
+        border-bottom: 1px solid #F3F3F6;
+        height: 44px !important;
+      }
+
+      .ant-table-thead>tr>th {
+        background: #FBFBFD;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: normal;
+        color: #1D1E29;
+        padding: 0 12px !important;
+        box-sizing: border-box !important;
+        border-bottom: 1px solid #F3F3F6 !important;
+
+        // &::after,
+        &::before {
+          display: none !important;
+        }
+      }
+
+      .ant-table-tbody>tr>td {
+        background: #FFFFFF;
+        border-bottom: 1px solid #F3F3F6;
+        padding: 0;
+      }
+
+      .ant-table-tbody>tr:last-child>td {
+        border-bottom: none;
+      }
+
+      .ant-table-tbody>tr:hover>td {
+        background: #FFFFFF !important;
+      }
+
+      .ant-table-footer {
+        background: #FFFFFF;
+        padding: 0;
+      }
+    }
+
+    // 复选框列宽度和间距设置
+    .ant-table-selection-column {
+      padding: 0 12px !important;
+      // animation: fadeInColumn 0.3s ease-in-out;
+    }
+
+    // // 复选框列渐入动画
+    // @keyframes fadeInColumn {
+    //   from {
+    //     opacity: 0;
+    //     transform: translateX(-10px);
+    //   }
+    //   to {
+    //     opacity: 1;
+    //     transform: translateX(0);
+    //   }
+    // }
+
+    // 自定义复选框选中状态样式
+    .ant-checkbox-wrapper {
+      .ant-checkbox-checked {
+        .ant-checkbox-inner {
+          border-radius: 4px;
+          background: #6150FF !important;
+          border-color: #6150FF !important;
+
+          // 隐藏默认的勾号
+          &::after {
+            display: none;
+          }
+        }
+
+        // 使用自定义 CheckMarkIcon SVG
+        .ant-checkbox-inner::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 12px;
+          height: 12px;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' version='1.1' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M10.854,2.97L10.51,2.64C10.315,2.453,9.9996,2.453,9.8052,2.64L4.5755,7.669L2.2024,5.393C2.0079,5.206,1.6926,5.206,1.4981,5.393L1.1459,5.731C0.9514,5.917,0.9514,6.22,1.1459,6.406L4.225,9.36C4.4195,9.547,4.7349,9.547,4.9294,9.36L5.2816,9.022C5.3097,8.995,5.3338,8.966,5.3538,8.935L10.8546,3.645C11.0487,3.459,11.0485,3.156,10.854,2.97Z' fill='%23FFFFFF' fill-opacity='1'/%3E%3C/svg%3E");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+
+      .ant-checkbox-inner {
+        border-radius: 4px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    // 模拟 disabled 效果的复选框样式
+    .checkbox-disabled-style {
+      .ant-checkbox-inner {
+        background-color: #E7E8EE !important;
+        border-color: transparent !important;
+      }
+
+      .ant-checkbox-input {
+        cursor: not-allowed !important;
+      }
+
+      opacity: 0.6;
+      cursor: not-allowed !important;
+    }
+  }
+
+
+  .tableTitle {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #1B1C1D;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 14px;
+
+    &::before {
+      position: absolute;
+      background: #6E50FF;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      content: " ";
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+
+  .headerHoverText {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    // span {
+    //   font-size: 14px;
+    //   font-weight: 500;
+    //   line-height: 20px;
+    //   color: #1D1E29;
+    // }
+
+    .infoIcon {
+      color: #BBBDCA;
+      cursor: pointer;
+    }
+  }
+
+  .tableFooter {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: #7C7F9A;
+    padding-bottom: 20px;
+    display: flex;
+    border: 1px solid #F3F3F6;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    align-items: center;
+    justify-content: center;
+
+    .rightArrowIcon {
+      width: 12px;
+      height: 12px;
+      margin-left: 4px;
+      color: #7B7B8D;
+    }
+
+    .foldMask {
+      cursor: default;
+      width: 100%;
+      position: absolute;
+      top: -100px;
+      left: 0;
+      height: 100px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+    }
+  }
+}

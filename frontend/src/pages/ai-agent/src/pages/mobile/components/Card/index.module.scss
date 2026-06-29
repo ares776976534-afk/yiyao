@@ -1,0 +1,31 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+  padding: 16rpx;
+  border-radius: 12rpx;
+  background: var(--fill-white);
+  box-sizing: border-box;
+  border: 1rpx solid var(--border-secondary);
+}
+
+.cardContent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 6rpx;
+}
+
+.cardTitle {
+  font-family: PingFang SC;
+  font-size: 14rpx;
+  font-weight: 500;
+  line-height: 20rpx;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}

@@ -1,0 +1,27 @@
+.next-drawer {
+  overflow-y: visible;
+  overflow-x: visible;
+}
+
+.next-drawer-close {
+  font-size: 18px;
+}
+
+.next-drawer-close .next-drawer-close-icon.next-icon:before {
+  font-size: 18px;
+}
+
+.chain-ui-drawer-title {
+
+  .chain-ui-drawer-title-block {
+    position: absolute;
+    top: 0;
+    left: -80px;
+    width: 60px;
+    height: 66px;
+    background: url('https://img.alicdn.com/imgextra/i2/O1CN01dyvzNA2780suXMQ8w_!!6000000007751-2-tps-120-138.png') no-repeat center center;
+    background-size: 100% auto;
+    z-index: 99;
+    cursor: pointer;
+  }
+}

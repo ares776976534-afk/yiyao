@@ -1,0 +1,20 @@
+.next-table {
+  table tr td:first-child {
+    vertical-align: middle;
+  }
+
+  td {
+    vertical-align: top;
+    .next-table-cell-wrapper {
+      padding: 16px;
+    }
+  }
+
+  th {
+    .next-table-cell-wrapper {
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+    }
+  }
+}

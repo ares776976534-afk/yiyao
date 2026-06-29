@@ -1,0 +1,80 @@
+.factoryTag {
+  display: flex;
+  padding: 1px 3px;
+  border-radius: 2px;
+  background: #F7F7FA;
+  font-family: Alibaba PuHuiTi 3.0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.05em;
+  color: #7C7F9A;
+}
+
+.sourcefactoryTag {
+  padding: 1px 3px;
+  border-radius: 2px;
+  background: #E7FCED;
+  font-family: Alibaba PuHuiTi 3.0;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+  color: #21A84A;
+
+}
+
+.superfactoryBadge {
+  padding: 1px 3px;
+  border-radius: 2px;
+  background: linear-gradient(114deg, #1A006B 4%, #12014C 28%, #020218 87%);
+  display: flex;
+
+  .superfactoryIcon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .text {
+    font-family: Alibaba PuHuiTi 3.0;
+    margin-left: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 14px;
+    letter-spacing: -0.05em;
+    background: linear-gradient(120deg, #FEEDD4 -5%, #EACBA9 101%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+  }
+}
+
+
+.powerfactoryBadge {
+  padding: 1px 3px;
+  border-radius: 2px;
+  background: linear-gradient(0deg, #FF1C2A, #FF1C2A), #FFFFFF;
+  display: flex;
+
+  .powerfactoryIcon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .text {
+    font-family: Alibaba PuHuiTi 3.0;
+    margin-left: 2px;
+    font-size: 12px;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 14px;
+    letter-spacing: -0.05em;
+    // background: linear-gradient(120deg, #FEEDD4 -5%, #EACBA9 101%);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // background-clip: text;
+    // text-fill-color: transparent;
+
+  }
+}

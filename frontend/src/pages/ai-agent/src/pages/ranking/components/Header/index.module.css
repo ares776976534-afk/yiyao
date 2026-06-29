@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  z-index: 98;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.headerScrolled {
+  background: rgba(0, 0, 0, 0.73);
+  backdrop-filter: blur(40px);
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: var(--text-white);
+  cursor: pointer;
+}
+
+.headerLeftIcon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  gap: 10px;
+  z-index: 0;
+  border-radius: 6px;
+}
+
+.header :global(.languageSettingsLoginButton) {
+  background: var(--fill-white) !important;
+  color: #1B1C1D !important;
+  border: none !important;
+  border-radius: 8px;
+}
+
+.header :global(.languageSettingsLoginButton):hover {
+  background: #F3F3F6 !important;
+}

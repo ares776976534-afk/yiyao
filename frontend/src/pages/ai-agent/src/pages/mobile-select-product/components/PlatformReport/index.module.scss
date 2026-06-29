@@ -1,0 +1,287 @@
+.platformReportContainer {
+
+  .platformReportBubble {
+    border-radius: 16rpx;
+    background: #FBFBFD;
+    box-sizing: border-box;
+    display: flex;
+    padding: 14rpx 16rpx;
+    gap: 8rpx;
+    border: 1px solid #EEEFFE;
+  }
+
+  .platformReportBubbleTitle {
+    font-family: PingFang SC;
+    font-size: 13rpx;
+    font-weight: normal;
+    line-height: 18rpx;
+    letter-spacing: normal;
+    color: #1B1C1D;
+  }
+
+  .platformReportBubbleSubTitle {
+    font-family: PingFang SC;
+    font-size: 13rpx;
+    font-weight: normal;
+    line-height: 18rpx;
+    letter-spacing: normal;
+    color: #7C7F9A;
+  }
+
+
+  .sectionHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: fit-content;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 0 0 0 4rpx;
+    align-items: center;
+    min-height: 20rpx;
+    margin-top: 20rpx;
+    margin-bottom: 12rpx;
+  }
+
+  .indicator {
+    border-radius: 1rpx;
+    background: #6E50FF;
+    width: 4rpx;
+    height: 12rpx;
+    // margin-left: 4rpx;
+    margin-right: 8rpx;
+  }
+
+  .sectionTitle {
+    font-family: PingFang SC;
+    font-size: 18rpx;
+    font-weight: 500;
+    line-height: 20rpx;
+    color: #1B1C1D;
+    white-space: nowrap;
+  }
+
+
+  .platformReportSummary {
+    padding: 14rpx 16rpx;
+    border-radius: 16rpx;
+    background: #FBFBFD;
+    overflow: hidden;
+  }
+
+  .platformReportSummary+.platformReportSummary {
+    margin-top: 12rpx;
+  }
+
+  .platformReportSummaryWapper {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+  }
+
+
+  .platformReportSummaryTitle {
+    font-family: PingFang SC;
+    font-size: 14rpx;
+    font-weight: 500;
+    line-height: 20rpx;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  .platformReportSummaryItem {}
+
+  .platformReportSummaryItemLabel {
+    font-family: PingFang SC;
+    font-size: 13rpx;
+    font-weight: normal;
+    line-height: 15rpx;
+    letter-spacing: normal;
+    color: #7C7F9A;
+  }
+
+  .platformReportSummaryItemValue {
+    margin-top: 4rpx;
+    font-family: PingFang SC;
+    font-size: 18rpx;
+    font-weight: 500;
+    line-height: 20rpx;
+    letter-spacing: normal;
+    color: #1B1C1D;
+  }
+
+  .platformReportSummaryItemList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 12rpx;
+  }
+
+
+  .platformReportAiSummaryList {}
+
+  .platformReportAiSummaryItem+.platformReportAiSummaryItem {
+    margin-top: 20rpx;
+  }
+
+  .platformReportAiSummaryTitle {
+    margin-bottom: 12rpx;
+    font-family: PingFang SC;
+    font-size: 14rpx;
+    font-weight: 500;
+    line-height: 18rpx;
+    letter-spacing: normal;
+    color: #1B1C1D;
+    width: max-content;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: " ";
+      width: 100%;
+      height: 8rpx;
+      bottom: -2rpx;
+      left: 0;
+      z-index: 1;
+      background: rgba(83, 99, 245, 0.16);
+    }
+
+  }
+
+  .platformReportAiSummaryItemContent {
+    border-radius: 8rpx;
+    box-sizing: border-box;
+    border: 1px solid #F3F3F6;
+    overflow: hidden;
+  }
+
+  .offerInfo {
+    padding: 16rpx;
+    background: #FBFBFD;
+  }
+
+  .offerInfoCard {
+    display: flex;
+    gap: 12px;
+  }
+
+  .offerInfoCardImage {
+    width: 60rpx;
+    height: 60rpx;
+    flex-shrink: 0;
+    border-radius: 4rpx;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+
+  .offerInfoCardContent {
+    flex-shrink: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .offerInfoCardTitle {
+    font-family: PingFang SC;
+    font-size: 13rpx;
+    font-weight: normal;
+    line-height: 15rpx;
+    letter-spacing: normal;
+    color: #1B1C1D;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .offerInfoCardTime {
+    font-family: PingFang SC;
+    font-size: 13rpx;
+    font-weight: normal;
+    line-height: 20rpx;
+    letter-spacing: normal;
+    color: #7C7F9A;
+    margin-top: 12rpx;
+  }
+
+  .offerSubInfo {
+    margin-top: 12rpx;
+    padding-top: 12rpx;
+    border-top: 1px solid #EEEFFE;
+    display: flex;
+    gap: 8rpx;
+    flex-direction: column;
+  }
+
+  .offerSubInfoLabel {
+    font-family: PingFang SC;
+    font-size: 13rpx;
+    font-weight: normal;
+    line-height: 15rpx;
+    letter-spacing: normal;
+    color: #7C7F9A;
+  }
+
+  .offerSubInfoLabelScore {
+    font-family: Alibaba Sans 102;
+    font-size: 20rpx;
+    font-weight: bold;
+    line-height: 20rpx;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.87);
+    margin-left: 8rpx;
+    margin-right: 2rpx;
+  }
+
+  .platformReportAiSummaryItemContentInfo {
+    padding: 16rpx;
+    overflow: hidden;
+  }
+
+  .platformReportAiSummaryItemContentTitle {
+    font-family: PingFang SC;
+    font-size: 14rpx;
+    font-weight: 500;
+    line-height: 18rpx;
+    letter-spacing: normal;
+    color: #1B1C1D;
+    margin-bottom: 8rpx;
+    padding-left: 14rpx;
+    position: relative;
+
+    &::before {
+      content: " ";
+      display: block;
+      width: 6rpx;
+      height: 6rpx;
+      border-radius: 50%;
+      background: #6E50FF;
+      position: absolute;
+      left: 0;
+      top: 6rpx;
+    }
+  }
+
+  .platformReportAiSummaryItemContentInfoCategory {
+    font-family: PingFang SC;
+    font-size: 13rpx;
+    font-weight: normal;
+    line-height: 22rpx;
+    letter-spacing: normal;
+    color: #7C7F9A;
+    margin-bottom: 8rpx;
+  }
+
+  .offerSubInfoList {
+    padding: 16rpx;
+
+    .platformReportSummaryItemList {
+      margin-top: 16rpx;
+    }
+  }
+
+}

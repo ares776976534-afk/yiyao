@@ -1,0 +1,16 @@
+export const fullDialogStyle = {
+  '--dialog-content-padding-top': '20px',
+  '--dialog-content-padding-left': '20px',
+  '--dialog-content-padding-right': '20px',
+  '--dialog-content-padding-bottom': '20px',
+  '--dialog-title-font-size': '16px',
+  lineHeight: '19px',
+  '--dialog-title-font-weight': '500',
+  '--dialog-close-size': '20px',
+  '--dialog-title-padding-top': '20px',
+  '--dialog-title-padding-left-right': '20px',
+  '--dialog-close-top': '20px',
+  '--dialog-close-right': '20px',
+  width: '640px',
+  borderRadius: '12px',
+};

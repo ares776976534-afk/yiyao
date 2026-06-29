@@ -1,0 +1,104 @@
+.colorfulCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 16px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid #EEEFFE;
+    position: relative;
+    overflow: hidden;
+
+    margin-bottom: 48px;
+    scroll-margin-top: 150px;
+}
+
+.colorfulCard__bg {
+    /* 自动布局子元素 */
+    width: 325px;
+    height: 47px;
+    background: #BF8CFF;
+    filter: blur(30px);
+    position: absolute;
+    top: -70px;
+    left: 9px;
+}
+
+
+.colorfulCard__title {
+    /* 使用统一的字体系统 */
+    font-size: var(--dt-typography-fontSize-lg);
+    font-weight: var(--dt-typography-fontWeight-medium);
+    line-height: var(--dt-typography-lineHeight-normal);
+    letter-spacing: normal;
+    /* 使用统一的文字颜色 */
+    color: var(--icon-primary);
+}
+
+.colorfulCard__item {
+    margin-top: var(--dt-spacing-3);
+    display: flex;
+    gap: var(--dt-spacing-1-5);
+    flex-wrap: wrap;
+}
+
+.bmBtn {
+    display: flex;
+}
+
+.item_btn {
+    display: flex;
+    flex-direction: column;
+    padding: var(--dt-spacing-1) var(--dt-spacing-2);
+    z-index: 3;
+    /* 使用统一的圆角系统 */
+    border-radius: var(--dt-borderRadius-sm);
+    /* 使用统一的背景色 */
+    background: #fbfbfc;
+    /* 使用统一的字体系统 */
+    font-size: var(--dt-typography-fontSize-base);
+    font-weight: var(--dt-typography-fontWeight-normal);
+    line-height: var(--dt-typography-lineHeight-normal);
+    letter-spacing: normal;
+    /* 使用统一的次要文字颜色 */
+    color: var(--text-tertiary);
+    /* 添加过渡效果 */
+    transition: background-color var(--dt-transitions-duration-normal) var(--dt-transitions-easing-easeInOut);
+}
+
+/* 添加hover效果 */
+.item_btn:hover {
+    background: var(--fill-primary);
+}
+
+.colorfulCard__bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.colorfulCard__content {
+    display: flex;
+    flex-flow: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.colorfulCard__icon {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    letter-spacing: normal;
+    color: var(--icon-tertiary);
+    width: 182px;
+}
+
+.colorfulCard__iconText {
+    flex: 1;
+}

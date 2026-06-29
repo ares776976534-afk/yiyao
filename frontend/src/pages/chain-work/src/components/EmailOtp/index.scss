@@ -1,0 +1,19 @@
+.emailotp-dialog {
+  .emailotp-dialog-code-input {
+    .next-input.next-medium {
+      width: 40px;
+      height: 40px;
+    }
+
+    .next-input.next-medium input {
+      text-align: center;
+      font-size: 19px;
+      color: #333;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

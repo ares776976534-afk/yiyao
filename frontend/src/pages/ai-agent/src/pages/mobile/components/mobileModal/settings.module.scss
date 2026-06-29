@@ -1,0 +1,33 @@
+.settingsLanguage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8rpx;
+  .settingsLanguageLabel {
+    font-size: 14rpx;
+    font-weight: normal;
+    line-height: 20rpx;
+    letter-spacing: normal;
+    color: var(--text-primary);
+  }
+  .settingsLanguageValue {
+    width: 240rpx;
+    height: 36rpx;
+    display: flex;
+    align-items: center;
+    padding: 8rpx 12rpx;
+    gap: 6rpx;
+    border-radius: 8rpx;
+    background: var(--fill-white);
+    box-sizing: border-box;
+    border: 1rpx solid var(--border-primary);
+    justify-content: space-between;
+    .settingsLanguageValueText {
+      font-size: 14rpx;
+      font-weight: normal;
+      line-height: 20rpx;
+      letter-spacing: normal;
+      color: var(--text-primary);
+    }
+  }
+}

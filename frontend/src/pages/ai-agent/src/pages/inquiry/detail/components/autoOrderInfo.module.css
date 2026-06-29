@@ -1,0 +1,236 @@
+.autoOrderInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.headerTitleContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.headerTitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #1d2129;
+}
+
+.headerDescription {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--icon-primary);
+}
+
+.autoOrderTable :global(.ant-table-tbody > tr > td) {
+    border-inline-end: 1px solid #f0f0f0;
+    vertical-align: top;
+}
+
+.autoOrderTable :global(.ant-table-tbody > tr > td:last-child) {
+    border-inline-end: none;
+    vertical-align: middle;
+}
+
+
+/* schema样式 */
+.titleContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+}
+
+.titleSeparator {
+    border: 0.5px solid #E7E8EE;
+    width: 10px;
+    height: 0px;
+    transform: rotate(90deg);
+}
+
+.sellerInfo {
+    display: flex;
+    gap: 24px;
+}
+
+.sellerInfoItem {
+    display: flex;
+    gap: 8px;
+    width: 360px;
+}
+
+.sellerInfoItemImg {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.sellerInfoItemContent {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sellerInfoItemContentTitle {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--icon-primary);
+    /* 两行展示超出隐藏 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+}
+
+.sellerInfoItemContentSkuInfo {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+}
+
+.sellerInfoItemContentTime {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #22AC60;
+}
+
+.cardInfo{
+    display: flex;
+    gap: 24px;
+    flex: 1;
+}
+
+.cardItem{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.cardTitle {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/次要 color-text-2 */
+    color: var(--text-tertiary);
+}
+
+.cardValue {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/主要 color-text-1 */
+    color: var(--icon-primary);
+}
+
+.supplierInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.supplierInfoTitle {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/次要 color-text-2 */
+    color: var(--text-tertiary);
+}
+
+.supplierInfoValue {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/主要 color-text-1 */
+    color: var(--icon-primary);
+}
+
+/* action列按钮居中 */
+.actionColumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emptyState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0px 36px 0px;
+    border-radius: 8px;
+    /* Fill/白色 color-fill-3 */
+    background: var(--fill-white);
+    box-sizing: border-box;
+    /* Border/浅色 color-border-2 */
+    /* 样式描述：表格描边色 */
+    border: 1px solid var(--border-secondary);
+}
+
+.emptyContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.emptyImg {
+    width: 100px;
+    height: 100px;
+}
+
+.emptyText {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/次要 color-text-2 */
+    color: var(--text-tertiary);
+}
+
+.messageContact {
+    display: flex;
+    justify-content: center;
+}
+
+.messageContact :global(.ant-message-notice-content) {
+    background: rgba(0, 0, 0, 0.6) !important;
+    backdrop-filter: blur(30px) !important;
+    color: #fff !important;
+    display: inline-block !important;
+    padding: 10px 12px !important;
+    gap: 8px !important;
+    border-radius: 12px !important;
+}

@@ -1,0 +1,23 @@
+.failureDialog {
+  width: 360px;
+  .next-dialog-body {
+    padding-bottom: 4px;
+  }
+}
+
+.failureDialog-title {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  .failureDialog-title-icon {
+    color: #f33;
+    margin-right: 10px;
+  }
+}
+.failureDialog-footer {
+  text-align: center;
+}
+.failureDialog-content {
+  font-size: 13px;
+  color: #666;
+}

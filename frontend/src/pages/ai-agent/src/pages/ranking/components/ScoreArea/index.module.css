@@ -1,0 +1,118 @@
+.scoreArea {
+  overflow: hidden;
+  width: 60px;
+  height: 48px;
+  position: relative;
+  z-index: 0;
+}
+
+.scoreBg {
+  width: 60px;
+  height: 48px;
+}
+
+.scoreContent {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 60px;
+  height: 48px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px 0px 0px 0px;
+  box-sizing: border-box;
+}
+
+.scoreContentTitle {
+  font-family: AlibabaSans102;
+  font-size: 9px;
+  font-weight: normal;
+  line-height: 10px;
+  text-align: center;
+  letter-spacing: normal;
+  color: #D9833D;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  width: 100%;
+}
+
+.scoreRow {
+  width: 60px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.scoreNumber {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #D15700;
+  font-family: AlibabaSans102-Medium;
+  white-space: nowrap;
+  min-width: 24px;
+  display: inline-block;
+  margin-left: 2px;
+}
+
+
+.popoverRoot:global(.ant-popover-arrow) {
+  top: 1px !important;
+}
+
+.popoverRoot {
+  width: 320px;
+  border-radius: 16px;
+  background: var(--fill-white);
+  border: 1px solid var(--border-secondary);
+}
+
+.popoverRoot:global(.ant-popover-inner) {
+  padding: 0;
+}
+
+.popoverRoot:global(.ant-popover .ant-popover-inner) {
+  border-radius: 16px;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.04);
+}
+
+.popoverContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+}
+
+.popoverContentTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.popoverContentTitleText {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.popoverContentTitleTextDesc {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: #7C7F9A;
+  color: var(--text-secondary);
+}
+
+.scoreRowIcon {
+  margin-top: 2px;
+}

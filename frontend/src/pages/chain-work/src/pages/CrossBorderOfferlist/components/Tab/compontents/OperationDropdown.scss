@@ -1,0 +1,26 @@
+.custom-balloon-tip {
+  width: 320px;
+  color: #fff;
+  z-index: 999!important;
+  .next-balloon {
+    max-width: 320px !important;
+  }
+
+  .next-balloon-title.next-balloon-closable {
+    padding: 0 !important;
+  }
+
+
+  .next-balloon-close {
+    top: 0 !important;
+    color: #fff;
+  }
+  .next-balloon-close i:hover {
+    top: 0 !important;
+    color: #fff;
+  }
+}
+
+.custom-balloon-tip::after {
+  background-color: #07f!important;
+}

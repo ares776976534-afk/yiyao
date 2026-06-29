@@ -1,0 +1,228 @@
+.inquiryRequirement {
+  width: 334px;
+  border-radius: 16px;
+  /* background: linear-gradient(180deg, #6E50FF -460%, rgba(255, 255, 255, 0) 76%), #fff; */
+  background: #fff;
+  box-sizing: border-box;
+  border: 1px solid #eeeffe;
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: content-box;
+  /* transition: border-color 0.2s; */
+}
+
+/* .inquiryRequirement:hover {
+  border: 1px solid #6150FF;
+} */
+
+.inquiryRequirement.active {
+  /* border: 1px solid #6150FF; */
+}
+
+.inquiryRequirementNotHover:hover {
+  /* border: none!important; */
+  border: 1px solid #eeeffe!important;
+}
+
+.cardContent {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px 20px 16px;
+  gap: 24px;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.notFinishedCardContent {
+  justify-content: flex-start;
+}
+
+.leftContent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.notFinishedLeftContent {
+  /* align-items: flex-start; */
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  /* Text/Primary */
+  /* 样式描述：主要文字 */
+  color: #1B1C1D;
+  display: flex;
+  align-items: center;
+}
+
+.titleInquiryProgressIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+.titleInquiryRequirementIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+.titleWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.viewDetailsBtn {
+  margin-top: 24px;
+  /* 自动布局子元素 */
+  width: 96px;
+  height: 36px;
+  /* 8px */
+  /* 样式描述：普通按钮, 输入框, 表格 */
+  border-radius: 8px;
+  /* Button/Disable */
+  background: #fff;
+  /* Border/Primary */
+  border: 1px solid #E7E8EE;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: normal;
+  /* Text/Secondary */
+  /* 样式描述：三级 */
+  color: #4D4D5F;
+}
+
+/* .viewDetailsBtn:hover {
+  background: #fff !important;
+  border-color: #E7E8EE !important;
+  color: #4D4D5F !important;
+  opacity: 0.85;
+} */
+
+
+.fillViewDetailsBtn {
+  margin-top: 24px;
+  /* 自动布局子元素 */
+  width: 96px;
+  height: 36px;
+  /* 8px */
+  /* 样式描述：普通按钮, 输入框, 表格 */
+  border-radius: 8px;
+  /* Button/Disable */
+  background: #6E50FF;
+  border: none;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: normal;
+  /* Text/Secondary */
+  /* 样式描述：三级 */
+  color: #fff;
+}
+
+/* .fillViewDetailsBtn:hover {
+  background: #6E50FF !important;
+  border-color: transparent !important;
+  color: #fff !important;
+  opacity: 0.85;
+} */
+
+.viewIngDetailsBtn {
+  margin-top: 24px;
+  /* 自动布局子元素 */
+  width: 96px;
+  height: 36px;
+  /* 8px */
+  /* 样式描述：普通按钮, 输入框, 表格 */
+  border-radius: 8px;
+  /* Button/Disable */
+  background: #E7E8EE;
+  border: none;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: normal;
+  /* Text/Secondary */
+  /* 样式描述：三级 */
+  color: #7C7F9A;
+}
+
+.viewIngDetailsBtn:hover {
+  background: #E7E8EE !important;
+  border-color: transparent !important;
+  color: #7C7F9A !important;
+  /* opacity: 0.85; */
+}
+
+.titleText {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #1B1C1D;
+}
+
+.imageContainer {
+  position: absolute;
+  bottom: 0;
+  right: 14px;
+  width: 160px;
+  height: 84px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 12px; */
+}
+
+.avatarOverlay {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 72px;
+  height: 72px;
+  border: 2px solid #fff;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.stopImgContent {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  bottom: 16px;
+  z-index: 99;
+}
+
+.stopImgContent:hover {
+  background: var(--fill-primary);
+}
+
+.stopImg {
+  width: 24px;
+  height: 24px;
+}

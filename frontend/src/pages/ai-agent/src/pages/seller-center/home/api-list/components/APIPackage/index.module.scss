@@ -1,0 +1,433 @@
+@import '../../../responsive.scss';
+// 变量定义
+$primary-color: #5262F4;
+$primary-light: #5262F41A;
+$price-color: #FF4000;
+$text-primary: #1D2129;
+$text-secondary: #7B7B8D;
+$text-tertiary: #7B7B8D;
+$text-dark: #1D2129;
+$border-light: #0000000F;
+$shadow-light: #00000026;
+$button-shadow: #BEC4FFA1;
+
+// 混合器
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin card-base {
+  border-radius: vw-1500(25);
+  background: #FFFFFF;
+  box-shadow: inset 0 0 0 1px $shadow-light;
+  width: vw-1500(430);
+  height: vw-1500(456);
+}
+
+@mixin button-base {
+  border-radius: vw-1500(6);
+  @include flex-center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  padding: vw-1500(32) vw-1500(120);
+  overflow: hidden;
+  width: vw-1500(351);
+  height: vw-1500(64);
+  cursor: pointer;
+
+  span {
+    font-size: vw-1500(19);
+    font-weight: 500;
+    line-height: vw-1500(22);
+    white-space: nowrap;
+  }
+}
+
+.mainSection {
+  width: 100%;
+  position: relative;
+  @include flex-column;
+  align-items: center;
+  z-index: 0;
+}
+
+.headerSection {
+  @include flex-column;
+  flex-wrap: nowrap;
+  gap: vw-1500(12);
+  align-items: center;
+  width: vw-1500(399);
+  height: vw-1500(80);
+  z-index: 2;
+  top: vw-1500(185);
+  left: vw-1500(561);
+}
+
+.titleWrapper {
+  @include flex-column;
+  flex-wrap: nowrap;
+}
+
+.mainTitle {
+  font-size: vw-1500(48);
+  font-weight: 500;
+  line-height: vw-1500(48);
+  color: $text-primary;
+  font-family: AlibabaSans102;
+  white-space: nowrap;
+  color: #1D2129;
+
+}
+
+.subtitle {
+  font-size: vw-1500(18);
+  line-height: vw-1500(28);
+  color: $text-secondary;
+  white-space: nowrap;
+  color: #1D2129;
+
+}
+
+.basicCard {
+  @include card-base;
+  z-index: 3;
+}
+
+.cardContent {
+  width: vw-1500(351);
+  height: vw-1500(300);
+  @include flex-column;
+  margin-left: vw-1500(39);
+  margin-top: vw-1500(64);
+}
+
+.cardHeader {
+  width: vw-1500(351);
+  height: vw-1500(79);
+  @include flex-column;
+}
+
+.cardTitle {
+  font-size: vw-1500(25);
+  font-weight: 700;
+  line-height: vw-1500(78);
+  color: #000000;
+  white-space: nowrap;
+}
+
+.divider {
+  border: 1px solid $border-light;
+  width: vw-1500(351);
+  height: 0px;
+  margin-top: vw-1500(1);
+}
+
+.priceSection {
+  width: vw-1500(150);
+  height: vw-1500(79);
+  display: flex;
+  flex-direction: row;
+  margin-top: vw-1500(10);
+}
+
+.priceWrapper {
+  width: vw-1500(124);
+  height: vw-1500(79);
+  display: flex;
+  flex-direction: row;
+}
+
+.currencySymbol {
+  width: vw-1500(22);
+  height: vw-1500(24);
+  margin-top: vw-1500(43);
+
+  span {
+    font-size: vw-1500(22);
+    line-height: vw-1500(24);
+    color: $price-color;
+    font-family: AlibabaSans102;
+    white-space: nowrap;
+  }
+}
+
+.price {
+  font-size: vw-1500(63);
+  line-height: vw-1500(78);
+  color: $price-color;
+  font-family: AlibabaSans102;
+  white-space: nowrap;
+  margin-left: 0px;
+}
+
+.period {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: vw-1500(16);
+  color: #0000004D;
+  white-space: nowrap;
+  margin-left: vw-1500(8);
+  margin-top: vw-1500(51);
+}
+
+.pointsSection {
+  width: vw-1500(327);
+  height: vw-1500(118);
+  @include flex-column;
+  margin-top: vw-1500(14);
+}
+
+.pointsText {
+  display: flex;
+  align-items: baseline;
+}
+
+.pointsNumber {
+  font-size: 16px;
+  line-height: vw-1500(32);
+  color: $text-dark;
+  font-family: AlibabaSans102;
+  white-space: nowrap;
+}
+
+.pointsUnit {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: vw-1500(32);
+  color: $text-dark;
+  font-family: AlibabaSans102;
+  white-space: nowrap;
+}
+
+.pointsRate {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: vw-1500(32);
+  color: $text-tertiary;
+  font-family: AlibabaSans102;
+  white-space: nowrap;
+  margin-left: vw-1500(3);
+}
+
+.featureItem {
+  width: vw-1500(327);
+  height: vw-1500(26);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: vw-1500(35);
+
+  &:last-of-type {
+    margin-top: vw-1500(0);
+  }
+}
+
+.checkIcon {
+  width: vw-1500(18);
+  height: vw-1500(18);
+}
+
+.featureText {
+  width: vw-1500(283);
+  height: vw-1500(26);
+  margin-left: vw-1500(26);
+}
+
+.purchaseButton {
+  @include button-base;
+  background: $primary-color;
+  box-shadow: inset 0 0 0 1px $button-shadow;
+  margin-left: vw-1500(33);
+  margin-top: vw-1500(37);
+
+  span {
+    color: #FFFFFF;
+  }
+}
+
+.premiumCard {
+  @include card-base;
+  z-index: 4;
+}
+
+.premiumCardContent {
+  width: vw-1500(351);
+  height: vw-1500(214);
+  @include flex-column;
+  z-index: 1;
+}
+
+.premiumPointsSection {
+  width: vw-1500(242);
+  height: vw-1500(32);
+  @include flex-column;
+  justify-content: center;
+  margin-top: vw-1500(14);
+  z-index: 0;
+}
+
+.premiumPointsRate {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: vw-1500(32);
+  color: $text-tertiary;
+  font-family: AlibabaSans102;
+  white-space: nowrap;
+  z-index: 2;
+  top: 0px;
+  right: 0px;
+}
+
+.premiumFeatureItem {
+  width: vw-1500(327);
+  height: vw-1500(26);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 2;
+}
+
+.premiumFeatureItem2 {
+  width: vw-1500(327);
+  height: vw-1500(26);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 3;
+}
+
+.premiumPurchaseButton {
+  @include button-base;
+  background: $primary-color;
+  box-shadow: inset 0 0 0 1px $button-shadow;
+  z-index: 4;
+
+  span {
+    color: #FFFFFF;
+  }
+}
+
+.customCard {
+  @include card-base;
+  z-index: 5;
+  right: vw-1500(493);
+}
+
+.customCardHeader {
+  width: vw-1500(351);
+  height: vw-1500(78);
+  @include flex-column;
+  margin-left: vw-1500(39);
+  margin-top: vw-1500(22);
+}
+
+.customCardContent {
+  width: vw-1500(351);
+  height: vw-1500(284);
+  @include flex-column;
+  margin-left: vw-1500(33);
+  margin-top: vw-1500(38);
+}
+
+.customDescription {
+  font-size: 16px;
+  line-height: vw-1500(32);
+  color: $text-dark;
+  font-family: AlibabaSans102;
+  white-space: nowrap;
+}
+
+.customFeatureItem {
+  width: vw-1500(327);
+  height: vw-1500(26);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: vw-1500(38);
+
+  &:not(:first-of-type) {
+    margin-top: 0px;
+  }
+}
+
+.consultButton {
+  border-radius: vw-1500(12);
+  background: $primary-light;
+  @include flex-center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  padding: vw-1500(32) vw-1500(120);
+  overflow: hidden;
+  width: vw-1500(351);
+  height: vw-1500(64);
+  margin-top: vw-1500(49);
+
+  span {
+    font-size: vw-1500(19);
+    font-weight: 500;
+    line-height: vw-1500(22);
+    color: $primary-color;
+    white-space: nowrap;
+  }
+}
+
+.explanationSection {
+  @include flex-column;
+  margin-top: vw-1500(184);
+  align-items: flex-start;
+  padding-bottom: vw-1500(122);
+}
+
+.explanationTitle {
+  font-size: vw-1500(28);
+  font-weight: 600;
+  line-height: vw-1500(48);
+  color: $text-primary;
+  font-family: AlibabaSans102;
+  white-space: nowrap;
+  color: #1D2129;
+}
+
+.explanationDescription {
+  font-size: 14px;
+  white-space: nowrap;
+  color: $text-primary;
+  margin-top: vw-1500(20);
+}
+
+
+.explanationImage {
+  width: vw-1500(1320);
+  height: vw-1500(417);
+  margin-top: vw-1500(16);
+  margin-left: vw-1500(5);
+}
+
+.cardsSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: vw-1500(31);
+  margin-top: vw-1500(41);
+  // overflow-x: auto;
+  padding: vw-1500(8);
+  // max-width: 80%;
+}
+
+.explanationContent {
+  margin-top: vw-1500(64);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: vw-1500(13);
+}

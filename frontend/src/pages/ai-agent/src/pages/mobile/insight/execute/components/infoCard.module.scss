@@ -1,0 +1,49 @@
+.infoCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 14rpx 16rpx;
+  gap: 12rpx;
+  border-radius: 16rpx;
+  background: var(--fill-secondary);
+  width: 100%;
+}
+
+.infoTitle {
+  font-family: PingFang SC;
+  font-size: 14rpx;
+  font-weight: 500;
+  line-height: 20rpx;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4rpx;
+}
+
+.infoItemLable {
+  display: flex;
+  align-items: center;
+  gap: 4rpx;
+}
+
+.infoItemText {
+  font-family: PingFang SC;
+  font-size: 13rpx;
+  font-weight: normal;
+  line-height: 15rpx;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}
+
+.infoItemValue {
+  font-family: PingFang SC;
+  font-size: 18rpx;
+  font-weight: 500;
+  line-height: 20rpx;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}

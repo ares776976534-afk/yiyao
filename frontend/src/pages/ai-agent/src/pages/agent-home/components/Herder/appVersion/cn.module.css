@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 48px;
+  font-family: FZLTHProS !important;
+  position: relative;
+}
+
+.headerContent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 43px;
+}
+
+.headerDivider {
+  width: .5px;
+  height: 12px;
+  background-color: rgba(110, 80, 255, 0.4);
+  margin: 0 16px;
+}
+
+.headerText {
+  font-family: FZLTHProS;
+  font-size: 38px;
+  font-weight: 600;
+  color: #1B1C1D;
+  white-space: nowrap;
+}
+
+.headerRightText{
+  font-family: Poppins-medium;
+  font-size: 42px;
+  font-weight: 500;
+  letter-spacing: normal;
+  background: linear-gradient(114deg, #FEA7FF -30%, #6E50FF 51%, rgba(110, 80, 255, 0.48) 69%, #6E50FF 91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  margin-left: 4px;
+}
+
+.headerBadge {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  width: 58px;
+  height: 22px;
+  transform: translateX(100%);
+}

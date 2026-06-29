@@ -1,0 +1,35 @@
+.products-business-tooltips {
+  .next-balloon-arrow-content {
+    background-color: #333 !important;
+  }
+}
+
+.dataTable .dataTable-content-page {
+  margin-top: 0;
+}
+
+.dataTable .dataTable-header {
+  border-top: 0;
+  margin-bottom: 12px !important;
+  .dataTable-header-items {
+    width: 100%;
+    .dataTable-header-left-action {
+      width: 100%;
+    }
+  }
+}
+.dataTable .products-list-content {
+  justify-content: flex-start !important;
+  column-gap: 12px !important;
+}
+
+.commonTable {
+  min-height: calc(100vh - 210px);
+  .dataTable-content {
+    min-height: calc(100vh - 302px);
+  }
+  .c-itemBlock.hasBorder {
+    padding: 0;
+    padding-top: 12px;
+  }
+}

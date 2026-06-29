@@ -1,0 +1,47 @@
+.endMissionModal :global(.ant-modal-content) {
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.endMissionModalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.endMissionModalContentTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.endMissionModalContentTitleText {
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.endMissionModalContentTitleTextDesc {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}
+
+.endMissionModalContentButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  width: 100%;
+}
+
+.stopBtn :global(.ant-btn) {
+  background: #F55353 !important;
+  color: #FFFFFF !important;
+  border: 0 !important;
+}

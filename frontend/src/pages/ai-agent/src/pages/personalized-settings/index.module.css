@@ -1,0 +1,81 @@
+.supplierLibraryLabel{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/主要 color-text-1 */
+    color: var(--icon-primary);
+}
+
+.personalizedSettings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-image: url('https://img.alicdn.com/imgextra/i2/O1CN01LZxbhZ1It9Mtuvsqn_!!6000000000950-2-tps-5792-3344.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.content {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    overflow: hidden;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    /* 自动布局 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background: var(--fill-accent);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: normal;
+    /* Text/主要 color-text-1 */
+    color: var(--icon-primary);
+}
+
+.tabs {
+    height: 692px;
+}
+
+.tabs :global(.ant-tabs-nav) {
+    margin-bottom: 20px;
+}
+
+.tabs :global(.ant-tabs-nav)::before {
+    display: none;
+}
+
+.tabs :global(.ant-tabs-content) {
+    height: 100%;
+}
+
+.tabs :global(.ant-tabs-tabpane) {
+    height: 100%;
+}
+
+:global(.ant-tabs-ink-bar-animated) {
+    /* background: #1D2129 !important; */
+    display: none;
+}

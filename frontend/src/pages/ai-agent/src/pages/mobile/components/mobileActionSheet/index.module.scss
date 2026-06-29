@@ -1,0 +1,28 @@
+.settingsActionSheet {
+  :global(.adm-action-sheet-button-item) {
+    padding: 14rpx 16rpx;
+    :global(.adm-action-sheet-button-item-name) {
+      font-size: 16rpx;
+      line-height: 20rpx;
+      font-weight: normal;
+      color: var(--text-primary);
+    }
+  }
+  :global(.adm-action-sheet-button-item-wrapper) {
+    border-bottom: 1px solid var(--border-secondary);
+  }
+}
+
+// 全局覆盖 ActionSheet 的层级，确保在 modal 之上
+:global(.adm-action-sheet-popup) {
+  z-index: 1200 !important;
+  
+  .adm-popup-body {
+    z-index: 1100 !important;
+  }
+}
+
+:global(.adm-action-sheet-popup-mask) {
+  z-index: 1099 !important;
+}
+  

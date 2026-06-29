@@ -1,0 +1,173 @@
+.cropper-container {
+  display: flex;
+  align-items: flex-end;
+
+  .cropper-selection-container {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    width: var(--cropper-search-image-width);
+    height: var(--cropper-search-image-height);
+    overflow: hidden;
+    border-radius: var(--cropper-viewer-radius);
+    cursor: pointer;
+
+    .cropper-selection-image {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      max-width: 100%;
+      max-height: 100%;
+      margin: 0 auto;
+      transform: translate(-50%, -50%);
+    }
+
+    .cropper-mask-container {
+      position: absolute;
+      margin: 0 auto;
+      max-width: 100%;
+      max-height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .cropper-image-mask {
+        position: absolute;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px 200px;
+      }
+    }
+
+    .cropper-cut-btn {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1px 6px;
+      background: #6E50FF;
+      color: #fff;
+      text-align: center;
+      border-radius: var(--cropper-cut-btn-radius) 0px 0px 0px;
+
+      .cropper-cut-icon {
+        color: #fff;
+        margin-right: 2px;
+      }
+    }
+  }
+
+  .cropper-viewer-list {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    overflow: auto hidden;
+    gap: 8px;
+
+    .cropper-viewer-item {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      overflow: hidden;
+      cursor: pointer;
+      border-radius: 4px;
+      border: 2px solid transparent;
+      flex-shrink: 0;
+      position: relative;
+
+      &.disabled {
+        cursor: not-allowed;
+        &:hover {
+          border-color: transparent;
+        }
+        &.active {
+          border-color: #6E50FF;
+          &:hover {
+            border-color: #6E50FF;
+          }
+        }
+      }
+      &:hover,
+      &.active {
+        border-color: #6E50FF;
+      }
+
+      .cropper-viewer-check-mark {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 4px;
+        background: #6E50FF;
+        border: 1.5px solid #6E50FF;
+        border-radius: 0px 0px 0px 4px;
+        width: 16px;
+        height: 16px;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .cropper-viewer-item-mask {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .cropper-viewer-item-image {
+          position: absolute;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+}
+
+.cropper-popover {
+  padding-left: 0;
+  --radius: var(--global-border-radius);
+
+  .cropper-popover-content {
+    width: calc(var(--cropper-search-image-width) * 2);
+    height: calc(var(--cropper-search-image-height) * 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cropper-popover-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    gap: 10px;
+
+    .cropper-popover-footer-confirm,
+    .cropper-popover-footer-cancel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      padding: 0 17px;
+      font-size: 16px;
+      color: #fff;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+      background-color: var(--brand-color);
+      cursor: pointer;
+    }
+
+    .cropper-popover-footer-cancel {
+      color: var(--brand-color);
+      border-color: var(--brand-color);
+      background-color: #fff;
+    }
+  }
+}

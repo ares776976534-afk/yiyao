@@ -1,0 +1,115 @@
+.qqjx-join-dialog {
+  max-width: 900px;
+  min-width: 500px;
+
+  .footer-cell {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .close {
+      margin-left: 20px;
+    }
+  }
+
+  // table
+  .table-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -12px;
+    margin-left: -12px;
+
+    .item {
+      display: flex;
+      padding: 12px;
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      margin-top: 8px;
+      margin-left: 8px;
+      position: relative;
+
+      .checkbox {
+        position: absolute;
+        top: 8px;
+        left: 12px;
+      }
+
+      img {
+        width: 56px;
+        height: 56px;
+      }
+
+      .msg {
+        margin-left: 12px;
+
+        p {
+          margin: 0;
+        }
+
+        .title {
+          font-size: 13px;
+          font-weight: normal;
+          line-height: 13px;
+          color: #333;
+          width: 152px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        .price {
+          font-size: 13px;
+          font-weight: normal;
+          line-height: 13px;
+          color: #111;
+          margin-top: 8px;
+        }
+
+        .total {
+          font-size: 13px;
+          font-weight: normal;
+          line-height: 13px;
+          color: #999;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+
+  .number-checked-total {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+
+    .checked-number {
+      margin-left: 20px;
+    }
+  }
+
+  .footer-checkbox-div {
+    margin-top: 26px;
+
+    >.next-checkbox-wrapper {
+      display: flex;
+    }
+  }
+
+  .qqjx_agreement_text_cell {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: normal;
+    color: #333;
+  }
+
+  .failDialogContentCell {
+    margin-top: -10px;
+
+    p {
+      margin: 8px 0;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.progressWrapper {
+  width: 100%;
+  display: flex;
+  border-radius: 50px;
+}
+
+.progressSegments {
+  display: flex;
+  width: 100%;
+}
+
+.segment {
+  flex-shrink: 0;
+}
+
+.segment1 {
+  /* 第一段，可能需要在左侧有圆角 */
+}
+
+.segment2 {
+  /* 第二段 */
+}
+
+.segment3 {
+  /* 第三段，在右侧有圆角 */
+}

@@ -1,0 +1,138 @@
+.filterSearch {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.filterGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 16px;
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+      gap: 6px;
+      min-width: 0;
+    }
+    .ant-form-item-label > label::after {
+      display: none;
+    }
+    .ant-form-item-label > label {
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 14px;
+    }
+    .ant-form-item-control-input-content {
+      min-width: 0;
+    }
+    .ant-select,
+    .ant-input-number {
+      width: 100%;
+    }
+    .ant-select-selector,
+    .ant-input,
+    .ant-picker,
+    .ant-input-number {
+      border-radius: 8px;
+      border-color: rgba(0, 0, 0, 0.15);
+      transition: border-color 0.2s;
+    }
+    .css-var-r0.ant-select-css-var {
+      --ant-select-hover-border-color: var(--border-accent);
+      --ant-select-active-border-color: var(--border-accent);
+    }
+    .ant-select-focused:not(.ant-select-disabled) .ant-select-selector,
+    .ant-input-number:focus,
+    .ant-input-number-focused {
+      border-color: var(--border-accent) !important;
+      box-shadow: 0 0 0 .5px var(--border-accent) !important;
+    }
+    .ant-row {
+      gap: 6px;
+    }
+  }
+}
+
+.priceItem {
+  :global(.ant-form-item-control-input-content) {
+    display: block;
+  }
+}
+
+.priceGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+
+  :global(.ant-input-number) {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+.priceSep {
+  color: rgba(0, 0, 0, 0.45);
+  flex-shrink: 0;
+}
+
+.priceInput {
+  width: 100%;
+}
+
+.snAreaItem {
+  :global {
+    .sn-area {
+      width: 100%;
+      height: 32px;
+      border-radius: var(--global-btn-radius, 8px);
+      border-color: var(--light-border-color, rgba(0, 0, 0, 0.15));
+      transition: border-color 0.2s;
+    }
+    .sn-area-face:focus-within,
+    .sn-area:hover {
+      border-color: var(--border-accent);
+    }
+    .sn-area-face-palceholder {
+      font-size: 14px !important;
+    }
+  }
+}
+
+.clearItem {
+  grid-column: 3;
+  justify-self: end;
+
+  :global(.ant-form-item-control-input-content) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.clearBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-tertiary);
+  font-size: 14px;
+  padding: 0;
+
+  &:hover {
+    background: none !important;
+  }
+}
+
+.selectDropdown {
+  :global {
+    .ant-select-item-option-active,
+    .ant-select-item-option-selected {
+      background: var(--fill-primary) !important;
+    }
+    .ant-select-item-option-selected {
+      color: var(--text-accent) !important;
+      .ant-select-item-option-state {
+        color: var(--text-accent) !important;
+      }
+    }
+  }
+}

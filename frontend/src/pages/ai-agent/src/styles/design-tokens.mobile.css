@@ -1,0 +1,74 @@
+/* 移动端设计系统 Token - 基于 375px 设计稿 */
+:root {
+  /* ==================== 间距系统 ==================== */
+
+  --dt-spacing-px: 1rpx;
+  --dt-spacing-0-5: 4rpx;
+  --dt-spacing-1: 8rpx;
+  --dt-spacing-1-5: 12rpx;
+  --dt-spacing-2: 16rpx;
+  --dt-spacing-2-5: 20rpx;
+  --dt-spacing-3: 24rpx;
+  --dt-spacing-4: 32rpx;
+  --dt-spacing-5: 40rpx;
+  --dt-spacing-6: 48rpx;
+  --dt-spacing-7: 56rpx;
+  --dt-spacing-8: 64rpx;
+  --dt-spacing-9: 72rpx;
+  --dt-spacing-10: 80rpx;
+  --dt-spacing-12: 96rpx;
+  --dt-spacing-16: 128rpx;
+  --dt-spacing-20: 160rpx;
+  --dt-spacing-24: 192rpx;
+
+  /* ==================== 圆角系统 ==================== */
+
+  --dt-borderRadius-none: 0;
+  --dt-borderRadius-sm: 8rpx;
+  --dt-borderRadius-base: 16rpx;
+  --dt-borderRadius-md: 24rpx;
+  --dt-borderRadius-lg: 32rpx;
+  --dt-borderRadius-xl: 40rpx;
+  --dt-borderRadius-2xl: 48rpx;
+  --dt-borderRadius-full: 9999rpx;
+
+  /* ==================== 字体大小 ==================== */
+  
+  --dt-typography-fontSize-xs: 24rpx;
+  --dt-typography-fontSize-sm: 26rpx;
+  --dt-typography-fontSize-base: 28rpx;
+  --dt-typography-fontSize-lg: 32rpx;
+  --dt-typography-fontSize-xl: 36rpx;
+  --dt-typography-fontSize-2xl: 40rpx;
+  --dt-typography-fontSize-3xl: 48rpx;
+  --dt-typography-fontSize-4xl: 56rpx;
+  --dt-typography-fontSize-5xl: 64rpx;
+
+  /* ==================== 组件级别的Token ==================== */
+
+  /* 卡片组件 */
+  --dt-components-card-padding: 40rpx;
+  --dt-components-card-paddingLarge: 48rpx;
+  --dt-components-card-borderRadius: 32rpx;
+  --dt-components-card-borderRadiusLarge: 48rpx;
+  --dt-components-card-borderWidth: 1rpx;
+
+  /* 按钮组件 */
+  --dt-components-button-borderRadius: 40rpx;
+  --dt-components-button-paddingX: 24rpx;
+  --dt-components-button-paddingY: 12rpx;
+  --dt-components-button-height: 64rpx;
+  --dt-components-button-fontSize: 28rpx;
+
+  /* 表单组件 */
+  --dt-components-form-borderRadius: 16rpx;
+  --dt-components-form-fontSize: 28rpx;
+  --dt-components-form-padding: 16rpx 24rpx;
+
+  /* 标签组件 */
+  --dt-components-tag-borderRadius: 32rpx;
+  --dt-components-tag-fontSize: 24rpx;
+  --dt-components-tag-padding: 4rpx 12rpx;
+  --dt-components-tag-height: 44rpx;
+}
+

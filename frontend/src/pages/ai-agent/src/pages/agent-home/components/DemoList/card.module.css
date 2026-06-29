@@ -1,0 +1,190 @@
+.card {
+  border-radius: 16px;
+  background: #FFFFFF;
+  box-shadow: inset 0 0 0 1px #F3F3F6;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  /* height: fit-content; */
+  gap: 12px;
+  box-sizing: border-box;
+  padding: 16px;
+  width: 256px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  /* box-shadow: 0 8px 24px rgba(83, 99, 245, 0.15); */
+  /* transform: translateY(-2px); */
+}
+
+.cardSpecial {
+  position: relative;
+  z-index: 0;
+}
+
+.cardImage {
+  border-radius: 8px;
+  background: #F7F7FA;
+  width: 224px;
+  height: 168px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlayWrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.overlay {
+  background: linear-gradient(180deg, #FFFFFF00, #FFFFFF 34%);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 8px;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+  width: 224px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  padding: 32px 8px 8px 8px;
+}
+.cardSpecial:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.buttonPrimary {
+  border-radius: 8px;
+  background: #6E50FF;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 6px;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  width: 208px;
+  min-height: 36px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.buttonPrimary:hover {
+  background: #866CFF;
+  /* transform: scale(1.02); */
+}
+
+.buttonSecondary {
+  border-radius: 8px;
+  background: #FFFFFF;
+  box-shadow: inset 0 0 0 1px #6E50FF;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 6px;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  width: 208px;
+  min-height: 36px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.buttonSecondary:hover {
+  background: #F5F5FF;
+  /* transform: scale(1.02); */
+}
+
+.buttonIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.buttonText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #FFFFFF;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.buttonSecondaryText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #6E50FF;
+  white-space: nowrap;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 6px;
+  width: 224px;
+}
+
+.cardTag {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: 4px;
+  align-items: center;
+  min-width: 96px;
+  min-height: 18px;
+}
+
+.tagIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.tagText {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #7C7F9A;
+  white-space: nowrap;
+}
+
+.cardDescription {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #1D1E29;
+  width: 224px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+  word-break: break-wordl;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

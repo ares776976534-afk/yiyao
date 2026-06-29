@@ -1,0 +1,408 @@
+.supplierList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.scrollContainer {
+    overflow-y: auto;
+    max-height: 600px;
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchButton {
+    display: flex;
+    align-items: center;
+}
+
+.searchButtonAdd {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Brand/常规 color-brand-1 */
+    color: var(--text-accent);
+}
+
+.searchButtonSync {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/次要 color-text-2 */
+    color: var( --text-tertiary);
+}
+
+.divider {
+    margin-inline: 12px;
+}
+
+.tableList {
+    width: 100%;
+    display: flex;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 12px;
+    /* Fill/白色 color-fill-3 */
+    background: var(--fill-white);
+    box-sizing: border-box;
+    /* Border/常规 color-border-1 */
+    border: 1px solid var(--border-primary);
+    cursor: pointer;
+}
+
+.tableList:hover {
+    .trashCan {
+        opacity: 1;
+        background: #F9F9FB;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.image {
+    width: 76px;
+    height: 76px;
+    border-radius: 4px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.titleText {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/主要 color-text-1 */
+    color: var(--icon-primary);
+}
+
+.shop {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.shopIcon {
+    width: 14px;
+    height: 14px;
+}
+
+.shopName {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/次要 color-text-2 */
+    color: var(--text-tertiary);
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+}
+
+.merchantTag {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.merchantTagItem {
+    display: flex;
+    padding: 1px 3px;
+    border-radius: 2px;
+    letter-spacing: -0.05em;
+    font-size: 12px;
+    line-height: 14px;
+    gap: 2px;
+}
+/** 标签颜色 */
+.pmplus {
+    background: linear-gradient(114deg, #1A006B 4%, #12014C 28%, #020218 87%);
+    font-weight: bold;
+    color: #EACBA9;
+}
+
+.sourceProvider {
+    font-weight: 600;
+    color: #22AC60;
+    background: #E8F7ED;
+    filter: blur(0px);
+}
+
+.pm {
+    background: #FF1C2A;
+    filter: blur(0px);
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.tp {
+    background: #F9F9FB;
+    box-sizing: border-box;
+    border: 0.5px solid #E7E8EE;
+    font-weight: 500;
+    color: #7B7B8D;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.addressIcon {
+    width: 14px;
+    height: 14px;
+}
+
+.addressName {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/主要 color-text-1 */
+    color: var(--icon-primary);
+}
+
+.primaryCategory {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/主要 color-text-1 */
+    color: var(--icon-primary);
+}
+
+.serviceInfo {
+    display: flex;
+    align-items: center;
+}
+
+.serviceInfoItem {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.serviceInfoKey {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/次要 color-text-2 */
+    color: var(--text-tertiary);
+}
+
+.serviceInfoValue {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/主要 color-text-1 */
+    color: var(--icon-primary);
+}
+
+.trashCanContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.autoSync {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 1px 6px;
+    gap: 2px;
+    border-radius: 2px;
+    /* Fill/常规 color-fill-2 */
+    background: var(--fill-secondary);
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    /* Text/次要 color-text-2 */
+    color: var(--text-tertiary);
+}
+
+.trashCan {
+    width: 24px;
+    height: 24px;
+    /* 自动布局 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    gap: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.trashCan:hover {
+   /* Fill/强调 color-fill-1 */
+   background: #F9F9FB;
+}
+
+/* Popconfirm 打开时的样式 */
+.trashCanActive {
+    opacity: 1 !important;
+    background: #F9F9FB;
+}
+
+:global(.ant-popconfirm) {
+    width: 180px;
+    border-radius: 12px;
+    /* Fill/白色 color-fill-3 */
+    background: #FFFFFF;
+    box-sizing: border-box;
+    /* Border/浅色 color-border-2 */
+    /* 样式描述：表格描边色 */
+    border: 1px solid #F3F3F6;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.04);
+}
+
+:global(.ant-popconfirm-message ) {
+    margin-bottom: 12px;
+}
+
+:global(.ant-btn-sm) {
+    height: 36px;
+    border-radius: 8px;
+}
+
+.trashCanDescription {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/主要 color-text-1 */
+    color: var(--icon-primary);
+}
+
+.noSearchResult {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+}
+
+/* 初始供应商无数据样式 */
+.supplierLibrary {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.headerImage {
+    width: 80px;
+    height: 80px;
+    margin-top: 140px;
+}
+
+.headerTitle {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 22px;
+    letter-spacing: normal;
+    /* Text/次要 color-text-2 */
+    color: var(--text-tertiary);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.footerButton {
+    height: 36px;
+    gap: 6px;
+    background-color: #6E50FF;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    transition: opacity 0.2s ease;
+}
+
+.footerButton:hover {
+    opacity: 0.85;
+    background-color: #6E50FF!important;
+    border: none!important;
+    color: #fff!important;
+    border-radius: 8px!important;
+}
+
+.autoFooterButton {
+    border: 1px solid #6E50FF!important;
+    color: #6E50FF;
+    height: 36px!important;
+    transition: opacity 0.2s ease;
+    border-radius: 8px!important;
+
+}
+
+.autoFooterButton:hover {
+    opacity: 0.85;
+    border: 1px solid #6E50FF!important;
+    color: #6E50FF!important;
+    height: 36px!important;
+    border-radius: 8px!important;
+
+}
+
+.messageContact :global(.ant-message-notice-content) {
+    background: rgba(0, 0, 0, 0.6) !important;
+    backdrop-filter: blur(30px) !important;
+    color: #fff !important;
+    display: inline-block !important;
+    padding: 10px 12px !important;
+    gap: 8px !important;
+    border-radius: 12px !important;
+}
+
+.trashCanPopconfirm {
+    background-color: #6150FF !important;
+}
+
+.trashCanPopconfirm:hover {
+    background-color: #424EC3 !important;
+}

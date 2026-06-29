@@ -1,0 +1,130 @@
+// @import '../../responsive.scss';
+
+.titleCN {
+  font-family: FZLTHProS;
+  font-size: 34px;
+  color: #1D1E29;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-self: unset;
+}
+
+.titleEN {
+  font-family: Poppins-medium;
+  font-size: 42px;
+  background: linear-gradient(141deg, #FEA7FF 3%, #6E50FF 51%), #6E50FF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-self: unset;
+}
+
+.titleDesc {
+  font-family: FZLTHProR;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #7C7F9A;
+  margin-top: 19px;
+  width: 831px;
+}
+
+.cardContainer {
+  width: 392px;
+  height: 435px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  border-radius: 12px;
+  background: linear-gradient(180deg, #FFFFFF 50%, rgba(255, 255, 255, 0) 74%);
+  box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 32px 32px 0 32px;
+}
+
+.titleBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cardTitle {
+  font-family: FZLTHProS;
+  font-size: 26px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.cardTag {
+  display: flex;
+  width: 60px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  z-index: 1;
+
+  border-radius: 4px;
+  background: #E3FFFF;
+  padding: 4px 8px;
+}
+
+.cardTag2 {
+  display: flex;
+  width: 60px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  z-index: 1;
+
+  border-radius: 4px;
+  background: #F2EFFF;
+  padding: 4px 8px;
+}
+
+.tagIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.tagText {
+  font-family: Alibaba PuHuiTi 3.0;
+  font-size: 12px;
+  color: #0C8AFF;
+}
+
+.tagText2 {
+  font-family: Alibaba PuHuiTi 3.0;
+  font-size: 12px;
+  color: #6E50FF;
+}
+
+.desc {
+  font-family: PingFang SC;
+  font-size: 14px;
+  line-height: 28px;
+  color: #4D4D5F;
+}
+
+.cardImage {
+  width: 393px;
+  height: 303px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

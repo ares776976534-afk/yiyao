@@ -1,0 +1,27 @@
+.ae-sml-tips-dialog {
+  &.next-dialog {
+    border-radius: 12px;
+  }
+
+  .next-dialog-header {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .next-dialog-close {
+    .next-dialog-close .next-dialog-close-icon.next-icon {
+      width: 16px;
+      height: 16px;
+      font-size: 16px;
+      margin-top: 8px;
+      margin-left: 8px;
+    }
+
+    .next-dialog-close-icon.next-icon:before {
+      width: 16px;
+      height: 16px;
+      font-size: 16px;
+    }
+  }
+}

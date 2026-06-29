@@ -1,0 +1,239 @@
+.keywordAnalysisCard {
+  width: 395px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.keywordAnalysisContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: 10px;
+}
+
+.keywordAnalysisHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.keywordAnalysisHeaderLeft {
+  width: 262px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.keywordAnalysisHeaderLeftTitle {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}
+
+.keywordAnalysisHeaderLeftSubtitle {
+  font-family: AlibabaSans102;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  height: 60px;
+}
+
+.keywordAnalysisHeaderRight {
+  display: flex;
+}
+
+.platformIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--fill-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  border: 2px solid #FFFFFF;
+}
+
+.platformIconImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.regionIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 24px;
+  background: var(--fill-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  margin-left: -12px;
+  border: 2px solid #FFFFFF;
+}
+
+.keywordAnalysisContentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.keywordAnalysisContentContainerLeft {
+  display: flex;
+  gap: 8px;
+}
+
+.keywordAnalysisContentContainerRight {
+  display: flex;
+  gap: 8px;
+}
+
+.keywordAnalysisContent {
+  width: 184px;
+  border-radius: 8px;
+  background: var(--fill-white);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 17px;
+  position: relative;
+}
+
+.keywordAnalysisContentHeader {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.keywordAnalysisContentTitle {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #4D4D5F;
+}
+
+.keywordAnalysisContentValue {
+  width: 149px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  overflow: hidden;
+}
+
+.keywordAnalysisContentValueNumber {
+  font-family: AlibabaSans102;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.keywordAnalysisContentValueUnit {
+  font-family: AlibabaSans102;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 22px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.keywordAnalysisContentValueDivider {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.keywordAnalysisContentValueDividerIcon {
+  font-family: Alibaba PuHuiTi 3.0;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 13px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  opacity: 0.16;
+  margin-right: 2px;
+}
+
+.keywordAnalysisContentValueDividerText {
+  font-family: Alibaba PuHuiTi 3.0;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 13px;
+  letter-spacing: normal;
+  color: inherit;
+}
+
+.infoIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.popoverContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.popoverContentValue {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.serviceCapabilityPopover :global(.ant-popover-inner) {
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.keywordAnalysisContentValueDividerPopover {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.keywordAnalysisContentValueDividerTextPopover {
+  font-family: Alibaba PuHuiTi 3.0;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 13px;
+  letter-spacing: normal;
+  white-space: nowrap;
+}
+
+/* 隐藏的测量容器，用于获取实际内容宽度 */
+.measureContainer {
+  position: absolute;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}

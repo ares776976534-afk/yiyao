@@ -1,0 +1,193 @@
+@import '../../../responsive.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  background-image: url('https://img.alicdn.com/imgextra/i1/O1CN01xQMwLb1CjdQpytGbi_!!6000000000117-2-tps-1883-659.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center 80px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: vw-1500(-48);
+    right: vw-1500(-48);
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(83, 132, 245, 0) 0%, rgba(255, 255, 255, 0) 43%, #FFFFFF 79%, #F4F4FF 93%);
+    z-index: -1;
+  }
+}
+
+.titleText {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  color: #141B26;
+  white-space: nowrap;
+}
+
+.colorTitle {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: normal;
+  background: linear-gradient(90deg, #875EED -2%, #3C7AFF 36%, #4FCEE4 92%, #68E4C3 126%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin: 0 12px;
+}
+
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  width: fit-content;
+  align-items: center;
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.headerLogo {
+  width: vw-1500(230);
+  height: vw-1500(80);
+}
+
+.headerTitle {
+  font-size: vw-1500(48);
+  font-weight: 700;
+  line-height: vw-1500(80);
+  color: #1D2129;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.headerDescription {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: vw-1500(42);
+  color: #373C55;
+  white-space: wrap;
+  white-space: normal;
+  text-align: center;
+  margin-top: vw-1500(20);
+  width: 800px;
+
+}
+
+.serviceCard {
+  border-radius: vw-1500(32);
+  background: #FFFFFF;
+  backdrop-filter: blur(4px);
+  border-style: inset;
+  overflow: hidden;
+  width: vw-1500(1352);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: vw-1500(48);
+  box-sizing: border-box;
+}
+
+// .serviceCard:first-of-type {
+//   margin-top: vw-1500(102);
+//   padding: vw-1500(48) vw-1500(48) vw-1500(48) vw-1500(64);
+// }
+
+// .serviceCard:last-of-type {
+//   padding: vw-1500(48) vw-1500(146) vw-1500(48) vw-1500(48);
+// }
+
+.serviceContent {
+  width: vw-1500(481);
+  display: flex;
+  flex-direction: column;
+  margin-top: vw-1500(54);
+}
+
+.serviceCard:last-of-type .serviceContent {
+  height: vw-1500(426);
+  margin-left: vw-1500(99);
+  margin-top: 0;
+}
+
+.serviceIcon {
+  width: vw-1500(72);
+  height: vw-1500(72);
+}
+
+.serviceInfo {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: vw-1500(36);
+  min-width: vw-1500(481);
+  margin-top: vw-1500(84);
+}
+
+.serviceItem {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: vw-1500(12);
+  min-width: vw-1500(481);
+  min-height: vw-1500(66);
+}
+
+.serviceTitle {
+  font-size: vw-1500(20);
+  font-weight: 600;
+  line-height: vw-1500(32);
+  color: #1D2129;
+  white-space: nowrap;
+}
+
+.serviceDesc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: vw-1500(22);
+  color: #7B7B8D;
+  // text-overflow: ellipsis;
+}
+
+.serviceImage {
+  // margin-right: vw-1500(79);
+  width: 100%;
+  height: 100%;
+}
+
+.aiToolsDemo {
+  border-radius: vw-1500(16);
+  box-sizing: border-box;
+  margin-right: vw-1500(75);
+}
+
+.serviceImageWrapper {
+  margin-left: vw-1500(79);
+}
+
+.blockItems {
+  display: flex;
+  flex-direction: column;
+  gap: vw-1500(76);
+  margin-top: 132px;
+}
+
+.bottomNote {
+  margin-top: vw-1500(109);
+}

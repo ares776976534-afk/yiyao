@@ -1,0 +1,145 @@
+.historyPopup {
+  :global {
+    .adm-popup-body {
+      border-radius: 8rpx 8rpx 0 0;
+    }
+    .adm-popup-close-icon {
+      top: 16rpx;
+      padding: 0;
+      font-size: 20rpx;
+    }
+  }
+}
+
+.historyPopupContent {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+  padding: 16rpx;
+
+  .historyPopupTitle {
+    line-height: 24rpx;
+    font-weight: 500;
+    font-size: 16rpx;
+    color: var(--block-color);
+  }
+
+  .historyPopupList {
+    display: flex;
+    flex-direction: column;
+    gap: 20rpx;
+    overflow: hidden auto;
+    padding-right: 6rpx;
+    .historyPopupItem {
+      display: flex;
+      align-items: center;
+      gap: 8rpx;
+      padding: 8rpx;
+      border-radius: 8rpx;
+      &.active {
+        background-color: var(--block-hover-bg-2);
+      }
+      .historyPopupItemImage {
+        width: 32rpx;
+        height: 32rpx;
+        border-radius: 4rpx;
+      }
+      .historyPopupItemTitle {
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 22rpx;
+        font-size: 14rpx;
+        color: #4d4d5f;
+      }
+      .historyPopupItemDeleteIcon {
+        width: 16rpx;
+        height: 16rpx;
+      }
+    }
+  }
+
+  .historyPopupEmpty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rpx;
+    padding: 120rpx 0;
+    .historyPopupEmptyImage {
+      width: 96rpx;
+      height: 96rpx;
+    }
+    .historyPopupEmptyText {
+      line-height: 20rpx;
+      font-size: 13rpx;
+      color: var(--studio-text-color-secondary);
+    }
+  }
+}
+
+.modalConfirm {
+  padding: 20rpx;
+  border-radius: 16rpx;
+  :global {
+    .adm-modal-title,
+    .adm-modal-content,
+    .adm-modal-footer {
+      padding: 0;
+    }
+
+    .adm-modal-title {
+      margin-bottom: 6rpx;
+      line-height: 24rpx;
+      font-size: 16rpx;
+      font-weight: 500;
+      color: var(--block-color);
+      text-align: left;
+    }
+    .adm-modal-content {
+      margin-bottom: 24rpx;
+      line-height: 20rpx;
+      font-size: 14rpx;
+      color: var(--studio-text-color-secondary);
+      text-align: left;
+      .adm-auto-center {
+        justify-content: flex-start;
+      }
+    }
+    .adm-modal-footer {
+      --gap-vertical: 0;
+      flex-direction: row;
+      align-items: center;
+      padding: 0;
+      gap: 12rpx;
+      .adm-space-item {
+        flex: 1;
+      }
+    }
+  }
+}
+
+.modalConfirmCancelButton,
+.modalConfirmDeleteButton {
+  height: 36rpx;
+  padding: 0;
+  border: 1px solid;
+
+  & > span {
+    font-size: 14rpx;
+  }
+}
+
+.modalConfirmCancelButton {
+  background-color: #fff;
+  border-color: var(--block-border-color);
+  color: var(--block-color);
+}
+
+.modalConfirmDeleteButton {
+  background-color: var(--color-brand-1);
+  border-color: transparent;
+  color: #fff;
+}

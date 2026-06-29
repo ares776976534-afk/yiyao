@@ -1,0 +1,9 @@
+.hotDetailModal :global(.ant-table-content) {
+    height: calc(100vh - 132px);
+    overflow: scroll !important;
+}
+
+.hotDetailModal :global(.ant-modal-content) {
+    padding: 20px;
+    border-radius: 12px;
+}

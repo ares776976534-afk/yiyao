@@ -1,0 +1,26 @@
+.header {
+  padding: 28px 48px 24px 48px;
+  position: relative;
+  height: 88px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #000000DE;
+  margin: 0;
+}
+
+.divider {
+  position: absolute;
+  left: 48px;
+  bottom: 0;
+  width: 1544px;
+  height: 1px;
+  border: 1px solid #0000000A;
+}

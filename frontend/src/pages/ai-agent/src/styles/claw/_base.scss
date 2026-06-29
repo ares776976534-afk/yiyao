@@ -1,0 +1,22 @@
+// ==========================================================================
+// Base — container scope & typography reset
+// ==========================================================================
+
+.alpha-markdown {
+  font-family: var(--am-font-sans);
+  font-size: var(--am-font-size-body);
+  line-height: var(--am-line-height-body);
+  color: var(--am-color-text-primary);
+  word-break: break-word;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}

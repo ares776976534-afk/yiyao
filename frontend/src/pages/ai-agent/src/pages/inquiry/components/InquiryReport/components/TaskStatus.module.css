@@ -1,0 +1,146 @@
+/* ============================================
+   容器样式
+   ============================================ */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+}
+
+/* ============================================
+   标题区域样式
+   ============================================ */
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.headerAccent {
+    width: 4px;
+    height: 12px;
+    border-radius: 1px;
+    background: #6E50FF;
+}
+
+.headerTitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: #1d1e29;
+}
+
+/* ============================================
+   任务卡片样式
+   ============================================ */
+
+.taskCard {
+    background: #ffffff;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.taskContent {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+}
+
+.taskImage {
+    border-radius: 8px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.taskInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    min-width: 0;
+    justify-content: center;
+    height: 80px;
+}
+
+/* ============================================
+   任务信息样式
+   ============================================ */
+
+.taskNameRow {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.taskName {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: normal;
+    /* Text/主要 color-text-1 */
+    color: #1d2129;
+}
+
+.createTime {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/Secondary */
+    /* 样式描述：三级 */
+    color: #7c7f9a;
+}
+
+/* ============================================
+   任务元数据样式
+   ============================================ */
+
+.taskMeta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.autoOrderTag {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.autoOrderIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+.autoOrderText {
+    font-size: 14px;
+    color: #6E50FF;
+    line-height: 20px;
+}
+
+.metaDivider {
+    width: 1px;
+    height: 10px;
+    background: #e7e8ee;
+    flex-shrink: 0;
+}
+
+.metaText {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #1d1e29;
+}

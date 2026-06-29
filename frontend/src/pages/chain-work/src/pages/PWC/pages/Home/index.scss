@@ -1,0 +1,51 @@
+.pwc-home {
+  .commonTable {
+
+    .c-itemBlock {
+
+      &:first-child {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+      }
+
+      &:last-child {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+      }
+    }
+  }
+
+  td.next-table-cell {
+    vertical-align: top;
+  }
+
+  .next-table.next-table-small th .next-table-cell-wrapper {
+    padding-left: 10px;
+  }
+
+  .next-table {
+    // .next-table-cell {
+    //   vertical-align: top;
+    // }
+
+    td {
+      .next-table-cell-wrapper {
+        padding: 16px 10px;
+      }
+
+      &.next-table-selection {
+        .next-table-cell-wrapper {
+          padding: 13px 0 0 16px;
+        }
+      }
+    }
+
+    th {
+      &.next-table-selection {
+        .next-table-cell-wrapper {
+          padding-left: 16px;
+        }
+      }
+    }
+  }
+}

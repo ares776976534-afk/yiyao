@@ -1,0 +1,194 @@
+.form_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10rpx;
+}
+
+.formWrapper {
+  :global(.ant-input)::placeholder,
+  :global(.ant-input-number-input)::placeholder {
+    color: #BBBDCA !important;
+    box-sizing: border-box;
+    font-size: 14rpx;
+    line-height: 20rpx;
+  }
+
+  :global(.ant-input-affix-wrapper),
+  :global(.ant-input-prefix) {
+    height: 72rpx !important;
+    box-sizing: border-box;
+  }
+
+  :global(.ant-form-item) {
+    margin-bottom: 24rpx !important;
+  }
+
+  :global(.ant-form-item:last-child) {
+    margin-bottom: 18rpx !important;
+  }
+
+  :global(.ant-input) {
+    border-radius: 8rpx !important;
+    border-color: var(--border-primary);
+    border: 1rpx solid #E7E8EE;
+    font-size: 14rpx;
+    line-height: 20rpx;
+    padding: 8rpx 12rpx;
+    box-shadow: none;
+  }
+
+  :global(.ant-form-item-label) {
+    padding: 0 0 6rpx;
+  }
+
+  :global(.ant-form-item-label > label.ant-form-item-required::before) {
+    display: none !important;
+  }
+
+  /* Radio Button 自定义样式 */
+  :global(.ant-radio-group) {
+    display: flex;
+    gap: 8rpx;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  :global(.ant-radio-button-wrapper) {
+    border-radius: 8rpx !important;
+    border: 1rpx solid #E7E8EE !important;
+    margin-right: 0 !important;
+    font-size: 14rpx !important;
+    padding: 8rpx 12rpx !important;
+    color: var(--text-secondary) !important;
+    transition: none !important;
+    flex-shrink: 0;
+  }
+
+  :global(.ant-radio-button-wrapper)::before {
+    width: 0 !important;
+    background-color: transparent !important;
+  }
+
+  /* 选中状态样式 */
+  :global(.ant-radio-button-wrapper-checked) {
+    color: var(--text-primary) !important;
+    border: 1rpx solid var(--text-primary) !important;
+    background-color: var(--fill-white) !important;
+    z-index: 1 !important;
+    font-weight: 500;
+  }
+
+  :global(.ant-radio-button-wrapper-checked)::before {
+    width: 0 !important;
+    background-color: transparent !important;
+    border: none !important;
+  }
+
+
+  /* 禁用状态 */
+  :global(.ant-radio-button-wrapper-disabled) {
+    color: var(--dt-colors-text-secondary) !important;
+    background-color: var(--dt-colors-background-secondary) !important;
+  }
+
+  :global(.ant-radio-button-wrapper-disabled.ant-radio-button-wrapper-checked) {
+    color: var(--text-primary) !important;
+    background-color: var(--fill-white) !important;
+  }
+
+  :global(.ant-wave) {
+    display: none !important;
+  }
+
+  :global(.ant-form-item-control-input-content) {
+    display: flex;
+    align-items: center;
+    gap: 16rpx;
+    flex-wrap: wrap;
+  }
+
+  /* 覆盖 platformRadioGroup - 通过 DOM 结构选择器 */
+  :global(.ant-radio-button-wrapper) > span:last-child > div {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8rpx !important;
+    color: var(--text-secondary) !important;
+  }
+
+  /* 选中状态时内部文字颜色 */
+  :global(.ant-radio-button-wrapper-checked) > span:last-child > div {
+    color: var(--text-primary) !important;
+  }
+
+}
+
+.formWrapperWithBtn {
+  :global(.ant-form-item:last-child) {
+    margin-bottom: 0 !important;
+  }
+}
+
+.requirementFormCardLabel {
+  display: flex;
+  align-items: center;
+}
+
+.requirementFormCardLabelText {
+  font-size: 28rpx;
+  line-height: 40rpx;
+  letter-spacing: normal;
+  color: #1B1C1D;
+  margin-left: 12rpx;
+  font-weight: 500;
+}
+
+.requirementFormCardLabelRequired {
+  color: var(--semantic-warning-primary);
+  font-size: 28rpx;
+  font-weight: normal;
+  line-height: 40rpx;
+  letter-spacing: normal;
+  margin-left: 4rpx;
+}
+
+.imgIcon {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+
+.requirementFormCardLabelInfo {
+  display: flex;
+  gap: 4rpx;
+  margin-top: 24rpx;
+  align-items: flex-start;
+}
+
+.requirementFormCardLabelInfoText {
+  font-size: 26rpx;
+  font-weight: normal;
+  line-height: 40rpx;
+  letter-spacing: normal;
+  color: var(--text-tertiary);
+}
+
+.requirementFormCardLabelInfo :global(.anticon) {
+  margin-top: 8rpx;
+}
+
+.footerBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowIcon {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.arrowIconRotated {
+  transition: transform 0.2s ease;
+  transform: rotate(180deg);
+  cursor: pointer;
+}

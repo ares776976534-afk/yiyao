@@ -1,0 +1,28 @@
+.finishTime {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: #7c7f9a;
+  display: block;
+  margin-left: 12px;
+  z-index: 12;
+
+  &.inquierProgressFinishTime {
+    display: inline;
+    font-size: 14px;
+    line-height: 20px;
+    color: #7c7f9a;
+    margin-left: 8px;
+  }
+
+  .finishTimeText {
+    margin-right: 4px;
+    font-family: AlibabaSans102;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #f55353;
+  }
+}

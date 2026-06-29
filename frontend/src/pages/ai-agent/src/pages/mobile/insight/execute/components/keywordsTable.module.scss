@@ -1,0 +1,111 @@
+.keywordsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+  margin-top: 20rpx;
+  overflow-y: auto;
+}
+
+.keywordsTable {
+  display: flex;
+  flex-direction: column;
+  gap: 6rpx;
+  border-radius: 12rpx;
+  box-sizing: border-box;
+  border: 1rpx solid #F3F3F6;
+  padding: 10rpx 16rpx;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.keywordsTableSelected {
+  border: 1rpx solid #6E50FF;
+}
+
+.keywordsFooter {
+  display: flex;
+  gap: 10rpx;
+  margin-left: 24rpx;
+}
+
+.keywordsFooterLeft {
+  width: 138rpx;
+  height: 114rpx;
+}
+
+.keywordsFooterLeftTitle {
+  font-family: PingFang SC;
+  font-size: 13rpx;
+  font-weight: normal;
+  line-height: 18rpx;
+  letter-spacing: normal;
+  color: #7C7F9A;
+  margin-bottom: 16rpx;
+}
+
+.keywordsFooterLeftSubTitle {
+  width: 95rpx;
+  height: 36rpx;
+  font-family: PingFang SC;
+  font-size: 13rpx;
+  font-weight: normal;
+  line-height: 18rpx;
+  letter-spacing: normal;
+  color: #7C7F9A;
+  margin-bottom: 4rpx;
+}
+
+.keywordsFooterRight {
+  width: 139rpx;
+  height: 114rpx;
+  display: flex;
+  flex-flow: column;
+  gap: 16rpx;
+}
+
+.keywordsFooterRightItem {
+  display: flex;
+  flex-flow: column;
+  gap: 4rpx;
+}
+
+.keywordsFooterItemHeader {
+  display: flex;
+  gap: 4rpx;
+}
+
+.keywordsFooterItemTitle {
+  font-family: PingFang SC;
+  font-size: 13rpx;
+  font-weight: normal;
+  line-height: 18rpx;
+  letter-spacing: normal;
+  color: #7C7F9A;
+}
+
+.keywordsFooterItemValue {
+  font-family: PingFang SC;
+  font-size: 13rpx;
+  font-weight: normal;
+  line-height: 18rpx;
+  letter-spacing: normal;
+  color: #1B1C1D;
+}
+
+.keywordsTable {
+  :global(.ant-radio) {
+    margin-top: 5rpx;
+  }
+}
+
+.customRadio :global(.ant-radio-checked .ant-radio-inner::after) {
+  content: '' !important;
+  transform: translate(0, 0) !important;
+  background-image: url(https://img.alicdn.com/imgextra/i3/O1CN015jvM241vejueNFEz1_!!6000000006198-2-tps-24-24.png) !important;
+  background-size: 11rpx !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-color: #6E50FF;
+  padding: 2.2rpx 2.2rpx 1.8rpx 1.8rpx !important;
+  transition: none !important;
+}

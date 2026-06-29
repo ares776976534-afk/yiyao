@@ -1,0 +1,44 @@
+.image-grid {
+  display: flex;
+  flex-wrap: wrap; /* 允许换行 */
+  gap: 8px; /* 每个元素之间的间距 */
+}
+  
+.image-item {
+  flex: 0 0 calc(30.9%); /* 每个元素占1/3宽度，减去两边的间距 */
+  box-sizing: border-box; /* 确保内边距和边框不会增加元素的总宽度 */
+}
+
+.image-item img {
+  width: 100%; /* 图片填充整个容器 */
+  height: auto; /* 保持图片的宽高比 */
+}
+
+/* 定义表格的基本样式 */
+.rounded-table {
+  width: 100%;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+/* 特别处理第一行和最后一行的单元格，以确保圆角效果 */
+.rounded-table tr:first-child th:first-child,
+.rounded-table tr:last-child td:first-child {
+  border-top-left-radius: 6px; /* 左上角圆角 */
+}
+
+.rounded-table tr:first-child th:last-child,
+.rounded-table tr:last-child td:last-child {
+  border-top-right-radius: 6px; /* 右上角圆角 */
+}
+
+.rounded-table tr:last-child td:first-child {
+  border-bottom-left-radius: 6px; /* 左下角圆角 */
+}
+
+.rounded-table tr:last-child td:last-child {
+  border-bottom-right-radius: 6px; /* 右下角圆角 */
+}

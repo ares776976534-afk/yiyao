@@ -1,0 +1,33 @@
+.selectSeller {
+  width: 100%;
+
+  .selectSellerCardList {
+    margin: 12rpx 0;
+  }
+
+  .exploreSectionContainer {
+    margin-top: 64rpx;
+  }
+}
+
+.settingsActionSheet {
+  :global(.adm-action-sheet-button-item) {
+    padding: 14rpx 16rpx;
+    :global(.adm-action-sheet-button-item-name) {
+      font-size: 16rpx;
+      line-height: 20rpx;
+      font-weight: normal;
+      color: var(--text-primary);
+    }
+    :global(.adm-action-sheet-button-item-description) {
+      font-family: PingFang SC;
+      font-size: 13rpx;
+      font-weight: normal;
+      line-height: 16rpx;
+      color: var(--text-secondary);
+    }
+  }
+  :global(.adm-action-sheet-button-item-wrapper) {
+    border-bottom: 1px solid var(--border-secondary);
+  }
+}

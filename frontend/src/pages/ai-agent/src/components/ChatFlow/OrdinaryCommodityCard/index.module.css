@@ -1,0 +1,55 @@
+.ordinaryCommodityCard {
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 8px;
+    background: #F9F9FC;
+}
+
+.ordinaryCommodityCardContent {
+    display: flex;
+}
+
+.ordinaryCommodityCardContentRight {
+    flex: 1;
+    overflow: hidden;
+}
+
+.ordinaryCommodityCardTitleContainer {
+    display: flex;
+    align-items: center;
+}
+
+.ordinaryCommodityCardTitle {
+    flex-shrink: 1;
+    font-size: 13px;
+    color: #1D2129;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-clamp: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.ordinaryCommodityCardIcon {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 6px;
+
+    img {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 1px solid #FFFFFF;
+    }
+    img + img {
+        margin-left: -4px;
+    }
+}
+
+.ordinaryCommodityCardBottomContent {
+    font-size: 12px;
+    color: #7C7F9A;
+}

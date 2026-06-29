@@ -1,0 +1,224 @@
+.broadcastDialog {
+  width: 664px;
+  height: 530px;
+  background-color: transparent;
+  position: relative;
+  box-shadow: none;
+  .next-dialog-body {
+    padding: 0;
+  }
+  .next-dialog-close {
+    top: 90px;
+    right: 59px;
+    color: #fff;
+  }
+  .next-dialog-close .next-dialog-close-icon.next-icon:before {
+    font-size: 16px;
+  }
+
+  .broadcastDialog-445img {
+    position: absolute;
+    top: -139px;
+    left: 185px;
+  }
+  .broadcastDialog-267img {
+    position: absolute;
+    top: 263px;
+    left: 414px;
+    z-index: 1001;
+  }
+}
+.broadcastDialog-content {
+  position: absolute;
+  top: 72px;
+  left: 0;
+  width: 626px;
+  height: 458px;
+  background: linear-gradient(137deg, #ff4983 0%, #ff9f50 86%);
+  border-radius: 20px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.05);
+}
+
+.products-list {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.products-list-title {
+  display: flex;
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  width: 241px;
+  height: 95px;
+  flex-direction: column;
+  margin: 32px 0 22px 34px;
+  .products-list-title-text {
+    font-size: 40px;
+  }
+}
+.products-dialog-content {
+  width: 289px;
+  height: 104px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  background-color: #fff;
+  border: 1px solid rgba(229, 229, 229, 0.6);
+
+  .products-dialog-top {
+    display: flex;
+  }
+
+  .products-dialog-img {
+    width: 80px;
+    height: 80px;
+    margin: 0 10px 12px 0;
+  }
+
+  .products-dialog-top-right {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .products-dialog-center-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .products-dialog-title {
+      min-width: 175px;
+    }
+
+    .products-dialog-tag {
+      width: 68px;
+      min-width: 68px;
+      height: 18px;
+      background: linear-gradient(111deg, #fc6799 -25%, #fe8b6f 0%, #fc4365 28%, #fb1a28 91%);
+      border-radius: 3.43px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 6px;
+      float: left;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
+    }
+    .products-dialog-text {
+      display: block;
+      line-height: 18px;
+      font-size: 13px;
+    }
+  }
+
+  .products-dialog-dashed {
+    border: 1px dashed #e5e5e5;
+  }
+
+  .products-dialog-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0 12px 0;
+    .products-dialog-describe-title {
+      display: flex;
+      align-items: center;
+      margin-right: 24px;
+      color: #ff7300;
+    }
+  }
+
+  .products-dialog-describe-content {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+
+    .products-dialog-describe {
+      margin-right: 6px;
+      font-size: 13px;
+      color: #999;
+    }
+
+    .products-dialog-describe-id {
+      font-size: 13px;
+      color: #999;
+    }
+  }
+
+  .products-dialog-describe-bottom {
+    font-size: 13px;
+    color: #333;
+    display: inline-block;
+  }
+
+  .products-dialog-line {
+    position: relative;
+    margin: 4px; /* 根据需要调整与文字之间的距离 */
+  }
+
+  .products-dialog-line::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 10px;
+    background-color: #ddd;
+  }
+
+  .products-business-describe-div {
+    font-size: 13px;
+  }
+  .products-dialog-submit {
+    font-size: 12px;
+    height: 24px;
+    text-align: center;
+  }
+}
+
+.broadcastDialog-content-footer {
+  position: absolute;
+  top: 369px;
+  left: 0;
+  width: 100%;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .broadcastDialog-button1 {
+    width: 120px;
+    height: 42px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(110deg, #ff4c80 34%, #ff802a 100%);
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    box-shadow: 0 6px 30px 0 rgba(255, 178, 201, 0.6);
+    margin-right: 12px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .broadcastDialog-button2 {
+    width: 136px;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background: #fff;
+    color: #ff4c80;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}

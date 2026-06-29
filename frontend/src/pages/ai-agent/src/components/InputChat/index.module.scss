@@ -1,0 +1,185 @@
+.inputChatContainer {
+  --content-primary: var(--color-white-100, #fff);
+  --file-box-width: 72px;
+  --file-box-height: 72px;
+  --file-box-border-radius: 8px;
+  --file-box-action-offset: 0px;
+  --padding-size: 16px;
+
+  display: flex;
+  width: 100%;
+  min-height: 148px;
+
+  .inputChatInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    gap: 12px;
+    padding: var(--padding-size);
+
+    .inputChat {
+      display: flex;
+      flex-direction: column;
+
+      .inputChatTextarea {
+        width: 100%;
+        overflow-y: hidden;
+        resize: none;
+        overflow: auto;
+        color: var(--chat-input-color, #fff);
+        font-weight: 400;
+        font-size: 13px;
+        font-style: normal;
+        line-height: 20px;
+        background: transparent;
+        border: none;
+        outline: none;
+        caret-color: var(--chat-caret-color);
+        scrollbar-width: 6px;
+      }
+    }
+
+    .operateContainer {
+      display: flex;
+      align-items: center;
+      gap: 0 8px;
+      font-size: 12px;
+
+      .rotateInfinite {
+        animation: rotate-infinite 1s linear infinite;
+      }
+
+      .uploadContainer {
+        display: flex;
+        align-items: center;
+        gap: 0 8px;
+      }
+
+      .upload {
+        height: 32px;
+        padding: 0 11px;
+        background: var(--color-white-12);
+        border-radius: 8px;
+        border: var(--block-btn-border);
+        line-height: 18px;
+        color: var(--block-color);
+
+        &.disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+        }
+      }
+
+      .send {
+        height: 36px;
+        margin-left: auto;
+        color: var(--content-primary, "#fff");
+        position: relative;
+
+        .sendReady,
+        .sendPause,
+        .sendDisabled {
+          width: 36px; // SVG保持原始尺寸
+          height: 36px; // SVG保持原始尺寸
+        }
+
+        .sendReady {
+          --send-bg-color: var(--color-brand-1);
+        }
+
+        // 使用全局样式控制 SVG 内部的 hover 效果
+        .send-ready:hover :global(.hover-overlay) {
+          fill-opacity: 1 !important;
+        }
+
+        .sendDisabled {
+          cursor: not-allowed;
+          --send-bg-color: #d2d2d5;
+          --send-bg-opacity: 1;
+          --send-fg-opacity: 1;
+        }
+      }
+
+      .upload,
+      .send {
+        display: flex;
+        align-items: center;
+        gap: 0 4px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .customSendButton {
+    margin-left: auto;
+  }
+
+  @keyframes rotate-infinite {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.uploadIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.uploadMenu {
+  --studio-font-size: 12px;
+  padding: 8px !important;
+  :global {
+    .studio-dropdown-menu-item {
+      min-width: 108px;
+    }
+  }
+}
+
+/* 暗色模式 */
+[data-theme="dark"] {
+  .inputChatContainer {
+    --active-bg: rgba(149, 126, 255, 0.2);
+    --active-border: #957eff;
+    --active-color: #957eff;
+
+    .upload:hover {
+      background: var(--color-white-20);
+    }
+
+    .send {
+      --send-pause-bg: #fff;
+      --send-pause-center-bg: #020202;
+    }
+  }
+}
+
+/* 亮色模式 */
+[data-theme="light"] {
+  .inputChatContainer {
+    --active-bg: rgba(95, 64, 204, 0.1);
+    --active-border: #6e50ff;
+    --active-color: #6e50ff;
+
+    .upload:hover {
+      background-color: #f7f8fa;
+    }
+
+    .operateContainer {
+      .send {
+        --send-pause-bg: var(--color-brand-1);
+        --send-pause-center-bg: #fff;
+
+        .sendDisabled {
+          --send-bg-color: #d9d9d9;
+        }
+      }
+    }
+  }
+}

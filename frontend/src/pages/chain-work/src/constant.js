@@ -1,0 +1,20 @@
+export const BH_PENDING_CONFIRM = 'BH_PENDING_CONFIRM'; // 待确认
+export const PO_PENDING_APPOINTMENT = 'PO_PENDING_APPOINTMENT'; // 待预约
+export const CO_CONFIRMED = 'CO_CONFIRMED'; // 发货确认
+export const CO_IN_TRANSIT = 'CO_IN_TRANSIT'; // 运输中
+export const CO_COMPLETED = 'CO_COMPLETED'; // 收货完成
+export const CO_DISCREPANCY = 'CO_DISCREPANCY'; // 理货差异
+export const CO_RECEIVING = 'CO_RECEIVING'; // 已签收待上架
+export const CANCELLED = 'CANCELLED'; // 已取消
+export const CUSTOM_APPOINTMENT = 'CUSTOM_APPOINTMENT_INFO'; // 预约补货弹窗 - 预约信息
+export const ACTION_RLENISHMENT_PALN_CONFIRM_MSG = 'ACTION_RLENISHMENT_PALN_CONFIRM'; // 确认补货
+export const ACTION_BATCH_RLENISHMENT_PALN_CONFIRM_MSG = 'ACTION_BATCH_RLENISHMENT_PALN_CONFIRM_MSG'; // 批量确认补货请求完成
+export const ACTION_CONSIGNMENT_SUBMIT_MSG = 'ACTION_CONSIGNMENT_SUBMIT_MSG'; // 确认发货
+export const ACTION_BATCH_CONSIGNMENT_SUBMIT_MSG = 'ACTION_BATCH_CONSIGNMENT_SUBMIT_MSG'; // 批量确认发货
+export const ACTION_RESERVATION_ORDER_SUBMIT_MSG = 'ACTION_RESERVATION_ORDER_SUBMIT_MSG'; // 提交预约单
+export const ACTION_BATCH_RESERVATION_ORDER_SUBMIT_MSG = 'ACTION_BATCH_RESERVATION_ORDER_SUBMIT_MSG'; // 批量提交预约单
+export const UNSAMPLED = 'unsampled';
+export const DEFAULTCHAR = '——';
+
+export const QQJX_XIEYI =
+  'https://terms.alicdn.com/legal-agreement/terms/common_platform_service/20241223102539751/20241223102539751.html';

@@ -1,0 +1,109 @@
+.item-post .service-box {
+  position: relative;
+  /* 创建小三角形 */
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 24px solid; /* 灰色背景的宽度，也是小三角的高度 */
+    border-bottom-color: #ccc;
+    border-left: 24px solid transparent; /* 使左边边框透明，形成三角形 */
+    border-radius: 0% 0% 10% 0%;
+  }
+  .service-icon {
+    position: absolute;
+    width: 8px;
+    height: 7px;
+    bottom: 8px;
+    right: 5px;
+    z-index: 2;
+  }
+  .next-icon-select:before {
+    color: #fff;
+  }
+}
+.goods-cell {
+  flex: 1;
+
+  .next-input-inner {
+    padding-left: 12px;
+    color: #bbb;
+  }
+  .next-input {
+    border-radius: 6px;
+    input[disabled] {
+      width: 120px;
+      // max-width: 30px;
+      // text-align: center;
+      display: inline-block;
+      // width: auto;
+    }
+  }
+  .next-disabled {
+    .next-input-inner {
+      color: #666;
+    }
+    --input-disabled-color: #666;
+    width: auto;
+    .next-after {
+      padding-left: 0;
+    }
+  }
+}
+.subTitle {
+  font-size: 14px;
+  color: #666;
+  padding: 8px 0 12px 0;
+}
+.submit-offer-form-agreement {
+  display: flex;
+  align-items: top;
+  margin-bottom: 8px;
+  .next-checkbox-label {
+    font-size: 13px;
+    line-height: normal;
+    margin: 0 0 0 8px;
+  }
+}
+.next-message {
+  min-width: 400px;
+}
+.tooltips-content {
+  .next-balloon-arrow-content {
+    background-color: #333 !important;
+  }
+}
+
+.price-setting-dialog {
+  .next-dialog-header {
+    padding: 20px 20px 0 20px;
+  }
+  .next-dialog-body {
+    padding: 20px 20px 0 20px !important;
+  }
+  .next-dialog-footer {
+    padding: 20px;
+  }
+}
+
+.custom-input {
+  .next-input.next-medium {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    .next-input-label {
+      padding-left: 12px;
+      color: #bbb;
+    }
+  }
+}
+.ant-modal-root {
+  .ant-modal-mask, .ant-modal-wrap {
+    z-index: 1002;
+  }
+}

@@ -1,0 +1,44 @@
+.card {
+  .cardOverlay {
+    display: flex;
+    > button {
+      flex: 1 0 50%;
+    }
+  }
+}
+
+.card_title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: normal;
+  color: #1D1E29;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-wordl;
+}
+
+.card_description {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: #4D4D5F;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-wordl;
+}
+
+.card_content {
+  padding: 17px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

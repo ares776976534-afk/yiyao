@@ -1,0 +1,115 @@
+.itemInfoCardSameStyleBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px; 
+    gap: 6px;
+    border-radius: 8px;
+    background: #6150FF;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+.itemInfoCardLeftButtonIcon {
+    width: 14px;
+    height: 14px;
+}
+
+.itemInfoCardLeftButtonText {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #1D2129;
+}
+
+
+/* 正常状态hover样式 */
+.itemInfoCardSameStyleBtn:hover:not(:disabled):not(.readonly) {
+    background: #6150FF !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    box-shadow: 0 2px 8px rgba(83, 99, 245, 0.3) !important;
+}
+
+.itemInfoCardSameStyleBtn:focus:not(:disabled):not(.readonly) {
+    background: #6150FF !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    box-shadow: 0 0 0 2px rgba(83, 99, 245, 0.2) !important;
+}
+
+/* 只读状态按钮样式 */
+.itemInfoCardSameStyleBtn:disabled,
+.buttonContainer :global(.ant-btn.readonly) {
+    opacity: 0.4;
+    background: #6150FF !important; /* 按钮色/橙色主按钮 */
+    color: #FFFFFF !important;
+    border: none !important;
+    cursor: not-allowed;
+}
+
+.itemInfoCardSameStyleBtn:disabled:hover,
+.itemInfoCardSameStyleBtn :global(.ant-btn.readonly):hover {
+    opacity: 0.4;
+    background: #6150FF !important;
+    color: #FFFFFF !important;
+}
+
+.defaultButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px; 
+    gap: 6px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: none;
+    border: 1px solid #E7E8EE;
+    width: 100%;
+}
+
+.itemInfoCardLeftButtonIcon {
+    width: 14px;
+    height: 14px;
+}
+
+.itemInfoCardLeftButtonText {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #1D2129;
+}
+
+/* 正常状态hover样式 */
+.defaultButtonContainer:hover:not(:disabled):not(.readonly) {
+    background: #FBFBFD !important;
+    box-sizing: border-box !important;
+    border: 1px solid #E7E8EE !important;
+}
+
+.defaultButtonContainer:focus:not(:disabled):not(.readonly) {
+    background: #FBFBFD !important;
+    box-sizing: border-box !important;
+    border: 1px solid #E7E8EE !important;
+}
+
+/* 只读状态按钮样式 */
+.defaultButtonContainer:disabled,
+.buttonContainer :global(.ant-btn.readonly) {
+    opacity: 0.4;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 1px solid #F3F3F6 !important;
+    color: #CCCCD4;
+}
+
+.defaultButtonContainer:disabled:hover,
+.itemInfoCardSameStyleBtn :global(.ant-btn.readonly):hover {
+    opacity: 0.4;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: #CCCCD4;
+    border: 1px solid #F3F3F6 !important;
+}

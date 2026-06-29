@@ -1,0 +1,396 @@
+.popupContainer {
+  :global {
+    .adm-popup-body {
+      border-radius: 8rpx 8rpx 0 0;
+    }
+  }
+}
+
+.quickPortals {
+  display: flex;
+  justify-content: center;
+  column-gap: 16rpx;
+  margin-top: 20rpx;
+}
+
+.caseTools {
+  // 自适应边距
+  --shortcut-portal-margin-side: 0;
+  // 卡片数量
+  --shortcut-portal-item-count: 4;
+  // 卡片内间距
+  --shortcut-portal-item-gap: 12px;
+  // 卡片内部图片宽度
+  --shortcut-portal-item-image-size: 90rpx;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "a b" "c d";
+  grid-gap: 12rpx;
+  width: 100%;
+  margin: 0 auto;
+
+  .caseTool {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 16px;
+    align-items: center;
+    width: 100%;
+    height: 88px;
+    padding-left: 12rpx;
+    background: rgba(104, 129, 255, 0.32);
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      background: rgba(80, 104, 225, 0.6);
+      box-shadow: 0px 4px 16px 0px rgba(90, 119, 197, 0.6);
+    }
+
+    .caseToolTitle {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding-right: 62rpx;
+      font-size: 13rpx;
+      line-height: 18rpx;
+      font-weight: 600;
+
+      > svg {
+        color: #7d8aff;
+      }
+    }
+
+    .caseToolImage {
+      position: absolute;
+      right: -19rpx;
+      top: 22rpx;
+      width: var(--shortcut-portal-item-image-size);
+      height: var(--shortcut-portal-item-image-size);
+      transform: rotate(21deg);
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px 0px rgba(212, 218, 217, 0.7);
+      overflow: hidden;
+    }
+  }
+}
+
+.areaBorder {
+  min-height: 200rpx;
+  overflow: hidden;
+  border: 1rpx dashed var(--case-tools-area-border-color);
+  border-radius: 8rpx;
+  background: var(--case-tools-area-bg);
+
+  &:hover {
+    border-color: var(--case-tools-area-border-color-hover);
+  }
+}
+
+.modalContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 16rpx 12rpx 30rpx;
+  max-height: 80vh;
+
+  .modalBody {
+    overflow: hidden auto;
+    padding-right: 6rpx;
+    &.withFile {
+      padding-bottom: 40rpx;
+    }
+  }
+
+  .modalImage {
+    position: absolute;
+    top: -39rpx;
+    right: 19rpx;
+    width: 180rpx;
+    height: 165rpx;
+  }
+
+  .modalHeader {
+    margin-bottom: 8rpx;
+    .modalTitle {
+      margin-bottom: 3rpx;
+      line-height: 22rpx;
+      font-size: 18rpx;
+      font-weight: bold;
+      color: var(--case-tools-color-text);
+    }
+
+    .modalDescription {
+      padding-right: 188rpx;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      line-height: 18rpx;
+      font-size: 12rpx;
+      color: var(--studio-text-color-secondary);
+    }
+  }
+
+  // 多个上传组件的容器
+  .uploadsContainer {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 12rpx;
+    overflow: hidden;
+
+    &.singleUpload {
+      @extend .areaBorder;
+
+      .uploadComponent:not(:only-child) {
+        flex: none;
+      }
+    }
+
+    &.multipleUploads,
+    &.singleUploadWithFile {
+      .uploadComponent {
+        @extend .areaBorder;
+      }
+    }
+  }
+
+  .marketingSection {
+    flex: 1;
+
+    .marketingSectionTitle {
+      margin-bottom: 8rpx;
+      line-height: 20rpx;
+      font-weight: 500;
+      color: var(--case-tools-color-text);
+    }
+
+    .marketingSectionSelectButton {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 6rpx;
+      height: 36rpx;
+      margin-bottom: 12rpx;
+      padding: 8rpx 12rpx;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border-radius: 8rpx;
+      border: 1px solid #e7e8ee;
+
+      .placeholder {
+        color: #bbbdca;
+      }
+      .marketingStyleText {
+        color: var(--case-tools-color-text);
+      }
+      .marketingSectionSelectArrow {
+        color: #7c7f9a;
+      }
+    }
+  }
+
+  .exampleSection {
+    display: flex;
+    flex-direction: column;
+    gap: 12rpx;
+    margin-top: 12rpx;
+
+    .exampleTitle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10rpx;
+      line-height: 16rpx;
+      font-size: 12rpx;
+      color: var(--case-tools-color-text);
+
+      &::before,
+      &::after {
+        content: "";
+        flex: 1;
+        height: 1rpx;
+        background: var(--case-tools-divider-line-color);
+      }
+
+      &::before {
+        transform: rotate(180deg);
+      }
+    }
+
+    .exampleImages {
+      display: flex;
+      gap: 20rpx;
+      justify-content: center;
+
+      .exampleImageContainer {
+        --offset-x: 14rpx;
+        --offset-y: 7rpx;
+
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+          .exampleImage:first-child img {
+            transform: scale(1.1);
+          }
+        }
+
+        .exampleImage {
+          overflow: hidden;
+          border-radius: 8rpx;
+          border: 1rpx solid #fff;
+
+          img {
+            transition: transform 0.3s ease-in-out;
+          }
+
+          &:first-child,
+          &:only-child {
+            width: 90rpx;
+          }
+
+          &:last-child:not(:only-child) {
+            position: absolute;
+            right: calc(var(--offset-x) * -1);
+            bottom: calc(var(--offset-y) * -1);
+            width: 42rpx;
+            height: 42rpx;
+          }
+        }
+      }
+    }
+  }
+
+  .operationContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rpx 12rpx 18rpx;
+    background-color: #fff;
+  }
+
+  .modalUploadButton {
+    width: 100%;
+    height: 42rpx;
+    margin: 0 auto;
+    font-size: 18rpx;
+  }
+
+  .imageTranslationContainer {
+    @extend .areaBorder;
+    width: 100%;
+    margin-bottom: 20rpx;
+
+    .imageTranslationTitle {
+      margin-bottom: 12rpx;
+      line-height: 20rpx;
+      font-size: 14rpx;
+      font-weight: 500;
+    }
+
+    .imageTranslationList {
+      display: flex;
+      gap: 10rpx;
+
+      .imageTranslationItem {
+        display: flex;
+        align-items: center;
+        gap: 4rpx;
+        padding: 4rpx 10rpx;
+        background: var(--case-tools-item-bg);
+        color: var(--case-tools-color-text);
+        border: 1px solid transparent;
+        border-radius: 8rpx;
+        cursor: pointer;
+
+        &.active {
+          color: var(--color-brand-1);
+          border-color: var(--color-brand-1);
+          background-color: #eef0ff;
+        }
+
+        .imageTranslationItemIcon {
+          width: 15rpx;
+        }
+      }
+    }
+  }
+
+  .uploadIcon {
+    width: 24rpx;
+    height: 24rpx;
+  }
+
+  .uploadText {
+    margin-top: 6rpx;
+    margin-bottom: 16rpx;
+    line-height: 20rpx;
+    font-size: 12rpx;
+  }
+
+  .uploadArea {
+    min-height: 200rpx;
+  }
+
+  .filePreviewContainer {
+    --file-box-width: 100%;
+    --file-box-height: 200rpx;
+    --file-box-border-radius: 8rpx;
+    --file-box-action-offset: 0rpx;
+    --file-box-border-radius: 8rpx;
+    width: 100%;
+  }
+
+  .deleteButton {
+    opacity: 1;
+  }
+}
+
+.progressiveImage {
+  background: none;
+}
+
+.marketingSectionSelect {
+  :global {
+    .adm-action-sheet-button-list {
+      max-height: 72vh;
+      overflow: hidden auto;
+    }
+  }
+}
+
+.marketingSectionTextArea {
+  --font-size: 13rpx;
+  --color: #1b1c1d;
+  --placeholder-color: #bbbdca;
+  padding: 12rpx;
+  border: 1px solid #e7e8ee;
+  border-radius: 8rpx;
+}
+
+[data-theme="light"] {
+  .caseTools .caseTool {
+    background: linear-gradient(
+      121deg,
+      rgba(252, 250, 255, 0.5) 11%,
+      rgba(255, 255, 255, 0.2) 100%
+    );
+    border: 1px solid #f3f3f6;
+
+    &:hover {
+      box-shadow: 0px 4px 16px 0px rgba(187, 189, 202, 0.16);
+    }
+  }
+}

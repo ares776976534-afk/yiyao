@@ -1,0 +1,29 @@
+/* 渐进式图片容器，填满卡片但不影响背景底色占位 */
+.preview {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  overflow: hidden;
+
+  :global {
+    .studio-image {
+      width: 100%;
+      height: 100%;
+
+      .studio-image-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.previewLoaded {
+  opacity: 1;
+}

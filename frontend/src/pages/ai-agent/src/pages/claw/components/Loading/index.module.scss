@@ -1,0 +1,72 @@
+/* 全屏 Loading，对齐设计稿 overlay + deployBox 风格 */
+$overlayBg: rgba(0, 0, 0, 0.4);
+$cardBg: #ffffff;
+$cardRadius: 16px;
+$textColor: #1b1c1d;
+
+.overlay {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $overlayBg;
+  backdrop-filter: blur(3px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: $textColor;
+  white-space: nowrap;
+
+  /* 非全屏：在父元素内铺满，父元素需有 position: relative/absolute 等 */
+  &.overlayContained {
+    position: absolute;
+  }
+}
+
+.box {
+  border-radius: $cardRadius;
+  background: $cardBg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 200px;
+  height: 169px;
+}
+
+.iconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  .iconImg {
+    height: 45px;
+    object-fit: contain;
+  }
+
+  .spinner {
+    width: 64px;
+    height: 64px;
+    border: 4px solid rgba(110, 80, 255, 0.2);
+    border-top-color: #6e50ff;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+}
+
+.text {
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

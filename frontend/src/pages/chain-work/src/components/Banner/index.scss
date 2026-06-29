@@ -1,0 +1,23 @@
+.banner {
+  width: 100%;
+  height: 80px;
+  border-radius: 6px;
+  overflow: hidden;
+
+  .banner-a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    .banner-img {
+      width: 100%;
+      height: 80px;
+    }
+  }
+
+  .banner-img {
+    width: 100%;
+    height: 80px;
+  }
+}

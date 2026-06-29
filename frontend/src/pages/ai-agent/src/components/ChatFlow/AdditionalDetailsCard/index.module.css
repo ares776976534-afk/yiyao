@@ -1,0 +1,16 @@
+.additionalDetailsCard {
+    font-size: 13px;
+    color: #7C7F9A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #F9F9FC;
+    padding: 8px;
+}
+
+.additionalDetailsCardImg {
+    width: 12px;
+    height: 12px;
+}

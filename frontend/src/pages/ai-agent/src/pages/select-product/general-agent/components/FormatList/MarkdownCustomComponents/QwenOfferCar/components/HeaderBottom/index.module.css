@@ -1,0 +1,89 @@
+.skuPopover :global(.ant-popover-inner) {
+  border-radius: 16px;
+  padding: 20px;
+  width: 360px;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.04);
+}
+
+.skuPopover :global(.ant-popover-title) {
+  margin-bottom: 12px;
+}
+
+.skuPopoverTitle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.skuPopoverTitleText {
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.skuPopoverTitleTextCount {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}
+
+.headerBottomRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headerBottomRightItem {
+  width: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  cursor: pointer;
+}
+
+.headerBottomRightItemTitle {
+  display: flex;
+  gap: 4px;
+}
+
+.headerBottomRightItemTitleText {
+  font-family: PingFang SC;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+
+.rotatedArrowIcon {
+  transform: rotate(0deg);
+  color: var(--text-secondary);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.headerBottomRightItemValue {
+  font-family: AlibabaSans102;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  transition: color 0.2s ease;
+}
+
+.headerBottomRightItem:hover .headerBottomRightItemTitleText,
+.headerBottomRightItem:hover .headerBottomRightItemValue,
+.headerBottomRightItem:hover .rotatedArrowIcon {
+  color: #6E50FF;
+}
+
+.headerBottomRightItem:hover .rotatedArrowIcon {
+  transform: rotate(180deg);
+}

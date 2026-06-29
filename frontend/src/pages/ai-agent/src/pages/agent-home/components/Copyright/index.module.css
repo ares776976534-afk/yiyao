@@ -1,0 +1,87 @@
+
+.copyrightImage {
+  width: 291px;
+  height: 20px;
+}
+
+.copyrightText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  gap: 10px;
+
+  a {
+    color: #BBBDCA;
+  }
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  gap: 10px;
+
+  a {
+    color: #BBBDCA;
+  }
+}
+
+.iconImage {
+  width: 18px;
+  height: 18px;
+}
+
+.iconImage2 {
+  width: 65px;
+  height: 70px;
+}
+
+.partnerSection {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  height: 20px;
+}
+
+.partnerLabel {
+  font-family: PingFang SC;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}
+
+.partnerLogos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.divider {
+  width: 8px;
+  height: 0px;
+  transform: rotate(90deg);
+  z-index: 1;
+  border: .5px solid var(--border-primary);
+}
+
+.icon1688 {
+  width: 104.45px;
+  height: 13.38px;
+}
+
+.app1688 {
+  width: 34.62px;
+  height: 13.38px;
+}
+
+.iconTongYi {
+  width: 71.65px;
+  height: 16px;
+}

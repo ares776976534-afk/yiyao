@@ -1,0 +1,183 @@
+.itemInfoCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.itemInfoCardHeader {
+    display: flex;
+    border-radius: 12px;
+    background: var(--fill-secondary);
+}
+
+.itemInfoCardHeaderLeft{
+    width: 180px;
+    height: 180px;
+    position: relative;
+}
+
+.itemInfoCardHeaderRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px 20px;
+    flex: 1;
+}
+
+.itemInfoCardHeaderRightTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.itemInfoCardLeftTimeContainer {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+}
+
+.itemInfoCardLeftTimeIcon {
+    display: flex;
+    align-items: center;
+}
+
+.itemInfoCardLeftTimeContainerSeparator {
+   width: 2px;
+   height: 10px;
+   background: #E7E8EE;
+}
+
+.itemInfoCardLeftTimeContainerIcon {
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.itemInfoCardHeaderRightScore {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-flow: wrap;
+}
+
+.itemInfoCardHeaderRightScoreItem {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+}
+
+.itemInfoCardHeaderRightScoreItemTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.itemInfoCardHeaderRightScoreItemTitleText {
+    width: 140px;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.itemInfoCardHeaderRightScoreItemTitleTextValueContainer {
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+}
+
+.itemInfoCardHeaderRightScoreItemTitleTextValue {
+    font-family: AlibabaSans102;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+}
+
+.itemInfoCardHeaderRightScoreItemTitleTextUnit {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+}
+
+.tabContentItemRightTitle {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+}
+
+.tabContentChart {
+    width: 48px;
+    height: 48px;
+}
+
+.itemInfoCardHeaderRightScoreItemRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.itemInfoCardLeftTitle {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+    text-overflow: ellipsis;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal;
+    cursor: pointer;
+    text-align: justify;
+}
+
+.itemInfoCardLeftTitle:hover {
+    color: var(--dt-colors-brand-primary);
+}
+
+.imageIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 2px;
+    border-radius: 12px 0px 8px 0px;
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: normal;
+    color: var(--text-white);
+}
+
+.itemInfoCardHeaderRightScoreItemTitleTextTitle {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+}

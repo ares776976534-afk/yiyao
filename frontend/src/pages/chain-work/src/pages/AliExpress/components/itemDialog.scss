@@ -1,0 +1,47 @@
+.itemDialog {
+  .next-dialog-header {
+    padding: 20px 20px 0 20px;
+    line-height: 19px;
+  }
+  .commonTable {
+    .c-itemBlock.hasBorder {
+      .searchFilter {
+        >div {
+          div:last-child {
+            flex: none;
+            text-align: none;
+          }
+        }
+      }
+    }
+  }
+  .searchFilter .field-block .label {
+    width: 56px;
+  }
+  .commonTable .next-table td {
+    border-width: 0 0 1px 0 !important;
+    vertical-align: middle;
+  }
+  .next-dialog-body.next-dialog-body-no-footer {
+    padding: 20px;
+    .commonTable .c-itemBlock.hasBorder {
+      padding: 0;
+      th {
+        border-right-width: 0 !important;
+      }
+      .searchFilter {
+        margin-top: 0;
+      }
+      .next-pagination {
+        display: flex;
+      }
+      .next-pagination.next-simple.next-pagination.next-simple .next-pagination-item {
+        height: 32px;
+      }
+    }
+  }
+  .dataTable {
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
+}

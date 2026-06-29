@@ -1,0 +1,38 @@
+.keywordButton {
+    cursor: pointer;
+    display: inline-table;
+}
+
+.keywordButtonContent {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding: 6px 14px;
+    gap: 8px;
+    border-radius: 77px;
+    background: var(--fill-white);
+    box-sizing: border-box;
+    border: 1px solid var(--border-primary);
+}
+
+.keywordButtonContent:hover {
+    background: #FBFBFD;
+}
+
+.keywordButtonText {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.keywordButtonMobileContent {
+    height: 34rpx;
+    display: flex;
+    align-items: center;
+    padding: 7rpx 12rpx;
+    gap: 8rpx;
+    border-radius: 12rpx;
+    background: var(--fill-white);
+    box-sizing: border-box;
+    border: 1rpx solid var(--border-primary);
+}

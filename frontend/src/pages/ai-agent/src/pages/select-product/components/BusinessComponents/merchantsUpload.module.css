@@ -1,0 +1,373 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 12px;
+  width: 800px;
+}
+
+.sectionHeader {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: center;
+  height: 24px;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1D2129;
+}
+
+.productSection {
+  border-radius: 12px;
+  background: #FBFBFD;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 16px;
+  position: relative;
+}
+
+.productSectionContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 16px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.uploadCardWrapper {
+  /* max-width: 344px ; */
+  width: 100%;
+}
+
+.antdUpload {
+  width: 100%;
+  height: 150px !important;
+}
+
+.antdUpload :global(.ant-upload) {
+  padding: 0 !important;
+}
+
+.antdUpload :global(.ant-upload-drag) {
+  border-radius: 12px !important;
+  background: #FFFFFF !important;
+  border: 1px dashed #E7E8EE !important;
+  padding-top: 32px !important;
+  height: 150px !important;
+}
+
+.antdUpload :global(.ant-upload-drag:hover) {
+  border-color: #E7E8EE !important;
+}
+
+.uploadCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.uploadText {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 6px;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 12px;
+}
+
+.uploadTitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #1B1C1D;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.uploadSubtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #BBBDCA;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.orText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #7B7B8D;
+}
+
+.linkCard {
+  border-radius: 12px;
+  background: #FFFFFF;
+  border: 1px dashed #E7E8EE !important;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 12px;
+  box-sizing: border-box;
+  padding: 32px 20px 24px 20px;
+  align-items: center;
+  width: 93.505%;
+  height: 150px;
+}
+
+.linkContent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 6px;
+  align-items: center;
+  width: 100%;
+  height: 62px;
+}
+
+.linkTitle {
+  font-weight: 400;
+  line-height: 20px;
+  color: #1B1C1D;
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.linkInputContainer {
+  width: 100%;
+  height: 36px;
+
+}
+
+.antdLinkInput {
+  width: 100% !important;
+  height: 36px !important;
+  border-radius: 8px;
+  border-color: #E7E8EE;
+}
+
+.antdLinkInput :global(.ant-input) {
+  border-radius: 8px !important;
+  /* border: 1px solid #E7E8EE !important; */
+  padding: 8px 0 !important;
+  font-size: 14px !important;
+  color: #1D2129 !important;
+  line-height: 20px !important;
+  height: 36px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.antdLinkInput :global(.ant-input::placeholder) {
+  /* color: #7B7B8D !important; */
+  color: #BBBDCA !important;
+  font-size: 14px !important;
+}
+
+.parseButton {
+  color: #6E50FF !important;
+  font-size: 14px !important;
+  padding: 0 !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.parseButton:hover {
+  color: #6E50FF !important;
+}
+
+.uploadData {
+  background: #FBFBFD;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.uploadDataDelete {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.uploadLoading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.uploadLoadingIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.uploadLoadingText {
+  font-size: 14px;
+  line-height: 20px;
+  color: #7B7B8D;
+}
+
+.uploadErrorText {
+  font-size: 14px;
+  line-height: 20px;
+  color: #7B7B8D;
+}
+
+.uploadDataItem {
+  width: 160px;
+  height: 160px;
+  display: flex;
+}
+
+.uploadDataItemLinkWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.uploadDataItemValue {
+  border-radius: 4px;
+  height: 100%;
+}
+
+/* 移除悬停效果，因为图片不再可点击 */
+/* .uploadDataItemLinkWrapper:hover {
+    .uploadDataItemLinkWrapperMask {
+      opacity: 1;
+    }
+  } */
+
+.uploadDataItemLinkWrapperMask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.uploadTip {
+  display: flex;
+  gap: 8px;
+}
+
+/* 风控状态红色边框 */
+.riskBorder {
+  background: #FBFBFD;
+  box-sizing: border-box;
+  border: 1px solid #F55353;
+}
+
+.riskBorder .uploadTip {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--semantic-warning-primary);
+}
+
+.uploadTipTitle {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-tertiary);
+}
+
+.uploadTipTitleText {
+  color: #ff4d4f;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+}
+
+/* 解析图片链接方式的包装器 */
+.linkImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* 解析图片链接方式的hover遮罩 */
+.linkImageHoverMask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  border-radius: 12px;
+  z-index: 2;
+}
+
+.linkImageWrapper:hover .linkImageHoverMask {
+  opacity: 1;
+}
+
+/* hover遮罩中的文字 */
+.linkImageHoverText {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  pointer-events: none;
+}

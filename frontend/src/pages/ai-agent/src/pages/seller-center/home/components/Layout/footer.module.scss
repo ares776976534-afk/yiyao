@@ -1,0 +1,333 @@
+@import '../../responsive.scss';
+
+.container {
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  // padding: vw(128) vw(162);
+  background-image: url('https://img.alicdn.com/imgextra/i3/O1CN01r4pKv41KEVREIrNpW_!!6000000001132-2-tps-3840-1136.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+  padding-top: 102px;
+  padding-bottom: 10px;
+  padding-left: calc(50vw - 600px);
+  padding-right: calc(50vw - 600px);
+  position: relative;
+
+  // @media screen and (min-width: 1921px) {
+  //   background-image: url('https://img.alicdn.com/imgextra/i2/O1CN01WExpiP29Nhnz6P3GN_!!6000000008056-2-tps-3840-568.png');
+  // }
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  // @media screen and (min-width: 1921px) {
+  //   justify-content: center;
+  // }
+}
+
+.brandSection {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  box-sizing: border-box;
+  margin-right: 287px;
+
+  // @media screen and (min-width: 1921px) {
+  //   padding: 0;
+  //   margin-right: 0;
+  // }
+}
+
+.logo {
+  width: 132px;
+  height: 36px;
+  margin-left: 3px;
+  margin-top: -12px;
+
+  // @media screen and (min-width: 1921px) {
+  //   width: 158px;
+  //   height: 64px;
+  // }
+}
+
+.description {
+  display: -webkit-box;
+  // -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+  word-break: break-wordl;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  margin-top: 16px;
+  font-family: FZLTHProR;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  width: 398px;
+
+  // @media screen and (min-width: 1921px) {
+  //   margin-right: 12vw;
+  //   width: 15vw;
+  //   font-size: 20px;
+
+  //   font-family: Alibaba PuHuiTi 3.0;
+  //   font-weight: normal;
+  //   line-height: 32px;
+  //   letter-spacing: normal;
+  //   /* Fill/白色 color-fill-3 */
+  //   color: #FFFFFF;
+  // }
+}
+
+.navigation {
+  margin-right: 183px;
+  display: flex;
+  flex-direction: column;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.navItem {
+  white-space: nowrap;
+  height: vw(32);
+
+  font-family: Alibaba PuHuiTi 3.0;
+  font-size: 19.03px;
+  font-weight: bold;
+  line-height: 25.38px;
+  letter-spacing: normal;
+  color: #FFFFFF;
+  margin-bottom: 19px;
+
+  // @media screen and (min-width: 1921px) {
+  //   font-size: 24px;
+  //   line-height: 32px;
+  //   margin-bottom: 25px;
+  //   height: 32px;
+
+  //   font-size: 28px;
+  //   margin-bottom: 0;
+  //   line-height: 0;
+  // }
+}
+
+.navItem:last-child {
+  margin-left: vw(418);
+}
+
+.imagesSection {
+  width: vw(1079);
+  height: vw(380);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  z-index: 4;
+  top: vw(187);
+  right: vw(-45);
+}
+
+.leftImage {
+  width: vw(538);
+  height: vw(380);
+}
+
+.rightImage {
+  width: vw(536);
+  height: vw(380);
+  margin-left: vw(5);
+}
+
+.productMenu {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 8px;
+
+  // @media screen and (min-width: 1921px) {
+  //   gap: 0px;
+  // }
+}
+
+.supportMenu {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: vw(8);
+}
+
+.menuItem {
+  // height: vw(32);
+  white-space: nowrap;
+  cursor: pointer;
+  // transition: opacity 0.3s ease;
+
+  font-family: Alibaba PuHuiTi 3.0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 25.38px;
+  letter-spacing: normal;
+  color: rgba(255, 255, 255, 0.8);
+
+  &:hover {
+    opacity: 1;
+  }
+
+  // @media screen and (min-width: 1921px) {
+  //   font-size: 20px;
+  // }
+}
+
+.copyrightImage {
+  width: 291px;
+  height: 20px;
+}
+
+.copyrightText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  gap: 10px;
+
+  a {
+    color: #FFF;
+    opacity: 0.6;
+  }
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 106px;
+  padding-bottom: 27px;
+  font-size: 12px;
+  gap: 10px;
+
+  a {
+    color: #FFF;
+    opacity: 0.6;
+  }
+}
+
+.mobileFooterMenu {
+  display: none;
+}
+
+.mobileCopyright {
+  display: none;
+}
+
+.mobileFooterBackground {
+  display: none;
+}
+
+.mobileFooterBackgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0;
+    background-size: auto 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 42px 24px;
+    padding-bottom: 200px;
+    background: none;
+    background-color: #060515;
+  }
+
+  .content {
+    z-index: 1;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .logo {
+    width: 79px;
+    height: 32px;
+  }
+
+  .brandSection {
+    margin: 0;
+    padding: 0;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .mobileFooterMenu {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    z-index: 1;
+  }
+
+  .mobileCopyright {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+
+    a {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  .mobileFooterBackground {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .mobileFooterBackgroundImage {
+    width: 1011px;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+.globalLogo {
+  width: 263.08px;
+  height: 36px;
+}

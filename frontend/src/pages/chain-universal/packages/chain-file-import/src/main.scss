@@ -1,0 +1,10 @@
+// Fusion皮肤配置核心变量
+@import "~@alifd/next/lib/core/index.scss";
+// 自定义变量
+@import "scss/variable";
+
+// 你的组件scss
+.ascp-demo {
+  color: $ascp-upload-brand-color;
+}
+

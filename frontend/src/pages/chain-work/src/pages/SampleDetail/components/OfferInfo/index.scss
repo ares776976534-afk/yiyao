@@ -1,0 +1,57 @@
+.offer-info-container {
+  margin-top: 16px;
+
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
+  }
+
+  .title {
+    margin-bottom: 16px;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .offer-content {
+    .offer-content-item {
+      display: flex;
+      img {
+        display: block;
+        width: 80px;
+        height: 80px;
+        border-radius: 3px;
+      }
+      .offer-name-id {
+        margin-left: 12px;
+        .offer-name {
+          margin-bottom: 4px;
+          line-height: 20px;
+          font-weight: 600;
+        }
+        .offer-id {
+          line-height: 20px;
+          font-size: 13px;
+          color: #666;
+        }
+      }
+      .offer-spec {
+        .offer-spec-item {
+          line-height: 20px;
+          margin-bottom: 12px;
+          color: #666;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+          .offer-spec-bold {
+            font-weight: 500;
+            color: #333;
+          }
+        }
+      }
+    }
+  }
+}

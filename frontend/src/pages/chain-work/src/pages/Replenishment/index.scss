@@ -1,0 +1,81 @@
+.replenishment {
+  .c-itemBlock {
+    margin-bottom: 16px;
+
+    &.hasBorder {
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.05);
+      background: #fff;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .next-table {
+    border-radius: 6px;
+    border: 1px solid #e5e5e5;
+
+    th.next-table-cell {
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+      background: #f8f8fa;
+
+      &.next-table-selection {
+        width: 16px;
+
+        .next-table-cell-wrapper {
+          width: 16px;
+        }
+      }
+
+      &:first-child {
+        padding-left: 12px;
+      }
+
+      .next-table-cell-wrapper {
+        padding: 13px 10px;
+      }
+    }
+
+    th.next-table-selection {
+      .next-table-cell-wrapper {
+        padding: 0;
+      }
+    }
+
+    td.next-table-cell {
+      padding: 16px 10px 16px 10px;
+      vertical-align: top;
+
+      &.first {
+        padding-left: 12px;
+      }
+
+      &.last {
+        padding-right: 6px;
+      }
+
+      &.next-table-selection {
+        padding-right: 12px;
+      }
+
+      .next-table-cell-wrapper {
+        padding: 0;
+      }
+    }
+
+    .next-table-row.last {
+      td.next-table-cell {
+        border: 0;
+      }
+    }
+
+    .next-table-cell.next-table-selection {
+      text-align: center;
+    }
+  }
+}

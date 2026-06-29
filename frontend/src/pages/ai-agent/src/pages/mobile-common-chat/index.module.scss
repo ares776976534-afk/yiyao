@@ -1,0 +1,18 @@
+.mobileCommonChatContainer {
+  // :global {
+  //   .adm-safe-area  {
+  //     flex-shrink: 0;
+  //   }
+  // }
+  :global {
+    .mobile-markdown {
+      a {
+        color: #1B1C1D;
+      }
+    }
+  }
+
+  .mobileCommonChatContent {
+    padding: 20rpx;
+  }
+}

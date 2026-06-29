@@ -1,0 +1,4792 @@
+[
+  {
+    "file": "src/i18n/constants.ts",
+    "line": 18,
+    "column": 4,
+    "key": "constants.jtzw",
+    "value": "简体中文",
+    "originalValue": "简体中文",
+    "type": "ObjectProperty",
+    "uuid": "b0fd46c4-2dd1-440f-97d1-563b0aa79998"
+  },
+  {
+    "file": "src/i18n/constants.ts",
+    "line": 19,
+    "column": 4,
+    "key": "constants.ftzw",
+    "value": "繁體中文",
+    "originalValue": "繁體中文",
+    "type": "ObjectProperty",
+    "uuid": "652bb145-0461-43d1-9f86-5abb910b8bb9"
+  },
+  {
+    "file": "src/i18n/constants.ts",
+    "line": 21,
+    "column": 4,
+    "key": "constants.dayby",
+    "value": "日本語",
+    "originalValue": "日本語",
+    "type": "ObjectProperty",
+    "uuid": "476b5174-344e-4536-a149-f3014c7a0b45"
+  },
+  {
+    "file": "src/pages/sourcing/index.tsx",
+    "line": 6,
+    "column": 2,
+    "key": "sourcing.axxsAgent",
+    "value": "遨虾-选商Agent",
+    "originalValue": "遨虾-选商Agent",
+    "type": "ObjectProperty",
+    "uuid": "0a1d1d1e-ece2-4930-b581-a348edc43495"
+  },
+  {
+    "file": "src/pages/select-business/index.tsx",
+    "line": 98,
+    "column": 2,
+    "key": "select-business.axxsAgent",
+    "value": "遨虾-选商Agent",
+    "originalValue": "遨虾-选商Agent",
+    "type": "ObjectProperty",
+    "uuid": "28ec661a-89bd-496f-8f8f-6cbce815c118"
+  },
+  {
+    "file": "src/pages/mobile-select-product/index.tsx",
+    "line": 102,
+    "column": 2,
+    "key": "mobile-select-product.axxpAgent",
+    "value": "遨虾-选品Agent",
+    "originalValue": "遨虾-选品Agent",
+    "type": "ObjectProperty",
+    "uuid": "08711333-9b2e-46d3-a8a1-b7eb0958c543"
+  },
+  {
+    "file": "src/pages/mobile-select-business/index.tsx",
+    "line": 72,
+    "column": 2,
+    "key": "mobile-select-business.axxsAgent",
+    "value": "遨虾-选商Agent",
+    "originalValue": "遨虾-选商Agent",
+    "type": "ObjectProperty",
+    "uuid": "ff9b2667-c462-42e4-9094-8f68d9624947"
+  },
+  {
+    "file": "src/pages/mobile-inquiry/index.tsx",
+    "line": 49,
+    "column": 2,
+    "key": "mobile-inquiry.axxpAgent",
+    "value": "遨虾-询盘Agent",
+    "originalValue": "遨虾-询盘Agent",
+    "type": "ObjectProperty",
+    "uuid": "4e81a978-92e4-476a-ae71-409ffdc68b33"
+  },
+  {
+    "file": "src/pages/mobile-common-chat/index.tsx",
+    "line": 57,
+    "column": 2,
+    "key": "mobile-common-chat.astg",
+    "value": "遨虾-咨询Agent",
+    "originalValue": "遨虾-咨询Agent",
+    "type": "ObjectProperty",
+    "uuid": "16264c51-7a41-4adc-99e4-821dd70b18b6"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/index.tsx",
+    "line": 18,
+    "column": 4,
+    "key": "mobile-agent-home.xp",
+    "value": "选品",
+    "originalValue": "选品",
+    "type": "ObjectProperty",
+    "uuid": "d91f6c5f-53ca-4a94-ac8f-f50c37bddfb7"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/index.tsx",
+    "line": 23,
+    "column": 4,
+    "key": "mobile-agent-home.zs",
+    "value": "找商",
+    "originalValue": "找商",
+    "type": "ObjectProperty",
+    "uuid": "f2e784bd-e7af-42c6-a376-193309d4822d"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/index.tsx",
+    "line": 28,
+    "column": 4,
+    "key": "mobile-agent-home.sc",
+    "value": "素材",
+    "originalValue": "素材",
+    "type": "ObjectProperty",
+    "uuid": "01861841-dea4-4877-be4b-317827f63f45"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/index.tsx",
+    "line": 33,
+    "column": 4,
+    "key": "mobile-agent-home.xp.2",
+    "value": "询盘",
+    "originalValue": "询盘",
+    "type": "ObjectProperty",
+    "uuid": "67e7be87-530b-4590-86be-5bfd3e30cbf7"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/index.tsx",
+    "line": 38,
+    "column": 4,
+    "key": "mobile-agent-home.consultation",
+    "value": "咨询",
+    "originalValue": "咨询",
+    "type": "ObjectProperty",
+    "uuid": "7f565f45-8fd4-4871-b23b-6e90e0dd00b4"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/index.tsx",
+    "line": 82,
+    "column": 42,
+    "key": "mobile-agent-home.kjdssy",
+    "value": "跨境电商生意",
+    "originalValue": "跨境电商生意",
+    "type": "JsxText",
+    "uuid": "7a247fd3-5866-4d1d-8a01-044c3398435b"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/index.tsx",
+    "line": 87,
+    "column": 49,
+    "key": "mobile-agent-home.limitedtimeFree",
+    "value": "限时免费",
+    "originalValue": "限时免费",
+    "type": "JsxText",
+    "uuid": "b052d582-3f6f-499d-89b4-cde11b5ea161"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/index.tsx",
+    "line": 120,
+    "column": 2,
+    "key": "mobile-agent-home.ase",
+    "value": "遨虾-跨境电商生意Agent",
+    "originalValue": "遨虾-跨境电商生意Agent",
+    "type": "ObjectProperty",
+    "uuid": "5e97b455-c612-4a05-9990-6f4974c34ab9"
+  },
+  {
+    "file": "src/pages/insight/index.tsx",
+    "line": 6,
+    "column": 2,
+    "key": "insight.axxpAgent",
+    "value": "遨虾-选品Agent",
+    "originalValue": "遨虾-选品Agent",
+    "type": "ObjectProperty",
+    "uuid": "c81fd39e-f660-4981-a81c-0d634c56db1f"
+  },
+  {
+    "file": "src/pages/inquiry/index.tsx",
+    "line": 21,
+    "column": 2,
+    "key": "inquiry.axxpAgent",
+    "value": "遨虾-询盘Agent",
+    "originalValue": "遨虾-询盘Agent",
+    "type": "ObjectProperty",
+    "uuid": "003d5687-b7f2-42b2-93b5-4caa11febda3"
+  },
+  {
+    "file": "src/pages/inquiry/index.tsx",
+    "line": 60,
+    "column": 6,
+    "key": "inquiry.cihhkfeazvet",
+    "value": "复制链接并分享后，获得链接的人均可访问，页面包含聊天记录，请注意隐私安全。",
+    "originalValue": "复制链接并分享后，获得链接的人均可访问，页面包含聊天记录，请注意隐私安全。",
+    "type": "JsxAttribute",
+    "uuid": "c24727c3-bcf4-41bf-ae8d-73dac5d11247"
+  },
+  {
+    "file": "src/pages/home/index.tsx",
+    "line": 10,
+    "column": 2,
+    "key": "home.ase",
+    "value": "遨虾-跨境电商生意Agent",
+    "originalValue": "遨虾-跨境电商生意Agent",
+    "type": "ObjectProperty",
+    "uuid": "93439281-7bc5-471a-8dc9-ea0ddde3e668"
+  },
+  {
+    "file": "src/pages/chat/index.tsx",
+    "line": 6,
+    "column": 2,
+    "key": "chat.astg",
+    "value": "遨虾-咨询Agent",
+    "originalValue": "遨虾-咨询Agent",
+    "type": "ObjectProperty",
+    "uuid": "b66bb4c3-d19d-4043-ad11-ffad04dad74f"
+  },
+  {
+    "file": "src/pages/about-us/index.tsx",
+    "line": 6,
+    "column": 2,
+    "key": "about-us.ajA",
+    "value": "遨虾-AI跨境电商运营Agent",
+    "originalValue": "遨虾-AI跨境电商运营Agent",
+    "type": "ObjectProperty",
+    "uuid": "55880aec-15d8-4997-9045-63e78bef70dd"
+  },
+  {
+    "file": "src/components/studio-canvas/toolbar.tsx",
+    "line": 216,
+    "column": 35,
+    "key": "studio-canvas.toolbar.imageUploadFailed",
+    "value": "图片上传失败",
+    "originalValue": "图片上传失败",
+    "type": "StringLiteral",
+    "uuid": "b00149db-f085-479e-8c59-ea3e76276030"
+  },
+  {
+    "file": "src/components/studio-canvas/core.tsx",
+    "line": 1219,
+    "column": 86,
+    "key": "studio-canvas.core.wmm",
+    "value": "未命名",
+    "originalValue": "未命名",
+    "type": "StringLiteral",
+    "uuid": "1b90b7b6-a0c3-4976-8231-57ad0e2958d5"
+  },
+  {
+    "file": "src/components/studio-canvas/core.tsx",
+    "line": 1340,
+    "column": 83,
+    "key": "studio-canvas.core.wmm",
+    "value": "未命名",
+    "originalValue": "未命名",
+    "type": "StringLiteral",
+    "uuid": "437e3b3a-bf4a-491b-8c49-f3f07917358f"
+  },
+  {
+    "file": "src/components/studio-canvas/core.tsx",
+    "line": 1497,
+    "column": 74,
+    "key": "studio-canvas.core.wmm",
+    "value": "未命名",
+    "originalValue": "未命名",
+    "type": "StringLiteral",
+    "uuid": "18cbe44f-b380-4be8-aca9-24c27e65ed9f"
+  },
+  {
+    "file": "src/components/studio-canvas/core.tsx",
+    "line": 1962,
+    "column": 94,
+    "key": "studio-canvas.core.wmm",
+    "value": "未命名",
+    "originalValue": "未命名",
+    "type": "StringLiteral",
+    "uuid": "1a46f688-95cb-4bd6-9e6f-c4e73b001733"
+  },
+  {
+    "file": "src/components/studio-canvas/core.tsx",
+    "line": 2793,
+    "column": 86,
+    "key": "studio-canvas.core.wmm",
+    "value": "未命名",
+    "originalValue": "未命名",
+    "type": "StringLiteral",
+    "uuid": "62ba4c81-4468-4368-84af-7105a6826432"
+  },
+  {
+    "file": "src/components/TaskLinkModel/TaskLinkContent.tsx",
+    "line": 18,
+    "column": 10,
+    "key": "TaskLinkModel.TaskLinkContent.qndwsjuo",
+    "value": "请在PC电脑端浏览器打开，查看运行结果或解锁完整功能",
+    "originalValue": "请在PC电脑端浏览器打开，查看运行结果或解锁完整功能",
+    "type": "StringLiteral",
+    "uuid": "693e8754-6977-452f-ae8f-28fca7b977ec"
+  },
+  {
+    "file": "src/components/TaskLinkModel/TaskLinkContent.tsx",
+    "line": 19,
+    "column": 20,
+    "key": "TaskLinkModel.TaskLinkContent.zkdqyu",
+    "value": "粘贴任务链接到PC浏览器\n查看运行结果",
+    "originalValue": "粘贴任务链接到PC浏览器\n查看运行结果",
+    "type": "StringLiteral",
+    "uuid": "1861c4d0-5ae8-444f-a0b8-ca2f603bbb0b"
+  },
+  {
+    "file": "src/components/TaskLinkModel/TaskLinkContent.tsx",
+    "line": 20,
+    "column": 15,
+    "key": "TaskLinkModel.TaskLinkContent.copyLink",
+    "value": "复制链接",
+    "originalValue": "复制链接",
+    "type": "StringLiteral",
+    "uuid": "118fb0a3-cbbb-449e-b9ba-11bd93643b22"
+  },
+  {
+    "file": "src/components/SelectProduct/FeedPopover.tsx",
+    "line": 13,
+    "column": 4,
+    "key": "SelectProduct.FeedPopover.bgxg",
+    "value": "报告效果",
+    "originalValue": "报告效果",
+    "type": "ObjectProperty",
+    "uuid": "48d00aa8-4bb7-4505-8160-92926cf78334"
+  },
+  {
+    "file": "src/components/SelectProduct/FeedPopover.tsx",
+    "line": 17,
+    "column": 4,
+    "key": "SelectProduct.FeedPopover.cpfunction",
+    "value": "产品功能",
+    "originalValue": "产品功能",
+    "type": "ObjectProperty",
+    "uuid": "1312e96a-d4e0-44fa-934a-c7dbaf4320d7"
+  },
+  {
+    "file": "src/components/SelectProduct/FeedPopover.tsx",
+    "line": 21,
+    "column": 4,
+    "key": "SelectProduct.FeedPopover.ggo",
+    "value": "改进建议",
+    "originalValue": "改进建议",
+    "type": "ObjectProperty",
+    "uuid": "ff73b0f8-2448-465c-a129-14ea9efc3e3d"
+  },
+  {
+    "file": "src/components/SelectProduct/FeedPopover.tsx",
+    "line": 25,
+    "column": 4,
+    "key": "SelectProduct.FeedPopover.dataError",
+    "value": "数据错误",
+    "originalValue": "数据错误",
+    "type": "ObjectProperty",
+    "uuid": "97a40464-c66b-47d1-84bd-e99be891f74d"
+  },
+  {
+    "file": "src/components/SelectProduct/FeedPopover.tsx",
+    "line": 29,
+    "column": 4,
+    "key": "SelectProduct.FeedPopover.qt",
+    "value": "其他",
+    "originalValue": "其他",
+    "type": "ObjectProperty",
+    "uuid": "76a370a8-a80c-43a5-9b97-6315d3756579"
+  },
+  {
+    "file": "src/components/SelectProduct/FeedPopover.tsx",
+    "line": 62,
+    "column": 51,
+    "key": "SelectProduct.FeedPopover.submitFeedback",
+    "value": "提交反馈",
+    "originalValue": "提交反馈",
+    "type": "JsxText",
+    "uuid": "f15ea0b0-d483-4756-8ac7-26129a9a3b1a"
+  },
+  {
+    "file": "src/components/SelectProduct/FeedPopover.tsx",
+    "line": 81,
+    "column": 45,
+    "key": "SelectProduct.FeedPopover.ilh",
+    "value": "问题类型（多选）",
+    "originalValue": "问题类型（多选）",
+    "type": "JsxText",
+    "uuid": "53159163-c83d-4fa4-a6d7-3629fe89bb58"
+  },
+  {
+    "file": "src/components/SelectProduct/FeedPopover.tsx",
+    "line": 86,
+    "column": 38,
+    "key": "SelectProduct.FeedPopover.qcu",
+    "value": "请选择问题类型",
+    "originalValue": "请选择问题类型",
+    "type": "ObjectProperty",
+    "uuid": "61cd4d9c-2fb0-41e5-a735-a5fe9296de10"
+  },
+  {
+    "file": "src/components/SelectProduct/FeedPopover.tsx",
+    "line": 101,
+    "column": 45,
+    "key": "SelectProduct.FeedPopover.feedbackContent",
+    "value": "反馈内容",
+    "originalValue": "反馈内容",
+    "type": "JsxText",
+    "uuid": "c349870f-992c-4230-b3d2-ec43873c1244"
+  },
+  {
+    "file": "src/components/SelectProduct/FeedPopover.tsx",
+    "line": 109,
+    "column": 16,
+    "key": "SelectProduct.FeedPopover.qtbot",
+    "value": "请输入反馈内容",
+    "originalValue": "请输入反馈内容",
+    "type": "ObjectProperty",
+    "uuid": "0d40af2f-cc14-4ad2-b93b-0d26523ddd68"
+  },
+  {
+    "file": "src/components/SelectProduct/FeedPopover.tsx",
+    "line": 120,
+    "column": 14,
+    "key": "SelectProduct.FeedPopover.qtecscnyciqwj",
+    "value": "请输入您想要反馈的问题，推荐15字以上，描述得越清晰越方便我们进行改进优化",
+    "originalValue": "请输入您想要反馈的问题，推荐15字以上，描述得越清晰越方便我们进行改进优化",
+    "type": "JsxAttribute",
+    "uuid": "f4c5114d-cee2-4fd0-a94d-422bdba179b3"
+  },
+  {
+    "file": "src/components/SelectProduct/FeedPopover.tsx",
+    "line": 125,
+    "column": 14,
+    "key": "SelectProduct.FeedPopover.submitFeedback",
+    "value": "提交反馈",
+    "originalValue": "提交反馈",
+    "type": "JsxAttribute",
+    "uuid": "2ee127fb-f198-4d87-ba96-cc604efc1ea3"
+  },
+  {
+    "file": "src/components/LayerOfferElement/config.ts",
+    "line": 58,
+    "column": 6,
+    "key": "LayerOfferElement.1rt",
+    "value": "1688商品",
+    "originalValue": "1688商品",
+    "type": "ObjectProperty",
+    "uuid": "7700b860-aca6-47b8-a4cc-79916e1687b0"
+  },
+  {
+    "file": "src/components/LayerOfferElement/calcOffer.tsx",
+    "line": 70,
+    "column": 4,
+    "key": "LayerOfferElement.calcOffer.title",
+    "value": "标题",
+    "originalValue": "标题",
+    "type": "ObjectProperty",
+    "uuid": "f04f1d99-9346-41bb-a8b9-698c04af1098"
+  },
+  {
+    "file": "src/components/LayerOfferElement/calcOffer.tsx",
+    "line": 333,
+    "column": 9,
+    "key": "LayerOfferElement.calcOffer.viewqb",
+    "value": "查看全部",
+    "originalValue": "查看全部",
+    "type": "StringLiteral",
+    "uuid": "c64e9511-ed09-4f58-a135-8cfa564fe0d3"
+  },
+  {
+    "file": "src/components/InputChat/index.tsx",
+    "line": 257,
+    "column": 37,
+    "key": "InputChat.imageUploadFailed",
+    "value": "图片上传失败",
+    "originalValue": "图片上传失败",
+    "type": "StringLiteral",
+    "uuid": "8fc0017e-a9a2-4f12-9972-f538592de001"
+  },
+  {
+    "file": "src/components/GuideButton/index.tsx",
+    "line": 14,
+    "column": 10,
+    "key": "GuideButton.yyew",
+    "value": "域名复制成功，请前往PC体验",
+    "originalValue": "域名复制成功，请前往PC体验",
+    "type": "ObjectProperty",
+    "uuid": "0d601b29-3e18-4b41-9a89-7889720e5ece"
+  },
+  {
+    "file": "src/components/GuideButton/index.tsx",
+    "line": 22,
+    "column": 5,
+    "key": "GuideButton.dlhtl",
+    "value": "电脑访问 alphashop.cn，体验完整能力",
+    "originalValue": "电脑访问 alphashop.cn，体验完整能力",
+    "type": "JsxText",
+    "uuid": "943acfc8-1d35-4b17-ae6d-a041d1e32ccb"
+  },
+  {
+    "file": "src/components/ChatContent/index.tsx",
+    "line": 1442,
+    "column": 75,
+    "key": "ChatContent.bz",
+    "value": "步骤{0}",
+    "originalValue": "步骤${stepId}",
+    "type": "TemplateString",
+    "uuid": "5a389c3b-4902-47ca-aa43-911b0437276d"
+  },
+  {
+    "file": "src/components/ChatContent/index.tsx",
+    "line": 1629,
+    "column": 77,
+    "key": "ChatContent.bz",
+    "value": "步骤{0}",
+    "originalValue": "步骤${stepId}",
+    "type": "TemplateString",
+    "uuid": "41155dc0-6bdf-44bd-baff-455813930137"
+  },
+  {
+    "file": "src/components/ChatContent/index.tsx",
+    "line": 1978,
+    "column": 77,
+    "key": "ChatContent.bz",
+    "value": "步骤{0}",
+    "originalValue": "步骤${designStepId}",
+    "type": "TemplateString",
+    "uuid": "b47507f6-f7e5-4b00-994e-299a941ffd0a"
+  },
+  {
+    "file": "src/components/ChatContent/index.tsx",
+    "line": 2939,
+    "column": 65,
+    "key": "ChatContent.systemError",
+    "value": "系统错误",
+    "originalValue": "系统错误",
+    "type": "StringLiteral",
+    "uuid": "5e506515-e794-4d08-8e3a-9eebe953eedd"
+  },
+  {
+    "file": "src/components/CaseTools/index.tsx",
+    "line": 126,
+    "column": 37,
+    "key": "CaseTools.imageUploadFailed",
+    "value": "图片上传失败",
+    "originalValue": "图片上传失败",
+    "type": "StringLiteral",
+    "uuid": "f3ee77c1-2231-4580-8b92-2dcbeb5164b7"
+  },
+  {
+    "file": "src/pages/seller-center/home/e.tsx",
+    "line": 55,
+    "column": 51,
+    "key": "seller-center.home.e.nowhd",
+    "value": "现在行动",
+    "originalValue": "现在行动",
+    "type": "JsxText",
+    "uuid": "1a01368a-77b0-4407-9c00-1bc28b78c5bc"
+  },
+  {
+    "file": "src/pages/seller-center/home/e.tsx",
+    "line": 59,
+    "column": 16,
+    "key": "seller-center.home.e.jt",
+    "value": "箭头",
+    "originalValue": "箭头",
+    "type": "JsxAttribute",
+    "uuid": "a0591455-ba19-447f-b741-e4a6fcfbb364"
+  },
+  {
+    "file": "src/pages/seller-center/home/e.tsx",
+    "line": 63,
+    "column": 50,
+    "key": "seller-center.home.e.jti",
+    "value": "加入 Waiting List",
+    "originalValue": "加入 Waiting List",
+    "type": "JsxText",
+    "uuid": "69e2a06b-ac5a-476f-8c27-ef9dc4d78ad3"
+  },
+  {
+    "file": "src/pages/seller-center/home/e.tsx",
+    "line": 73,
+    "column": 2,
+    "key": "seller-center.home.e.ajA",
+    "value": "遨虾-AI跨境电商运营Agent",
+    "originalValue": "遨虾-AI跨境电商运营Agent",
+    "type": "ObjectProperty",
+    "uuid": "b3735c2c-63cd-4271-ae52-917528d6eb00"
+  },
+  {
+    "file": "src/pages/select-product/components/RightContainer.tsx",
+    "line": 185,
+    "column": 30,
+    "key": "select-product.RightContainer.feedbackSuccess",
+    "value": "反馈成功",
+    "originalValue": "反馈成功",
+    "type": "StringLiteral",
+    "uuid": "6b1c90ab-ba5c-4760-a363-6e1b20944e89"
+  },
+  {
+    "file": "src/pages/mobile/sourcing/index.tsx",
+    "line": 6,
+    "column": 2,
+    "key": "mobile.sourcing.axxsAgent",
+    "value": "遨虾-选商Agent",
+    "originalValue": "遨虾-选商Agent",
+    "type": "ObjectProperty",
+    "uuid": "28b88270-43a6-4500-a914-7c39ef7b49b9"
+  },
+  {
+    "file": "src/pages/mobile/insight/index.tsx",
+    "line": 7,
+    "column": 2,
+    "key": "mobile.insight.axxpAgent",
+    "value": "遨虾-选品Agent",
+    "originalValue": "遨虾-选品Agent",
+    "type": "ObjectProperty",
+    "uuid": "f161e486-e373-4870-8496-a69868f9127c"
+  },
+  {
+    "file": "src/pages/mobile/inquiry/index.tsx",
+    "line": 6,
+    "column": 2,
+    "key": "mobile.inquiry.axxpAgent",
+    "value": "遨虾-询盘Agent",
+    "originalValue": "遨虾-询盘Agent",
+    "type": "ObjectProperty",
+    "uuid": "a0f2a23c-729e-48e3-9135-8057b00fbaef"
+  },
+  {
+    "file": "src/pages/mobile/home/index.tsx",
+    "line": 6,
+    "column": 2,
+    "key": "mobile.home.ase",
+    "value": "遨虾-跨境电商生意Agent",
+    "originalValue": "遨虾-跨境电商生意Agent",
+    "type": "ObjectProperty",
+    "uuid": "4fd99aea-2e11-4deb-9d2d-b2dbf9353eb5"
+  },
+  {
+    "file": "src/pages/mobile/chat/index.tsx",
+    "line": 6,
+    "column": 2,
+    "key": "mobile.chat.astg",
+    "value": "遨虾-咨询Agent",
+    "originalValue": "遨虾-咨询Agent",
+    "type": "ObjectProperty",
+    "uuid": "3d23514c-61a0-4c56-a45f-bb4eddb32969"
+  },
+  {
+    "file": "src/components/studio-canvas/debug-tool/index.tsx",
+    "line": 522,
+    "column": 108,
+    "key": "studio-canvas.debug-tool.wb",
+    "value": "文本",
+    "originalValue": "文本",
+    "type": "StringLiteral",
+    "uuid": "e9db17e1-7f7a-4d23-adb7-c973efb563c7"
+  },
+  {
+    "file": "src/components/studio-canvas/debug-tool/index.tsx",
+    "line": 522,
+    "column": 115,
+    "key": "studio-canvas.debug-tool.jx",
+    "value": "矩形",
+    "originalValue": "矩形",
+    "type": "StringLiteral",
+    "uuid": "50961725-2131-4f8d-98e1-1279807e3a54"
+  },
+  {
+    "file": "src/components/studio-canvas/debug-tool/index.tsx",
+    "line": 522,
+    "column": 153,
+    "key": "studio-canvas.debug-tool.kj",
+    "value": "块级",
+    "originalValue": "块级",
+    "type": "StringLiteral",
+    "uuid": "b266bdee-2cff-4869-9e4a-d7e9712ca371"
+  },
+  {
+    "file": "src/components/studio-canvas/debug-tool/index.tsx",
+    "line": 522,
+    "column": 160,
+    "key": "studio-canvas.debug-tool.hn",
+    "value": "行内",
+    "originalValue": "行内",
+    "type": "StringLiteral",
+    "uuid": "af7e5f01-d60f-4850-b45b-25ded7a70b86"
+  },
+  {
+    "file": "src/components/studio-canvas/debug-tool/index.tsx",
+    "line": 522,
+    "column": 197,
+    "key": "studio-canvas.debug-tool.wb",
+    "value": "文本",
+    "originalValue": "文本",
+    "type": "StringLiteral",
+    "uuid": "9fbb7146-521f-4bad-bcc3-8fb9f62d3ecf"
+  },
+  {
+    "file": "src/components/studio-canvas/debug-tool/index.tsx",
+    "line": 522,
+    "column": 204,
+    "key": "studio-canvas.debug-tool.jx",
+    "value": "矩形",
+    "originalValue": "矩形",
+    "type": "StringLiteral",
+    "uuid": "da2b6e83-aefd-49e3-80f2-11e968d9e6d8"
+  },
+  {
+    "file": "src/components/studio-canvas/debug-tool/index.tsx",
+    "line": 522,
+    "column": 237,
+    "key": "studio-canvas.debug-tool.kj",
+    "value": "块级",
+    "originalValue": "块级",
+    "type": "StringLiteral",
+    "uuid": "0ea03e87-b14f-4ddb-8f45-0742ba480acd"
+  },
+  {
+    "file": "src/components/studio-canvas/debug-tool/index.tsx",
+    "line": 522,
+    "column": 244,
+    "key": "studio-canvas.debug-tool.hn",
+    "value": "行内",
+    "originalValue": "行内",
+    "type": "StringLiteral",
+    "uuid": "ca3f80a7-7b80-4ce4-b76a-c5efb94a2dcb"
+  },
+  {
+    "file": "src/components/ChatFlow/TaskProgress/index.tsx",
+    "line": 55,
+    "column": 44,
+    "key": "ChatFlow.TaskProgress.dri",
+    "value": "等待用户确认需求",
+    "originalValue": "等待用户确认需求",
+    "type": "JsxText",
+    "uuid": "461aa35a-5f8e-4ba3-981f-267682b7548d"
+  },
+  {
+    "file": "src/components/ChatFlow/TabCard/index.tsx",
+    "line": 12,
+    "column": 4,
+    "key": "ChatFlow.TabCard.qod",
+    "value": "强烈推荐",
+    "originalValue": "强烈推荐",
+    "type": "ObjectProperty",
+    "uuid": "4c62f654-f10b-4374-b41c-5fca3a42d7f8"
+  },
+  {
+    "file": "src/components/ChatFlow/TabCard/index.tsx",
+    "line": 13,
+    "column": 4,
+    "key": "ChatFlow.TabCard.recommend",
+    "value": "推荐",
+    "originalValue": "推荐",
+    "type": "ObjectProperty",
+    "uuid": "d2974526-ae3c-423e-bde2-044a77dc2d7e"
+  },
+  {
+    "file": "src/components/ChatFlow/TabCard/index.tsx",
+    "line": 14,
+    "column": 4,
+    "key": "ChatFlow.TabCard.gw",
+    "value": "观望",
+    "originalValue": "观望",
+    "type": "ObjectProperty",
+    "uuid": "295c1c90-fa78-435b-b480-b5e13f9ff532"
+  },
+  {
+    "file": "src/components/ChatFlow/TabCard/index.tsx",
+    "line": 15,
+    "column": 4,
+    "key": "ChatFlow.TabCard.notRecommend",
+    "value": "不推荐",
+    "originalValue": "不推荐",
+    "type": "ObjectProperty",
+    "uuid": "e48c5548-3000-4360-810f-e248510fb133"
+  },
+  {
+    "file": "src/components/ChatFlow/TabCard/index.tsx",
+    "line": 64,
+    "column": 77,
+    "key": "ChatFlow.TabCard.f",
+    "value": "分",
+    "originalValue": "分",
+    "type": "JsxText",
+    "uuid": "8839ea3b-9fc5-4064-bbb5-9b706bef91c1"
+  },
+  {
+    "file": "src/components/ChatFlow/TabCard/index.tsx",
+    "line": 76,
+    "column": 63,
+    "key": "ChatFlow.TabCard.kri",
+    "value": "关键词评价:",
+    "originalValue": "关键词评价:",
+    "type": "JsxText",
+    "uuid": "9f513dc6-8b4b-4232-91d8-17d60cd4cf95"
+  },
+  {
+    "file": "src/components/ChatFlow/TabCard/index.tsx",
+    "line": 97,
+    "column": 74,
+    "key": "ChatFlow.TabCard.bgwfxdjfx",
+    "value": "报告未分析，点击分析",
+    "originalValue": "报告未分析，点击分析",
+    "type": "JsxText",
+    "uuid": "c20c8d5b-ba9f-4b93-bdf6-57d84c224340"
+  },
+  {
+    "file": "src/components/ChatFlow/SameNumModal/index.tsx",
+    "line": 68,
+    "column": 6,
+    "key": "ChatFlow.SameNumModal.price",
+    "value": "价格",
+    "originalValue": "价格",
+    "type": "ObjectProperty",
+    "uuid": "743fac79-f740-483f-9044-bb994f1db11e"
+  },
+  {
+    "file": "src/components/ChatFlow/SameInfo/index.tsx",
+    "line": 14,
+    "column": 4,
+    "key": "ChatFlow.SameInfo.SKUimage",
+    "value": "SKU图片",
+    "originalValue": "SKU图片",
+    "type": "ObjectProperty",
+    "uuid": "635e56dd-53ee-40cc-bc0f-fed1b71cc8aa"
+  },
+  {
+    "file": "src/components/ChatFlow/SameInfo/index.tsx",
+    "line": 43,
+    "column": 4,
+    "key": "ChatFlow.SameInfo.SKUmonthSales",
+    "value": "SKU月销量",
+    "originalValue": "SKU月销量",
+    "type": "ObjectProperty",
+    "uuid": "e3433e2c-2945-490e-b255-7cf6e7ae919b"
+  },
+  {
+    "file": "src/components/ChatFlow/SameInfo/index.tsx",
+    "line": 49,
+    "column": 4,
+    "key": "ChatFlow.SameInfo.Sne",
+    "value": "SKU月销售额",
+    "originalValue": "SKU月销售额",
+    "type": "ObjectProperty",
+    "uuid": "8f7614fe-dbc5-413d-a8d2-fa904279a546"
+  },
+  {
+    "file": "src/components/ChatFlow/SameInfo/index.tsx",
+    "line": 55,
+    "column": 4,
+    "key": "ChatFlow.SameInfo.SKUrating",
+    "value": "SKU评分",
+    "originalValue": "SKU评分",
+    "type": "ObjectProperty",
+    "uuid": "4fde2561-bc6d-422a-931a-b6a4a300d550"
+  },
+  {
+    "file": "src/components/ChatFlow/SameInfo/index.tsx",
+    "line": 61,
+    "column": 4,
+    "key": "ChatFlow.SameInfo.SKUsjtime",
+    "value": "SKU上架时间",
+    "originalValue": "SKU上架时间",
+    "type": "ObjectProperty",
+    "uuid": "4fb7fb40-dea1-4574-ad1d-0fc5dd1489ba"
+  },
+  {
+    "file": "src/components/ChatFlow/SameInfo/index.tsx",
+    "line": 71,
+    "column": 4,
+    "key": "ChatFlow.SameInfo.SKUimage",
+    "value": "SKU图片",
+    "originalValue": "SKU图片",
+    "type": "ObjectProperty",
+    "uuid": "5da0f864-8c90-48e0-8ab3-133c8d4bf03b"
+  },
+  {
+    "file": "src/components/ChatFlow/SameInfo/index.tsx",
+    "line": 92,
+    "column": 4,
+    "key": "ChatFlow.SameInfo.SKUmonthSales",
+    "value": "SKU月销量",
+    "originalValue": "SKU月销量",
+    "type": "ObjectProperty",
+    "uuid": "6558b578-d3ef-40ab-b28b-253c57c48f73"
+  },
+  {
+    "file": "src/components/ChatFlow/SameInfo/index.tsx",
+    "line": 99,
+    "column": 4,
+    "key": "ChatFlow.SameInfo.Sne",
+    "value": "SKU月销售额",
+    "originalValue": "SKU月销售额",
+    "type": "ObjectProperty",
+    "uuid": "3039d2b3-8b53-425a-9641-0e1743e8ca29"
+  },
+  {
+    "file": "src/components/ChatFlow/SameInfo/index.tsx",
+    "line": 106,
+    "column": 4,
+    "key": "ChatFlow.SameInfo.SKUrating",
+    "value": "SKU评分",
+    "originalValue": "SKU评分",
+    "type": "ObjectProperty",
+    "uuid": "2a808bde-ad73-45c0-aedd-5c7773b39ab4"
+  },
+  {
+    "file": "src/components/ChatFlow/SameInfo/index.tsx",
+    "line": 113,
+    "column": 4,
+    "key": "ChatFlow.SameInfo.SKUsjtime",
+    "value": "SKU上架时间",
+    "originalValue": "SKU上架时间",
+    "type": "ObjectProperty",
+    "uuid": "d0f5d38c-1f06-432e-8307-1462921f50ae"
+  },
+  {
+    "file": "src/components/ChatFlow/SameInfo/index.tsx",
+    "line": 184,
+    "column": 50,
+    "key": "ChatFlow.SameInfo.productInformation",
+    "value": "商品信息",
+    "originalValue": "商品信息",
+    "type": "JsxText",
+    "uuid": "8e99b4f4-8ed7-4ba6-ab34-48efa05500b1"
+  },
+  {
+    "file": "src/components/ChatFlow/SameInfo/index.tsx",
+    "line": 202,
+    "column": 33,
+    "key": "ChatFlow.SameInfo.jya",
+    "value": "近30天SPU销量",
+    "originalValue": "近30天SPU销量",
+    "type": "StringLiteral",
+    "uuid": "94b2ba87-d831-4e02-8f8d-9c377c72f47d"
+  },
+  {
+    "file": "src/components/ChatFlow/SameInfo/index.tsx",
+    "line": 202,
+    "column": 47,
+    "key": "ChatFlow.SameInfo.jys",
+    "value": "近30天销量",
+    "originalValue": "近30天销量",
+    "type": "StringLiteral",
+    "uuid": "6b9565af-df11-46de-bbd1-569556c9b328"
+  },
+  {
+    "file": "src/components/ChatFlow/SameInfo/index.tsx",
+    "line": 206,
+    "column": 33,
+    "key": "ChatFlow.SameInfo.Srg",
+    "value": "SPU平均评分",
+    "originalValue": "SPU平均评分",
+    "type": "StringLiteral",
+    "uuid": "dc067345-bc0c-458a-871b-c4ab3e4eaa20"
+  },
+  {
+    "file": "src/components/ChatFlow/SameInfo/index.tsx",
+    "line": 206,
+    "column": 45,
+    "key": "ChatFlow.SameInfo.rating",
+    "value": "评分",
+    "originalValue": "评分",
+    "type": "StringLiteral",
+    "uuid": "853a0391-7ace-465a-b7ee-b9c7528dcb1d"
+  },
+  {
+    "file": "src/components/ChatFlow/SameInfo/index.tsx",
+    "line": 210,
+    "column": 33,
+    "key": "ChatFlow.SameInfo.SPUprice",
+    "value": "SPU价格",
+    "originalValue": "SPU价格",
+    "type": "StringLiteral",
+    "uuid": "d71e2841-705c-4259-a029-67d894a4d36a"
+  },
+  {
+    "file": "src/components/ChatFlow/SameInfo/index.tsx",
+    "line": 210,
+    "column": 43,
+    "key": "ChatFlow.SameInfo.pricefw",
+    "value": "价格范围",
+    "originalValue": "价格范围",
+    "type": "StringLiteral",
+    "uuid": "71d031df-b2d5-4604-880c-c0ce566e207a"
+  },
+  {
+    "file": "src/components/ChatFlow/SameInfo/index.tsx",
+    "line": 233,
+    "column": 12,
+    "key": "ChatFlow.SameInfo.tSKU",
+    "value": "条SKU",
+    "originalValue": "条SKU",
+    "type": "JsxAttribute",
+    "uuid": "8e81d96d-388f-4f23-a841-43c782a839f0"
+  },
+  {
+    "file": "src/components/ChatFlow/RecommendCard/index.tsx",
+    "line": 6,
+    "column": 51,
+    "key": "ChatFlow.RecommendCard.qodh",
+    "value": "强烈推荐该市场，机会肉眼可见！",
+    "originalValue": "强烈推荐该市场，机会肉眼可见！",
+    "type": "JsxText",
+    "uuid": "0b517c55-608c-410e-b04d-94ae3d99befc"
+  },
+  {
+    "file": "src/components/ChatFlow/RecommendCard/index.tsx",
+    "line": 7,
+    "column": 57,
+    "key": "ChatFlow.RecommendCard.dty1ojgmRmxgiyHjr",
+    "value": "但深挖数据发现：现有只有不到10个商品机会分高于20（满分100），推荐以下选品，建议用差异化产品或高性价比同款切入。",
+    "originalValue": "但深挖数据发现：现有只有不到10个商品机会分高于20（满分100），推荐以下选品，建议用差异化产品或高性价比同款切入。",
+    "type": "JsxText",
+    "uuid": "7920a1b7-fb82-4f6b-8755-2c0d1eae0381"
+  },
+  {
+    "file": "src/components/ChatFlow/ProductDetailTable/index.tsx",
+    "line": 80,
+    "column": 25,
+    "key": "ChatFlow.ProductDetailTable.productTitle",
+    "value": "商品标题",
+    "originalValue": "商品标题",
+    "type": "StringLiteral",
+    "uuid": "d691745b-8459-4996-93b0-6bb23f56f32c"
+  },
+  {
+    "file": "src/components/ChatFlow/ProductDetailTable/index.tsx",
+    "line": 80,
+    "column": 34,
+    "key": "ChatFlow.ProductDetailTable.sztd",
+    "value": "销量最高同款商品",
+    "originalValue": "销量最高同款商品",
+    "type": "StringLiteral",
+    "uuid": "232fa17d-9e69-45bd-bb80-df15f2d33efa"
+  },
+  {
+    "file": "src/components/ChatFlow/ProductDetailTable/index.tsx",
+    "line": 115,
+    "column": 25,
+    "key": "ChatFlow.ProductDetailTable.price",
+    "value": "价格",
+    "originalValue": "价格",
+    "type": "StringLiteral",
+    "uuid": "935b3d9f-3199-48a6-9a7a-8c469e47b6d3"
+  },
+  {
+    "file": "src/components/ChatFlow/ProductDetailTable/index.tsx",
+    "line": 115,
+    "column": 32,
+    "key": "ChatFlow.ProductDetailTable.pricefw",
+    "value": "价格范围",
+    "originalValue": "价格范围",
+    "type": "StringLiteral",
+    "uuid": "c368bd46-868e-4c51-8143-1878f9a5d579"
+  },
+  {
+    "file": "src/components/ChatFlow/ProductDetailTable/index.tsx",
+    "line": 128,
+    "column": 25,
+    "key": "ChatFlow.ProductDetailTable.pjrating",
+    "value": "平均评分",
+    "originalValue": "平均评分",
+    "type": "StringLiteral",
+    "uuid": "8c2c34a7-273b-491d-aea7-e053f8e69684"
+  },
+  {
+    "file": "src/components/ChatFlow/ProductDetailTable/index.tsx",
+    "line": 128,
+    "column": 34,
+    "key": "ChatFlow.ProductDetailTable.ratingfw",
+    "value": "评分范围",
+    "originalValue": "评分范围",
+    "type": "StringLiteral",
+    "uuid": "fcdd24d5-e618-4133-91dc-153616daa8e9"
+  },
+  {
+    "file": "src/components/ChatFlow/DataBoard/index.tsx",
+    "line": 114,
+    "column": 58,
+    "key": "ChatFlow.DataBoard.sq",
+    "value": "收起",
+    "originalValue": "收起",
+    "type": "StringLiteral",
+    "uuid": "8a72e0f9-b2a5-4c47-a8d6-18aa9339c1bd"
+  },
+  {
+    "file": "src/components/ChatFlow/DataBoard/index.tsx",
+    "line": 114,
+    "column": 65,
+    "key": "ChatFlow.DataBoard.zkviewSKU",
+    "value": "展开查看SKU",
+    "originalValue": "展开查看SKU",
+    "type": "StringLiteral",
+    "uuid": "03e65bf9-e864-49df-8eb3-834a6f022d53"
+  },
+  {
+    "file": "src/components/ChatFlow/ComparedDetailTable/index.tsx",
+    "line": 79,
+    "column": 25,
+    "key": "ChatFlow.ComparedDetailTable.productTitle",
+    "value": "商品标题",
+    "originalValue": "商品标题",
+    "type": "StringLiteral",
+    "uuid": "ea68cf1d-17e9-4c2f-86da-e14db4581d00"
+  },
+  {
+    "file": "src/components/ChatFlow/ComparedDetailTable/index.tsx",
+    "line": 79,
+    "column": 34,
+    "key": "ChatFlow.ComparedDetailTable.sztd",
+    "value": "销量最高同款商品",
+    "originalValue": "销量最高同款商品",
+    "type": "StringLiteral",
+    "uuid": "1a5d0044-3083-4e66-b626-27adf6c4b06c"
+  },
+  {
+    "file": "src/components/ChatFlow/ComparedDetailTable/index.tsx",
+    "line": 114,
+    "column": 25,
+    "key": "ChatFlow.ComparedDetailTable.price",
+    "value": "价格",
+    "originalValue": "价格",
+    "type": "StringLiteral",
+    "uuid": "53657f6d-b85c-45d4-bd3e-86878668f679"
+  },
+  {
+    "file": "src/components/ChatFlow/ComparedDetailTable/index.tsx",
+    "line": 114,
+    "column": 32,
+    "key": "ChatFlow.ComparedDetailTable.pricefw",
+    "value": "价格范围",
+    "originalValue": "价格范围",
+    "type": "StringLiteral",
+    "uuid": "db1a76c1-77df-47a5-b8be-7794df20d6ee"
+  },
+  {
+    "file": "src/components/ChatFlow/ColorfulCard/index.tsx",
+    "line": 57,
+    "column": 19,
+    "key": "ChatFlow.ColorfulCard.bexCn",
+    "value": "本内容由遨虾AI生成，内容供参考",
+    "originalValue": "本内容由遨虾AI生成，内容供参考",
+    "type": "JsxText",
+    "uuid": "1d44b93d-a706-4047-a871-7f83ee9eaa93"
+  },
+  {
+    "file": "src/components/ChatFlow/ColorfulCard/index.tsx",
+    "line": 65,
+    "column": 17,
+    "key": "ChatFlow.ColorfulCard.bexCn",
+    "value": "本内容由遨虾AI生成，内容供参考",
+    "originalValue": "本内容由遨虾AI生成，内容供参考",
+    "type": "JsxText",
+    "uuid": "0c45fa0f-4b68-4d60-bdfe-24530c8814cc"
+  },
+  {
+    "file": "src/components/AgentLayout/components/Settings.tsx",
+    "line": 28,
+    "column": 45,
+    "key": "AgentLayout.Settings.systemyy",
+    "value": "系统语言",
+    "originalValue": "系统语言",
+    "type": "JsxText",
+    "uuid": "5aebfa71-24c5-4e53-9007-76faf0de0a95"
+  },
+  {
+    "file": "src/components/AgentLayout/components/Concat.tsx",
+    "line": 20,
+    "column": 37,
+    "key": "AgentLayout.Concat.camlhrab",
+    "value": "投诉邮箱：alphashop@service.alibaba.com",
+    "originalValue": "投诉邮箱：alphashop@service.alibaba.com",
+    "type": "JsxText",
+    "uuid": "ce008c41-7cc7-41e6-b679-309fd1ff44e8"
+  },
+  {
+    "file": "src/components/AgentLayout/components/Account.tsx",
+    "line": 52,
+    "column": 88,
+    "key": "AgentLayout.Account.login",
+    "value": "登录",
+    "originalValue": "登录",
+    "type": "JsxText",
+    "uuid": "80f133a6-aaa2-4b1a-badf-0891cf459b29"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/SupplyInfo.tsx",
+    "line": 67,
+    "column": 77,
+    "key": "select-product.RightComponents.SupplyInfo.ggqk",
+    "value": "供给情况",
+    "originalValue": "供给情况",
+    "type": "JsxText",
+    "uuid": "2169db1a-f68b-4631-a677-aa1685f654bf"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/SupplyInfo.tsx",
+    "line": 69,
+    "column": 21,
+    "key": "select-product.RightComponents.SupplyInfo.wqtbdujrostyowcj",
+    "value": "为保证分析质量，仅选取部分代表性的商品指标计算（量级：千）。若在售商品数较少，可能因关键词较长尾、较窄或市场尚处早期阶段。",
+    "originalValue": "为保证分析质量，仅选取部分代表性的商品指标计算（量级：千）。若在售商品数较少，可能因关键词较长尾、较窄或市场尚处早期阶段。",
+    "type": "JsxAttribute",
+    "uuid": "90bb307d-1b50-4f8a-a139-bbaf45864e16"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/SalesInfo.tsx",
+    "line": 16,
+    "column": 77,
+    "key": "select-product.RightComponents.SalesInfo.pck",
+    "value": "商品销售情况",
+    "originalValue": "商品销售情况",
+    "type": "JsxText",
+    "uuid": "7db5be69-68e2-4df1-a88a-3ad222b98742"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/SalesInfo.tsx",
+    "line": 18,
+    "column": 21,
+    "key": "select-product.RightComponents.SalesInfo.wqtbdujrostyowcj",
+    "value": "为保证分析质量，仅选取部分代表性的商品指标计算（量级：千）。若在售商品数较少，可能因关键词较长尾、较窄或市场尚处早期阶段。",
+    "originalValue": "为保证分析质量，仅选取部分代表性的商品指标计算（量级：千）。若在售商品数较少，可能因关键词较长尾、较窄或市场尚处早期阶段。",
+    "type": "JsxAttribute",
+    "uuid": "0ad06211-f521-4279-b1b9-b52047f3b4de"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/RequirementFormCard.tsx",
+    "line": 191,
+    "column": 70,
+    "key": "select-product.RightComponents.RequirementFormCard.pci",
+    "value": "商品上架时间",
+    "originalValue": "商品上架时间",
+    "type": "JsxText",
+    "uuid": "480bd11b-4ed5-4d9c-9f86-37180a8b66c7"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/RequirementFormCard.tsx",
+    "line": 274,
+    "column": 13,
+    "key": "select-product.RightComponents.RequirementFormCard.confirmModify",
+    "value": "确认修改",
+    "originalValue": "确认修改",
+    "type": "JsxText",
+    "uuid": "97435416-440b-43f8-8f34-172596891f5b"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/NormalProductTable.tsx",
+    "line": 21,
+    "column": 6,
+    "key": "select-product.RightComponents.NormalProductTable.lm",
+    "value": "类目",
+    "originalValue": "类目",
+    "type": "ObjectProperty",
+    "uuid": "39775c6c-a82b-4635-a1b3-a898ea8acff0"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/NormalProductTable.tsx",
+    "line": 32,
+    "column": 28,
+    "key": "select-product.RightComponents.NormalProductTable.price",
+    "value": "价格",
+    "originalValue": "价格",
+    "type": "StringLiteral",
+    "uuid": "e58aade5-3272-4bcf-8f83-f4b2ef6671df"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/NormalProductTable.tsx",
+    "line": 32,
+    "column": 35,
+    "key": "select-product.RightComponents.NormalProductTable.pricefw",
+    "value": "价格范围",
+    "originalValue": "价格范围",
+    "type": "StringLiteral",
+    "uuid": "84f00bc6-f1e1-4485-97de-2057f4c35598"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/NormalProductTable.tsx",
+    "line": 37,
+    "column": 28,
+    "key": "select-product.RightComponents.NormalProductTable.pjrating",
+    "value": "平均评分",
+    "originalValue": "平均评分",
+    "type": "StringLiteral",
+    "uuid": "452399ec-9877-4c1b-9daa-58b519daa31d"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/NormalProductTable.tsx",
+    "line": 37,
+    "column": 37,
+    "key": "select-product.RightComponents.NormalProductTable.ratingfw",
+    "value": "评分范围",
+    "originalValue": "评分范围",
+    "type": "StringLiteral",
+    "uuid": "d88b2bc3-644a-47a6-a092-2e06f246b338"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/NewProductTable.tsx",
+    "line": 40,
+    "column": 6,
+    "key": "select-product.RightComponents.NewProductTable.lm",
+    "value": "类目",
+    "originalValue": "类目",
+    "type": "ObjectProperty",
+    "uuid": "afd21b27-fde3-486e-9abf-4b9b83e376aa"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/NewProductTable.tsx",
+    "line": 46,
+    "column": 28,
+    "key": "select-product.RightComponents.NewProductTable.price",
+    "value": "价格",
+    "originalValue": "价格",
+    "type": "StringLiteral",
+    "uuid": "d64ae694-13cf-4028-88a0-fdbb9b1c4cdf"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/NewProductTable.tsx",
+    "line": 46,
+    "column": 35,
+    "key": "select-product.RightComponents.NewProductTable.pricefw",
+    "value": "价格范围",
+    "originalValue": "价格范围",
+    "type": "StringLiteral",
+    "uuid": "887894ac-2c9b-4eb7-937e-142ee94c7c24"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/NewProductTable.tsx",
+    "line": 51,
+    "column": 28,
+    "key": "select-product.RightComponents.NewProductTable.pjrating",
+    "value": "平均评分",
+    "originalValue": "平均评分",
+    "type": "StringLiteral",
+    "uuid": "21b75549-ea15-4097-98cd-644d402298b4"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/NewProductTable.tsx",
+    "line": 51,
+    "column": 37,
+    "key": "select-product.RightComponents.NewProductTable.ratingfw",
+    "value": "评分范围",
+    "originalValue": "评分范围",
+    "type": "StringLiteral",
+    "uuid": "e11999a0-128d-4931-a5cf-a97cfd3f74ec"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/KeywordGoogleTable.tsx",
+    "line": 48,
+    "column": 4,
+    "key": "select-product.RightComponents.KeywordGoogleTable.shn1n",
+    "value": "搜索峰值月（最近12个月）",
+    "originalValue": "搜索峰值月（最近12个月）",
+    "type": "ObjectProperty",
+    "uuid": "3a8aef6b-33b1-4314-8252-880d78aa9b01"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/KeywordGoogleTable.tsx",
+    "line": 53,
+    "column": 4,
+    "key": "select-product.RightComponents.KeywordGoogleTable.krrjo",
+    "value": "关键词搜索趋势（近12个月）",
+    "originalValue": "关键词搜索趋势（近12个月）",
+    "type": "ObjectProperty",
+    "uuid": "c6d182a5-4666-4a01-9ab2-af98660ed45e"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/HotSaleProductTable.tsx",
+    "line": 54,
+    "column": 6,
+    "key": "select-product.RightComponents.HotSaleProductTable.lm",
+    "value": "类目",
+    "originalValue": "类目",
+    "type": "ObjectProperty",
+    "uuid": "3ad1c6e4-bcd7-40af-ab85-6e45b0813264"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/HotSaleProductTable.tsx",
+    "line": 60,
+    "column": 6,
+    "key": "select-product.RightComponents.HotSaleProductTable.tt5",
+    "value": "同类目热销Top5",
+    "originalValue": "同类目热销Top5",
+    "type": "ObjectProperty",
+    "uuid": "2ee7e510-d73d-42aa-95d3-5d49e290240d"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/ComparedProductTable.tsx",
+    "line": 48,
+    "column": 6,
+    "key": "select-product.RightComponents.ComparedProductTable.tt5",
+    "value": "同类目热销Top5",
+    "originalValue": "同类目热销Top5",
+    "type": "ObjectProperty",
+    "uuid": "e3d3397b-67e9-48e0-bcee-92231eb42bb5"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/CateGoogleTable.tsx",
+    "line": 12,
+    "column": 4,
+    "key": "select-product.RightComponents.CateGoogleTable.shn1n",
+    "value": "搜索峰值月（最近12个月）",
+    "originalValue": "搜索峰值月（最近12个月）",
+    "type": "ObjectProperty",
+    "uuid": "ece97525-1622-496b-9182-f3e7eb50ea8b"
+  },
+  {
+    "file": "src/pages/select-product/components/RightComponents/CateGoogleTable.tsx",
+    "line": 17,
+    "column": 4,
+    "key": "select-product.RightComponents.CateGoogleTable.krrjo",
+    "value": "关键词搜索趋势（近12个月）",
+    "originalValue": "关键词搜索趋势（近12个月）",
+    "type": "ObjectProperty",
+    "uuid": "c81e3399-4d9c-4289-9254-525c502fa018"
+  },
+  {
+    "file": "src/pages/select-product/components/PlatformComponents/ScoreTable.tsx",
+    "line": 16,
+    "column": 4,
+    "key": "select-product.PlatformComponents.ScoreTable.lm",
+    "value": "类目",
+    "originalValue": "类目",
+    "type": "ObjectProperty",
+    "uuid": "7561f2d2-1de3-4b23-9006-312f8d0d9e03"
+  },
+  {
+    "file": "src/pages/select-product/components/PlatformComponents/PlatformRequirement.tsx",
+    "line": 160,
+    "column": 10,
+    "key": "select-product.PlatformComponents.PlatformRequirement.xpyqbc",
+    "value": "选品要求补充",
+    "originalValue": "选品要求补充",
+    "type": "JsxAttribute",
+    "uuid": "2d4f8212-f448-4bff-901f-23ee9d76a6d8"
+  },
+  {
+    "file": "src/pages/select-product/components/PlatformComponents/MigratedTable.tsx",
+    "line": 51,
+    "column": 6,
+    "key": "select-product.PlatformComponents.MigratedTable.lm",
+    "value": "类目",
+    "originalValue": "类目",
+    "type": "ObjectProperty",
+    "uuid": "91c9540e-259e-4fd7-bb71-a5e974650e5d"
+  },
+  {
+    "file": "src/pages/select-product/components/PlatformComponents/ComparedTable.tsx",
+    "line": 16,
+    "column": 4,
+    "key": "select-product.PlatformComponents.ComparedTable.lm",
+    "value": "类目",
+    "originalValue": "类目",
+    "type": "ObjectProperty",
+    "uuid": "e96bbf18-446a-41f6-a14b-cb09a684fe5f"
+  },
+  {
+    "file": "src/pages/select-product/components/PlatformComponents/CompareInfo.tsx",
+    "line": 175,
+    "column": 6,
+    "key": "select-product.PlatformComponents.CompareInfo.pcm",
+    "value": "商品叶子类目",
+    "originalValue": "商品叶子类目",
+    "type": "ObjectProperty",
+    "uuid": "c14db8b0-7ac5-4873-85fc-0a3a53d4403c"
+  },
+  {
+    "file": "src/pages/select-product/components/LeftComponents/Requirement.tsx",
+    "line": 159,
+    "column": 12,
+    "key": "select-product.LeftComponents.Requirement.xpyqbc",
+    "value": "选品要求补充",
+    "originalValue": "选品要求补充",
+    "type": "JsxAttribute",
+    "uuid": "4c204e7c-0834-4d9e-a46e-8a6c36b394aa"
+  },
+  {
+    "file": "src/pages/select-product/components/LeftComponents/NormalProductList.tsx",
+    "line": 27,
+    "column": 16,
+    "key": "select-product.LeftComponents.NormalProductList.guea",
+    "value": "共{0}{1}商品，查看详情",
+    "originalValue": "共${totalCount}${isProduct ? '个' : '款'}商品，查看详情",
+    "type": "TemplateString",
+    "uuid": "8d0ad35e-0558-4cb5-9f9f-399d2f0f3988"
+  },
+  {
+    "file": "src/pages/select-product/components/LeftComponents/NormalProductList.tsx",
+    "line": 27,
+    "column": 45,
+    "key": "select-product.LeftComponents.NormalProductList.g",
+    "value": "个",
+    "originalValue": "个",
+    "type": "StringLiteral",
+    "uuid": "59819b1d-c6d6-4b94-8ac0-64879eb9e278"
+  },
+  {
+    "file": "src/pages/select-product/components/LeftComponents/NormalProductList.tsx",
+    "line": 27,
+    "column": 51,
+    "key": "select-product.LeftComponents.NormalProductList.k",
+    "value": "款",
+    "originalValue": "款",
+    "type": "StringLiteral",
+    "uuid": "4f223393-6ffb-4143-81a8-b363ddd368c3"
+  },
+  {
+    "file": "src/pages/select-product/components/LeftComponents/NewProductList.tsx",
+    "line": 27,
+    "column": 16,
+    "key": "select-product.LeftComponents.NewProductList.grlDl",
+    "value": "共{0}{1}新品，查看详情",
+    "originalValue": "共${totalCount}${isProduct ? '个' : '款'}新品，查看详情",
+    "type": "TemplateString",
+    "uuid": "500953dd-802e-45f4-8e92-0c8981ebd215"
+  },
+  {
+    "file": "src/pages/select-product/components/LeftComponents/NewProductList.tsx",
+    "line": 27,
+    "column": 45,
+    "key": "select-product.LeftComponents.NewProductList.g",
+    "value": "个",
+    "originalValue": "个",
+    "type": "StringLiteral",
+    "uuid": "fc9d6a12-a514-456e-aecb-d99ca7a40a9e"
+  },
+  {
+    "file": "src/pages/select-product/components/LeftComponents/NewProductList.tsx",
+    "line": 27,
+    "column": 51,
+    "key": "select-product.LeftComponents.NewProductList.k",
+    "value": "款",
+    "originalValue": "款",
+    "type": "StringLiteral",
+    "uuid": "62b0b621-2685-4b94-8be0-905b27bcc5ca"
+  },
+  {
+    "file": "src/pages/select-product/components/ImproveComponents/ReviewTable.tsx",
+    "line": 11,
+    "column": 4,
+    "key": "select-product.ImproveComponents.ReviewTable.lm",
+    "value": "类目",
+    "originalValue": "类目",
+    "type": "ObjectProperty",
+    "uuid": "22100251-f180-450c-86f4-6027a99629a9"
+  },
+  {
+    "file": "src/pages/select-product/components/ImproveComponents/ReviewTable.tsx",
+    "line": 22,
+    "column": 4,
+    "key": "select-product.ImproveComponents.ReviewTable.comments",
+    "value": "评论数",
+    "originalValue": "评论数",
+    "type": "ObjectProperty",
+    "uuid": "723f95ea-e744-4f96-9e21-2498ee4c0ce1"
+  },
+  {
+    "file": "src/pages/select-product/components/ImproveComponents/PaginationComponent.tsx",
+    "line": 19,
+    "column": 15,
+    "key": "select-product.ImproveComponents.PaginationComponent.treview",
+    "value": "条评价",
+    "originalValue": "条评价",
+    "type": "StringLiteral",
+    "uuid": "ed2e859b-f68f-46ec-a688-4bbb0c5a7db2"
+  },
+  {
+    "file": "src/pages/select-product/components/ImproveComponents/ImproveRequirement.tsx",
+    "line": 173,
+    "column": 10,
+    "key": "select-product.ImproveComponents.ImproveRequirement.xpyqbc",
+    "value": "选品要求补充",
+    "originalValue": "选品要求补充",
+    "type": "JsxAttribute",
+    "uuid": "4cdb4703-2f67-4f76-9672-2e1bdb952ac0"
+  },
+  {
+    "file": "src/pages/select-product/components/ImproveComponents/ImproveCommentTable.tsx",
+    "line": 19,
+    "column": 4,
+    "key": "select-product.ImproveComponents.ImproveCommentTable.commentQuantity",
+    "value": "评论数量",
+    "originalValue": "评论数量",
+    "type": "ObjectProperty",
+    "uuid": "99e2a5db-4476-4eb0-8f32-4c12a6322a88"
+  },
+  {
+    "file": "src/pages/select-product/components/ImproveComponents/AnalysisProductTable.tsx",
+    "line": 11,
+    "column": 4,
+    "key": "select-product.ImproveComponents.AnalysisProductTable.lm",
+    "value": "类目",
+    "originalValue": "类目",
+    "type": "ObjectProperty",
+    "uuid": "744f5943-2eb5-430d-90e9-ab08f631cf57"
+  },
+  {
+    "file": "src/pages/select-product/components/FormCard/index.tsx",
+    "line": 31,
+    "column": 6,
+    "key": "select-product.FormCard.nqyjx",
+    "value": "您好，请补充您对于{0}的要求，我将为您精确选品。",
+    "originalValue": "您好，请补充您对于{0}的要求，我将为您精确选品。",
+    "type": "JsxText",
+    "uuid": "176b0722-d1f3-4bfd-af44-e4efe353a124"
+  },
+  {
+    "file": "src/pages/select-product/components/CountryComponents/CountryRequirement.tsx",
+    "line": 171,
+    "column": 10,
+    "key": "select-product.CountryComponents.CountryRequirement.xpyqbc",
+    "value": "选品要求补充",
+    "originalValue": "选品要求补充",
+    "type": "JsxAttribute",
+    "uuid": "2763317b-ca8f-4387-aff3-f20e47975bff"
+  },
+  {
+    "file": "src/pages/select-product/components/ChatHistory/index.tsx",
+    "line": 47,
+    "column": 34,
+    "key": "select-product.ChatHistory.dk",
+    "value": "打开",
+    "originalValue": "打开",
+    "type": "StringLiteral",
+    "uuid": "f5944579-830c-4612-8c43-94b51ddd0617"
+  },
+  {
+    "file": "src/pages/select-product/components/ChatHistory/index.tsx",
+    "line": 47,
+    "column": 41,
+    "key": "select-product.ChatHistory.off",
+    "value": "关闭",
+    "originalValue": "关闭",
+    "type": "StringLiteral",
+    "uuid": "04f79229-f65b-491b-9025-bd59bd127aaa"
+  },
+  {
+    "file": "src/pages/select-business/components/SupplierSearchTable/index.tsx",
+    "line": 290,
+    "column": 61,
+    "key": "select-business.SupplierSearchTable.AIxqfx",
+    "value": "AI 需求分析",
+    "originalValue": "AI 需求分析",
+    "type": "JsxText",
+    "uuid": "c9d9ad05-903f-4c08-96d7-2831721ec3d1"
+  },
+  {
+    "file": "src/pages/select-business/components/SupplierSearchTable/index.tsx",
+    "line": 291,
+    "column": 14,
+    "key": "select-business.SupplierSearchTable.beeenMamqcbd",
+    "value": "{0}。本次为您推荐个商家，其中个商家完全满足您的需求，个商家部分满足您的需求。",
+    "originalValue": "{0}。本次为您推荐个商家，其中个商家完全满足您的需求，个商家部分满足您的需求。",
+    "type": "JsxText",
+    "uuid": "50f2aef5-40e0-4684-b979-0e13909e0197"
+  },
+  {
+    "file": "src/pages/select-business/components/SupplierSearchTable/index.tsx",
+    "line": 388,
+    "column": 13,
+    "key": "select-business.SupplierSearchTable.cancel",
+    "value": "取消",
+    "originalValue": "取消",
+    "type": "JsxText",
+    "uuid": "8b5852ff-e82b-49a2-844d-5f3ad5f9da4b"
+  },
+  {
+    "file": "src/pages/select-business/components/SupplierSearchTable/index.tsx",
+    "line": 402,
+    "column": 34,
+    "key": "select-business.SupplierSearchTable.qctg",
+    "value": "请选择至少一个供应商",
+    "originalValue": "请选择至少一个供应商",
+    "type": "StringLiteral",
+    "uuid": "8fc8f9bb-db20-4b48-92d4-965f6bc32b54"
+  },
+  {
+    "file": "src/pages/select-business/components/SupplierSearchTable/index.tsx",
+    "line": 416,
+    "column": 18,
+    "key": "select-business.SupplierSearchTable.confirmfq",
+    "value": "确认发起 ({0}/{1})",
+    "originalValue": "确认发起 ({0}/{1})",
+    "type": "JsxText",
+    "uuid": "3fe2c615-18f8-4034-887b-c9b4805f0514"
+  },
+  {
+    "file": "src/pages/select-business/components/SupplierSearchTable/index.tsx",
+    "line": 417,
+    "column": 20,
+    "key": "select-business.SupplierSearchTable.fqxp",
+    "value": "发起询盘",
+    "originalValue": "发起询盘",
+    "type": "StringLiteral",
+    "uuid": "c53c96cf-f1ca-491f-87b7-0295dddac71d"
+  },
+  {
+    "file": "src/pages/select-business/components/ProductSearchTable/index.tsx",
+    "line": 441,
+    "column": 60,
+    "key": "select-business.ProductSearchTable.AIxqfx",
+    "value": "AI 需求分析",
+    "originalValue": "AI 需求分析",
+    "type": "JsxText",
+    "uuid": "22bfd75c-05c1-4e24-8f86-dd27e11ad3b1"
+  },
+  {
+    "file": "src/pages/select-business/components/ProductSearchTable/index.tsx",
+    "line": 442,
+    "column": 14,
+    "key": "select-business.ProductSearchTable.beeppncz",
+    "value": "{0}。本次为您推荐款产品，其中个产品完全满足您的需求，个产品部分满足您的需求。",
+    "originalValue": "{0}。本次为您推荐款产品，其中个产品完全满足您的需求，个产品部分满足您的需求。",
+    "type": "JsxText",
+    "uuid": "49863cff-25ea-4e72-961a-75f46fe1c29c"
+  },
+  {
+    "file": "src/pages/select-business/components/ProductSearchTable/index.tsx",
+    "line": 539,
+    "column": 13,
+    "key": "select-business.ProductSearchTable.cancel",
+    "value": "取消",
+    "originalValue": "取消",
+    "type": "JsxText",
+    "uuid": "0865ace1-a818-4cc0-8870-db82f64d5e6c"
+  },
+  {
+    "file": "src/pages/select-business/components/ProductSearchTable/index.tsx",
+    "line": 558,
+    "column": 36,
+    "key": "select-business.ProductSearchTable.joyfpuec",
+    "value": "仅支持向同一家供应商发送一个询盘商品，请重新选择",
+    "originalValue": "仅支持向同一家供应商发送一个询盘商品，请重新选择",
+    "type": "StringLiteral",
+    "uuid": "fe7dc549-ac16-4fa5-bd87-2a2b6f85a544"
+  },
+  {
+    "file": "src/pages/select-business/components/ProductSearchTable/index.tsx",
+    "line": 564,
+    "column": 34,
+    "key": "select-business.ProductSearchTable.qctgu",
+    "value": "请选择至少一个商品",
+    "originalValue": "请选择至少一个商品",
+    "type": "StringLiteral",
+    "uuid": "fc58c2aa-1388-4c98-8564-c352eec8af1c"
+  },
+  {
+    "file": "src/pages/select-business/components/ProductSearchTable/index.tsx",
+    "line": 578,
+    "column": 18,
+    "key": "select-business.ProductSearchTable.confirmfq",
+    "value": "确认发起 ({0}/{1})",
+    "originalValue": "确认发起 ({0}/{1})",
+    "type": "JsxText",
+    "uuid": "091cdeab-6c0d-4d5b-b526-87af5e53a23a"
+  },
+  {
+    "file": "src/pages/select-business/components/ProductSearchTable/index.tsx",
+    "line": 579,
+    "column": 20,
+    "key": "select-business.ProductSearchTable.fqxp",
+    "value": "发起询盘",
+    "originalValue": "发起询盘",
+    "type": "StringLiteral",
+    "uuid": "fb7bb634-c475-43e7-894a-2a7410283e56"
+  },
+  {
+    "file": "src/pages/select-business/components/CustomChatInput/index.tsx",
+    "line": 59,
+    "column": 60,
+    "key": "select-business.CustomChatInput.qtdPcrtpmr",
+    "value": "请输入你想要找的1688商品或商家，如：支持外贸定制的毛绒玩具工厂",
+    "originalValue": "请输入你想要找的1688商品或商家，如：支持外贸定制的毛绒玩具工厂",
+    "type": "StringLiteral",
+    "uuid": "4f5ed694-6153-4ea3-ae1e-1615c0484e3c"
+  },
+  {
+    "file": "src/pages/select-business/components/ColorfulCard/index.tsx",
+    "line": 42,
+    "column": 21,
+    "key": "select-business.ColorfulCard.bexCn",
+    "value": "本内容由遨虾AI生成，内容供参考",
+    "originalValue": "本内容由遨虾AI生成，内容供参考",
+    "type": "JsxText",
+    "uuid": "54b9b333-5941-43ec-aa0b-03d99e5d789f"
+  },
+  {
+    "file": "src/pages/select-business/components/ColorfulCard/index.tsx",
+    "line": 68,
+    "column": 15,
+    "key": "select-business.ColorfulCard.bexCn",
+    "value": "本内容由遨虾AI生成，内容供参考",
+    "originalValue": "本内容由遨虾AI生成，内容供参考",
+    "type": "JsxText",
+    "uuid": "6d11ec72-2acc-4ccb-964f-8db08a89de5e"
+  },
+  {
+    "file": "src/pages/mobile-select-product/components/PlatformReport/index.tsx",
+    "line": 32,
+    "column": 8,
+    "key": "mobile-select-product.PlatformReport.keywordjhf",
+    "value": "关键词机会分:{0}",
+    "originalValue": "关键词机会分:{0}",
+    "type": "JsxText",
+    "uuid": "54040e7b-d9da-431b-bff8-623aadc8fcfa"
+  },
+  {
+    "file": "src/pages/mobile-select-product/components/PlatformReport/index.tsx",
+    "line": 46,
+    "column": 61,
+    "key": "mobile-select-product.PlatformReport.ggqk",
+    "value": "供给情况",
+    "originalValue": "供给情况",
+    "type": "JsxText",
+    "uuid": "de3c6368-722a-4832-ac2b-68c8d33d8cb9"
+  },
+  {
+    "file": "src/pages/mobile-select-product/components/PlatformReport/index.tsx",
+    "line": 64,
+    "column": 61,
+    "key": "mobile-select-product.PlatformReport.pck",
+    "value": "商品销售情况",
+    "originalValue": "商品销售情况",
+    "type": "JsxText",
+    "uuid": "f5b93596-72d8-4096-896e-92de9a45ee0d"
+  },
+  {
+    "file": "src/pages/mobile-select-product/components/PlatformReport/index.tsx",
+    "line": 89,
+    "column": 46,
+    "key": "mobile-select-product.PlatformReport.pcA",
+    "value": "商品机会和AI总结",
+    "originalValue": "商品机会和AI总结",
+    "type": "JsxText",
+    "uuid": "4251112b-79c1-4c6c-a927-9f4f376d1cde"
+  },
+  {
+    "file": "src/pages/mobile-select-product/components/PlatformReport/index.tsx",
+    "line": 96,
+    "column": 14,
+    "key": "mobile-select-product.PlatformReport.product",
+    "value": "商品{0}",
+    "originalValue": "商品{0}",
+    "type": "JsxText",
+    "uuid": "40a0b0a3-2293-45dc-9007-c7321084b163"
+  },
+  {
+    "file": "src/pages/mobile-select-product/components/PlatformReport/index.tsx",
+    "line": 105,
+    "column": 26,
+    "key": "mobile-select-product.PlatformReport.sj",
+    "value": "{0}上架",
+    "originalValue": "{0}上架",
+    "type": "JsxText",
+    "uuid": "47146953-3da2-4eb1-92f2-3c56c14cecac"
+  },
+  {
+    "file": "src/pages/mobile-select-product/components/PlatformReport/index.tsx",
+    "line": 107,
+    "column": 26,
+    "key": "mobile-select-product.PlatformReport.sjday",
+    "value": "上架{0}天",
+    "originalValue": "上架{0}天",
+    "type": "JsxText",
+    "uuid": "783cac58-4221-4774-adc5-90fd4529a91a"
+  },
+  {
+    "file": "src/pages/mobile-select-product/components/PlatformReport/index.tsx",
+    "line": 112,
+    "column": 64,
+    "key": "mobile-select-product.PlatformReport.jhzs",
+    "value": "机会指数",
+    "originalValue": "机会指数",
+    "type": "JsxText",
+    "uuid": "8458fbdf-ec7f-41df-b68d-5403cf2de5a1"
+  },
+  {
+    "file": "src/pages/mobile-select-product/components/PlatformReport/index.tsx",
+    "line": 114,
+    "column": 76,
+    "key": "mobile-select-product.PlatformReport.f",
+    "value": "分",
+    "originalValue": "分",
+    "type": "JsxText",
+    "uuid": "b5c1e988-416f-41d2-830a-9e87571a2e8e"
+  },
+  {
+    "file": "src/pages/mobile-select-product/components/PlatformReport/index.tsx",
+    "line": 119,
+    "column": 20,
+    "key": "mobile-select-product.PlatformReport.tdna",
+    "value": "{0}同款商品信息",
+    "originalValue": "{0}同款商品信息",
+    "type": "JsxText",
+    "uuid": "19b585d0-3030-4698-b1b3-d0cf11e15b02"
+  },
+  {
+    "file": "src/pages/mobile-select-product/components/PlatformReport/index.tsx",
+    "line": 124,
+    "column": 83,
+    "key": "mobile-select-product.PlatformReport.ptgjregion",
+    "value": "平台/国家&地区",
+    "originalValue": "平台/国家&地区",
+    "type": "JsxText",
+    "uuid": "cde43ca9-939e-4206-88b3-6ff533140b1b"
+  },
+  {
+    "file": "src/pages/mobile-select-product/components/PlatformReport/index.tsx",
+    "line": 136,
+    "column": 83,
+    "key": "mobile-select-product.PlatformReport.tkproducts",
+    "value": "同款商品数",
+    "originalValue": "同款商品数",
+    "type": "JsxText",
+    "uuid": "b6a1fbe3-abce-4e15-a608-d36d41bd95e8"
+  },
+  {
+    "file": "src/pages/mobile-select-product/components/PlatformReport/index.tsx",
+    "line": 146,
+    "column": 79,
+    "key": "mobile-select-product.PlatformReport.pjrating",
+    "value": "平均评分",
+    "originalValue": "平均评分",
+    "type": "JsxText",
+    "uuid": "9821fb9c-3ce8-460b-9911-b3fe4eb47239"
+  },
+  {
+    "file": "src/pages/mobile-select-product/components/PlatformReport/index.tsx",
+    "line": 153,
+    "column": 79,
+    "key": "mobile-select-product.PlatformReport.zae",
+    "value": "最近30天销量",
+    "originalValue": "最近30天销量",
+    "type": "JsxText",
+    "uuid": "0dd8beb3-7611-4b56-b4c6-d2a3c0a9f52a"
+  },
+  {
+    "file": "src/pages/mobile-select-product/components/PlatformReport/index.tsx",
+    "line": 163,
+    "column": 84,
+    "key": "mobile-select-product.PlatformReport.Aizj",
+    "value": "Ai终结",
+    "originalValue": "Ai终结",
+    "type": "JsxText",
+    "uuid": "960416f7-6be4-49dc-8c42-fa8e56455926"
+  },
+  {
+    "file": "src/pages/mobile-select-product/components/PlatformReport/index.tsx",
+    "line": 164,
+    "column": 20,
+    "key": "mobile-select-product.PlatformReport.sslm",
+    "value": "所属类目：{0}",
+    "originalValue": "所属类目：{0}",
+    "type": "JsxText",
+    "uuid": "7ae67c01-e061-4e10-87d9-1c8f34cc150d"
+  },
+  {
+    "file": "src/pages/mobile-select-business/components/SupplierSearchTable/index.tsx",
+    "line": 23,
+    "column": 51,
+    "key": "mobile-select-business.SupplierSearchTable.AIxqfx",
+    "value": "AI需求分析",
+    "originalValue": "AI需求分析",
+    "type": "JsxText",
+    "uuid": "7833b8db-c9a0-4e19-a0dc-b0702c7547d1"
+  },
+  {
+    "file": "src/pages/mobile-select-business/components/SupplierSearchTable/index.tsx",
+    "line": 26,
+    "column": 12,
+    "key": "mobile-select-business.SupplierSearchTable.beey",
+    "value": "本次为您推荐{0}个供应商，其中",
+    "originalValue": "本次为您推荐{0}个供应商，其中",
+    "type": "JsxText",
+    "uuid": "134ba409-7ab3-433a-8889-0aee6783a7ac"
+  },
+  {
+    "file": "src/pages/mobile-select-business/components/SupplierSearchTable/index.tsx",
+    "line": 28,
+    "column": 48,
+    "key": "mobile-select-business.SupplierSearchTable.gqx",
+    "value": "个供应商完全满足您的需求，",
+    "originalValue": "个供应商完全满足您的需求，",
+    "type": "JsxText",
+    "uuid": "89ae4060-2eb6-439c-a360-73b132041d90"
+  },
+  {
+    "file": "src/pages/mobile-select-business/components/SupplierSearchTable/index.tsx",
+    "line": 30,
+    "column": 48,
+    "key": "mobile-select-business.SupplierSearchTable.gfx",
+    "value": "个供应商部分满足您的需求。",
+    "originalValue": "个供应商部分满足您的需求。",
+    "type": "JsxText",
+    "uuid": "0596139f-922b-4837-b7bd-16861e2a1601"
+  },
+  {
+    "file": "src/pages/mobile-select-business/components/SupplierSearchTable/SupplierCard.tsx",
+    "line": 35,
+    "column": 31,
+    "key": "mobile-select-business.SupplierSearchTable.SupplierCard.gysimage",
+    "value": "供应商图片",
+    "originalValue": "供应商图片",
+    "type": "JsxAttribute",
+    "uuid": "9b8e8f3f-8ec7-45e5-9151-5a94754c1fe6"
+  },
+  {
+    "file": "src/pages/mobile-select-business/components/SupplierSearchTable/SupplierCard.tsx",
+    "line": 47,
+    "column": 47,
+    "key": "mobile-select-business.SupplierSearchTable.SupplierCard.gcicon",
+    "value": "工厂图标",
+    "originalValue": "工厂图标",
+    "type": "JsxAttribute",
+    "uuid": "69a5a275-8e48-4d43-90e4-9ed5605cabef"
+  },
+  {
+    "file": "src/pages/mobile-select-business/components/SupplierSearchTable/SupplierCard.tsx",
+    "line": 55,
+    "column": 47,
+    "key": "mobile-select-business.SupplierSearchTable.SupplierCard.fgf",
+    "value": "分隔符",
+    "originalValue": "分隔符",
+    "type": "JsxAttribute",
+    "uuid": "3d4b0b68-9ace-46d0-b814-99b1d30e4562"
+  },
+  {
+    "file": "src/pages/mobile-select-business/components/SupplierSearchTable/SupplierCard.tsx",
+    "line": 68,
+    "column": 47,
+    "key": "mobile-select-business.SupplierSearchTable.SupplierCard.fgf",
+    "value": "分隔符",
+    "originalValue": "分隔符",
+    "type": "JsxAttribute",
+    "uuid": "f69741e1-0048-4d29-8683-3ff5f3ee52f0"
+  },
+  {
+    "file": "src/pages/mobile-select-business/components/SupplierSearchTable/SupplierCard.tsx",
+    "line": 114,
+    "column": 16,
+    "key": "mobile-select-business.SupplierSearchTable.SupplierCard.cpimage",
+    "value": "产品图片",
+    "originalValue": "产品图片",
+    "type": "JsxAttribute",
+    "uuid": "328af7d4-3121-4eab-a54a-149fa56eaa87"
+  },
+  {
+    "file": "src/pages/mobile-select-business/components/ProductSearchTable/index.tsx",
+    "line": 22,
+    "column": 51,
+    "key": "mobile-select-business.ProductSearchTable.AIxqfx",
+    "value": "AI需求分析",
+    "originalValue": "AI需求分析",
+    "type": "JsxText",
+    "uuid": "5dbe05d2-538a-4ae6-b780-33aee4d242df"
+  },
+  {
+    "file": "src/pages/mobile-select-business/components/ProductSearchTable/index.tsx",
+    "line": 25,
+    "column": 12,
+    "key": "mobile-select-business.ProductSearchTable.beep",
+    "value": "本次为您推荐{0}个产品，其中",
+    "originalValue": "本次为您推荐{0}个产品，其中",
+    "type": "JsxText",
+    "uuid": "0261004c-b16e-4254-bc01-8c8e0db42c0f"
+  },
+  {
+    "file": "src/pages/mobile-select-business/components/ProductSearchTable/index.tsx",
+    "line": 27,
+    "column": 48,
+    "key": "mobile-select-business.ProductSearchTable.gmq",
+    "value": "个产品完全满足您的需求，",
+    "originalValue": "个产品完全满足您的需求，",
+    "type": "JsxText",
+    "uuid": "4d97bb95-7547-41e5-a5ff-d7c9b55d79d6"
+  },
+  {
+    "file": "src/pages/mobile-select-business/components/ProductSearchTable/index.tsx",
+    "line": 29,
+    "column": 48,
+    "key": "mobile-select-business.ProductSearchTable.gmq.2",
+    "value": "个产品部分满足您的需求。",
+    "originalValue": "个产品部分满足您的需求。",
+    "type": "JsxText",
+    "uuid": "1ed4627c-2463-4fdf-83f4-c4d81a943aa2"
+  },
+  {
+    "file": "src/pages/mobile-select-business/components/ProductSearchTable/ProductCard.tsx",
+    "line": 37,
+    "column": 58,
+    "key": "mobile-select-business.ProductSearchTable.ProductCard.cpimage",
+    "value": "产品图片",
+    "originalValue": "产品图片",
+    "type": "JsxAttribute",
+    "uuid": "35622538-049c-40a3-b7e3-1b087008462a"
+  },
+  {
+    "file": "src/pages/mobile-select-business/components/ProductSearchTable/ProductCard.tsx",
+    "line": 71,
+    "column": 24,
+    "key": "mobile-select-business.ProductSearchTable.ProductCard.fgf",
+    "value": "分隔符",
+    "originalValue": "分隔符",
+    "type": "JsxAttribute",
+    "uuid": "19979721-3eb3-485a-9959-7d92a7775f4d"
+  },
+  {
+    "file": "src/pages/mobile-inquiry/components/InquiryReport/index.tsx",
+    "line": 22,
+    "column": 43,
+    "key": "mobile-inquiry.InquiryReport.fkThenc",
+    "value": "访问PC端，可查看任务执行，以及与商家沟通过程",
+    "originalValue": "访问PC端，可查看任务执行，以及与商家沟通过程",
+    "type": "JsxText",
+    "uuid": "abf2d862-49cd-4ee6-a1ca-0ab1b73abf2f"
+  },
+  {
+    "file": "src/pages/mobile-inquiry/components/InquiryReport/index.tsx",
+    "line": 32,
+    "column": 48,
+    "key": "mobile-inquiry.InquiryReport.xpdetails",
+    "value": "询盘详情",
+    "originalValue": "询盘详情",
+    "type": "JsxText",
+    "uuid": "3a94db37-8a16-4f47-a3e9-e12c3c4aaa9a"
+  },
+  {
+    "file": "src/pages/mobile-inquiry/components/InquiryReport/index.tsx",
+    "line": 42,
+    "column": 48,
+    "key": "mobile-inquiry.InquiryReport.taskzj",
+    "value": "任务总结",
+    "originalValue": "任务总结",
+    "type": "JsxText",
+    "uuid": "65ff6993-2789-43e9-9894-47329b498830"
+  },
+  {
+    "file": "src/pages/mobile-inquiry/components/InquiryReport/index.tsx",
+    "line": 51,
+    "column": 48,
+    "key": "mobile-inquiry.InquiryReport.gysdb",
+    "value": "供应商对比",
+    "originalValue": "供应商对比",
+    "type": "JsxText",
+    "uuid": "30d698a1-8b41-4409-bb78-aa5aee403216"
+  },
+  {
+    "file": "src/pages/mobile-inquiry/components/InquiryReport/TaskInfo.tsx",
+    "line": 24,
+    "column": 23,
+    "key": "mobile-inquiry.InquiryReport.TaskInfo.taskImage",
+    "value": "任务图片",
+    "originalValue": "任务图片",
+    "type": "JsxAttribute",
+    "uuid": "469a9770-50bd-4cd1-933c-34c84312c816"
+  },
+  {
+    "file": "src/pages/mobile-inquiry/components/InquiryReport/TaskInfo.tsx",
+    "line": 28,
+    "column": 12,
+    "key": "mobile-inquiry.InquiryReport.TaskInfo.gxpissue",
+    "value": "{0}个询盘问题",
+    "originalValue": "{0}个询盘问题",
+    "type": "JsxText",
+    "uuid": "7b0e5dec-c20e-499c-8735-0dd55a45b849"
+  },
+  {
+    "file": "src/pages/mobile-inquiry/components/InquiryReport/TaskInfo.tsx",
+    "line": 30,
+    "column": 12,
+    "key": "mobile-inquiry.InquiryReport.TaskInfo.ggys",
+    "value": "{0}个供应商",
+    "originalValue": "{0}个供应商",
+    "type": "JsxText",
+    "uuid": "f76cf6c4-b25b-4f1e-8fb7-3379004cc203"
+  },
+  {
+    "file": "src/pages/mobile-inquiry/components/InquiryReport/TaskInfo.tsx",
+    "line": 33,
+    "column": 12,
+    "key": "mobile-inquiry.InquiryReport.TaskInfo.cj",
+    "value": "{0}创建",
+    "originalValue": "{0}创建",
+    "type": "JsxText",
+    "uuid": "fa32d543-b671-4c70-839f-42d90973680c"
+  },
+  {
+    "file": "src/pages/mobile-inquiry/components/InquiryReport/TaskInfo.tsx",
+    "line": 41,
+    "column": 55,
+    "key": "mobile-inquiry.InquiryReport.TaskInfo.datadc",
+    "value": "数据洞察",
+    "originalValue": "数据洞察",
+    "type": "JsxText",
+    "uuid": "239bfa55-e9c4-4cf4-b247-4ff91cc31e61"
+  },
+  {
+    "file": "src/pages/mobile-inquiry/components/InquiryReport/SupplierTable.tsx",
+    "line": 57,
+    "column": 48,
+    "key": "mobile-inquiry.InquiryReport.SupplierTable.gys",
+    "value": "供应商",
+    "originalValue": "供应商",
+    "type": "JsxText",
+    "uuid": "2743ca18-de70-4f1c-bb33-5208b121aea9"
+  },
+  {
+    "file": "src/pages/mobile-inquiry/components/InquiryReport/SupplierTable.tsx",
+    "line": 89,
+    "column": 20,
+    "key": "mobile-inquiry.InquiryReport.SupplierTable.gysavatar",
+    "value": "供应商头像",
+    "originalValue": "供应商头像",
+    "type": "JsxAttribute",
+    "uuid": "a078c655-39a4-4e53-b0da-25b52be3a206"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/PartnerFooter/index.tsx",
+    "line": 12,
+    "column": 46,
+    "key": "mobile-agent-home.PartnerFooter.hzhb",
+    "value": "合作伙伴",
+    "originalValue": "合作伙伴",
+    "type": "JsxText",
+    "uuid": "222ab55f-e4b9-4a82-a53a-8b3e26493754"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/PartnerFooter/index.tsx",
+    "line": 17,
+    "column": 12,
+    "key": "mobile-agent-home.PartnerFooter.hzhb1",
+    "value": "合作伙伴1",
+    "originalValue": "合作伙伴1",
+    "type": "JsxAttribute",
+    "uuid": "bb6c0f00-7782-41a6-825d-989bb1deca3e"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/PartnerFooter/index.tsx",
+    "line": 25,
+    "column": 12,
+    "key": "mobile-agent-home.PartnerFooter.hzhb2",
+    "value": "合作伙伴2",
+    "originalValue": "合作伙伴2",
+    "type": "JsxAttribute",
+    "uuid": "3b264736-2391-4567-ad76-0e9320d0ee37"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/PartnerFooter/index.tsx",
+    "line": 33,
+    "column": 12,
+    "key": "mobile-agent-home.PartnerFooter.hzhb3",
+    "value": "合作伙伴3",
+    "originalValue": "合作伙伴3",
+    "type": "JsxAttribute",
+    "uuid": "30f0716f-e8e7-423b-95a2-e0c2c94c476d"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/PartnerFooter/index.tsx",
+    "line": 39,
+    "column": 43,
+    "key": "mobile-agent-home.PartnerFooter.z300",
+    "value": "浙公网安备 33010002000121号",
+    "originalValue": "浙公网安备 33010002000121号",
+    "type": "JsxText",
+    "uuid": "fc76d803-524a-42c1-994f-0b64e308c0b6"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/PartnerFooter/index.tsx",
+    "line": 41,
+    "column": 43,
+    "key": "mobile-agent-home.PartnerFooter.z11",
+    "value": "ICP备2026014275号-1",
+    "originalValue": "ICP备2026014275号-1",
+    "type": "JsxText",
+    "uuid": "4bee6df9-31f3-4c90-95c1-609430d6da72"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/PartnerFooter/index.tsx",
+    "line": 48,
+    "column": 9,
+    "key": "mobile-agent-home.PartnerFooter.snadw",
+    "value": "算法备案信息: 点击查看",
+    "originalValue": "算法备案信息: 点击查看",
+    "type": "JsxText",
+    "uuid": "ff4bdd00-9236-4335-b49b-d33395b70409"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/ChatInput/index.tsx",
+    "line": 32,
+    "column": 16,
+    "key": "mobile-agent-home.ChatInput.qte",
+    "value": "请输入问题",
+    "originalValue": "请输入问题",
+    "type": "StringLiteral",
+    "uuid": "9b7a7582-a68e-46fa-bfc0-eb32d14cde56"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/ChatInput/index.tsx",
+    "line": 128,
+    "column": 24,
+    "key": "mobile-agent-home.ChatInput.udu",
+    "value": "上传商品图",
+    "originalValue": "上传商品图",
+    "type": "JsxText",
+    "uuid": "d327285d-0bc4-48f9-a1f4-9acca37407e2"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/ChatInput/UploadBtn.tsx",
+    "line": 70,
+    "column": 17,
+    "key": "mobile-agent-home.ChatInput.UploadBtn.qaPI",
+    "value": "请上传JPG/PNG格式图片",
+    "originalValue": "请上传JPG/PNG格式图片",
+    "type": "StringLiteral",
+    "uuid": "b99dd778-9c58-4433-8e59-28a07ea1d06a"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/ChatInput/UploadBtn.tsx",
+    "line": 74,
+    "column": 17,
+    "key": "mobile-agent-home.ChatInput.UploadBtn.qa1I",
+    "value": "请上传不超过10MB的图片",
+    "originalValue": "请上传不超过10MB的图片",
+    "type": "StringLiteral",
+    "uuid": "adfaf4ee-c52b-42a6-b255-b58231a91c8c"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/ChatInput/InputArea.tsx",
+    "line": 17,
+    "column": 16,
+    "key": "mobile-agent-home.ChatInput.InputArea.ncn",
+    "value": "你可以向我继续提问...",
+    "originalValue": "你可以向我继续提问...",
+    "type": "StringLiteral",
+    "uuid": "8e88a3cc-504a-48da-a229-6b0836f01703"
+  },
+  {
+    "file": "src/pages/inquiry/components/OfferAndSupplierList/index.tsx",
+    "line": 95,
+    "column": 16,
+    "key": "inquiry.OfferAndSupplierList.delete",
+    "value": "删除",
+    "originalValue": "删除",
+    "type": "JsxAttribute",
+    "uuid": "b957bc3d-8339-4d48-b618-8a356c3718ed"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/index.tsx",
+    "line": 387,
+    "column": 30,
+    "key": "inquiry.ChooseSuppliers.qooi",
+    "value": "请先上传商品图片",
+    "originalValue": "请先上传商品图片",
+    "type": "StringLiteral",
+    "uuid": "8aa47863-d76e-4c10-bcaf-345231e93c55"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/index.tsx",
+    "line": 413,
+    "column": 45,
+    "key": "inquiry.ChooseSuppliers.hrma",
+    "value": "获取供应商推荐失败",
+    "originalValue": "获取供应商推荐失败",
+    "type": "StringLiteral",
+    "uuid": "a23577e6-d38a-4b22-b6e2-c3de8d479feb"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/index.tsx",
+    "line": 427,
+    "column": 48,
+    "key": "inquiry.ChooseSuppliers.glgys",
+    "value": "管理供应商",
+    "originalValue": "管理供应商",
+    "type": "StringLiteral",
+    "uuid": "8721c06a-b941-4844-9d10-0e1c5c4c099d"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/index.tsx",
+    "line": 427,
+    "column": 58,
+    "key": "inquiry.ChooseSuppliers.zod",
+    "value": "智能推荐供应商",
+    "originalValue": "智能推荐供应商",
+    "type": "StringLiteral",
+    "uuid": "8e1d0cc3-b74b-47fc-843c-9e3de0850da9"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/index.tsx",
+    "line": 472,
+    "column": 43,
+    "key": "inquiry.ChooseSuppliers.yts",
+    "value": "已更新 {0} 个供应商",
+    "originalValue": "已更新 ${addedCount} 个供应商",
+    "type": "TemplateString",
+    "uuid": "9945b7bf-1014-4f32-8354-128e09a470ca"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/index.tsx",
+    "line": 472,
+    "column": 70,
+    "key": "inquiry.ChooseSuppliers.ytSt",
+    "value": "已更新供应商选择",
+    "originalValue": "已更新供应商选择",
+    "type": "StringLiteral",
+    "uuid": "be1ba393-65e7-4da9-b74f-b584b98fc1b4"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/SupplierRecommendModal.tsx",
+    "line": 96,
+    "column": 6,
+    "key": "inquiry.ChooseSuppliers.SupplierRecommendModal.gft",
+    "value": "供应商信息",
+    "originalValue": "供应商信息",
+    "type": "ObjectProperty",
+    "uuid": "2969587a-1f00-4cfd-ae5f-198a7b92c964"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/SupplierRecommendModal.tsx",
+    "line": 156,
+    "column": 6,
+    "key": "inquiry.ChooseSuppliers.SupplierRecommendModal.productInformation",
+    "value": "商品信息",
+    "originalValue": "商品信息",
+    "type": "ObjectProperty",
+    "uuid": "f32c5627-ea1f-4a44-ae31-71dd24f7c078"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/SupplierRecommendModal.tsx",
+    "line": 186,
+    "column": 6,
+    "key": "inquiry.ChooseSuppliers.SupplierRecommendModal.sales",
+    "value": "销量",
+    "originalValue": "销量",
+    "type": "ObjectProperty",
+    "uuid": "39b70f1d-0e53-4a7c-9bd6-fce1ae54dc9f"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/SupplierRecommendModal.tsx",
+    "line": 226,
+    "column": 24,
+    "key": "inquiry.ChooseSuppliers.SupplierRecommendModal.sq",
+    "value": "收起",
+    "originalValue": "收起",
+    "type": "JsxText",
+    "uuid": "6eb818c3-8eff-4ad6-8d90-2d8d79b847a1"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/SupplierRecommendModal.tsx",
+    "line": 229,
+    "column": 24,
+    "key": "inquiry.ChooseSuppliers.SupplierRecommendModal.zkqb",
+    "value": "展开全部",
+    "originalValue": "展开全部",
+    "type": "JsxText",
+    "uuid": "d1e206d5-c1a2-48fc-b4f6-207576b6947d"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/SupplierRecommendModal.tsx",
+    "line": 239,
+    "column": 6,
+    "key": "inquiry.ChooseSuppliers.SupplierRecommendModal.coi",
+    "value": "采购信息",
+    "originalValue": "采购信息",
+    "type": "ObjectProperty",
+    "uuid": "e83fb45d-d5e2-4e62-8ee1-089ebbe5432d"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/SupplierRecommendModal.tsx",
+    "line": 279,
+    "column": 24,
+    "key": "inquiry.ChooseSuppliers.SupplierRecommendModal.sq",
+    "value": "收起",
+    "originalValue": "收起",
+    "type": "JsxText",
+    "uuid": "a4e7e503-a37e-47f3-bbae-b8f1caeddece"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/SupplierRecommendModal.tsx",
+    "line": 282,
+    "column": 24,
+    "key": "inquiry.ChooseSuppliers.SupplierRecommendModal.zkqb",
+    "value": "展开全部",
+    "originalValue": "展开全部",
+    "type": "JsxText",
+    "uuid": "886d92c8-a0e5-4f3e-903c-4a625581f7f1"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/SupplierRecommendModal.tsx",
+    "line": 292,
+    "column": 6,
+    "key": "inquiry.ChooseSuppliers.SupplierRecommendModal.kjjdznl",
+    "value": "跨境及定制能力",
+    "originalValue": "跨境及定制能力",
+    "type": "ObjectProperty",
+    "uuid": "1ff22aae-f395-47a5-bc86-f80999625f00"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/SupplierRecommendModal.tsx",
+    "line": 331,
+    "column": 24,
+    "key": "inquiry.ChooseSuppliers.SupplierRecommendModal.sq",
+    "value": "收起",
+    "originalValue": "收起",
+    "type": "JsxText",
+    "uuid": "8570795e-1f22-4abc-b12f-dbbb8c5d8161"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/SupplierRecommendModal.tsx",
+    "line": 334,
+    "column": 24,
+    "key": "inquiry.ChooseSuppliers.SupplierRecommendModal.zkqb",
+    "value": "展开全部",
+    "originalValue": "展开全部",
+    "type": "JsxText",
+    "uuid": "3a6d401a-1f7d-4d87-829b-dbdd3dd61801"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/SupplierRecommendModal.tsx",
+    "line": 344,
+    "column": 6,
+    "key": "inquiry.ChooseSuppliers.SupplierRecommendModal.merchantService",
+    "value": "商家服务",
+    "originalValue": "商家服务",
+    "type": "ObjectProperty",
+    "uuid": "ff0dc328-cc1d-4b8a-a583-1bc8c875931d"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/SupplierRecommendModal.tsx",
+    "line": 384,
+    "column": 24,
+    "key": "inquiry.ChooseSuppliers.SupplierRecommendModal.sq",
+    "value": "收起",
+    "originalValue": "收起",
+    "type": "JsxText",
+    "uuid": "6cab1c21-24c1-405b-b37b-ab7df08832de"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/SupplierRecommendModal.tsx",
+    "line": 387,
+    "column": 24,
+    "key": "inquiry.ChooseSuppliers.SupplierRecommendModal.zkqb",
+    "value": "展开全部",
+    "originalValue": "展开全部",
+    "type": "JsxText",
+    "uuid": "2f72b545-d218-450b-a2ce-498cadd4cbdf"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/SupplierRecommendModal.tsx",
+    "line": 410,
+    "column": 46,
+    "key": "inquiry.ChooseSuppliers.SupplierRecommendModal.zod",
+    "value": "智能推荐供应商",
+    "originalValue": "智能推荐供应商",
+    "type": "JsxText",
+    "uuid": "ffcb280d-d0a8-453a-98d3-b696d418b301"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/SupplierRecommendModal.tsx",
+    "line": 411,
+    "column": 51,
+    "key": "inquiry.ChooseSuppliers.SupplierRecommendModal.glxdhcn",
+    "value": "根据所上传的询盘商品进行图搜推荐",
+    "originalValue": "根据所上传的询盘商品进行图搜推荐",
+    "type": "JsxText",
+    "uuid": "7fa233c2-87eb-479a-a90c-160627d9b8aa"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/SupplierRecommendModal.tsx",
+    "line": 451,
+    "column": 10,
+    "key": "inquiry.ChooseSuppliers.SupplierRecommendModal.cre",
+    "value": "确认选择 ({0}/{1})",
+    "originalValue": "确认选择 ({0}/{1})",
+    "type": "JsxText",
+    "uuid": "6ef57fbe-7e68-49f8-b3c0-8c3827ec9067"
+  },
+  {
+    "file": "src/pages/inquiry/components/ChooseSuppliers/SupplierLibrary.tsx",
+    "line": 239,
+    "column": 10,
+    "key": "inquiry.ChooseSuppliers.SupplierLibrary.kxgdqyxg",
+    "value": "可选{0}个，当前已选{1}个",
+    "originalValue": "可选{0}个，当前已选{1}个",
+    "type": "JsxText",
+    "uuid": "9080e65c-f655-4996-8d73-e67aacf54008"
+  },
+  {
+    "file": "src/pages/agent-home/components/DemoList/index.tsx",
+    "line": 49,
+    "column": 4,
+    "key": "agent-home.DemoList.xsAgent",
+    "value": "选商Agent",
+    "originalValue": "选商Agent",
+    "type": "ObjectProperty",
+    "uuid": "e2807b05-f2fe-4212-add9-8c93c3bbc31d"
+  },
+  {
+    "file": "src/pages/agent-home/components/DemoList/index.tsx",
+    "line": 54,
+    "column": 4,
+    "key": "agent-home.DemoList.consultationAgent",
+    "value": "咨询Agent",
+    "originalValue": "咨询Agent",
+    "type": "ObjectProperty",
+    "uuid": "22a164a8-ef38-466d-97dd-388b66003a14"
+  },
+  {
+    "file": "src/pages/agent-home/components/DemoList/index.tsx",
+    "line": 60,
+    "column": 4,
+    "key": "agent-home.DemoList.xpAgent",
+    "value": "询盘Agent",
+    "originalValue": "询盘Agent",
+    "type": "ObjectProperty",
+    "uuid": "a08fe837-df3e-488a-b993-2edabb680776"
+  },
+  {
+    "file": "src/pages/seller-center/order-management/components/OrderTable/index.tsx",
+    "line": 77,
+    "column": 6,
+    "key": "seller-center.order-management.OrderTable.tclx",
+    "value": "套餐类型",
+    "originalValue": "套餐类型",
+    "type": "ObjectProperty",
+    "uuid": "bd599888-67cc-415f-801d-d239910da272"
+  },
+  {
+    "file": "src/pages/seller-center/order-management/components/OrderTable/index.tsx",
+    "line": 84,
+    "column": 6,
+    "key": "seller-center.order-management.OrderTable.tcmc",
+    "value": "套餐名称",
+    "originalValue": "套餐名称",
+    "type": "ObjectProperty",
+    "uuid": "728a24f6-51a3-45c3-856e-26843c07e054"
+  },
+  {
+    "file": "src/pages/seller-center/order-management/components/OrderTable/index.tsx",
+    "line": 92,
+    "column": 6,
+    "key": "seller-center.order-management.OrderTable.zy",
+    "value": "资源",
+    "originalValue": "资源",
+    "type": "ObjectProperty",
+    "uuid": "46bd93c2-2b24-4f43-870c-8e89a5c4d877"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/SimpleNote/index.tsx",
+    "line": 25,
+    "column": 6,
+    "key": "seller-center.home.SimpleNote.xp",
+    "value": "选品",
+    "originalValue": "选品",
+    "type": "ObjectProperty",
+    "uuid": "274f26a5-1fe6-42dd-a60c-16d486312d3c"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/SimpleNote/index.tsx",
+    "line": 30,
+    "column": 6,
+    "key": "seller-center.home.SimpleNote.zs",
+    "value": "找商",
+    "originalValue": "找商",
+    "type": "ObjectProperty",
+    "uuid": "e67eca73-156e-4a39-99fd-7c631dd2bb03"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/SimpleNote/index.tsx",
+    "line": 35,
+    "column": 6,
+    "key": "seller-center.home.SimpleNote.sc",
+    "value": "素材",
+    "originalValue": "素材",
+    "type": "ObjectProperty",
+    "uuid": "d08d3a0e-029f-4901-b42c-b96900de6613"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/SimpleNote/index.tsx",
+    "line": 40,
+    "column": 6,
+    "key": "seller-center.home.SimpleNote.xp.2",
+    "value": "询盘",
+    "originalValue": "询盘",
+    "type": "ObjectProperty",
+    "uuid": "d6d0b1f4-cce2-4d37-936b-ee546eb6df78"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/SimpleNote/index.tsx",
+    "line": 45,
+    "column": 6,
+    "key": "seller-center.home.SimpleNote.consultation",
+    "value": "咨询",
+    "originalValue": "咨询",
+    "type": "ObjectProperty",
+    "uuid": "e52b797f-e3d9-4909-8f4f-4377f619126b"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/SimpleNote/index.tsx",
+    "line": 83,
+    "column": 44,
+    "key": "seller-center.home.SimpleNote.nd",
+    "value": "您的",
+    "originalValue": "您的",
+    "type": "JsxText",
+    "uuid": "a0846052-721e-458c-9dc6-214aa92a8589"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/SimpleNote/index.tsx",
+    "line": 87,
+    "column": 44,
+    "key": "seller-center.home.SimpleNote.kjdssy",
+    "value": "跨境电商生意",
+    "originalValue": "跨境电商生意",
+    "type": "JsxText",
+    "uuid": "2dfe3ff5-99c7-4748-9464-916c50db1ad3"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/SendButton/index.tsx",
+    "line": 24,
+    "column": 60,
+    "key": "seller-center.home.SendButton.fs",
+    "value": "发送",
+    "originalValue": "发送",
+    "type": "JsxText",
+    "uuid": "b1fc7cfd-f884-4387-b1a0-52c757ddb970"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/Navigation/index.tsx",
+    "line": 187,
+    "column": 71,
+    "key": "seller-center.home.Navigation.immediatelyLogin",
+    "value": "立即登录",
+    "originalValue": "立即登录",
+    "type": "JsxText",
+    "uuid": "5ea2a28e-cb28-452d-953c-c2c77a7c3c2d"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/McpServer/index.tsx",
+    "line": 17,
+    "column": 41,
+    "key": "seller-center.home.McpServer.tg",
+    "value": "提供",
+    "originalValue": "提供",
+    "type": "JsxText",
+    "uuid": "2a36abf3-4401-4674-a503-1732e0e946a1"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/McpServer/index.tsx",
+    "line": 25,
+    "column": 41,
+    "key": "seller-center.home.McpServer.service",
+    "value": "服务",
+    "originalValue": "服务",
+    "type": "JsxText",
+    "uuid": "b12ed755-747c-4af4-b2f6-3e3dbf6cc85f"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/McpServer/index.tsx",
+    "line": 28,
+    "column": 38,
+    "key": "seller-center.home.McpServer.tscntndyywxmjsFwew",
+    "value": "通过MCP服务，能够即时为Agent接入榜单查询、多语言图搜等外部工具，无需编写复杂接口，显著提升开发效率，快速为你的Agent接入外部工具。",
+    "originalValue": "通过MCP服务，能够即时为Agent接入榜单查询、多语言图搜等外部工具，无需编写复杂接口，显著提升开发效率，快速为你的Agent接入外部工具。",
+    "type": "JsxText",
+    "uuid": "1d199ae6-d316-4f1a-9876-4d70568967ff"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/McpServer/index.tsx",
+    "line": 37,
+    "column": 49,
+    "key": "seller-center.home.McpServer.pcsh",
+    "value": "商品热搜词",
+    "originalValue": "商品热搜词",
+    "type": "JsxText",
+    "uuid": "8931de0c-54aa-40c4-bb69-11293bee3e7a"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/McpServer/index.tsx",
+    "line": 43,
+    "column": 49,
+    "key": "seller-center.home.McpServer.sj",
+    "value": "商机",
+    "originalValue": "商机",
+    "type": "JsxText",
+    "uuid": "7152336f-3bab-4a7e-8cd5-8dfb02ed75bd"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/McpServer/index.tsx",
+    "line": 49,
+    "column": 39,
+    "key": "seller-center.home.McpServer.th6oHaRmenolr8gsot",
+    "value": "提供多纬度的1688商品热搜词推荐，帮助机构能够更好的让独立站用户知道1688大家在选什么，什么最热",
+    "originalValue": "提供多纬度的1688商品热搜词推荐，帮助机构能够更好的让独立站用户知道1688大家在选什么，什么最热",
+    "type": "JsxText",
+    "uuid": "e7883c6d-eb6e-4227-a48a-6839544e7259"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/McpServer/index.tsx",
+    "line": 66,
+    "column": 49,
+    "key": "seller-center.home.McpServer.myoa",
+    "value": "多语言关键词搜索",
+    "originalValue": "多语言关键词搜索",
+    "type": "JsxText",
+    "uuid": "4cd6300d-15e1-472b-8ef3-1c4c38160eea"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/McpServer/index.tsx",
+    "line": 74,
+    "column": 50,
+    "key": "seller-center.home.McpServer.product",
+    "value": "商品",
+    "originalValue": "商品",
+    "type": "JsxText",
+    "uuid": "f7866168-28ab-4868-b970-f7f996d1f46f"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/McpServer/index.tsx",
+    "line": 80,
+    "column": 39,
+    "key": "seller-center.home.McpServer.myguyShi",
+    "value": "多语言场景下，提供商品关键词搜索服务",
+    "originalValue": "多语言场景下，提供商品关键词搜索服务",
+    "type": "JsxText",
+    "uuid": "884cdab8-47c2-4388-ad42-44975bbb4f28"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/McpServer/index.tsx",
+    "line": 95,
+    "column": 49,
+    "key": "seller-center.home.McpServer.muchyysx",
+    "value": "多语言商详",
+    "originalValue": "多语言商详",
+    "type": "JsxText",
+    "uuid": "3228d201-3bf4-4f10-8046-71f35530c85b"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/McpServer/index.tsx",
+    "line": 103,
+    "column": 50,
+    "key": "seller-center.home.McpServer.product",
+    "value": "商品",
+    "originalValue": "商品",
+    "type": "JsxText",
+    "uuid": "dad09295-453f-4807-8013-679b149e00a9"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/McpServer/index.tsx",
+    "line": 109,
+    "column": 39,
+    "key": "seller-center.home.McpServer.srhnrtShrtifeonag",
+    "value": "支持多种语向，输入商品ID，即可搜索并提取商品详情（含：主副标题、视频、SKU信息、供应商等）",
+    "originalValue": "支持多种语向，输入商品ID，即可搜索并提取商品详情（含：主副标题、视频、SKU信息、供应商等）",
+    "type": "JsxText",
+    "uuid": "f269acf2-5c02-42a2-8895-637ab5a806db"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 10,
+    "column": 4,
+    "key": "seller-center.home.DemoList.bizkrlye",
+    "value": "美国最火的瑜伽裤新品是什么？都有哪些创新？",
+    "originalValue": "美国最火的瑜伽裤新品是什么？都有哪些创新？",
+    "type": "ObjectProperty",
+    "uuid": "04752d85-86e5-48c2-ad9b-6b3c8c97c2dd"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 13,
+    "column": 4,
+    "key": "seller-center.home.DemoList.cd850fbcrTSQNOcyEUvyTPaanxeulnei20t25oKrsheottrtokcCroRrteeeNinllaenwusrbc60bdaCraPoaab02bbccrlnvep22s45aHreinodv1f8add0I98b8c9ia655",
+    "value": "{\"cardId\":\"3e31858bb5574003a5bf58e8b221dca6\",\"cardSubType\":\"USER_REQUEST_NEW_PRODUCT\",\"cardType\":\"USER_REQUEST\",\"eventType\":\"DATA_DISPLAY\",\"rawData\":\"{\\\"extInfos\\\":{\\\"executeStatus\\\":\\\"new\\\"},\\\"listingTime\\\":{\\\"endTime\\\":\\\"2025-11-10\\\",\\\"startTime\\\":\\\"2025-05-14\\\"},\\\"productKeyword\\\":\\\"瑜伽裤\\\",\\\"searchContexts\\\":[{\\\"contentType\\\":\\\"text\\\",\\\"productKeyword\\\":\\\"瑜伽裤\\\"}],\\\"selectionCriteria\\\":{\\\"productRequirement\\\":{\\\"priceRange\\\":{\\\"currency\\\":\\\"CNY\\\"},\\\"ratingRange\\\":{},\\\"salesVolumeRange\\\":{}}},\\\"sessionId\\\":\\\"new_product_discovery_f12bbafdc518463aa109fd6bd3d6d350\\\",\\\"targetCountry\\\":\\\"US\\\",\\\"targetPlatform\\\":\\\"amazon\\\",\\\"taskId\\\":\\\"b309408984244bab8585b8ec7c139fc4\\\",\\\"userModel\\\":{\\\"loginId\\\":\\\"vv_v5\\\",\\\"timestamp\\\":1762258062496,\\\"userId\\\":430705726}}\",\"saveToHistory\":true,\"sessionId\":\"new_product_discovery_f12bbafdc518463aa109fd6bd3d6d350\",\"taskId\":\"b309408984244bab8585b8ec7c139fc4\",\"timestamp\":1762775531415}",
+    "originalValue": "{\"cardId\":\"3e31858bb5574003a5bf58e8b221dca6\",\"cardSubType\":\"USER_REQUEST_NEW_PRODUCT\",\"cardType\":\"USER_REQUEST\",\"eventType\":\"DATA_DISPLAY\",\"rawData\":\"{\\\"extInfos\\\":{\\\"executeStatus\\\":\\\"new\\\"},\\\"listingTime\\\":{\\\"endTime\\\":\\\"2025-11-10\\\",\\\"startTime\\\":\\\"2025-05-14\\\"},\\\"productKeyword\\\":\\\"瑜伽裤\\\",\\\"searchContexts\\\":[{\\\"contentType\\\":\\\"text\\\",\\\"productKeyword\\\":\\\"瑜伽裤\\\"}],\\\"selectionCriteria\\\":{\\\"productRequirement\\\":{\\\"priceRange\\\":{\\\"currency\\\":\\\"CNY\\\"},\\\"ratingRange\\\":{},\\\"salesVolumeRange\\\":{}}},\\\"sessionId\\\":\\\"new_product_discovery_f12bbafdc518463aa109fd6bd3d6d350\\\",\\\"targetCountry\\\":\\\"US\\\",\\\"targetPlatform\\\":\\\"amazon\\\",\\\"taskId\\\":\\\"b309408984244bab8585b8ec7c139fc4\\\",\\\"userModel\\\":{\\\"loginId\\\":\\\"vv_v5\\\",\\\"timestamp\\\":1762258062496,\\\"userId\\\":430705726}}\",\"saveToHistory\":true,\"sessionId\":\"new_product_discovery_f12bbafdc518463aa109fd6bd3d6d350\",\"taskId\":\"b309408984244bab8585b8ec7c139fc4\",\"timestamp\":1762775531415}",
+    "type": "ObjectProperty",
+    "uuid": "47e31e1b-4325-4855-bc26-df26367f7701"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 18,
+    "column": 4,
+    "key": "seller-center.home.DemoList.ytRdevig",
+    "value": "亚马逊热销的清洁机器人都有哪些差评？如何改进？",
+    "originalValue": "亚马逊热销的清洁机器人都有哪些差评？如何改进？",
+    "type": "ObjectProperty",
+    "uuid": "38451b43-3f39-4913-9505-193b5d5914ea"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 21,
+    "column": 4,
+    "key": "seller-center.home.DemoList.cdaf176arTSQIVdUETtDIYatsuaededeCxnTeoKrstrideepRcnYngeunsIdme5af9fd1guUgamok904cb9uoodtt789r02estenoivt12aa5fsdd09892s171",
+    "value": "{\"cardId\":\"5e86af3c5fee4913afe76f136e721a63\",\"cardSubType\":\"USER_REQUEST_IMPROVE\",\"cardType\":\"USER_REQUEST\",\"eventType\":\"DATA_DISPLAY\",\"rawData\":\"{\\\"extInfos\\\":{\\\"executeStatus\\\":\\\"new\\\"},\\\"productKeyword\\\":\\\"吸尘器\\\",\\\"searchContexts\\\":[{\\\"contentType\\\":\\\"text\\\",\\\"productKeyword\\\":\\\"吸尘器\\\"}],\\\"selectionCriteria\\\":{\\\"productRequirement\\\":{\\\"priceRange\\\":{\\\"currency\\\":\\\"CNY\\\"},\\\"ratingRange\\\":{},\\\"salesVolumeRange\\\":{}}},\\\"sessionId\\\":\\\"product_improvement_50281a9b22fd42a981bafbbe5daa8f10\\\",\\\"targetCountry\\\":\\\"US\\\",\\\"targetPlatform\\\":\\\"amazon\\\",\\\"taskId\\\":\\\"dd909ad0d3e0404d9c8f58b6bf99abc2\\\",\\\"userModel\\\":{\\\"loginId\\\":\\\"vv_v5\\\",\\\"timestamp\\\":1762258062496,\\\"userId\\\":430705726}}\",\"saveToHistory\":true,\"sessionId\":\"product_improvement_50281a9b22fd42a981bafbbe5daa8f10\",\"taskId\":\"dd909ad0d3e0404d9c8f58b6bf99abc2\",\"timestamp\":1762775677128}",
+    "originalValue": "{\"cardId\":\"5e86af3c5fee4913afe76f136e721a63\",\"cardSubType\":\"USER_REQUEST_IMPROVE\",\"cardType\":\"USER_REQUEST\",\"eventType\":\"DATA_DISPLAY\",\"rawData\":\"{\\\"extInfos\\\":{\\\"executeStatus\\\":\\\"new\\\"},\\\"productKeyword\\\":\\\"吸尘器\\\",\\\"searchContexts\\\":[{\\\"contentType\\\":\\\"text\\\",\\\"productKeyword\\\":\\\"吸尘器\\\"}],\\\"selectionCriteria\\\":{\\\"productRequirement\\\":{\\\"priceRange\\\":{\\\"currency\\\":\\\"CNY\\\"},\\\"ratingRange\\\":{},\\\"salesVolumeRange\\\":{}}},\\\"sessionId\\\":\\\"product_improvement_50281a9b22fd42a981bafbbe5daa8f10\\\",\\\"targetCountry\\\":\\\"US\\\",\\\"targetPlatform\\\":\\\"amazon\\\",\\\"taskId\\\":\\\"dd909ad0d3e0404d9c8f58b6bf99abc2\\\",\\\"userModel\\\":{\\\"loginId\\\":\\\"vv_v5\\\",\\\"timestamp\\\":1762258062496,\\\"userId\\\":430705726}}\",\"saveToHistory\":true,\"sessionId\":\"product_improvement_50281a9b22fd42a981bafbbe5daa8f10\",\"taskId\":\"dd909ad0d3e0404d9c8f58b6bf99abc2\",\"timestamp\":1762775677128}",
+    "type": "ObjectProperty",
+    "uuid": "a955f44f-756b-4f7d-874b-b33474d497a5"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 26,
+    "column": 4,
+    "key": "seller-center.home.DemoList.ywyhkm",
+    "value": "有哪些户外玩具产品在亚马逊卖的很火但Tiktok还没人卖？",
+    "originalValue": "有哪些户外玩具产品在亚马逊卖的很火但Tiktok还没人卖？",
+    "type": "ObjectProperty",
+    "uuid": "e8d6e8b2-e622-48f0-a89b-aa1815d0a85a"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 36,
+    "column": 4,
+    "key": "seller-center.home.DemoList.scAgent",
+    "value": "素材Agent",
+    "originalValue": "素材Agent",
+    "type": "ObjectProperty",
+    "uuid": "b41044bd-b79c-43e2-b347-980014a17b49"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 37,
+    "column": 4,
+    "key": "seller-center.home.DemoList.hqc",
+    "value": "高温清洁器家用场景图",
+    "originalValue": "高温清洁器家用场景图",
+    "type": "ObjectProperty",
+    "uuid": "17e9d6fa-41df-42dc-a396-802c8a3a5026"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 46,
+    "column": 4,
+    "key": "seller-center.home.DemoList.scAgent",
+    "value": "素材Agent",
+    "originalValue": "素材Agent",
+    "type": "ObjectProperty",
+    "uuid": "f10136e7-c949-434e-be22-f789a93863f7"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 47,
+    "column": 4,
+    "key": "seller-center.home.DemoList.btoz",
+    "value": "批量抠图&生成商品展示图",
+    "originalValue": "批量抠图&生成商品展示图",
+    "type": "ObjectProperty",
+    "uuid": "2a15947d-ae7e-427a-b0dd-66d254359f74"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 54,
+    "column": 4,
+    "key": "seller-center.home.DemoList.gxz",
+    "value": "跟卖热销品？找同款最优供应商",
+    "originalValue": "跟卖热销品？找同款最优供应商",
+    "type": "ObjectProperty",
+    "uuid": "46399f25-9ccd-4d3d-a2c0-618863ad431a"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 62,
+    "column": 4,
+    "key": "seller-center.home.DemoList.tkbtspzzjs",
+    "value": "同款不同色？拍照直接搜！",
+    "originalValue": "同款不同色？拍照直接搜！",
+    "type": "ObjectProperty",
+    "uuid": "82662790-0b27-4a4c-9626-920bf0013d45"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 65,
+    "column": 4,
+    "key": "seller-center.home.DemoList.cd2691fcrTSQFREdUETtDIYatoOyyyamrp0cmb1lZyi1134rpgifre1ec82ba2246d23rln977ep33s299viysoior7ed8dcs54494abs147",
+    "value": "{\"cardId\":\"9cd42241560144989ce15e27ff87acea\",\"cardSubType\":\"USER_REQUEST_FIND_PROVIDER\",\"cardType\":\"USER_REQUEST\",\"eventType\":\"DATA_DISPLAY\",\"rawData\":\"{\\\"intention\\\":\\\"AUTO\\\",\\\"query\\\":\\\"找图上的羽绒服，但是要紫色\\\",\\\"searchImageUrl\\\":\\\"https://cbu01.alicdn.com/img/ibank/O1CN01lUAuVZ1c2HyFFA2ic_!!4611686018427383254-2-overseas_pic.png\\\",\\\"sessionId\\\":\\\"find_provider_f0817650ee5b4cde8488c762dcb2bc47\\\",\\\"taskId\\\":\\\"25c7f24f24444ce69fb1d410b2abf53b\\\",\\\"userModel\\\":{\\\"loginId\\\":\\\"tb961297096476\\\",\\\"timestamp\\\":1763344153540,\\\"userId\\\":2220296025911}}\",\"saveToHistory\":true,\"sessionId\":\"find_provider_f0817650ee5b4cde8488c762dcb2bc47\",\"taskId\":\"25c7f24f24444ce69fb1d410b2abf53b\",\"timestamp\":1763541018746}",
+    "originalValue": "{\"cardId\":\"9cd42241560144989ce15e27ff87acea\",\"cardSubType\":\"USER_REQUEST_FIND_PROVIDER\",\"cardType\":\"USER_REQUEST\",\"eventType\":\"DATA_DISPLAY\",\"rawData\":\"{\\\"intention\\\":\\\"AUTO\\\",\\\"query\\\":\\\"找图上的羽绒服，但是要紫色\\\",\\\"searchImageUrl\\\":\\\"https://cbu01.alicdn.com/img/ibank/O1CN01lUAuVZ1c2HyFFA2ic_!!4611686018427383254-2-overseas_pic.png\\\",\\\"sessionId\\\":\\\"find_provider_f0817650ee5b4cde8488c762dcb2bc47\\\",\\\"taskId\\\":\\\"25c7f24f24444ce69fb1d410b2abf53b\\\",\\\"userModel\\\":{\\\"loginId\\\":\\\"tb961297096476\\\",\\\"timestamp\\\":1763344153540,\\\"userId\\\":2220296025911}}\",\"saveToHistory\":true,\"sessionId\":\"find_provider_f0817650ee5b4cde8488c762dcb2bc47\",\"taskId\":\"25c7f24f24444ce69fb1d410b2abf53b\",\"timestamp\":1763541018746}",
+    "type": "ObjectProperty",
+    "uuid": "a735fa40-32d7-47eb-b9b6-d0f502c844c6"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 70,
+    "column": 4,
+    "key": "seller-center.home.DemoList.srzj",
+    "value": "支持外贸定制的毛绒玩具工厂",
+    "originalValue": "支持外贸定制的毛绒玩具工厂",
+    "type": "ObjectProperty",
+    "uuid": "efa3b619-1aaa-499d-82d7-7dbda38f6a19"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 73,
+    "column": 4,
+    "key": "seller-center.home.DemoList.cd817138rTSQFREdUETtDIYatoOyrcfwennv3172492k0649fbuood19tt725r201ifre041d74a25bf7f0ep54",
+    "value": "{\"cardId\":\"f8558f73e1964f72bf317610366368ed\",\"cardSubType\":\"USER_REQUEST_FIND_PROVIDER\",\"cardType\":\"USER_REQUEST\",\"eventType\":\"DATA_DISPLAY\",\"rawData\":\"{\\\"intention\\\":\\\"AUTO\\\",\\\"query\\\":\\\"我想找毛绒玩具的工厂，支持贴标服务，支持英文说明书\\\",\\\"sessionId\\\":\\\"find_provider_30a021e747724112add94e5709cd482a\\\",\\\"taskId\\\":\\\"2d0345b6eabb4eaf996778f60f3b990b\\\",\\\"userModel\\\":{\\\"loginId\\\":\\\"tb961297096476\\\",\\\"timestamp\\\":1762172932753,\\\"userId\\\":2220296025911}}\",\"sessionId\":\"find_provider_30a021e747724112add94e5709cd482a\",\"taskId\":\"2d0345b6eabb4eaf996778f60f3b990b\",\"timestamp\":1762571954641}",
+    "originalValue": "{\"cardId\":\"f8558f73e1964f72bf317610366368ed\",\"cardSubType\":\"USER_REQUEST_FIND_PROVIDER\",\"cardType\":\"USER_REQUEST\",\"eventType\":\"DATA_DISPLAY\",\"rawData\":\"{\\\"intention\\\":\\\"AUTO\\\",\\\"query\\\":\\\"我想找毛绒玩具的工厂，支持贴标服务，支持英文说明书\\\",\\\"sessionId\\\":\\\"find_provider_30a021e747724112add94e5709cd482a\\\",\\\"taskId\\\":\\\"2d0345b6eabb4eaf996778f60f3b990b\\\",\\\"userModel\\\":{\\\"loginId\\\":\\\"tb961297096476\\\",\\\"timestamp\\\":1762172932753,\\\"userId\\\":2220296025911}}\",\"sessionId\":\"find_provider_30a021e747724112add94e5709cd482a\",\"taskId\":\"2d0345b6eabb4eaf996778f60f3b990b\",\"timestamp\":1762571954641}",
+    "type": "ObjectProperty",
+    "uuid": "7a0dcbb2-100a-425a-906d-9e5436f798bc"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 78,
+    "column": 4,
+    "key": "seller-center.home.DemoList.Alc",
+    "value": "AI谈判不露怯，智能决策选最优！",
+    "originalValue": "AI谈判不露怯，智能决策选最优！",
+    "type": "ObjectProperty",
+    "uuid": "c0b52f18-f325-4043-9eb9-c03288a0f5d1"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 85,
+    "column": 4,
+    "key": "seller-center.home.DemoList.bjzy",
+    "value": "批量询价自动跑，躺着也能找货源！",
+    "originalValue": "批量询价自动跑，躺着也能找货源！",
+    "type": "ObjectProperty",
+    "uuid": "3ccf58ed-8002-4482-8403-f6545a8b792b"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 92,
+    "column": 4,
+    "key": "seller-center.home.DemoList.xziz",
+    "value": "询盘策略全自动，智能筛选真供给！",
+    "originalValue": "询盘策略全自动，智能筛选真供给！",
+    "type": "ObjectProperty",
+    "uuid": "11ea3197-dfac-4b4b-9e69-e097b5b52c1a"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 99,
+    "column": 4,
+    "key": "seller-center.home.DemoList.crknis",
+    "value": "从0开始做TikTok，东南亚物流全攻略",
+    "originalValue": "从0开始做TikTok，东南亚物流全攻略",
+    "type": "ObjectProperty",
+    "uuid": "5bbe1209-e259-41b5-be25-2e2b4f5808e7"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 102,
+    "column": 4,
+    "key": "seller-center.home.DemoList.cde57fd9rTSPAXdUETtDIYayszctksnhfsestenn4143ceckbd4baftt704",
+    "value": "{\"cardId\":\"8e8de09725574072840fbbecdd8189fb\",\"cardSubType\":\"USER_INPUT_PLAIN_TEXT\",\"cardType\":\"USER_REQUEST\",\"eventType\":\"DATA_DISPLAY\",\"rawData\":\"我是一个跨境电商初创业者，自己不是工厂，我想先在tiktok东南亚尝试一下能不能出单，最适合我的物流发货方式是什么？\",\"saveToHistory\":true,\"sessionId\":\"consult_4cb1b18b984e4bb3bf69cb5c4e9659c7\",\"taskId\":\"49bd0c3df3e3402a8b63eaa8e40fff89\",\"timestamp\":1762830071247}",
+    "originalValue": "{\"cardId\":\"8e8de09725574072840fbbecdd8189fb\",\"cardSubType\":\"USER_INPUT_PLAIN_TEXT\",\"cardType\":\"USER_REQUEST\",\"eventType\":\"DATA_DISPLAY\",\"rawData\":\"我是一个跨境电商初创业者，自己不是工厂，我想先在tiktok东南亚尝试一下能不能出单，最适合我的物流发货方式是什么？\",\"saveToHistory\":true,\"sessionId\":\"consult_4cb1b18b984e4bb3bf69cb5c4e9659c7\",\"taskId\":\"49bd0c3df3e3402a8b63eaa8e40fff89\",\"timestamp\":1762830071247}",
+    "type": "ObjectProperty",
+    "uuid": "b7581c13-6801-4ee7-9a52-597de4a912ff"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 196,
+    "column": 89,
+    "key": "seller-center.home.DemoList.useralzs",
+    "value": "用户案例展示",
+    "originalValue": "用户案例展示",
+    "type": "JsxText",
+    "uuid": "fd6856dd-68c2-4734-944d-bbb1bff17a5a"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/index.tsx",
+    "line": 200,
+    "column": 88,
+    "key": "seller-center.home.DemoList.tyfa",
+    "value": "探索真实应用场景，一键复刻专属方案",
+    "originalValue": "探索真实应用场景，一键复刻专属方案",
+    "type": "JsxText",
+    "uuid": "fb2af740-261f-43c9-883c-3fd341e50d60"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/Card.tsx",
+    "line": 126,
+    "column": 15,
+    "key": "seller-center.home.DemoList.Card.tytk",
+    "value": "体验同款",
+    "originalValue": "体验同款",
+    "type": "JsxText",
+    "uuid": "b7c2e507-5406-49ef-aa31-c00e66559320"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/DemoList/Card.tsx",
+    "line": 136,
+    "column": 13,
+    "key": "seller-center.home.DemoList.Card.viewhf",
+    "value": "查看回放",
+    "originalValue": "查看回放",
+    "type": "JsxText",
+    "uuid": "fe1ad7ca-b0b0-440b-9dca-ad070df200cd"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/CustomVoice/index.tsx",
+    "line": 14,
+    "column": 6,
+    "key": "seller-center.home.CustomVoice.krdtdp8qNcdbxsgkMzshbqbdzhssqx",
+    "value": "跨境电商进入智能化拐点，遨虾以一套全新的AI能力平台，为1688 叩开了全球贸易的新门扉——从外贸全自动询盘机器人、智能选品专家，到素材智能Agent与开放API/MCP生态，正在让跨境生意的效率和想象力同步进化。在全球贸易充满不确定性的当下，遨虾是中国制造出海的智能加速器，让跨境生意变得更确定、更可持续",
+    "originalValue": "跨境电商进入智能化拐点，遨虾以一套全新的AI能力平台，为1688 叩开了全球贸易的新门扉——从外贸全自动询盘机器人、智能选品专家，到素材智能Agent与开放API/MCP生态，正在让跨境生意的效率和想象力同步进化。在全球贸易充满不确定性的当下，遨虾是中国制造出海的智能加速器，让跨境生意变得更确定、更可持续",
+    "type": "ObjectProperty",
+    "uuid": "265bdcd6-be8e-43d5-be27-6e367a5a0b47"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/CustomVoice/index.tsx",
+    "line": 22,
+    "column": 6,
+    "key": "seller-center.home.CustomVoice.kzscsm8yllcIrthwgccnsdnd",
+    "value": "跨境生意里最宝贵的不是资金，而是创始人专注思考的时间。1688“遨虾”就是要把你的精力从重复性劳动中解放出来。它用AI处理执行，让你能抬起头看路。想在海外市场掌握主动权，就该用这种更聪明的武器，从源头构建你的核心优势。别让无尽的“忙碌”，成为你战略懒惰的借口。",
+    "originalValue": "跨境生意里最宝贵的不是资金，而是创始人专注思考的时间。1688“遨虾”就是要把你的精力从重复性劳动中解放出来。它用AI处理执行，让你能抬起头看路。想在海外市场掌握主动权，就该用这种更聪明的武器，从源头构建你的核心优势。别让无尽的“忙碌”，成为你战略懒惰的借口。",
+    "type": "ObjectProperty",
+    "uuid": "01f9b74d-e7b7-4b32-acd1-b9109e753623"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/CustomVoice/index.tsx",
+    "line": 32,
+    "column": 6,
+    "key": "seller-center.home.CustomVoice.dcsdhszyblpjm8lzlLrtdajytsldycrtoy",
+    "value": "对于很多希望从事跨境电商的商家来说，搭建一个专业的跨境运营团队并不简单。但“遨虾”平台将AI技术应用于目前1688已有的能力和资源之中，可以有效的降低商家的运营难度，这不仅大幅降低了运营成本，更显著提升了生意效率与响应速度。真正懂生意、能落地，非常值得商家老板们关注、用起来！",
+    "originalValue": "对于很多希望从事跨境电商的商家来说，搭建一个专业的跨境运营团队并不简单。但“遨虾”平台将AI技术应用于目前1688已有的能力和资源之中，可以有效的降低商家的运营难度，这不仅大幅降低了运营成本，更显著提升了生意效率与响应速度。真正懂生意、能落地，非常值得商家老板们关注、用起来！",
+    "type": "ObjectProperty",
+    "uuid": "a9612467-52d6-40e4-be28-8b412902f87d"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/CustomVoice/index.tsx",
+    "line": 40,
+    "column": 6,
+    "key": "seller-center.home.CustomVoice.sysrthdkxxzwjAwxznnjigtt2",
+    "value": "时至今日，阿里仍然是最懂商家的平台。几乎所有跨境电商场景下可能面临的效率难题，“遨虾”都用 AI 重构了新解法。以跨境选品 AI Agent 为例，你很难相信，普通人只用 1 分钟，就能拿到专家级 100 分钟工作成果的同时，成本却不到 1/20。",
+    "originalValue": "时至今日，阿里仍然是最懂商家的平台。几乎所有跨境电商场景下可能面临的效率难题，“遨虾”都用 AI 重构了新解法。以跨境选品 AI Agent 为例，你很难相信，普通人只用 1 分钟，就能拿到专家级 100 分钟工作成果的同时，成本却不到 1/20。",
+    "type": "ObjectProperty",
+    "uuid": "db1ce974-4f3b-4292-b4e1-39d6c7cf1b9f"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/CustomVoice/index.tsx",
+    "line": 50,
+    "column": 6,
+    "key": "seller-center.home.CustomVoice.khrNlhwlxlLDArhsMyzHuygjajytsldycrtoy",
+    "value": "跨境电商从高利润逐步回归正常利润，精细化运营已成为新一轮竞争的核心。1688利用自身的大数据和AI能力，围绕跨境关键环节——从选品、素材生成到多语言本地化，打造了一整套高质量的AI Agent工具。这不仅大幅降低了运营成本，更显著提升了生意效率与响应速度。真正懂生意、能落地，非常值得商家老板们关注、用起来！",
+    "originalValue": "跨境电商从高利润逐步回归正常利润，精细化运营已成为新一轮竞争的核心。1688利用自身的大数据和AI能力，围绕跨境关键环节——从选品、素材生成到多语言本地化，打造了一整套高质量的AI Agent工具。这不仅大幅降低了运营成本，更显著提升了生意效率与响应速度。真正懂生意、能落地，非常值得商家老板们关注、用起来！",
+    "type": "ObjectProperty",
+    "uuid": "b2707475-98c6-468d-a3a1-5aa337644680"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/CustomVoice/index.tsx",
+    "line": 73,
+    "column": 89,
+    "key": "seller-center.home.CustomVoice.bCm",
+    "value": "品牌客户声音",
+    "originalValue": "品牌客户声音",
+    "type": "JsxText",
+    "uuid": "6fdedbc5-9973-43ba-8941-5b729961991a"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/AgentNote/index.tsx",
+    "line": 12,
+    "column": 4,
+    "key": "seller-center.home.AgentNote.xp",
+    "value": "选品",
+    "originalValue": "选品",
+    "type": "ObjectProperty",
+    "uuid": "e5969a05-544e-460a-ad02-ba5b44dad90f"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/AgentNote/index.tsx",
+    "line": 13,
+    "column": 4,
+    "key": "seller-center.home.AgentNote.xp",
+    "value": "选品",
+    "originalValue": "选品",
+    "type": "ObjectProperty",
+    "uuid": "2c344a26-e466-470a-9e0f-8fc3c2dd3b57"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/AgentNote/index.tsx",
+    "line": 14,
+    "column": 4,
+    "key": "seller-center.home.AgentNote.sqquDzejepch",
+    "value": "深入了解全球电子商务趋势，利用多平台数据和专家产品选择经验，发现新产品、产品改进和市场转型的机会。",
+    "originalValue": "深入了解全球电子商务趋势，利用多平台数据和专家产品选择经验，发现新产品、产品改进和市场转型的机会。",
+    "type": "ObjectProperty",
+    "uuid": "7414af86-dbab-4d50-aa55-a39e32f2d6c6"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/AgentNote/index.tsx",
+    "line": 24,
+    "column": 4,
+    "key": "seller-center.home.AgentNote.zs",
+    "value": "找商",
+    "originalValue": "找商",
+    "type": "ObjectProperty",
+    "uuid": "0f1f23d1-d8fd-4bed-a262-854925ada3ed"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/AgentNote/index.tsx",
+    "line": 25,
+    "column": 4,
+    "key": "seller-center.home.AgentNote.xyzs",
+    "value": "寻源找商",
+    "originalValue": "寻源找商",
+    "type": "ObjectProperty",
+    "uuid": "617a428c-23be-4149-b7b4-10a41edfd7f9"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/AgentNote/index.tsx",
+    "line": 26,
+    "column": 4,
+    "key": "seller-center.home.AgentNote.rdczq8",
+    "value": "人工智能驱动的全球市场洞察，帮你找最符合需求的1688供应商",
+    "originalValue": "人工智能驱动的全球市场洞察，帮你找最符合需求的1688供应商",
+    "type": "ObjectProperty",
+    "uuid": "ac9f1c01-129b-41f3-af26-a0ee54fbcfd1"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/AgentNote/index.tsx",
+    "line": 36,
+    "column": 4,
+    "key": "seller-center.home.AgentNote.sc",
+    "value": "素材",
+    "originalValue": "素材",
+    "type": "ObjectProperty",
+    "uuid": "48ce9000-116b-49fe-b796-6abac60cc6a0"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/AgentNote/index.tsx",
+    "line": 37,
+    "column": 4,
+    "key": "seller-center.home.AgentNote.sc",
+    "value": "素材",
+    "originalValue": "素材",
+    "type": "ObjectProperty",
+    "uuid": "e82be644-1cba-4979-9a26-a640f97b24b8"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/AgentNote/index.tsx",
+    "line": 38,
+    "column": 4,
+    "key": "seller-center.home.AgentNote.zsItosh3hcpMcjjs",
+    "value": "专为跨境电商设计的AI设计工作台，支持一站式设计、生成和上架。集成30多种AI生成工具，支持多套产品素材的集中管理，以及批量设计操作。",
+    "originalValue": "专为跨境电商设计的AI设计工作台，支持一站式设计、生成和上架。集成30多种AI生成工具，支持多套产品素材的集中管理，以及批量设计操作。",
+    "type": "ObjectProperty",
+    "uuid": "70480a46-3968-4a99-a21b-54dfcd8f06f9"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/AgentNote/index.tsx",
+    "line": 48,
+    "column": 4,
+    "key": "seller-center.home.AgentNote.xp.2",
+    "value": "询盘",
+    "originalValue": "询盘",
+    "type": "ObjectProperty",
+    "uuid": "5f074592-4b5c-4e27-85ac-3f2621d40107"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/AgentNote/index.tsx",
+    "line": 49,
+    "column": 4,
+    "key": "seller-center.home.AgentNote.xp.3",
+    "value": "询盘",
+    "originalValue": "询盘",
+    "type": "ObjectProperty",
+    "uuid": "2cba8096-0ba9-4522-8a4b-4a4e6172b014"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/AgentNote/index.tsx",
+    "line": 50,
+    "column": 4,
+    "key": "seller-center.home.AgentNote.yumtshgodf",
+    "value": "一键发起批量询价，模拟人际沟通，智能分析生成多维对比报告，并推荐最佳采购方案。",
+    "originalValue": "一键发起批量询价，模拟人际沟通，智能分析生成多维对比报告，并推荐最佳采购方案。",
+    "type": "ObjectProperty",
+    "uuid": "3424087c-f17e-4875-8e80-4207db3e155a"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/AgentNote/index.tsx",
+    "line": 60,
+    "column": 4,
+    "key": "seller-center.home.AgentNote.consultation",
+    "value": "咨询",
+    "originalValue": "咨询",
+    "type": "ObjectProperty",
+    "uuid": "fbc94181-a3ab-4ef4-981c-eb10ee5f6124"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/AgentNote/index.tsx",
+    "line": 61,
+    "column": 4,
+    "key": "seller-center.home.AgentNote.consultation",
+    "value": "咨询",
+    "originalValue": "咨询",
+    "type": "ObjectProperty",
+    "uuid": "8aa8f6e0-f393-4764-8bb3-58d810b717c2"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/AgentNote/index.tsx",
+    "line": 62,
+    "column": 4,
+    "key": "seller-center.home.AgentNote.ydkwtldzijhClo",
+    "value": "由代理驱动的助手，可从跨境电子商务知识库中提供实时答案和可操作的指导，高效解决商家的咨询",
+    "originalValue": "由代理驱动的助手，可从跨境电子商务知识库中提供实时答案和可操作的指导，高效解决商家的咨询",
+    "type": "ObjectProperty",
+    "uuid": "744ab9e0-7a0c-49b4-9ccd-e2a580c2b6b2"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/AgentNote/index.tsx",
+    "line": 107,
+    "column": 89,
+    "key": "seller-center.home.AgentNote.hxfunction",
+    "value": "核心功能",
+    "originalValue": "核心功能",
+    "type": "JsxText",
+    "uuid": "e64026ad-e5cc-487f-a44c-5c2e79311e4c"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/AgentNote/index.tsx",
+    "line": 171,
+    "column": 64,
+    "key": "seller-center.home.AgentNote.iiy",
+    "value": "立即体验",
+    "originalValue": "立即体验",
+    "type": "JsxText",
+    "uuid": "e064c69a-e8ce-4cec-bd81-fefca5ddac4b"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/APIServer/index.tsx",
+    "line": 17,
+    "column": 43,
+    "key": "seller-center.home.APIServer.tg",
+    "value": "提供",
+    "originalValue": "提供",
+    "type": "JsxText",
+    "uuid": "46cb5337-fcd1-4498-8158-1d032c9978ef"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/APIServer/index.tsx",
+    "line": 25,
+    "column": 43,
+    "key": "seller-center.home.APIServer.service",
+    "value": "服务",
+    "originalValue": "服务",
+    "type": "JsxText",
+    "uuid": "550dfd3c-699d-4d54-882b-a6125b00b535"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/APIServer/index.tsx",
+    "line": 28,
+    "column": 40,
+    "key": "seller-center.home.APIServer.fIikfctckjSmafhzx",
+    "value": "丰富的API服务，覆盖跨境电商的翻译、铺货、素材制作、广告投放等通用场景。开发者可将其自主集成到现有系统中，实现快速开发与高效运营，显著提升业务效率",
+    "originalValue": "丰富的API服务，覆盖跨境电商的翻译、铺货、素材制作、广告投放等通用场景。开发者可将其自主集成到现有系统中，实现快速开发与高效运营，显著提升业务效率",
+    "type": "JsxText",
+    "uuid": "747fb8e8-c1df-437e-b02e-aef0833982e8"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/APIServer/index.tsx",
+    "line": 44,
+    "column": 14,
+    "key": "seller-center.home.APIServer.APIservice",
+    "value": "API服务",
+    "originalValue": "API服务",
+    "type": "JsxAttribute",
+    "uuid": "d4c9f7ac-a856-4134-8925-bfb4b8483589"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/APIServer/index.tsx",
+    "line": 53,
+    "column": 48,
+    "key": "seller-center.home.APIServer.imagefy",
+    "value": "图片翻译",
+    "originalValue": "图片翻译",
+    "type": "JsxText",
+    "uuid": "22a69210-94dc-4c24-8180-4cc4fb09f4ea"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/APIServer/index.tsx",
+    "line": 58,
+    "column": 39,
+    "key": "seller-center.home.APIServer.zxwzzzoH",
+    "value": "专业地将图像文本转换为多种语言，以满足全球消费者的喜好，性价比高",
+    "originalValue": "专业地将图像文本转换为多种语言，以满足全球消费者的喜好，性价比高",
+    "type": "JsxText",
+    "uuid": "87f633c3-07e4-4ca3-a730-417ddb40045f"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/APIServer/index.tsx",
+    "line": 71,
+    "column": 48,
+    "key": "seller-center.home.APIServer.iHfe",
+    "value": "图片高清放大",
+    "originalValue": "图片高清放大",
+    "type": "JsxText",
+    "uuid": "1247cd47-7857-4210-81af-78cb9970193e"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/APIServer/index.tsx",
+    "line": 76,
+    "column": 39,
+    "key": "seller-center.home.APIServer.kpmhtfedwxlsxHxzl",
+    "value": "可以对输入的图片进行2-4倍的图像分辨率放大，有效提升低分辨率图像的质量，改善图像纹理细节，全面提高图像清晰度与主观质量。",
+    "originalValue": "可以对输入的图片进行2-4倍的图像分辨率放大，有效提升低分辨率图像的质量，改善图像纹理细节，全面提高图像清晰度与主观质量。",
+    "type": "JsxText",
+    "uuid": "95547ce8-d43a-47a1-a760-ae1ea51e0fdc"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/APIServer/index.tsx",
+    "line": 117,
+    "column": 48,
+    "key": "seller-center.home.APIServer.znkt",
+    "value": "智能抠图",
+    "originalValue": "智能抠图",
+    "type": "JsxText",
+    "uuid": "63111def-e626-434d-b14f-1182c996408e"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/APIServer/index.tsx",
+    "line": 121,
+    "column": 39,
+    "key": "seller-center.home.APIServer.zxxthtczg",
+    "value": "自动识别图像中的显著性主体，将主体和背景进行分离，返回去除背景后的主体图片。",
+    "originalValue": "自动识别图像中的显著性主体，将主体和背景进行分离，返回去除背景后的主体图片。",
+    "type": "JsxText",
+    "uuid": "e5df8f8f-07b0-4e07-b007-75db9181c378"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/APIServer/index.tsx",
+    "line": 133,
+    "column": 48,
+    "key": "seller-center.home.APIServer.pcl",
+    "value": "商品标题生成",
+    "originalValue": "商品标题生成",
+    "type": "JsxText",
+    "uuid": "dcc887a5-971c-425f-ae9b-0e47f677eb85"
+  },
+  {
+    "file": "src/pages/seller-center/home/components/APIServer/index.tsx",
+    "line": 138,
+    "column": 39,
+    "key": "seller-center.home.APIServer.jsjgxslixuHenMl",
+    "value": "基于海量电商数据进行训练，可根据品类特性快速生成吸引力十足的标题，凸显商品优势，帮助商家获取更多流量",
+    "originalValue": "基于海量电商数据进行训练，可根据品类特性快速生成吸引力十足的标题，凸显商品优势，帮助商家获取更多流量",
+    "type": "JsxText",
+    "uuid": "6ffd9ffe-e0be-4108-8842-a34f6eccc78d"
+  },
+  {
+    "file": "src/pages/seller-center/home/api-list/api-pay/index.tsx",
+    "line": 64,
+    "column": 22,
+    "key": "seller-center.home.api-list.api-pay.qtg",
+    "value": "请先阅读并同意产品订购协议",
+    "originalValue": "请先阅读并同意产品订购协议",
+    "type": "StringLiteral",
+    "uuid": "bdbc5c0d-f093-4c18-9808-d14e9ac5fa91"
+  },
+  {
+    "file": "src/pages/seller-center/home/api-list/api-pay/index.tsx",
+    "line": 164,
+    "column": 30,
+    "key": "seller-center.home.api-list.api-pay.validityPeriod",
+    "value": "有效期",
+    "originalValue": "有效期",
+    "type": "JsxText",
+    "uuid": "4c7f4a8d-2da3-4a8a-aae9-f442c2765ec0"
+  },
+  {
+    "file": "src/pages/seller-center/home/api-list/api-pay/index.tsx",
+    "line": 213,
+    "column": 50,
+    "key": "seller-center.home.api-list.api-pay.yydbty",
+    "value": "已阅读并同意",
+    "originalValue": "已阅读并同意",
+    "type": "JsxText",
+    "uuid": "02b49a92-4a5d-4cdd-8b09-fa518b6978a5"
+  },
+  {
+    "file": "src/pages/seller-center/home/api-list/api-pay/index.tsx",
+    "line": 215,
+    "column": 76,
+    "key": "seller-center.home.api-list.api-pay.cpdgxy",
+    "value": "产品订购协议",
+    "originalValue": "产品订购协议",
+    "type": "JsxText",
+    "uuid": "362ac357-2677-4cd1-a679-9d37d6233739"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/ReqComponent/index.tsx",
+    "line": 79,
+    "column": 6,
+    "key": "select-product.general-agent.ReqComponent.rnfrmHrt",
+    "value": "如：瑜伽裤有哪些蓝海细分市场？帮我推荐些热销商品跟卖",
+    "originalValue": "如：瑜伽裤有哪些蓝海细分市场？帮我推荐些热销商品跟卖",
+    "type": "JsxAttribute",
+    "uuid": "90c4444b-e08e-410b-b082-e38378838f55"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/ToolRankTable.tsx",
+    "line": 19,
+    "column": 4,
+    "key": "select-product.general-agent.FormatList.ToolRankTable.lm",
+    "value": "类目",
+    "originalValue": "类目",
+    "type": "ObjectProperty",
+    "uuid": "720aa101-2d7e-4588-8e9c-179687d3ef62"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/ToolProductTable.tsx",
+    "line": 22,
+    "column": 6,
+    "key": "select-product.general-agent.FormatList.ToolProductTable.lm",
+    "value": "类目",
+    "originalValue": "类目",
+    "type": "ObjectProperty",
+    "uuid": "d13f946a-bd3a-4305-9e2c-89d2b9ca4868"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/KeywordDetails.tsx",
+    "line": 5,
+    "column": 2,
+    "key": "select-product.general-agent.FormatList.KeywordDetails.ymx",
+    "value": "亚马逊",
+    "originalValue": "亚马逊",
+    "type": "ObjectProperty",
+    "uuid": "cd43d3aa-eb13-4fb9-9de7-1fb327afde50"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/KeywordDetails.tsx",
+    "line": 13,
+    "column": 6,
+    "key": "select-product.general-agent.FormatList.KeywordDetails.keyword",
+    "value": "关键词",
+    "originalValue": "关键词",
+    "type": "ObjectProperty",
+    "uuid": "1b50aa7e-5bd5-43f0-bd95-17a80b8c8172"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/KeywordDetails.tsx",
+    "line": 18,
+    "column": 13,
+    "key": "select-product.general-agent.FormatList.KeywordDetails.yam",
+    "value": "亚马逊搜索排名",
+    "originalValue": "亚马逊搜索排名",
+    "type": "TemplateString",
+    "uuid": "1137e424-9e18-4655-ae36-870c09414c04"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/KeywordDetails.tsx",
+    "line": 26,
+    "column": 13,
+    "key": "select-product.general-agent.FormatList.KeywordDetails.ymxqsdata",
+    "value": "亚马逊趋势数据",
+    "originalValue": "亚马逊趋势数据",
+    "type": "TemplateString",
+    "uuid": "3ef93abb-d077-4b94-8b00-28dec222fd85"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/KeywordDetails.tsx",
+    "line": 38,
+    "column": 6,
+    "key": "select-product.general-agent.FormatList.KeywordDetails.krm",
+    "value": "关键词核心类目分布",
+    "originalValue": "关键词核心类目分布",
+    "type": "ObjectProperty",
+    "uuid": "2a764a36-b48f-4eb3-96d9-74471218fed0"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/KeywordDetails.tsx",
+    "line": 50,
+    "column": 6,
+    "key": "select-product.general-agent.FormatList.KeywordDetails.zsproducts",
+    "value": "在售商品数",
+    "originalValue": "在售商品数",
+    "type": "ObjectProperty",
+    "uuid": "336eed24-8720-4f29-89b2-ddbcd9239838"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/KeywordDetails.tsx",
+    "line": 58,
+    "column": 6,
+    "key": "select-product.general-agent.FormatList.KeywordDetails.zgsellerzb",
+    "value": "中国卖家占比",
+    "originalValue": "中国卖家占比",
+    "type": "ObjectProperty",
+    "uuid": "feb3fcf6-604a-4c22-ae7f-015104dcf00b"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/KeywordDetails.tsx",
+    "line": 66,
+    "column": 6,
+    "key": "select-product.general-agent.FormatList.KeywordDetails.jaaae",
+    "value": "近180天新品销量占比",
+    "originalValue": "近180天新品销量占比",
+    "type": "ObjectProperty",
+    "uuid": "4a42a076-19cf-4a8f-b789-3b8f649c16f6"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/KeywordDetails.tsx",
+    "line": 74,
+    "column": 6,
+    "key": "select-product.general-agent.FormatList.KeywordDetails.monthxse",
+    "value": "月销售额",
+    "originalValue": "月销售额",
+    "type": "ObjectProperty",
+    "uuid": "2436d26b-c645-430a-aa00-d78761461bd4"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/KeywordDetails.tsx",
+    "line": 82,
+    "column": 6,
+    "key": "select-product.general-agent.FormatList.KeywordDetails.monthSales",
+    "value": "月销量",
+    "originalValue": "月销量",
+    "type": "ObjectProperty",
+    "uuid": "6f2f7eaa-fcfa-4edd-9996-ebb3f81a829d"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/KeywordDetails.tsx",
+    "line": 90,
+    "column": 6,
+    "key": "select-product.general-agent.FormatList.KeywordDetails.mSq",
+    "value": "月销量趋势",
+    "originalValue": "月销量趋势",
+    "type": "ObjectProperty",
+    "uuid": "6f93e187-d595-4d8c-a9de-cb60e5da517a"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/KeywordDetails.tsx",
+    "line": 98,
+    "column": 6,
+    "key": "select-product.general-agent.FormatList.KeywordDetails.pca",
+    "value": "商品平均评分",
+    "originalValue": "商品平均评分",
+    "type": "ObjectProperty",
+    "uuid": "3aa3b363-10bc-454e-9261-5553d71a3232"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/KeywordDetails.tsx",
+    "line": 106,
+    "column": 6,
+    "key": "select-product.general-agent.FormatList.KeywordDetails.smprice",
+    "value": "售卖价格",
+    "originalValue": "售卖价格",
+    "type": "ObjectProperty",
+    "uuid": "647b5a7b-b5e7-4a45-a045-7c68df3c7e8b"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/KeywordDetails.tsx",
+    "line": 114,
+    "column": 6,
+    "key": "select-product.general-agent.FormatList.KeywordDetails.monthxsehb",
+    "value": "月销售额环比",
+    "originalValue": "月销售额环比",
+    "type": "ObjectProperty",
+    "uuid": "4760cb15-5884-43db-9515-490a1af4e832"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/KeywordDetails.tsx",
+    "line": 122,
+    "column": 6,
+    "key": "select-product.general-agent.FormatList.KeywordDetails.mSh",
+    "value": "月销量环比",
+    "originalValue": "月销量环比",
+    "type": "ObjectProperty",
+    "uuid": "a7300d08-35c2-492a-8c11-4c26241e6323"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/KeywordDetails.tsx",
+    "line": 130,
+    "column": 6,
+    "key": "select-product.general-agent.FormatList.KeywordDetails.brandldxs",
+    "value": "品牌垄断系数",
+    "originalValue": "品牌垄断系数",
+    "type": "ObjectProperty",
+    "uuid": "7877b233-123d-4208-8c95-785b4019f73a"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/KeywordDetails.tsx",
+    "line": 138,
+    "column": 6,
+    "key": "select-product.general-agent.FormatList.KeywordDetails.pcs",
+    "value": "商品垄断系数",
+    "originalValue": "商品垄断系数",
+    "type": "ObjectProperty",
+    "uuid": "a5596b0c-5499-4467-8817-b0d90e940c00"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/KeyWordReview.tsx",
+    "line": 16,
+    "column": 4,
+    "key": "select-product.general-agent.FormatList.KeyWordReview.comments",
+    "value": "评论数",
+    "originalValue": "评论数",
+    "type": "ObjectProperty",
+    "uuid": "7f4551d3-7eb3-4cb3-a5e1-4d818f3f1de7"
+  },
+  {
+    "file": "src/pages/select-product/home/components/CustomTitle/index.tsx",
+    "line": 15,
+    "column": 29,
+    "key": "select-product.home.CustomTitle.zk",
+    "value": "找款",
+    "originalValue": "找款",
+    "type": "StringLiteral",
+    "uuid": "dc6417e5-e23c-4bd0-a9c4-fbb1370e912a"
+  },
+  {
+    "file": "src/pages/select-product/home/components/CustomTitle/index.tsx",
+    "line": 15,
+    "column": 35,
+    "key": "select-product.home.CustomTitle.gt",
+    "value": "改图",
+    "originalValue": "改图",
+    "type": "StringLiteral",
+    "uuid": "db56633d-ee9c-43ab-87f0-fe05c621f3aa"
+  },
+  {
+    "file": "src/pages/select-product/home/components/CustomTitle/index.tsx",
+    "line": 15,
+    "column": 41,
+    "key": "select-product.home.CustomTitle.jy",
+    "value": "经营",
+    "originalValue": "经营",
+    "type": "StringLiteral",
+    "uuid": "04d5e913-2538-477d-9ce3-7b12bf4a714e"
+  },
+  {
+    "file": "src/pages/select-product/home/components/CustomTitle/index.tsx",
+    "line": 18,
+    "column": 22,
+    "key": "select-product.home.CustomTitle.AIyj",
+    "value": "AI议价",
+    "originalValue": "AI议价",
+    "type": "StringLiteral",
+    "uuid": "01ce029f-6628-444b-82d2-c748767d0ed1"
+  },
+  {
+    "file": "src/pages/select-product/home/components/CustomTitle/index.tsx",
+    "line": 19,
+    "column": 35,
+    "key": "select-product.home.CustomTitle.AIyj",
+    "value": "AI议价",
+    "originalValue": "AI议价",
+    "type": "StringLiteral",
+    "uuid": "8c4725e8-b3b3-4b25-8bef-4a5ac2c78e07"
+  },
+  {
+    "file": "src/pages/select-product/home/components/CustomTitle/index.tsx",
+    "line": 30,
+    "column": 19,
+    "key": "select-product.home.CustomTitle.yj",
+    "value": "议价",
+    "originalValue": "议价",
+    "type": "ObjectProperty",
+    "uuid": "7b42abcc-ec53-4274-a751-e76fc79aebab"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectSeller/index.tsx",
+    "line": 19,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectSeller.znms",
+    "value": "智能模式",
+    "originalValue": "智能模式",
+    "type": "ObjectProperty",
+    "uuid": "04c22283-e9a4-4488-aa83-80509c3f14f9"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectSeller/index.tsx",
+    "line": 20,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectSeller.mxzdppxq",
+    "value": "模型自动匹配需求",
+    "originalValue": "模型自动匹配需求",
+    "type": "ObjectProperty",
+    "uuid": "2f66f40e-63ee-4414-9907-8bd9f3958b7e"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectSeller/index.tsx",
+    "line": 25,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectSeller.ypzs",
+    "value": "以品找商",
+    "originalValue": "以品找商",
+    "type": "ObjectProperty",
+    "uuid": "d3915ac8-a7dd-440f-b2f1-bd1ac5268778"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectSeller/index.tsx",
+    "line": 26,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectSeller.xdth",
+    "value": "先定商品再推商家",
+    "originalValue": "先定商品再推商家",
+    "type": "ObjectProperty",
+    "uuid": "73e04110-9b47-4935-86c2-758373df9a6f"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectSeller/index.tsx",
+    "line": 31,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectSeller.zsmerchant",
+    "value": "直搜商家",
+    "originalValue": "直搜商家",
+    "type": "ObjectProperty",
+    "uuid": "fdbbbd90-9b5b-4a1a-8d87-0d9c371b8f64"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectSeller/index.tsx",
+    "line": 32,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectSeller.zcImn",
+    "value": "只搜商家信息",
+    "originalValue": "只搜商家信息",
+    "type": "ObjectProperty",
+    "uuid": "59201ed4-c751-40dd-8dc7-1c166415b348"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectSeller/index.tsx",
+    "line": 39,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectSeller.gxz",
+    "value": "跟卖热销品？找同款最优供应商",
+    "originalValue": "跟卖热销品？找同款最优供应商",
+    "type": "ObjectProperty",
+    "uuid": "b226d893-e56b-4d19-a5d5-983a8d179cc2"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectSeller/index.tsx",
+    "line": 45,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectSeller.tkbtspzzjs",
+    "value": "同款不同色？拍照直接搜！",
+    "originalValue": "同款不同色？拍照直接搜！",
+    "type": "ObjectProperty",
+    "uuid": "f359b388-e366-4e03-89e9-e6b6e6722922"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectSeller/index.tsx",
+    "line": 51,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectSeller.qyc",
+    "value": "全网无同款？一键找定制厂家",
+    "originalValue": "全网无同款？一键找定制厂家",
+    "type": "ObjectProperty",
+    "uuid": "bc8ad74c-c0f8-4692-b7cd-98a41546fc6b"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectSeller/index.tsx",
+    "line": 57,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectSeller.srzj",
+    "value": "支持外贸定制的毛绒玩具工厂",
+    "originalValue": "支持外贸定制的毛绒玩具工厂",
+    "type": "ObjectProperty",
+    "uuid": "2ba52454-3a4d-4a74-a9c9-0b4f80726a10"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectSeller/index.tsx",
+    "line": 63,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectSeller.xulaGh",
+    "value": "寻南美市场小单友好面护工厂",
+    "originalValue": "寻南美市场小单友好面护工厂",
+    "type": "ObjectProperty",
+    "uuid": "605ba577-03e4-4e12-b457-6e05103393b4"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectSeller/index.tsx",
+    "line": 69,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectSeller.ynt",
+    "value": "眼影出口东南亚，直搜源头工厂",
+    "originalValue": "眼影出口东南亚，直搜源头工厂",
+    "type": "ObjectProperty",
+    "uuid": "bd45f61c-7c4b-4442-87c5-82abb37f948b"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectSeller/index.tsx",
+    "line": 87,
+    "column": 8,
+    "key": "mobile-agent-home.Agents.SelectSeller.qtdPcrtpmr",
+    "value": "请输入你想要找的1688商品或商家，如：支持外贸定制的毛绒玩具工厂",
+    "originalValue": "请输入你想要找的1688商品或商家，如：支持外贸定制的毛绒玩具工厂",
+    "type": "JsxAttribute",
+    "uuid": "03301d6e-825a-466b-8524-7e1744a64eb3"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectSeller/index.tsx",
+    "line": 100,
+    "column": 16,
+    "key": "mobile-agent-home.Agents.SelectSeller.cancel",
+    "value": "取消",
+    "originalValue": "取消",
+    "type": "ObjectProperty",
+    "uuid": "31245b06-3ada-4152-be4f-5ce2aade93aa"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectSeller/index.tsx",
+    "line": 137,
+    "column": 24,
+    "key": "mobile-agent-home.Agents.SelectSeller.tsjxal",
+    "value": "探索精选案例",
+    "originalValue": "探索精选案例",
+    "type": "JsxAttribute",
+    "uuid": "197699af-7165-4140-b2e8-ceec794540db"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectProduct/index.tsx",
+    "line": 14,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectProduct.yefgaazgl",
+    "value": "一键分析美国瑜伽裤新品机会，不再错过下一个“Lululemon”！",
+    "originalValue": "一键分析美国瑜伽裤新品机会，不再错过下一个“Lululemon”！",
+    "type": "ObjectProperty",
+    "uuid": "f02374bf-e917-417b-8ec5-a3ffb206d536"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectProduct/index.tsx",
+    "line": 19,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectProduct.fqoNivngeevrf",
+    "value": "分析亚马逊清洁机器人的致命差评，智能生成“差评转五星”的改良方案",
+    "originalValue": "分析亚马逊清洁机器人的致命差评，智能生成“差评转五星”的改良方案",
+    "type": "ObjectProperty",
+    "uuid": "e6ea916d-1a11-4fbf-9826-63fd92440840"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectProduct/index.tsx",
+    "line": 24,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectProduct.ywyhkm",
+    "value": "有哪些户外玩具产品在亚马逊卖的很火但Tiktok还没人卖？",
+    "originalValue": "有哪些户外玩具产品在亚马逊卖的很火但Tiktok还没人卖？",
+    "type": "ObjectProperty",
+    "uuid": "ec141ffc-f6fc-4cf0-874a-843a0e7b8549"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectProduct/index.tsx",
+    "line": 29,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectProduct.cjwyhNr",
+    "value": "宠物赛道“内卷”血海？AI为你定位下一个高利润潜力新品",
+    "originalValue": "宠物赛道“内卷”血海？AI为你定位下一个高利润潜力新品",
+    "type": "ObjectProperty",
+    "uuid": "5aa75713-555f-4770-a3c3-5787e6688354"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectProduct/index.tsx",
+    "line": 34,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectProduct.sjrlaut",
+    "value": "上架电脑支架新品？先看美亚数据报告",
+    "originalValue": "上架电脑支架新品？先看美亚数据报告",
+    "type": "ObjectProperty",
+    "uuid": "94c7f35e-a450-40d8-94f2-3d88c96f7706"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectProduct/index.tsx",
+    "line": 39,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectProduct.haoiflg",
+    "value": "高销量低评分的厨房小工具，如何改进？",
+    "originalValue": "高销量低评分的厨房小工具，如何改进？",
+    "type": "ObjectProperty",
+    "uuid": "76826695-52f7-450e-87a5-ca2f9c7bf5e3"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectProduct/index.tsx",
+    "line": 56,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectProduct.jaa",
+    "value": "机会新品选品",
+    "originalValue": "机会新品选品",
+    "type": "ObjectProperty",
+    "uuid": "16d76462-0c9b-45e6-8f2f-c70c20e3d73f"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectProduct/index.tsx",
+    "line": 57,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectProduct.jzkjucdei",
+    "value": "基于Amazon、TikTok亿级商品，秒级对比百款新品",
+    "originalValue": "基于Amazon、TikTok亿级商品，秒级对比百款新品",
+    "type": "ObjectProperty",
+    "uuid": "b69be299-e32a-44b2-88c5-4c6c9406f5bf"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectProduct/index.tsx",
+    "line": 63,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectProduct.pcp",
+    "value": "商品改进选品发现",
+    "originalValue": "商品改进选品发现",
+    "type": "ObjectProperty",
+    "uuid": "5e7d8bb0-4572-40c1-ad6c-589c5af0f9ff"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectProduct/index.tsx",
+    "line": 64,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectProduct.Axvnua",
+    "value": "AI精准分析海量评价、智能输出解决方案",
+    "originalValue": "AI精准分析海量评价、智能输出解决方案",
+    "type": "ObjectProperty",
+    "uuid": "e404d366-4079-44c5-b917-169e657eb81b"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectProduct/index.tsx",
+    "line": 70,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectProduct.ptqyxpfx",
+    "value": "平台迁移选品发现",
+    "originalValue": "平台迁移选品发现",
+    "type": "ObjectProperty",
+    "uuid": "5922edbf-4a54-4f71-b71b-65b25954b642"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectProduct/index.tsx",
+    "line": 71,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectProduct.uekuulw",
+    "value": "动态识别同款商品在多平台流向 ，提早把握机会",
+    "originalValue": "动态识别同款商品在多平台流向 ，提早把握机会",
+    "type": "ObjectProperty",
+    "uuid": "f80d4492-f2d0-4c44-ac2d-e735b710ccbf"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectProduct/index.tsx",
+    "line": 77,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectProduct.gjqyxpfx",
+    "value": "国家迁移选品发现",
+    "originalValue": "国家迁移选品发现",
+    "type": "ObjectProperty",
+    "uuid": "c0bc453b-5c63-467d-b062-21cb2447a017"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectProduct/index.tsx",
+    "line": 78,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.SelectProduct.drtNc",
+    "value": "洞悉全球商品流动，抢占新兴市场",
+    "originalValue": "洞悉全球商品流动，抢占新兴市场",
+    "type": "ObjectProperty",
+    "uuid": "e5824d6f-b068-43b0-9995-4fbf87e3934a"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectProduct/index.tsx",
+    "line": 96,
+    "column": 8,
+    "key": "mobile-agent-home.Agents.SelectProduct.qtlfI",
+    "value": "请输入您关注的细分市场选品问题",
+    "originalValue": "请输入您关注的细分市场选品问题",
+    "type": "JsxAttribute",
+    "uuid": "74d3f63c-628e-496e-94fa-994a7899ea53"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectProduct/index.tsx",
+    "line": 131,
+    "column": 24,
+    "key": "mobile-agent-home.Agents.SelectProduct.tsjxal",
+    "value": "探索精选案例",
+    "originalValue": "探索精选案例",
+    "type": "JsxAttribute",
+    "uuid": "7631c4da-b927-4531-9890-8cd065853ecb"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/Inquiry/index.tsx",
+    "line": 16,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.Inquiry.Alc",
+    "value": "AI谈判不露怯，智能决策选最优！",
+    "originalValue": "AI谈判不露怯，智能决策选最优！",
+    "type": "ObjectProperty",
+    "uuid": "26129ad6-483f-4349-b22e-a41000e7ccfc"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/Inquiry/index.tsx",
+    "line": 21,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.Inquiry.bjzy",
+    "value": "批量询价自动跑，躺着也能找货源！",
+    "originalValue": "批量询价自动跑，躺着也能找货源！",
+    "type": "ObjectProperty",
+    "uuid": "e13fe35e-27ae-4d6e-a15d-ab260d6a0722"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/Inquiry/index.tsx",
+    "line": 26,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.Inquiry.xziz",
+    "value": "询盘策略全自动，智能筛选真供给！",
+    "originalValue": "询盘策略全自动，智能筛选真供给！",
+    "type": "ObjectProperty",
+    "uuid": "aa81b68a-f6e5-47d6-997d-996bf16fccc1"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/Inquiry/index.tsx",
+    "line": 50,
+    "column": 10,
+    "key": "mobile-agent-home.Agents.Inquiry.zt",
+    "value": "主图",
+    "originalValue": "主图",
+    "type": "JsxAttribute",
+    "uuid": "0e43599c-fa9d-4e07-ac20-418cd9ecfa12"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/Inquiry/index.tsx",
+    "line": 57,
+    "column": 35,
+    "key": "mobile-agent-home.Agents.Inquiry.ssqfkLpWwAgch",
+    "value": "建议前往电脑端访问：批量发起询盘 | 大屏多窗口管理进展  | AI分析报告，让采购决策更高效！",
+    "originalValue": "建议前往电脑端访问：批量发起询盘 | 大屏多窗口管理进展  | AI分析报告，让采购决策更高效！",
+    "type": "JsxText",
+    "uuid": "7e6f6dc4-77c0-4df2-b9f5-99832c3ef04b"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/Inquiry/index.tsx",
+    "line": 60,
+    "column": 24,
+    "key": "mobile-agent-home.Agents.Inquiry.tsjxal",
+    "value": "探索精选案例",
+    "originalValue": "探索精选案例",
+    "type": "JsxAttribute",
+    "uuid": "9ac0efd1-eab4-4af3-9f7e-8c762261c247"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/CommonChat/index.tsx",
+    "line": 13,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.CommonChat.crknis",
+    "value": "从0开始做TikTok，东南亚物流全攻略",
+    "originalValue": "从0开始做TikTok，东南亚物流全攻略",
+    "type": "ObjectProperty",
+    "uuid": "8e9e6b3f-2876-4f2b-8921-c9c3d25eed64"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/CommonChat/index.tsx",
+    "line": 18,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.CommonChat.xmrtd",
+    "value": "虾皮开店保姆级攻略：从注册到出单",
+    "originalValue": "虾皮开店保姆级攻略：从注册到出单",
+    "type": "ObjectProperty",
+    "uuid": "51195d41-2fb7-44e7-affd-818ef765e469"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/CommonChat/index.tsx",
+    "line": 23,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.CommonChat.segeC",
+    "value": "深度解析Temu全托管：卖家权责与成本",
+    "originalValue": "深度解析Temu全托管：卖家权责与成本",
+    "type": "ObjectProperty",
+    "uuid": "6550804e-1390-4a35-abc2-c6e214c30b2c"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/CommonChat/index.tsx",
+    "line": 28,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.CommonChat.Smazx",
+    "value": "SHEIN卖软糖到日韩，避开这些合规红线",
+    "originalValue": "SHEIN卖软糖到日韩，避开这些合规红线",
+    "type": "ObjectProperty",
+    "uuid": "fa06b1d4-8bb8-4604-98e2-ec72fe9af7a8"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/CommonChat/index.tsx",
+    "line": 33,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.CommonChat.Fgsb",
+    "value": "FBA标签贴错被拒收？如何补救保IPI？",
+    "originalValue": "FBA标签贴错被拒收？如何补救保IPI？",
+    "type": "ObjectProperty",
+    "uuid": "c4798c0a-570e-4867-a881-33473cd17726"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/CommonChat/index.tsx",
+    "line": 38,
+    "column": 4,
+    "key": "mobile-agent-home.Agents.CommonChat.Tknpd",
+    "value": "TikTok预提税，国内如何申请税收抵免？",
+    "originalValue": "TikTok预提税，国内如何申请税收抵免？",
+    "type": "ObjectProperty",
+    "uuid": "e1dc2b41-f5c0-4a8f-bc10-b91b940dd575"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/CommonChat/index.tsx",
+    "line": 47,
+    "column": 8,
+    "key": "mobile-agent-home.Agents.CommonChat.qtdysFehVgr",
+    "value": "请输入您在跨境电商运营中遇到的问题，例如：FBA费用怎么算？如何避免侵权？VAT注册流程？",
+    "originalValue": "请输入您在跨境电商运营中遇到的问题，例如：FBA费用怎么算？如何避免侵权？VAT注册流程？",
+    "type": "JsxAttribute",
+    "uuid": "14a1973c-1ce1-4407-948a-9c8bd176d4f5"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/CommonChat/index.tsx",
+    "line": 61,
+    "column": 24,
+    "key": "mobile-agent-home.Agents.CommonChat.tsjxal",
+    "value": "探索精选案例",
+    "originalValue": "探索精选案例",
+    "type": "JsxAttribute",
+    "uuid": "71a20218-ae1c-4b39-a64d-7bc01ab4b0da"
+  },
+  {
+    "file": "src/pages/inquiry/components/FormatList/RightComponents/InquiryRequirementForm.tsx",
+    "line": 690,
+    "column": 49,
+    "key": "inquiry.FormatList.RightComponents.InquiryRequirementForm.fecneI",
+    "value": "表单验证失败，请检查输入",
+    "originalValue": "表单验证失败，请检查输入",
+    "type": "StringLiteral",
+    "uuid": "1370baeb-8256-4e4e-963c-2ababb94ed5f"
+  },
+  {
+    "file": "src/components/ChatContent/components/content/bubbles/multi-media.tsx",
+    "line": 89,
+    "column": 76,
+    "key": "ChatContent.content.bubbles.multi-media.zwt",
+    "value": "占位图",
+    "originalValue": "占位图",
+    "type": "JsxAttribute",
+    "uuid": "f77a205d-ccdc-4d49-b5ba-4711bfe63cfa"
+  },
+  {
+    "file": "src/components/ChatContent/components/content/bubbles/design.tsx",
+    "line": 82,
+    "column": 14,
+    "key": "ChatContent.content.bubbles.design.zwt",
+    "value": "占位图",
+    "originalValue": "占位图",
+    "type": "JsxAttribute",
+    "uuid": "f6d8d9e6-b980-48cf-9c7b-ac3145dd4a42"
+  },
+  {
+    "file": "src/pages/inquiry/components/inquiry-progress/components/RecordCard/index.tsx",
+    "line": 239,
+    "column": 45,
+    "key": "inquiry.inquiry-progress.RecordCard.productImage",
+    "value": "商品图片",
+    "originalValue": "商品图片",
+    "type": "StringLiteral",
+    "uuid": "ee80ca70-5643-4707-b6aa-9e60db3e0628"
+  },
+  {
+    "file": "src/pages/inquiry/components/inquiry-progress/components/RecordCard/index.tsx",
+    "line": 243,
+    "column": 75,
+    "key": "inquiry.inquiry-progress.RecordCard.cpmc",
+    "value": "产品名称",
+    "originalValue": "产品名称",
+    "type": "StringLiteral",
+    "uuid": "ae4754ad-4a31-4a9a-97d4-e2beb0effb4a"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/TrendAnalysis/index.tsx",
+    "line": 29,
+    "column": 12,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.TrendAnalysis.qsfx",
+    "value": "趋势分析",
+    "originalValue": "趋势分析",
+    "type": "ObjectProperty",
+    "uuid": "73c07643-9182-49fc-b82b-c0aaaf0476a2"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/TrendAnalysis/Trend.tsx",
+    "line": 25,
+    "column": 52,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.TrendAnalysis.Trend.ymx",
+    "value": "亚马逊",
+    "originalValue": "亚马逊",
+    "type": "JsxText",
+    "uuid": "2d46dfb6-3bf3-490d-ad37-ab9ab7badcb4"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/TrendAnalysis/Trend.tsx",
+    "line": 39,
+    "column": 51,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.TrendAnalysis.Trend.gjregion",
+    "value": "国家&地区",
+    "originalValue": "国家&地区",
+    "type": "JsxText",
+    "uuid": "c4953a66-ca7c-4a5f-8b7a-d6afd835d270"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/TrendAnalysis/Trend.tsx",
+    "line": 48,
+    "column": 49,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.TrendAnalysis.Trend.joel",
+    "value": "近12个月搜索量趋势",
+    "originalValue": "近12个月搜索量趋势",
+    "type": "JsxText",
+    "uuid": "2e34c3c7-67c5-4707-8312-6b5d05efcd81"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenReview/index.tsx",
+    "line": 31,
+    "column": 12,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenReview.reviewfx",
+    "value": "评价分析",
+    "originalValue": "评价分析",
+    "type": "ObjectProperty",
+    "uuid": "f7eb9ee3-60da-4bb8-8f29-305e61942b95"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenReview/Review.tsx",
+    "line": 68,
+    "column": 16,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenReview.Review.keywordInformation",
+    "value": "关键词信息",
+    "originalValue": "关键词信息",
+    "type": "JsxText",
+    "uuid": "c24ffd0f-1961-440f-9e73-772b4020bf1c"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenReview/Review.tsx",
+    "line": 73,
+    "column": 20,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenReview.Review.pt",
+    "value": "平台",
+    "originalValue": "平台",
+    "type": "JsxText",
+    "uuid": "f665d9d9-2321-4897-956d-7d6724b793d4"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenReview/Review.tsx",
+    "line": 81,
+    "column": 20,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenReview.Review.gjregion",
+    "value": "国家/地区",
+    "originalValue": "国家/地区",
+    "type": "JsxText",
+    "uuid": "9c6e657d-c87f-4478-b4da-09217367444e"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenReview/Review.tsx",
+    "line": 89,
+    "column": 20,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenReview.Review.pjrating",
+    "value": "平均评分",
+    "originalValue": "平均评分",
+    "type": "JsxText",
+    "uuid": "3fbb336a-1738-41f8-b82e-f3f588c6104b"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenReview/Review.tsx",
+    "line": 97,
+    "column": 20,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenReview.Review.commentts",
+    "value": "评论条数",
+    "originalValue": "评论条数",
+    "type": "JsxText",
+    "uuid": "dce607d3-4082-4763-ad5a-ee07fd3bd00b"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenReview/Review.tsx",
+    "line": 109,
+    "column": 18,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenReview.Review.pivT",
+    "value": "好评点（Top3）",
+    "originalValue": "好评点（Top3）",
+    "type": "JsxText",
+    "uuid": "eee228b6-9df6-4efc-9c55-0ffc40eb461e"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenReview/Review.tsx",
+    "line": 119,
+    "column": 18,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenReview.Review.nivT",
+    "value": "差评点（Top3）",
+    "originalValue": "差评点（Top3）",
+    "type": "JsxText",
+    "uuid": "2de24010-dd79-462d-920c-b2d6ff95de44"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenOfferCard/OfferCard.tsx",
+    "line": 46,
+    "column": 12,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenOfferCard.OfferCard.sslm",
+    "value": "所属类目：{0}",
+    "originalValue": "所属类目：{0}",
+    "type": "JsxText",
+    "uuid": "247ee9eb-30cb-42f5-ba2f-a5ae6236d893"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenOfferCard/OfferCard.tsx",
+    "line": 49,
+    "column": 12,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenOfferCard.OfferCard.sj",
+    "value": "{0}上架｜{1}",
+    "originalValue": "{0}上架｜{1}",
+    "type": "JsxText",
+    "uuid": "6096c39a-bb42-4eb3-99bb-60f4690f3b6d"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenOfferCard/OfferCard.tsx",
+    "line": 54,
+    "column": 86,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenOfferCard.OfferCard.ztkgys",
+    "value": "找同款供应商",
+    "originalValue": "找同款供应商",
+    "type": "JsxAttribute",
+    "uuid": "24dcf361-9f38-4f47-9e41-c137ee2a5ae2"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenOfferCard/OfferCard.tsx",
+    "line": 55,
+    "column": 95,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenOfferCard.OfferCard.sccl",
+    "value": "素材处理",
+    "originalValue": "素材处理",
+    "type": "JsxAttribute",
+    "uuid": "d00bb6f2-d8cf-4c69-be4d-74e8ea5548e0"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenOfferCard/OfferCard.tsx",
+    "line": 90,
+    "column": 12,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenOfferCard.OfferCard.tdna",
+    "value": "{0}同款商品信息",
+    "originalValue": "{0}同款商品信息",
+    "type": "JsxText",
+    "uuid": "5976d96a-8bdd-45c5-b66f-72d74e35019e"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenOfferCard/OfferCard.tsx",
+    "line": 94,
+    "column": 41,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenOfferCard.OfferCard.tkproducts",
+    "value": "同款商品数",
+    "originalValue": "同款商品数",
+    "type": "ObjectProperty",
+    "uuid": "930e0ad6-2fbc-47a6-af07-0073cc3073ae"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenOfferCard/OfferCard.tsx",
+    "line": 95,
+    "column": 36,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenOfferCard.OfferCard.jys",
+    "value": "近30天销量",
+    "originalValue": "近30天销量",
+    "type": "ObjectProperty",
+    "uuid": "afb940b4-1066-43b6-9ad2-5631c37e0747"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenOfferCard/OfferCard.tsx",
+    "line": 96,
+    "column": 38,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenOfferCard.OfferCard.pjrating",
+    "value": "平均评分",
+    "originalValue": "平均评分",
+    "type": "ObjectProperty",
+    "uuid": "ba99e127-f4c4-4cb2-91c8-a60648dd7c9f"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenOfferCard/OfferCard.tsx",
+    "line": 97,
+    "column": 37,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenOfferCard.OfferCard.pjprice",
+    "value": "平均价格",
+    "originalValue": "平均价格",
+    "type": "ObjectProperty",
+    "uuid": "6df41b3a-9811-43d9-9fe8-8dc7e1b5ee8c"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenOfferCard/OfferCard.tsx",
+    "line": 120,
+    "column": 50,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenOfferCard.OfferCard.piv",
+    "value": "好评点",
+    "originalValue": "好评点",
+    "type": "JsxText",
+    "uuid": "76fd0e95-d0e7-47ba-9cb8-a52668264f0b"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenOfferCard/OfferCard.tsx",
+    "line": 130,
+    "column": 54,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenOfferCard.OfferCard.zirw",
+    "value": "暂无好评",
+    "originalValue": "暂无好评",
+    "type": "JsxText",
+    "uuid": "0c28c72d-3abe-4789-a468-06bd8229e903"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenOfferCard/OfferCard.tsx",
+    "line": 137,
+    "column": 50,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenOfferCard.OfferCard.niv",
+    "value": "差评点",
+    "originalValue": "差评点",
+    "type": "JsxText",
+    "uuid": "31ca292a-6cb1-4451-97a7-4c0de5add1db"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenOfferCard/OfferCard.tsx",
+    "line": 149,
+    "column": 54,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenOfferCard.OfferCard.zarw",
+    "value": "暂无差评",
+    "originalValue": "暂无差评",
+    "type": "JsxText",
+    "uuid": "8827544f-85e9-4878-8fc3-a78880b0497f"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/index.tsx",
+    "line": 34,
+    "column": 12,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.xoi",
+    "value": "销售信息",
+    "originalValue": "销售信息",
+    "type": "ObjectProperty",
+    "uuid": "0ab94b44-1871-408a-b9d1-08a2b0a54bcc"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/index.tsx",
+    "line": 38,
+    "column": 12,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.joi",
+    "value": "竞争信息",
+    "originalValue": "竞争信息",
+    "type": "ObjectProperty",
+    "uuid": "e2174c37-55a7-4169-9abb-72a2a9e0c9f7"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/index.tsx",
+    "line": 45,
+    "column": 10,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.scfx",
+    "value": "市场分析",
+    "originalValue": "市场分析",
+    "type": "ObjectProperty",
+    "uuid": "6685fbbf-455e-4728-a0e5-ba050643ec95"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 27,
+    "column": 14,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.information",
+    "value": "信息",
+    "originalValue": "信息",
+    "type": "JsxAttribute",
+    "uuid": "c9fd9984-5fb9-41bf-ad0b-4d63c9fb66ee"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 40,
+    "column": 44,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.xoi",
+    "value": "销售信息",
+    "originalValue": "销售信息",
+    "type": "JsxText",
+    "uuid": "d092d72b-0ca5-4942-b8ea-911bea32b907"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 43,
+    "column": 24,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.ptgjregion",
+    "value": "平台/国家&地区",
+    "originalValue": "平台/国家&地区",
+    "type": "StringLiteral",
+    "uuid": "b09f29a7-8b9f-4ef9-a40c-f3df6296e8fa"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 44,
+    "column": 24,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.zsproducts",
+    "value": "在售商品数",
+    "originalValue": "在售商品数",
+    "type": "StringLiteral",
+    "uuid": "5a7aecba-76f3-4341-90f2-5f0ced3811bd"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 44,
+    "column": 65,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.krlrsduay",
+    "value": "关键词（或叶子类目）搜索结果里的商品数量",
+    "originalValue": "关键词（或叶子类目）搜索结果里的商品数量",
+    "type": "StringLiteral",
+    "uuid": "af095877-9221-4e33-8a83-1de2927cd4fe"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 45,
+    "column": 24,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.smprice",
+    "value": "售卖价格",
+    "originalValue": "售卖价格",
+    "type": "StringLiteral",
+    "uuid": "a0fc68b8-c9f7-4667-bf6b-528df9129d1a"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 45,
+    "column": 63,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.pctMSAalsPci",
+    "value": "平均价格=月销售额/月销量，可用于了解该细分市场中普遍商品的价格水平",
+    "originalValue": "平均价格=月销售额/月销量，可用于了解该细分市场中普遍商品的价格水平",
+    "type": "StringLiteral",
+    "uuid": "b18b4b0c-dd7f-4bf1-b7bc-c0935f2b25b8"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 48,
+    "column": 24,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.jys",
+    "value": "近30天销量",
+    "originalValue": "近30天销量",
+    "type": "StringLiteral",
+    "uuid": "01991d00-b508-42a4-a278-af5f2c5a7e6d"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 49,
+    "column": 24,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.pca",
+    "value": "商品平均评分",
+    "originalValue": "商品平均评分",
+    "type": "StringLiteral",
+    "uuid": "f0e8d140-a31a-4fa2-ba0f-9cc9c3daff23"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 49,
+    "column": 68,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.krlPcRglyfrtSfk",
+    "value": "关键词（或叶子类目）前5页商品的平均评分，可用于了解该细分市场中商品的消费者满意情况",
+    "originalValue": "关键词（或叶子类目）前5页商品的平均评分，可用于了解该细分市场中商品的消费者满意情况",
+    "type": "StringLiteral",
+    "uuid": "1ac23672-cbd5-4d06-be04-3aa5359aa74f"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 50,
+    "column": 24,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.j30dayxse",
+    "value": "近30天销售额",
+    "originalValue": "近30天销售额",
+    "type": "StringLiteral",
+    "uuid": "b435cd14-1445-41c1-a7b6-27c60025fe11"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 58,
+    "column": 44,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.joi",
+    "value": "竞争信息",
+    "originalValue": "竞争信息",
+    "type": "JsxText",
+    "uuid": "9082c2f7-f52a-413b-a17e-52d0cb0460f8"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 61,
+    "column": 24,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.pcs",
+    "value": "商品垄断系数",
+    "originalValue": "商品垄断系数",
+    "type": "StringLiteral",
+    "uuid": "6c73fd24-38ef-4547-85ab-a784df425add"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 61,
+    "column": 79,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.TartTartteyodhs",
+    "value": "Top3销量商品成交占比 = Top3销量商品的月销量总和/所有动销商品的月销量总和",
+    "originalValue": "Top3销量商品成交占比 = Top3销量商品的月销量总和/所有动销商品的月销量总和",
+    "type": "StringLiteral",
+    "uuid": "3aac2bf7-acf8-47a3-b697-4cd2bed99f00"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 62,
+    "column": 24,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.brandldxs",
+    "value": "品牌垄断系数",
+    "originalValue": "品牌垄断系数",
+    "type": "StringLiteral",
+    "uuid": "5169eef1-4f93-4609-8b33-af6a85babc9a"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 62,
+    "column": 74,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.TrrtTrrtteyodhs",
+    "value": "Top5品牌商品成交占比 = Top5品牌商品的月销量总和/所有动销商品的月销量总和",
+    "originalValue": "Top5品牌商品成交占比 = Top5品牌商品的月销量总和/所有动销商品的月销量总和",
+    "type": "StringLiteral",
+    "uuid": "e3d94351-f43a-4061-9fc6-1c890c6e13be"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 65,
+    "column": 24,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.zgsellerzb",
+    "value": "中国卖家占比",
+    "originalValue": "中国卖家占比",
+    "type": "StringLiteral",
+    "uuid": "d8903324-e8c5-40b7-82f6-86841b072120"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 65,
+    "column": 70,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.zlzlodhsddMSz",
+    "value": "中国卖家占比 = 中国卖家商品的月销量总和/所有动销商品的月销量总和",
+    "originalValue": "中国卖家占比 = 中国卖家商品的月销量总和/所有动销商品的月销量总和",
+    "type": "StringLiteral",
+    "uuid": "1b37b428-ff3e-4c45-8102-807e5de074de"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 66,
+    "column": 24,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.nrSz",
+    "value": "新品销量占比",
+    "originalValue": "新品销量占比",
+    "type": "StringLiteral",
+    "uuid": "dbbd10a6-432f-4e35-ae03-b07e10cc3ab5"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 66,
+    "column": 74,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.nrceirtteyodhs",
+    "value": "新品成交占比 = 新品商品的月销量总和/所有动销商品的月销量总和",
+    "originalValue": "新品成交占比 = 新品商品的月销量总和/所有动销商品的月销量总和",
+    "type": "StringLiteral",
+    "uuid": "8aa1ce5e-7f9d-4a86-ac8f-2b355248fbf3"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/QwenMarketAnalysis/MarketAnalysis.tsx",
+    "line": 82,
+    "column": 14,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.QwenMarketAnalysis.MarketAnalysis.fgx",
+    "value": "分割线",
+    "originalValue": "分割线",
+    "type": "JsxAttribute",
+    "uuid": "8830c4f2-77f3-4d5d-8d31-e0df0d7009a6"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectSeller/components/SelectSellerCard/index.tsx",
+    "line": 35,
+    "column": 15,
+    "key": "mobile-agent-home.Agents.SelectSeller.SelectSellerCard.znms",
+    "value": "智能模式",
+    "originalValue": "智能模式",
+    "type": "StringLiteral",
+    "uuid": "b84ed251-5b85-47c4-ad55-34cdc962b008"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectSeller/components/SelectSellerCard/index.tsx",
+    "line": 37,
+    "column": 15,
+    "key": "mobile-agent-home.Agents.SelectSeller.SelectSellerCard.ypzs",
+    "value": "以品找商",
+    "originalValue": "以品找商",
+    "type": "StringLiteral",
+    "uuid": "3e489409-571f-4361-b597-5c186e2109a1"
+  },
+  {
+    "file": "src/pages/mobile-agent-home/components/Agents/SelectSeller/components/SelectSellerCard/index.tsx",
+    "line": 39,
+    "column": 15,
+    "key": "mobile-agent-home.Agents.SelectSeller.SelectSellerCard.zsmerchant",
+    "value": "直搜商家",
+    "originalValue": "直搜商家",
+    "type": "StringLiteral",
+    "uuid": "774692a8-4b50-47fb-bf8a-8fdef5c51dcf"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/components/Collapse/index.tsx",
+    "line": 10,
+    "column": 18,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.Collapse.sqdetails",
+    "value": "收起详情",
+    "originalValue": "收起详情",
+    "type": "StringLiteral",
+    "uuid": "353de2e4-a13d-40bb-b304-cfb1643e368c"
+  },
+  {
+    "file": "src/pages/select-product/general-agent/components/FormatList/MarkdownCustomComponents/components/Collapse/index.tsx",
+    "line": 10,
+    "column": 27,
+    "key": "select-product.general-agent.FormatList.MarkdownCustomComponents.Collapse.zkdetails",
+    "value": "展开详情",
+    "originalValue": "展开详情",
+    "type": "StringLiteral",
+    "uuid": "c4189141-b301-4186-8099-3b47c873532f"
+  }
+]

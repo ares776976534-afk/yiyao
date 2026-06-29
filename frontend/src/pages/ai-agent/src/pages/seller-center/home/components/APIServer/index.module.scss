@@ -1,0 +1,129 @@
+.titleCN {
+  font-family: FZLTHProS;
+  font-size: 34px;
+  color: #1D1E29;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-self: unset;
+}
+
+.titleEN {
+  font-family: Poppins-medium;
+  font-size: 42px;
+  background: linear-gradient(141deg, #FEA7FF 3%, #6E50FF 51%), #6E50FF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-self: unset;
+}
+
+.titleDesc {
+  font-family: FZLTHProR;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #7C7F9A;
+  margin-top: 19px;
+  width: 831px;
+}
+
+.desc {
+  font-family: PingFang SC;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1D1E29;
+}
+
+.apiRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.apiImage {
+  width: 731.98px;
+  height: 420px;
+}
+
+.apiContent {
+  width: 402px;
+}
+
+.apiItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.apiIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 4.56px;
+  background: linear-gradient(134deg, #4ED9FF 0%, #6734FF 91%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apiTitle {
+  margin-left: 14px;
+  font-family: FZLTHProSB;
+  font-size: 32px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.apiIcon2 {
+  width: 32px;
+  height: 32px;
+  border-radius: 4.56px;
+  background: linear-gradient(305deg, #00AEFF 28%, rgba(47, 189, 255, 0) 104%), #27DBCA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apiIcon3 {
+  width: 32px;
+  height: 32px;
+  border-radius: 4.56px;
+  background: linear-gradient(120deg, #81D7FF -51%, #27DBCA 94%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apiIcon4 {
+  background: linear-gradient(128deg, #81FFFB 0%, #58CAFC 57%);
+  width: 32px;
+  height: 32px;
+  border-radius: 4.56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apiImageContainer {
+  position: relative;
+  width: 731.98px;
+  height: 420px;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('https://img.alicdn.com/imgextra/i1/O1CN01mEQsbM232jzFZsEFa_!!6000000007198-2-tps-3040-4332.png');
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}

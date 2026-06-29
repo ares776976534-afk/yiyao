@@ -1,0 +1,88 @@
+.moreMenuIcon {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+}
+
+.mobileMenuTrigger {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 20px;
+  gap: 28px;
+}
+
+.mobileMenuTriggerItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobileMenuTriggerItemText {
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D2129;
+}
+
+.mobileMenuTriggerItemArrow {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  color: #00000087;
+}
+
+.mobileMenuTriggerItemTextColor {
+  font-weight: 500;
+  background: linear-gradient(90deg, #875EED -2%, #3C7AFF 55%, #4FCEE4 136%, #68E4C3 186%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.contactServiceModal {
+  background: #FFFFFF;
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.contactServiceModalTitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1D2129;
+}
+
+.contactServiceModalTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.contactServiceModalDescription {
+  font-size: 14px;
+  color: #7B7B8D;
+  text-align: center;
+}
+
+.contactServiceModalQrcode {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.contactServiceModalCloseIcon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

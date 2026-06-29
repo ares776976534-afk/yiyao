@@ -1,0 +1,4 @@
+{
+  "builder": "@ali/builder-multi-packages",
+  "nodeVersion": 18
+}

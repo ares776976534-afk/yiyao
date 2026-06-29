@@ -1,0 +1,160 @@
+.aeproducts-list-content {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  img {
+    display: block;
+  }
+
+  .aeproducts-card-content {
+    flex-basis: calc(50% - 6px);
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    background-color: #fff;
+    border: 1px solid rgba(229, 229, 229, 0.6);
+
+    > div {
+      margin: 12px;
+    }
+
+    .aeproducts-card-top {
+      display: flex;
+      margin-bottom: 12px;
+    }
+
+    .aeproducts-card-top-left {
+      width: 80px;
+      height: 80px;
+      margin-right: 12px;
+      .progressive-image-container,
+      .aeproducts-card-img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .aeproducts-card-top-right {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+
+      .aeproducts-card-center-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .aeproducts-card-title {
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        margin-right: 12px;
+      }
+
+      .aeproducts-card-tag {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 6px;
+        width: 68px;
+        height: 18px;
+        background: linear-gradient(111deg, #fc6799 -25%, #fe8b6f 0%, #fc4365 28%, #fb1a28 91%);
+        border-radius: 3.43px;
+        color: #fff;
+        float: left;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+      }
+      .aeproducts-card-text {
+        line-height: 18px;
+        font-size: 13px;
+      }
+    }
+
+    .aeproducts-card-dashed {
+      border: 1px dashed #e5e5e5;
+    }
+
+    .aeproducts-card-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 12px 0 12px 0;
+      .aeproducts-card-describe-title {
+        display: flex;
+        align-items: center;
+        margin-right: 24px;
+        color: #ff7300;
+      }
+    }
+
+    .aeproducts-card-describe-content {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      color: #999;
+
+      .aeproducts-card-describe {
+        color: #333;
+      }
+    }
+
+    .aeproducts-card-describe-bottom {
+      font-size: 13px;
+      color: #333;
+      display: inline-block;
+    }
+
+    .aeproducts-card-line {
+      position: relative;
+      margin: 4px; /* 根据需要调整与文字之间的距离 */
+    }
+
+    .aeproducts-card-line::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 10px;
+      background-color: #ddd;
+    }
+
+    .aeproducts-business-describe-div {
+      font-size: 13px;
+    }
+    .aeproducts-card-submit {
+      font-size: 12px;
+      height: 24px;
+      text-align: center;
+    }
+  }
+
+  .dataTable-content-page {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.empty-state {
+  width: 100%;
+  height: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #666;
+  font-size: 16px;
+  .empty-state-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+  }
+}

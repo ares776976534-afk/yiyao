@@ -1,0 +1,85 @@
+@import '../../../../../style/utils.scss';
+
+.inquiry {
+  // .inputContainer {
+  //   display: flex;
+  //   flex-direction: column;
+  //   flex-wrap: nowrap;
+  //   gap: 0;
+  //   // padding: 16rpx;
+  //   justify-content: center;
+  //   align-items: center;
+  //   height: 112rpx;
+  //   width: 100%;
+  //   border-radius: 24rpx;
+  //   background: #FFFFFF;
+  //   box-sizing: border-box;
+  //   position: relative;
+  //   border: 1px solid #EEEFFE;
+  //   // @include border-1px(#F3F3F6, 48rpx);
+  // }
+
+  // .boxShadow {
+  //   z-index: -1;
+  //   position: absolute;
+  //   bottom: -35rpx;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   width: 100%;
+  //   height: 100%;
+  //   background: url(https://img.alicdn.com/imgextra/i2/O1CN01Ss6wWf1m70Cd7s9s6_!!6000000004906-55-tps-850-211.svg) no-repeat 0 / 100%;
+  // }
+
+
+  .mainImage {
+    width: 216rpx;
+    margin-top: -10rpx;
+  }
+
+  .actionContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: fit-content;
+    height: fit-content;
+    gap: 4rpx;
+    align-items: center;
+    min-width: 130rpx;
+    min-height: 20rpx;
+  }
+
+  .icon {
+    width: 14rpx;
+    height: 14rpx;
+    color: #6E50FF;
+  }
+
+  .actionText {
+    font-family: PingFang SC;
+    font-size: 14rpx;
+    font-weight: 500;
+    line-height: 20rpx;
+    color: #6E50FF;
+    white-space: nowrap;
+  }
+
+  .tips {
+    margin-top: 24rpx;
+    font-family: PingFang SC;
+    font-size: 13rpx;
+    font-weight: normal;
+    line-height: 20rpx;
+    text-align: center;
+    letter-spacing: normal;
+    color: #7C7F9A;
+  }
+
+  .inquiryCardList {
+    margin: 12rpx 0;
+  }
+
+
+  .exploreSectionContainer {
+    margin-top: 64rpx;
+  }
+}

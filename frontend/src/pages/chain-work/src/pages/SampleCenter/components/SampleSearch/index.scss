@@ -1,0 +1,18 @@
+.search-container {
+  --form-label-color: #3d3d3d;
+  --form-inline-m-item-margin-r: 40px;
+  --form-item-m-margin-b: 0;
+  --btn-size-m-padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+
+  .search-form {
+    .btn-container {
+      --btn-size-m-corner: 4px;
+      .search-btn {
+        margin-right: 12px;
+      }
+    }
+  }
+}

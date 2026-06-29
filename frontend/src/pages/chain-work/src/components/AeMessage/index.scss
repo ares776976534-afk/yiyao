@@ -1,0 +1,18 @@
+.next-message.next-message-notice.ae-order-notice-message {
+  --message-notice-color-icon-inline: #07f;
+  --message-notice-color-bg-inline: #e6f2ff;
+  -message-close-icon-color: #bbb;
+  --message-size-m-content-font: 13px;
+  margin-bottom: 16px;
+  border: none;
+  // a {
+  //   color: var(--message-notice-color-icon-inline);
+  //   text-decoration: underline;
+  // }
+  .next-message-symbol {
+    display: inline-flex;
+    &::before {
+      --message-size-m-icon: 20px;
+    }
+  }
+}

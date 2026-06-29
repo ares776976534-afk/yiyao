@@ -1,0 +1,203 @@
+.sample-list-container {
+  margin-top: 16px;
+
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
+  }
+
+  .selected-text-container {
+    --btn-size-m-padding: 9px;
+    --btn-size-m-font: 13px;
+    --btn-size-m-corner: 4px;
+    display: flex;
+    align-items: center;
+    .hightlight {
+      color: #ff4000;
+    }
+    .line {
+      border-right: 1px solid #e5e5e5;
+      height: 20px;
+      margin: 0 12px;
+      border-radius: 0.5px;
+    }
+  }
+
+  .table-container {
+    // width: 1204px;
+    margin-top: 16px;
+    --table-th-bg: #f8f8fa;
+    --table-header-padding-top: 13px;
+    --table-normal-border-color: #e5e5e5;
+    --table-header-corner-top: 6px;
+    --table-th-font-size: 14px;
+    --table-row-color: #333;
+
+    .next-table th .next-table-cell-wrapper {
+      line-height: 1;
+    }
+
+    .next-table {
+      border-left: none;
+      th {
+        border-bottom: none;
+        &:first-of-type {
+          border-left: 1px solid var(--table-normal-border-color);
+        }
+        &:not(:last-of-type) {
+          border-right: none;
+        }
+      }
+      .next-table-header,
+      .next-table-body {
+        .next-table-row {
+          height: 114px;
+          &:last-of-type {
+            td:first-of-type {
+              border-bottom-left-radius: var(--table-header-corner-top);
+            }
+            td:last-of-type {
+              border-bottom-right-radius: var(--table-header-corner-top);
+            }
+          }
+          td {
+            &:first-of-type {
+              border-left: 1px solid var(--table-normal-border-color);
+            }
+            &:not(:last-of-type) {
+              border-right: none;
+            }
+          }
+        }
+        .next-table-prerow.next-table-selection {
+          .next-table-cell-wrapper {
+            padding: 0 8px 0 12px;
+          }
+        }
+        .next-table-cell:nth-of-type(2) .next-table-cell-wrapper {
+          padding-left: 0;
+        }
+      }
+    }
+
+    .sampleId-container {
+      display: flex;
+      align-items: center;
+      line-height: 14px;
+      img {
+        display: block;
+        width: 16px;
+        height: 16px;
+        margin-left: 8px;
+        cursor: pointer;
+      }
+    }
+
+    .offer-info-container {
+      display: flex;
+      img {
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 3px;
+      }
+      .offer-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+        .title {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          line-height: 20px;
+          a {
+            color: #333;
+            &:hover {
+              color: #07f;
+            }
+          }
+        }
+        .sku {
+          margin-top: 4px;
+          line-height: 20px;
+          font-size: 13px;
+          color: #666;
+        }
+        .more-info {
+          margin-top: 4px;
+          line-height: 20px;
+          font-size: 13px;
+          color: #07f;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .status-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 9px;
+      line-height: 14px;
+      border-radius: 30px;
+      background-color: #f8f8fa;
+      color: #999;
+      .dot {
+        width: 6px;
+        height: 6px;
+        margin-right: 4px;
+        border-radius: 50%;
+        background-color: #ccc;
+      }
+
+      &.samplePending,
+      &.sent,
+      &.qualified,
+      &.unqualified {
+        color: #333;
+      }
+
+      &.samplePending {
+        background-color: #e6f2ff;
+        .dot {
+          background-color: #07f;
+        }
+      }
+
+      &.sent {
+        background-color: #ffefe5;
+        .dot {
+          background-color: #ff7300;
+        }
+      }
+
+      &.qualified {
+        background-color: #e7f8e5;
+        .dot {
+          background-color: #25be13;
+        }
+      }
+
+      &.unqualified {
+        background-color: #ffe6e6;
+        .dot {
+          background-color: #f00;
+        }
+      }
+    }
+
+    .view-btn {
+      color: #07f;
+      cursor: pointer;
+    }
+  }
+
+  .pagination-container {
+    margin-top: 16px;
+    text-align: right;
+  }
+}

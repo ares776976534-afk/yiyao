@@ -1,0 +1,78 @@
+.mobileModal {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 480rpx;
+    display: flex;
+    flex-direction: column;
+    padding: 20rpx;
+    gap: 20rpx;
+    border-radius: 16rpx;
+    margin: 0 !important;
+    
+    :global(.ant-modal-content) {
+      padding: 20rpx;
+      height: 480rpx;
+      border-radius: 16rpx;
+    }
+    
+    :global(.ant-modal-header) {
+      margin-bottom: 20rpx;
+    }
+    
+    :global(.ant-modal-close) {
+      top: 14rpx;
+      inset-inline-end: 14rpx;
+    }
+    
+    :global(.ant-tabs-tab) {
+      padding: 0 0 6rpx;
+      color: var(--text-primary);
+    }
+    
+    :global(.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn) {
+      color: var(--text-accent);
+    }
+    :global(.ant-tabs-nav) {
+      margin-bottom: 20rpx;
+    }
+    
+    :global(.ant-tabs-ink-bar) {
+      width: 24rpx !important;
+      border-radius: 2rpx;
+      background: var(--text-accent);
+    }
+  
+    // 覆盖 Account 组件样式，使用 rpx 单位
+    span[class*='title'] {
+      font-size: 16rpx !important;
+      line-height: 24rpx !important;
+    }
+  
+    img[class*='avatar'] {
+      width: 64rpx !important;
+      height: 64rpx !important;
+    }
+  
+    div[class*='userInfo'] {
+      gap: 4rpx !important;
+      min-width: 39rpx !important;
+      min-height: 46rpx !important;
+    }
+  
+    span[class*='label'] {
+      font-size: 13rpx !important;
+      line-height: 20rpx !important;
+    }
+  
+    span[class*='value'] {
+      font-size: 14rpx !important;
+      line-height: 22rpx !important;
+    }
+  
+    button[class*='loginButton'] {
+      border-radius: 8rpx !important;
+      height: 36rpx !important;
+      padding: 0 12rpx !important;
+      font-size: 14rpx !important;
+    }
+  }

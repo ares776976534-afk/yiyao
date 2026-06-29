@@ -1,0 +1,103 @@
+.file-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+  overflow: hidden;
+  transition: all 0.3s;
+
+  &-hasContent {
+    height: 72px;
+    margin-bottom: 16px;
+    opacity: 1;
+    overflow-x: auto;
+  }
+
+  &-noContent {
+    height: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  .file-list-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: var(--file-box-width);
+    height: var(--file-box-height);
+    border-radius: var(--file-box-border-radius);
+    background: var(--file-box-background);
+    overflow: hidden;
+    object-fit: contain;
+
+    .delete-btn {
+      position: absolute;
+      top: var(--file-box-action-offset);
+      right: var(--file-box-action-offset);
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      cursor: pointer;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        border-top-right-radius: var(--file-box-border-radius);
+      }
+    }
+
+    &:hover .delete-btn {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fileItemEnter {
+    from {
+      transform: scaleY(0);
+      opacity: 0;
+    }
+    to {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+
+  .offer-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .offer-item-mask {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      color: var(--color-white-100, #fff);
+      background: linear-gradient(
+        0deg,
+        var(--color-black-40, rgba(0, 0, 0, 0.4)),
+        var(--color-black-40, rgba(0, 0, 0, 0.4))
+      );
+
+      .offer-link-icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+// 移动端模式删除按钮始终显示
+[data-platform='mobile'][data-theme='light'] {
+  .file-list-item .delete-btn {
+    opacity: 1;
+  }
+}

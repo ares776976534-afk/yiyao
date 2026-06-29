@@ -1,0 +1,73 @@
+.sendButton {
+  /* 自动布局子元素 */
+  width: 96px;
+  height: 36px;
+  /* 自动布局 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px 8px 16px;
+  z-index: 1;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: none;
+
+  /* 使用伪元素创建可旋转的背景 */
+  &::before {
+    content: '';
+    position: absolute;
+    /* 将伪元素定位到按钮中心 */
+    top: 50%;
+    left: 50%;
+    /* 计算足够大的尺寸以覆盖整个按钮（对角线长度） */
+    width: 150px;
+    height: 150px;
+    /* 居中定位 */
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: 24px;
+    background: linear-gradient(127deg, #cb89ff -2%, #6e50ff 54%), linear-gradient(115deg, #6E50FF -12%, #2fbdff 75%, #27dbca 105%);
+    /* 设置旋转中心为按钮中心 */
+    transform-origin: center center;
+    animation: rotateGradient 3s linear infinite;
+  }
+}
+
+.sendButton:hover {
+  border: 0;
+}
+
+@keyframes rotateGradient {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.sendButton:disabled {
+  width: 36px;
+  height: 36px;
+
+  border-radius: 185px;
+  background: linear-gradient(148deg, #cb88ff 1%, #6e50ff 80%);
+}
+
+.sendButtonText {
+  font-family: FZLTHProS;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.sendButton:hover:not(:disabled):not(.ant-btn-disabled) {
+  &::before {
+    background: linear-gradient(127deg, #cb89ff -2%, #6e50ff 54%), linear-gradient(115deg, #6E50FF -12%, #2fbdff 75%, #27dbca 105%) !important;
+  }
+}

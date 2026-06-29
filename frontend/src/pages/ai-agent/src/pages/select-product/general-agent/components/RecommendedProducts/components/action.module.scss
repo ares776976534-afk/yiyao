@@ -1,0 +1,21 @@
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.actionsBigCard {
+  > :global(.ant-btn:last-of-type) {
+    border: none !important;
+    box-shadow: none !important;
+
+    &:hover,
+    &:focus,
+    &:focus-visible,
+    &:active {
+      border: none !important;
+      box-shadow: none !important;
+    }
+  }
+}

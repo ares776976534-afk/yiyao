@@ -1,0 +1,130 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 41px;
+}
+
+.pageSizeSelector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.label {
+  font-size: 14px;
+  color: #00000099;
+}
+
+.select {
+  width: 68px !important;
+  height: 32px !important;
+}
+
+.select :global(.ant-select-selector) {
+  border: 1px solid #00000026 !important;
+  border-radius: 4px !important;
+  height: 32px !important;
+  padding: 7px 8px !important;
+}
+
+.select :global(.ant-select-selection-item) {
+  font-size: 12px !important;
+  color: #0000004d !important;
+  line-height: 18px !important;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination :global(.ant-pagination-prev),
+.pagination :global(.ant-pagination-next) {
+  border: 1px solid #00000026 !important;
+  border-radius: 4px !important;
+  background: #ffffff !important;
+  color: #000000de !important;
+  font-size: 14px !important;
+  height: 32px !important;
+  line-height: 30px !important;
+  padding: 0 10px !important;
+}
+
+.pagination :global(.ant-pagination-disabled) {
+  color: #0000004d !important;
+}
+
+.pagination :global(.ant-pagination-item) {
+  border: 1px solid #00000026 !important;
+  border-radius: 4px !important;
+  background: #ffffff !important;
+  color: #000000de !important;
+  font-size: 14px !important;
+  width: 32px !important;
+  height: 32px !important;
+  line-height: 30px !important;
+  text-align: center !important;
+}
+
+.pagination :global(.ant-pagination-item-active) {
+  background: #2c76fe !important;
+  border-color: #2c76fe !important;
+  color: #ffffff !important;
+}
+
+.pagination :global(.ant-pagination-item-active a) {
+  color: #ffffff !important;
+}
+
+.pagination :global(.ant-pagination-jump-prev),
+.pagination :global(.ant-pagination-jump-next) {
+  border: 1px solid #00000026 !important;
+  border-radius: 4px !important;
+  background: #ffffff !important;
+  color: #000000de !important;
+  font-size: 14px !important;
+  width: 32px !important;
+  height: 32px !important;
+  line-height: 30px !important;
+  text-align: center !important;
+}
+
+.gotoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gotoInputContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.gotoInput {
+  width: 80px !important;
+  height: 32px !important;
+}
+
+.gotoInput :global(.ant-input) {
+  border: 1px solid #00000026 !important;
+  border-radius: 4px !important;
+  font-size: 12px !important;
+  color: #0000004d !important;
+  height: 32px !important;
+  padding: 7px 8px !important;
+}
+
+.gotoButton {
+  font-size: 12px !important;
+  color: #2c76fe !important;
+  padding: 0 !important;
+  height: auto !important;
+}
+
+.gotoButton:hover {
+  color: #1a5ce6 !important;
+}

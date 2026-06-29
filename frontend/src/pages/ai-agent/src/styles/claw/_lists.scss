@@ -1,0 +1,91 @@
+@use "variables" as *;
+
+// ==========================================================================
+// Lists — ordered, unordered, nested, task lists
+// ==========================================================================
+
+.alpha-markdown {
+  ul, ol {
+    margin: 0 0 $spacing-paragraph;
+    padding-left: $spacing-list-indent;
+
+    li::marker {
+      color: $color-text-tertiary;
+    }
+  }
+
+  li {
+    margin-bottom: $spacing-list-item;
+
+    > ul,
+    > ol {
+      margin-top: $spacing-list-item;
+      margin-bottom: 0;
+    }
+
+    > p {
+      margin-bottom: $spacing-list-item;
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+
+    ul {
+      list-style-type: circle;
+
+      ul {
+        list-style-type: square;
+      }
+    }
+  }
+
+  ol {
+    list-style-type: decimal;
+
+    ol {
+      list-style-type: lower-alpha;
+
+      ol {
+        list-style-type: lower-roman;
+      }
+    }
+  }
+
+  // Task list (GitHub-flavoured Markdown)
+  ul.contains-task-list,
+  ul:has(> li > input[type="checkbox"]) {
+    list-style: none;
+    padding-left: 0;
+
+    > li {
+      position: relative;
+      padding-left: 24px;
+
+      > input[type="checkbox"] {
+        position: absolute;
+        left: 0;
+        top: calc((1em * #{$line-height-body} - 16px) / 2);
+        width: 16px;
+        height: 16px;
+        margin: 0;
+        appearance: none;
+        -webkit-appearance: none;
+        border: 1.5px solid $color-border-primary;
+        border-radius: 4px;
+        background-color: transparent;
+        cursor: pointer;
+        transition: background-color 0.15s ease, border-color 0.15s ease;
+
+        &:checked {
+          background-color: $color-text-accent;
+          border-color: $color-text-accent;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='2.5 6 5 8.5 9.5 3.5'/%3E%3C/svg%3E");
+          background-size: 10px;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}

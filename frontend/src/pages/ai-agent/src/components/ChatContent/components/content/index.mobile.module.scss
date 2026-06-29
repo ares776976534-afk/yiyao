@@ -1,0 +1,79 @@
+.contentWrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 0 16rpx;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+  padding-top: 8rpx;
+  padding-bottom: 12rpx;
+
+  &.hasHeartbeat {
+    padding-bottom: 0;
+  }
+
+  :global {
+    .studio-bubble-start[role="assistant"] {
+      flex-direction: column;
+      gap: 16rpx;
+    }
+
+    .studio-avatar {
+      padding: 0;
+      border-radius: 0;
+      background: none;
+      border: none;
+    }
+
+    .studio-bubble[role="heartbeat"] {
+      align-items: center;
+      gap: 8rpx;
+
+      .studio-bubble-content {
+        padding: 0 !important;
+        min-height: 0 !important;
+      }
+    }
+
+    // 移除 Bubble 组件的默认背景色
+    .studio-bubble-content-filled {
+      background-color: transparent !important;
+      background: none !important;
+    }
+  }
+
+  .loadingIconWrap {
+    width: 12rpx;
+    height: 12rpx;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.heartbeatWrapper {
+  padding: 12rpx 0;
+  animation: fadeIn 0.3s ease-out forwards;
+}

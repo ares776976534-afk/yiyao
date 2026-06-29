@@ -1,0 +1,55 @@
+.preSelectBusiness {
+  .preSelectBusinessTitle {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: #1d2129;
+  }
+
+  .preSelectBusinessContent {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 16px;
+    background: var(--fill-white);
+    box-sizing: border-box;
+    border: 1px solid var(--border-secondary);
+
+    :global {
+      .indexBlockContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .indexBlockHeaderTitleMain {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: normal;
+        color: #1d2129;
+      }
+    }
+
+    .preSelectBusinessButton {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+
+      .preSelectBusinessBtn {
+        width: 200px;
+        height: 40px;
+        border-radius: 8px;
+        /* Button/Primary */
+        background: #6e50ff !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 20px;
+        color: #fff;
+      }
+    }
+  }
+}

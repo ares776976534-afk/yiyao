@@ -1,0 +1,280 @@
+{
+    "success": true,
+    "language": "zh_CN",
+    "invokeTime": null,
+    "costTime": null,
+    "retCode": "S0000",
+    "retMsg": null,
+    "exception": null,
+    "result": {
+        "userId": 2221266026684,
+        "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+        "title": "模特显身材",
+        "sessionImage": "https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/P98C2wSqiWMtNbRIxAFy7O813R3NJzKIlwwR5fQKLmZRYs8C4MSVN2uicpFOCY91WnwH5bt4zg8rhsB7lIA.png",
+        "messages": [
+            {
+                "messageType": "ASSISTANT",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "resp",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e"
+            },
+            {
+                "attachments": [
+                    {
+                        "sourceUrl": "https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/P98C2wSqiWMtNbRIxAFy7O813R3NJzKIlwwR5fQKLmZRYs8C4MSVN2uicpFOCY91WnwH5bt4zg8rhsB7lIA.png",
+                        "width": 2500,
+                        "id": "56fb8d04-a398-4b3b-8838-edc3dea94974",
+                        "mimeType": "image/jpeg",
+                        "height": 2500
+                    }
+                ],
+                "offerInfos": [],
+                "messageType": "USER",
+                "query": "添加模特，凸显身材"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "statusChange",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e",
+                "status": "start"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "sessionId": null,
+                "type": "text",
+                "content": "已收到图片，将为你添加模特并凸显身材，展现更吸引人的视觉效果~"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "statusChange",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e",
+                "status": "end"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "intent",
+                "intent": "normalMaterial",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "statusChange",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e",
+                "status": "start"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "icon": "https://img.alicdn.com/imgextra/i4/O1CN01b8Lcgv1M7IRvC42ez_!!6000000001387-55-tps-14-14.svg",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "title": "图片理解",
+                "type": "design_analyzer",
+                "contentType": "text",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "icon": "https://img.alicdn.com/imgextra/i4/O1CN01b8Lcgv1M7IRvC42ez_!!6000000001387-55-tps-14-14.svg",
+                "id": 8,
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "title": "图片理解",
+                "type": "design_analyzer",
+                "contentType": "text",
+                "content": "{\"content\":\"- **用户上传图片1**: 图片为一件深棕色罗纹针织V领长袖上衣，平铺于纯白背景，无模特。衣身修身短款，V领设计可拉长颈部线条，罗纹纹理贴合身形，适合凸显身材曲线。需添加一位身材匀称的女性模特，着此上衣，自然站立或微侧身，展现衣物质感与修身效果，增强视觉吸引力与穿搭故事性。  \\n\\n\\n**处理意见**: \\n请将这件棕色V领针织衫合成到一位身材修长、比例匀称的女性模特身上，重点突出肩线、腰线与整体曲线。模特姿态建议为自然站立或微侧身，以展现服装的修身剪裁。背景保持纯白或浅灰，避免干扰视觉焦点。确保光影柔和，面料纹理清晰，强化质感与贴身效果，从而最大化凸显服装对身材的修饰作用。\",\"toolResultType\":\"text\"}",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "statusChange",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e",
+                "status": "end"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "statusChange",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e",
+                "status": "start"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "icon": "https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "title": "任务规划",
+                "type": "plan_stream",
+                "contentType": "text",
+                "content": "{\"planId\":\"plan_42273ff7\",\"planTitle\":\"添加模特展示身材\",\"stepNum\":1,\"steps\":[{\"agentName\":\"IMAGE_GENERATE_AGENT\",\"displayContent\":\"将深棕色V领针织衫合成到一位身材修长、比例匀称的女性模特身上，姿态为自然站立或微侧身，展现肩线与腰线。背景保持纯白，光影柔和，突出面料纹理与贴身剪裁，强化穿搭美感。\",\"displayTitle\":\"第1步：生成模特上身图\",\"stepId\":1,\"stepTitle\":\"生成模特上身图\"}],\"taskId\":\"f161e621-96ce-4824-b0e6-83da84a01d9e\",\"thought\":\"通过文生图技术将服装合成到模特身上，突出修身效果\"}",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "statusChange",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e",
+                "status": "end"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "stepId": "1",
+                "planId": "plan_42273ff7",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "statusChange",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e",
+                "status": "start"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "stepId": "1",
+                "planId": "plan_42273ff7",
+                "type": "text",
+                "contentType": "text",
+                "content": "**正在生成模特上身效果图**\n\n**设计思路**：\n- 整体风格: 修长身材的女性模特，自然站立或微侧身姿态；\n- 内容: 将用户上传图片1中的深棕色V领针织衫穿在模特身上，突出肩线与腰线；\n- 光影效果: 柔和侧光，背景纯白，强化面料质感与贴身剪裁。"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "stepId": "1",
+                "planId": "plan_42273ff7",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "statusChange",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e",
+                "status": "end"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "stepId": "1",
+                "planId": "plan_42273ff7",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "statusChange",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e",
+                "status": "start"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "stepId": "1",
+                "planId": "plan_42273ff7",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "title": "图像创作",
+                "type": "design",
+                "contentType": "image",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "stepId": "1",
+                "planId": "plan_42273ff7",
+                "startTime": 1768813227276,
+                "endTime": 1768813230276,
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "percent_loading",
+                "percent": 30,
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "context": {
+                    "waitingUtil": 1768813231262
+                },
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "statusChange",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e",
+                "status": "stopForWaiting"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "icon": "",
+                "stepId": "1",
+                "planId": "plan_42273ff7",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "title": "",
+                "type": "design",
+                "contentType": "image",
+                "content": "{\"mediaModel\":{\"height\":1024,\"mediaCoverUrl\":\"https://img.alicdn.com/imgextra/i4/6000000007669/O1CN01nOgbSy26WSXzaBjym_!!6000000007669-2-cbu_global_ai_agent.png\",\"mediaId\":\"90e3d8c0-b850-4574-a71f-8e04d63c5a2d\",\"mediaUrl\":\"https://img.alicdn.com/imgextra/i4/6000000007669/O1CN01nOgbSy26WSXzaBjym_!!6000000007669-2-cbu_global_ai_agent.png\",\"width\":1024},\"toolResultType\":\"image\"}",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "stepId": "1",
+                "planId": "plan_42273ff7",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "statusChange",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e",
+                "status": "end"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "stepId": "1",
+                "planId": "plan_42273ff7",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "statusChange",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e",
+                "status": "start"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "stepId": "1",
+                "planId": "plan_42273ff7",
+                "type": "text",
+                "contentType": "text",
+                "content": ""
+            },
+            {
+                "messageType": "ASSISTANT",
+                "stepId": "1",
+                "planId": "plan_42273ff7",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "statusChange",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e",
+                "status": "end"
+            },
+            {
+                "totalStepNum": 1,
+                "messageType": "ASSISTANT",
+                "finishedStepNum": 0,
+                "stepId": 1,
+                "planId": "plan_42273ff7",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "plan_status",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e",
+                "status": "FINISH"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "statusChange",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e",
+                "status": "start"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "text",
+                "content": "已成功将深棕色V领针织衫合成至身材修长的女性模特身上，通过自然站姿与微侧身设计精准凸显肩腰线条，配合纯白背景与柔和光影，充分展现服装的贴身剪裁与面料质感。",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "statusChange",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e",
+                "status": "end"
+            },
+            {
+                "messageType": "ASSISTANT",
+                "sessionId": "6c566d0a-a697-4844-badd-4cba1a104be1",
+                "type": "statusChange",
+                "taskId": "f161e621-96ce-4824-b0e6-83da84a01d9e",
+                "status": "allDone"
+            }
+        ],
+        "createdTime": 1768813197000,
+        "latestTaskId": "f161e621-96ce-4824-b0e6-83da84a01d9e",
+        "taskStatus": "COMPLETED",
+        "latestEventId": 30,
+        "meta": null,
+        "official": false
+    }
+}

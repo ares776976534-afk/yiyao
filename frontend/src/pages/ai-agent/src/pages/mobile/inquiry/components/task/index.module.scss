@@ -1,0 +1,160 @@
+.task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64rpx;
+}
+
+.taskContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+  width: 100%;
+  :global(.ant-tabs-tab) {
+    padding: 0 0 6rpx;
+    color: var(--text-primary);
+  }
+  
+  :global(.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn) {
+    color: var(--text-accent);
+  }
+  :global(.ant-tabs-nav) {
+    margin-bottom: 0;
+  }
+  
+  :global(.ant-tabs-ink-bar) {
+    width: 24rpx !important;
+    border-radius: 2rpx;
+    background: var(--text-accent);
+  }
+}
+
+.taskContentHeader {
+  font-family: PingFang SC;
+  font-size: 18rpx;
+  font-weight: 500;
+  line-height: 26rpx;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.cardGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+  width: 100%;
+
+  // 复写 TaskCard 组件样式为 rpx
+  :global {
+    // createCard 样式
+    div[class*='createCard'] {
+      border-radius: 16rpx !important;
+      border: 1rpx dashed #e7e8ee !important;
+      height: 174rpx !important;
+      padding: 20rpx !important;
+    }
+
+    div[class*='createContent'] {
+      gap: 6rpx !important;
+    }
+
+    div[class*='createIcon'] {
+      font-size: 20rpx !important;
+    }
+
+    div[class*='createText'] {
+      font-size: 14rpx !important;
+      line-height: 20rpx !important;
+    }
+
+    // taskCard 样式
+    div[class*='taskCard'] {
+      border-radius: 16rpx !important;
+      border: 1rpx solid #EEEFFE !important;
+      backdrop-filter: blur(4rpx) !important;
+      padding: 20rpx !important;
+      height: 160rpx !important;
+
+      &::before {
+        border-radius: 16rpx !important;
+        background: none !important;
+      }
+    }
+
+    div[class*='leftContent'] {
+      gap: 24rpx !important;
+    }
+
+    div[class*='statusSection'] {
+      margin-top: 4rpx !important;
+      gap: 8rpx !important;
+    }
+
+    div[class*='statusTag'] {
+      font-size: 13rpx !important;
+      line-height: 18rpx !important;
+      gap: 4rpx !important;
+    }
+
+    img[class*='statusIcon'] {
+      width: 12rpx !important;
+      height: 12rpx !important;
+    }
+
+    div[class*='taskInfo'] {
+      gap: 4rpx !important;
+    }
+
+    h3[class*='taskTitle'] {
+      font-size: 16rpx !important;
+      line-height: 24rpx !important;
+    }
+
+    div[class*='taskMeta'] {
+      gap: 6rpx !important;
+    }
+
+    span[class*='metaText'] {
+      font-size: 13rpx !important;
+      line-height: 20rpx !important;
+    }
+
+    span[class*='separator'] {
+      width: 3rpx !important;
+      height: 3rpx !important;
+    }
+
+    button[class*='actionButton'] {
+      font-size: 16rpx !important;
+      line-height: 24rpx !important;
+      gap: 4rpx !important;
+    }
+
+    div[class*='imageContainer'] {
+      right: -20rpx !important;
+      bottom: -16rpx !important;
+      width: 220rpx !important;
+      height: 120rpx !important;
+    }
+
+    img[class*='taskImage'] {
+      right: 52rpx !important;
+      bottom: 28rpx !important;
+      width: 68rpx !important;
+      max-width: 68rpx !important;
+      max-height: 68rpx !important;
+      border-radius: 8rpx !important;
+    }
+  }
+}
+
+.taskCardWrapper {
+  width: 100%;
+}
+
+.loadingText {
+  text-align: center;
+  font-size: 12rpx;
+  color: var(--text-tertiary);
+  padding: 12rpx 0;
+}

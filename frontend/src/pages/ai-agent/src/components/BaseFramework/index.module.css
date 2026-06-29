@@ -1,0 +1,26 @@
+.layout {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #F5F7FA;
+}
+
+.main {
+  flex: 1;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItemLabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuItemArrow {
+  display: none !important;
+  transform: rotate(-45deg);
+  transition: opacity 0.2s ease;
+}

@@ -1,0 +1,59 @@
+@mixin border-1px($color, $radius) {
+  position: relative;
+
+  &::after {
+    user-select: none;
+    box-sizing: border-box;
+    pointer-events: none;
+    position: absolute;
+    content: ' ';
+    transform: scale(0.5);
+    transform-origin: 0 0;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 200%;
+    border: 1px solid $color;
+    border-radius: $radius;
+  }
+}
+
+@mixin border-1px-background($color, $radius) {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: $radius;
+    padding: 1px;
+    background: $color;
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}
+
+@mixin border-table-cell-1px($color, $radius) {
+  position: relative;
+
+  &::after {
+    user-select: none;
+    box-sizing: border-box;
+    pointer-events: none;
+    position: absolute;
+    content: ' ';
+    transform: scale(0.5);
+    transform-origin: 0 0;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 200%;
+    border-right: 1px solid $color;
+    border-bottom: 1px solid $color;
+    border-radius: $radius;
+  }
+}

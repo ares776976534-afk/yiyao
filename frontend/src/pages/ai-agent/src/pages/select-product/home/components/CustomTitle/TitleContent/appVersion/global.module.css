@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.headerLogo {
+  width: 263.08px;
+  height: 36px;
+}
+
+.headerText {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  position: relative;
+}

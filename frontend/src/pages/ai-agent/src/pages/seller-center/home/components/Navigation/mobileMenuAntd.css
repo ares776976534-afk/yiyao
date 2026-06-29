@@ -1,0 +1,15 @@
+.adm-dropdown-item-title {
+  padding: 0 !important;
+}
+
+.adm-dropdown-item-title-text {
+  margin: 0 !important;
+}
+
+.adm-dropdown-open .adm-dropdown-nav {
+  border: 0;
+}
+
+.adm-popup.adm-dropdown-popup {
+  top: 63.5px !important;
+}

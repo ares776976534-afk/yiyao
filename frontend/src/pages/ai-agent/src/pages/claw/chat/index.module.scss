@@ -1,0 +1,632 @@
+:global {
+  * {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.root {
+  width: 100%;
+  height: 100%;
+
+  :global {
+
+    .ant-app,
+    .studio-app {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.container {
+  --color-text-main: #1b1c1d;
+  --color-text-tertiary: #BBBDCA;
+  --color-text-secondary: #7c7f9a;
+  --color-border-primary: #e8e8e8;
+  --color-user-bubble: #F1EEFF;
+  --color-white: #ffffff;
+
+  --arrow-down-icon: url('https://img.alicdn.com/imgextra/i3/O1CN01kMZJkm1m0adM4r0NQ_!!6000000004892-55-tps-12-12.svg');
+
+  --content-width: 768px;
+  --header-height: 56px;
+
+  // 对话输入框高度（120px） + 底部间距（16px）
+  --bottom-bar-height: 136px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 8px;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+
+  &.openFileSystem {
+    --content-width: 460px;
+
+    .fileSystemContainer {
+      display: block;
+    }
+
+    .clawChatContainer {
+      max-width: var(--content-width);
+    }
+
+    .bottomBar, .conversation, .systemMsg {
+      width: 100%;
+    }
+  }
+}
+
+.fileSystemContainer {
+  display: none;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.clawChatContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  row-gap: 16px;
+  min-height: 100%;
+  padding: 0 0 16px;
+  border-radius: 12px;
+  background: #fff;
+
+  &[data-connected="false"] {
+    // 连接状态栏高度（60px） + 间距（12px） + 对话输入框高度（120px） + 底部间距（16px）
+    --bottom-bar-height: 208px;
+  }
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 100%;
+  height: 56px;
+  padding: 14px 16px;
+  overflow: hidden;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 28px;
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: var(--color-text-main);
+
+  .titleLogo {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    border-radius: 50%;
+  }
+
+}
+
+.actionBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+
+  &:hover {
+    border-radius: 6px;
+    background: #F7F7FA;
+  }
+
+  .actionBtnIcon {
+    width: 16px;
+    height: 16px;
+    mask: no-repeat 0 / 100%;
+    background: #4D4D5F;
+  }
+}
+
+.headerRight {
+  position: absolute;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* 连接状态条：对话输入框上方，设计稿 1772787862580 */
+.connStatusBar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin: 8px auto 4px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: var(--block-color);
+  border-radius: 16px;
+  background: #FFF3F3;
+}
+
+.connStatusText {
+  flex: 1;
+  line-height: 18px;
+}
+
+@keyframes typingBlink {
+
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.systemMsg {
+  width: var(--content-width);
+  text-align: center;
+  font-size: 12px;
+  padding: 8px;
+  transition: width 0.3s ease;
+}
+
+.systemError {
+  color: #dc2626;
+}
+
+.messageError {
+  color: #dc2626;
+}
+
+.conversationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  padding: 0 20px;
+  overflow: auto;
+}
+
+.conversation {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 0;
+}
+
+.conversationContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1 0 100%;
+  width: var(--content-width);
+  height: max-content;
+  transition: width 0.3s ease;
+}
+
+.conversationScrollBtn {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  color: var(--color-text-secondary);
+  border-radius: 50%;
+  border: 1px solid #F3F3F6;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transform: translate(-50%, -100%);
+  transition: opacity 0.2s, transform 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background: #F7F7FA;
+    color: var(--color-text-main);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.04);
+  }
+
+  &::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    mask: no-repeat 0 / 100% url(https://img.alicdn.com/imgextra/i1/O1CN01W46FzO1eMYkq6l8V7_!!6000000003857-55-tps-24-24.svg);
+    background-color: var(--color-text-secondary);
+  }
+}
+
+/* Message：参考 AI Elements Message，统一 user / assistant 行结构 */
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  min-height: 0;
+}
+
+.messageIsUser {
+  flex-direction: row-reverse;
+  padding-left: 48px;
+
+  .messageContent {
+    row-gap: 10px;
+    padding: 10px 14px;
+    border-radius: 16px 4px 16px 16px;
+    background: #F1EEFF;
+  }
+}
+
+.messageIsAssistant {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+
+  .messageContent {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    padding-top: 4px;
+  }
+}
+
+.messageAvatarWrapper {
+  flex-shrink: 0;
+}
+
+.messageAvatar {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: 0 center/100% no-repeat url(https://img.alicdn.com/imgextra/i4/O1CN01Ffk9iC29ojCbyNZvb_!!6000000008115-2-tps-512-512.png);
+  border-radius: 50%;
+}
+
+.messageContent {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-break: break-word;
+  row-gap: 16px;
+}
+
+.messageUserText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-text-main);
+  white-space: pre-wrap;
+}
+
+/* 用户气泡内附件：与输入区 refPill 视觉一致（1d 设计稿不可用时沿用 composer 规范） */
+.userMessageAttachments {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.userAttachmentPill {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--color-brand-1);
+  background-color: #fff;
+}
+
+
+.userAttachmentPillText {
+  overflow: hidden;
+  max-width: min(220px, 100%);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 流式中的助手消息 */
+.messageStreaming {
+  .messageContent {
+    border-left: 2px solid #4a9eff;
+    padding-left: 12px;
+  }
+}
+
+/* 打字指示器：与 assistant 行对齐 */
+.typingIndicator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 8px 0;
+}
+
+.typingDots {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+
+  span {
+    width: 6px;
+    height: 6px;
+    background: var(--color-text-tertiary);
+    border-radius: 50%;
+    animation: typingBlink 1.2s infinite;
+
+    &:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+  }
+}
+
+.bottomBar {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 12px;
+  width: var(--content-width);
+  padding-top: 12px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+/* 工具调用卡片组 */
+.toolCardGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+/* 合并工具调用组：默认收起，展开显示工具列表，点击工具再展开详情 */
+.toolCallsGroup {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.toolCallsGroupExpanded {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+
+  .toolCallsGroupChevron {
+    transform: rotate(0);
+  }
+}
+
+.toolCallsGroupHeader {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.toolCallsGroupIcon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  mask: url(https://img.alicdn.com/imgextra/i1/O1CN0124Q81K1vFY9st3llY_!!6000000006143-55-tps-16-16.svg) no-repeat 0 / 100%;
+  background: currentColor;
+}
+
+.toolCallsGroupChevron {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  mask: no-repeat 0 / 100% var(--arrow-down-icon);
+  background: currentColor;
+  transition: transform 0.2s;
+  transform: rotate(-90deg);
+}
+
+.toolCallsListTitle {
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.toolCallsList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px 2px;
+  margin: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.toolCallsListItem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  overflow: hidden;
+}
+
+.toolCallsItemRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 24px;
+  line-height: 24px;
+  cursor: pointer;
+
+  &:hover {
+    .toolCallsItemChevron {
+      display: block;
+    }
+
+    .toolCallsItemName {
+      color: var(--color-text-main);
+    }
+  }
+}
+
+.toolCallsItemRowActive {
+  .toolCallsItemName {
+    color: var(--color-text-main);
+  }
+
+  .toolCallsItemChevron {
+    display: block;
+    transform: rotate(0);
+  }
+}
+
+.toolCallsItemIcon {
+  flex-shrink: 0;
+}
+
+
+.toolCallsItemChevron {
+  display: none;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  mask: no-repeat 0 / 100% var(--arrow-down-icon);
+  background: currentColor;
+  transition: transform 0.2s;
+  transform: rotate(-90deg);
+}
+
+.toolCallsItemDetail {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #F7F7FA;
+  max-height: 300px;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color-text-secondary);
+  overflow-y: auto;
+
+  >* {
+    flex-shrink: 0;
+  }
+}
+
+.toolCallsItemSeparator {
+  height: 1px;
+  background: #E7E8EE;
+}
+
+/* 单个工具卡片 */
+.toolCard {
+  margin-bottom: 16px;
+  border: 1px solid var(--am-color-border-primary);
+  ;
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.toolCardDone {
+  flex-shrink: 0;
+  color: #52c41a;
+  font-size: 11px;
+}
+
+.toolCardBody {
+  padding: 8px 10px;
+  border-top: 1px solid #e0e0f0;
+  max-height: 300px;
+  overflow-y: auto;
+  line-height: 1.5;
+}
+
+.toolCardLabel {
+  margin-bottom: 8px;
+}
+
+/* 思考内容块 */
+.thinkingBlock {
+  margin-bottom: 8px;
+  border: 1px solid #e8e4f0;
+  border-radius: 8px;
+  background: #faf9fc;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.thinkingBlockHeader {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.02);
+  }
+}
+
+.thinkingBlockIcon {
+  flex-shrink: 0;
+}
+
+.thinkingBlockLabel {
+  flex: 1;
+}
+
+.thinkingBlockChevron {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  mask: no-repeat 0 / 100% var(--arrow-down-icon);
+  background: currentColor;
+  transition: transform 0.2s;
+  transform: rotate(-90deg);
+
+  .thinkingBlockOpen & {
+    transform: rotate(90deg);
+  }
+}
+
+.thinkingBlockBody {
+  padding: 10px 12px;
+  border-top: 1px solid #e8e4f0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--color-text-main);
+  white-space: pre-wrap;
+  word-break: break-word;
+}

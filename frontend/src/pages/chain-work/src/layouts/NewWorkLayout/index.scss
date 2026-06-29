@@ -1,0 +1,23 @@
+.newWorkLayout {
+  // height: 100vh;
+  padding: 16px 16px 24px 24px;
+  background-image: linear-gradient(0deg, #f4f8ff 0%, #f1f6ff 24%, #f3f7fb 100%);
+
+  .newWorkLayout-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .newWorkLayout-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .newWorkLayout-subTitle {
+    display: flex;
+    align-items: center;
+  }
+}

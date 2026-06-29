@@ -1,0 +1,70 @@
+.usageDetails {
+  background: #fff;
+  border-radius: 12px;
+  padding: 42px 32px;
+  margin-top: 32px;
+}
+
+.filterSection {
+  display: flex;
+  gap: 16px 43px;
+  align-items: flex-end;
+  margin-bottom: 42px;
+  flex-wrap: wrap;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filterLabel {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #1D2129;
+}
+
+.filterInput {
+  width: 396px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid #E7E8EE;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #7B7B8D;
+}
+
+.dateRange {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.dateInput {
+  width: 262px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid #E7E8EE;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #7B7B8D;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dateSeparator {
+  font-size: 14px;
+  color: #1D2129;
+  margin-top: 26px;
+}
+
+.dateRangeWrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}

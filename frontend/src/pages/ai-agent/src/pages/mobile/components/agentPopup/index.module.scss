@@ -1,0 +1,23 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: PingFang SC;
+  font-size: 16rpx;
+  font-weight: 500;
+  line-height: 24rpx;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}

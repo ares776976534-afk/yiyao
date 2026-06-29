@@ -1,0 +1,57 @@
+.qualificationsDialog {
+  .next-dialog-header {
+    font-size: 16px;
+    color: #000;
+    padding: 20px 20px 0 20px;
+  }
+
+  .next-table {
+    height: 364px;
+  }
+  
+  .next-table-body {
+    height: 312px;
+    > div:first-child {
+      height: auto !important;
+    }
+  }
+  
+  .next-dialog-header+.next-dialog-body {
+    padding: 0 20px 20px 20px;
+  }
+
+  .next-dialog-close {
+    top: 16px;
+    right: 20px;
+  }
+
+  .commonTable {
+    .dataTable {
+      padding-bottom: 0;
+    }
+    .empty-state {
+      height: 240px !important;
+    }
+    .c-itemBlock.hasBorder {
+      padding: 16px 0 0;
+    }
+  }
+
+  .next-dialog-close .next-dialog-close-icon.next-icon:before {
+    font-size: 18px;
+  }
+
+  .dataTable-content-page {
+
+    .next-table {
+      height: 442px;
+    }
+    .next-table-body {
+      height: 291px;
+    }
+
+    .next-dialog-header + .next-dialog-body {
+      padding: 0 20px 20px 20px;
+    }
+  }
+}

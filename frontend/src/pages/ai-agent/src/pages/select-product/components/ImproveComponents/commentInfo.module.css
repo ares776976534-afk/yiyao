@@ -1,0 +1,233 @@
+.commentInfoItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.commentInfoItemIcon {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.positiveIcon {
+    background-color: var(--semantic-success-primary);
+}
+
+.negativeIcon {
+    background: var(--semantic-warning-primary);
+}
+
+.commentInfoItemText {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+}
+
+.commentInfoItemContent {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 8px 8px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.commentInfoItemContentItem {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    gap: 8px;
+    border-radius: 6px;
+    background: var(--fill-white);
+    box-sizing: border-box;
+    border: 1px solid var(--border-primary);
+    cursor: pointer;
+}
+
+.commentInfoItemContentItem:hover {
+    background: var(--fill-primary);
+}
+
+.commentInfoItemContentItemLabel {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    letter-spacing: normal;
+    color: #4D4D5F;
+}
+
+.commentInfoItemContentItemPercent {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+}
+
+.commentTitle {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+}
+
+.headerTitle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 0px 4px 0px;
+}
+
+.titleIcon {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--icon-accent);
+}
+
+.commentTabContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    gap: 16px;
+    border-radius: 8px;
+    background: rgba(216, 208, 255, 0.1294);
+}
+
+.cardHeaderTitle {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    color: var(--text-primary);
+    width: 100%;
+    position: relative;
+}
+
+.cardHeaderTitleIcon {
+    position: absolute;
+    top: -20px;
+    left: -4px;
+    width: 48px;
+    height: 38px;
+}
+
+.opsz {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--text-accent)
+}
+
+.rightBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 10px;
+    gap: 4px;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: var(--text-accent);
+    cursor: pointer;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 24px;
+    border-radius: 4px;
+    background-color: var(--fill-white);
+    width: 100%;
+    position: relative;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid var(--fill-white);
+    position: absolute;
+    top: -10px;
+    left: 36px;
+}
+
+.commentTabLabelContainer {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.commentTabLabelText {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+}
+
+.commentTabLabelCount {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+}
+
+/* 选中状态的tab样式 */
+:global(.ant-tabs-tab-active) .commentTabLabelContainer .commentTabLabelText {
+    font-weight: 500;
+    color: var(--text-accent);
+}
+
+:global(.ant-tabs-tab-active) .commentTabLabelContainer .commentTabLabelCount {
+    font-weight: 500;
+    color: var(--text-accent);
+}
+
+.noComment {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 24px;
+    border-radius: 8px;
+    background: var(--fill-secondary);
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+}
+
+/* 隐藏 Tabs 超出部分的滚动按钮和折叠板 */
+.footerContent :global(.ant-tabs-nav-operations) {
+    display: none !important;
+}
+
+.footerContent :global(.ant-tabs-nav-more) {
+    display: none !important;
+}
+
+.tabs :global(.ant-tabs-ink-bar) {
+    border-radius: 1px;
+    height: 4px !important;
+    background: var(--text-accent) !important;
+}
+
+.tabs :global(.ant-tabs-tab-btn) {
+    text-shadow: none !important;
+}
+
+.tabs :global(.ant-tabs-tab) {
+    padding: 0 0 12px !important;
+}

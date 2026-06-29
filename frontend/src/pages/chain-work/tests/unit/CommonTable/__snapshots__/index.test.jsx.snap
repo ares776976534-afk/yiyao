@@ -1,0 +1,441 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CommonTable Component renders correctly with default props 1`] = `
+<DocumentFragment>
+  <div
+    class=commonTable
+  >
+    <div
+      class=c-itemBlock 
+    >
+      <div
+        class=statusFilter
+      >
+        <div
+          class=next-tabs next-tabs-pure next-tabs-scrollable next-medium
+        >
+          <div
+            class=next-tabs-bar
+          >
+            <div
+              class=next-tabs-nav-container
+            >
+              <div
+                class=next-tabs-nav-wrap
+              >
+                <div
+                  class=next-tabs-nav-scroll
+                >
+                  <ul
+                    aria-multiselectable=false
+                    class=next-tabs-nav
+                    role=tablist
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class=next-tabs-content custom-tab-content
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class=c-itemBlock hasBorder
+    >
+      <div
+        class=next-loading next-loading-inline dataTable
+      >
+        <div
+          class=next-loading-wrap
+        >
+          <div
+            class=dataTable-content
+          >
+            <div
+              class=next-table next-table-small only-bottom-border
+              style=--table-th-color: #333; --table-th-font-size: 13px; --table-th-font-weight: 500; border: 1px solid #f2f2f2; border-radius: 6px; background: rgb(248, 248, 248); --table-size-s-header-padding-left: 16px; --table-size-s-cell-padding-left: 16px;
+            >
+              <div
+                class=next-table-column-resize-proxy
+              />
+              <table
+                role=table
+              >
+                <colgroup />
+                <thead
+                  class=next-table-header
+                >
+                  <tr />
+                </thead>
+                <tbody
+                  class=next-table-body
+                >
+                  <tr>
+                    <td
+                      colspan=0
+                    >
+                      <div
+                        class=next-table-empty
+                        style=position: sticky; left: 0px; overflow: hidden; width: 100%;
+                      >
+                        没有数据
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div
+            class=dataTable-content-page dataTable-content-page-undefined
+          >
+            <div
+              class=next-pagination next-medium next-normal
+            >
+              <div
+                class=next-pagination-size-selector
+              >
+                <span
+                  class=next-pagination-size-selector-title
+                >
+                  每页显示：
+                </span>
+                <span
+                  aria-haspopup=true
+                  class=next-select next-select-trigger next-select-single next-medium next-pagination-size-selector-dropdown next-inactive next-no-search
+                >
+                  <span
+                    class=next-input next-medium next-select-inner
+                  >
+                    <span
+                      class=next-select-values next-input-text-field
+                    >
+                      <em
+                        title=10
+                      >
+                        10
+                      </em>
+                      <span
+                        class=next-select-trigger-search
+                      >
+                        <input
+                          aria-expanded=false
+                          aria-label=请选择每页显示几条
+                          autocomplete=off
+                          height=100%
+                          readonly=
+                          role=combobox
+                          size=1
+                          tabindex=0
+                          value=
+                        />
+                        <span
+                          aria-hidden=true
+                        >
+                          <span />
+                          <span
+                            style=display: inline-block; width: 1px;
+                          >
+                             
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class=next-input-control
+                    >
+                      <span
+                        aria-hidden=true
+                        class=next-select-arrow
+                      >
+                        <i
+                          class=next-icon next-icon-arrow-down next-medium next-select-symbol-fold
+                        />
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    aria-live=polite
+                    class=next-sr-only
+                  />
+                </span>
+              </div>
+              <div
+                class=next-pagination-pages
+              >
+                <button
+                  aria-label=上一页，当前第1页
+                  class=next-btn next-medium next-btn-normal next-pagination-item next-prev
+                  disabled=
+                  type=button
+                >
+                  <i
+                    class=next-icon next-icon-arrow-left next-xs next-btn-icon next-icon-first next-pagination-icon-prev
+                  />
+                  <span
+                    class=next-btn-helper
+                  >
+                    上一页
+                  </span>
+                </button>
+                <div
+                  class=next-pagination-list
+                >
+                  <button
+                    aria-label=第1页，共1页
+                    class=next-btn next-medium next-btn-normal next-pagination-item next-current
+                    type=button
+                  >
+                    <span
+                      class=next-btn-helper
+                    >
+                      1
+                    </span>
+                  </button>
+                </div>
+                <button
+                  aria-label=下一页，当前第1页
+                  class=next-btn next-medium next-btn-normal next-pagination-item next-next
+                  disabled=
+                  type=button
+                >
+                  <span
+                    class=next-btn-helper
+                  >
+                    下一页
+                  </span>
+                  <i
+                    class=next-icon next-icon-arrow-right next-xs next-btn-icon next-icon-last next-pagination-icon-next
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`CommonTable Component 默认渲染 1`] = `
+<DocumentFragment>
+  <div
+    class=commonTable
+  >
+    <div
+      class=c-itemBlock 
+    >
+      <div
+        class=statusFilter
+      >
+        <div
+          class=next-tabs next-tabs-pure next-tabs-scrollable next-medium
+        >
+          <div
+            class=next-tabs-bar
+          >
+            <div
+              class=next-tabs-nav-container
+            >
+              <div
+                class=next-tabs-nav-wrap
+              >
+                <div
+                  class=next-tabs-nav-scroll
+                >
+                  <ul
+                    aria-multiselectable=false
+                    class=next-tabs-nav
+                    role=tablist
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class=next-tabs-content custom-tab-content
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class=c-itemBlock hasBorder
+    >
+      <div
+        class=next-loading next-loading-inline dataTable
+      >
+        <div
+          class=next-loading-wrap
+        >
+          <div
+            class=dataTable-content
+          >
+            <div
+              class=next-table next-table-small only-bottom-border
+              style=--table-th-color: #333; --table-th-font-size: 13px; --table-th-font-weight: 500; border: 1px solid #f2f2f2; border-radius: 6px; background: rgb(248, 248, 248); --table-size-s-header-padding-left: 16px; --table-size-s-cell-padding-left: 16px;
+            >
+              <div
+                class=next-table-column-resize-proxy
+              />
+              <table
+                role=table
+              >
+                <colgroup />
+                <thead
+                  class=next-table-header
+                >
+                  <tr />
+                </thead>
+                <tbody
+                  class=next-table-body
+                >
+                  <tr>
+                    <td
+                      colspan=0
+                    >
+                      <div
+                        class=next-table-empty
+                        style=position: sticky; left: 0px; overflow: hidden; width: 100%;
+                      >
+                        没有数据
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div
+            class=dataTable-content-page dataTable-content-page-undefined
+          >
+            <div
+              class=next-pagination next-medium next-normal
+            >
+              <div
+                class=next-pagination-size-selector
+              >
+                <span
+                  class=next-pagination-size-selector-title
+                >
+                  每页显示：
+                </span>
+                <span
+                  aria-haspopup=true
+                  class=next-select next-select-trigger next-select-single next-medium next-pagination-size-selector-dropdown next-inactive next-no-search
+                >
+                  <span
+                    class=next-input next-medium next-select-inner
+                  >
+                    <span
+                      class=next-select-values next-input-text-field
+                    >
+                      <em
+                        title=10
+                      >
+                        10
+                      </em>
+                      <span
+                        class=next-select-trigger-search
+                      >
+                        <input
+                          aria-expanded=false
+                          aria-label=请选择每页显示几条
+                          autocomplete=off
+                          height=100%
+                          readonly=
+                          role=combobox
+                          size=1
+                          tabindex=0
+                          value=
+                        />
+                        <span
+                          aria-hidden=true
+                        >
+                          <span />
+                          <span
+                            style=display: inline-block; width: 1px;
+                          >
+                             
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class=next-input-control
+                    >
+                      <span
+                        aria-hidden=true
+                        class=next-select-arrow
+                      >
+                        <i
+                          class=next-icon next-icon-arrow-down next-medium next-select-symbol-fold
+                        />
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    aria-live=polite
+                    class=next-sr-only
+                  />
+                </span>
+              </div>
+              <div
+                class=next-pagination-pages
+              >
+                <button
+                  aria-label=上一页，当前第1页
+                  class=next-btn next-medium next-btn-normal next-pagination-item next-prev
+                  disabled=
+                  type=button
+                >
+                  <i
+                    class=next-icon next-icon-arrow-left next-xs next-btn-icon next-icon-first next-pagination-icon-prev
+                  />
+                  <span
+                    class=next-btn-helper
+                  >
+                    上一页
+                  </span>
+                </button>
+                <div
+                  class=next-pagination-list
+                >
+                  <button
+                    aria-label=第1页，共1页
+                    class=next-btn next-medium next-btn-normal next-pagination-item next-current
+                    type=button
+                  >
+                    <span
+                      class=next-btn-helper
+                    >
+                      1
+                    </span>
+                  </button>
+                </div>
+                <button
+                  aria-label=下一页，当前第1页
+                  class=next-btn next-medium next-btn-normal next-pagination-item next-next
+                  disabled=
+                  type=button
+                >
+                  <span
+                    class=next-btn-helper
+                  >
+                    下一页
+                  </span>
+                  <i
+                    class=next-icon next-icon-arrow-right next-xs next-btn-icon next-icon-last next-pagination-icon-next
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

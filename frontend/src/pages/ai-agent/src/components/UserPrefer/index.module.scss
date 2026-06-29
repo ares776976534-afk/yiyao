@@ -1,0 +1,230 @@
+.modal {
+  :global {
+    .studio-modal-content {
+      padding: 0;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      overflow: hidden;
+
+      [data-theme="light"] & {
+        border: none;
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    height: 500px;
+    color: var(--block-color);
+    overflow: hidden;
+  }
+
+  .sidebar {
+    --studio-layout-sider-bg: #212121 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 200px;
+    padding: 8px;
+  }
+
+  .divider {
+    border-right: 1px solid var(--divider-color);
+  }
+
+  .sidebarHeader {
+    padding: 12px 8px;
+  }
+
+  .sidebarTitle {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .menu {
+    background: transparent;
+
+    :global {
+      .studio-menu-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border-radius: 8px;
+        margin: 2px 0;
+        padding: 10px !important;
+        color: var(--menu-item-color);
+
+        &:hover,
+        &.studio-menu-item-selected {
+          background: var(--menu-hover-bg, rgba(255, 255, 255, 0.12)) !important;
+        }
+      }
+    }
+  }
+
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .knowledgeContent {
+    // 知识库界面要求向上缩短与标题的间距
+    row-gap: 16px;;
+  }
+
+  .contentHeader {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .contentBody {
+    flex: 1;
+    overflow-y: auto;
+  }
+
+  .settingsSpace {
+    width: 100%;
+    row-gap: 20px;
+  }
+
+  .sectionTitle {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .sectionContent {
+    margin-top: 12px;
+  }
+
+  .watermarkSpace {
+    width: 100%;
+    margin-top: 10px;
+    row-gap: 12px;
+  }
+
+  .themePreview {
+    display: flex;
+    gap: 24px;
+  }
+
+  .themePreviewInner {
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .themePreviewIcon {
+    position: relative;
+    --theme-border-color: transparent;
+
+    &.active {
+      --theme-border-color: var(--primary);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 2px solid var(--theme-border-color);
+      border-radius: 6px;
+    }
+  }
+
+  .themeLabel {
+    margin-top: 6px;
+    line-height: 18px;
+    font-size: 13px;
+  }
+
+  .languageSelectRoot {
+    width: 171px;
+  }
+
+  .languageSelectPopup {
+    border-radius: 12px;
+  }
+
+  .switch {
+    min-width: 34px;
+    height: 20px;
+    --studio-switch-handle-size: 16px;
+
+
+    ::global {
+      .studio-switch-handle::before {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .settingItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .settingLabel {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .settingDesc {
+    margin-top: 4px;
+    line-height: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--block-help-color);
+  }
+
+  .personalizedSettings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+  }
+
+  .personalizedSettingsItemTitle {
+    line-height: 20px;
+    font-size: 13px;
+  }
+
+  .personalizedSettingsItemContent {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .personalizedSettingsItemContentItem {
+    padding: 7px 10px;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 8px;
+    background: var(--block-hover-bg);
+    cursor: pointer;
+
+    &.active {
+      color: var(--color-brand-1);
+      background-color: #DBDEFF;
+      border-color: var(--block-hover-bg);
+
+      [data-theme="light"] & {
+        background-color: rgba(110, 80, 255, 0.1);
+      }
+    }
+  }
+
+  .nicknameInput {
+    margin-top: 6px;
+  }
+
+  .errorMessage {
+    margin-top: 4px;
+    color: var(--studio-color-error);
+  }
+}

@@ -1,0 +1,11 @@
+.bigMode {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: 100%;
+  box-sizing: border-box;
+  gap: 12px 20px;
+}
+
+.bigMode > * {
+  min-width: 0;
+}

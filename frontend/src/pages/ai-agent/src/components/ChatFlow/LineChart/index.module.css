@@ -1,0 +1,59 @@
+.chartContainer {
+    position: relative;
+    width: 100%;
+    min-width: 0; /* 允许容器收缩 */
+    overflow: hidden; /* 防止内容溢出 */
+}
+
+.closeIcon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    padding: 4px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.chartContainer:hover .closeIcon {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.chartContainerEmpty {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--text-primary);
+    font-family: AlibabaSans102;
+}
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+    .closeIcon {
+        width: 20px;
+        height: 20px;
+        padding: 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    .closeIcon {
+        width: 18px;
+        height: 18px;
+        padding: 2px;
+    }
+}

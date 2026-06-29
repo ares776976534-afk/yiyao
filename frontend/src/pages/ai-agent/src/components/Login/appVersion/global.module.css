@@ -1,0 +1,159 @@
+.container {
+  width: 360px;
+  border-radius: 16px;
+  padding-top: 56px;
+  padding-bottom: 30px;
+  background-image: url(https://img.alicdn.com/imgextra/i4/O1CN01XyPZMA1TRAxLgdwq4_!!6000000002378-2-tps-720-168.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeIcon {
+  width: 24px;
+  height: 24px;
+  margin-left: 320px;
+  margin-top: 16px;
+}
+
+.content {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  width: fit-content;
+  gap: 32px;
+  align-items: center;
+  min-width: 300px;
+  min-height: 166px;
+}
+
+.logoSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  width: fit-content;
+  gap: 10px;
+  align-items: center;
+  min-width: 240px;
+  min-height: 86px;
+}
+
+.logoContainer {
+  width: 180px;
+  height: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoRow {
+  width: 175px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px 1px 1px 0px;
+  box-sizing: border-box;
+}
+
+.logoIcon {
+  width: 32px;
+  height: 23px;
+}
+
+.logoText {
+  width: 134px;
+  height: 22px;
+  margin-left: 8px;
+}
+
+.welcomeText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #7C7F9A;
+  width: 240px;
+  display: -webkit-box;
+  height: 48px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+  word-break: break-wordl;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+  font-family: Poppins-Regular;
+}
+
+.signInButton {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.googleIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.buttonText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #FFFFFF;
+  white-space: nowrap;
+  text-align: center;
+  width: 152px;
+}
+
+.termsText {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  display: -webkit-box;
+  height: 32px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+  word-break: break-wordl;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 78px;
+
+  > * + * {
+    margin-left: 4px;
+  }
+}
+
+.termsGray {
+  color: #BBBDCA;
+}
+
+.termsLink {
+  color: #4D4D5F;
+}

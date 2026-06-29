@@ -1,0 +1,311 @@
+@import '../responsive.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 vw-1500(74);
+  padding-top: vw-1500(252);
+  background-image: url('https://img.alicdn.com/imgextra/i3/O1CN01PhgRUa20CrsnEhsK9_!!6000000006814-2-tps-3000-5654.png');
+  background-color: #fff;
+  background-size: 100% 100%;
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+
+.mainContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: vw-1500(16);
+  align-items: center;
+  height: vw-1500(172);
+}
+
+.titleRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: vw-1500(6);
+  justify-content: center;
+  align-items: center;
+}
+
+.titleText {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  color: #141B26;
+  white-space: nowrap;
+}
+
+.colorTitle {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: normal;
+  background: linear-gradient(90deg, #875EED -2%, #3C7AFF 36%, #4FCEE4 92%, #68E4C3 126%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin: 0 12px;
+}
+
+.mcpImage {
+  width: vw-1500(128);
+  height: vw-1500(72);
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: vw-1500(42);
+  color: #373C55;
+  width: 800px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+  word-break: break-wordl;
+  text-align: center;
+}
+
+.hotSearchCards {
+  display: flex;
+  flex-direction: column;
+  margin-top: 132px;
+  width: 100%;
+  gap: 48px;
+}
+
+.hotSearchCard {
+  border-radius: vw-1500(24);
+  background: linear-gradient(179deg, #FFFFFF80 -1%, #FFFFFF 17%);
+  backdrop-filter: blur(204px);
+  border-style: inset;
+  height: vw-1500(430);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: vw-1500(53) vw-1500(20) vw-1500(53) vw-1500(67);
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.cardContent {
+  width: vw-1500(476);
+  height: vw-1500(172);
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTag {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: vw-1500(4);
+  box-sizing: border-box;
+  align-items: center;
+  overflow: hidden;
+  width: vw-1500(62);
+  height: vw-1500(36);
+}
+
+.tagIcon {
+  width: 100%;
+  height: 100%;
+}
+
+.tagText {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: vw-1500(28);
+  color: #CE9F00;
+  font-family: AlibabaSans102;
+  white-space: nowrap;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: vw-1500(32);
+  width: vw-1500(476);
+  height: vw-1500(120);
+  margin-top: vw-1500(16);
+}
+
+.cardTitle {
+  font-size: vw-1500(32);
+  font-weight: 700;
+  line-height: 1;
+  color: #141B26;
+  font-family: AlibabaSans102;
+  white-space: nowrap;
+}
+
+.cardDesc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #1D2129;
+  font-family: AlibabaSans102;
+  display: -webkit-box;
+  width: vw-1500(476);
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.searchCard {
+  width: 100%;
+  border-radius: vw-1500(24);
+  background: #FFFFFF;
+  box-shadow: 0px 0px 32px 0px #E1E1E126;
+  border: vw-1500(2) solid #FFFFFFBF;
+  overflow: hidden;
+  height: vw-1500(430);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 0;
+  align-items: center;
+}
+
+.searchInfo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  z-index: 2;
+  padding-right: vw-1500(108);
+}
+
+.searchTitle {
+  font-size: vw-1500(32);
+  font-weight: 700;
+  line-height: 1;
+  color: #141B26;
+  font-family: AlibabaSans102;
+  white-space: nowrap;
+  margin-top: vw-1500(16);
+}
+
+.searchDesc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: vw-1500(24);
+  color: #373C55;
+  font-family: AlibabaSans102;
+  display: -webkit-box;
+  width: vw-1500(476);
+  height: vw-1500(48);
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+  word-break: break-wordl;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: vw-1500(32);
+}
+
+.moreServices {
+  display: flex;
+  flex-direction: column;
+  margin-top: vw-1500(140);
+  padding-bottom: vw-1500(181);
+  width: 100%;
+}
+
+.moreServicesTitle {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #1D2129;
+  white-space: nowrap;
+}
+
+.serviceCards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: vw-1500(28);
+  gap: vw-1500(22);
+}
+
+.serviceCard {
+  border-radius: vw-1500(32);
+  background: linear-gradient(180deg, #FFFFFF65 60%, #FFFFFF00 82%);
+  backdrop-filter: blur(4px);
+  box-shadow: inset 0 0 0 2px #0000000A;
+  overflow: hidden;
+  width: vw-1500(436);
+  height: vw-1500(380);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: vw-1500(60) vw-1500(42);
+  gap: vw-1500(26);
+}
+
+.serviceCardTitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  color: #141B26;
+  font-family: AlibabaSans102;
+  white-space: nowrap;
+  margin-bottom: vw-1500(-26);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.serviceCardDesc {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  width: vw-1500(355);
+  height: vw-1500(72);
+  margin-top: vw-1500(26);
+}
+
+.serviceCardText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #373C55;
+  font-family: AlibabaSans102;
+  display: -webkit-box;
+  width: vw-1500(355);
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+  word-break: break-wordl;
+  text-overflow: ellipsis;
+}
+
+.serviceTag {
+  width: vw-1500(62);
+  height: vw-1500(36);
+  margin-top: 18px;
+}
+
+.hotSearchImage {
+  width: vw-1500(750);
+  // height: vw-1500(430);
+}

@@ -1,0 +1,12 @@
+.selectSeller {
+  width: var(--agentsContainer-width);
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  /* 覆盖 ChatInput 组件中的 fancy 样式 */
+  :global([class*="inputSection"]) {
+    box-shadow: none !important;
+  }
+}

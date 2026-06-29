@@ -1,0 +1,100 @@
+.exportPanel {
+  .actionBar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .captureMode {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      height: 36px;
+      padding: 0 10px;
+      color: var(--block-color);
+      background: var(--block-btn-bg);
+      border-radius: 8px;
+      border: var(--block-btn-border);
+      cursor: pointer;
+
+      &:hover {
+        background: var(--block-btn-hover-bg);
+      }
+
+      &.checked {
+        font-weight: 500;
+        background: var(--color-brand-1);
+        border-color: var(--color-brand-1);
+
+        [data-theme="light"] & {
+          color: #fff;
+        }
+      }
+
+      // 和普通的开关样式不同 特殊处理一下
+      :global(.studio-switch) {
+        --studio-switch-track-min-width: 28px;
+        --studio-switch-track-height: 16px;
+        --studio-switch-handle-size: 12px;
+        --studio-switch-track-padding: 2px;
+
+        [data-theme="dark"] & {
+          background: var(--color-white-30);
+        }
+
+        [data-theme="light"] & {
+          background: #E7E8EE;
+        }
+      }
+
+      &.checked {
+        :global(.studio-switch) {
+          [data-theme="light"] & {
+            background: var(--color-white-30);
+          }
+        }
+      }
+    }
+  }
+
+  .exportOptionsPopoverRoot {
+    --gap-size: 16px;
+    min-width: 280px;
+
+    .exportOptionsPopoverBody {
+      --studio-popover-inner-padding: var(--gap-size);
+      --studio-border-radius-lg: 16px;
+
+      .exportOptions {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-size);
+
+        .exportOptionsItem {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+// .captureMode,
+// .exportOptionsPopoverBody {
+//   // 统一处理 switch 样式
+//   :global(.studio-switch) {
+//     --studio-switch-track-min-width: 28px;
+//     --studio-switch-track-height: 16px;
+//     --studio-switch-handle-size: 12px;
+//     --studio-switch-track-padding: 2px;
+
+//     [data-theme="dark"] & {
+//       background: var(--color-white-30);
+//     }
+
+//     [data-theme="light"] & {
+//       background: #e7e8ee;
+//     }
+//   }
+// }

@@ -1,0 +1,72 @@
+.caseShareController {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 666px;
+  padding: 12px;
+  border: 1px solid var(--case-share-controller-border-color);
+  border-radius: 12px;
+  background: var(--case-share-controller-bg);
+  backdrop-filter: var(--menu-backdrop-filter);
+
+  .btnGroup {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 23.964%;
+    /* 150px */
+    height: 44px;
+    padding: 8px 12px;
+    line-height: 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    color: var(--block-color);
+    cursor: pointer;
+
+    .btnPlayIcon svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    &.doTheSame {
+      flex: 1;
+      column-gap: 6px;
+      color: #fff;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &.share {
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    :global {
+      .studio-btn {
+        --studio-control-height: auto;
+        border: none;
+      }
+    }
+  }
+
+  .icon {
+    fill: #fff;
+    color: #010101;
+  }
+  
+  .sameIcon {
+    color: #fff;
+  }
+  
+  [data-theme="light"] & {
+    .icon {
+      fill: var(--color-black-60);
+      color: #fff;
+    }
+  }
+}

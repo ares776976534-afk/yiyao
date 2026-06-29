@@ -1,0 +1,115 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 12px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: box-shadow 0.3s ease, height 0.1s ease, background 0.1s ease;
+}
+
+.wrapperSticky {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 12px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: box-shadow 0.3s ease, height 0.3s ease, background 0.3s ease;
+  background: linear-gradient(180deg, #fff 49%, rgba(255, 255, 255, 0) 98%);
+  height: 120px;
+}
+
+.wrapperStickyBlock {
+  position: fixed;
+  transition: box-shadow 0.3s ease, height 0.3s ease, background 0.3s ease;
+  background: linear-gradient(180deg, #fff 49%, rgba(255, 255, 255, 0) 98%);
+  height: 120px;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.filtersGroup {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.filterItem {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  /* padding: 0 12px; */
+  transition: color 0.2s ease;
+  user-select: none;
+}
+
+.filterItem:first-child {
+  padding-left: 0;
+}
+
+.divider {
+  width: 1px;
+  height: 8px;
+  background-color: #e7e8ee;
+  margin: 0 10px;
+}
+
+.active {
+  color: #1d1e29;
+  font-weight: 600;
+}
+
+.inactive {
+  color: #7c7f9a;
+}
+
+/* .createButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: #6E50FF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.createButton:hover {
+  background-color: #6E50FF;
+}
+
+/* .buttonIcon {
+  width: 16px;
+  height: 16px;
+  color: #fff;
+  flex-shrink: 0;
+} */
+
+/* .buttonText {
+  color: #fff;
+  white-space: nowrap;
+} */
+/* 
+.inactive:hover {
+    color: #333333;
+} */

@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #ffffff;
+  width: 100%;
+  height: 56px;
+}
+
+.backIcon {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+.backIcon:hover {
+  background: #F9F9FB;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1d2129;
+}
+
+.placeholder {
+  width: 32px;
+  height: 32px;
+}

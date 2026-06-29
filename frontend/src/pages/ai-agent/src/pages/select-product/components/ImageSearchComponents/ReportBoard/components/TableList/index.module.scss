@@ -1,0 +1,35 @@
+.commonTablesList {
+  :global {
+    .common-table-footer {
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 20px;
+      letter-spacing: normal;
+      color: #6E50FF;
+    }
+
+    .footer-icon {
+      color: #6E50FF !important;
+      transform: rotate(90deg) !important;
+    }
+  }
+
+  .tableItemWrapper + .tableItemWrapper {
+    margin-top: 30px;
+  }
+  
+  .tableItemWrapper {
+    &.collapsed {
+      // 收起状态的样式
+    }
+
+    &.expanded {
+      // 展开状态的样式
+      :global {
+        .footer-icon {
+          transform: rotate(-90deg) !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@use "variables" as *;
+
+// ==========================================================================
+// Blockquote
+// ==========================================================================
+
+.alpha-markdown {
+  blockquote {
+    margin: $margin-blockquote;
+    padding: $padding-blockquote;
+    border-left: 3px solid var(--am-color-border-primary);
+    color: var(--am-color-text-prose);
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+
+    // Nested blockquote
+    blockquote {
+      margin-top: $spacing-paragraph;
+      border-left-color: var(--am-color-border-secondary);
+    }
+  }
+}

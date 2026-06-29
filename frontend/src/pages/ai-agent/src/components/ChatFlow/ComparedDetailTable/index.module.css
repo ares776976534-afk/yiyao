@@ -1,0 +1,174 @@
+  /* Antd Table 自定义样式 */
+  .customTable {
+    border-radius: 8px;
+    border: 1px solid #F3F3F6;
+    border-bottom: none;
+    overflow: scroll !important;
+  }
+  
+  .customTable :global(.ant-table) {
+    font-size: 14px;
+  }
+  
+  .customTable :global(.ant-table-thead > tr > th) {
+    background: #FBFBFD;
+    border-bottom: 1px solid #F3F3F6;
+    font-weight: 500;
+    color: #1D2129;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .customTable :global(.ant-table-tbody > tr > td) {
+    border-bottom: 1px solid #F3F3F6;
+    padding: 12px;
+    vertical-align: middle;
+  }
+  
+  .customTable :global(.ant-table-tbody > tr:hover > td) {
+    background: #FFFFFF;
+  }
+
+  .itemTitle {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 14px;
+    color: #333;
+    width: 176px;
+    line-height: 1.4;
+  }
+
+  .itemTitle::before {
+    content: '';
+    float: right;
+    width: 0;
+    height: 1.4em; /* 设置为一行的高度 */
+  }
+  
+  .titleImageUrl {
+    width: 12px;
+    height: 12px;
+    float: right;
+    clear: both;
+    margin-top: 6px;
+    margin-right: 6px;
+    cursor: pointer;
+  }
+  
+  /* 销量容器 */
+  .salesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+  
+  .salesNumber {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #1D2129;
+  }
+  
+  .growthRate {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .growthIcon {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .growthText {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #22AC60;
+  }
+  
+  /* 分类行样式 */
+  .categoryRow {
+    background: #FBFBFD !important;
+  }
+  
+  .categoryCell {
+    background: #FBFBFD !important;
+    padding: 12px !important;
+    text-align: center !important;
+  }
+  
+  .categoryTitle {
+    margin-right: 12px;
+    border: none;
+    color: #1D2129;
+    font-size: 14px;
+    padding: 0;
+  }
+  
+  .categoryText {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #7B7B8D;
+  }
+  
+  /* Top5热销品行样式 */
+  .topProductsRow {
+    background: #FBFBFD !important;
+  }
+  
+  .topProductsCell {
+    background: #FBFBFD !important;
+    padding: 12px 16px !important;
+    text-align: center !important;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #1D2129;
+  }
+  
+  /* 加载行样式 */
+  .loadingRow {
+    background: #FFFFFF !important;
+  }
+  
+  .loadingCell {
+    background: #FFFFFF !important;
+    padding: 12px !important;
+    text-align: center !important;
+  }
+
+  .loadingContent {
+    height: 60px;
+    display: flex;
+  }
+  
+  /* 产品行样式 */
+  .productRow {
+    background: #FFFFFF !important;
+  }
+  
+  /* 移除表格默认的hover效果 */
+  .customTable :global(.ant-table-tbody > tr.categoryRow:hover > td),
+  .customTable :global(.ant-table-tbody > tr.topProductsRow:hover > td),
+  .customTable :global(.ant-table-tbody > tr.loadingRow:hover > td) {
+    background: inherit !important;
+  }
+
+  /* 确保Table容器支持滚动 */
+  .customTable :global(.ant-table-wrapper) {
+    overflow: scroll !important;
+  }
+
+  .customTable :global(.ant-table-container) {
+    overflow: scroll !important;
+  }
+
+  .customTable :global(.ant-table-body) {
+    overflow: scroll !important;
+  }

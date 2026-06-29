@@ -1,0 +1,85 @@
+.smartModeContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 32px;
+  padding: 0 10px;
+  color: var(--block-color);
+  border: var(--block-btn-border);
+  border-radius: 8px;
+  background-color: var(--color-white-12);
+  cursor: pointer;
+
+  &.checked {
+    color: #957eff;
+    background: rgba(149, 126, 255, 0.2);
+    box-sizing: border-box;
+    border: 1px solid #957eff;
+
+    &:hover {
+      background-color: rgba(149, 126, 255, 0.2);
+    }
+
+    .smartModeSwitch {
+      background-color: var(--color-brand-1);
+    }
+  }
+
+  &:hover {
+    background-color: var(--color-white-20);
+
+    :not([data-platform="mobile"])[data-theme="light"] & {
+      background-color: #f7f8fa;
+    }
+  }
+
+  .smartModeSwitch {
+    --studio-switch-track-min-width: unset;
+    --studio-switch-inner-max-margin: 22px;
+    --studio-switch-inner-min-margin: 6px;
+    --studio-switch-track-height: 16px;
+    --studio-switch-handle-size: 12px;
+    --studio-color-text-tertiary: var(--color-white-30);
+
+    width: 28px;
+    background-color: var(--color-white-30);
+
+    &:global(.studio-switch-checked:hover:not(.studio-switch-disabled)) {
+      & {
+        background-color: var(--color-brand-1);
+      }
+    }
+  }
+
+  .smartModeIcon {
+    width: 14px;
+    height: 14px;
+  }
+
+  [data-theme="light"] & {
+    &.checked {
+      color: var(--color-brand-1);
+      border-color: var(--color-brand-1);
+      background-color: rgba(110, 80, 255, 0.05);
+
+      .smartModeSwitch {
+        background-color: var(--color-brand-1);
+      }
+    }
+
+    .smartModeSwitch {
+      background-color: #e7e8ee;
+    }
+  }
+}
+
+.smartModePopoverRoot {
+  --studio-popover-arrow-offset-horizontal: 38px !important;
+}
+
+.smartModePopoverBody {
+  --studio-popover-inner-padding: 12px;
+  width: 245px;
+  line-height: 18px;
+  font-size: 12px;
+}

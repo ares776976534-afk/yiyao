@@ -1,0 +1,97 @@
+.hgroup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+  
+.hgroup-center {
+  @extend .hgroup;
+  justify-content: center;
+}
+  
+.hgroup-middle {
+  @extend .hgroup;
+  align-items: center;
+}
+  
+.hgroup-base {
+  @extend .hgroup;
+  align-items: baseline;
+}
+  
+.hgroup-justify {
+  @extend .hgroup;
+  justify-content: space-between;
+}
+  
+.hgroup-end, .hgroup-hend {
+  @extend .hgroup;
+  justify-content: flex-end;
+}
+  
+.hgroup-bottom, .hgroup-vend {
+  @extend .hgroup;
+  align-items: flex-end;
+}
+  
+.hgroup-both {
+  @extend .hgroup-middle;
+  justify-content: center;
+}
+  
+.vgroup {
+  display: flex;
+  flex-direction: column;
+}
+  
+.vgroup-center {
+  @extend .vgroup;
+  align-items: center;
+}
+  
+.vgroup-middle {
+  @extend .vgroup;
+  justify-content: center;
+}
+  
+.vgroup-end {
+  @extend .vgroup;
+  align-items: flex-end;
+}
+  
+.vgroup-bottom {
+  @extend .hgroup;
+  justify-content: flex-end;
+}
+  
+.vgroup-both {
+  @extend .vgroup-middle;
+  align-items: center;
+}
+  
+.vgroup-justify {
+  @extend .vgroup;
+  justify-content: space-between;
+}
+  
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+  
+.flex1 {
+  flex: 1;
+}
+  
+.shrink0 {
+  flex-shrink: 0;
+}
+  
+.shrink1 {
+  flex-shrink: 1;
+}
+  
+.flex-ellipsis {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,17 @@
+.container {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  :global {
+    [class*='inputSection'] {
+      box-shadow: none !important;
+    }
+
+    // 覆盖 ModeSelector 的 modeButton 样式
+    [class*='modeButton'] {
+      height: 36px !important;
+    }
+  }
+}

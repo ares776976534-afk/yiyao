@@ -1,0 +1,481 @@
+[
+  {
+    "type": "MODEL_UPPER_BODY",
+    "title": {
+      "i18nKey": "global-1688-ai-app.case.tool.MODEL_UPPER_BODY.title",
+      "defaultValue": "模特上身"
+    },
+    "description": {
+      "i18nKey": "global-1688-ai-app.case.tool.MODEL_UPPER_BODY.desc",
+      "defaultValue": "目前支持包袋，帽子，项链，耳饰，眼睛等模特上身效果"
+    },
+    "image": "https://img.alicdn.com/imgextra/i3/O1CN01YwBEFB1ZgBcgiFpde_!!6000000003223-2-tps-360-360.png",
+    "uploads": [
+      {
+        "label": {
+          "i18nKey": "global-1688-ai-app.case.tool.MODEL_UPPER_BODY.uploadPlaceholder.left",
+          "defaultValue": "拖拽或点此上传模特图"
+        },
+        "multiple": false
+      },
+      {
+        "label": {
+          "i18nKey": "global-1688-ai-app.case.tool.MODEL_UPPER_BODY.uploadPlaceholder.right",
+          "defaultValue": "拖拽或点此上传服饰图"
+        },
+        "multiple": false
+      }
+    ],
+    "quickTemplate": [
+      [
+        {
+          "url": "https://img.alicdn.com/imgextra/i1/O1CN019vE9sY23G1TCI1yvV_!!6000000007227-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "url": "https://img.alicdn.com/imgextra/i4/O1CN01YVAWF01NPRkuallsP_!!6000000001562-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        }
+      ],
+      [
+        {
+          "url": "https://img.alicdn.com/imgextra/i4/O1CN01nT2UyH24p7R4ak0dP_!!6000000007439-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "url": "https://img.alicdn.com/imgextra/i2/O1CN01GVLGrJ1wvW2bxFLIB_!!6000000006370-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        }
+      ],
+      [
+        {
+          "url": "https://img.alicdn.com/imgextra/i2/O1CN01P1mhli1KlTxuYkdnT_!!6000000001204-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "url": "https://img.alicdn.com/imgextra/i1/O1CN01mPE4ry1cV8v4vnem5_!!6000000003605-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        }
+      ]
+    ],
+    "modalImage": "https://img.alicdn.com/imgextra/i2/O1CN01KOariW1IrJmUN8OOB_!!6000000000946-2-tps-1160-1060.png",
+    "prompt": {
+      "i18nKey": "global-1688-ai-app.case.tool.MODEL_UPPER_BODY.prompt",
+      "defaultValue": "请你将图二的商品主体与到图一的模特进行融合。生成一张模特商品展示图，保证图二的主体大小不崩坏，不过大或过小，保证图二主体的一致性，保证模特主体的一致性，保证最后生成效果稳定。"
+    }
+  },
+  {
+    "type": "MARKETING_IMAGE",
+    "title": {
+      "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.title",
+      "defaultValue": "营销图生成"
+    },
+    "description": {
+      "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.desc",
+      "defaultValue": "支持上传图片后选择风格模版，一键生成营销图"
+    },
+    "image": "https://img.alicdn.com/imgextra/i3/O1CN01Sgf8UV1oRjMHNEQtb_!!6000000005222-2-tps-360-360.png",
+    "uploads": [
+      {
+        "label": {
+          "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.uploadPlaceholder",
+          "defaultValue": "可拖拽图片或点此上传"
+        },
+        "multiple": false
+      }
+    ],
+    "quickTemplate": [
+      [
+        {
+          "url": "https://img.alicdn.com/imgextra/i3/O1CN012WIMRF1lSEwwkGzQB_!!6000000004817-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        }
+      ],
+      [
+        {
+          "url": "https://img.alicdn.com/imgextra/i2/O1CN01m7Prd11SArDfGH0K4_!!6000000002207-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        }
+      ],
+      [
+        {
+          "url": "https://img.alicdn.com/imgextra/i2/O1CN01lddz0e1jD0Xze9QTR_!!6000000004513-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        }
+      ]
+    ],
+    "extra": {
+      "placeholder": {
+        "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.textarea.placeholder",
+        "defaultValue": "文案会展示在营销海报上侧的标题上，控制字数推荐在10字左右～"
+      },
+      "options": [
+        {
+          "label": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.label1",
+            "defaultValue": "圣诞促销风格"
+          },
+          "prompt": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.prompt1",
+            "defaultValue": "根据上传的商品参考图，进行电商产品营销图设计，请先图像解析上传的商品图类目，设计一张该商品的「圣诞大促」主题营销图\n内容：可以展示商品的使用场景或者创意摆放场景，商品在画面中自然，融洽。\n风格：画面色彩协调且尽可能鲜艳吸引眼球。且充满圣诞节日氛围，推荐采用暖色调，以红色、绿色、金色为主，营造出温馨的圣诞感觉，但实际配色可以按照商品图实际情况微调。\n文字排布：画面顶部用书写着 “{0}” 的标题，立体霜雪效果描边风格商业字体，大字,,醒目夺人,字体颜色为白色。与画面自然融合，醒目夺目。\n画面要求：1）海报专业电商设计，不单纯只是给商品添加一个背景，需要体现整体设计感与协调感。2）整体风格需体现专业电商设计逻辑，不仅是简单的背景叠加；3）构图需突出商品为视觉中心，背景可采用虚化、渐变或光影聚焦效果；4）元素层次分明，色彩与光线协调，呈现高端节日促销质感。\n尺寸：\"图片生成尺寸严格执行为9:16\"， 9:16 尺寸"
+          }
+        },
+        {
+          "label": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.label2",
+            "defaultValue": "黑五大促风格"
+          },
+          "prompt": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.prompt2",
+            "defaultValue": "根据上传的商品参考图，进行电商产品营销图设计，请先图像解析上传的商品图类目，设计一张该商品的「黑五大促」主题营销图。\n内容： 展示商品的使用场景或创意摆放场景，商品在画面中自然、融洽地融入整体设计。\n风格： 整体采用黑色与红色为主色调，可点缀少量白色或灰色以平衡视觉层次。画面整体对比强烈、节奏分明，充满紧张感与视觉冲击。设计上可参考现代极简或潮流风格，通过块面分割、斜切构图、阴影叠层、光影聚焦等方式塑造高质感的黑五视觉。商品周围可适当加入红色光晕、促销符号等元素，强化节日氛围。\n文字排布：\n画面顶部使用大字书写“{0}” ，采用极具冲击力的立体加粗字体，搭配红色描边或阴影，营造立体突出效果；\n画面要求：\n1）整体需体现专业电商设计逻辑，不仅是为商品添加背景，而形成完整视觉主题；\n2）构图需突出商品为视觉中心，背景可采用虚化、渐变或光影聚焦效果；\n3）元素层次清晰，光线与色彩协调，呈现高级节日促销氛围；\n4）风格统一，视觉节奏强烈，品牌识别度高。\n尺寸：\"图片生成尺寸严格执行为9:16\", 9:16 尺寸"
+          }
+        },
+        {
+          "label": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.label3",
+            "defaultValue": "双十一大促风格"
+          },
+          "prompt": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.prompt3",
+            "defaultValue": "根据上传的商品参考图，进行电商产品营销图设计。请先自动解析上传的商品图类目，设计一张该商品的「双十一大促」主题营销图。\n内容：可展示商品的使用场景或创意摆放，商品在画面中自然协调。可加入红包、购物袋、灯光装饰等元素，营造购物狂欢节氛围。\n风格：整体以红色为主色调，搭配金色和白色，营造节庆热烈氛围。色彩鲜艳、饱满且富有层次，可根据商品色调微调以保持协调。\n文字排布：画面顶部书写“{0}” 标题，字体立体描边、带光影浮雕效果，突出节日主题，视觉冲击强。\n画面要求：1）整体体现专业电商设计逻辑与空间层次感；2）构图突出商品为视觉中心，背景可虚化或带聚光效果；3）色彩明亮统一，画面协调自然；4）体现促销活力与节日热度。尺寸：\"图片生成尺寸严格执行为9:16\", 9:16 尺寸"
+          }
+        },
+        {
+          "label": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.label4",
+            "defaultValue": "感恩节促销风格"
+          },
+          "prompt": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.prompt4",
+            "defaultValue": "根据上传的商品参考图，进行电商产品营销图设计。请先自动解析上传的商品图类目，设计一张该商品的「感恩节促销 Thanksgiving Sale」主题营销图。\n内容：商品自然摆放，可结合节日装饰如南瓜、火鸡、麦穗、橙叶等，营造温馨节庆感。\n风格：画面采用橙色、棕色等秋季暖色调，搭配金色点缀，呈现柔和舒适的感恩节氛围。配色可根据商品色调微调。\n文字排布：顶部添加“{0}”标题，使用温暖大气的商业字体风格，带轻微浮雕与柔光效果，整体自然融入画面。\n画面要求：1）体现专业电商设计，不只是背景叠加；2）构图突出商品视觉中心，背景虚化或带柔光过渡；3）光影柔和、色彩协调，氛围温暖；4）可加入轻微光晕或暖光聚焦，增强节日感。\n尺寸：\"图片生成尺寸严格执行为9:16\", 9:16 尺寸"
+          }
+        },
+        {
+          "label": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.label5",
+            "defaultValue": "情人节浪漫风格"
+          },
+          "prompt": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.prompt5",
+            "defaultValue": "根据上传的商品参考图，进行电商产品营销图设计。请先自动解析上传的商品图类目，设计一张该商品的「情人节 Valentine's Day」主题营销图。\n内容：展示商品的浪漫使用场景或创意摆放，可搭配玫瑰、爱心、丝带、礼盒等元素，营造甜蜜氛围。\n风格：整体使用粉色、红色为主调，搭配白色与柔光，体现浪漫清新感。配色可根据商品色系微调。\n文字排布：画面顶部书写“{0}”，字体优雅流畅、带轻盈花体与飞白笔触效果，整体自然融入画面，呈现温柔节日气息。\n画面要求：1）整体专业电商风格，突出节日氛围；2）构图突出商品为视觉中心，背景柔化或渐变；3）元素层次分明，光影柔和自然；4）整体风格浪漫优雅，色彩协调。\n尺寸：\"图片生成尺寸严格执行为9:16\", 9:16 尺寸"
+          }
+        },
+        {
+          "label": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.label6",
+            "defaultValue": "极简现代风格"
+          },
+          "prompt": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.prompt6",
+            "defaultValue": "据上传的商品参考图，进行电商产品营销图设计。请先自动解析上传的商品图类目，设计一张该商品的「极简现代」主题营销图。\n内容：商品在画面中摆放简洁自然，可结合几何线条或抽象构图，营造现代极简风格。\n风格：整体采用黑、白、灰为主色调，可点缀单一高级亮色，配色根据商品实际情况微调。整体强调留白与秩序美。\n文字排布：标题采用简约现代风格的大字体，画面顶部书写\"{0} \"，线条干净、排版克制，突出理性与高级感。\n画面要求：1）体现现代电商设计逻辑；2）构图突出商品视觉中心，背景可为渐变或柔光；3）色彩平衡、对比恰到好处；4）整体干净简约，具高级设计感。\n\n尺寸：\"图片生成尺寸严格执行为9:16\", 9:16 尺寸"
+          }
+        },
+        {
+          "label": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.label7",
+            "defaultValue": "轻奢时尚风格"
+          },
+          "prompt": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.prompt7",
+            "defaultValue": "根据上传的商品参考图，进行电商产品营销图设计。请先自动解析上传的商品图类目，设计一张该商品的「轻奢时尚」主题营销图。\n内容：商品自然融入场景，可加入几何线条或柔和金属装饰，体现轻奢与简约的平衡。\n风格：整体使用低饱和高级色系，如奶白、香槟金、雾粉等，搭配细腻金属光泽。配色可根据商品图适度微调。\n文字排布：标题字体高雅简洁，画面顶部书写“{0}”，带金属质感或凹凸浮雕效果，整体轻盈不厚重。\n画面要求：1）电商设计风格专业统一；2）构图突出商品视觉中心，背景可渐变或光影柔焦；3）色彩和谐、光线高级；4）体现简约中的精致感。\n尺寸：\"图片生成尺寸严格执行为9:16\", 9:16 尺寸"
+          }
+        },
+        {
+          "label": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.label8",
+            "defaultValue": "夏日清爽风格"
+          },
+          "prompt": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.prompt8",
+            "defaultValue": "根据上传的商品参考图，进行电商产品营销图设计。请先自动解析上传的商品图类目，设计一张该商品的「夏日清爽」主题营销图。\n内容：可展示商品在夏日使用或摆放场景中，自然协调。可搭配海浪、椰树、柠檬、冰饮等元素，强化季节氛围。\n风格：整体以清新明亮的蓝色、白色为主调，辅以浅绿色或黄色点缀，画面通透轻盈。配色可根据商品微调。\n文字排布：标题使用大字号字体简洁现代，画面顶部书写“{0}” 线条清爽、通透，体现夏日活力与清新感。\n画面要求：1）构图突出商品为视觉中心，背景可为虚化或渐变天空效果；2）整体电商设计感强，色彩协调；3）画面轻盈、明亮、自然。\n尺寸：\"图片生成尺寸严格执行为9:16\", 9:16 尺寸"
+          }
+        },
+        {
+          "label": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.label9",
+            "defaultValue": "春季焕新风格"
+          },
+          "prompt": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.prompt9",
+            "defaultValue": "根据上传的商品参考图，进行电商产品营销图设计。请先自动解析上传的商品图类目，设计一张该商品的「春季焕新」主题营销图。\n内容：商品自然呈现，可加入花卉、新芽、绿植等春日元素，营造焕新生机。\n风格：整体采用柔和粉色、嫩绿色、米白等春季色调，明亮清爽。配色可依据商品实际情况微调。\n文字排布：标题字体清新柔和，大字标题，画面顶部书写“{0}”，带轻微手写或圆润笔触效果，突出\"焕新\"主题。\n画面要求：1）电商设计专业感明显；2）构图突出商品为视觉中心，背景渐变柔光；3）色彩明快协调，氛围自然；4）体现春意与活力。\n尺寸：\"图片生成尺寸严格执行为9:16\", 9:16 尺寸"
+          }
+        },
+        {
+          "label": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.label10",
+            "defaultValue": "秋季文艺风格"
+          },
+          "prompt": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.prompt10",
+            "defaultValue": "根据上传的商品参考图，进行电商产品营销图设计。请先自动解析上传的商品图类目，设计一张该商品的「秋季文艺」主题营销图。\n内容：商品自然摆放，推荐可搭配枫叶、咖啡杯、书页等文艺场景元素，营造舒适气息。\n风格：整体采用暖黄、橙棕色调，光线柔和，体现秋日静谧感。配色可根据商品微调。\n文字排布：标题字体文艺清新，大字标题，画面顶部书写“{0}”，线条优雅，排版自然留白，增强诗意氛围。\n画面要求：1）构图突出商品视觉中心；2）背景虚化或光影柔焦；3）画面层次分明，氛围温柔；4）体现秋日文艺与温度感。\n尺寸：\"图片生成尺寸严格执行为9:16\", 9:16 尺寸"
+          }
+        },
+        {
+          "label": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.label11",
+            "defaultValue": "冬季温暖风格"
+          },
+          "prompt": {
+            "i18nKey": "global-1688-ai-app.case.tool.MARKETING_IMAGE.selectOption.prompt11",
+            "defaultValue": "根据上传的商品参考图，进行电商产品营销图设计。请先自动解析上传的商品图类目，设计一张该商品的「冬季温暖」主题营销图。\n内容：可展示商品在温馨居家环境中的使用场景，可加入毛衣、雪花、热饮、壁炉等元素。\n风格：采用温暖棕色、米白及暖灰色系，整体柔和舒适。配色可根据商品实际情况微调。\n文字排布：标题字体圆润厚重，大字标题，画面顶部书写“{0}”，带轻微浮雕与暖光效果，呼应冬季温馨氛围。\n画面要求：1）电商风格专业统一；2）构图突出商品为视觉中心，背景柔光或光影聚焦；3）画面协调自然，层次分明；4）传递温暖、舒适感。\n尺寸：\"图片生成尺寸严格执行为9:16\", 9:16 尺寸"
+          }
+        }
+      ]
+    },
+    "modalImage": "https://img.alicdn.com/imgextra/i2/O1CN01xwHsfl1kGVBSH4Foy_!!6000000004656-2-tps-1160-1060.png"
+  },
+  {
+    "type": "BACKGROUND_GENERATION",
+    "title": {
+      "i18nKey": "global-1688-ai-app.case.tool.BACKGROUND_GENERATION.title",
+      "defaultValue": "背景图生成"
+    },
+    "description": {
+      "i18nKey": "global-1688-ai-app.case.tool.BACKGROUND_GENERATION.desc",
+      "defaultValue": "上传的商品图推荐为白底背景或透明背景"
+    },
+    "image": "https://img.alicdn.com/imgextra/i3/O1CN01bvpHXi1hXV2LsaDNq_!!6000000004287-2-tps-360-360.png",
+    "uploads": [
+      {
+        "label": {
+          "i18nKey": "global-1688-ai-app.case.tool.BACKGROUND_GENERATION.uploadPlaceholder.left",
+          "defaultValue": "拖拽或点此上传商品图"
+        },
+        "multiple": false
+      },
+      {
+        "label": {
+          "i18nKey": "global-1688-ai-app.case.tool.BACKGROUND_GENERATION.uploadPlaceholder.right",
+          "defaultValue": "拖拽或点此上传背景图"
+        },
+        "multiple": false
+      }
+    ],
+    "quickTemplate": [
+      [
+        {
+          "url": "https://img.alicdn.com/imgextra/i3/O1CN01VtJM7n1XQUp2ir3g7_!!6000000002918-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "url": "https://img.alicdn.com/imgextra/i2/O1CN011Os4vj29vb7K3QSnY_!!6000000008130-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        }
+      ],
+      [
+        {
+          "url": "https://img.alicdn.com/imgextra/i1/O1CN01Gn1XX11xd1fSV5FPx_!!6000000006465-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "url": "https://img.alicdn.com/imgextra/i1/O1CN01aXMOfh1O3IDNzlzcV_!!6000000001649-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        }
+      ],
+      [
+        {
+          "url": "https://img.alicdn.com/imgextra/i1/O1CN01sAmSd91kNpWOJyRGc_!!6000000004672-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "url": "https://img.alicdn.com/imgextra/i2/O1CN01nhS6P01nctOWSRJ0z_!!6000000005111-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        }
+      ]
+    ],
+    "modalImage": "https://img.alicdn.com/imgextra/i4/O1CN01BkbcLP26Q2zD2Uqcd_!!6000000007655-2-tps-1275-1227.png",
+    "prompt": {
+      "i18nKey": "global-1688-ai-app.case.tool.BACKGROUND_GENERATION.prompt",
+      "defaultValue": "请你将左侧的主体完美融入右侧的目标场景中。\n对齐场景光线、视角和阴影效果；调整商品比例与空间关系；确保画面真实自然，布局合理。考虑环境氛围与商品调性匹配。\n生成尺寸1:1"
+    }
+  },
+  {
+    "type": "STYLE_TRANSFER",
+    "title": {
+      "i18nKey": "global-1688-ai-app.case.tool.STYLE_TRANSFER.title",
+      "defaultValue": "风格模仿"
+    },
+    "description": {
+      "i18nKey": "global-1688-ai-app.case.tool.STYLE_TRANSFER.desc",
+      "defaultValue": "上传原图及参考图，风格模板快速克隆"
+    },
+    "image": "https://img.alicdn.com/imgextra/i3/O1CN01wwjFBr1KPUxGqxIjJ_!!6000000001156-2-tps-360-360.png",
+    "uploads": [
+      {
+        "label": {
+          "i18nKey": "global-1688-ai-app.case.tool.STYLE_TRANSFER.uploadPlaceholder.left",
+          "defaultValue": "拖拽或点此上传商品图"
+        },
+        "multiple": false
+      },
+      {
+        "label": {
+          "i18nKey": "global-1688-ai-app.case.tool.STYLE_TRANSFER.uploadPlaceholder.right",
+          "defaultValue": "拖拽或点此上传风格参考图"
+        },
+        "multiple": false
+      }
+    ],
+    "quickTemplate": [
+      [
+        {
+          "url": "https://img.alicdn.com/imgextra/i1/O1CN01ukPjT81xmdz90LLOP_!!6000000006486-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "url": "https://img.alicdn.com/imgextra/i2/O1CN01wj1FFW1NxL48lDzIq_!!6000000001636-0-tps-2048-2048.jpg",
+          "width": 1024,
+          "height": 1024
+        }
+      ],
+      [
+        {
+          "url": "https://img.alicdn.com/imgextra/i4/O1CN01YMQmEr20RWZKJp5ed_!!6000000006846-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "url": "https://img.alicdn.com/imgextra/i3/O1CN01yYl6HG28poV3MZzia_!!6000000007982-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        }
+      ],
+      [
+        {
+          "url": "https://img.alicdn.com/imgextra/i3/O1CN011PKY5I1Ivtk127qiq_!!6000000000956-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "url": "https://img.alicdn.com/imgextra/i1/O1CN016kbaHa1J53f8q1AEx_!!6000000000976-2-tps-1024-1024.png",
+          "width": 1024,
+          "height": 1024
+        }
+      ]
+    ],
+    "modalImage": "https://img.alicdn.com/imgextra/i2/O1CN01LJXV1G1ak8elB8pXO_!!6000000003367-2-tps-1309-1145.png",
+    "prompt": {
+      "i18nKey": "global-1688-ai-app.case.tool.STYLE_TRANSFER.prompt",
+      "defaultValue": "请用图一当中的主体，替换图二展示图当中的主体；生成新的商品图，保留图二所展示的风格特征（包括画面样式排布、质感、光影效果、文字效果）等，应用于图一的主体上。需确保：\n1. 图1主体内容特征完整清晰\n2. 新生成的图片应充分呈现图2的视觉风格特点\n3. 风格迁移后的画面自然和谐，不出现明显违和感\n4. 画质清晰，分辨率1:1"
+    }
+  },
+  {
+    "type": "IMAGE_TRANSLATION",
+    "title": {
+      "i18nKey": "global-1688-ai-app.case.tool.IMAGE_TRANSLATION.title",
+      "defaultValue": "图片翻译"
+    },
+    "description": {
+      "i18nKey": "global-1688-ai-app.case.tool.IMAGE_TRANSLATION.desc",
+      "defaultValue": "此功能支持批量翻译 非主体文字，如不在商品上的说明文字和slogan"
+    },
+    "image": "https://img.alicdn.com/imgextra/i1/O1CN01v66C3V1J7LdwXEQit_!!6000000000981-2-tps-360-360.png",
+    "uploads": [
+      {
+        "label": {
+          "i18nKey": "global-1688-ai-app.case.tool.IMAGE_TRANSLATION.uploadPlaceholder",
+          "defaultValue": "可拖拽图片或点此上传"
+        },
+        "multiple": true,
+        "maxCount": 10
+      }
+    ],
+    "quickTemplate": [
+      [
+        {
+          "url": "https://img.alicdn.com/imgextra/i2/O1CN01v1XvHS1HAR56x5PHC_!!6000000000717-0-tps-3232-3232.jpg",
+          "width": 3232,
+          "height": 3232
+        }
+      ],
+      [
+        {
+          "url": "https://img.alicdn.com/imgextra/i1/O1CN01ZLkiKS22ncuhyELgr_!!6000000007165-2-tps-2048-2048.png",
+          "width": 2048,
+          "height": 2048
+        }
+      ],
+      [
+        {
+          "url": "https://img.alicdn.com/imgextra/i2/O1CN01TqNpLc22H6nDoj4LR_!!6000000007094-0-tps-2048-2048.jpg",
+          "width": 2048,
+          "height": 2048
+        }
+      ]
+    ],
+    "extra": {
+      "options": [
+        {
+          "label": {
+            "i18nKey": "global-1688-ai-app.case.tool.IMAGE_TRANSLATION.selectOption.label1",
+            "defaultValue": "英语"
+          },
+          "icon": "https://img.alicdn.com/imgextra/i2/O1CN01aqzgub1aedtxbwdkh_!!6000000003355-2-tps-30-30.png"
+        },
+        {
+          "label": {
+            "i18nKey": "global-1688-ai-app.case.tool.IMAGE_TRANSLATION.selectOption.label2",
+            "defaultValue": "俄语"
+          },
+          "icon": "https://img.alicdn.com/imgextra/i2/O1CN01nrjmlG1nznCG3ycCi_!!6000000005161-2-tps-30-30.png"
+        },
+        {
+          "label": {
+            "i18nKey": "global-1688-ai-app.case.tool.IMAGE_TRANSLATION.selectOption.label3",
+            "defaultValue": "西班牙语"
+          },
+          "icon": "https://img.alicdn.com/imgextra/i3/O1CN01En8nxW28rBgcCjol0_!!6000000007985-2-tps-30-30.png"
+        },
+        {
+          "label": {
+            "i18nKey": "global-1688-ai-app.case.tool.IMAGE_TRANSLATION.selectOption.label4",
+            "defaultValue": "韩语"
+          },
+          "icon": "https://img.alicdn.com/imgextra/i2/O1CN01TCecQx23ki0NBEZIX_!!6000000007294-2-tps-30-30.png"
+        },
+        {
+          "label": {
+            "i18nKey": "global-1688-ai-app.case.tool.IMAGE_TRANSLATION.selectOption.label5",
+            "defaultValue": "葡萄牙语"
+          },
+          "icon": "https://img.alicdn.com/imgextra/i3/O1CN01SDg3OC1Z0VZsAQm91_!!6000000003132-2-tps-30-30.png"
+        },
+        {
+          "label": {
+            "i18nKey": "global-1688-ai-app.case.tool.IMAGE_TRANSLATION.selectOption.label6",
+            "defaultValue": "法语"
+          },
+          "icon": "https://img.alicdn.com/imgextra/i1/O1CN01cPTo7V1bRBsp3A4Fj_!!6000000003461-2-tps-30-30.png"
+        },
+        {
+          "label": {
+            "i18nKey": "global-1688-ai-app.case.tool.IMAGE_TRANSLATION.selectOption.label7",
+            "defaultValue": "日语"
+          },
+          "icon": "https://img.alicdn.com/imgextra/i2/O1CN01EKDFBi1mo3Qi8wemz_!!6000000005000-2-tps-30-30.png"
+        }
+      ]
+    },
+    "modalImage": "https://img.alicdn.com/imgextra/i1/O1CN013Ehiqt294vZPle06f_!!6000000008015-2-tps-1309-1145.png",
+    "prompt": {
+      "i18nKey": "global-1688-ai-app.case.tool.IMAGE_TRANSLATION.prompt",
+      "defaultValue": "请你用“{0}”翻译图片上面的的标题，文案，说明文字；不要改变原图的样式，输出尺寸比例同输入保持一致；"
+    }
+  }
+]

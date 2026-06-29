@@ -1,0 +1,151 @@
+.itemInfoCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+}
+
+.tabItem {
+  position: relative;
+  font-family: PingFang SC;
+  font-size: 14rpx;
+  font-weight: 500;
+  line-height: 18rpx;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.tabHighlight {
+  background: rgba(83, 99, 245, 0.16);
+  width: 39rpx;
+  height: 8rpx;
+  position: absolute;
+  bottom: 0;
+}
+
+.itemCard {
+  border-radius: 16rpx;
+  box-sizing: border-box;
+  border: 1rpx solid var(--border-secondary);
+}
+
+.itemCardHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16rpx;
+  gap: 12rpx;
+  background: var(--fill-secondary);
+  border-top-left-radius: 16rpx;
+  border-top-right-radius: 16rpx;
+}
+
+.itemCardHeaderInfo {
+  display: flex;
+  gap: 12px;
+}
+
+.itemCardHeaderImg {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 4rpx;
+}
+
+.itemCardHeaderImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4rpx;
+}
+
+.itemCardHeaderDetails {
+  display: flex;
+  gap: 4rpx;
+  flex: 1;
+  overflow: hidden;
+  justify-content: space-between;
+  flex-flow: column;
+}
+
+.itemCardHeaderTitle {
+  font-size: 14rpx;
+  font-weight: 500;
+  line-height: 20rpx;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.itemCardHeaderDate {
+  font-family: PingFang SC;
+  font-size: 13rpx;
+  font-weight: normal;
+  line-height: 20rpx;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}
+
+.divider {
+  width: 100%;
+}
+
+.opportunityInfo {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  justify-content: space-between;
+}
+
+.opportunityDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+}
+
+.opportunityScore {
+  display: flex;
+  gap: 8rpx;
+  align-items: end;
+}
+
+.opportunityLabel {
+  font-family: PingFang SC;
+  font-size: 13rpx;
+  font-weight: normal;
+  line-height: 15rpx;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}
+
+.scoreDisplay {
+  display: flex;
+  gap: 2rpx;
+  align-items: end;
+}
+
+.scoreNumber {
+  font-family: AlibabaSans102;
+  font-size: 20rpx;
+  font-weight: bold;
+  line-height: 20rpx;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.scoreUnit {
+  font-family: PingFang SC;
+  font-size: 14rpx;
+  font-weight: normal;
+  line-height: 16rpx;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.opportunitySubtext {
+  font-family: PingFang SC;
+  font-size: 13rpx;
+  font-weight: normal;
+  line-height: 15rpx;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}

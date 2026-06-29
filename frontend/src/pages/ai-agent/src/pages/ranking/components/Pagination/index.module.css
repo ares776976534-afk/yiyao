@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.iconBtn {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--text-secondary);
+  &:hover {
+    background: #FFF3E4;
+    color: #D15700;
+  }
+}
+
+.iconBtn.disabled {
+  color: var(--text-tertiary-4);
+  cursor: not-allowed;
+  &:hover {
+    background: transparent;
+    color: var(--text-tertiary-4);
+  }
+}
+
+.text {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}

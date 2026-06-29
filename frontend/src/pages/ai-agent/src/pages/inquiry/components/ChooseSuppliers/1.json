@@ -1,0 +1,166 @@
+{
+    "cardId": "f4c0afe4-c458-4fa3-822a-08f80c414c0a",
+    "cardType": "INQUIRY_PROGRESS",
+    "detail": [
+        {
+            "aiSummary": "暂未收到回复",
+            "buyerHeadImg": "https://cbu01.alicdn.com/img/ibank/2020/428/378/22185873824_536529798.jpg",
+            "companyName": "义乌三杰贸易有限公司",
+            "conversationId": "22d6d90d-ab36-4bbc-8e80-9ab2c2597ff3",
+            "messages": [
+                {
+                    "content": "https://cbu01.alicdn.com/img/ibank/O1CN01u1mIJB1lvYIoSg0uK_!!4611686018427384593-2-overseas_pic.png",
+                    "role": "buyerAssistant"
+                },
+                {
+                    "content": "老板，忙不忙？问下这个产品最小起批量是多少？",
+                    "role": "buyerAssistant",
+                    "meta": {
+                        "type": "item",
+                        "data": {
+                            "itemId": "1234567890",
+                            "link": "https://www.aliexpress.com/item/1234567890.html",
+                            "img": "1234567890.png",
+                            "price": "¥2.00",
+                            "title": "产品名称"
+                        }
+                    }
+                }
+            ],
+            "progress": "0%",
+            "questionProgress": [
+                { "isFinished": false, "q": "最小起批量是多少？" }
+            ],
+            "sellerHeadImg": "https://cbu01.alicdn.com/club/upload/pic/user/b/2/b/-/b2b-3192780246098cf.tom",
+            "wangwangId": "义乌三杰贸易有限公司"
+        },
+        {
+            "aiSummary": "暂未收到回复",
+            "buyerHeadImg": "https://cbu01.alicdn.com/img/ibank/2020/428/378/22185873824_536529798.jpg",
+            "companyName": "深圳市龙华区慧客电子商行",
+            "conversationId": "2e6a054a-780d-46e6-9922-938e64477b85",
+            "messages": [
+                {
+                    "content": "https://cbu01.alicdn.com/img/ibank/O1CN01u1mIJB1lvYIoSg0uK_!!4611686018427384593-2-overseas_pic.png",
+                    "role": "buyerAssistant"
+                },
+                {
+                    "content": "老板，忙不忙？问下这个产品最小起批量是多少？",
+                    "role": "buyerAssistant"
+                }
+            ],
+            "progress": "0%",
+            "questionProgress": [
+                { "isFinished": false, "q": "最小起批量是多少？" }
+            ],
+            "sellerHeadImg": "https://cbu01.alicdn.com/img/ibank/O1CN01fJybwg1mQEmt36tsp_!!2214357074948-0-cib.jpg",
+            "wangwangId": "慧客电子"
+        },
+        {
+            "aiSummary": "暂未收到回复",
+            "buyerHeadImg": "https://cbu01.alicdn.com/img/ibank/2020/428/378/22185873824_536529798.jpg",
+            "companyName": "超繁饰品（深圳）有限公司",
+            "conversationId": "6f02df7c-68df-441a-976b-a69efd8a6702",
+            "messages": [
+                {
+                    "content": "https://cbu01.alicdn.com/img/ibank/O1CN01u1mIJB1lvYIoSg0uK_!!4611686018427384593-2-overseas_pic.png",
+                    "role": "buyerAssistant"
+                },
+                {
+                    "content": "老板，忙不忙？问下这个产品最小起批量是多少？",
+                    "role": "buyerAssistant"
+                }
+            ],
+            "progress": "0%",
+            "questionProgress": [
+                { "isFinished": false, "q": "最小起批量是多少？" }
+            ],
+            "sellerHeadImg": "https://cbu01.alicdn.com/img/ibank/2019/181/286/11859682181.jpg",
+            "wangwangId": "深圳超繁饰品"
+        },
+        {
+            "aiSummary": "商家明确回复最小起批量为100个。建议确认订单数量是否达标并推进采购流程。",
+            "buyerHeadImg": "https://cbu01.alicdn.com/img/ibank/2020/428/378/22185873824_536529798.jpg",
+            "companyName": "龙港品丰文具有限公司",
+            "conversationId": "84a118e4-cd97-4cae-8a92-bc54e3a36e5e",
+            "messages": [
+                {
+                    "content": "https://cbu01.alicdn.com/img/ibank/O1CN01u1mIJB1lvYIoSg0uK_!!4611686018427384593-2-overseas_pic.png",
+                    "role": "buyerAssistant"
+                },
+                {
+                    "content": "老板，忙不忙？问下这个产品最小起批量是多少？",
+                    "role": "buyerAssistant"
+                },
+                { "content": "未识别消息类型", "role": "seller" },
+                { "content": "未识别消息类型", "role": "seller" },
+                {
+                    "content": "咱们家这款产品的最小起批量是100个哦。",
+                    "role": "seller"
+                },
+                {
+                    "content": "行，今天先了解到这。我跟团队碰一下，有需要再找你哈。",
+                    "role": "buyerAssistant"
+                }
+            ],
+            "progress": "100%",
+            "questionProgress": [
+                { "isFinished": true, "q": "最小起批量是多少？" }
+            ],
+            "sellerHeadImg": "https://cbu01.alicdn.com/img/ibank/2020/428/378/22185873824_536529798.jpg",
+            "wangwangId": "pfwj2018"
+        },
+        {
+            "aiSummary": "暂未收到回复",
+            "buyerHeadImg": "https://cbu01.alicdn.com/img/ibank/2020/428/378/22185873824_536529798.jpg",
+            "companyName": "藁城区满羿工艺品厂",
+            "conversationId": "9d72f4a7-c497-4e0c-8f0d-cb73d8f5c9fd",
+            "messages": [
+                {
+                    "content": "https://cbu01.alicdn.com/img/ibank/O1CN01u1mIJB1lvYIoSg0uK_!!4611686018427384593-2-overseas_pic.png",
+                    "role": "buyerAssistant"
+                },
+                {
+                    "content": "老板，忙不忙？问下这个产品最小起批量是多少？",
+                    "role": "buyerAssistant"
+                }
+            ],
+            "progress": "0%",
+            "questionProgress": [
+                { "isFinished": false, "q": "最小起批量是多少？" }
+            ],
+            "sellerHeadImg": "https://cbu01.alicdn.com/img/ibank/2020/428/378/22185873824_536529798.jpg",
+            "wangwangId": "满羿工艺品"
+        },
+        {
+            "aiSummary": "暂未收到回复",
+            "buyerHeadImg": "https://cbu01.alicdn.com/img/ibank/2020/428/378/22185873824_536529798.jpg",
+            "companyName": "温州步云轩鞋业有限公司",
+            "conversationId": "c4cdc035-61aa-4e45-8394-0a2684f39e4f",
+            "messages": [
+                {
+                    "content": "https://cbu01.alicdn.com/img/ibank/O1CN01u1mIJB1lvYIoSg0uK_!!4611686018427384593-2-overseas_pic.png",
+                    "role": "buyerAssistant"
+                },
+                {
+                    "content": "老板，忙不忙？问下这个产品最小起批量是多少？",
+                    "role": "buyerAssistant"
+                }
+            ],
+            "progress": "0%",
+            "questionProgress": [
+                { "isFinished": false, "q": "最小起批量是多少？" }
+            ],
+            "sellerHeadImg": "https://cbu01.alicdn.com/img/ibank/2020/428/378/22185873824_536529798.jpg",
+            "wangwangId": "温州步云轩鞋业有限公司"
+        }
+    ],
+    "eventType": "DATA_DISPLAY",
+    "finishTime": 1763470866243,
+    "moduleName": "询盘进展",
+    "needHide": false,
+    "requestId": "9a37fb69-9114-4c5e-a8f9-edb73ba15928",
+    "sessionId": "kj-7c8bcc39-5971-4eb7-9889-878fab824c6d",
+    "timestamp": 1763469697097,
+    "title": "询盘进展"
+}

@@ -1,0 +1,20 @@
+.advancedOptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerOptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    cursor: pointer;
+    /* Text/Secondary */
+    /* 样式描述：次要文字 */
+    color: var(--text-tertiary);
+}

@@ -1,0 +1,40 @@
+.diff-dialog-header {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.diff-dialog-stateText {
+  display: flex;
+  justify-content: space-between;
+}
+
+.diff-dialog-color-333 {
+  color: #333;
+}
+.diff-dialog-tabelTitle {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.diff-dialog-btnBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.diff-dialog-img-text {
+  color: #07f;
+  padding-left: 8px;
+}
+.next-overlay-wrapper .next-overlay-inner {
+  z-index: 1000;
+}
+.next-overlay-wrapper .next-overlay-backdrop {
+  z-index: 999;
+}
+.next-loading-inline {
+  display: block;
+}

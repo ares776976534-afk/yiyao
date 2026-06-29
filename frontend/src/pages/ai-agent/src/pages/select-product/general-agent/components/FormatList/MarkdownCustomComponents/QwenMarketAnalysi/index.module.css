@@ -1,0 +1,11 @@
+.marketAnalysisItem {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.marketAnalysisItemContent {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+}

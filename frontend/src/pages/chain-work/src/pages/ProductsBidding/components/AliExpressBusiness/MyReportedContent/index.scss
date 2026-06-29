@@ -1,0 +1,352 @@
+.aeproducts-reported-container {
+  img {
+    display: block;
+  }
+
+  .filter {
+    background-color: #fff;
+  }
+
+  .searchFilter {
+    padding: 20px 0 0 0;
+
+    .searchButtonRow {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .searchButtons {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 24px;
+
+      .Btn {
+        margin-left: 20px;
+      }
+    }
+
+    .next-form.next-inline {
+      .next-col {
+        &:last-of-type {
+          .next-form-item {
+            margin-right: 0;
+          }
+        }
+
+        .next-form-item {
+          display: flex;
+          margin-right: 40px;
+          --form-label-padding-r: 12px;
+
+          .next-form-item-control {
+            flex: 1;
+
+            >span {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bidding-table {
+    margin: 0;
+    --table-normal-border-width: 0;
+    --table-th-bg: #f2f2f2;
+    --table-group-th-bg: #f8f8f8;
+    --table-th-color: #333;
+    --table-th-font-weight: 500;
+    --table-th-font-size: 13px;
+    --table-header-corner-top: 6px;
+
+    .next-table-header-inner th {
+      height: 50px;
+    }
+
+    .next-table-cell-wrapper {
+      padding: 16px 12px !important;
+    }
+
+    .next-table-body {
+      margin-top: 0;
+    }
+  }
+
+  .aeproducts-card-top-left {
+    width: 78px;
+    height: 78px;
+    margin-right: 10px;
+
+    .progressive-image-container,
+    .aeproducts-card-img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .baseInfo-cell {
+    .aeproducts-card-top {
+      display: flex;
+
+      .aeproducts-card-top-right {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+
+        .aeproducts-card-center-title {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      }
+
+      .aeproducts-card-describe-content {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        color: #999;
+
+        &.sku-info {
+          >div {
+            margin-right: 20px;
+
+            &:last-of-type {
+              margin-right: 0;
+            }
+
+            span:last-child {
+              color: #ff7300;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .demand-cell {
+    .aeproducts-card-top {
+      display: flex;
+    }
+
+    .aeproducts-card-top-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 13px;
+
+      .aeproducts-card-describe-title {
+        display: flex;
+      }
+
+      .aeproducts-card-describe-bottom {
+        color: #999;
+      }
+    }
+  }
+
+  .aeproducts-card-title {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    margin-right: 12px;
+  }
+
+  .aeproducts-card-text {
+    display: block;
+    line-height: 18px;
+    font-size: 13px;
+    color: #333;
+  }
+
+  .operator-btn {
+    margin-bottom: 8px;
+    color: #07f;
+    font-size: 13px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      color: #659fe1;
+    }
+  }
+
+  .result-cell {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .information-cell {
+    font-size: 13px;
+
+    .information-cell-content {
+      display: block;
+
+      .information-cell-item {
+        display: flex;
+        width: 100%;
+        margin-bottom: 4px;
+        color: #333;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
+        span:first-of-type {
+          min-width: 52px;
+          margin-right: 6px;
+          text-align: right;
+          color: #999;
+        }
+      }
+    }
+  }
+  
+  .submit-result-cell.textInfo {
+    justify-content: flex-start;
+  }
+
+  .submit-result-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+
+    .red-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      margin-right: 4px;
+      background-color: red;
+    }
+
+    .result-cell {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      margin-right: 4px;
+    }
+
+    .green-dot {
+      background-color: #25be13;
+    }
+
+    .orange-dot {
+      background-color: #ff7300;
+    }
+
+    .gray-dot {
+      background-color: #999;
+    }
+  }
+
+  .bidding-table-empty {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .pagination-content {
+    margin-top: 12px;
+    text-align: right;
+  }
+
+  .next-table-group-header>td>.next-table-cell-wrapper {
+    padding: 0 !important;
+
+    td {
+      border-bottom: none;
+
+      &:nth-last-child(-n + 2) {
+        text-align: center;
+      }
+    }
+  }
+
+  .multiple-sku-table {
+    tbody tr:first-child td {
+      border-top: none;
+    }
+  }
+
+  .group-opportunity-header {
+    display: flex;
+    font-size: 13px;
+
+    .opportunity-img {
+      width: 42px;
+      height: 42px;
+      margin-right: 12px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .opportunity-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      line-height: 1;
+      overflow: hidden;
+
+      .opportunity-title-container {
+        display: flex;
+        align-items: center;
+        color: #333;
+
+        .opportunity-tag {
+          padding: 2px 4px;
+          margin-right: 6px;
+          line-height: 14px;
+          background: linear-gradient(111deg, #fc6799 -25%, #fe8b6f 0%, #fc4365 28%, #fb1a28 91%);
+          border-radius: 3px;
+          font-weight: 500;
+          font-size: 12px;
+          color: #fff;
+          white-space: nowrap;
+        }
+
+        .opportunity-title {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+        }
+      }
+
+      .opportunity-desc {
+        display: flex;
+        color: #666;
+
+        div {
+          margin-right: 12px;
+
+          &:last-child {
+            margin-right: 0;
+            display: flex;
+            align-items: center;
+          }
+
+          .divider {
+            display: inline-flex;
+            height: 10px;
+            margin: 0 4px;
+            border-right: 1px solid #ddd;
+          }
+        }
+      }
+    }
+  }
+}

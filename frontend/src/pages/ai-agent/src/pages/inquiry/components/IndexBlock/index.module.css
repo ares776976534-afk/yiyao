@@ -1,0 +1,37 @@
+.indexBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.indexBlockHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.indexBlockHeaderTitle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.indexBlockHeaderTitleMain {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1D2129;
+  margin-right: 12px;
+}
+
+.indexBlockHeaderTitleSub {
+  font-size: 13px;
+  color: #7B7B8D;
+}
+
+.indexBlockContent {
+  margin-top: 14px;
+}
+
+.indexBlockContentNoTitle {
+  margin-top: 0;
+}

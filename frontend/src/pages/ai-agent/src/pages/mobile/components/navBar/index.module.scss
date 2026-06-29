@@ -1,0 +1,103 @@
+.mobileNavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13rpx 16rpx;
+    height: 56rpx;
+
+    // 覆盖 LanguageSettings 组件样式为 rpx
+    div[class*='languageSettingsContainer'] {
+        position: unset;
+    }
+
+    div[class*='languageSettingsItem'] {
+        gap: 6rpx !important;
+    }
+
+    div[class*='languageSettingsItemText'] {
+        gap: 4rpx !important;
+        font-size: 16rpx !important;
+        line-height: 24rpx !important;
+    }
+
+    div[class*='languageSettingsItemImage'] {
+        border-radius: 8rpx !important;
+    }
+
+    img[class*='languageSettingsItemImageIcon'] {
+        width: 32rpx !important;
+        height: 32rpx !important;
+    }
+
+    div[class*='languageSettingsItemImageText'] {
+        font-size: 14rpx !important;
+        line-height: 20rpx !important;
+    }
+
+    div[class*='languageSettingsLoginButton'] {
+        font-size: 13rpx;
+        width: 72rpx;
+        height: 30rpx;
+        padding: 0;
+        border-radius: 6rpx;
+        border: none;
+        min-width: 72rpx;
+    }
+
+    div[class*='languageSettingsItemLabel'] {
+        gap: 10rpx !important;
+    }
+}
+
+.mobileNavBarLeftIcon {
+    display: flex;
+    align-items: center;
+    gap: 12rpx;
+}
+
+.mobileNavBarRightIcon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10rpx;
+}
+
+.mobileNavBarRightIconItem {
+    width: 30rpx;
+    height: 30rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999rpx;
+    box-sizing: border-box;
+    border: 1rpx solid var(--border-primary);
+}
+
+// Dropdown 相关样式覆盖
+:global(.mobile-navbar-dropdown .dropdown-content) {
+    width: 240rpx !important;
+}
+
+:global(.mobile-navbar-dropdown .dropdown-content-arrow) {
+    opacity: 1 !important;
+}
+
+// 语言选择下拉菜单样式覆盖
+:global(.mobile-navbar-dropdown.language-dropdown-overlay) {
+    :global(.ant-dropdown-menu) {
+        min-width: 200rpx !important;
+        padding: 8rpx !important;
+        gap: 2rpx !important;
+        border-radius: 16rpx !important;
+        border: 1rpx solid var(--border-secondary) !important;
+    }
+
+    :global(.ant-dropdown-menu-item) {
+        padding: 12rpx !important;
+        gap: 10rpx !important;
+        border-radius: 8rpx !important;
+        font-size: 14rpx !important;
+        line-height: 20rpx !important;
+    }
+}

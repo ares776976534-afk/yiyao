@@ -1,0 +1,105 @@
+.shareController {
+  position: fixed;
+  bottom: 32px;
+  left: 50vw;
+  z-index: var(--z-index-ai-chat);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: var(--menu-bg);
+  box-shadow: var(--menu-box-shadow);
+  backdrop-filter: var(--menu-backdrop-filter);
+  transform: translateX(-50%);
+
+  .btnPlay {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+
+  .divider {
+    width: 1px;
+    height: 24px;
+    background-color: var(--menu-divider-color);
+    border-radius: 1px;
+  }
+
+  .btnGroup {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    :global {
+      .studio-btn {
+        --studio-control-height: auto;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .jumpToResult {
+    min-width: 111px;
+    padding: 8px 16px;
+    font-size: 16px;
+    color: var(--block-color);
+    border: 1px solid var(--block-border-color);
+    border-radius: 8px;
+    background: var(--block-bg);
+    cursor: pointer;
+  }
+
+  .doTheSame {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    min-width: 111px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background: var(--color-brand-1);
+
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .icon {
+    fill: #fff;
+    color: #000;
+  }
+
+  .sameIcon {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+  }
+
+  [data-theme="dark"] & {
+    .jumpToResult {
+      border: none;
+      background: var(--color-white-12);
+    }
+  }
+
+  [data-theme="light"] & {
+    .icon {
+      fill: var(--color-brand-1);
+      color: #fff;
+      &:hover {
+        fill: var(--studio-color-primary-hover);
+      }
+    }
+  }
+
+  [data-theme="dark"] & {
+    .icon {
+      &:hover {
+        // fill: #f7f7fa;
+        fill: #dfdfdf;
+      }
+    }
+  }
+}

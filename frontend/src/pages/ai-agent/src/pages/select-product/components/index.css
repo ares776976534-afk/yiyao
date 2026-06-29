@@ -1,0 +1,147 @@
+/* 追问问题淡入上移动画 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 选中 left-container-wrapper 下的第一个元素的第一个元素 */
+.left-container-wrapper>*:first-child>*:first-child {
+  margin-top: 0;
+}
+
+/* 默认规则：COMPARED_PRODUCT元素默认没有border-left */
+.plan-content-item-COMPARED_PRODUCT {
+  border-left: none;
+  padding-left: 14px;
+  margin-left: 8px;
+}
+
+/* 特定规则：只有当COMPARED_PRODUCT后面有TASK_EXECUTION_BRIEF时，才显示border-left */
+.plan-content-item-COMPARED_PRODUCT:has(~ .plan-content-item-TASK_EXECUTION_BRIEF) {
+  border-left: 1.2px dashed #E7E8EE;
+  padding-left: 14px;
+  margin-left: 8px;
+}
+
+/* 默认规则：IMPROVED_ANALYSIS_PRODUCT元素默认没有border-left */
+.plan-content-item-IMPROVED_ANALYSIS_PRODUCT {
+  border-left: none;
+  padding-left: 14px;
+  margin-left: 8px;
+}
+
+/* 特定规则：只有当IMPROVED_ANALYSIS_PRODUCT后面有TASK_EXECUTION_BRIEF时，才显示border-left */
+.plan-content-item-IMPROVED_ANALYSIS_PRODUCT:has(~ .plan-content-item-TASK_EXECUTION_BRIEF) {
+  border-left: 1.2px dashed #E7E8EE;
+  padding-left: 14px;
+  margin-left: 8px;
+}
+
+/* 核心规则：当存在TASK_EXECUTION_BRIEF时，给后面的其他非TASK_EXECUTION_BRIEF元素添加border-left */
+.plan-content-item-TASK_EXECUTION_BRIEF~.plan-content-item:not(.plan-content-item-TASK_EXECUTION_BRIEF):not(.plan-content-item-COMPARED_PRODUCT):not(.plan-content-item-IMPROVED_ANALYSIS_PRODUCT) {
+  border-left: 1.2px dashed #E7E8EE;
+  padding-left: 14px;
+  margin-left: 8px;
+  margin-bottom: -12px;
+  padding-bottom: 12px;
+}
+
+.plan-content-item-TASK_EXECUTION_BRIEF~.plan-content-item:not(.plan-content-item-TASK_EXECUTION_BRIEF):not(.plan-content-item-COMPARED_PRODUCT):not(.plan-content-item-IMPROVED_ANALYSIS_PRODUCT):last-child {
+  border-left: none;
+}
+
+.plan-content-item-MARKDOWN_TEXT .markdown-component {
+  margin: 0 16px;
+  ol+ul:not(:last-child) {
+    border-left: 1.2px solid #E7E8EE;
+    padding-left: 14px;
+    margin-left: 5px;
+  }
+}
+
+/* 禁用所有表格行的hover效果 */
+.ant-table-tbody>tr:hover>td {
+  background-color: transparent !important;
+}
+
+.ant-table-tbody>tr:hover {
+  background-color: transparent !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* 启用滚动锚定 */
+.left-container-wrapper {
+  overflow-anchor: auto;
+}
+
+/* THINKING 卡片不参与锚定 */
+.block-type-THINKING {
+  overflow-anchor: none;
+}
+
+/* 高度变化平滑过渡 */
+.last-block:not(.block-type-THINKING) {
+  min-height: 455px;
+  transition: min-height 0.3s ease-out;
+}
+
+.block-status-COMPLETED {
+  display: none;
+}
+
+.animate-right-panel-open {
+  animation: animate-right-panel-open .3s cubic-bezier(.17,.67,.25,.94);
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate-right-panel-open {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0);
+    /* width: auto; */
+  }
+}
+
+.animate-right-panel-hidden {
+  animation: animate-right-panel-hidden .3s cubic-bezier(.49,.11,.83,.67);
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate-right-panel-hidden {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+    width: 0;
+  }
+}
+
+.left-container-wrapper {
+  position: relative;
+}
+
+#left-container .block-type-USER_REQUEST:nth-child(2) {
+  & > div {
+    margin-top: 0 !important;
+  }
+}
+
+#left-container .block-type-MODULE + .block-type-ICON_TITLE_CARD {
+  margin-top: 36px;
+}

@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 40px);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 0px 10px;
+  align-items: center;
+  min-height: 24px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--text-primary);
+  white-space: nowrap;
+  flex: 1;
+}
+
+.closeIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.historyList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 4px;
+  overflow-y: auto;
+}
+
+.loadMorePlaceholder {
+  height: 2px;
+}
+
+.closeIconWrapper {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--icon-tertiary);
+  border-radius: 4px;
+}
+
+.closeIconWrapper:hover {
+  background-color: #F4F4FC;
+}

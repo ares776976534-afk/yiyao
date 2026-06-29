@@ -1,0 +1,24 @@
+.messageContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.downloadModalContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 20px;
+}
+
+.downloadModal {
+  padding: 16px !important;
+  :global {
+    .studio-modal-confirm-title {
+      padding: 2px 0;
+    }
+    .studio-checkbox + span {
+      padding: 0 6px;
+    }
+  }
+}

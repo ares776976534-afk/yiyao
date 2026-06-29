@@ -1,0 +1,60 @@
+.ant-upload {
+  border-radius: 6px!important;
+}
+
+// 自定义Upload样式
+.warehouse-docs-upload,
+.site-photos-upload,
+.product-docs-upload {
+  .ant-upload-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+    
+  // 隐藏默认的预览、删除按钮
+  .ant-upload-list-item-actions {
+    display: none !important;
+  }
+    
+  .ant-upload-list-item-card-actions {
+    display: none !important;
+  }
+    
+  // 上传进度条样式
+  .ant-upload-list-item-progress {
+    position: absolute !important;
+    bottom: 8px !important;
+    left: 8px !important;
+    right: 8px !important;
+    width: auto !important;
+        
+    .ant-progress-bg {
+      background: #1677ff !important;
+    }
+  }
+}
+
+// 错误上传项样式优化
+.upload-error-item {
+  transition: all 0.3s ease;
+    
+  &:hover {
+    border-color: #ff7875 !important;
+    background-color: rgba(255, 77, 79, 0.05) !important;
+  }
+}
+
+// 图片预览样式优化
+.image-preview-overlay {
+  transition: all 0.3s ease;
+    
+  .action-btn {
+    transition: all 0.2s ease;
+        
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.9) !important;
+      transform: scale(1.1);
+    }
+  }
+}

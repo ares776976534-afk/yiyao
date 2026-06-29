@@ -1,0 +1,278 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: fit-content;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .totalText {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .totalLabel {
+    color: var(--text-secondary);
+  }
+  
+  .totalNumber {
+    color: var(--text-accent);
+  }
+  
+  .paginationControls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: fit-content;
+    height: fit-content;
+    gap: 16px;
+    box-sizing: border-box;
+    padding: 12px 0px;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+  }
+  
+  .pageSize {
+    width: fit-content;
+    height: fit-content;
+    min-height: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .pageSizeLabel {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: var(--text-secondary);
+  }
+  
+  .pageSizeSelect {
+    width: 60px;
+    height: 24px;
+  }
+  
+  .pageSizeUnit {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: normal;
+    color: var(--text-secondary);
+  }
+  
+  .paginationWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: fit-content;
+    height: fit-content;
+    gap: 6px;
+    align-items: center;
+    min-height: 24px;
+  }
+  
+  .prevButton {
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 0px 8px;
+    justify-content: center;
+    align-items: center;
+    background: var(--fill-white);
+    box-sizing: border-box;
+    border: 1px solid var(--border-secondary);
+    height: 24px;
+  }
+  
+  .prevText {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: var(--text-secondary);
+  }
+  
+  .pageNumbers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: fit-content;
+    height: fit-content;
+    gap: 6px;
+    min-height: 24px;
+  }
+  
+  .pageNumberActive {
+    border-radius: 4px;
+    background: var(--button-primary);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .pageNumberActiveText {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--text-white);
+    white-space: nowrap;
+  }
+  
+  .pageNumber {
+    border-radius: 4px;
+    background: var(--fill-white);
+    box-shadow: inset 0 0 0 1px #F3F3F6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .pageNumberText {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--text-primary);
+    white-space: nowrap;
+  }
+  
+  .lastPageNumber {
+    border-radius: 4px;
+    background: var(--fill-white);
+    box-shadow: inset 0 0 0 1px #F3F3F6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 0px 8px;
+    justify-content: center;
+    align-items: center;
+    min-width: 36px;
+    height: 24px;
+  }
+  
+  .nextButton {
+    border-radius: 4px;
+    background: var(--fill-white);
+    box-shadow: inset 0 0 0 1px #F3F3F6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 0px 8px;
+    justify-content: center;
+    align-items: center;
+    min-width: 52px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .nextText {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--text-primary);
+    white-space: nowrap;
+  }
+  
+  .goToPage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: fit-content;
+    height: fit-content;
+    gap: 8px;
+    align-items: center;
+    min-height: 24px;
+  }
+  
+  .goToLabel {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: normal;
+    color: var(--text-secondary);
+  }
+  
+  .goToInput {
+    width: 72px;
+    display: flex;
+    align-items: center;
+    padding: 4px 6px;
+    gap: 4px;
+    border-radius: 4px;
+    background: var(--fill-white);
+    box-sizing: border-box;
+    border: 1px solid var(--border-secondary);
+  }
+  
+  .inputField {
+    height: 16px;
+    flex: 1;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 16px;
+    letter-spacing: normal;
+    color: var(--text-secondary);
+    border: 0;
+    border-color: unset !important;
+    box-shadow: unset !important;
+  }
+  
+  .confirmButton {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: var(--text-accent);
+  }
+  
+  /* 禁用状态样式 */
+  .prevButton.disabled,
+  .nextButton.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  
+  .prevButton.disabled .prevText,
+  .nextButton.disabled .nextText {
+    color: var(--text-secondary);
+  }
+  
+  .confirmButton {
+    cursor: pointer;
+  }
+  
+  .confirmButton:hover {
+    background-color: var(--fill-secondary);
+  }
+
+  .inputField :global(.ant-input-number-input) {
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+  

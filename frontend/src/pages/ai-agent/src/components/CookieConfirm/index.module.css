@@ -1,0 +1,179 @@
+.container {
+  border-radius: 16px;
+  background: #FFFFFF;
+  /* box-shadow: inset 0 0 0 1px #EEEFFE; */
+  border: 1px solid #EEEFFE;
+  box-shadow: 0px 0px 20px 0px rgba(110, 80, 255, 0.06);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 420px;
+  min-height: 198px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 12px;
+  width: 380px;
+  min-height: 98px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: 6px;
+  align-items: center;
+  min-width: 94px;
+  min-height: 26px;
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1B1C1D;
+  white-space: nowrap;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 380px;
+  /* display: -webkit-box; */
+  /* height: 60px; */
+  /* -webkit-line-clamp: 3; */
+  /* -webkit-box-orient: vertical; */
+  white-space: pre-wrap;
+  word-break: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.descriptionText {
+  color: #7C7F9A;
+}
+
+.policyLink {
+  color: #6E50FF;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 8px;
+  width: 380px;
+  min-height: 40px;
+}
+
+.customizeButton {
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 1px #E7E8EE;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 8px 20px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 121px;
+  min-height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.customizeButton:hover {
+  background: #F8F9FA;
+}
+
+.rejectButton {
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 1px #E7E8EE;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 8px 20px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 121px;
+  min-height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rejectButton:hover {
+  background: #F8F9FA;
+}
+
+.acceptButton {
+  border-radius: 8px;
+  background: #6E50FF;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 8px 20px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 121px;
+  min-height: 40px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.acceptButton:hover {
+  background: #5B3FD6;
+}
+
+.buttonText {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1B1C1D;
+  white-space: nowrap;
+}
+
+.acceptButtonText {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #FFFFFF;
+  width: 96px;
+  white-space: nowrap;
+  text-align: center;
+}

@@ -1,0 +1,22 @@
+.itemTitle {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 14px;
+    color: #333;
+    width: 176px;
+    line-height: 1.4;
+}
+
+.itemTitle::before {
+    content: '';
+    float: right;
+    width: 0;
+    height: 1.4em; /* 设置为一行的高度 */
+}
+
+.sameNumModalContentContainer :global(.ant-modal-content) {
+    padding: 20px;
+    border-radius: 12px;
+}

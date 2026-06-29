@@ -1,0 +1,51 @@
+.taskSummary {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headerIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.headerTitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--icon-primary);
+}
+
+.summaryCard {
+  border-radius: 8px;
+  background: #fbfbfd;
+  /* padding: 16px; */
+  width: 100%;
+}
+
+.summaryCard :global(.ant-card-body) {
+  /* padding: 16px; */
+}
+
+.summaryContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.summaryContent :global(h1){
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 24px;
+  letter-spacing: normal;
+  /* Text/主要 color-text-1 */
+  color: var(--icon-primary);
+  margin-bottom: 12px;
+}

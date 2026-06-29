@@ -1,0 +1,59 @@
+{
+  "name": "@alife/1688-chain-dialog-provider",
+  "version": "0.0.1",
+  "description": "组件功能描述",
+  "files": [
+    "esm",
+    "es2017",
+    "cjs",
+    "dist",
+    "build"
+  ],
+  "main": "esm/index.js",
+  "module": "esm/index.js",
+  "types": "esm/index.d.ts",
+  "exports": {
+    ".": {
+      "es2017": {
+        "types": "./es2017/index.d.ts",
+        "default": "./es2017/index.js"
+      },
+      "default": {
+        "types": "./esm/index.d.ts",
+        "default": "./esm/index.js"
+      }
+    },
+    "./*": "./*"
+  },
+  "sideEffects": [
+    "dist/*"
+  ],
+  "scripts": {
+    "start": "ice-pkg start",
+    "build": "ice-pkg build",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ice",
+    "web",
+    "library"
+  ],
+  "dependencies": {
+    "@alife/dior-fetch-data": "^1.3.4",
+    "@ice/jsx-runtime": "^0.2.0",
+    "antd": "^5.11.5",
+    "@swc/helpers": "^0.5.1"
+  },
+  "devDependencies": {
+    "@ice/pkg": "^1.0.0",
+    "@ice/pkg-plugin-docusaurus": "^1.4.18",
+    "@ice/remark-react-docgen-docusaurus": "^1.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.anpm.alibaba-inc.com"
+  },
+  "license": "MIT",
+  "repository": "git@gitlab.alibaba-inc.com:1688-global/chain-universal.git"
+}

@@ -1,0 +1,145 @@
+$hoverBackColor: var(--block-hover-bg-2);
+
+.historyListPopoverBody {
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.historyListContainer {
+
+  width: 200px;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 8px;
+  border-radius: 12px;
+  background: var(--history-list-bg);
+  border: var(--history-list-border);
+
+  .historyListContent {
+    // flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow-y: auto;
+  }
+
+  .historyGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .historyGroupTitle {
+      font-family: PingFang SC;
+      font-size: 10px;
+      font-weight: normal;
+      line-height: 16px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  .emptyHistory {
+    font-size: 13px;
+    font-weight: normal;
+    color: var(--block-color);
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .historyItem {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 4px;
+    border-radius: 8px;
+    color: var(--menu-item-color);
+    cursor: pointer;
+    position: relative;
+
+    >div {
+      flex-shrink: 0;
+    }
+
+    &:hover,
+    &.active {
+      background: $hoverBackColor;
+
+      .moreIconWrap {
+        display: flex;
+      }
+    }
+
+    .historyItemImage {
+      width: 32px;
+      height: 32px;
+      border-radius: 4px;
+      object-fit: contain;
+    }
+
+    .historyItemTitle {
+      flex: 1;
+      font-family: PingFang SC;
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .moreIconWrap {
+      width: 24px;
+      height: 24px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+
+      &:hover {
+        background: $hoverBackColor;
+      }
+
+      .moreIcon {
+        color: var(--history-more-icon-color);
+      }
+    }
+  }
+}
+
+.actionBar {
+  border-radius: 12px;
+  background: var(--menu-bg);
+  backdrop-filter: var(--menu-backdrop-filter);
+  padding: 4px;
+
+  .actionBtn {
+    width: 66px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: PingFang SC;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+
+    &:hover {
+      background-color: $hoverBackColor;
+    }
+
+    .actionIcon {
+      width: 14px;
+      height: 14px;
+      color: var(--block-color);
+    }
+  }
+}

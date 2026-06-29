@@ -1,0 +1,70 @@
+.join-dialog {
+  width: 640px;
+  .next-dialog-body {
+    padding: 12px 20px 16px 20px !important;
+  }
+  .next-dialog-footer .next-align-right {
+    padding: 0 20px 20px 20px !important;
+  }
+  .footer-cell {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .close {
+      margin-left: 20px;
+    }
+  }
+
+  .subTitle {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: normal;
+    color: #333;
+  }
+
+  .qqjx_agreement_text_cell {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: normal;
+    color: #333;
+  }
+}
+
+.action-join {
+  color: #07f;
+  cursor: pointer;
+}
+
+.dialog-result {
+  width: 360px;
+
+  .next-dialog-header {
+    padding-left: 20px !important;
+
+    .title {
+      font-size: 16px;
+      font-weight: normal;
+      line-height: normal;
+      color: #000;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .error-img {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .next-dialog-body {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: 0;
+    color: #333;
+  }
+}

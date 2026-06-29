@@ -1,0 +1,161 @@
+.supplierAddCard {
+  display: flex;
+  padding: 12rpx;
+  gap: 12rpx;
+  border-radius: 8rpx;
+  background: var(--fill-white);
+  box-sizing: border-box;
+  border: 1rpx solid var(--border-primary);
+  cursor: pointer;
+  transition: all 0.2s;
+  
+  &:hover {
+    :global(.adm-checkbox:not(.adm-checkbox-disabled) .adm-checkbox-icon) {
+      border-color: var(--icon-accent) !important;
+    }
+  }
+  
+  &:active {
+    background: var(--fill-secondary);
+  }
+}
+
+.supplierAddCardChecked {
+  border: 1rpx solid #6E50FF !important;
+}
+
+// 禁用状态的卡片
+.supplierAddCard:has(:global(.adm-checkbox-disabled)) {
+  cursor: not-allowed;
+  opacity: 0.6;
+  
+  &:active {
+    background: var(--fill-white);
+  }
+}
+
+.supplierAddCardImage {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 4rpx;
+}
+
+.supplierAddCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.supplierAddCardContentTitle {
+  font-family: PingFang SC;
+  font-size: 14rpx;
+  font-weight: 500;
+  line-height: 20rpx;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.headerTitleWantWant {
+  display: flex;
+  align-items: center;
+  gap: 4rpx;
+}
+
+.wantWantIcon {
+  width: 14rpx;
+  height: 14rpx;
+}
+
+.headerTitleWantWantText {
+  font-family: PingFang SC;
+  font-size: 12rpx;
+  font-weight: normal;
+  line-height: 16rpx;
+  letter-spacing: normal;
+  color: var(--text-tertiary);
+}
+
+.supplierAddCardRight {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  
+  // 复写 Checkbox 样式，与 KeywordsCard Radio 保持一致
+  :global(.adm-checkbox) {
+    --icon-size: 18rpx;
+    --font-size: 14rpx;
+    --gap: 0;
+  }
+  
+  :global(.adm-checkbox-icon) {
+    width: 18rpx;
+    height: 18rpx;
+    border-radius: 18rpx;
+    border: 1rpx solid var(--border-primary);
+    transition: border-color 0.2s;
+  }
+  
+  :global(.adm-checkbox-checked .adm-checkbox-icon) {
+    background-color: #6E50FF;
+    border-color: #6E50FF;
+    position: relative;
+  }
+  
+  :global(.adm-checkbox-checked .adm-checkbox-icon::after) {
+    content: '';
+    display: block;
+    width: 12rpx;
+    height: 12rpx;
+    background-image: url(https://img.alicdn.com/imgextra/i3/O1CN015jvM241vejueNFEz1_!!6000000006198-2-tps-24-24.png);
+    background-size: 12rpx;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  :global(.adm-checkbox-icon::before) {
+    display: none;
+  }
+  :global(.adm-checkbox-disabled .adm-checkbox-icon) {
+    position: relative !important;
+  }
+  :global(.adm-checkbox-disabled .adm-checkbox-icon::after) {
+    content: '';
+    display: block;
+    width: 12rpx;
+    height: 12rpx;
+    background-image: url(https://img.alicdn.com/imgextra/i3/O1CN015jvM241vejueNFEz1_!!6000000006198-2-tps-24-24.png);
+    background-size: 12rpx;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: none;
+  }
+  
+  // 禁用且选中状态
+  :global(.adm-checkbox-disabled.adm-checkbox-checked .adm-checkbox-icon) {
+    background-color: #E7E8EE !important;
+    border-color: #E7E8EE !important;
+    position: relative !important;
+  }
+  
+  :global(.adm-checkbox-disabled.adm-checkbox-checked .adm-checkbox-icon::before) {
+    display: none !important;
+  }
+}

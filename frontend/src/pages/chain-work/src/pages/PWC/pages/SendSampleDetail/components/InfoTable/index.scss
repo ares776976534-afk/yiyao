@@ -1,0 +1,37 @@
+.pwc-home-infotable {
+  .next-table {
+    th .next-table-cell-wrapper {
+      padding-left: 10px;
+      color: #333;
+
+      &:first-child {
+        padding-left: 16px;
+      }
+    }
+
+    th {
+
+      &.next-table-selection {
+        .next-table-cell-wrapper {
+          padding-left: 16px;
+        }
+      }
+    }
+
+    .next-table-cell {
+      vertical-align: top;
+    }
+
+    td {
+      .next-table-cell-wrapper {
+        padding: 18px 10px;
+      }
+
+      &.next-table-selection {
+        .next-table-cell-wrapper {
+          padding: 18px 0 0 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.ProductRating {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ProductRatingItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ProductRatingItemHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ProductRatingItemIcon {
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+}
+
+.ProductRatingItemTitle {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.ProductRatingContent {
+  display: flex;
+  align-items: center;
+  gap: 8px 8px;
+  flex-wrap: wrap;
+}
+
+.tabItem {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  gap: 8px;
+  border-radius: 6px;
+  background: var(--fill-white);
+  box-sizing: border-box;
+  border: 1px solid var(--border-primary);
+}
+
+.tabItemTitle {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.tabItemValue {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}
+
+.emptyText {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}

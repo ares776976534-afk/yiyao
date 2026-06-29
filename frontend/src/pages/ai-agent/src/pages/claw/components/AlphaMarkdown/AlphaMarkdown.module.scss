@@ -1,0 +1,26 @@
+.root {
+  // SyntaxHighlighter 渲染的 <pre> 会被 .alpha-markdown pre CSS 追加
+  // position / overflow 等属性（inline style 未覆盖的），这里用 !important 彻底清理
+  :global(.am-code-block) pre {
+    position: static !important;
+    margin: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: var(--am-color-fill-background, #fff) !important;
+    overflow: auto !important;
+  }
+
+  // .am-table-block 内的 table 由外部卡片承担边框
+  :global(.am-table-block) table {
+    margin: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+  }
+
+  // flowtoken 把文本包在 inline-block span 中，在表格单元格里会折行异常
+  :global(td) span,
+  :global(th) span {
+    display: inline !important;
+  }
+}

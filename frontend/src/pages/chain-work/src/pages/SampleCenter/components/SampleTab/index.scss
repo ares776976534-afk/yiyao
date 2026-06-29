@@ -1,0 +1,9 @@
+.tab-container {
+  --tab-pure-text-color-normal: #333;
+  --tab-pure-text-color-selected: #07f;
+  --tab-item-font-weight-selected: 600;
+  .next-tabs.next-medium .next-tabs-tab-inner {
+    font-size: 16px;
+    padding: 11px 16px;
+  }
+}

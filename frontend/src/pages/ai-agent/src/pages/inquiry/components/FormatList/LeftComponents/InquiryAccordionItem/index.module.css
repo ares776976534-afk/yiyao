@@ -1,0 +1,129 @@
+.inquiryRequirement {
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 12px;
+  background: #F8F9FA;
+  border: 1px solid #E7E8EE;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+}
+
+.inquiryRequirement:hover {
+  background: #F3F4F6;
+  border-color: #D1D5DB;
+}
+
+.cardContent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.leftContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #1D1E29;
+  margin-bottom: 6px;
+}
+
+.description {
+  font-size: 12px;
+  line-height: 18px;
+  color: #7B7B8D;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.imageContainer {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inquiryCard {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 18px;
+}
+
+.leftBox {
+  width: 20px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+}
+
+.leftBoxOkIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.leftBoxInProgress {
+  margin-top: 1px;
+}
+
+.leftBox::after {
+  content: '';
+  width: 1px;
+  background-color: #e7e8ee;
+  flex: 1;
+  margin-top: 8px;
+  min-height: 20px;
+}
+
+.leftBoxNotAfter::after {
+  display: none;
+}
+
+.leftBoxInProgress::after {
+  content: '';
+  width: 1px;
+  background: linear-gradient(180deg, #e7e8ee 5%, rgba(231, 232, 238, 0) 101%);
+  flex: 1;
+  margin-top: 8px;
+  min-height: 20px;
+}
+
+.spinningIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+}
+
+.spinningIcon {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

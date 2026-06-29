@@ -1,0 +1,21 @@
+// 设计稿基准宽度
+$design-width: 1980 !default;
+
+// CSS自定义属性作为备用
+:root {
+  --design-width: #{$design-width};
+}
+
+// 简化函数名 - 支持CSS变量回退
+@function vw($px-value, $design-width: $design-width) {
+  @return ($px-value / $design-width * 100) * 1vw;
+}
+
+// CSS变量版本 - 用于动态切换
+@function vw-css($px-value) {
+  @return calc(#{$px-value} / var(--design-width) * 100vw);
+}
+
+@function vw-1500($px-value) {
+  @return vw($px-value, 1500);
+}

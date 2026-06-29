@@ -1,0 +1,15 @@
+export const SCHEMA_INPUT = 'input';
+export const SCHEMA_RANGE_PICKER = 'rangePicker';
+export const SCHEMA_SELECT = 'select';
+export const SCHEMA_DATE_PICKER = 'datePicker';
+export const SCHEMA_ASYNC_SELECT = 'asyncSelect';
+export const SCHEMA_SEARCH = 'search';
+export const SCHEMA_TEXTAREA = 'textArea';
+export const SCHEMA_BARCODE = 'barcode';
+export const SCHEMA_CHECKBOX = 'checkbox';
+export const SCHEMA_TREE_SELECT = 'treeSelect';
+export const SCHEMA_CHECKBOX_GROUP = 'checkboxGroup';
+export const SCHEMA_RADIO_GROUP = 'radioGroup';
+export const SCHEMA_INPUT_CASCADER = 'inputCascader';
+export const SCHEMA_SELECT_CARDS = 'selectedCards';
+export const SCHEMA_CASCADER_SELECT = 'CascaderSelect';

@@ -1,0 +1,162 @@
+.keywordAnalysisContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: 10px;
+}
+
+.keywordAnalysisHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.keywordAnalysisHeaderLeft {
+  width: 262px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.keywordAnalysisHeaderLeftTitle {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}
+
+.keywordAnalysisHeaderLeftSubtitle {
+  font-family: AlibabaSans102;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.keywordAnalysisHeaderRight {
+  display: flex;
+  align-items: center;
+}
+
+.platformIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--fill-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.platformIconImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.regionIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 24px;
+  background: var(--fill-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  margin-left: -12px;
+}
+
+.keywordAnalysisContentContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.keywordAnalysisContent {
+  border-radius: 8px;
+  background: var(--fill-white);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 17px;
+}
+
+.keywordAnalysisContentHeader {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.keywordAnalysisContentTitle {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #4D4D5F;
+}
+
+.keywordAnalysisContentValue {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.keywordAnalysisContentValueNumber {
+  font-family: Alibaba Sans 102;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.keywordAnalysisContentValueUnit {
+  font-family: Alibaba Sans 102;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 22px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.keywordAnalysisContentValueDivider {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.keywordAnalysisContentValueDividerIcon {
+  font-family: Alibaba PuHuiTi 3.0;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 13px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  opacity: 0.16;
+}
+
+.keywordAnalysisContentValueDividerText {
+  font-family: Alibaba PuHuiTi 3.0;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 13px;
+  letter-spacing: normal;
+}
+
+.infoIcon {
+  width: 14px;
+  height: 14px;
+}

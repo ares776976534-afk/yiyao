@@ -1,0 +1,32 @@
+.recommendCard {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 4px;
+    border-radius: 12px;
+    background: linear-gradient(176deg, rgba(219, 156, 255, 0.14) 0%, rgba(237, 245, 255, 0.003) 36%), #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-image: linear-gradient(131deg, #FD6CFF 9%, #C957FF 14%, #6E50FF 21%, #000DFF 51%, #6E50FF 67%, #4086FF 73%, #40BCFF 77%) 1;
+}
+
+.recommendCardTitle {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: normal;
+    background: linear-gradient(99deg, #FEA7FF -7%, #6E50FF 14%, #6E50FF 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.recommendCardDescription {
+    padding: 8px 0px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+}

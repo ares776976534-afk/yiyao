@@ -1,0 +1,85 @@
+// ==========================================================================
+// Loading & Streaming — AI response loading dots + streaming caret
+// ==========================================================================
+
+@use "variables" as *;
+
+// -- Loading dots (displayed before content arrives) -----------------------
+
+.am-loading {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 0;
+
+  span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $color-text-quaternary;
+    animation: am-dot-bounce 1.4s ease-in-out infinite both;
+
+    &:nth-child(1) {
+      animation-delay: 0s;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.16s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.32s;
+    }
+  }
+}
+
+@keyframes am-dot-bounce {
+  0%,
+  80%,
+  100% {
+    transform: scale(0.6);
+    opacity: 0.4;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+// -- Streaming caret (appended while content is being streamed) ------------
+// Add class `am-streaming` to the `.alpha-markdown` container.
+// A blinking cursor appears after the last rendered element.
+
+.alpha-markdown.am-streaming {
+  // 如果后续需要针对流式模式加其他样式可以写在这里
+
+  // > *:last-child::after {
+  //   content: "";
+  //   display: inline-block;
+  //   width: 2px;
+  //   height: 1.1em;
+  //   margin-left: 2px;
+  //   background: $color-text-accent;
+  //   border-radius: 1px;
+  //   vertical-align: text-bottom;
+  //   animation: am-caret-blink 0.6s steps(2, start) infinite;
+  // }
+
+  // // Code block: place caret inside the last code line
+  // > .am-code-block:last-child pre code::after {
+  //   content: "";
+  //   display: inline-block;
+  //   width: 2px;
+  //   height: 1.1em;
+  //   margin-left: 2px;
+  //   background: $color-text-accent;
+  //   border-radius: 1px;
+  //   vertical-align: text-bottom;
+  //   animation: am-caret-blink 0.6s steps(2, start) infinite;
+  // }
+}
+
+@keyframes am-caret-blink {
+  to {
+    opacity: 0;
+  }
+}

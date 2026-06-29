@@ -1,0 +1,409 @@
+@import "../../styles/agentAntd/reset.css";
+/* 用于标记 AgentLayout 组件的 Tooltip，通过 overlayClassName 使用 */
+.sider {
+  position: relative;
+}
+
+.collapsedSider,
+.sider {
+  position: relative;
+  z-index: 9;
+}
+
+.sider {
+  padding: 16px 12px;
+  background: var(--fill-white);
+  box-sizing: border-box;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: var(--border-secondary);
+}
+
+.sider :global(.ant-layout-sider-children) {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+
+.siderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.siderContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.siderContent ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.siderContent ul::before {
+  content: none;
+}
+
+.collapsedSider .siderContent {
+  height: calc(100% - 80px);
+}
+
+.brandLogo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.brandLogoIcon {
+  width: 36px;
+  height: 36px;
+}
+
+.brandContent {
+  width: 75px;
+  height: 25px;
+  display: flex;
+}
+
+.brandIcon {
+  width: 24.4px;
+  height: 25px;
+  margin-left: 1.56px;
+}
+
+.brandTextIcon {
+  width: 55px;
+  height: 24px;
+}
+
+.collapsedBrandIcon {
+  width: 26x;
+  height: 19px;
+  margin: 9px 5px 8px;
+}
+
+.collapsedBrandLogo {
+  justify-content: center;
+  display: flex;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--fill-white);
+  cursor: pointer;
+}
+
+.collapsedHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.userIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.layoutFoldIcon {
+  cursor: pointer;
+}
+
+.layoutFoldIconRotate {
+  transform: rotate(180deg);
+}
+
+.footerGuideItem {
+  position: relative;
+  cursor: pointer;
+}
+
+.footerGuideContent {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.footerGuide {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.footerGuideText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+/* PointIcon hover微动效果 */
+.footerGuide svg {
+  transition: transform 0.2s ease-in-out;
+}
+
+.footerGuideItem:hover .footerGuide svg {
+  transform: translateX(2px);
+  animation: pointIconPulse 0.6s ease-in-out;
+}
+
+@keyframes pointIconPulse {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(2px);
+  }
+}
+
+.footerGuideDesc {
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}
+
+.siderFooterIconContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0 6px;
+  gap: 16px;
+}
+
+.siderFooterIconContent :global(.ant-menu-title-content) {
+  display: none !important;
+  color: var(--text-primary);
+}
+
+.footerGuideIcon {
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+.footerGuideIcon:hover {
+  color: var(--text-primary) !important;
+}
+
+.footerItemContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 12px;
+  gap: 16px;
+}
+
+.agentLayoutSiderHistoryHolder {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 5;
+}
+
+.collapseToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+  color: #bbbdca;
+}
+
+.collapseToggle:hover {
+  color: #7C7F9A;
+  background: var(--fill-primary);
+}
+
+.collapsedSider .siderHeader {
+  position: relative;
+  justify-content: center;
+  gap: 0;
+}
+
+.collapsedSider .collapseToggle {
+  position: absolute;
+  inset: 0;
+  display: none;
+}
+
+.collapsedSider .siderHeader:hover .collapseToggle {
+  display: flex;
+}
+
+.collapsedSider .siderHeader:hover .brandLogo {
+  opacity: 0;
+}
+
+.collapseToggleIcon {
+  display: block;
+}
+
+/* ===== 自渲染菜单列表 ===== */
+.menuList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menuDivider {
+  display: none;
+}
+
+.menuItem {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: 36px;
+  padding: 6px 6px 6px 8px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  white-space: nowrap;
+  color: var(--text-primary);
+  background: var(--fill-white);
+  cursor: pointer;
+}
+
+.menuItem:hover {
+  color: var(--icon-accent);
+  background: var(--fill-primary);
+}
+
+.menuItemActive {
+  color: var(--icon-accent);
+  background: var(--fill-primary);
+}
+
+/* 收起态菜单 */
+.collapsedSider .menuItem {
+  width: 36px;
+  height: 36px;
+  padding: 6px;
+  justify-content: center;
+}
+
+/* ===== 单项 Popover（只读） ===== */
+:global(.ant-popover).menuPopover {
+  :global(.ant-popover-inner) {
+    padding: 0;
+    border-radius: 8px;
+  }
+}
+
+.menuPopoverSimple {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--text-primary);
+}
+
+/* ===== 列表 Popover（可点击子项） ===== */
+:global(.ant-popover).menuPopoverList {
+  :global(.ant-popover-inner) {
+    min-width: 160px;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px 0 rgba(187, 189, 202, 0.16);
+  }
+}
+
+.footerMenuItem {
+  color: var(--text-secondary);
+}
+
+.footerMenuItem:hover {
+  color: var(--icon-accent);
+}
+
+.footerImg {
+  width: 196px;
+  height: 82px;
+  cursor: pointer;
+}
+
+.footerMenu {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 12px;
+  border-inline-end: none !important;
+}
+
+.footerMenu :global(.ant-menu-item) {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+  margin: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  height: 20px !important;
+  line-height: 20px !important;
+  cursor: pointer;
+  width: 100%;
+  background-color: var(--fill-white);
+}
+
+.footerMenu :global(.ant-menu-item:last-child) {
+  margin-top: 16px;
+}
+
+.footerMenu :global(.ant-menu-item):hover {
+  background: transparent !important;
+  color: #1d1e29 !important;
+}
+
+/* 开放平台hover时的文案颜色 */
+.footerMenu :global(.ant-menu-item):hover :global(.footerItemLabel) {
+  color: #1d1e29 !important;
+}
+
+.footerMenu :global(.ant-menu-item):hover :global(.footerItemLabel) span {
+  color: #1d1e29 !important;
+}
+
+.footerMenu :global(.ant-menu-item .ant-menu-title-content) {
+  margin-inline-start: 0 !important;
+  color: var(--text-secondary);
+}
+
+.footerMenu :global(.ant-menu-item:last-child):after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  cursor: pointer;
+  background: transparent;
+}
+
+/* 隐藏新手指引 Tooltip 的箭头 */
+:global(.ant-tooltip).footerGuideTooltip :global(.ant-tooltip-arrow) {
+  display: none !important;
+}

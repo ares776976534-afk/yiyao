@@ -1,0 +1,364 @@
+// chat
+data:{"sessionImage":"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/1YUjiYV2HSnM3asagWBN3WEJCByl5AaG4hive5dQtieaDEsB8t64R8Rp7IZllwquQzqLI9KRaoYy2r9qUg.png","title":"换人换脸","type":"session"}
+
+data:heartbeat:1764221756815
+
+data:{"id":1,"sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"resp"}
+
+data:{"sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","status":"start","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"statusChange"}
+
+data:{"content":"需将原图人物","contentType":"text","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"text_stream"}
+
+data:{"content":"替换为金发外国","contentType":"text","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"text_stream"}
+
+data:{"content":"女性，保留衣服","contentType":"text","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"text_stream"}
+
+data:{"content":"款式，完整展示","contentType":"text","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"text_stream"}
+
+data:{"content":"头部（头顶到","contentType":"text","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"text_stream"}
+
+data:{"content":"下巴）~","contentType":"text","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"text_stream"}
+
+data:{"sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","status":"end","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"statusChange"}
+
+data:{"id":6,"intent":"mediaTask","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"intent"}
+
+data:heartbeat:1764221766815
+
+data:{"id":7,"sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","status":"start","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"statusChange"}
+
+data:{"contentType":"text","icon":"https://img.alicdn.com/imgextra/i4/O1CN01b8Lcgv1M7IRvC42ez_!!6000000001387-55-tps-14-14.svg","id":8,"sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"图片理解","type":"design_analyzer"}
+
+data:{"content":"{\"content\":\"- 用户上传图片1：图中为一位女性上半身特写，穿着白色V领长袖上衣，衣身有华夫格纹理，V领与袖子拼接蕾丝花边，搭配牛仔裤和金色项链耳环。发型为浅棕色波浪卷发，仅展示从锁骨到大腿上部，头部未完整入镜。需替换为金发外国女性，保留原衣款，完整展示从头顶至下巴，确保面部完整可见，背景可保留街景模糊效果。\",\"toolResultType\":\"text\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i4/O1CN01b8Lcgv1M7IRvC42ez_!!6000000001387-55-tps-14-14.svg","id":9,"sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"图片理解","type":"design_analyzer"}
+
+data:{"id":10,"sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","status":"end","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"statusChange"}
+
+data:{"sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","status":"start","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"statusChange"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"stepNum\":1,\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"stepNum\":1,\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"displayTitle\":\"第1步：\",\"stepId\":1}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"displayTitle\":\"第1步：生成\",\"stepId\":1,\"stepTitle\":\"生成\"}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"displayTitle\":\"第1步：生成金发女性模特\",\"stepId\":1,\"stepTitle\":\"生成金发女性模特\"}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"displayContent\":\"使用\",\"displayTitle\":\"第1步：生成金发女性模特\",\"stepId\":1,\"stepTitle\":\"生成金发女性模特\"}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"displayContent\":\"使用上传的图片作为\",\"displayTitle\":\"第1步：生成金发女性模特\",\"stepId\":1,\"stepTitle\":\"生成金发女性模特\"}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"displayContent\":\"使用上传的图片作为参考，保持白色\",\"displayTitle\":\"第1步：生成金发女性模特\",\"stepId\":1,\"stepTitle\":\"生成金发女性模特\"}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"displayContent\":\"使用上传的图片作为参考，保持白色V领华夫格\",\"displayTitle\":\"第1步：生成金发女性模特\",\"stepId\":1,\"stepTitle\":\"生成金发女性模特\"}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"displayContent\":\"使用上传的图片作为参考，保持白色V领华夫格上衣和蕾\",\"displayTitle\":\"第1步：生成金发女性模特\",\"stepId\":1,\"stepTitle\":\"生成金发女性模特\"}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"displayContent\":\"使用上传的图片作为参考，保持白色V领华夫格上衣和蕾丝花边设计不变\",\"displayTitle\":\"第1步：生成金发女性模特\",\"stepId\":1,\"stepTitle\":\"生成金发女性模特\"}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"displayContent\":\"使用上传的图片作为参考，保持白色V领华夫格上衣和蕾丝花边设计不变，将模特替换\",\"displayTitle\":\"第1步：生成金发女性模特\",\"stepId\":1,\"stepTitle\":\"生成金发女性模特\"}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"displayContent\":\"使用上传的图片作为参考，保持白色V领华夫格上衣和蕾丝花边设计不变，将模特替换为金发外国\",\"displayTitle\":\"第1步：生成金发女性模特\",\"stepId\":1,\"stepTitle\":\"生成金发女性模特\"}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"displayContent\":\"使用上传的图片作为参考，保持白色V领华夫格上衣和蕾丝花边设计不变，将模特替换为金发外国女性，完整展示\",\"displayTitle\":\"第1步：生成金发女性模特\",\"stepId\":1,\"stepTitle\":\"生成金发女性模特\"}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"displayContent\":\"使用上传的图片作为参考，保持白色V领华夫格上衣和蕾丝花边设计不变，将模特替换为金发外国女性，完整展示从头顶到下巴\",\"displayTitle\":\"第1步：生成金发女性模特\",\"stepId\":1,\"stepTitle\":\"生成金发女性模特\"}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"displayContent\":\"使用上传的图片作为参考，保持白色V领华夫格上衣和蕾丝花边设计不变，将模特替换为金发外国女性，完整展示从头顶到下巴的面部结构，确保头部\",\"displayTitle\":\"第1步：生成金发女性模特\",\"stepId\":1,\"stepTitle\":\"生成金发女性模特\"}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"displayContent\":\"使用上传的图片作为参考，保持白色V领华夫格上衣和蕾丝花边设计不变，将模特替换为金发外国女性，完整展示从头顶到下巴的面部结构，确保头部完整入镜，\",\"displayTitle\":\"第1步：生成金发女性模特\",\"stepId\":1,\"stepTitle\":\"生成金发女性模特\"}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"displayContent\":\"使用上传的图片作为参考，保持白色V领华夫格上衣和蕾丝花边设计不变，将模特替换为金发外国女性，完整展示从头顶到下巴的面部结构，确保头部完整入镜，背景保留原有街\",\"displayTitle\":\"第1步：生成金发女性模特\",\"stepId\":1,\"stepTitle\":\"生成金发女性模特\"}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"agentName\":\"IMAGE\",\"displayContent\":\"使用上传的图片作为参考，保持白色V领华夫格上衣和蕾丝花边设计不变，将模特替换为金发外国女性，完整展示从头顶到下巴的面部结构，确保头部完整入镜，背景保留原有街景模糊效果。\",\"displayTitle\":\"第1步：生成金发女性模特\",\"stepId\":1,\"stepTitle\":\"生成金发女性模特\"}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"agentName\":\"IMAGE_GENERATE_AGENT\",\"displayContent\":\"使用上传的图片作为参考，保持白色V领华夫格上衣和蕾丝花边设计不变，将模特替换为金发外国女性，完整展示从头顶到下巴的面部结构，确保头部完整入镜，背景保留原有街景模糊效果。\",\"displayTitle\":\"第1步：生成金发女性模特\",\"stepId\":1,\"stepTitle\":\"生成金发女性模特\"}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"content":"{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"agentName\":\"IMAGE_GENERATE_AGENT\",\"displayContent\":\"使用上传的图片作为参考，保持白色V领华夫格上衣和蕾丝花边设计不变，将模特替换为金发外国女性，完整展示从头顶到下巴的面部结构，确保头部完整入镜，背景保留原有街景模糊效果。\",\"displayTitle\":\"第1步：生成金发女性模特\",\"stepId\":1,\"stepTitle\":\"生成金发女性模特\"}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}","contentType":"text","icon":"https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"任务规划","type":"plan_stream"}
+
+data:{"sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","status":"end","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"statusChange"}
+
+data:{"id":14,"planId":"plan_8b0fb901","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","status":"start","stepId":"1","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"statusChange"}
+
+data:{"content":"**正在设计**：金发外国女性模特效果图\n**设计思路**：\n- 整体风格: 保持原图实拍风格与光影效果；\n- 图片内容: 保留白色V领华夫格上衣与蕾丝花边设计，背景维持街景模糊效果；\n- 构图要求: 完整展示从头顶到下巴的面部结构，确保头部完整入镜。","contentType":"text","id":15,"planId":"plan_8b0fb901","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","stepId":"1","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"text"}
+
+data:{"id":16,"planId":"plan_8b0fb901","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","status":"end","stepId":"1","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"statusChange"}
+
+data:heartbeat:1764221776815
+
+data:{"id":17,"planId":"plan_8b0fb901","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","status":"start","stepId":"1","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"statusChange"}
+
+data:{"contentType":"image","icon":"https://img.alicdn.com/imgextra/i2/O1CN018rihcR1FrpMX2k7HC_!!6000000000541-2-tps-40-40.png","id":18,"planId":"plan_8b0fb901","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","stepId":"1","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","title":"图像创作","type":"design"}
+
+data:{"endTime":1764222290404,"id":19,"percent":30,"planId":"plan_8b0fb901","sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","startTime":1764221783404,"stepId":"1","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"percent_loading"}
+
+data:{"context":{"waitingUtil":1764221787303},"id":20,"sessionId":"183023e9-277e-4b12-8b94-d297ab1ec932","status":"stopForWaiting","taskId":"66e89df9-9055-4e2e-9b88-f516a286d0d9","type":"statusChange"}
+
+
+
+// detail
+{
+  "success": true,
+  "data": {
+      "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+      "title": "换人换脸",
+      "sessionImage": "https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/1YUjiYV2HSnM3asagWBN3WEJCByl5AaG4hive5dQtieaDEsB8t64R8Rp7IZllwquQzqLI9KRaoYy2r9qUg.png",
+      "messages": [
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "resp",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9"
+          },
+          {
+              "attachments": [
+                  {
+                      "sourceUrl": "https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/1YUjiYV2HSnM3asagWBN3WEJCByl5AaG4hive5dQtieaDEsB8t64R8Rp7IZllwquQzqLI9KRaoYy2r9qUg.png",
+                      "width": 693,
+                      "mimeType": "image/jpeg",
+                      "height": 903
+                  }
+              ],
+              "offerInfos": [],
+              "messageType": "USER",
+              "query": "衣服款式不变,换成一个金发的外国女性,从头顶到下巴都要展示出来，头部要展示完整"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "statusChange",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "text",
+              "content": "需将原图人物替换为金发外国女性，保留衣服款式，完整展示头部（头顶到下巴）~"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "statusChange",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9",
+              "status": "end"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "intent",
+              "intent": "mediaTask",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "statusChange",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "https://img.alicdn.com/imgextra/i4/O1CN01b8Lcgv1M7IRvC42ez_!!6000000001387-55-tps-14-14.svg",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "title": "图片理解",
+              "type": "design_analyzer",
+              "contentType": "text",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "https://img.alicdn.com/imgextra/i4/O1CN01b8Lcgv1M7IRvC42ez_!!6000000001387-55-tps-14-14.svg",
+              "id": 8,
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "title": "图片理解",
+              "type": "design_analyzer",
+              "contentType": "text",
+              "content": "{\"content\":\"- 用户上传图片1：图中为一位女性上半身特写，穿着白色V领长袖上衣，衣身有华夫格纹理，V领与袖子拼接蕾丝花边，搭配牛仔裤和金色项链耳环。发型为浅棕色波浪卷发，仅展示从锁骨到大腿上部，头部未完整入镜。需替换为金发外国女性，保留原衣款，完整展示从头顶至下巴，确保面部完整可见，背景可保留街景模糊效果。\",\"toolResultType\":\"text\"}",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "statusChange",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9",
+              "status": "end"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "statusChange",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "title": "任务规划",
+              "type": "plan_stream",
+              "contentType": "text",
+              "content": "{\"planId\":\"plan_8b0fb901\",\"planTitle\":\"替换模特\",\"stepNum\":1,\"steps\":[{\"agentName\":\"IMAGE_GENERATE_AGENT\",\"displayContent\":\"使用上传的图片作为参考，保持白色V领华夫格上衣和蕾丝花边设计不变，将模特替换为金发外国女性，完整展示从头顶到下巴的面部结构，确保头部完整入镜，背景保留原有街景模糊效果。\",\"displayTitle\":\"第1步：生成金发女性模特\",\"stepId\":1,\"stepTitle\":\"生成金发女性模特\"}],\"taskId\":\"66e89df9-9055-4e2e-9b88-f516a286d0d9\",\"thought\":\"根据用户需求替换模特并调整构图\"}",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "statusChange",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9",
+              "status": "end"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_8b0fb901",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "statusChange",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_8b0fb901",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "text",
+              "contentType": "text",
+              "content": "**正在设计**：金发外国女性模特效果图\n**设计思路**：\n- 整体风格: 保持原图实拍风格与光影效果；\n- 图片内容: 保留白色V领华夫格上衣与蕾丝花边设计，背景维持街景模糊效果；\n- 构图要求: 完整展示从头顶到下巴的面部结构，确保头部完整入镜。",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_8b0fb901",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "statusChange",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9",
+              "status": "end"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_8b0fb901",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "statusChange",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "https://img.alicdn.com/imgextra/i2/O1CN018rihcR1FrpMX2k7HC_!!6000000000541-2-tps-40-40.png",
+              "stepId": "1",
+              "planId": "plan_8b0fb901",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "title": "图像创作",
+              "type": "design",
+              "contentType": "image",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_8b0fb901",
+              "startTime": 1764221783404,
+              "endTime": 1764222290404,
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "percent_loading",
+              "percent": 30,
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "context": {
+                  "waitingUtil": 1764221787303
+              },
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "statusChange",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9",
+              "status": "stopForWaiting"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "icon": "",
+              "stepId": "1",
+              "planId": "plan_8b0fb901",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "title": "",
+              "type": "design",
+              "contentType": "image",
+              "content": "{\"mediaModel\":{\"height\":1184,\"mediaCoverUrl\":\"https://img.alicdn.com/imgextra/i3/6000000003328/O1CN01MXTQSE1aSHDM6n8Ii_!!6000000003328-2-cbu_global_ai_agent.png\",\"mediaId\":\"8841b225-99b9-4089-9137-ef9539d069ba\",\"mediaUrl\":\"https://img.alicdn.com/imgextra/i3/6000000003328/O1CN01MXTQSE1aSHDM6n8Ii_!!6000000003328-2-cbu_global_ai_agent.png\",\"width\":864},\"toolResultType\":\"image\"}",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "stepId": "1",
+              "planId": "plan_8b0fb901",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "statusChange",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9",
+              "status": "end"
+          },
+          {
+              "totalStepNum": 1,
+              "messageType": "ASSISTANT",
+              "finishedStepNum": 1,
+              "stepId": 1,
+              "planId": "plan_8b0fb901",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "plan_status",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9",
+              "status": "FINISH"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "statusChange",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9",
+              "status": "start"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "text",
+              "content": "已将模特成功替换为金发外国女性形象，完整呈现从头顶到下巴的头部结构，同时严格保留原服装款式、蕾丝细节及背景虚化效果。",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "statusChange",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9",
+              "status": "end"
+          },
+          {
+              "messageType": "ASSISTANT",
+              "sessionId": "183023e9-277e-4b12-8b94-d297ab1ec932",
+              "type": "statusChange",
+              "taskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9",
+              "status": "allDone"
+          }
+      ],
+      "createdTime": 1764221757000,
+      "latestTaskId": "66e89df9-9055-4e2e-9b88-f516a286d0d9",
+      "taskStatus": "COMPLETED",
+      "latestEventId": 27,
+      "isOfficial": null,
+      "official": null
+  },
+  "code": null,
+  "mesg": null,
+  "failure": false
+}

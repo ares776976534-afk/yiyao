@@ -1,0 +1,561 @@
+:root {
+  /* ==================== 颜色系统 ==================== */
+
+  /* 主品牌色 */
+  --dt-colors-brand-primary: #6150FF;
+  --dt-colors-brand-primaryHover: #866CFF;
+  --dt-colors-brand-primaryOpacity: rgba(83, 99, 245, 0.1);
+  --dt-colors-brand-primaryDisabled: #E7E8EE;
+  --dt-colors-brand-fill5: rgba(82, 98, 244, 0.06);
+
+
+  /* 文字颜色 */
+  --dt-colors-text-primary: #1D2129;
+  --dt-colors-text-secondary: #7C7F9A;
+  --dt-colors-text-tertiary: #CCCCD4;
+  --dt-colors-text-disabled: #F3F3F6;
+  --dt-colors-text-white: #FFFFFF;
+  --dt-colors-text-link: #6150FF;
+  --dt-colors-text-empty: #BBBDCA;
+  /* Text/Primary */
+  --dt-colors-text-primaryE: #1B1C1D;
+
+  /* 背景色 */
+  --dt-colors-background-primary: #FFFFFF;
+  --dt-colors-background-secondary: #FBFBFD;
+  --dt-colors-background-tertiary: #F7F8FA;
+  --dt-colors-background-disabled: #F3F3F6;
+  --dt-colors-background-overlay: rgba(0, 0, 0, 0.4);
+  /* Semantic/Success-primary */
+  --dt-colors-background-success-primary: #21A84A;
+  /* Semantic/Warning-primary */
+  --dt-colors-background-warning-primary: #F55353;
+
+
+  --color-brand-primary: #6150FF;
+  /* Fill/Primary - Hover */
+  --dt-brand-primary-hover: #F7F7FA;
+
+  /* Icon/Accent */
+  --dt-colors-icon-accent: #6150FF;
+
+
+  /* 边框色 */
+  --dt-colors-border-primary: #E7E8EE;
+  --dt-colors-border-secondary: #F3F3F6;
+  --dt-colors-border-focus: #6150FF;
+  --dt-colors-border-accent: #EEEFFE;
+
+  /* 状态色 */
+  --dt-colors-status-success: #22AC60;
+  --dt-colors-status-warning: #FF8F1F;
+  --dt-colors-status-error: #F54A45;
+  --dt-colors-status-info: #1890FF;
+
+  /* 功能性颜色 */
+  --dt-colors-functional-shadow: rgba(0, 0, 0, 0.04);
+  --dt-colors-functional-shadowHover: rgba(0, 0, 0, 0.08);
+  --dt-colors-functional-divider: #F3F3F6;
+
+  /* ==================== 字体系统 ==================== */
+
+  /* 字体族 */
+  --dt-typography-fontFamily-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --dt-typography-fontFamily-number: AlibabaSans102-Medium, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* 字体大小 */
+  --dt-typography-fontSize-xs: 12px;
+  --dt-typography-fontSize-sm: 13px;
+  --dt-typography-fontSize-base: 14px;
+  --dt-typography-fontSize-lg: 16px;
+  --dt-typography-fontSize-xl: 18px;
+  --dt-typography-fontSize-2xl: 20px;
+  --dt-typography-fontSize-3xl: 24px;
+  --dt-typography-fontSize-4xl: 28px;
+  --dt-typography-fontSize-5xl: 32px;
+
+  /* 字体重量 */
+  --dt-typography-fontWeight-normal: 400;
+  --dt-typography-fontWeight-medium: 500;
+  --dt-typography-fontWeight-semibold: 600;
+  --dt-typography-fontWeight-bold: 700;
+
+  /* 行高 */
+  --dt-typography-lineHeight-tight: 1.25;
+  --dt-typography-lineHeight-normal: 1.4;
+  --dt-typography-lineHeight-relaxed: 1.6;
+  --dt-typography-lineHeight-loose: 1.8;
+
+  /* ==================== 间距系统 ==================== */
+
+  --dt-spacing-px: 1px;
+  --dt-spacing-0-5: 2px;
+  --dt-spacing-1: 4px;
+  --dt-spacing-1-5: 6px;
+  --dt-spacing-2: 8px;
+  --dt-spacing-2-5: 10px;
+  --dt-spacing-3: 12px;
+  --dt-spacing-4: 16px;
+  --dt-spacing-5: 20px;
+  --dt-spacing-6: 24px;
+  --dt-spacing-7: 28px;
+  --dt-spacing-8: 32px;
+  --dt-spacing-9: 36px;
+  --dt-spacing-10: 40px;
+  --dt-spacing-12: 48px;
+  --dt-spacing-16: 64px;
+  --dt-spacing-20: 80px;
+  --dt-spacing-24: 96px;
+
+  /* ==================== 圆角系统 ==================== */
+
+  --dt-borderRadius-none: 0;
+  --dt-borderRadius-sm: 4px;
+  --dt-borderRadius-base: 8px;
+  --dt-borderRadius-md: 12px;
+  --dt-borderRadius-lg: 16px;
+  --dt-borderRadius-xl: 20px;
+  --dt-borderRadius-2xl: 24px;
+  --dt-borderRadius-full: 9999px;
+
+  /* ==================== 阴影系统 ==================== */
+
+  --dt-shadows-none: none;
+  --dt-shadows-sm: 0px 1px 2px 0px rgba(0, 0, 0, 0.04);
+  --dt-shadows-base: 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
+  --dt-shadows-md: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+  --dt-shadows-lg: 0px 2px 16px 0px rgba(0, 0, 0, 0.08);
+  --dt-shadows-xl: 0px 2px 20px 0px rgba(0, 0, 0, 0.04);
+  --dt-shadows-hover: 0px 2px 20px 0px rgba(0, 0, 0, 0.04);
+
+  /* ==================== 过渡动画 ==================== */
+
+  --dt-transitions-duration-fast: 0.15s;
+  --dt-transitions-duration-normal: 0.2s;
+  --dt-transitions-duration-slow: 0.3s;
+  --dt-transitions-easing-linear: linear;
+  --dt-transitions-easing-easeInOut: ease-in-out;
+  --dt-transitions-easing-easeOut: ease-out;
+  --dt-transitions-easing-easeIn: ease-in;
+
+  /* ==================== Z-index 层级 ==================== */
+
+  --dt-zIndex-hide: -1;
+  --dt-zIndex-auto: auto;
+  --dt-zIndex-base: 0;
+  --dt-zIndex-docked: 10;
+  --dt-zIndex-dropdown: 1000;
+  --dt-zIndex-sticky: 1100;
+  --dt-zIndex-banner: 1200;
+  --dt-zIndex-overlay: 1300;
+  --dt-zIndex-modal: 1400;
+  --dt-zIndex-popover: 1500;
+  --dt-zIndex-skipLink: 1600;
+  --dt-zIndex-toast: 1700;
+  --dt-zIndex-tooltip: 1800;
+
+  /* ==================== 断点系统 ==================== */
+
+  --dt-breakpoints-sm: 576px;
+  --dt-breakpoints-md: 768px;
+  --dt-breakpoints-lg: 992px;
+  --dt-breakpoints-xl: 1200px;
+  --dt-breakpoints-2xl: 1400px;
+
+  /* ==================== 组件级别的Token ==================== */
+
+  /* 卡片组件 */
+  --dt-components-card-padding: 20px;
+  --dt-components-card-paddingLarge: 24px;
+  --dt-components-card-borderRadius: 16px;
+  --dt-components-card-borderRadiusLarge: 24px;
+  --dt-components-card-borderWidth: 1px;
+  --dt-components-card-backgroundColor: #FFFFFF;
+  --dt-components-card-borderColor: #F3F3F6;
+  --dt-components-card-hoverShadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.04);
+
+  /* 按钮组件 */
+  --dt-components-button-borderRadius: 20px;
+  --dt-components-button-paddingX: 12px;
+  --dt-components-button-paddingY: 6px;
+  --dt-components-button-height: 32px;
+  --dt-components-button-fontSize: 14px;
+  --dt-components-button-fontWeight: 400;
+  --dt-components-button-primary-backgroundColor: #6150FF;
+  --dt-components-button-primary-color: #FFFFFF;
+  --dt-components-button-primary-borderColor: #6150FF;
+  --dt-components-button-primary-hoverBackgroundColor: #E5520A;
+  --dt-components-button-secondary-backgroundColor: #FFFFFF;
+  --dt-components-button-secondary-color: #6150FF;
+  --dt-components-button-secondary-borderColor: #6150FF;
+  --dt-components-button-secondary-hoverBackgroundColor: rgba(83, 99, 245, 0.06);
+
+  /* 表单组件 */
+  --dt-components-form-borderRadius: 8px;
+  --dt-components-form-borderColor: #E7E8EE;
+  --dt-components-form-focusBorderColor: #6150FF;
+  --dt-components-form-backgroundColor: #FFFFFF;
+  --dt-components-form-fontSize: 14px;
+  --dt-components-form-padding: 8px 12px;
+
+  /* 标签组件 */
+  --dt-components-tag-borderRadius: 16px;
+  --dt-components-tag-fontSize: 12px;
+  --dt-components-tag-fontWeight: 500;
+  --dt-components-tag-padding: 2px 6px;
+  --dt-components-tag-height: 22px;
+
+  /* 要替换成下面的 */
+  /*Semantic */
+  --semantic-success-primary: #21A84A;
+  --semantic-warning-primary: #F55353;
+  --semantic-success-secondary: #E7FCED;
+  --semantic-warning-secondary: #FFF3F3;
+  /* gradient color */
+  --gradient-purple: #F55353;
+  /* Orange Theme */
+  --orange-primary: #FD963C;
+  --orange-secondary: #FFF9F3;
+  /* Yellow Theme */
+  --yellow-primary: #FFC002;
+  --yellow-secondary: #FFFBE6;
+  /* Blue Theme */
+  --blue-primary: #2FBDFF;
+  --blue-secondary: #EEFBFF;
+  /* Cyan Theme */
+  --cyan-primary: #2CD8C7;
+  --cyan-secondary: #F1FEFA;
+  /* Purple Theme */
+  --purple-primary: #C073FF;
+  --purple-secondary: #FCF7FF;
+
+  /* Text */
+  --text-primary: #1B1C1D;
+  --text-secondary: #7C7F9A;
+  --text-tertiary: #7C7F9A;
+  /* Text/Tertiary - 四级 */
+  --text-tertiary-4: #BBBDCA;
+  --text-tertiary-hover: #F7F7FA;
+  --text-accent: #6150FF;
+  --text-white: #FFFFFF;
+  --text-checked: #1B1C1D;
+
+  /* Icon */
+  --icon-primary: #1B1C1D;
+  --icon-secondary: #7C7F9A;
+  --icon-tertiary: #BBBDCA;
+  --icon-accent: #6E50FF;
+  --icon-white: #FFFFFF;
+
+  /* fill */
+  --fill-darker: #F1F1F7;
+  --fill-primary: #F7F7FA;
+  --fill-secondary: #FBFBFD;
+  --fill-accent: #F4F4FC;
+  --fill-white: #FFFFFF;
+
+  /* Button */
+  --button-primary: #6150FF;
+  --button-primary-hover: #866CFF;
+  --button-secondary-hover: #F5F5FF;
+  --button-disabled: #E7E8EE;
+
+  /* Border */
+  --border-primary: #E7E8EE;
+  --border-secondary: #F3F3F6;
+  --border-accent: #EEEFFE;
+  --border-focus: #6150FF;
+  --border-tertiary: #BBBDCA;
+}
+
+/* ==================== 实用工具类 ==================== */
+
+/* 布局工具类 */
+.dt-flex {
+  display: flex;
+}
+
+.dt-flex-col {
+  flex-direction: column;
+}
+
+.dt-items-center {
+  align-items: center;
+}
+
+.dt-justify-center {
+  justify-content: center;
+}
+
+.dt-justify-between {
+  justify-content: space-between;
+}
+
+/* 间距工具类 */
+.dt-gap-1 {
+  gap: var(--dt-spacing-1);
+}
+
+.dt-gap-2 {
+  gap: var(--dt-spacing-2);
+}
+
+.dt-gap-3 {
+  gap: var(--dt-spacing-3);
+}
+
+.dt-gap-4 {
+  gap: var(--dt-spacing-4);
+}
+
+.dt-gap-5 {
+  gap: var(--dt-spacing-5);
+}
+
+.dt-gap-6 {
+  gap: var(--dt-spacing-6);
+}
+
+/* 内边距工具类 */
+.dt-p-1 {
+  padding: var(--dt-spacing-1);
+}
+
+.dt-p-2 {
+  padding: var(--dt-spacing-2);
+}
+
+.dt-p-3 {
+  padding: var(--dt-spacing-3);
+}
+
+.dt-p-4 {
+  padding: var(--dt-spacing-4);
+}
+
+.dt-p-5 {
+  padding: var(--dt-spacing-5);
+}
+
+.dt-p-6 {
+  padding: var(--dt-spacing-6);
+}
+
+/* 外边距工具类 */
+.dt-m-1 {
+  margin: var(--dt-spacing-1);
+}
+
+.dt-m-2 {
+  margin: var(--dt-spacing-2);
+}
+
+.dt-m-3 {
+  margin: var(--dt-spacing-3);
+}
+
+.dt-m-4 {
+  margin: var(--dt-spacing-4);
+}
+
+.dt-m-5 {
+  margin: var(--dt-spacing-5);
+}
+
+.dt-m-6 {
+  margin: var(--dt-spacing-6);
+}
+
+/* 文字工具类 */
+.dt-text-primary {
+  color: var(--dt-colors-text-primary);
+}
+
+.dt-text-secondary {
+  color: var(--dt-colors-text-secondary);
+}
+
+.dt-text-tertiary {
+  color: var(--dt-colors-text-tertiary);
+}
+
+.dt-text-xs {
+  font-size: var(--dt-typography-fontSize-xs);
+}
+
+.dt-text-sm {
+  font-size: var(--dt-typography-fontSize-sm);
+}
+
+.dt-text-base {
+  font-size: var(--dt-typography-fontSize-base);
+}
+
+.dt-text-lg {
+  font-size: var(--dt-typography-fontSize-lg);
+}
+
+.dt-text-xl {
+  font-size: var(--dt-typography-fontSize-xl);
+}
+
+.dt-font-normal {
+  font-weight: var(--dt-typography-fontWeight-normal);
+}
+
+.dt-font-medium {
+  font-weight: var(--dt-typography-fontWeight-medium);
+}
+
+.dt-font-semibold {
+  font-weight: var(--dt-typography-fontWeight-semibold);
+}
+
+.dt-font-bold {
+  font-weight: var(--dt-typography-fontWeight-bold);
+}
+
+/* 圆角工具类 */
+.dt-rounded-sm {
+  border-radius: var(--dt-borderRadius-sm);
+}
+
+.dt-rounded {
+  border-radius: var(--dt-borderRadius-base);
+}
+
+.dt-rounded-md {
+  border-radius: var(--dt-borderRadius-md);
+}
+
+.dt-rounded-lg {
+  border-radius: var(--dt-borderRadius-lg);
+}
+
+.dt-rounded-xl {
+  border-radius: var(--dt-borderRadius-xl);
+}
+
+.dt-rounded-2xl {
+  border-radius: var(--dt-borderRadius-2xl);
+}
+
+.dt-rounded-full {
+  border-radius: var(--dt-borderRadius-full);
+}
+
+/* 阴影工具类 */
+.dt-shadow-sm {
+  box-shadow: var(--dt-shadows-sm);
+}
+
+.dt-shadow {
+  box-shadow: var(--dt-shadows-base);
+}
+
+.dt-shadow-md {
+  box-shadow: var(--dt-shadows-md);
+}
+
+.dt-shadow-lg {
+  box-shadow: var(--dt-shadows-lg);
+}
+
+.dt-shadow-xl {
+  box-shadow: var(--dt-shadows-xl);
+}
+
+/* 过渡工具类 */
+.dt-transition {
+  transition: all var(--dt-transitions-duration-normal) var(--dt-transitions-easing-easeInOut);
+}
+
+.dt-transition-fast {
+  transition: all var(--dt-transitions-duration-fast) var(--dt-transitions-easing-easeInOut);
+}
+
+.dt-transition-slow {
+  transition: all var(--dt-transitions-duration-slow) var(--dt-transitions-easing-easeInOut);
+}
+
+/* 背景色工具类 */
+.dt-bg-primary {
+  background-color: var(--dt-colors-background-primary);
+}
+
+.dt-bg-secondary {
+  background-color: var(--dt-colors-background-secondary);
+}
+
+.dt-bg-tertiary {
+  background-color: var(--dt-colors-background-tertiary);
+}
+
+/* 边框工具类 */
+.dt-border {
+  border: 1px solid var(--dt-colors-border-primary);
+}
+
+.dt-border-secondary {
+  border: 1px solid var(--dt-colors-border-secondary);
+}
+
+.dt-border-dashed {
+  border: 1px dashed var(--dt-colors-border-primary);
+}
+
+/* 交互状态 */
+.dt-hover-shadow:hover {
+  box-shadow: var(--dt-shadows-hover);
+}
+
+.dt-cursor-pointer {
+  cursor: pointer;
+}
+
+/* 文本截断 */
+.dt-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 响应式工具 */
+@media (min-width: 576px) {
+  .dt-sm-flex {
+    display: flex;
+  }
+
+  .dt-sm-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .dt-md-flex {
+    display: flex;
+  }
+
+  .dt-md-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .dt-lg-flex {
+    display: flex;
+  }
+
+  .dt-lg-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dt-xl-flex {
+    display: flex;
+  }
+
+  .dt-xl-hidden {
+    display: none;
+  }
+}

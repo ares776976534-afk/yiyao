@@ -1,0 +1,127 @@
+.modalHeader {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: normal;
+    /* Text/主要 color-text-1 */
+    color: var(--icon-primary);
+}
+
+.firstEntry {
+    height: 416px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/次要 color-text-2 */
+    color: var(--text-tertiary);
+}
+
+.supplierItem {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 8px;
+    /* Fill/白色 color-fill-3 */
+    background: var(--fill-white);
+    box-sizing: border-box;
+    /* Border/常规 color-border-1 */
+    border: 1px solid var(--border-primary);
+}
+
+.supplierItemImage {
+    width: 46px;
+    height: 46px;
+    border-radius: 4px;
+}
+
+.shop {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.shopIcon {
+    width: 14px;
+    height: 14px;
+}
+
+.shopName {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/次要 color-text-2 */
+    color: var(--text-tertiary);
+}
+
+.supplierItemButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.canDisabledAdd {
+    height: 36px;
+    border-radius: 8px;
+    opacity: 0.4;
+    /* Brand/常规 color-brand-1 */
+    background: var(--color-brand-primary) !important;
+    color: var(--text-white) !important;
+}
+
+.canAdd {
+    height: 36px;
+    border-radius: 8px;
+    /* Brand/常规 color-brand-1 */
+    background: var(--color-brand-primary) !important;
+    color: var(--text-white) !important;
+}
+
+.supplierItemContent {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.noSearchResult {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/次要 color-text-2 */
+    color: var(--text-tertiary);
+}
+
+.modalFooter {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.confirmBtn {
+    border-radius: 8px;
+    height: 40px;
+    width: 120px;
+    opacity: 0.4;
+    /* Brand/常规 color-brand-1 */
+    background: var(--border-focus) !important;
+    color: var(--text-white) !important; 
+}
+
+.addBtn {
+    border-radius: 8px;
+    height: 40px;
+    /* Brand/常规 color-brand-1 */
+    background: var(--color-brand-primary) !important;
+    color: var(--text-white) !important;
+}
+
+.addBtn:disabled {
+    opacity: 0.4;
+}

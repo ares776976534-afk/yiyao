@@ -1,0 +1,247 @@
+.content {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.keywordSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 8px;
+  min-height: 75px;
+}
+
+.sectionTitle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: 8px;
+  align-items: center;
+  min-width: 84px;
+  min-height: 20px;
+}
+
+.titleDot {
+  border-radius: 3px;
+  background: #6E50FF;
+  width: 6px;
+  height: 6px;
+}
+
+.titleDotGreen {
+  border-radius: 3px;
+  background: #21A84A;
+  width: 6px;
+  height: 6px;
+}
+
+.titleDotRed {
+  border-radius: 3px;
+  background: #F55353;
+  width: 6px;
+  height: 6px;
+}
+
+.sectionTitle span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #1B1C1D;
+  white-space: nowrap;
+}
+
+.keywordStats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 16px;
+  align-items: center;
+  min-height: 47px;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 4px;
+  flex: 1;
+  min-height: 47px;
+}
+
+.statLabel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: 4px;
+  align-items: center;
+  min-width: 28px;
+  min-height: 20px;
+}
+
+.statLabel span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #7C7F9A;
+  white-space: nowrap;
+}
+
+.infoIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.statValue {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  min-width: 36px;
+  min-height: 23px;
+}
+
+.statValue span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  color: #1B1C1D;
+  white-space: nowrap;
+}
+
+.mediumFont {
+  font-size: 18px;
+  line-height: 25px;
+  color: #1B1C1D;
+  font-family: AlibabaSans102-Medium;
+  white-space: nowrap;
+}
+
+.reviewSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 8px;
+  min-height: 202px;
+  flex: 0 0 49%;
+}
+
+.reviewTable {
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 1px #F3F3F6;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  overflow: hidden;
+  min-height: 174px;
+}
+
+.reviewRow {
+  border-bottom: 1px solid #F3F3F6;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 24px;
+  box-sizing: border-box;
+  padding: 11px 20px 11px 14px;
+  align-items: center;
+  min-height: 58px;
+}
+
+.reviewText {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  flex: 1;
+  min-height: 20px;
+}
+
+.reviewText span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #1B1C1D;
+  white-space: nowrap;
+}
+
+.reviewStats {
+  height: fit-content;
+  flex: 1;
+  min-height: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewStats span {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #1B1C1D;
+  white-space: nowrap;
+}
+
+.progressBar {
+  border-radius: 52px;
+  background: #F7F7FA;
+  overflow: hidden;
+  height: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.progressFillGreen {
+  border-radius: 56px;
+  background: #21A84A;
+  width: 19px;
+  height: 4px;
+}
+
+.reviewProducts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  min-height: 36px;
+}
+
+.reviewProducts span {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #1B1C1D;
+  white-space: nowrap;
+}
+
+.productImage {
+  width: 120px;
+  height: 36px;
+}
+
+.reviewSectionContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}

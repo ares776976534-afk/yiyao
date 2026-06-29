@@ -1,0 +1,59 @@
+@import '../../responsive.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 48px;
+  width: 100%;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.testimonialItem {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 24px;
+  gap: 15px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #FFFFFF 66%, rgba(255, 255, 255, 0.45) 100%);
+  box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  backdrop-filter: blur(10px);
+}
+
+.authorAvatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 33.88px;
+  background: #0E0E0E;
+}
+
+.authorName {
+  font-family: PingFang SC;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #1D1E29;
+  margin-top: 10px;
+}
+
+.authorTitle {
+  font-family: PingFang SC;
+  font-size: 14px;
+  line-height: 28px;
+  color: #BBBDCA;
+}
+
+.text {
+  font-family: PingFang SC;
+  font-size: 14px;
+  line-height: 28px;
+  color: #4D4D5F;
+}

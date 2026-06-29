@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page
+        xmlns="http://cloudprint.cainiao.com/print"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://cloudprint.cainiao.com/print http://cloudprint-docs-resource.oss-cn-shanghai.aliyuncs.com/lpml_schema.xsd"
+        xmlns:editor="http://cloudprint.cainiao.com/schema/editor"
+        width="76" height="130"  splitable="false" >
+		<header height="0" >
+		</header>
+		<footer height="0" >
+		</footer>
+		<layout 
+            editor:_for_="1706150839957500"
+            
+            id="1706150839958393" width="25" height="5" left="2.85" top="1.5899999999999999"  style="zIndex:3;">
+            <text  
+                style="fontFamily:SimHei;fontWeight:bold;valign:middle;">
+                <![CDATA[揽收面单]]>
+            </text>
+        
+		</layout>
+		<layout 
+            editor:_for_="1706150875682615"
+            
+            id="1706150875682546" width="72.04" height="21.5" left="2.12" top="7.41"  style="zIndex:4;"><rect></rect>
+		</layout>
+		<layout 
+            editor:_for_="1706150951073639"
+            
+            id="1706150951074360" width="17.27" height="21.5" left="2.12" top="7.41"  style="zIndex:5;"><rect></rect>
+		</layout>
+		<layout 
+            editor:_for_="1706151055377171"
+            
+            id="1706151055378900" width="13.89" height="5" left="4.23" top="10.59"  style="zIndex:6;">
+            <text  
+                style="fontFamily:SimHei;fontWeight:bold;">
+                <![CDATA[箱号/箱数]]>
+            </text>
+        
+		</layout>
+		<layout 
+            editor:_for_="1706151113372266"
+            
+            id="1706151113374359" width="12.83" height="5" left="4.23" top="19.31"  style="zIndex:7;">
+            <text  
+                style="fontFamily:SimHei;">
+                <![CDATA[<%=_data.packageNum%>/<%=_data.totalPackage%>]]>
+            </text>
+        
+		</layout>
+		<layout 
+            editor:_for_="1706151553154560"
+            
+            id="1706151553154563" width="50.93" height="5" left="20.64" top="23.08"  style="zIndex:8;">
+            <text  
+                style="fontFamily:SimHei;">
+                <![CDATA[揽收单号：<%=_data.pickupOrderCode%>]]>
+            </text>
+        
+		</layout>
+		<layout 
+            editor:_for_="1706151899333331"
+            
+            id="1706151899345787" width="40" height="12.09" left="20.63" top="8.74"  style="zIndex:9;"><barcode type="code128" style="hideText:true;rotation:0"  ratioMode="keepRatio" ><![CDATA[<%=_data.pickupOrderCode%>]]></barcode>
+		</layout>
+		<layout 
+            editor:_for_="1706151935266183"
+            
+            id="17061519352677" width="12.5" height="21.5" left="61.65" top="7.41"  style="zIndex:10;"><rect></rect>
+		</layout>
+		<layout 
+            editor:_for_="1706152217146707"
+            
+            id="1706152217146593" width="34.53" height="8.44" left="1.85" top="29.25"  style="zIndex:11;">
+            <text  
+                style="fontFamily:SimHei;fontWeight:bold;fontSize:12;valign:middle;">
+                <![CDATA[(自营-<%=_data.orderType%>)]]>
+            </text>
+        
+		</layout>
+		<layout 
+            editor:_for_="1706152277382858"
+            
+            id="1706152277382831" width="71.51" height="44.51" left="2.38" top="38"  style="zIndex:12;"><rect></rect>
+		</layout>
+		<layout 
+            editor:_for_="1706152324877786"
+            
+            id="1706152324877434" width="71.51" height="9" left="2.38" top="38"  style="zIndex:13;"><rect style="borderStyle:实线;"></rect>
+		</layout>
+		<layout 
+            editor:_for_="1706152433357874"
+            
+            id="1706152433358458" width="71.51" height="9" left="2.38" top="46.93"  style="zIndex:14;"><rect></rect>
+		</layout>
+		<layout 
+            editor:_for_="1706152724280393"
+            
+            id="1706152724280983" width="35.26" height="9" left="2.38" top="38"  style="zIndex:15;"><rect></rect>
+		</layout>
+		<layout 
+            editor:_for_="1706153331401961"
+            
+            id="170615333140194" width="71.51" height="9" left="2.38" top="55.84"  style="zIndex:16;"><rect></rect>
+		</layout>
+		<layout 
+            editor:_for_="1706153481519767"
+            
+            id="170615348151961" width="31.61" height="7.64" left="4.24" top="38.64"  style="zIndex:17;">
+            <text  
+                style="fontFamily:SimHei;fontWeight:bold;fontSize:7;valign:middle;">
+                <![CDATA[订单总数: <%=_data.orderCnt%>]]>
+            </text>
+        
+		</layout>
+		<layout 
+            editor:_for_="1706153591291669"
+            
+            id="1706153591287361" width="31.61" height="7.64" left="39.11" top="38.85"  style="zIndex:18;">
+            <text  
+                style="fontFamily:SimHei;fontWeight:bold;fontSize:7;valign:middle;">
+                <![CDATA[仓库编码: <%=_data.toResCode%>]]>
+            </text>
+        
+		</layout>
+		<layout 
+            editor:_for_="1706153611184779"
+            
+            id="1706153611184859" width="31.61" height="7.64" left="4.19" top="47.57"  style="zIndex:19;">
+            <text  
+                style="fontFamily:SimHei;fontWeight:bold;fontSize:7;valign:middle;">
+                <![CDATA[仓库联系人: <%=_data.receiverInfo.name%>]]>
+            </text>
+        
+		</layout>
+		<layout 
+            editor:_for_="1706153663276677"
+            
+            id="1706153663276534" width="31.61" height="7.64" left="39.11" top="47.52"  style="zIndex:20;">
+            <text  
+                style="fontFamily:SimHei;fontWeight:bold;fontSize:7;valign:middle;">
+                <![CDATA[联系人电话: <%=_data.receiverInfo.phone%>]]>
+            </text>
+        
+		</layout>
+		<layout 
+            editor:_for_="1706153704237892"
+            
+            id="170615370423779" width="68.12" height="7.64" left="4.14" top="56.25"  style="zIndex:21;">
+            <text  
+                style="fontFamily:SimHei;fontWeight:bold;fontSize:7;valign:middle;">
+                <![CDATA[仓库地址: <%=_data.receiverInfo.address%>]]>
+            </text>
+        
+		</layout>
+		<layout 
+            editor:_for_="1706153890016251"
+            
+            id="1706153890017999" width="62.31" height="5" left="4.56" top="77.15"  style="zIndex:22;">
+            <text  
+                style="fontFamily:SimHei;fontWeight:bold;valign:bottom;">
+                <![CDATA[箱号：<%=_data.packageNumFull%>]]>
+            </text>
+        
+		</layout>
+		<layout 
+            editor:_for_="1706153940146239"
+            
+            id="1706153940153299" width="66.19" height="12.36" left="5.02" top="65.88"  style="zIndex:23;"><barcode type="code128" style="hideText:true;rotation:0"  ratioMode="keepRatio" ><![CDATA[<%=_data.packageNumFull%>]]></barcode>
+		</layout>
+		<layout 
+            editor:_for_="1706154020079882"
+            
+            id="1706154020080621" width="71.02" height="34.74" left="2.66" top="84.9"  style="zIndex:24;">
+            <text  
+                style="fontFamily:SimHei;">
+                <![CDATA[<%=_data.productInfo%>]]>
+            </text>
+        
+		</layout>
+		<layout 
+            editor:_for_="1706162582858552"
+            
+            id="1706162582858968" width="43.8" height="8.44" left="30.81" top="29.2"  style="zIndex:25;">
+            <text  
+                style="fontFamily:SimHei;fontWeight:bold;fontSize:12;align:right;valign:middle;">
+                <![CDATA[<%=_data.toResName%>]]>
+            </text>
+        
+		</layout>
+		<layout 
+            editor:_for_="1706166211638652"
+            
+            id="170616621163897" width="9.92" height="18.23" left="62.71" top="9"  style="zIndex:26;">
+            <text  
+                style="fontFamily:SimHei;fontWeight:bold;fontSize:24;align:center;valign:middle;">
+                <![CDATA[优]]>
+            </text>
+        
+		</layout>
+		<layout 
+            editor:_for_="1706168642013597"
+            
+            id="1706168642013862" width="35.26" height="9" left="2.38" top="46.93"  style="zIndex:27;"><rect></rect>
+		</layout>
+</page>

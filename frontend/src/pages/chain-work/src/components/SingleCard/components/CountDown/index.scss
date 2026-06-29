@@ -1,0 +1,16 @@
+.time-container {
+  display: flex;
+  justify-content: space-around;
+  color: #ff7300;
+  .time-box-content {
+    display: flex;
+  }
+}
+.offer-card-rest-time {
+  display: flex;
+  color: #bbb;
+  margin-top: 0;
+}
+.time-box-days {
+  margin: 0 6px 0 6px;
+}

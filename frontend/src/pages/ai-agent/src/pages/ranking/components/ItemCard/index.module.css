@@ -1,0 +1,196 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 20px 24px 0px 24px;
+  min-width: 0;
+  max-width: 100%;
+  width: 498px;
+}
+
+.itemCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.itemCardHeader {
+  display: flex;
+  gap: 10px;
+}
+
+.itemCardHeaderImgContent {
+  position: relative;
+  border-radius: 8px;
+}
+
+.itemCardHeaderImgContentIconContent {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 26px;
+  height: 26px;
+}
+
+.itemCardHeaderImgContentIcon {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+
+.itemCardHeaderImgContentIconF {
+  width: 26px;
+  height: 26px;
+}
+
+.markNum {
+  font-family: AlibabaSans102;
+  font-size: 15.17px;
+  font-weight: bold;
+  line-height: 15.17px;
+  text-align: center;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+  position: absolute;
+  top: 46%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+}
+
+.itemCardHeaderImg {
+  width: 114px;
+  height: 114px;
+  border-radius: 8px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.itemCardHeaderRight {
+  display: flex;
+  gap: 18px;
+  flex: 1;
+}
+
+.itemCardHeaderRightContent {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  flex: 1;
+}
+
+.itemCardHeaderRightContentTop {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.itemCardHeaderRightTitle {
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+  word-break: break-all;
+  overflow: hidden;
+  cursor: pointer;
+  width: 248px;
+}
+
+.itemCardHeaderRightContentBottom {
+  font-family: AlibabaSans102;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.tagRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+.fireIcon {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.divider {
+  height: 10px;
+  width: 0.5px;
+  background-color: #E7E8EE;
+}
+
+.time {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}
+
+.dividerLine {
+  width: 100%;
+  height: .5px;
+  background-color: #F3F3F6;
+}
+
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.loadingText {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--text-secondary);
+} 
+
+.emptyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  height: 100%;
+}
+
+.emptyText {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.emptyIcon {
+  width: 128px;
+  height: 128px;
+}

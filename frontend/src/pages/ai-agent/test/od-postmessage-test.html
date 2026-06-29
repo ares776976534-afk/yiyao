@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OD Studio PostMessage 测试</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        background: #f5f5f5;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 18px;
+        margin-bottom: 16px;
+        color: #333;
+      }
+      .controls {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 20px;
+      }
+      .controls button {
+        padding: 8px 20px;
+        border: 1px solid #d9d9d9;
+        border-radius: 6px;
+        font-size: 14px;
+        background: #fff;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .controls button:hover {
+        border-color: #1677ff;
+        color: #1677ff;
+      }
+      .controls button.primary {
+        background: #1677ff;
+        color: #fff;
+        border-color: #1677ff;
+      }
+      .controls button.primary:hover {
+        background: #4096ff;
+      }
+      .controls button.danger {
+        background: #ff4d4f;
+        color: #fff;
+        border-color: #ff4d4f;
+      }
+      .controls button.danger:hover {
+        background: #ff7875;
+      }
+      .iframe-wrapper {
+        width: 100%;
+        height: 80vh;
+        border: 1px solid #d9d9d9;
+        border-radius: 8px;
+        overflow: hidden;
+        background: #fff;
+      }
+      .iframe-wrapper iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+      .log {
+        margin-top: 16px;
+        padding: 12px;
+        background: #1e1e1e;
+        color: #d4d4d4;
+        border-radius: 8px;
+        font-family: "Menlo", "Monaco", monospace;
+        font-size: 12px;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+      .log .entry {
+        padding: 2px 0;
+      }
+      .log .entry.send {
+        color: #4ec9b0;
+      }
+      .log .entry.receive {
+        color: #dcdcaa;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>OD Studio PostMessage 测试面板</h1>
+
+    <div class="controls">
+      <button class="primary" onclick="addIframe()">添加 iframe</button>
+      <button class="danger" onclick="removeIframe()">移除 iframe</button>
+      <button onclick="clearLog()">清空日志</button>
+    </div>
+
+    <div id="iframeMount"></div>
+
+    <div class="log" id="logPanel"></div>
+
+    <script>
+      const NAMESPACE = "od-studio";
+      const STUDIO_BASE_URL = "http://localhost:3000/studio/od";
+      const OFFER_ID = "920611369507";
+      const IFRAME_SRC = `${STUDIO_BASE_URL}?offerId=${OFFER_ID}`;
+      const IFRAME_ID = "studioFrame";
+      const IFRAME_WRAPPER_ID = "iframeWrapper";
+      const iframeMount = document.getElementById("iframeMount");
+      const logPanel = document.getElementById("logPanel");
+
+      function log(direction, data) {
+        const entry = document.createElement("div");
+        entry.className = "entry " + direction;
+        const prefixMap = {
+          send: "⬆ SEND",
+          receive: "⬇ RECV",
+          system: "• SYS",
+        };
+        const prefix = prefixMap[direction] || "• LOG";
+        const time = new Date().toLocaleTimeString();
+        entry.textContent = `[${time}] ${prefix}: ${JSON.stringify(data)}`;
+        logPanel.appendChild(entry);
+        logPanel.scrollTop = logPanel.scrollHeight;
+      }
+
+      function addIframe() {
+        const exists = document.getElementById(IFRAME_ID);
+        if (exists) {
+          log("system", {
+            action: "addIframe",
+            status: "skip",
+            reason: "iframe 已存在",
+          });
+          return;
+        }
+        const wrapper = document.createElement("div");
+        wrapper.id = IFRAME_WRAPPER_ID;
+        wrapper.className = "iframe-wrapper";
+        const iframe = document.createElement("iframe");
+        iframe.id = IFRAME_ID;
+        iframe.src = IFRAME_SRC;
+        wrapper.appendChild(iframe);
+        iframeMount.appendChild(wrapper);
+        log("system", { action: "addIframe", status: "ok", src: IFRAME_SRC });
+      }
+
+      function removeIframe() {
+        const wrapper = document.getElementById(IFRAME_WRAPPER_ID);
+        if (!wrapper) {
+          log("system", {
+            action: "removeIframe",
+            status: "skip",
+            reason: "iframe-wrapper 不存在",
+          });
+          return;
+        }
+        wrapper.remove();
+        log("system", { action: "removeIframe", status: "ok" });
+      }
+
+      function clearLog() {
+        logPanel.innerHTML = "";
+      }
+
+      window.addEventListener("message", (event) => {
+        const { data } = event;
+        if (data?.namespace !== NAMESPACE) return;
+        log("receive", data);
+        if (
+          data?.type === "drawerStateChange" &&
+          data?.payload?.open === false
+        ) {
+          removeIframe();
+        }
+      });
+    </script>
+  </body>
+</html>

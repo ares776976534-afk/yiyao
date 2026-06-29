@@ -1,0 +1,41 @@
+.renderButton {
+  opacity: 0.01;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.button {
+  position: relative;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 48px;
+  cursor: pointer;
+  background-color: #6E50FF;
+}
+
+.googleIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.buttonText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #FFFFFF;
+  white-space: nowrap;
+  text-align: center;
+  width: 152px;
+  font-family: Poppins-Regular;
+}

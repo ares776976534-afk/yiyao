@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    gap: 12rpx;
+}
+
+.concatItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8rpx;
+}
+
+.concatItemIcon {
+    padding: 12rpx;
+    border-radius: 8rpx;
+    box-sizing: border-box;
+    border: 1rpx solid var(--border-secondary);
+}
+
+.concatItemIconImg {
+    width: 118rpx;
+    height: 118rpx;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.concatItemTitle {
+    text-align: center;
+    font-size: 13rpx;
+    font-weight: normal;
+    line-height: 18rpx;
+    letter-spacing: normal;
+    color: var(--text-primary);
+}

@@ -1,0 +1,78 @@
+.drawer {
+  :global(.ant-drawer-body) {
+    padding: 0;
+  }
+
+  .mobileDrawerContent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12rpx;
+
+    .mobileLogo {
+      width: 100%;
+      height: 55rpx;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 18rpx;
+    }
+    :global(.ant-menu-item) {
+      height: 48rpx !important;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10rpx;
+      padding: 12rpx 18rpx !important;
+      margin: 0;
+      font-size: 14rpx;
+      font-weight: normal;
+      line-height: 16rpx;
+      letter-spacing: normal;
+      color: var(--text-primary);
+    }
+    :global(.ant-menu-item .ant-menu-item-icon +span) {
+      margin: 0 !important;
+    }
+    :global(.ant-menu-item-divider) {
+      margin: 12rpx 18rpx !important;
+    }
+  }
+
+  .mobileFooter {
+    margin-bottom: 16rpx;
+    :global(.ant-menu-item) {
+      height: 44rpx !important;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 8rpx;
+      padding: 14rpx 18rpx !important;
+      margin: 0;
+      font-size: 14rpx;
+      font-weight: normal;
+      line-height: 16rpx;
+      letter-spacing: normal;
+      color: var(--text-primary);
+    }
+    :global(.ant-menu-item .ant-menu-item-icon +span) {
+      margin: 0 !important;
+    }
+  }
+  :global(.ant-menu-item-selected) {
+    background-color: unset;
+  }
+}
+
+.mobileFooterItemLabel {
+  display: flex;
+  align-items: center;
+  gap: 4rpx;
+}

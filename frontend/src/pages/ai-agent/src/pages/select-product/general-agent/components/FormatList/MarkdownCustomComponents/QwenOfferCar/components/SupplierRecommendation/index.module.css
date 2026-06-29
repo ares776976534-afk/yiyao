@@ -1,0 +1,189 @@
+.supplierRecommendation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 12px;
+  padding-bottom: 2px;
+}
+
+.supplierRecommendationHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0px 8px 0px;
+  gap: 12px;
+}
+
+.supplierRecommendationHeaderTitle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.supplierRecommendationHeaderTitleText {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.supplierRecommendationHeaderMore {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-accent);
+  cursor: pointer;
+}
+
+.supplierRecommendationContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.supplierRecommendationTop {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.supplierRecommendationTopTitle {
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.supplierRecommendationSub {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.supplierRecommendationSubItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.supplierRecommendationSubTag {
+  display: flex;
+  padding: 1px 3px;
+  gap: 2px;
+  border-radius: 2px;
+  background: #E8F7ED;
+  filter: blur(0px);
+  font-family: Alibaba PuHuiTi 3.0;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: -0.05em;
+  color: #22AC60;
+}
+
+.divider {
+  height: 10px;
+  border: .5px solid #E7E8EE;
+}
+
+.supplierRecommendationSubRight {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-left: 6px;
+}
+
+.supplierRecommendationSubRightItem {
+  font-family: PingFang SC;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}
+
+.supplierRecommendationBottom {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.supplierRecommendationBottomImage {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+}
+
+.supplierRecommendationBottomImageImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.supplierRecommendationBottomContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.supplierRecommendationBottomContentTitle {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.supplierRecommendationBottomContentPriceContainer {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 23px;
+}
+
+.supplierRecommendationBottomContentPrice {
+  font-family: AlibabaSans102;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.supplierRecommendationBottomContentSales {
+  font-family: PingFang SC;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+  margin-bottom: 2px;
+}
+
+.providerInfoList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

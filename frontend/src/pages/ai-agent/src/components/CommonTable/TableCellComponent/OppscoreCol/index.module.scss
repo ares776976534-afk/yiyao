@@ -1,0 +1,69 @@
+.oppscoreColWrapper {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+
+  .oppscoreValueContainer {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+
+  .oppscoreValue {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.87);
+    text-align: left;
+  }
+
+  .oppscoreDesc {
+    display: flex;
+    gap: 8px;
+    margin-top: 5px;
+  }
+
+  .oppscoreDescItemContainer {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .oppscoreDescItem {
+    width: 10px;
+    height: 10px;
+    border-radius: 4px 4px 4px 0px;
+    background: #FFCA50;
+  }
+
+  .oppscoreDescItem+.oppscoreDescItem {
+    background: #FF9F50;
+  }
+
+  .oppscoreDescItem+.oppscoreDescItem+.oppscoreDescItem {
+    background: #FF7650;
+  }
+
+  .oppscoreDescItem+.oppscoreDescItem+.oppscoreDescItem+.oppscoreDescItem {
+    background: #F64343;
+  }
+
+  .oppscoreDescText {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: #F64343;
+  }
+
+
+  .radarChartContainer {
+    flex-shrink: 0;
+    margin-left: 24px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .radarChart {}
+}

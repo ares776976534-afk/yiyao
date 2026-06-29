@@ -1,0 +1,15 @@
+.ant-input-outlined:focus,
+.ant-input-outlined:focus-within {
+  box-shadow: none !important;
+}
+
+.ant-btn {
+  box-shadow: none !important;
+  &.ant-btn-primary:disabled {
+    border-color: var(--dt-colors-brand-primaryDisabled) !important;
+  }
+}
+
+.ant-switch-checked {
+  background: var(--dt-colors-brand-primary) !important;
+}

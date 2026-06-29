@@ -1,0 +1,220 @@
+.supplierMainCard {
+  display: flex;
+  padding: 12rpx;
+  gap: 12rpx;
+  align-self: stretch;
+  border-radius: 8rpx;
+  background: var(--fill-white);
+  box-sizing: border-box;
+  border: 1rpx solid var(--border-secondary);
+  position: relative;
+}
+
+.supplierMainCardImage {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 4rpx;
+}
+
+.supplierMainCardTag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 64rpx;
+  height: 20rpx;
+  display: flex;
+  align-items: center;
+  padding: 1rpx 8rpx;
+  gap: 2rpx;
+  border-radius: 2rpx 2rpx 8rpx 2rpx;
+  background: var(--fill-secondary);
+  font-family: PingFang SC;
+  font-size: 12rpx;
+  font-weight: normal;
+  line-height: 18rpx;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}
+
+.supplierMainCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+  flex: 1;
+  min-width: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 6rpx;
+  min-width: 0;
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+  min-width: 0;
+}
+
+.headerTitleText {
+  font-family: PingFang SC;
+  font-size: 14rpx;
+  font-weight: 500;
+  line-height: 20rpx;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  min-width: 0;
+}
+
+.headerTitleWantWant {
+  width: 60rpx;
+  display: flex;
+  align-items: center;
+  gap: 4rpx;
+}
+
+.wantWantIcon {
+  width: 14rpx;
+  height: 14rpx;
+}
+
+.headerTitleWantWantText {
+  font-family: PingFang SC;
+  font-size: 12rpx;
+  font-weight: normal;
+  line-height: 16rpx;
+  letter-spacing: normal;
+  color: var(--text-tertiary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.merchantTag {
+  display: flex;
+  align-items: center;
+  gap: 4rpx;
+}
+
+.divider {
+  width: 10rpx;
+  transform: rotate(90deg);
+  border: 1rpx solid var(--border-primary);
+  margin: 0rpx 7rpx;
+  border-radius: 1rpx;
+}
+
+.merchantTagItem {
+  display: flex;
+  align-items: center;
+  padding: 1rpx 3rpx;
+  border-radius: 2rpx;
+  letter-spacing: -0.05rpx;
+  font-size: 11rpx;
+  line-height: 14rpx;
+  gap: 2rpx;
+}
+
+.pmplus {
+  background: linear-gradient(114deg, #1A006B 4%, #12014C 28%, #020218 87%);
+  font-weight: bold;
+  color: #EACBA9;
+}
+
+.sourceProvider {
+  font-weight: 600;
+  color: #22AC60;
+  background: #E8F7ED;
+  filter: blur(0px);
+}
+
+.pm {
+  background: #FF1C2A;
+  filter: blur(0px);
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.tp {
+  background: #F9F9FB;
+  box-sizing: border-box;
+  border: 0.5rpx solid #E7E8EE;
+  font-weight: 500;
+  color: #7B7B8D;
+}
+
+.primaryCategory {
+  font-family: PingFang SC;
+  font-size: 12rpx;
+  font-weight: normal;
+  line-height: 16rpx;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.serviceInfo {
+  display: flex;
+  align-items: center;
+}
+
+.serviceInfoItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4rpx;
+}
+
+.serviceInfoKey {
+  font-family: PingFang SC;
+  font-size: 12rpx;
+  font-weight: normal;
+  line-height: 16rpx;
+  letter-spacing: normal;
+  color: var(--text-tertiary);
+}
+
+.serviceInfoValue {
+  font-family: PingFang SC;
+  font-size: 12rpx;
+  font-weight: normal;
+  line-height: 16rpx;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  gap: 4rpx;
+}
+
+.addressIcon {
+  width: 14rpx;
+  height: 14rpx;
+}
+
+.addressName {
+  font-family: PingFang SC;
+  font-size: 12rpx;
+  font-weight: normal;
+  line-height: 18rpx;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}

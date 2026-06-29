@@ -1,0 +1,40 @@
+.select-help-sell-dialog {
+  background: linear-gradient(180deg, #07f -125%, rgba(255, 255, 255, 0) 16%), #fff;
+  /* 投影 - 中 */
+  box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.08);
+
+  .next-dialog-header {
+    padding: 20px 20px 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .next-dialog-header+.next-dialog-body {
+    padding: 24px 20px 20px 20px;
+  }
+
+  .next-dialog-footer {
+    padding: 0 20px 20px 20px;
+  }
+
+  .next-dialog-close {
+    top: 16px;
+    right: 20px;
+  }
+
+  .next-dialog-close .next-dialog-close-icon.next-icon {
+    position: absolute;
+    top: 4px;
+    left: 5px;
+  }
+
+  .next-dialog-close .next-dialog-close-icon.next-icon:before {
+    font-size: 18px;
+  }
+
+}
+
+.imgIcon {
+  background: linear-gradient(192deg, rgba(255, 255, 255, 0.23) 8%, rgba(216, 216, 216, 0) 77%);
+}

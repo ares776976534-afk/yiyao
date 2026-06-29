@@ -1,0 +1,148 @@
+.languageSettingsContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: fixed;
+  right: 24px;
+  top: calc(18px + var(--promo-banner-offset, 0px));
+  z-index: 1000;
+}
+
+.languageSettingsItem {
+  min-width: 109px;
+  height: 36px;
+  /* 自动布局 */
+  display: flex;
+  align-items: center;
+  padding: 0px 12px;
+  gap: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.languageSettingsItem:hover {
+  background: #F7F7FA !important;
+}
+
+.languageSettingsItemText {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.arrowIcon {
+  transition: transform 0.2s ease;
+}
+
+.arrowIconRotated {
+  transform: rotate(180deg);
+}
+
+.languageSettingsItemImage {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  cursor: pointer;
+  /* background: var(--fill-white);
+  border-radius: 8px; */
+}
+
+.languageSettingsItemImageIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* 语言选择下拉菜单的专用样式 */
+:global(.language-dropdown-overlay) :global(.ant-dropdown-menu) {
+  min-width: 200px !important;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 2px;
+  border-radius: 16px;
+  background: var(--fill-white);
+  box-sizing: border-box;
+  border: 1px solid var(--border-secondary);
+  box-shadow: 0px 4px 16px 0px rgba(187, 189, 202, 0.16);
+}
+
+:global(.language-dropdown-overlay) :global(.ant-dropdown-menu-item) {
+  display: flex !important;
+  align-items: center !important;
+  padding: 12px !important;
+  gap: 10px !important;
+  border-radius: 8px !important;
+  /* background: var(--fill-primary) !important; */
+  font-size: 14px !important;
+  font-weight: normal !important;
+  line-height: 20px !important;
+  letter-spacing: normal !important;
+  color: var(--text-primary) !important;
+}
+
+:global(.language-dropdown-overlay) :global(.ant-dropdown-menu-item:hover) {
+  background: var(--fill-primary) !important;
+}
+
+/* 选中背景色 */
+:global(.language-dropdown-overlay) :global(.ant-dropdown-menu-item-selected),
+:global(.language-dropdown-overlay) :global(.selected-item) {
+  background: var(--fill-accent) !important;
+}
+
+/* 选中状态悬停时保持选中背景色 */
+:global(.language-dropdown-overlay)
+  :global(.ant-dropdown-menu-item-selected:hover),
+:global(.language-dropdown-overlay) :global(.selected-item:hover) {
+  background: var(--fill-accent) !important;
+}
+
+.languageSettingsItemLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.languageSettingsItemImageText {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.languageSettingsLoginButton {
+  border-radius: 12px;
+  background: radial-gradient(
+      103% 113% at 49% 177%,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #6e50ff;
+  border: 3px solid rgba(110, 80, 255, 0.1);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  box-sizing: content-box;
+  /* min-width: 100px; */
+  height: 36px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-clip: padding-box;
+}
+
+.languageSettingsLoginButton:hover {
+  background-color: #866cff !important;
+}

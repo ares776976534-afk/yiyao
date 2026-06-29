@@ -1,0 +1,43 @@
+.fullscreen {
+    margin-right: 12px
+}
+
+.commonStyle {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    gap: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.commonStyle:hover {
+    background: #F9F9FB;
+}
+
+.exportReportBtn {
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 6px;
+    gap: 4px;
+    border-radius: 6px;
+    background: var(--fill-white);
+    box-sizing: border-box;
+    border: 1px solid #fff !important;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: var(--text-primary) !important;
+    margin-right: 12px;
+}
+
+.exportReportBtn:hover {
+    background: var(--fill-primary) !important;
+}

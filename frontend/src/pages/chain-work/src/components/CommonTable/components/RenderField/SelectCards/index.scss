@@ -1,0 +1,27 @@
+.item-post .service-box {
+  position: relative;
+  /* 创建小三角形 */
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 16px solid; /* 灰色背景的宽度，也是小三角的高度 */
+    border-bottom-color: #ccc;
+    border-left: 16px solid transparent; /* 使左边边框透明，形成三角形 */
+    border-radius: 0% 0% 10% 0%;
+  }
+  .service-icon {
+    position: absolute;
+    width: 8px;
+    height: 7px;
+    bottom: 8px;
+    right: 5px;
+    z-index: 2;
+  }
+  .next-icon-select:before {
+    color: #fff;
+  }
+}

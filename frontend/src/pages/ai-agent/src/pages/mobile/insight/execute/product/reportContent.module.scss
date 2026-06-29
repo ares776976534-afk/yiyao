@@ -1,0 +1,67 @@
+.scoreCard {
+  display: flex;
+  padding: 14rpx 16rpx;
+  gap: 12rpx;
+  border-radius: 16rpx;
+  background: var(--fill-secondary);
+  box-sizing: border-box;
+  border: 1rpx solid var(--border-accent);
+}
+
+.scoreText {
+  font-family: PingFang SC;
+  font-size: 13rpx;
+  font-weight: normal;
+  line-height: 18rpx;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.scoreSubtext {
+  font-family: PingFang SC;
+  font-size: 13rpx;
+  font-weight: normal;
+  line-height: 18rpx;
+  letter-spacing: normal;
+  color: var(--text-secondary); 
+}
+
+.infoData {
+  display: flex;
+  gap: 12px;
+}
+
+.infoDataContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+}
+
+.productSection {
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+}
+
+.productSectionHeader {
+  display: flex;
+  align-items: center;
+  padding-left: 4rpx;
+  gap: 8rpx;
+}
+
+.Icon {
+  width: 4rpx;
+  height: 12rpx;
+  border-radius: 1rpx;
+  background: var(--text-accent);
+}
+
+.productSectionTitle {
+  font-family: PingFang SC;
+  font-size: 18rpx;
+  font-weight: 500;
+  line-height: 20rpx;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}

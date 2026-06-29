@@ -1,0 +1,26 @@
+.next-checkbox-label {
+  flex: 1;
+}
+.next-checkbox-group .next-checkbox-wrapper {
+  display: flex;
+}
+.footer {
+  box-shadow: 0 1px 16px 0 rgba(0, 0, 0, 0.06);
+}
+
+.checkboxStyle {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  margin-bottom: 20px;
+  padding: 20px 8px 20px 20px;
+  .next-checkbox-label {
+    width: 100%;
+  }
+}
+
+.labelColor {
+  .next-form-item-label {
+    color: #333 !important;
+  }
+}

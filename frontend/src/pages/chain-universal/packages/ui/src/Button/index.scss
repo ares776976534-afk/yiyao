@@ -1,0 +1,21 @@
+.chain-ui-button {
+    &.primary-ghost {
+      color: #07f;
+      border-color: #07f;
+  
+      &:hover {
+        color: #07f;
+        border-color: #07f;
+      }
+    }
+  
+    &.primary-small {
+      height: 24px;
+      font-size: 12px;
+      padding: 0 12px;
+    }
+  
+    &.next-btn-text {
+      height: 14px;
+    }
+  }

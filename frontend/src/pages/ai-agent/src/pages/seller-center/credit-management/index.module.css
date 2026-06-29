@@ -1,0 +1,21 @@
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  padding: 28px 0 24px 0;
+  border-bottom: 1px solid #0000000A;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #000000DE;
+}
+
+.sectionSubtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #7B7B8D;
+  margin-left: 16px;
+}

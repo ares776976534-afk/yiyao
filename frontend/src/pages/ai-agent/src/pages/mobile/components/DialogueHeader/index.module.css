@@ -1,0 +1,26 @@
+.dialogueHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+  margin-bottom: 10rpx;
+}
+
+.dialogueHeaderLogoContainer {
+  padding: 5.4rpx 0.9rpx 5rpx;
+  width: 63rpx;
+  height: 27rpx;
+}
+
+.dialogueHeaderLogo {
+  width: 100%;
+  height: 100%;
+}
+
+.dialogueHeaderText {
+  font-family: PingFang SC;
+  font-size: 14rpx;
+  font-weight: normal;
+  line-height: 20rpx;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}

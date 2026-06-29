@@ -1,0 +1,50 @@
+.taskDetailsModal {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+    padding: 8px 0;
+    box-sizing: border-box;
+}
+
+.taskDetailsModalTitle {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #7B7B8D;
+}
+
+.taskDetailsModalContent {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 12px;
+    background: #FBFBFD;
+}
+
+.taskDetailsModalItem {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.taskContent {
+    padding: 12px;
+    border-radius: 12px;
+    background: #FBFBFD;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #1D2129;
+}
+
+.taskDetailsModalValue {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #1D2129;
+}

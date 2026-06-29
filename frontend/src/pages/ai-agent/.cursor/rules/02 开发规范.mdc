@@ -1,0 +1,11 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+* import引用ts要区分type类型和非type类型
+* 一个功能内举的模块下的ts类型全部分类到一个单独的文件中
+* 定义类型命名加上Type作为前缀，如 interface TypeA {}
+* 定义枚举使用Enum作为前缀，如Enum EnumeA = {}
+* 字符串默认使用单引号包裹
+* 不要默认加上tabIndex

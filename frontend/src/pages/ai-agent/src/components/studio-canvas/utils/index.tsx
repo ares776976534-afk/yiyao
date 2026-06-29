@@ -1,0 +1,3 @@
+
+
+export { isMac } from './platform';

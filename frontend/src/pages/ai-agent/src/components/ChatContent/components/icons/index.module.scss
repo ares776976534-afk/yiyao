@@ -1,0 +1,58 @@
+.heartbeatIcon {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.heartbeatImg {
+  width: 20px;
+  height: 16px;
+}
+
+$back-width: 5px;
+
+.heartbeatText {
+  position: relative;
+  font-size: 14px;
+  color: transparent;
+  background: linear-gradient(113deg, #fff 0%, #848484 10px, #fff 20px, #fff 100%) 0 / 200% 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-move 2s linear infinite both;
+
+  [data-theme="light"] & {
+    filter: invert(1);
+  }
+}
+
+@keyframes gradient-move {
+  0% {
+      background-position-x: 200%;
+  }
+  100% {
+      background-position-x: -200%;
+  }
+}
+
+.assistantIcon {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  color: #fff;
+}
+
+.assistantLogoIcon {
+  width: 59px;
+  height: 17px;
+}
+
+.assistantTextIcon {
+  width: 28px;
+  height: 13px;
+}
+
+[data-theme="light"] {
+  .assistantIcon {
+    color: #1B1C1D;
+  }
+}

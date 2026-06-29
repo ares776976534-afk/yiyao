@@ -1,0 +1,140 @@
+.sameInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sameInfoContent {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 12px;
+    flex: 1;
+}
+
+.sameInfoTitle {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.sameInfoContentMiddleTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sameInfoContentMiddleTitleText {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+}
+
+.sameInfoContentMiddleTitleTextSub {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+}
+
+.headerTitle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.headerPoint {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--icon-accent);
+}
+
+.headerTitleText {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+}
+
+.skuList {
+    margin-top: 20px;
+}
+
+.skuList :global(.reviewTable) {
+    overflow: auto;
+    border: 1px solid #F3F3F6;
+    border-bottom: 0;
+    border-radius: 8px;
+}
+
+.skuList :global(.ant-table-tbody tr:last-child td:first-child) {
+    border-left: 8px !important;
+}
+
+.skuList :global(.ant-table-tbody tr:last-child td:last-child) {
+    border-right: 8px !important;
+}
+
+.skuList :global(.ant-table-wrapper .ant-table-thead >tr>th){
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+}
+
+.skuList :global(.ant-table-wrapper .ant-table-tbody >tr >td) {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+}
+
+.skuTitle {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+}
+
+.skuSold {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+}
+
+.skuRating {
+    display: flex;
+    gap: 4px;
+}
+
+.skuRatingText {
+    font-weight: 700;
+    font-size: 16px;
+    color: #6E50FF
+}
+
+.skuRatingTextSub {
+    font-weight: 400;
+    font-size: 14px;
+    color: #6E50FF
+}
+
+.skuLaunchDate {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+}

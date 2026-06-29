@@ -1,0 +1,66 @@
+.reportBoardContainer {
+
+  .reportBoardItem {
+  }
+
+  .reportBoardItem + .reportBoardItem {
+    margin-top: 24px;
+  }
+
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: fit-content;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 0 0 0 4px;
+    align-items: center;
+    margin-bottom: 22px;
+  }
+
+  .indicator {
+    border-radius: 1px;
+    background: #6E50FF;
+    width: 4px;
+    height: 12px;
+    margin-right: 8px;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: normal;
+    color: #1B1C1D;
+  }
+
+
+  .chartContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .chartItem {
+    border-radius: 12px;
+    height: 216px;
+    min-width: 0;
+  }
+}
+
+.dataUpdateTimeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dataUpdateTime {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}

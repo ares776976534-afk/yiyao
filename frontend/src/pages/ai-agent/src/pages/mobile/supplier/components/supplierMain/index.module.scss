@@ -1,0 +1,68 @@
+.supplierMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20rpx;
+}
+
+.supplierMainHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rpx;
+}
+
+.supplierMainHeaderImage {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.supplierMainHeaderTitle {
+  font-family: PingFang SC;
+  font-size: 14rpx;
+  font-weight: normal;
+  line-height: 22rpx;
+  letter-spacing: normal;
+  color: #7B7B8D;
+}
+
+.supplierMainBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rpx;
+  width: 100%;
+
+  // 复写 MainBtn 样式为 rpx
+  button[class*='mainBtn'] {
+    width: 142rpx !important;
+    height: 36rpx !important;
+    font-size: 14rpx !important;
+    line-height: 20rpx !important;
+    padding: 8rpx 12rpx !important;
+    gap: 6rpx !important;
+    border-radius: 8rpx !important;
+  }
+
+  // 复写 SecondaryBtn 样式为 rpx
+  button[class*='secondaryBtn'] {
+    width: 142rpx !important;
+    height: 36rpx !important;
+    font-size: 14rpx !important;
+    line-height: 20rpx !important;
+    padding: 8rpx 12rpx !important;
+    gap: 6rpx !important;
+    border-radius: 8rpx !important;
+    border: 1rpx solid #6E50FF !important;
+  }
+
+  // 复写按钮图标大小
+  button[class*='mainBtn'] span[role='img']{
+    font-size: 14rpx !important;
+    vertical-align: -3rpx;
+  }
+  :global(.ant-btn-icon){
+    display: flex;
+    align-items: center;
+  }
+}

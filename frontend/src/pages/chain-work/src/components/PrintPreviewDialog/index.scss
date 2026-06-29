@@ -1,0 +1,80 @@
+@import "../../styles/base.scss";
+
+.ae-print-preview-container {
+  .next-dialog-header {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+  .ae-print-preview-content {
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    .content-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 6px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      .title {
+        font-weight: 500;
+      }
+      .copy {
+        width: 16px;
+        height: 16px;
+        margin-left: 8px;
+        cursor: pointer;
+
+        &:hover svg {
+          fill: $theme-color;
+        }
+
+        svg {
+          width: 100%;
+          height: 100%;
+          fill: #666;
+        }
+      }
+    }
+    .preview-content {
+      height: 400px;
+      margin-top: 16px;
+      background: #f2f2f2;
+      border-radius: 6px;
+      overflow: auto;
+      .preview-image {
+        max-width: 538px;
+        height: 100%;
+        margin: auto;
+        .progressive-image-container {
+          width: 100%;
+          height: 100%;
+
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      embed {
+        width: 100%;
+        height: calc(100% - 7px);
+      }
+
+      > * + * {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.btn {
+  &:link,
+  &:visited {
+    color: #07f;
+    text-decoration: none;
+  }
+}

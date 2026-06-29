@@ -1,0 +1,79 @@
+
+.frostedGlass {
+    overflow: hidden;
+    background-color: var(--fill-white);
+}
+
+.frostedGlassImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.riskStatus {
+    position: relative;
+}
+
+.riskStatus .frostedGlassImage {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.frostedOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+}
+
+.magnifyOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.riskStatus:hover .magnifyOverlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* .popover {
+    width: 226px !important;
+}
+
+.frostedGlassImagePopover {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5.45px;
+    background-color: var(--fill-white);
+}
+
+.frostedGlassImagePopoverImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+} */
+
+.frostedGlassImageMagnify {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 3px 1px 1px 3px;
+    cursor: pointer;
+}

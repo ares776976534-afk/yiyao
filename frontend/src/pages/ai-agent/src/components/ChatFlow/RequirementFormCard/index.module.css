@@ -1,0 +1,608 @@
+:global(.ant-input)::placeholder,
+:global(.ant-input-number-input)::placeholder {
+  color: #BBBDCA !important;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+:global(.ant-input-affix-wrapper),
+:global(.ant-input-prefix) {
+  height: 36px !important;
+  box-sizing: border-box;
+}
+
+/* currency input placeholder 样式 */
+.requirementFormCard .currencyInput :global(.ant-input)::placeholder {
+  color: var(--text-tertiary-4) !important;
+}
+
+.requirementFormCard .currencyInput :global(.ant-input)::-webkit-input-placeholder {
+  color: var(--text-tertiary-4) !important;
+}
+
+.requirementFormCard .currencyInput :global(.ant-input)::-moz-placeholder {
+  color: var(--text-tertiary-4) !important;
+}
+
+.requirementFormCard .currencyInput :global(.ant-input):-ms-input-placeholder {
+  color: var(--text-tertiary-4) !important;
+}
+
+
+.requirementFormCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.requirementFormCard :global(.ant-form-item) {
+  margin-bottom: 28px !important;
+}
+
+.requirementFormCard :global(.ant-input) {
+  border-radius: 8px !important;
+  border-color: var(--border-primary);
+  height: 36px !important;
+  border: 1px solid #E7E8EE;
+}
+
+.requirementFormCard .keyInput:global(.ant-input) {
+  border-radius: 8px !important;
+  border-color: var(--border-primary);
+  height: 40px !important;
+  border: 1px solid #E7E8EE;
+}
+
+/* 风险输入框样式 */
+.riskInput {
+  border-color: var(--semantic-warning-primary) !important;
+  animation: shake 0.6s ease-in-out;
+}
+
+.riskInput:focus {
+  border-color: var(--semantic-warning-primary) !important;
+  box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2) !important;
+}
+
+/* 抖动动画 */
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+/* Select 组件 disabled 状态样式 */
+.requirementFormCard :global(.ant-select-disabled) :global(.ant-select-selector) {
+  background: #FBFBFD !important;
+  color: #7C7F9A !important;
+  border-color: #E7E8EE !important;
+}
+
+.requirementFormCard :global(.ant-select-disabled) :global(.ant-select-selection-placeholder) {
+  color: #7C7F9A !important;
+}
+
+.requirementFormCard :global(.ant-select-disabled) :global(.ant-select-selection-item) {
+  color: #7C7F9A !important;
+}
+
+.requirementFormCardTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: normal;
+  color: var(--icon-primary);
+}
+
+.requirementFormCardLabel {
+  display: flex;
+  align-items: center;
+}
+
+.requirementFormCardLabelText {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #1B1C1D;
+  margin-left: 6px;
+  font-weight: 500;
+}
+
+.requirementFormCardLabelRequired {
+  color: var(--semantic-warning-primary);
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  margin-left: 2px;
+}
+
+/* Radio Button 自定义样式 */
+.radioGroup {
+  display: flex;
+  gap: 8px;
+  /* 每个按钮间隔8px */
+  flex-wrap: wrap;
+}
+
+/* 强制重置所有Radio Button的默认样式 */
+.radioGroup :global(.ant-radio-group) {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.radioGroup :global(.ant-radio-group) :global(.ant-radio-button-wrapper) {
+  margin-right: 0;
+  margin-left: 0;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+/* 覆盖 Antd Radio Button 样式 */
+.radioGroup :global(.ant-radio-button-wrapper) {
+  border-radius: 8px !important;
+  border: 1px solid #E7E8EE !important;
+  margin-right: 0 !important;
+  /* 移除默认间距，使用gap控制 */
+  transition: all 0.3s ease !important;
+  height: 36px !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  padding: 8px 24px !important;
+  color: var(--text-secondary) !important;
+}
+
+.radioGroup :global(.ant-radio-button-wrapper)::before {
+  width: 0 !important;
+  background-color: transparent !important;
+}
+
+/* 选中状态样式 */
+.radioGroup :global(.ant-radio-button-wrapper-checked) {
+  color: var(--text-checked) !important;
+  border: 1px solid var(--text-checked) !important;
+  /* 选中边框为 #6150FF */
+  background-color: var(--fill-white) !important;
+  /* 背景色保持为白色 */
+  /* box-shadow: 0 0 0 2px rgba(83, 99, 245, 0.2) !important; 外发光效果 */
+  z-index: 1 !important;
+  font-weight: 500;
+}
+
+/* 强制清除选中按钮的伪元素边框 */
+.radioGroup :global(.ant-radio-button-wrapper-checked)::before {
+  width: 0 !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* 悬停状态 */
+.radioGroup :global(.ant-radio-button-wrapper:hover) {
+  border: 1px solid var(--text-checked) !important;
+  color: var(--text-checked) !important;
+  background-color: var(--fill-white) !important;
+}
+
+/* 选中且悬停状态 */
+.radioGroup :global(.ant-radio-button-wrapper-checked:hover) {
+  color: var(--text-checked) !important;
+  /* 保持黑色字体 */
+  border: 1px solid var(--text-checked) !important;
+  background-color: var(--fill-white) !important;
+  /* 背景色保持为白色 */
+  z-index: 1 !important;
+}
+
+/* 禁用状态保持原样 */
+.radioGroup :global(.ant-radio-button-wrapper-disabled) {
+  color: var(--dt-colors-text-secondary) !important;
+  background-color: var(--dt-colors-background-secondary) !important;
+}
+
+.radioGroup :global(.ant-radio-button-wrapper-disabled.ant-radio-button-wrapper-checked) {
+  color: var(--text-checked) !important;
+  background-color: var(--fill-white) !important;
+}
+
+.radioGroup :global(.ant-radio-button-wrapper-disabled:hover) {
+  background: var(--fill-secondary) !important;
+  box-sizing: border-box;
+  /* Border/Primary */
+  border: 1px solid var(--border-primary) !important;
+  color: var(--text-tertiary) !important;
+}
+
+
+/* 聚焦状态 */
+.radioGroup :global(.ant-radio-button-wrapper:focus-within) {
+  border-color: var(--text-checked) !important;
+  /* box-shadow: 0 0 0 2px rgba(83, 99, 245, 0.2) !important; */
+}
+
+.title {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.titleText {
+  margin-left: 8px;
+}
+
+.newStyle :global(.ant-form-item-label) {
+  padding-bottom: 4px !important;
+}
+
+.itemLabel {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}
+
+/* 评分输入框容器样式 */
+.ratingInputContainer {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 8px;
+}
+
+.ratingInputContainer :global(.ant-form-item) {
+  margin-bottom: 0;
+  flex: 0 0 auto;
+}
+
+.ratingInputContainer :global(.ant-form-item-control) :global(.ant-input-number-affix-wrapper) {
+  width: 163px !important;
+  height: 36px !important;
+  border-radius: 8px;
+  border-color: var(--border-primary);
+}
+
+.ratingInputContainer :global(.ant-form-item-control) :global(.ant-input-number) {
+  width: 163px !important;
+  height: 36px !important;
+}
+
+.ratingInputContainer :global(.ant-input-number-outlined.ant-input-number-disabled) {
+  background: var(--fill-secondary);
+  box-sizing: border-box;
+  /* Border/Primary */
+  border: 1px solid var(--border-primary);
+  color: var(--icon-primary);
+}
+
+/* InputNumber 圆角样式 */
+/* 这些样式已合并到下面的更强选择器中 */
+
+
+.monthlySalesRange {
+  margin-top: 8px;
+}
+
+.imgIcon {
+  width: 16px;
+  height: 16px;
+}
+
+/* .confirmBtn {
+  height: 40px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: normal;
+  color: var(--text-white) !important;
+  background: #6E50FF !important;
+
+  &:hover {
+    background: var(--dt-colors-brand-primaryHover) !important;
+  }
+}
+
+.confirmBtn:disabled {
+  background: var(--dt-colors-brand-primaryDisabled) !important;
+  color: var(--text-tertiary) !important;
+} */
+
+/* 隐藏 Ant Design Form 默认的 required 星号 */
+.requirementFormCard :global(.ant-form-item-label > label.ant-form-item-required::before) {
+  display: none !important;
+}
+
+/* 修复 InputNumber 高度样式，使用更强的选择器优先级 */
+.requirementFormCard :global(.ant-input-number-affix-wrapper) {
+  height: 36px !important;
+  width: 100% !important;
+  border-color: var(--border-primary) !important;
+  border-radius: 8px;
+}
+
+.requirementFormCard :global(.ant-input-number-affix-wrapper:hover) {
+  border-color: var(--border-primary) !important;
+}
+
+.requirementFormCard :global(.ant-input-number) {
+  height: 36px !important;
+  width: 100% !important;
+}
+
+.requirementFormCard :global(.ant-input-number-affix-wrapper) :global(.ant-input-number-input) {
+  height: 36px !important;
+  /* 减去边框的高度 */
+  line-height: 36px !important;
+}
+
+.requirementFormCard :global(.ant-input-number) :global(.ant-input-number-input) {
+  height: 36px !important;
+  line-height: 36px !important;
+}
+
+.requirementFormCard :global(.ant-form-item-control-input-content) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.priceRangeContainer :global(.ant-form-item) {
+  margin-bottom: 0 !important;
+}
+
+.monthlySalesRangeContainer :global(.ant-form-item) {
+  margin-bottom: 0 !important;
+}
+
+.platformRadioGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-primary);
+}
+
+.followedCategoriesItem :global(.ant-form-item-control-input-content) {
+  display: flex;
+  gap: 8px !important;
+  align-items: center;
+  width: 100% !important;
+}
+
+.followedCategoriesItem :global(.ant-form-item) {
+  flex: 1 1 0% !important;
+  /* 平均分配宽度，各占一份 */
+  margin-bottom: 0 !important;
+  min-width: 0 !important;
+  /* 防止 flex 子项不收缩 */
+}
+
+.followedCategoriesItem :global(.ant-select) {
+  width: 100% !important;
+}
+
+/* 输入框禁用 */
+.requirementFormCard :global(.ant-input-number-outlined.ant-input-number-disabled) {
+  background: var(--fill-secondary) !important;
+  box-sizing: border-box !important;
+  color: var(--text-tertiary) !important;
+  /* Border/Primary */
+  border: 1px solid var(--border-primary) !important;
+}
+
+:global(.ant-input-number-affix-wrapper .ant-input-number-prefix) {
+  color: var(--dt-colors-text-primary) !important;
+}
+
+:global(.ant-input-number-affix-wrapper .ant-input-number-suffix) {
+  color: var(--icon-primary) !important;
+}
+
+:global(.ant-form-item-control-input.ant-input-number-disabled) {
+  background: var(--fill-secondary) !important;
+  box-sizing: border-box !important;
+  /* Border/Primary */
+  border: 1px solid var(--border-primary) !important;
+}
+
+:global(.ant-input-outlined.ant-input-disabled) {
+  background: var(--fill-secondary) !important;
+  box-sizing: border-box !important;
+  /* Border/Primary */
+  border: 1px solid var(--border-primary) !important;
+  color: var(--text-tertiary) !important;
+}
+
+.requirementFormCardLabelInfo {
+  display: flex;
+  gap: 2px;
+  margin-top: 12px;
+  align-items: flex-start;
+}
+
+.requirementFormCardLabelInfoText {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-tertiary);
+}
+
+.requirementFormCardLabelInfo :global(.anticon) {
+  margin-top: 4px;
+}
+
+.newStyle {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  container-type: inline-size;
+}
+
+.newStyle .requirementFormCardLabelContainer {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.newStyle .priceRangeContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 0%;
+  min-width: 300px;
+}
+
+.newStyle .monthlySalesRangeContainer {
+  width: calc(50% - 12px);
+}
+
+/* newStyle宽度小于等于760px时，月销量容器变为100%宽度 */
+@container (max-width: 760px) {
+  .newStyle .monthlySalesRangeContainer {
+    width: 100%;
+  }
+}
+
+.requirementFormCardLabelContainer {
+  display: flex;
+  gap: 24px;
+}
+
+.monthlySalesRangeContainer :global(.ant-form-item-control-input-content) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-flow: row;
+}
+
+/* 使用 flex-wrap 自动响应，不需要媒体查询 */
+
+.priceRangeContainer :global(.ant-input-affix-wrapper) {
+  padding: 0 12px !important;
+  height: 36px !important;
+  border-color: var(--border-primary) !important;
+  border-radius: 8px;
+}
+
+.priceRangeContainer :global(.ant-input-affix-wrapper:hover) {
+  border-color: var(--border-primary) !important;
+}
+
+.requirementFormCardLabelContainer {
+  display: flex;
+  gap: 24px;
+}
+
+.methodContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.method1 {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 8px;
+  border-radius: 12px;
+  background: var(--fill-secondary);
+}
+
+.method1TitleContainer {
+  display: flex;
+  gap: 4px;
+}
+
+.method1Title {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-tertiary);
+}
+
+.method1TitleText {
+  color: #ff4d4f;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+}
+
+.method1 :global(.ant-form-item) {
+  margin-bottom: 0 !important;
+}
+
+.copywriting {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}
+
+.methodContentTitle {
+  display: flex;
+  gap: 11px;
+}
+
+/* 蒙版样式 */
+.methodMasked {
+  position: relative;
+  pointer-events: none;
+}
+
+.methodMasked :global(.ant-form-item) {
+  pointer-events: none;
+}
+
+.methodMask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(251, 251, 253, 0.4);
+
+  z-index: 10;
+  border-radius: 12px;
+  pointer-events: auto;
+}
+
+.countryStyle :global(.ant-form-item-control-input-content) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-flow: wrap;
+}

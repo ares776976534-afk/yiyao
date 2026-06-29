@@ -1,0 +1,31 @@
+.action {
+    width: 102px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 6px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px solid #E7E8EE;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #1D2129;
+}
+
+.action:hover {
+    background: #FBFBFD;
+}
+
+/* 禁用表格行的hover效果 */
+:global(.ant-table-tbody > tr:hover > td) {
+    background-color: transparent !important;
+}
+
+:global(.ant-table-tbody > tr:hover) {
+    background-color: transparent !important;
+}

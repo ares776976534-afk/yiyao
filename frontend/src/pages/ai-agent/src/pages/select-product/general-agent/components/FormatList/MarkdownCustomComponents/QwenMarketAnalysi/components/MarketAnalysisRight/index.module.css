@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+.marketAnalysisRight {
+  width: 395px;
+  padding: 18px 18px 9px 18px;
+  gap: 16px;
+}
+
+.marketAnalysisRightAmazon {
+  display: flex;
+}
+
+.marketAnalysisRightItem {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  flex: 1;
+}
+
+.marketAnalysisRightItemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.marketAnalysisRightItemContentTitle {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.marketAnalysisRightItemContentValue {
+  font-family: Alibaba Sans 102;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.marketAnalysisRightItemValue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 75px;
+  height: 26px;
+  border-radius: 6px;
+  background: rgba(187, 189, 202, 0.06);
+  box-sizing: border-box;
+  border: 1px solid var(--border-tertiary);
+}
+
+.marketAnalysisRightItemValueText {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}
+
+.chartWrapper {
+  min-width: 0;
+  width: 169px;
+  height: 84px;
+  margin-top: 30px;
+}
+
+.chartWrapperAmazon {
+  min-width: 0;
+  width: 359px;
+  height: 139px;
+  margin-top: 21px;
+}
+
+.triangleIconRotated {
+  display: inline-flex;
+  transform: rotate(180deg);
+}
+
+.isNegative {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid rgba(110, 80, 255, 0.5);
+  background: rgba(110, 80, 255, 0.06);
+  width: fit-content;
+}
+
+.isNegativeText {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-accent);
+}
+
+.infoIcon {
+  width: 14px;
+  height: 14px;
+}

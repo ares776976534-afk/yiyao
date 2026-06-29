@@ -1,0 +1,21 @@
+.textIconWrapper {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+
+  .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    border-radius: 50%;
+    display: block;
+  }
+
+  .text {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #1D2129;
+  }
+}

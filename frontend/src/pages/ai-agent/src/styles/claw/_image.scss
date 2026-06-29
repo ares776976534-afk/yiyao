@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+// ==========================================================================
+// Image
+// ==========================================================================
+
+.alpha-markdown {
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--am-radius-image);
+    display: block;
+    margin: $spacing-paragraph 0;
+  }
+}

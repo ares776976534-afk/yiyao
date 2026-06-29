@@ -1,0 +1,176 @@
+// @import '../../../../style/utils.scss';
+
+.productCard {
+  width: 100%;
+  border-bottom: 1px solid #F3F3F6;
+  box-sizing: border-box;
+  padding: 12rpx 0;
+  min-height: 144rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.productImage {
+  width: 120rpx;
+  height: 120rpx;
+  flex-shrink: 0;
+  border-radius: 4rpx;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex: 1;
+  min-height: 120rpx;
+  margin-left: 16rpx;
+  min-width: 0;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 6rpx;
+  width: 100%;
+  min-height: 58rpx;
+}
+
+.productTitle {
+  font-family: PingFang SC;
+  font-size: 14rpx;
+  font-weight: 500;
+  line-height: 20rpx;
+  color: #1B1C1D;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.deliveryInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rpx;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  min-height: 14rpx;
+}
+
+.deliveryText,
+.locationText {
+  font-family: PingFang SC;
+  font-size: 12rpx;
+  font-weight: 400;
+  line-height: 14rpx;
+  color: #7C7F9A;
+  white-space: nowrap;
+}
+
+.separator {
+  width: 1rpx;
+  height: 10rpx;
+  flex-shrink: 0;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 6rpx;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.tag {
+  border-radius: 2rpx;
+  background: #F7F7FA;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 1rpx 3rpx;
+  min-width: 25rpx;
+  min-height: 16rpx;
+  flex-shrink: 0;
+}
+
+.tagText {
+  font-family: AlibabaSans102-Medium, PingFang SC;
+  font-size: 12rpx;
+  font-weight: 500;
+  line-height: 14rpx;
+  color: #7C7F9A;
+  white-space: nowrap;
+}
+
+.priceInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 6rpx;
+  align-items: center;
+  min-height: 21rpx;
+}
+
+.price {
+  font-family: AlibabaSans102-Medium, PingFang SC;
+  font-size: 16rpx;
+  font-weight: 500;
+  line-height: 21rpx;
+  color: #FF4000;
+  white-space: nowrap;
+}
+
+.salesInfo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  padding: 3rpx 0 0 0;
+}
+
+.salesText {
+  font-family: PingFang SC;
+  font-size: 12rpx;
+  font-weight: 400;
+  line-height: 1;
+  color: #7C7F9A;
+  white-space: nowrap;
+}
+
+.conditionsContainer {
+  border-radius: 4rpx;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 4rpx;
+  box-sizing: border-box;
+  padding: 4rpx 6rpx;
+  align-items: center;
+  overflow: hidden;
+  min-height: 22rpx;
+  
+  // @include border-1px(#E7E8EE, 8rpx);
+  border: 1px solid #E7E8EE;
+}
+
+.conditionsText,
+.featureText {
+  font-family: PingFang SC;
+  font-size: 12rpx;
+  font-weight: 400;
+  line-height: 14rpx;
+  color: #7C7F9A;
+  white-space: nowrap;
+}
+

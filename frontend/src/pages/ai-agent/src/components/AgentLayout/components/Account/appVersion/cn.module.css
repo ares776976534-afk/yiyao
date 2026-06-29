@@ -1,0 +1,131 @@
+.container {
+  background: var(--fill-white);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: center;
+  width: 560px;
+  min-height: 24px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.closeIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userInfo {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 4px;
+  min-width: 39px;
+  min-height: 46px;
+}
+
+.userIdInfo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  width: fit-content;
+  gap: 4px;
+  min-width: 121px;
+  min-height: 46px;
+}
+
+.userIdRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: 4px;
+  align-items: center;
+  min-width: 121px;
+  min-height: 22px;
+}
+
+.copyIcon {
+  width: 12px;
+  height: 12px;
+}
+
+.emailInfo {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 4px;
+  min-width: 185px;
+  min-height: 46px;
+}
+
+.phoneInfo {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 4px;
+  min-width: 103px;
+  min-height: 46px;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #7B7B8D;
+  white-space: nowrap;
+}
+
+.value {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+
+.loginButton {
+  background-color: #6E50FF;
+  border-radius: 8px;
+  height: 36px;
+  padding: 0 12px;
+  color: var(--text-white);
+  font-size: 14px;
+}
+
+.loginButton:hover {
+  background-color: #866CFF;
+}

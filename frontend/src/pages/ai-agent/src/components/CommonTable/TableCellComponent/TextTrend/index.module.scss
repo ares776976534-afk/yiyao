@@ -1,0 +1,38 @@
+.textTrendWrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  &.textTrendDirectionUp {
+    color: red;
+
+    .textTrendDirection {
+      transform: rotate(180deg);
+      color: red;
+    }
+  }
+
+  &.textTrendDirectionDown {
+    color: green;
+
+    .textTrendDirection {
+      color: green;
+    }
+  }
+
+  .textTrendDirection {
+    width: 12px;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .textTrendText {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+  }
+}

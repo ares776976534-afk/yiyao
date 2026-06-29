@@ -1,0 +1,429 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.headerTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 12px;
+}
+
+.headerTitleText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #1B1C1D;
+  white-space: nowrap;
+}
+
+.dot {
+  border-radius: 3px;
+  background: #6E50FF;
+  width: 6px;
+  height: 6px;
+  margin-right: 8px;
+}
+
+.headerDetailIcon {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #E7E8EE;
+  flex-shrink: 0;
+  margin-left: 4px;
+}
+
+.headerDetailIcon:hover {
+  background: #F9F9FB;
+}
+
+.headerDetailIconImg {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+/* 好评部分 */
+.positiveSection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.titleSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  height: fit-content;
+  min-width: 56px;
+  min-height: 20px;
+}
+
+.greenDot {
+  border-radius: 3px;
+  background: #21A84A;
+  width: 6px;
+  height: 6px;
+}
+
+.redDot {
+  border-radius: 3px;
+  background: #F55353;
+  width: 6px;
+  height: 6px;
+}
+
+.titleText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #1B1C1D;
+  white-space: nowrap;
+}
+
+.reviewCard {
+  border-radius: 8px;
+  background: #D8D0FF21;
+  position: relative;
+  width: 100%;
+}
+
+.decorationImage {
+  width: 48px;
+  height: 38px;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+  left: 20px;
+  top: 6px;
+  z-index: 1;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  position: relative;
+}
+
+.headerSection {
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 30px;
+}
+
+.statisticsText {
+  font-size: 16px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.normalText {
+  font-weight: 400;
+  color: #1B1C1D;
+}
+
+.highlightText {
+  font-weight: 500;
+  color: #6E50FF;
+}
+
+.viewButton {
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  padding: 6px 10px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  min-width: 88px;
+  min-height: 30px;
+}
+
+.viewButton:hover {
+  background: rgba(110, 80, 255, 0.05);
+}
+
+.buttonIcon {
+  width: 12px;
+  height: 12px;
+}
+
+.buttonText {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #6E50FF;
+  white-space: nowrap;
+}
+
+/* 
+.backgroundImage {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 35px;
+  z-index: 0;
+  background: #FFFFFF;
+  border-radius: 4px;
+} */
+
+.mainContent {
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background: #FFFFFF;
+  position: relative;
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    left: 38px;
+    top: 0px;
+    width: 64px;
+    height: 64px;
+    background: #FFFFFF;
+    z-index: 0;
+    border-radius: 6px;
+    transform: rotate(45deg);
+  }
+}
+
+.tabListContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  z-index: 1;
+}
+
+.tabListWrapper {
+  position: relative;
+  flex: 1;
+  padding-bottom: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+.tabListWrapper::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
+.tabList {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  padding: 4px 1px;
+}
+
+.tabItem {
+  cursor: pointer;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+}
+
+.tabItem.active .tabLabel {
+  color: #6E50FF;
+  transition: color 0.3s ease;
+}
+
+.tabItem.active .tabCount {
+  color: #6E50FF;
+  transition: color 0.3s ease;
+}
+
+.tabLabel {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #1B1C1D;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.tabCount {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #7C7F9A;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.tabLine {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 1px;
+  height: 4px;
+  z-index: 1;
+  border-bottom: 1px solid #F3F3F6;
+}
+
+.tabLineBar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #6E50FF;
+  height: 4px;
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scrollButton {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid #E7E8EE;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #7C7F9A;
+  transition: all 0.2s ease;
+  padding: 0;
+  outline: none;
+}
+
+.scrollButton:hover:not(:disabled) {
+  background: #F8F8FA;
+  color: #6E50FF;
+  border-color: #6E50FF;
+}
+
+.scrollButton:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.scrollButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+  color: #C8CBD4;
+}
+
+.scrollButtonLeft {
+  margin-right: 0;
+}
+
+.scrollButtonRight {
+  margin-left: 0;
+}
+
+.detailTags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
+  width: 100%;
+  z-index: 1;
+}
+
+.detailTag {
+  border-radius: 6px;
+  background: #FFFFFF;
+  border: 1px solid #E7E8EE;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding: 6px 10px;
+  align-items: center;
+  width: fit-content;
+}
+
+.detailTagText {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #4D4D5F;
+  white-space: nowrap;
+}
+
+.detailTagPercent {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #7C7F9A;
+  white-space: nowrap;
+}
+
+/* 差评部分 */
+.negativeSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 30px;
+  width: 100%;
+  min-height: 80px;
+}
+
+.negativeContent {
+  border-radius: 8px;
+  background: #FBFBFD;
+  padding: 16px 24px;
+  width: 100%;
+  min-height: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.messageWrapper {
+  border-radius: 6px;
+  width: 100%;
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.message {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #7C7F9A;
+  white-space: nowrap;
+}

@@ -1,0 +1,17 @@
+.time-container {
+  display: flex;
+  justify-content: space-around;
+  color: #ff7300;
+  .time-box-content {
+    display: flex;
+  }
+}
+.bcproducts-card-rest-time {
+  display: flex;
+  color: #bbb;
+  margin-top: 2px;
+  white-space: nowrap;
+}
+.time-box-days {
+  margin: 0 6px 0 6px;
+}

@@ -1,0 +1,44 @@
+.deliver-modal {
+  width: 560px;
+  .next-dialog-header {
+    padding: 20px 20px 0 20px !important;
+  }
+  .next-dialog-body {
+    padding: 20px !important;
+  }
+  
+  .deliver-require {
+    // 优化 flex 布局容器
+    .flex.flex-wrap {
+      width: 100%;
+      
+      // 确保子元素在空间不足时能正确换行
+      > div {
+        flex: 0 0 auto;
+        max-width: 100%;
+        
+        // 确保标签文本不会被截断
+        .flex-shrink-0 {
+          white-space: nowrap;
+        }
+        
+        // 优化长文本的显示
+        .text-ellipsis {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+    // 响应式优化
+    @media (max-width: 600px) {
+      .flex.flex-wrap {
+        gap: 20px !important;
+        
+        > div {
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+}

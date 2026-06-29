@@ -1,0 +1,16 @@
+.title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.dataBoardContentHeaderIcon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

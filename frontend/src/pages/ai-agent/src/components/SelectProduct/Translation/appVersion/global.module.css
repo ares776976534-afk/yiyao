@@ -1,0 +1,19 @@
+.global {
+  display: flex;
+  align-items: center;
+  padding: 5px 8px;
+  gap: 6px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid var(--border-primary);
+  cursor: pointer;
+}
+
+.seeOriginal {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}

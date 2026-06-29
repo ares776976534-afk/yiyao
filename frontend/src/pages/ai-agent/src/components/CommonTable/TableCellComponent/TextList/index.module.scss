@@ -1,0 +1,11 @@
+.textListWrapper {
+  padding: 12px;
+
+  :global(.commonTableTextWrapper) {
+    padding: 0;
+  }
+
+  :global(.commonTableTextEllipsisWrapper) {
+    padding: 0;
+  }
+}

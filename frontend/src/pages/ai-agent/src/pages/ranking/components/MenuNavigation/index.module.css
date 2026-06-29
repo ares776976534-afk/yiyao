@@ -1,0 +1,236 @@
+.menuNavigation {
+  position: sticky;
+  top: 92px;
+  z-index: 99;
+  align-self: flex-start;
+}
+
+.container {
+  border-radius: 16px;
+  background: var(--fill-white);
+  box-shadow: inset 0 0 0 1px #6E50FF1A;
+  width: 170px;
+  padding: 24px 12px 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.siteContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--text-primary);
+  white-space: nowrap;
+  margin-left: 12px;
+  display: block;
+}
+
+.rowTime {
+  display: flex;
+  align-items: center;
+  padding: 0px 12px 0px 8px;
+  gap: 2px;
+  border-radius: 8px;
+  height: 34px;
+}
+
+.itemSeparator {
+  font-size: 13px;
+  color: #666666;
+  user-select: none;
+}
+
+.popoverContent {
+  width: 400px;
+  border-radius: 16px;
+  background: var(--fill-white);
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.09);
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.popoverContentTitle {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 20px;
+}
+
+.popoverContentList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: scroll;
+  flex: 1;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+/* 自定义 popoverContentList 滚动条样式 */
+.popoverContentList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.popoverContentList::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 3px;
+}
+
+.popoverContentList::-webkit-scrollbar-thumb {
+  background: #E7E8EE;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.popoverContentList::-webkit-scrollbar-thumb:hover {
+  background: #E7E8EE;
+}
+
+.popoverContentItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.productCategoryList {
+  height: 340px;
+  overflow-y: auto;
+  /* 始终显示滚动条 */
+  overflow-y: scroll;
+}
+
+/* 自定义滚动条样式 */
+.productCategoryList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.productCategoryList::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 3px;
+}
+
+.productCategoryList::-webkit-scrollbar-thumb {
+  background: #E7E8EE;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.productCategoryList::-webkit-scrollbar-thumb:hover {
+  background: #E7E8EE;
+}
+
+.productCategoryItem {
+  display: flex;
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.productCategoryItem:hover {
+  background: #FFF3E4;
+}
+
+.productCategoryItemContent {
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: #7C7F9A;
+  /* 超过一行显示省略号 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.productCategoryItemContent:hover {
+  background: #FFFFFF;
+  color: #D15700;
+}
+
+.productCategoryItemContentActive {
+  background: #FFF3E4;
+  color: #D15700;
+}
+
+.popoverContentItemTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.popoverContentItemTitle:hover .popoverContentItemTitleText {
+  color: #D15700;
+}
+
+.popoverContentItemTitle:hover svg {
+  color: #D15700;
+}
+
+.popoverContentItemTitleActive .popoverContentItemTitleText {
+  color: #D15700;
+}
+
+.popoverContentItemTitleActive svg {
+  color: #D15700;
+}
+
+.popoverContentItemTitleText {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #666666;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rankingTypeList {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.rankingTypeItem {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: #7C7F9A;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: color 0.2s;
+}
+
+.rankingTypeItem:hover {
+  color: #D15700;
+}
+
+.rankingTypeItemActive {
+  background: #FFF3E4;
+  color: #D15700;
+}

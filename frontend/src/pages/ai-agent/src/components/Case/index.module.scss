@@ -1,0 +1,157 @@
+:global {
+  // 提高操作项层级
+  body .studio-element-menu {
+    z-index: 1001 !important;
+  }
+}
+
+.caseModal {
+  width: 100%;
+  height: 100%;
+
+  > div {
+    height: 100%;
+  }
+}
+
+.caseShareController {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.caseModalWrapper {
+  inset: 25px !important;
+  height: auto !important;
+  border-radius: 12px;
+}
+
+.caseModalBody {
+  height: 100%;
+}
+
+.caseModalContent {
+  height: 100%;
+  padding: 0 !important;
+  background: var(--case-modal-bg) !important;
+  --canvas-bg: var(--case-modal-bg);
+  --case-image-list-top-spacing: 78px;
+  --case-image-list-bottom-spacing: 30px;
+  --case-image-list-right-spacing: 18px;
+  --case-image-list-padding-left: 16px;
+  --case-image-list-padding-right: 22px;
+  --case-image-list-padding-vertical: 8px;
+
+  .caseContent {
+    position: relative;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+
+    .caseChatContent {
+      position: relative;
+      inset: 0;
+      height: 100%;
+      padding: 12px;
+    }
+
+    .caseMiddleContent {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      height: 100%;
+      overflow: auto;
+    }
+
+    .caseCanvasContainer {
+      position: relative;
+      height: 100%;
+      flex-shrink: 1;
+      min-height: 350px;
+    }
+
+    .caseRightContent {
+      position: relative;
+      flex-shrink: 0;
+      min-width: 162px;
+      height: 100%;
+      padding: var(--case-image-list-top-spacing)
+        var(--case-image-list-right-spacing)
+        var(--case-image-list-bottom-spacing) 0;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        right: var(--case-image-list-right-spacing);
+        height: 142px;
+        pointer-events: none;
+        background: var(--case-mask-bg);
+      }
+
+      &::before {
+        top: var(--case-image-list-top-spacing);
+      }
+
+      &::after {
+        bottom: var(--case-image-list-bottom-spacing);
+        transform: rotate(180deg);
+      }
+    }
+
+    .caseList {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      height: 100%;
+      padding-left: var(--case-image-list-padding-left);
+      padding-right: var(--case-image-list-padding-right);
+      overflow-y: auto;
+
+      .caseItem {
+        position: relative;
+        border-radius: 8px;
+        border: 2px solid transparent;
+        &.active {
+          border-color: var(--color-brand-1);
+
+          .caseItemImage {
+            border-radius: 6px;
+            border-color: #fff;
+          }
+        }
+
+        .caseItemImage {
+          width: 120px;
+          height: 120px;
+          cursor: pointer;
+          border-radius: 8px;
+          border: 1px solid rgba(255, 255, 255, 0.6);
+          overflow: hidden;
+
+          img {
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+[data-theme="dark"] {
+  .caseModalContent {
+    --color-chat-bg: #373737;
+    --divider-color: #464646;
+  }
+}
+
+// [data-theme="light"] {
+//   .caseModalContent {
+//     --canvas-bg: #fff;
+//   }
+// }

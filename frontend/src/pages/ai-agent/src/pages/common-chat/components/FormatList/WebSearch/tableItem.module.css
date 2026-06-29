@@ -1,0 +1,90 @@
+.newsItem {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 8px;
+  justify-content: center;
+  min-height: 72px;
+  border-bottom: 1px solid #F3F3F6;
+  padding-bottom: 18px;
+  width: 100%;
+}
+
+.marginTop {
+  margin-top: 18px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 6px;
+  align-items: center;
+  min-height: 20px;
+}
+
+.dot {
+  border-radius: 9px;
+  width: 18px;
+  height: 18px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #1D1E29;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  flex: 1;
+}
+
+.description {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #7C7F9A;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.urlContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: 6px;
+  align-items: center;
+  min-height: 16px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.url {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #7C7F9A;
+  white-space: nowrap;
+  transition: text-decoration 0.2s ease;
+  cursor: pointer;
+}
+
+.url:hover {
+  text-decoration: underline;
+}
+
+.underline {
+  text-decoration: underline;
+}

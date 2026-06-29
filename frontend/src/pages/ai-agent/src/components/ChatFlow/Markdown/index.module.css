@@ -1,0 +1,326 @@
+.markdown {
+  font-size: 14px;
+  /* line-height: 1.7; */
+  color: var(--markdown-text-color, #1b1c1d);
+}
+
+.markdown p {
+  margin: 0 0 8px 0;
+}
+
+.markdown ul,
+.markdown ol {
+  padding-left: 19px;
+  margin: 8px 0;
+  list-style-position: outside;
+}
+
+.markdown ol+ul {
+  margin-left: 8px !important;
+  padding-left: 12px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.markdown ul {
+  list-style: disc !important;
+}
+
+.markdown ul ul {
+  list-style: circle;
+}
+
+.markdown ul ul ul {
+  list-style: square;
+}
+
+.markdown ol {
+  list-style: decimal !important;
+  counter-reset: item;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: normal;
+  color: var(--markdown-text-color, #7C7F9A);
+  margin-top: 0;
+}
+
+.markdown ol>li {
+  list-style: decimal !important;
+  margin: 6px 0;
+  font-size: 14px;
+  color: var(--markdown-text-color, #7C7F9A);
+  font-weight: normal;
+  line-height: 24px;
+  margin-top: 0;
+  padding-left: 4px;
+}
+
+.markdown ul>li::marker {
+  font-size: 10px;
+}
+
+.markdown ul>li {
+  font-size: 13px;
+  margin-left: 16px;
+  list-style: disc !important;
+  color: var(--markdown-text-color, #7C7F9A);
+  line-height: 24px;
+}
+
+.markdown ol ol {
+  list-style: lower-alpha;
+}
+
+.markdown strong,
+.markdown b {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #1B1C1D;
+}
+
+/* 分段连线：围绕每组无序列表 */
+.listConnector {
+  position: relative;
+  padding-left: 16px;
+}
+
+.listConnector::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 2px;
+  bottom: 2px;
+  width: 1.2px;
+  background: #e7e8ee;
+}
+
+.listConnector>li {
+  position: relative;
+  z-index: 1;
+}
+
+
+.markdown table thead tr {
+  background: #fbfbfd;
+}
+
+
+.markdown table {
+  border: 1px solid #f3f3f6;
+  border-radius: 8px;
+  box-sizing: border-box;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+.markdown table thead tr th strong {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--text-primary);
+}
+
+.markdown table th,
+.markdown table td {
+  padding: 12px;
+  border-bottom: 1px solid #f3f3f6;
+  line-height: 20px;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.markdown table tr:last-child td {
+  border-bottom: none;
+}
+
+.markdown table img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.markdown {
+  h1 {
+    font-size: var(--dt-typography-fontSize-4xl);
+    /* 28px */
+    font-weight: var(--dt-typography-fontWeight-bold);
+    /* 700 */
+  }
+
+  /* h2 样式建议 */
+  h2 {
+    font-size: var(--dt-typography-fontSize-3xl);
+    /* 24px */
+    font-weight: var(--dt-typography-fontWeight-semibold);
+    /* 600 */
+  }
+
+  /* h3 样式建议 */
+  h3 {
+    font-size: var(--dt-typography-fontSize-2xl);
+    /* 20px */
+    font-weight: var(--dt-typography-fontWeight-semibold);
+    /* 600 */
+  }
+
+  /* h4 样式建议 */
+  h4 {
+    font-size: var(--dt-typography-fontSize-xl);
+    /* 18px */
+    font-weight: var(--dt-typography-fontWeight-medium);
+    /* 500 */
+  }
+
+  /* h5 样式建议 */
+  h5 {
+    font-size: var(--dt-typography-fontSize-lg);
+    /* 16px */
+    font-weight: var(--dt-typography-fontWeight-medium);
+    /* 500 */
+  }
+
+  /* h6 样式建议 */
+  h6 {
+    font-size: var(--dt-typography-fontSize-base);
+    /* 14px */
+    font-weight: var(--dt-typography-fontWeight-medium);
+    /* 500 */
+  }
+}
+
+
+.markdown:global(.rightMardown) p {
+  margin: 0;
+  padding: 4px 0px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: var(--markdown-text-color, var(--text-primary));
+}
+
+.markdown:global(.rightMardown) :global(.markdownComponent) {
+  max-width: 100%;
+}
+
+
+.markdown:global(.rightMardown) ol>li {
+  padding: 8px 0px 8px 8px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: var(--markdown-text-color, var(--text-primary));
+  margin-left: 19px;
+}
+
+.markdown:global(.rightMardown) ol>li::marker {
+  color: var(--text-tertiary) !important;
+  font-size: 14px !important;
+}
+
+.markdown:global(.rightMardown) ul,
+.markdown:global(.rightMardown) ol {
+  padding: 0px;
+  margin: 0;
+}
+
+.markdown:global(.rightMardown) ul>li {
+  color: var(--markdown-text-color, var(--text-primary));
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+  list-style: disc !important;
+  padding: 4px 0px;
+}
+
+/* ul li ul li list-style不设置为disc设置为圈 */
+.markdown:global(.rightMardown) ul>li ul>li {
+  list-style: circle !important;
+}
+
+.markdown:global(.rightMardown) ol>li ol>li {
+  list-style: circle !important;
+}
+
+.markdown:global(.rightMardown) strong {
+  font-weight: 500;
+  color: var(--markdown-text-color, var(--text-primary));
+}
+
+.markdown:global(.rightMardown) ul>li::marker {
+  font-size: 13px !important;
+  color: var(--icon-tertiary) !important;
+}
+
+/* .markdown:global(.rightMardown) ul>li::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 16px;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  border: 1px solid #7C7F9A;
+  border-radius: 50%;
+  background-color: #7C7F9A;
+  box-sizing: border-box;
+} */
+
+.markdown:global(.rightMardown) h1,
+.markdown:global(.rightMardown) h2,
+.markdown:global(.rightMardown) h3,
+.markdown:global(.rightMardown) h4,
+.markdown:global(.rightMardown) h5 {
+  color: var(--markdown-text-color, var(--text-primary));
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+  padding: 12px 0px 4px 0px;
+}
+
+.markdown:global(.rightMardown) ul>li ul>li::marker {
+  font-size: 0;
+  color: #7C7F9A !important;
+}
+
+/* 隐藏所有span标签 - 使用多个选择器增强权重 */
+/* .markdown:global(.rightMardown) span, */
+.markdown:global(.rightMardown) p span,
+.markdown:global(.rightMardown) li span,
+.markdown:global(.rightMardown) strong span,
+.markdown:global(.rightMardown) div span {
+  /* display: inline !important; */
+  /* visibility: hidden !important;
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important; */
+}
+
+/* 隐藏hr标签 */
+.markdown:global(.rightMardown) hr {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.markdown:global(.rightMardown) p>br {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}

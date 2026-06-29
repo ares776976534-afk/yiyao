@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 4px 0px;
+  gap: 4px;
+}
+
+.headerIconContainer {
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerIcon {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--icon-accent);
+}
+
+.headerTitle {
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}

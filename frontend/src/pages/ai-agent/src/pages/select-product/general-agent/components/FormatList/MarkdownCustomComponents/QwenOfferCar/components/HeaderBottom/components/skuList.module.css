@@ -1,0 +1,149 @@
+.skuList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skuContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.skuItem:hover {
+  background: #F7F7FA;
+}
+
+.skuItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  padding: 8px 10px;
+}
+
+.skuItemImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.skuItemRight {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.skuRightItem {
+  display: flex;
+  align-items: center;
+}
+
+.skuItemLabel {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}
+
+.skuItemValue {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+
+.loadMoreWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.loadMoreIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  gap: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.loadMoreText {
+  width: 60px;
+  height: 20px;
+  /* 自动布局 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  /* Text/Secondary */
+  /* 样式描述：次要文字 */
+  color: var(--text-tertiary);
+}
+
+.LeftIcon svg {
+  transform: rotate(270deg);
+  color: #7C7F9A !important;
+  fill: #7C7F9A !important;
+}
+
+.RightIcon svg {
+  transform: rotate(90deg);
+  color: #7C7F9A !important;
+  fill: #7C7F9A !important;
+}
+
+.LeftIcon svg path {
+  fill: #7C7F9A !important;
+  stroke: #7C7F9A !important;
+}
+
+.RightIcon svg path {
+  fill: #7C7F9A !important;
+  stroke: #7C7F9A !important;
+}
+
+.LeftIcon:hover {
+  background: var(--fill-primary);
+}
+
+.RightIcon:hover {
+  background: var(--fill-primary);
+}
+
+.disabled {
+  cursor: not-allowed !important;
+}
+
+.disabled svg {
+  color: #BBBDCA !important;
+  fill: #BBBDCA !important;
+}
+
+.disabled svg path {
+  fill: #BBBDCA !important;
+  stroke: #BBBDCA !important;
+}
+
+.disabled:hover {
+  background: transparent !important;
+}
+
+.skuItemImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}

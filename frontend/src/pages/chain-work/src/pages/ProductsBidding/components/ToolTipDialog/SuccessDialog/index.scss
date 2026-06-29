@@ -1,0 +1,32 @@
+.successDialog {
+  width: 360px;
+  .next-dialog-body {
+    padding-bottom: 4px;
+  }
+}
+
+.successDialog-title {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  .successDialog-title-icon {
+    color: #1dc11d;
+    margin-right: 10px;
+  }
+}
+
+.successDialog-footer {
+  display: flex;
+  justify-content: center;
+  .successDialog-footer-button {
+    margin-right: 12px;
+  }
+}
+
+.successDialog-content {
+  font-size: 13px;
+  .successDialog-content-checkbox {
+    color: #333;
+    margin-top: 12px;
+  }
+}

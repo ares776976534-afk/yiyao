@@ -1,0 +1,30 @@
+.returnHeader {
+  display: flex;
+  padding: 16rpx;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--fill-white);
+}
+
+.returnHeaderTitle {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+}
+
+.returnIcon {
+  display: flex;
+  align-items: center;
+  transform: rotate(90deg);
+}
+
+.returnHeaderTitleText {
+  font-family: PingFang SC;
+  font-size: 16rpx;
+  font-weight: 500;
+  line-height: 24rpx;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}

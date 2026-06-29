@@ -1,0 +1,21 @@
+.player {
+  :global {
+    .xgplayer-fullscreen {
+      opacity: 0 !important;
+      display: none !important;
+    }
+
+    .xgplayer-replay {
+      opacity: 0 !important;
+      display: none !important;
+    }
+
+    .xgplayer-start {
+      display: none !important;
+    }
+
+    .xgplayer-loading {
+      display: none !important;
+    }
+  }
+}

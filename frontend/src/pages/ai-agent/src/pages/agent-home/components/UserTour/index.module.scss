@@ -1,0 +1,31 @@
+.tour {
+  --user-tour-padding: 20px;
+  :global {
+    .user-tour-inner {
+      width: 360px;
+      border-radius: 16px;
+      .user-tour-header {
+        padding: var(--user-tour-padding) 16px 8px var(--user-tour-padding);
+        line-height: 24px;
+        font-size: 16px;
+      }
+      .user-tour-description {
+        padding: 0 var(--user-tour-padding);
+      }
+      .user-tour-footer {
+        padding: var(--user-tour-padding);
+      }
+    }
+  }
+
+  .userTourButton {
+    height: 36px;
+  }
+}
+
+.indicatorsContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: var(--text-tertiary);
+}

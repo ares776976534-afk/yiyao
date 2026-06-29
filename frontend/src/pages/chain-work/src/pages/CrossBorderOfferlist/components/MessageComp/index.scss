@@ -1,0 +1,28 @@
+.message-comp {
+  margin-top: 16px;
+
+  .next-message.next-message-notice.next-inline .next-message-symbol-icon::before {
+    color: #07f !important;
+    font-weight: 600;
+  }
+
+  .next-message {
+    background: #e6f2ff !important;
+    border: none !important;
+
+    padding: 10px !important;
+    font-size: 13px !important;
+
+    .next-message-content {
+      color: #333 !important;
+    }
+  }
+
+  a {
+    color: #07f;
+  }
+}
+
+.next-message.next-medium.next-only-content .next-message-content {
+  font-size: 13px;
+}

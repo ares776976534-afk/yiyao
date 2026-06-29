@@ -1,0 +1,47 @@
+.ant-table-tbody {
+  .ant-table-cell {
+    padding: 0 !important;
+    height: 120px; // 设置固定高度，确保子元素的100%有参考
+    vertical-align: top;
+  }
+}
+
+.product-name {
+  width: 220px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.sku-spec-item {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sku-spec-item:last-child {
+  border-bottom: none;
+}
+
+.price-item {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-item:last-child {
+  border-bottom: none;
+}
+
+.action-tips {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}

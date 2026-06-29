@@ -1,0 +1,54 @@
+.item-post .service-contents {
+  position: relative;
+  /* 创建小三角形 */
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 16px solid;
+    border-bottom-color: #07f;
+    border-left: 16px solid rgba(0, 0, 0, 0);
+    border-radius: 0% 0% 10% 0%;
+  }
+  .service-icon {
+    position: absolute;
+    width: 8px;
+    height: 6px;
+    bottom: 6px;
+    right: 3px;
+    z-index: 2;
+  }
+  .next-icon-select:before {
+    color: #fff;
+  }
+}
+.item-post .service-disabled {
+  position: relative;
+  /* 创建小三角形 */
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 16px solid;
+    border-bottom-color: #ccc;
+    border-left: 16px solid rgba(0, 0, 0, 0);
+    border-radius: 0% 0% 10% 0%;
+  }
+  .service-icon {
+    position: absolute;
+    width: 8px;
+    height: 6px;
+    bottom: 6px;
+    right: 3px;
+    z-index: 2;
+  }
+  .next-icon-select:before {
+    color: #fff;
+  }
+}

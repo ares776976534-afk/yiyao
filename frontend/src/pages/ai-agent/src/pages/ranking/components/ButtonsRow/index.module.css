@@ -1,0 +1,60 @@
+
+.buttonsRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.button {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 100%;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid var(--border-primary);
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #F7F7FA;
+}
+
+.buttonContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+  min-width: 0;
+  padding: 0 6px;
+  box-sizing: border-box;
+}
+
+.buttonContent > :first-child {
+  flex-shrink: 0;
+}
+
+.buttonText {
+  flex: 1 1 0;
+  min-width: 0;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--text-primary);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.buttonContent svg {
+  color: #7C7F9A;
+}

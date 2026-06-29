@@ -1,0 +1,350 @@
+.submit-bcproducts-modal {
+  width: 605px;
+  min-width: 605px;
+
+  .next-dialog-body-no-footer {
+    padding-bottom: 0;
+  }
+
+  .bcproducts-bidding-message {
+    display: flex;
+    align-items: center;
+    background-color: #e6f2ff;
+    font-size: 13px;
+    color: #333;
+    border-radius: 3px;
+    padding: 12px 0 12px 0;
+    margin-bottom: 16px;
+    .bcproducts-bidding-messageIcon {
+      margin: 0 8px 0 12px;
+    }
+  }
+
+  .submit-bcproducts-form {
+    font-size: 14px;
+  }
+  .submit-bcproducts-form-input1 {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 12px;
+    margin-bottom: 0;
+
+    div {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .next-form-item-label {
+      color: #333;
+    }
+
+    span {
+      font-size: 14px;
+      color: #ff7300;
+    }
+  }
+  .submit-bcproducts-form-box {
+    display: flex;
+    .submit-bcproducts-box-tips {
+      width: 294px;
+      font-size: 13px;
+      color: #ff7300;
+      line-height: 17px;
+      // padding-top: 7px;
+      display: inline-block;
+    }
+  }
+
+  .submit-bcproducts-form-input {
+    // width: 49%;
+    display: flex;
+    // align-items: center;
+    padding: 7px 0 16px 12px;
+    margin-bottom: 0;
+    div {
+      font-size: 14px;
+      color: #333;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .next-form-item-label {
+      color: #333;
+      min-width: 76px;
+      padding-top: 5px;
+    }
+  }
+  .submit-bcproducts-form-radio1 {
+    display: flex;
+    padding: 0 0 16px 12px;
+    div {
+      font-size: 14px;
+    }
+    .next-form-item-label {
+      color: #333;
+    }
+
+    .next-form-item-control .next-radio-label {
+      color: #333;
+    }
+
+    .next-radio-label {
+      font-size: 13px;
+    }
+  }
+
+  .submit-bcproducts-form-radio {
+    display: flex;
+    padding: 0 0 9px 12px;
+
+    .next-form-item-label {
+      color: #333;
+    }
+
+    .next-form-item-control .next-radio-label {
+      color: #333;
+    }
+
+    .next-radio-label {
+      font-size: 13px;
+    }
+  }
+
+  .submit-bcproducts-address {
+    background-color: #f8f8f8;
+    padding: 16px 0 0 0;
+    // margin-bottom: 16px;
+    .next-form-item {
+      margin-bottom: 0;
+    }
+  }
+
+  .submit-bcproducts-form-address1 {
+    display: flex;
+    align-items: center;
+    padding: 9px 0 9px 12px;
+    div {
+      font-size: 14px;
+      color: #333;
+      display: flex;
+      align-items: center;
+    }
+
+    .next-form-item-label {
+      color: #333;
+    }
+
+    span {
+      font-size: 14px;
+    }
+  }
+
+  .submit-bcproducts-form-address {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 12px;
+
+    div {
+      font-size: 14px;
+      color: #333;
+      display: flex;
+      align-items: center;
+    }
+
+    .next-form-item-label {
+      color: #333;
+    }
+
+    span {
+      font-size: 14px;
+    }
+  }
+
+  .submit-bcproducts-form-price {
+    width: 150px;
+    margin-right: 8px;
+  }
+
+  .submit-bcproducts-form-agreement {
+    display: flex;
+    align-items: top;
+
+    .next-checkbox-label {
+      font-size: 13px;
+      line-height: normal;
+      margin: 0 0 0 4px;
+    }
+  }
+
+  .bcproducts-business-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    font-weight: 500;
+
+    .bcproducts-card-rest-time {
+      font-weight: normal;
+      display: flex;
+      color: #999;
+      font-size: 13px;
+    }
+  }
+
+  .bcproducts-business {
+    background-color: #f8f8f8;
+    display: flex;
+    margin-bottom: 16px;
+    color: #999;
+
+    .bcproducts-business-img {
+      min-width: 56px;
+      height: 56px;
+      margin: 12px 0 12px 12px;
+      border-radius: 6px;
+    }
+
+    .bcproducts-business-img-1 {
+      min-width: 56px;
+      height: 56px;
+      margin: 12px 0 16px 12px;
+      border-radius: 6px;
+    }
+
+    .bcproducts-card-describe-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin: 12px 0 12px 12px;
+      font-size: 13px;
+      color: #999;
+
+      .bcproducts-card-describe-title {
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+
+        .bcproducts-business-describe-icon {
+          position: absolute;
+          top: -13px;
+          left: 1px;
+        }
+      }
+    }
+
+    .bcproducts-business-describe {
+      margin: 12px;
+      font-size: 13px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  .bcproducts-business-describe-color {
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  .bcproducts-card-tag {
+    width: 68px;
+    min-width: 68px;
+    height: 18px;
+    background: linear-gradient(108deg, #ff8503 0%, #ff5b00 100%);
+    border-radius: 3.43px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+    float: left;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+  }
+  .bcproducts-card-warning {
+    padding: 12px;
+    background: #ffefe5;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.bcproducts-card-tooltip {
+  position: relative;
+}
+
+.bcproducts-business-Tooltip {
+  width: 180px;
+
+  .bcproducts-business-Tooltip-item {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+
+    .bcproducts-business-Tooltip-dot {
+      width: 5px;
+      height: 5px;
+      background-color: #fff;
+      border-radius: 50%;
+      margin: 0 10px 0 5px;
+    }
+  }
+}
+
+.submit-bcproducts-address-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-right: 8px;
+}
+.submit-bcproducts-address-modify {
+  font-size: 14px;
+  color: #07f !important;
+  text-align: center;
+  cursor: pointer;
+}
+
+.bcproducts-business-tooltips {
+  .next-balloon-arrow-content {
+    background-color: #333 !important;
+  }
+}
+
+.submit-bcproducts-form-footer {
+  text-align: center;
+  margin: 16px 0 0 0;
+
+  .submit-bcproducts-footer-content {
+    display: flex;
+    justify-content: center;
+
+    .submit-bcproducts-footer-button {
+      margin: 0 12px 0 0;
+    }
+  }
+}
+.submit-bcproducts-a {
+  cursor: pointer;
+  color: #07f !important;
+}
+
+.submit-bcproducts-footerBox {
+  background-color: #fff;
+  padding: 0 0 16px 0;
+  position: sticky;
+  bottom: 0; /* 固定在底部 */
+  width: 100%; /* 宽度占满容器 */
+}
+
+.bcproducts-bidding-modal-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.submit-bcproducts-form-input-box {
+  flex-grow: 1; /* 自适应占据剩余空间 */
+  overflow-y: auto; /* 添加滚动条 */
+}

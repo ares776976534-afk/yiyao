@@ -1,0 +1,94 @@
+.taskPlanning :global(.markdown-component) {
+    margin: 0 !important;
+}
+
+.taskPlanning :global(.markdown-component) ol,
+.taskPlanning :global(.markdown-component) ul {
+    margin-bottom: 12px;
+}
+
+.taskPlanning :global(.markdown-component) ol:last-child{
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+}
+
+.taskPlanning :global(.markdown-component) ol+ul:last-child {
+    margin-bottom: 0px !important;
+    margin-left: 20px !important;
+    padding-left: 0px !important;
+}
+
+.taskPlanning :global(.markdown-component) ol+ul:not(:last-child) {
+    border-left: 1.2px solid #E7E8EE;
+    gap: 6px;
+    padding: 0;
+}
+
+.taskPlanning :global(.markdown-component) ol > li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+    list-style: decimal !important;
+    padding: 0;
+}
+
+.taskPlanning :global(.markdown-component) ol > li::marker {
+    vertical-align: top;
+}
+
+.taskPlanning :global(.markdown-component) ol > li > * {
+    vertical-align: top;
+}
+
+.taskPlanning :global(.markdown-component) ul > li {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+    list-style: disc !important;
+    padding: 0;
+}
+
+.taskPlanning :global(.markdown-component.rightMardown) ul > li::before {
+    content: none;
+}
+
+.taskPlanning :global(.markdown-component.rightMardown) ul > li::marker {
+    font-size: 13px !important;
+    color: var(--icon-secondary) !important;
+}
+
+/* 任务规划p的 */
+.taskPlanning :global(.markdown-component) p+ul:not(:last-child) {
+    border-left: 1.2px solid #E7E8EE;
+    gap: 6px;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+}
+
+.taskPlanning :global(.markdown-component) p {
+    padding: 0;
+    margin-bottom: 12px;
+    padding-left: 4px;
+}
+
+.taskPlanning :global(.markdown-component) p:last-child{
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+}
+
+.taskPlanning :global(.markdown-component) p+ul:last-child {
+    margin-bottom: 0px !important;
+    margin-left: 20px !important;
+    padding-left: 0px !important;
+}
+.taskPlanning :global(.markdown-component) p + ul{
+    margin-left: 8px !important;
+    padding-left: 12px !important;
+}

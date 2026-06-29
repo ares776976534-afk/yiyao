@@ -1,0 +1,37 @@
+.order-inof-box {
+  width: 1152px;
+  .single-create-field {
+    --form-inline-m-item-margin-r: 76px;
+    --form-label-color: #333;
+    margin-top: 16px;
+
+    .next-form {
+      display: flex;
+      .next-form-item {
+        flex: 1;
+        display: flex;
+        .next-form-item-control {
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  .ae-order-opeations {
+    --btn-size-m-padding: 33px;
+    --btn-size-m-height: 40px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px 6px 0 0;
+    background-color: #fff;
+    button:first-child {
+      margin-right: 8px;
+    }
+  }
+}

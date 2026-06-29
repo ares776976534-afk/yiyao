@@ -1,0 +1,25 @@
+.plan-content-item-TASK_EXECUTION_BRIEF~.plan-content-item:not(.plan-content-item-TASK_EXECUTION_BRIEF):not(.plan-content-item-COMPARED_PRODUCT):not(.plan-content-item-IMPROVED_ANALYSIS_PRODUCT) {
+  border-left: 1.2rpx dashed #E7E8EE;
+  padding-left: 14rpx;
+  margin-left: 8rpx;
+  padding-bottom: 12rpx;
+  padding-top: 4rpx;
+  margin-bottom: 8rpx;
+  margin-top: 8rpx;
+}
+
+/* 默认规则：COMPARED_PRODUCT元素默认没有border-left */
+.plan-content-item-COMPARED_PRODUCT {
+  border-left: none;
+  padding-left: 14rpx;
+  margin-left: 8rpx;
+  margin-bottom: 8rpx;
+  margin-top: 8rpx;
+}
+
+/* 特定规则：只有当COMPARED_PRODUCT后面有TASK_EXECUTION_BRIEF时，才显示border-left */
+.plan-content-item-COMPARED_PRODUCT:has(~ .plan-content-item-TASK_EXECUTION_BRIEF) {
+  border-left: 1.2rpx dashed #E7E8EE;
+  padding-left: 14rpx;
+  margin-left: 8rpx;
+}

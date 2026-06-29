@@ -1,0 +1,51 @@
+.address-info-container {
+  display: flex;
+  margin-bottom: 16px;
+  width: 1152px;
+  .address-info-item {
+    flex: 1;
+    margin-right: 16px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    .address-info-content {
+      .content-item {
+        margin-bottom: 12px;
+        line-height: 20px;
+        font-size: 14px;
+        color: #666;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+        .content {
+          color: #333;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+.next-menu {
+  .next-menu-item-inner {
+    height: 62px;
+    padding: 12px 20px;
+  }
+  .next-menu.next-ver {
+    padding: 0;
+  }
+  .next-menu.next-ver .next-menu-item {
+    padding: 0;
+    border-bottom: 1px solid #f5f7fa;
+  }
+}
+
+.icon-style {
+  .next-icon {
+    margin-left: 0 !important;
+  }
+  ::before {
+    font-size: 18px !important;
+    width: 16px !important;
+  }
+}

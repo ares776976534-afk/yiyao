@@ -1,0 +1,8 @@
+.card {
+  width: 395px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(110, 80, 255, 0.12) 0%, rgba(255, 255, 255, 0) 15%), #FFFFFF;
+  box-sizing: border-box;
+  border: 1px solid rgba(110, 80, 255, 0.1);
+  padding: 18px;
+}

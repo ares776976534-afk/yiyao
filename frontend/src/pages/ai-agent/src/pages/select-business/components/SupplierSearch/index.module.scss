@@ -1,0 +1,244 @@
+.supplierSearch {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
+}
+
+.supplierSearchHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.supplierRecommendTitle {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  flex-shrink: 0;
+  letter-spacing: normal;
+  color: #1D1E29;
+
+
+  &::before {
+    position: relative;
+    display: inline-block;
+    content: ' ';
+    margin-left: 4px;
+    margin-right: 8px;
+    border-radius: 1px;
+    background: #6150FF;
+    width: 4px;
+    height: 12px;
+  }
+}
+
+.supplierSearchRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.supplierSearchReset {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-accent);
+  cursor: pointer;
+}
+
+.divider {
+  width: 0;
+  height: 8px;
+  border: .5px solid var(--border-primary);
+}
+
+.supplierSearchSort {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+
+  svg {
+    transition: transform 0.2s ease;
+  }
+}
+
+.supplierSearchSortText {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}
+
+.supplierSearchContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: hidden;
+  transition: max-height 0.25s ease, opacity 0.2s ease, padding 0.25s ease, margin 0.25s ease;
+}
+
+.contentExpanded {
+  max-height: 200px;
+  opacity: 1;
+  padding: 4px 16px 8px 16px;
+  margin-top: 12px;
+}
+
+.contentCollapsed {
+  max-height: 0;
+  opacity: 0;
+  padding: 0 16px;
+  margin-top: 0;
+}
+
+.supplierSearchFilter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.supplierSearchFilterText {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.supplierSearchList {
+  display: flex;
+  gap: 8px;
+}
+
+.supplierSearchItem {
+  display: flex;
+  align-items: center;
+  padding: 3px 6px;
+  gap: 2px;
+  border-radius: 6px;
+  background: var(--fill-primary);
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.merchant_features {
+  svg {
+    transition: transform 0.2s ease;
+  }
+  
+  &:hover svg {
+    transform: rotate(180deg);
+  }
+}
+
+.arrowRotated {
+  svg {
+    transform: rotate(180deg);
+  }
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease;
+}
+
+.supplierSearchItemActive {
+  color: var(--text-accent);
+  font-weight: 500;
+}
+
+.itemPopover {
+  padding: 16px;
+}
+
+.popover {
+  border-radius: 12px;
+  background: var(--fill-white);
+  box-shadow: 0px 4px 16px 0px rgba(187, 189, 202, 0.16);
+}
+
+.itemPopoverContent {
+  display: flex;
+  gap: 16px;
+}
+
+.popover {
+  :global(.ant-popover-inner){
+    box-shadow: none;
+    padding: 0;
+  };
+  :global(.ant-popover-arrow){
+    display: none;
+  }
+}
+
+.itemPopoverContentItem {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.itemPopoverContentItemActive {
+  color: var(--text-accent);
+}
+
+.merchantSelected {
+  color: var(--text-accent);
+  font-weight: 500;
+}
+
+.yearSelected {
+  color: var(--text-accent);
+  font-weight: 500;
+}
+
+.yearPopover {
+  padding: 12px 16px;
+}
+
+.yearContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.yearNum {
+  border-radius: 8px !important;
+  border-color: var(--border-primary);
+  height: 36px !important;
+  width: 52px !important;
+  border: 1px solid #E7E8EE;
+  
+  &:hover {
+    border-color: var(--border-primary) !important;
+  }
+}
+
+.yearNum::placeholder{
+  color: #BBBDCA !important;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 20px;
+}

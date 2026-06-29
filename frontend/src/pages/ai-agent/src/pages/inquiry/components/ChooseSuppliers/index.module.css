@@ -1,0 +1,383 @@
+.chooseSuppliers {
+  display: flex;
+  flex-direction: column;
+  /* 使用统一的边框色 */
+  /* border: 1px solid var(--border-primary); */
+  /* 使用统一的圆角系统 */
+  /* border-radius: var(--dt-borderRadius-md); */
+  /* 使用统一的间距系统 */
+  /* padding: var(--dt-spacing-3) var(--dt-spacing-4); */
+  /* 使用统一的过渡效果 */
+  /* transition: all var(--dt-transitions-duration-slow) var(--dt-transitions-easing-easeInOut); */
+  /* 使用统一的背景色 */
+  background: var(--fill-white);
+  margin-left: 30px;
+}
+
+.hasSelectItems {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--dt-borderRadius-md);
+  border: 1px solid var(--border-primary);
+  /* transition: all var(--dt-transitions-duration-slow) var(--dt-transitions-easing-easeInOut); */
+  /* 使用统一的背景色 */
+  background: var(--fill-white);
+  margin-left: 30px;
+  padding: 12px 16px;
+}
+
+.chooseSuppliers :global(.ant-select) {
+  /* border: 0 !important; */
+  height: 60px;
+}
+
+.chooseSuppliers :global(.ant-select:hover .ant-select-selector) {
+  border: 1px solid var(--border-primary) !important;
+  box-shadow: none !important;
+  border-radius: var(--dt-borderRadius-md) !important;
+}
+
+/* 隐藏focus状态下的box-shadow */
+.chooseSuppliers :global(.ant-select-focused .ant-select-selector) {
+  border: 1px solid var(--border-primary) !important;
+  box-shadow: none !important;
+  border-radius: var(--dt-borderRadius-md) !important;
+}
+
+/* 隐藏下拉框打开时的box-shadow */
+.chooseSuppliers :global(.ant-select.ant-select-open .ant-select-selector) {
+  border: 1px solid var(--border-primary) !important;
+  box-shadow: none !important;
+  border-radius: var(--dt-borderRadius-md) !important;
+}
+
+/* 隐藏所有状态下的box-shadow，确保完全不显示 */
+.chooseSuppliers :global(.ant-select .ant-select-selector:focus) {
+  border: 1px solid var(--border-primary) !important;
+  box-shadow: none !important;
+  border-radius: var(--dt-borderRadius-md) !important;
+}
+
+.chooseSuppliers :global(.ant-select .ant-select-selector:focus-within) {
+  border: 1px solid var(--border-primary) !important;
+  box-shadow: none !important;
+  border-radius: var(--dt-borderRadius-md) !important;
+}
+
+.chooseSuppliers :global(.ant-select .ant-select-selector) {
+  border: 1px solid var(--border-primary) !important;
+  box-shadow: none !important;
+  border-radius: var(--dt-borderRadius-md) !important;
+  padding: 0 16px;
+}
+
+.chooseSuppliers :global(.ant-select.ant-select-disabled .ant-select-selector) {
+  background-color: #fff !important;
+}
+
+.chooseSuppliers :global(.ant-select .ant-select-prefix) {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.chooseSuppliers :global(.ant-select .ant-select-selection-wrap) {
+  height: 20px !important;
+  line-height: 20px;
+}
+
+.chooseSuppliers :global(.ant-select .ant-select-selection-search-input) {
+  line-height: 20px;
+}
+
+.chooseSuppliers :global(.ant-select .ant-select-selection-placeholder) {
+  color: #BBBDCA !important;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.chooseSuppliers :global(.ant-select .ant-select-arrow) {
+  pointer-events: auto;
+  inset-inline-end: 0px;
+}
+
+
+
+
+
+.hasSelectItems :global(.ant-select:hover .ant-select-selector) {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: none !important;
+}
+
+/* 隐藏focus状态下的box-shadow */
+.hasSelectItems :global(.ant-select-focused .ant-select-selector) {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: none !important;
+}
+
+/* 隐藏下拉框打开时的box-shadow */
+.hasSelectItems :global(.ant-select.ant-select-open .ant-select-selector) {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: none !important;
+}
+
+/* 隐藏所有状态下的box-shadow，确保完全不显示 */
+.hasSelectItems :global(.ant-select .ant-select-selector:focus) {
+  border: none;
+  box-shadow: none !important;
+  border-radius: none !important;
+}
+
+.hasSelectItems :global(.ant-select .ant-select-selector:focus-within) {
+  border: none;
+  box-shadow: none !important;
+  border-radius: none !important;
+}
+
+.hasSelectItems :global(.ant-select .ant-select-selector) {
+  border: none;
+  box-shadow: none !important;
+  border-radius: none !important;
+}
+
+.hasSelectItems :global(.ant-select.ant-select-disabled .ant-select-selector) {
+  pointer-events: none;
+}
+
+.hasSelectItems :global(.ant-select.ant-select-disabled .ant-select-selection-search) {
+  pointer-events: none;
+}
+
+.hasSelectItems :global(.ant-select-arrow) {
+  pointer-events: auto;
+  z-index: 10;
+}
+
+.hasSelectItems :global(.ant-select-arrow .ant-btn) {
+  pointer-events: auto;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.hasSelectItems :global(.ant-select .ant-select-selection-placeholder) {
+  color: #BBBDCA !important;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+:global(.ant-select-dropdown .ant-select-item) {
+  min-height: 44px;
+  padding: 12px 8px;
+}
+
+:global(.ant-select-dropdown .ant-select-item-option-active:not(.ant-select-item-option-disabled)) {
+  background: #F9F9FB;
+}
+
+.chooseSuppliers :global(.ant-select .ant-select-arrow .ant-btn) {
+  height: 32px;
+  border-radius: 20px;
+  border-color: #E7E8EE;
+  color: #1D2129;
+  font-size: 14px;
+  padding: 0 12px;
+
+}
+
+.chooseSuppliers :global(.ant-select-arrow) {
+  margin-right: 16px;
+}
+
+.supplierList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--dt-spacing-3);
+  margin-top: var(--dt-spacing-3);
+  /* 使用统一的边框色 */
+  border-top: 1px solid var(--border-secondary);
+  padding-top: var(--dt-spacing-3);
+}
+
+.disabledSupplierList {
+  border-top: none;
+  padding-top: 0 !important;
+  margin-top: -2px !important;
+}
+
+.supplierListItem {
+  width: calc(50% - var(--dt-spacing-1-5));
+}
+
+.supplierListItem:nth-child(2n) {
+  width: calc(50% - var(--dt-spacing-1-5));
+}
+
+.supplierItem {
+  display: flex;
+  justify-content: space-between;
+  /* 使用统一的间距系统 */
+  padding: var(--dt-spacing-3);
+  /* 使用统一的圆角系统 */
+  border-radius: var(--dt-borderRadius-base);
+  /* 使用统一的背景色 */
+  background: var(--fill-secondary);
+  /* 添加过渡效果 */
+  transition: background-color var(--dt-transitions-duration-normal) var(--dt-transitions-easing-easeInOut);
+}
+
+/* 添加hover效果 */
+.supplierItem:hover {
+  background: var(--fill-primary);
+}
+
+.supplierItemContent {
+  display: flex;
+}
+
+.supplierItemContent img {
+  width: 46px;
+  height: 46px;
+  /* 使用统一的圆角系统 */
+  border-radius: var(--dt-borderRadius-sm);
+  margin-right: var(--dt-spacing-3);
+}
+
+.supplierItemName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.supplierItemNameTitle {
+  /* 使用统一的字体系统 */
+  font-size: var(--dt-typography-fontSize-base);
+  /* 使用统一的文字颜色 */
+  color: var(--icon-primary);
+  margin-bottom: var(--dt-spacing-1-5);
+}
+
+.supplierItemNameDesc {
+  /* 使用统一的字体系统 */
+  font-size: var(--dt-typography-fontSize-base);
+  /* 使用统一的次要文字颜色 */
+  color: var(--text-tertiary);
+}
+
+.supplierItemAction {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.addSupplierBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px !important;
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+  cursor: pointer;
+  height: 36px!important;
+}
+
+.addSupplierBtn :global(.ant-btn-icon) {
+  width: 10.5px;
+  height: 10.5px;
+  display: flex;
+}
+
+.addSupplierBtn:hover {
+  background: #FBFBFD !important;
+}
+
+.addSupplierBtn:disabled {
+  cursor: not-allowed;
+  border: 1px solid #F3F3F6 !important;
+  color: #CCCCD4 !important;
+  background-color: transparent !important;
+}
+
+.optionRender {
+  font-size: 14px;
+  color: #1D2129;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.optionRenderText {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: #7B7B8D;
+}
+
+.findSupplierTipAI {
+  margin-top: 12px;
+  margin-left: 30px;
+  animation: slideInFromLeft var(--dt-transitions-duration-normal) var(--dt-transitions-easing-easeOut);
+
+  border-radius: 8px;
+  background: linear-gradient(133deg, rgba(110, 80, 255, 0.1) 9%, rgba(255, 255, 255, 0) 60%, rgba(110, 80, 255, 0.1) 128%), #FFFFFF;
+  box-sizing: border-box;
+  border: 1px solid rgba(110, 80, 255, 0.08);
+
+  display: inline-flex;
+  align-items: center;
+  padding: 8px;
+
+  cursor: pointer;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.tipTextAI {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  /* Text/Primary */
+  /* 样式描述：主要文字 */
+  color: #1B1C1D;
+}
+
+.tipLink {
+  color: #6150FF;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.tipLink:hover {
+  color: #3D4FD9;
+}
+
+.arrow {
+  margin-left: 2px;
+  color: #6150FF;
+}
+
+.arrowAI {
+  margin-left: 4px;
+  color: #BBBDCA;
+}

@@ -1,0 +1,277 @@
+/* 国旗图标样式 */
+.flagIcon {
+  display: inline-block;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+/* 商品显示容器 */
+.productDisplay {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.productTitle {
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.2s;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-word;
+  line-height: 1.5;
+}
+
+.productTitle:hover {
+  color: var(--dt-colors-brand-primary);
+}
+
+/* 销量显示容器 */
+.salesDisplay {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.growthBadge {
+  background-color: #fff2e8;
+  color: #fa8c16;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* 趋势图容器 */
+.trendContainer {
+  width: 100%;
+}
+
+.trendLegend {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legendLine {
+  width: 12px;
+  height: 2px;
+}
+
+.legendLineAmazon {
+  background-color: #1890ff;
+}
+
+.legendLineTiktok {
+  background-color: #000000;
+}
+
+.legendText {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  /* Text/Secondary */
+  /* 样式描述：次要文字 */
+  color: var(--text-tertiary);
+}
+
+/* 主容器 */
+.container {
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.titleIcon {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--dt-colors-brand-primary);
+}
+
+.titleText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+  /* Text/Primary */
+  /* 样式描述：主要文字 */
+  color: var(--text-primary);
+}
+
+/* 表格样式 */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.tableHeaderRow {
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: var(--border-secondary);
+}
+
+.tableRow {
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: var(--border-secondary);
+}
+
+.tableRowClickable {
+  cursor: pointer;
+}
+
+/* 表头单元格 */
+.tableHeaderEmpty {
+  padding: 12px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 14px;
+  width: 20%;
+}
+
+.tableHeader {
+  padding: 12px;
+  text-align: left;
+  width: 40%;
+}
+
+.tableHeaderContent {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+  /* Text/Primary */
+  /* 样式描述：主要文字 */
+  color: var(--text-primary);
+}
+
+.platformInfoItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.platformInfo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* 表格数据单元格 */
+.tableCellTitle {
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 14px;
+  color: var(--text-tertiary);
+  font-weight: normal;
+}
+
+.tableCellMerged {
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 14px;
+  color: #1D2129;
+}
+
+.tableCellData {
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 14px;
+  color: #1D2129;
+}
+
+.tableCellContent {
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+/* 空数据提示 */
+.emptyDataContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* min-height: 280px; */
+}
+
+.emptyDataText {
+  color: #999999;
+}
+
+/* 总结部分 */
+.summaryContainer {
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  border-radius: 12px;
+  background-color: #f5f5f5;
+}
+
+.summaryHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+  font-size: 14px;
+  color: rgba(29, 33, 41, 0.87);
+}
+
+.summaryIcon {
+  margin-left: 6px;
+}
+
+.trendTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.trendTitleText {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  /* Text/Secondary */
+  /* 样式描述：次要文字 */
+  color: var(--text-tertiary);
+}
+
+.markdownHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.markdownTitleIcon {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--dt-colors-brand-primary);
+}
+
+.markdownTitle {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+  /* Text/Primary */
+  /* 样式描述：主要文字 */
+  color: var(--text-primary);
+}

@@ -1,0 +1,26 @@
+.streaming {
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #F9F9FC;
+}
+
+.streaming :global(.navigation-back-container) {
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
+.main_content {
+  padding: 8rpx 16rpx;
+  padding-bottom: 150rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 10rpx;
+}
+
+.taskProgressWrapper {
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+}

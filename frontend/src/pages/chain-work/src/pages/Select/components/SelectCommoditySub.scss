@@ -1,0 +1,27 @@
+.icon-info {
+  .next-icon.next-medium:before {
+    font-size: 14px;
+    width: 14px;
+  }
+}
+
+.dialogInfo {
+  .products-list-content {
+    height: 376px;
+    overflow: auto;
+  }
+  .commonTable {
+    margin-top: 0;
+  }
+  .empty-state {
+    height: 100%;
+    .empty-state-title {
+      font-size: 14px;
+      margin-top: 16px;
+    }
+  }
+}
+
+.products-business-tooltips:after {
+  background-color: #333 !important;
+}

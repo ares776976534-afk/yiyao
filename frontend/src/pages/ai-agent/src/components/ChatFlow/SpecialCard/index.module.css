@@ -1,0 +1,155 @@
+.spinCard {
+    border-radius: 8px;
+    margin-top: 8px;
+    /* width: 224px; */
+    background: #fff;
+    border: 1px solid #E7E8EE;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==================== 动画效果 ==================== */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* 加载动画类 */
+.loadingSpin {
+    animation: spin 1s linear infinite;
+    width: 16px;
+    height: 16px;
+}
+
+.spinCardText {
+    font-size: 12px;
+    color: #7B7B8D;
+}
+
+/* 脉冲动画 */
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.imgCard {
+    border-radius: 8px;
+    margin-top: 8px;
+    /* width: 224px; */
+    background: #fff;
+    border: 1px solid #F3F3F6;
+    padding: 8px;
+}
+
+.imgCardTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imgCardTitleText {
+    font-size: 12px;
+    color: #7C7F9A;
+    text-overflow: ellipsis;
+    line-clamp: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    flex: 1;
+}
+
+.imgCardTitleImg {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E7E8EE;
+}
+
+.imgCardTitleImg:hover {
+    background: #F9F9FB;
+}
+
+.imgCardTitleImgImg {
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.imgCardContent {
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.differenceCard {
+    border-radius: 8px;
+    margin-top: 8px;
+    background: #fff;
+    border: 1px solid #F3F3F6;
+    padding: 8px;
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+}
+
+.differenceCardTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 18px;
+}
+
+.differenceCardTitleText {
+    font-size: 12px;
+    color: #7B7B8D;
+    text-overflow: ellipsis;
+    line-clamp: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    flex: 1;
+}
+
+.differenceCardContent {
+    display: flex;
+    align-items: center;
+    line-height: 18px;
+}
+
+.differenceCardContentText {
+    font-size: 12px;
+    color: #7B7B8D;
+    margin-left: 4px;
+}
+
+.successCardImg {
+    width: 12px;
+    height: 12px;
+}
+
+.successCardContentText {
+    font-size: 12px;
+    color: #6E50FF;
+    margin-left: 4px;
+}

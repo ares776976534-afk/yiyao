@@ -1,0 +1,226 @@
+@import './responsive.scss';
+
+@keyframes arrowIcon {
+  0% {
+    transform: translateX(vw(10));
+  }
+
+  100% {
+    transform: translateX(vw(0));
+  }
+}
+
+
+:root {
+  --design-width: 1500;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  height: 100%;
+}
+
+.home {
+  height: 100%;
+}
+
+// fullPage.js 导航点样式自定义
+:global {
+
+  // 导航容器
+  #fp-nav {
+    right: 18px !important; // 距离右边的距离
+    z-index: 1000;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        margin: 32px 18px !important; // 导航点之间的间距
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        position: relative !important;
+
+        a {
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          width: 26px !important; // 固定容器宽度，增大以容纳激活状态（16px + 3px × 2 边框 + 余量）
+          height: 26px !important; // 固定容器高度，增大以容纳激活状态
+          position: relative !important;
+          margin: 0 auto !important;
+
+          span {
+            width: 10px !important; // 未激活状态圆点宽度
+            height: 10px !important; // 未激活状态圆点高度
+            border-radius: 50% !important;
+            background: #d8d8d8 !important; // 未激活状态颜色
+            transition: all 0.3s ease !important;
+            display: block !important;
+            position: absolute !important;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            margin: 0 !important;
+            border: none !important; // 未激活状态无边框
+          }
+
+          // 悬停状态（非激活）
+          &:hover:not(.active) {
+            span {
+              background-color: rgba(173, 156, 255, 0.6) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 覆盖 fullPage.js 默认的激活状态样式
+  // 使用更高优先级的选择器，确保能够覆盖 fullPage.js 的默认样式和内联样式
+  body #fp-nav ul li a.active span,
+  body #fp-nav ul li:hover a.active span,
+  html body #fp-nav ul li a.active span,
+  html body #fp-nav ul li:hover a.active span,
+  body .fp-slidesNav ul li a.active span,
+  body .fp-slidesNav ul li:hover a.active span,
+  html body .fp-slidesNav ul li a.active span,
+  html body .fp-slidesNav ul li:hover a.active span {
+    background-color: #ad9cff !important;
+    width: 14px !important; // 激活时圆点本身更大（不包括边框）
+    height: 14px !important; // 激活时圆点本身更大（不包括边框）
+    border: 7px solid #ece8ff !important; // 浅色边框
+    border-radius: 50% !important;
+    box-sizing: content-box !important; // 边框不包含在尺寸内
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important; // 强制居中
+    margin: 0 !important;
+    box-shadow: 0 0 10px 0 rgba(236, 232, 255, 0.5) !important;
+    // 覆盖可能的内联样式
+    min-width: 14px !important;
+    min-height: 14px !important;
+    max-width: 14px !important;
+    max-height: 14px !important;
+  }
+
+  // 覆盖悬停时的激活状态
+  body #fp-nav ul li:hover a.active span,
+  html body #fp-nav ul li:hover a.active span {
+    background-color: #ad9cff !important;
+    border-color: #ece8ff !important;
+    box-shadow: 0 0 12px 0 rgba(236, 232, 255, 0.6) !important; // 悬停时阴影稍大
+    transform: translate(-50%, -50%) !important; // 保持居中
+  }
+
+  // 覆盖导航点列表项的间距和对齐
+  body #fp-nav ul li,
+  html body #fp-nav ul li,
+  body .fp-slidesNav ul li,
+  html body .fp-slidesNav ul li {
+    margin: 32px 18px !important; // 导航点之间的间距
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+  }
+
+  // 确保所有导航点的 span 都居中
+  body #fp-nav ul li a span,
+  html body #fp-nav ul li a span,
+  body .fp-slidesNav ul li a span,
+  html body .fp-slidesNav ul li a span {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    margin: 0 !important;
+  }
+
+  // 工具提示样式（如果启用了 tooltips）
+  #fp-nav ul li .fp-tooltip {
+    color: #333;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 4px 8px;
+    border-radius: 4px;
+    right: 20px;
+  }
+
+  // 隐藏 fullPage.js 的 "Made with fullPage.js" 链接
+  a[href*="fullPage"],
+  a[href*="alvarotrigo.com/fullPage"],
+  a[href*="alvarotrigo.com/fullPage?"],
+  .fp-watermark,
+  a[data-spm-anchor-id*="seller-center-home"],
+  a[rel="nofollow noopener"][target="_blank"][href*="fullPage"],
+  a[href*="fullPage"][rel="nofollow noopener"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    left: -9999px !important;
+  }
+}
+
+// 全局隐藏 fullPage.js 链接（在 :global 外部也添加，确保覆盖）
+:global {
+
+  a[href*="fullPage"],
+  a[href*="alvarotrigo.com/fullPage"],
+  a[href*="alvarotrigo.com/fullPage?"],
+  .fp-watermark,
+  a[data-spm-anchor-id*="seller-center-home"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+
+    @media (max-width: 768px) {
+      font-family: Alibaba PuHuiTi 3.0;
+      font-size: 10px;
+      line-height: 6px;
+      letter-spacing: normal;
+      color: #6150FF;
+
+      font-weight: 500;
+
+      font-family: Alibaba Sans SEA;
+    }
+  }
+
+  .sectionDesc {
+    font-family: FZLTHProS;
+    font-size: 18px;
+    color: #7c7f9a;
+    margin-top: 16px;
+  }
+
+  // @media screen and (min-width: 1921px) {
+  //   font-family: Alibaba PuHuiTi 3.0;
+  //   font-size: 24px;
+  //   font-weight: bold;
+  //   line-height: 28px;
+  //   letter-spacing: normal;
+  //   /* Brand/常规 color-brand-1 */
+  //   color: #6150FF;
+  //   /*  加入 */
+  //   font-family: Alibaba PuHuiTi 3.0;
+  //   font-weight: 500;
+  //   font-size: 24px;
+
+  //   /*  Waiting List */
+  //   font-family: Alibaba Sans SEA;
+  //   font-weight: 700;
+  //   font-size: 24px;
+  // }
+}

@@ -1,0 +1,233 @@
+.sample-info-container {
+  padding: 12px;
+  background: linear-gradient(120deg, #ebf3fc 1%, #fff 56%);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+
+  &.unsampled {
+    background: linear-gradient(166deg, #ebf3fc 0%, #fff 52%);
+  }
+
+  .sample-id-status {
+    .sample-id {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      padding-left: 20px;
+      margin-bottom: 12px;
+
+      .copy {
+        display: block;
+        width: 16px;
+        height: 16px;
+        margin-left: 8px;
+        cursor: pointer;
+      }
+    }
+
+    .sample-status {
+      display: flex;
+      align-items: center;
+
+      .empty {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33px;
+        height: 24px;
+        line-height: 14px;
+        border-radius: 30px;
+        color: #999;
+        background-color: #f8f8fa;
+      }
+
+      .status-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 9px;
+        line-height: 14px;
+        border-radius: 30px;
+        background-color: #f8f8fa;
+        color: #999;
+
+        .dot {
+          width: 6px;
+          height: 6px;
+          margin-right: 4px;
+          border-radius: 50%;
+          background-color: #ccc;
+        }
+
+        &.samplePending,
+        &.sent,
+        &.qualified,
+        &.unqualified {
+          color: #333;
+        }
+
+        &.samplePending {
+          background-color: #e6f2ff;
+
+          .dot {
+            background-color: #07f;
+          }
+        }
+
+        &.sent {
+          background-color: #ffefe5;
+
+          .dot {
+            background-color: #ff7300;
+          }
+        }
+
+        &.qualified {
+          background-color: #e7f8e5;
+
+          .dot {
+            background-color: #25be13;
+          }
+        }
+
+        &.unqualified {
+          background-color: #ffe6e6;
+
+          .dot {
+            background-color: #f00;
+          }
+        }
+      }
+    }
+  }
+
+  .sample-content {
+    .title {
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: bold;
+    }
+
+    .sample-content-item {
+      margin-top: 16px;
+      line-height: 20px;
+      color: #666;
+
+      .sample-content-item-bold {
+        font-weight: 500;
+        color: #333;
+      }
+
+      .sample-comments-container {
+        display: flex;
+
+        .comments-content {
+          display: flex;
+          flex-direction: column;
+
+          .comments-content-item {
+            margin-bottom: 4px;
+
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+      .sample-imgs {
+        display: flex;
+
+        .img-container {
+          display: flex;
+
+          img {
+            display: block;
+            width: 80px;
+            height: 80px;
+            margin-right: 8px;
+          }
+        }
+      }
+
+      .print {
+        color: #07f;
+        cursor: pointer;
+      }
+
+      .hint {
+        color: #f40000;
+      }
+    }
+  }
+
+  .express-no-container {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    padding: 12px 20px;
+    background-color: #ffefe5;
+    border-radius: 6px;
+
+    img {
+      display: block;
+      width: 16px;
+      height: 16px;
+      margin-right: 12px;
+    }
+
+    .submit-btn {
+      margin-left: 12px;
+      padding: 0 10px;
+    }
+  }
+
+  .sample-description {
+    display: flex;
+
+    .title {
+      font-size: 14px;
+      line-height: 20px;
+      color: #666;
+      font-weight: normal;
+      margin-right: 8px;
+    }
+
+    .description-content {
+      display: flex;
+      flex-direction: column;
+
+      .text-content {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-size: 14px;
+          font-weight: normal;
+          line-height: 20px;
+          letter-spacing: 0;
+          color: #333;
+        }
+      }
+
+      .img-content {
+        display: flex;
+        margin-top: 6px;
+
+        a {
+          margin-left: 8px;
+
+          img {
+            width: 80px;
+            height: 80px;
+          }
+        }
+
+
+        >:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

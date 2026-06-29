@@ -1,0 +1,74 @@
+.container {
+  border-radius: 36px;
+  background: #FFFFFF4D;
+  overflow: hidden;
+  width: fit-content;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px;
+  box-sizing: border-box;
+  justify-content: center;
+  margin-left: 20px;
+  position: sticky;
+  top: 10px;
+  z-index: 100;
+}
+
+.activeTab {
+  border-radius: 231px;
+  background: linear-gradient(180deg, #FFE9B6 -16%, #FFF3D2);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: 6px;
+  box-sizing: border-box;
+  padding: 8px 20px;
+  align-items: center;
+  min-width: 142px;
+  min-height: 40px;
+  cursor: pointer;
+}
+
+.activeText {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #D15700;
+  white-space: nowrap;
+}
+
+.normalTab {
+  border-radius: 36px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 6px;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  margin-left: 1px;
+  cursor: pointer;
+}
+
+.normalText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text-tertiary-4);
+  white-space: nowrap;
+}
+
+.disabledTab {
+  cursor: not-allowed;
+}
+
+.disabledText {
+  color: #BBBDCA;
+}

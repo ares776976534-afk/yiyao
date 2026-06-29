@@ -1,0 +1,17 @@
+.part-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 6px;
+
+  .part-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    .part-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+    }
+  }
+}

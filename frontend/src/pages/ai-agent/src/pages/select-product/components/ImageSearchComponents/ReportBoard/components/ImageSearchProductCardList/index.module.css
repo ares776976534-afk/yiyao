@@ -1,0 +1,16 @@
+.productCardList {}
+
+.productCardItem {}
+
+.productCard {}
+
+.productCardItemSeparator {
+  height: 1px;
+  width: 100%;
+  background: #E7E8EE;
+  margin: 24px 0;
+}
+
+.productCard+.productCard {
+  margin-top: 30px;
+}

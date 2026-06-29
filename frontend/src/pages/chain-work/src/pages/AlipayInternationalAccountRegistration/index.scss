@@ -1,0 +1,83 @@
+.products-business-upload {
+  .products-business-upload-text {
+    color: #999;
+  }
+  :hover {
+    .ant-upload-select {
+      border: 1px solid #07f !important;
+    }
+    .products-business-upload-text {
+      color: #07f !important;
+    }
+  }
+}
+
+.alipay-international-edd-info {
+  .next-select .next-select-inner {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+  }
+  .next-input.next-medium {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+  }
+  .next-date-picker2-input.next-date-picker2-input-medium {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+  }
+}
+
+.id-color-image-upload {
+  .ant-upload.ant-upload-select {
+    width: 160px !important;
+  }
+  :hover {
+    .ant-upload-select {
+      border: 1px solid #07f !important;
+    }
+    .upload-round {
+      background-color: #07f !important;
+    }
+  }
+  .ant-upload-list-item-container {
+    width: 160px !important;
+  }
+}
+
+.products-business-tooltips {
+  .next-balloon-arrow-content {
+    background-color: #333 !important;
+  }
+}
+
+.checkbox-long-term {
+  .next-checkbox-wrapper {
+    width: 100px;
+  }
+}
+
+.company-type {
+  .next-select-menu {
+    max-height: 296px !important;
+  }
+}
+
+.addressPicker > span {
+  background-color: #f7f8fa !important;
+  color: #c4c7cc;
+}
+
+.next-tabs {
+  .next-tabs-content {
+    background-color: #fff;
+  }
+}

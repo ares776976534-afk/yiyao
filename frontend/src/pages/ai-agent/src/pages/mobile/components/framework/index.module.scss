@@ -1,0 +1,19 @@
+.frameworkContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navBarWrapper {
+  flex-shrink: 0;
+  z-index: 100;
+}
+
+.contentWrapper {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; // iOS 平滑滚动
+}
+

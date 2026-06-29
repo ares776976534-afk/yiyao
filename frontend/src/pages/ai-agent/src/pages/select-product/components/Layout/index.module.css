@@ -1,0 +1,87 @@
+.menuItemLabel {
+  font-weight: normal;
+  letter-spacing: normal;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.menuItemIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.hotRankingIcon {
+  position: absolute;
+  top: -1px;
+  right: -8px;
+  width: 28px;
+  height: 12px;
+}
+
+.hotRankingLabelIcon {
+  width: 28px;
+  height: 12px;
+}
+
+.menuItemArrow {
+  opacity: 0;
+  transform: rotate(-45deg);
+  transition: opacity 0.2s ease;
+}
+
+.menuItemLabel:hover .menuItemArrow {
+  opacity: 1;
+}
+
+.footerItemLabel {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+}
+
+/* 开放平台hover效果 */
+:global(.ant-menu-item):hover .footerItemLabel {
+  color: var(--text-primary) !important;
+}
+
+:global(.ant-menu-item):hover .footerItemLabel span {
+  color: var(--text-primary) !important;
+}
+
+.agentSubMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 120px;
+}
+
+.agentSubMenuItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.agentSubMenuItem:hover {
+  color: var(--icon-accent);
+  background: var(--fill-primary);
+}
+
+.agentSubMenuItemActive {
+  font-weight: 500;
+  color: var(--icon-accent);
+  background: var(--fill-primary);
+}
+
+.hideMenu {
+  display: none;
+}

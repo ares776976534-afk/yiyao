@@ -1,0 +1,40 @@
+.mobileOfferLinkAnalysisPopup {
+  :global {
+    .adm-popup-body {
+      border-radius: 8rpx 8rpx 0 0;
+    }
+  }
+}
+
+.customOfferLinkRoot {
+  .customOfferLinkContent {
+    // 内容区域样式
+    padding: 14rpx 12rpx 18rpx;
+    border: none;
+    border-radius: 8rpx 8rpx 0 0;
+    background: linear-gradient(180deg, #f3f0ff 1%, #ffffff 17%), #ffffff;
+  }
+
+  .customOfferLinkTitle {
+    // 标题样式
+    font-size: 18rpx !important;
+  }
+
+  .customOfferLinkInput {
+    // 输入框区域样式
+    margin: 16rpx 0 10rpx !important;
+  }
+
+  .customOfferLinkTextArea {
+    // 文本域样式
+  }
+
+  .customOfferLinkFooter {
+    // 底部按钮区域样式
+    button {
+      --studio-button-content-font-size: 16rpx;
+      flex: 1;
+      height: 40rpx;
+    }
+  }
+}

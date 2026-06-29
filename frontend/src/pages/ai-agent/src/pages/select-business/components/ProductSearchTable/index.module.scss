@@ -1,0 +1,807 @@
+/**
+ * 以品找商表格 - 样式文件
+ */
+
+.productSearchTable {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  :global {
+    .ant-table {
+      font-size: 13px;
+      border: 1px solid #F3F3F6;
+
+      .ant-table-thead>tr {
+        border-bottom: 1px solid #F3F3F6;
+        height: 44px !important;
+      }
+
+      .ant-table-thead>tr>th {
+        background: #FBFBFD;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: normal;
+        color: #1D1E29;
+        padding: 12px !important;
+        box-sizing: border-box !important;
+
+        // &::after,
+        &::before {
+          display: none !important;
+        }
+      }
+
+      .ant-table-tbody>tr>td {
+        background: #FFFFFF;
+        border-bottom: 1px solid #F3F3F6;
+        padding: 0;
+      }
+
+      .ant-table-tbody>tr:hover>td {
+        background: #FFFFFF !important;
+      }
+    }
+
+    // 复选框列宽度和间距设置
+    .ant-table-selection-column {
+      padding: 0 12px !important;
+      // animation: fadeInColumn 0.3s ease-in-out;
+    }
+
+    // // 复选框列渐入动画
+    // @keyframes fadeInColumn {
+    //   from {
+    //     opacity: 0;
+    //     transform: translateX(-10px);
+    //   }
+    //   to {
+    //     opacity: 1;
+    //     transform: translateX(0);
+    //   }
+    // }
+
+    // 自定义复选框选中状态样式
+    .ant-checkbox-wrapper {
+      .ant-checkbox-checked {
+        .ant-checkbox-inner {
+          border-radius: 4px;
+          background: #6150FF !important;
+          border-color: #6150FF !important;
+
+          // 隐藏默认的勾号
+          &::after {
+            display: none;
+          }
+        }
+
+        // 使用自定义 CheckMarkIcon SVG
+        .ant-checkbox-inner::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 12px;
+          height: 12px;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' version='1.1' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M10.854,2.97L10.51,2.64C10.315,2.453,9.9996,2.453,9.8052,2.64L4.5755,7.669L2.2024,5.393C2.0079,5.206,1.6926,5.206,1.4981,5.393L1.1459,5.731C0.9514,5.917,0.9514,6.22,1.1459,6.406L4.225,9.36C4.4195,9.547,4.7349,9.547,4.9294,9.36L5.2816,9.022C5.3097,8.995,5.3338,8.966,5.3538,8.935L10.8546,3.645C11.0487,3.459,11.0485,3.156,10.854,2.97Z' fill='%23FFFFFF' fill-opacity='1'/%3E%3C/svg%3E");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+
+      .ant-checkbox-inner {
+        border-radius: 4px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    // 模拟 disabled 效果的复选框样式
+    .checkbox-disabled-style {
+      .ant-checkbox-inner {
+        background-color: #E7E8EE !important;
+        border-color: transparent !important;
+      }
+
+      .ant-checkbox-input {
+        cursor: not-allowed !important;
+      }
+
+      opacity: 0.6;
+      cursor: not-allowed !important;
+    }
+  }
+
+  .createInquiryModeTable {
+    :global {
+      td {
+        cursor: pointer;
+      }
+
+      .ant-table-row-selected {
+        td {
+          // background: #F7F7FA !important;
+          background: #F4F4FC !important;
+        }
+      }
+
+      .ant-table-tbody>tr:hover>td {
+        // background: #F7F7FA !important;
+        background: #F4F4FC !important;
+      }
+    }
+  }
+}
+
+.productSearchContent {
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.productRecommendContent {
+  padding: 16px;
+  border-radius: 12px;
+  background: #FBFBFD;
+  margin-bottom: 42px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #1D1E29;
+  flex-shrink: 0;
+}
+
+.supplierSearchWrapper {
+  position: sticky;
+  top: 0;
+  z-index: 101;
+  background: var(--fill-white);
+}
+
+.productRecommendTable {
+  width: 100%;
+}
+
+// 商品信息列
+.productInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  width: 240px;
+  max-width: 240px;
+  padding: 12px;
+
+  .imageWrapper {
+    position: relative;
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    overflow: hidden;
+
+    .productImage {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .rankBadge {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 0 0 6px 0;
+      width: 20px;
+      height: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 12px;
+        letter-spacing: normal;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .productDetails {
+    display: flex;
+    flex-direction: column;
+
+    .productTitle {
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: normal;
+      color: #1D1E29;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-wordl;
+
+      &:hover {
+        color: #6150FF;
+      }
+    }
+
+    .productPrice {
+      margin-top: 2px;
+      font-family: AlibabaSans102;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #FF4000;
+    }
+  }
+}
+
+// 供应商信息列
+.supplierInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 200px;
+  max-width: 200px;
+  padding: 12px;
+
+  .supplierName {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #1D1E29;
+    cursor: pointer;
+
+    &:hover {
+      color: #6150FF;
+    }
+  }
+
+  .supplierBadges {
+    display: flex;
+    flex-direction: row;
+    gap: 8px 6px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+// AI总览列
+.aiHeader {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 200px;
+  max-width: 200px;
+
+  .aiIcon {
+    width: 16px;
+    height: 16px;
+    color: #6150FF;
+  }
+
+  .aiText {
+    font-size: 14px;
+    font-weight: 500;
+    color: #6150FF;
+  }
+}
+
+.aiSummary {
+  width: 200px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+
+  .aiSummaryItem+.aiSummaryItem {
+    margin-top: 4px;
+  }
+
+  .aiSummaryItem {
+    position: relative;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: #1D1E29;
+    display: flex;
+    align-items: center;
+
+    // &::before {
+    //   display: inline-block;
+    //   position: relative;
+    //   content: ' ';
+    //   left: 0;
+    //   top: 0;
+    //   width: 2px;
+    //   height: 2px;
+    //   margin: 0 6px 0 4px;
+    //   border-radius: 50%;
+    //   background: #1D1E29;
+    // }
+  }
+
+}
+
+// 用户需求解析列
+.demandAnalysis {
+  width: 200px;
+  max-width: 200px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+
+  .demandAnalysisList {
+    display: flex;
+    flex-direction: column;
+    margin-right: 6px;
+  }
+
+  .eyeIcon {
+    flex-shrink: 0;
+    margin-left: auto;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 0.5px solid #E7E8EE;
+    color: #7B7B8D;
+
+    &:hover {
+      background: #F7F7FA;
+      ;
+    }
+  }
+
+  .demandItem+.demandItem {
+    margin-top: 6px;
+  }
+
+  .demandItem {
+    display: flex;
+    align-items: center;
+
+    .demandIcon {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      margin-right: 4px;
+      color: #F55353;
+
+      &.isSatisfy {
+        color: #21A84A;
+      }
+    }
+
+    .demandText {
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 18px;
+      color: #1D1E29;
+    }
+  }
+}
+
+// 销量信息列、核心属性列、采购信息列、发货履约列
+.salesInfo,
+.attributesList {
+  display: grid;
+  grid-template-columns: fit-content(100px) 1fr;
+  column-gap: 8px;
+  row-gap: 8px;
+  align-items: start;
+  width: 200px;
+  max-width: 200px;
+  padding: 12px;
+
+  .salesItem {
+    display: contents;
+
+    .salesLabel {
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 18px;
+      letter-spacing: normal;
+      color: #7C7F9A;
+      width: max-content;
+      max-width: 100px;
+    }
+
+    .salesValue {
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 18px;
+      letter-spacing: normal;
+      color: #1D1E29;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-wordl;
+
+    }
+  }
+}
+
+// 核心属性列
+.coreAttributes {
+  width: 360px;
+  max-width: 360px;
+  padding: 12px;
+
+  .attributesList {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  // 按钮样式
+  .expandButton {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: transparent;
+    border: none;
+
+    .buttonText {
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 18px;
+      letter-spacing: normal;
+      color: #6150FF;
+    }
+
+    .rightIcon {
+      width: 12px;
+      height: 12px;
+      flex-shrink: 0;
+      color: #6150FF;
+      transition: transform 0.2s ease;
+    }
+
+    &.open .rightIcon {
+      transform: rotate(180deg);
+    }
+  }
+
+}
+
+.providerKjCustomTags {
+  width: 200px;
+  max-width: 200px;
+  padding: 12px;
+
+  .providerKjAttributesList {
+    width: 100%;
+  }
+
+  .providerKjCustomTagsItem+.providerKjCustomTagsItem {
+    margin-top: 8px;
+  }
+
+  .providerKjCustomTagsItem {
+
+    .providerKjCustomTagsText {
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 18px;
+      letter-spacing: normal;
+      color: #1D1E29;
+      width: max-content;
+      max-width: 100px;
+    }
+  }
+
+  // 按钮样式
+  .expandButton {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: transparent;
+    border: none;
+
+    .buttonText {
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 18px;
+      letter-spacing: normal;
+      color: #6150FF;
+    }
+
+    .rightIcon {
+      width: 12px;
+      height: 12px;
+      flex-shrink: 0;
+      color: #6150FF;
+      transition: transform 0.2s ease;
+    }
+
+    &.open .rightIcon {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+// .coreAttributes {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 4px;
+//   width: 200px;
+//   padding: 12px;
+
+//   .attrItem {
+//     display: flex;
+//     gap: 8px;
+
+//     .attrLabel {
+//       font-size: 13px;
+//       font-weight: 400;
+//       line-height: 18px;
+//       color: #7C7F9A;
+//       white-space: nowrap;
+//     }
+
+//     .attrValue {
+//       font-size: 13px;
+//       font-weight: 400;
+//       line-height: 18px;
+//       color: #1D1E29;
+//       white-space: nowrap;
+//       overflow: hidden;
+//       text-overflow: ellipsis;
+//     }
+//   }
+// }
+
+// // 采购信息列
+// .purchaseInfo {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 4px;
+//   width: 200px;
+//   padding: 12px;
+
+//   .purchaseItem {
+//     display: flex;
+//     gap: 8px;
+
+//     .purchaseLabel {
+//       font-size: 13px;
+//       font-weight: 400;
+//       line-height: 18px;
+//       color: #7C7F9A;
+//       white-space: nowrap;
+//     }
+
+//     .purchaseValue {
+//       font-size: 13px;
+//       font-weight: 400;
+//       line-height: 18px;
+//       color: #1D1E29;
+//       white-space: nowrap;
+//     }
+//   }
+// }
+
+// 发货履约列
+// .deliveryInfo {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 4px;
+//   width: 200px;
+//   padding: 12px;
+
+//   .deliveryItem {
+//     display: flex;
+//     gap: 8px;
+
+//     .deliveryLabel {
+//       font-size: 13px;
+//       font-weight: 400;
+//       line-height: 18px;
+//       color: #7C7F9A;
+//       white-space: nowrap;
+//     }
+
+//     .deliveryValue {
+//       font-size: 13px;
+//       font-weight: 400;
+//       line-height: 18px;
+//       color: #1D1E29;
+//       white-space: nowrap;
+//     }
+//   }
+// }
+
+// 商家服务列
+.merchantService {
+  display: flex;
+  gap: 20px 24px;
+  min-width: 512px;
+  width: 512px;
+  flex-wrap: wrap;
+  padding: 20px;
+
+  .serviceItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    width: 100px;
+    overflow: hidden;
+
+    .serviceValue {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: normal;
+      color: #1D1E29;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+    }
+
+    .serviceLabel {
+      white-space: nowrap;
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 18px;
+      letter-spacing: normal;
+      color: #7C7F9A;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+    }
+  }
+}
+
+
+.productSearchBottom {
+  width: 100%;
+  // background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  padding-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  z-index: 100;
+
+  // 取消按钮的渐入渐出效果
+  .cancelButton {
+    opacity: 0;
+    transform: translateX(-10px);
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    max-width: 0;
+    margin: 0 !important;
+    overflow: hidden;
+    border-color: #6E50FF;
+    color: #6E50FF;
+
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px !important;
+    border-radius: 8px;
+    font-size: 16px;
+    height: 40px;
+    // border: none;
+
+
+    &.show {
+      opacity: 1;
+      transform: translateX(0);
+      pointer-events: auto;
+      max-width: 200px;
+      // padding: 4px 15px !important;
+    }
+  }
+
+  // 主按钮样式
+  .primaryButton {
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    height: 40px;
+    border: none;
+  }
+
+  // 按钮文本过渡
+  .buttonText {
+    display: inline-block;
+    transition: opacity 0.2s ease-in-out;
+
+    &.confirmMode {
+      animation: textFadeIn 0.3s ease-in-out;
+    }
+  }
+
+  @keyframes textFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.demandAnalysisPopover {
+  width: auto;
+
+  :global {
+    .ant-popover-inner {
+      padding: 0 0;
+      border-radius: 16px;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      border: 1px solid #F3F3F6;
+      box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.04);
+    }
+  }
+}
+
+.supplierReportIcon {
+  display: flex;
+  align-items: center;
+  padding: 3px 6px;
+  gap: 6px;
+  border-radius: 6px;
+  background: var(--text-white);
+  border: 1px solid rgba(253, 150, 60, 0.2);
+}
+
+.supplierReportText {
+  flex: 1;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: #F77B0E;
+  /* 自动换行，单词换行 */
+  white-space: normal;
+  word-break: break-all;
+}

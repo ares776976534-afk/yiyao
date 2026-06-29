@@ -1,0 +1,5 @@
+.carouselCn :global(.slick-slide) {
+  width: 240px !important;
+  margin-right: 12px !important;
+  box-sizing: border-box;
+}

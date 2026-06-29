@@ -1,0 +1,34 @@
+.brief {
+  display: flex;
+  align-items: center;
+}
+
+.briefMobile {
+  display: flex;
+  align-items: flex-start;
+}
+
+.briefMobileIcon {
+  margin-top: 2rpx;
+}
+
+.loadingSpin {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+  max-width: 16px;
+  max-height: 16px;
+  animation: spin 1s linear infinite !important;
+}
+
+/* 旋转动画 */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

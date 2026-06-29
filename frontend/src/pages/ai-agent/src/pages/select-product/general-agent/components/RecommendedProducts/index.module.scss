@@ -1,0 +1,25 @@
+.recommendedProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  // margin-bottom: 52px;
+  margin-top: 24px;
+  :global(.ant-pagination .ant-pagination-options) {
+    margin-inline-start: 8px;
+  }
+}
+
+.recommendedProductsTop {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.recommendedProductsContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}

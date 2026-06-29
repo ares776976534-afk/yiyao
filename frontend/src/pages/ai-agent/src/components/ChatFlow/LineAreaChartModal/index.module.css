@@ -1,0 +1,7 @@
+.modal {
+    height: 600px;
+}
+
+:global(.ant-modal-header) {
+    margin-bottom: 20px !important;
+}

@@ -1,0 +1,106 @@
+.table {
+  width: 100%;
+}
+
+.table :global(.ant-table) {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.table :global(.ant-table-thead > tr > th) {
+  background: #fbfbfd !important;
+  border-bottom: 1px solid #f3f3f6 !important;
+  padding: 12px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #000000de !important;
+  text-align: center !important;
+  height: 60px !important;
+}
+
+.table :global(.ant-table-tbody > tr:not(:first-child) > td) {
+  background: #ffffff !important;
+  border-bottom: 1px solid #0000000a !important;
+  padding: 12px !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #000000de !important;
+  text-align: center !important;
+  height: 80px !important;
+  vertical-align: middle !important;
+}
+
+.table :global(.ant-table-tbody > tr:hover > td) {
+  background: #ffffff !important;
+}
+
+.table :global(.ant-table-thead > tr > th:nth-child(6)),
+.table :global(.ant-table-thead > tr > th:nth-child(7)),
+.table :global(.ant-table-thead > tr > th:nth-child(8)),
+.table :global(.ant-table-thead > tr > th:nth-child(9)) {
+  background: #FAFAFA !important;
+}
+
+.tag {
+  padding: 6px 16px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+  text-align: center;
+  width: 74px;
+  height: 32px;
+  line-height: 20px;
+}
+
+.tagEntry {
+  background: #ecebfe;
+  color: #3323c4;
+}
+
+.tagProfessional {
+  background: #f8e9fc;
+  color: #ff06d8;
+}
+
+.tagCustom {
+  background: rgba(158, 248, 252, 0.28);
+  color: #04b1cb;
+}
+
+.tagAdvanced {
+  background: #fcf1dc;
+  color: #bc8136;
+}
+
+.statusPending {
+  color: #ff4000;
+}
+
+.statusPaid {
+  color: #000000de;
+}
+
+.statusClosed {
+  color: #000000de;
+}
+
+.actionLink {
+  color: #0072fd;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.actionLink:hover {
+  color: #0056cc;
+}
+
+.actionDisabled {
+  color: #00000066;
+}
+
+.resourceList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

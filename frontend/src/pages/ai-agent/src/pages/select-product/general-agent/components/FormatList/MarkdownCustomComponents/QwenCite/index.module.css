@@ -1,0 +1,20 @@
+.qwenCiteIcon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background: url('https://img.alicdn.com/imgextra/i4/O1CN01rtFClY1K8YIbo16U5_!!6000000001119-2-tps-36-36.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.qwenCite {
+  display: inline;
+  margin: -16px 0;
+}
+
+.qwenCite:hover {
+  color: var(--color-brand-primary) !important;
+}
+
+.qwenCite p:hover {
+  color: var(--color-brand-primary) !important;
+}

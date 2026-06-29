@@ -1,0 +1,86 @@
+.selectMerchantsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectMerchants {
+    width: 800px;
+    min-height: calc(100vh - 88px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.selectMerchantsTitle {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: #1D2129;
+    margin-bottom: 16px;
+}
+
+.selectMerchantsUploadSubtitle {
+    font-size: 13px !important;
+}
+
+.selectMerchantsContent {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.customIndexBlockContent {
+    margin-top: 12px !important;
+}
+
+.selectMerchantsContentTitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: #1D2129;
+}
+
+.selectMerchantsContentTitleIcon {
+    display: flex;
+    align-items: center;
+}
+
+.selectMerchantsContentTitleIconText {
+    margin-left: 6px;
+    margin-right: 2px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #1D2129;
+}
+
+.selectMerchantsCheckboxGroup {
+    margin-bottom: 20px;
+}
+
+.selectMerchantsCheckboxGroup :global(.ant-form-item-control-input) {
+    min-height: 17px;
+}
+
+.selectMerchantsBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.selectMerchantsContentTitleIconTextRequired {
+    color: #FF4D4F;
+}
+
+.selectMerchantsCheckboxGroup :global(.ant-checkbox-group){
+    column-gap: 20px !important;
+}
+.selectMerchantsCheckboxGroup :global(.ant-checkbox-label){
+    padding-inline-start: 4px;
+    padding-inline-end: 0;
+}

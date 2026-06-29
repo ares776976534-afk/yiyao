@@ -1,0 +1,88 @@
+{
+  "name": "@alife/1688-chain-file-notification-center",
+  "version": "2.0.3",
+  "description": "组件功能描述",
+  "files": [
+    "esm",
+    "cjs",
+    "dist"
+  ],
+  "main": "esm/index.js",
+  "module": "esm/index.js",
+  "types": "esm/index.d.ts",
+  "exports": {
+    ".": {
+      "default": {
+        "types": "./esm/index.d.ts",
+        "default": "./esm/index.js"
+      }
+    },
+    "./*": "./*",
+    "./../../../../code-sale/xiaoer-work/src/components/FileDeal": {
+      "default": {
+        "types": "./esm/index.d.ts",
+        "default": "./esm/index.js"
+      }
+    }
+  },
+  "sideEffects": [
+    "dist/*",
+    "*.scss",
+    "*.less",
+    "*.css"
+  ],
+  "scripts": {
+    "start": "ice-pkg start",
+    "build": "ice-pkg build",
+    "prepublishOnly": "npm run build",
+    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
+    "eslint:fix": "npm run eslint -- --fix",
+    "stylelint": "stylelint \"**/*.{css,scss,less}\"",
+    "lint": "npm run eslint && npm run stylelint"
+  },
+  "keywords": [
+    "ice",
+    "react",
+    "component"
+  ],
+  "dependencies": {
+    "@swc/helpers": "^0.5.1",
+    "@ice/jsx-runtime": "^0.2.0",
+    "@ali/ascp-shared-service": "^6.0.4-beta.0",
+    "classnames": "^2.2.5",
+    "lodash.throttle": "^4.1.1",
+    "prop-types": "^15.6.0",
+    "query-string": "^4.2.3",
+    "react": "^16.x",
+    "react-dom": "^16.x",
+    "styled-components": "^5.1.1",
+    "websocket": "^1.0.31"
+  },
+  "devDependencies": {
+    "@ali/pkg-plugin-dev": "^1.0.0",
+    "@ali/pkg-plugin-dev-client": "^1.0.0",
+    "@applint/spec": "^1.2.3",
+    "@ice/pkg": "^1.0.0",
+    "@ice/pkg-plugin-docusaurus": "^1.4.18",
+    "@ice/remark-react-docgen-docusaurus": "^1.0.1",
+    "@ice/runtime": "^1.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "eslint": "^8.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "stylelint": "^15.0.0",
+    "@alifd/next": "^1.27.26",
+    "@alife/ascp-base": "^7.1.1-beta.5",
+    "@alife/theme-103433": "^0.1.0",
+    "moment": "^2.24.0"
+  },
+  "peerDependencies": {
+    "react": "^17 || ^18"
+  },
+  "publishConfig": {
+    "registry": "https://registry.anpm.alibaba-inc.com"
+  },
+  "license": "MIT",
+  "repository": "git@gitlab.alibaba-inc.com:1688-global/chain-universal.git"
+}

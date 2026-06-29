@@ -1,0 +1,45 @@
+.lead-balloon {
+  background: #07f;
+  color: #fff;
+  position: relative;
+  z-index: 998 !important;
+  width: 280px;
+
+  .next-icon::before {
+    color: #fff;
+  }
+
+  .close-icon {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 22px;
+    top: 18px;
+  }
+
+
+}
+
+.lead-balloon.next-balloon-bottom-left:after {
+  background: #07f !important;
+}
+
+.lead-balloon.next-balloon-top-left:after {
+  background: #07f !important;
+}
+
+.lead-balloon.next-balloon-top-right:after {
+  background: #07f !important;
+}
+
+.lead-balloon.next-balloon-left:after {
+  background: #07f !important;
+}
+
+.lead-balloon.next-balloon-top:after {
+  background: #07f !important;
+}
+
+.lead-balloon.next-balloon-bottom:after {
+  background: #07f !important;
+}

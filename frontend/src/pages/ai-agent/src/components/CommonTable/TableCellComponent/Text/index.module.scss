@@ -1,0 +1,48 @@
+.textWrapper {
+  padding: 12px;
+}
+
+.textEllipsisWrapper {
+  padding: 12px;
+  /* 默认显示2行，通过内联样式动态设置 -webkit-line-clamp */
+
+  .text,.textLink {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    -webkit-line-clamp: var(--webkit-line-clamp-value, 1);
+  }
+}
+
+.text,.textLink {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #1D2129;
+}
+
+.imgCardTitleImg {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #E7E8EE;
+  flex-shrink: 0;
+  margin-left: 4px;
+  align-self: flex-end;
+
+  &:hover {
+    background: #F9F9FB;
+  }
+
+  .imgCardTitleImgImg {
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+  }
+}

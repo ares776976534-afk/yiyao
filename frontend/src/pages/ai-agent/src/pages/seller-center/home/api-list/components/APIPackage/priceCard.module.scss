@@ -1,0 +1,292 @@
+@import '../../../responsive.scss';
+
+.container {
+  border-radius: vw-1500(25);
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  padding: vw-1500(48) vw-1500(27) vw-1500(32) vw-1500(27);
+  position: relative;
+  width: vw-1500(430);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: vw-1500(-8);
+    left: vw-1500(-8);
+    right: vw-1500(-8);
+    bottom: vw-1500(-8);
+    transition: all 0.3s ease;
+    border-radius: vw-1500(25);
+    z-index: -1;
+  }
+}
+
+.container:hover {
+  box-shadow: inset 0 0 0 1px #6150FF75;
+
+  &::after {
+    border: 8px solid rgba(83, 99, 245, 0.1);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  width: fit-content;
+  gap: vw-1500(28);
+  min-width: vw-1500(376);
+  height: vw-1500(380);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  width: fit-content;
+  gap: vw-1500(24);
+  min-width: vw-1500(376);
+  height: vw-1500(134);
+}
+
+.titleSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  width: fit-content;
+  gap: vw-1500(6);
+  min-width: vw-1500(205);
+  height: vw-1500(110);
+}
+
+.title {
+  font-size: vw-1500(24);
+  font-weight: 400;
+  line-height: vw-1500(32);
+  color: #1D2129;
+  white-space: nowrap;
+}
+
+.priceSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: vw-1500(6);
+  align-items: flex-end;
+  min-width: vw-1500(205);
+  height: vw-1500(78);
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  align-items: flex-end;
+  min-width: vw-1500(175);
+  height: vw-1500(78);
+}
+
+.currencyContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  align-items: flex-end;
+  min-width: vw-1500(36);
+  height: vw-1500(55);
+}
+
+.currencySymbol {
+  font-size: 32px;
+  line-height: vw-1500(55);
+  color: #000000DE;
+  font-family: 'AlibabaSans102-Medium';
+  white-space: nowrap;
+  margin-right: 8px;
+  margin-bottom: -6px;
+}
+
+.currency {
+  font-size: 48px;
+  line-height: vw-1500(55);
+  color: #000000DE;
+  font-family: 'AlibabaSans102-Medium';
+  white-space: nowrap;
+}
+
+.price {
+  font-size: 64px;
+  line-height: vw-1500(78);
+  color: #000000DE;
+  font-family: 'AlibabaSans102-Medium';
+  white-space: nowrap;
+}
+
+.period {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: vw-1500(40);
+  color: #7B7B8D;
+  white-space: nowrap;
+}
+
+.divider {
+  border: 1px solid #0000000F;
+  width: vw-1500(376);
+  height: 0px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: vw-1500(16);
+  width: vw-1500(376);
+  height: vw-1500(128);
+}
+
+.pointsInfo {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: vw-1500(6);
+  min-width: vw-1500(234);
+  height: vw-1500(32);
+}
+
+.pointsText {
+  font-size: 16px;
+  line-height: vw-1500(32);
+  color: #1D2129;
+  font-family: 'AlibabaSans102-Medium';
+  white-space: nowrap;
+}
+
+.normalText {
+  font-weight: 400;
+}
+
+.boldText {
+  font-weight: 500;
+}
+
+.pricePerPoint {
+  font-size: 16px;
+  line-height: vw-1500(32);
+  color: #CCCCD4;
+  font-family: 'AlibabaSans102-Medium';
+  white-space: nowrap;
+}
+
+.description {
+  width: vw-1500(378);
+  height: vw-1500(50);
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptionItem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: vw-1500(6);
+  align-items: center;
+  min-width: vw-1500(378);
+  height: vw-1500(24);
+}
+
+.descriptionItem:nth-child(2) {
+  margin-top: vw-1500(2);
+}
+
+.icon {
+  width: vw-1500(12);
+  height: vw-1500(12);
+}
+
+.descriptionText {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: vw-1500(24);
+  color: #7B7B8D;
+  font-family: 'AlibabaSans102-Medium';
+  white-space: nowrap;
+}
+
+.purchaseButton {
+  border-radius: vw-1500(12);
+  background: #6150FF;
+  border: 1px solid;
+  border-image: linear-gradient(117deg, #BEC4FFA1 -19%, #FFFFFFC7 5%, #AAC7FF00 53%, #2B2B2B00 125%) 1;
+  border-style: inset;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  width: fit-content;
+  box-sizing: border-box;
+  padding: vw-1500(20) vw-1500(150);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  min-width: vw-1500(376);
+  height: vw-1500(62);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.purchaseButton:hover {
+  background: #4552E5;
+}
+
+.buttonText {
+  font-size: vw-1500(19);
+  font-weight: 500;
+  line-height: vw-1500(22);
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+
+.badge {
+  border-radius: vw-1500(4);
+  background: linear-gradient(111deg, #81FDFD, #3590FF 51%, #8D40FF);
+  overflow: hidden;
+  position: absolute;
+  left: vw-1500(337);
+  top: vw-1500(48);
+  width: vw-1500(67);
+  height: vw-1500(27);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.badgeText {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: vw-1500(24);
+  color: #FFFFFF;
+  font-family: 'AlibabaSans102-Medium';
+  white-space: nowrap;
+}

@@ -1,0 +1,124 @@
+.toast {
+  --studio-message-content-padding: 10px 12px;
+  --studio-border-radius-lg: 12px;
+
+  :global {
+    .studio-message-notice-content {
+      background-color: var(--studio-message-content-bg) !important;
+      box-shadow: 0px 4px 10px 0px rgba(184, 184, 184, 0.1) !important;;
+    }
+
+    .studio-message-custom-content {
+      color: var(--studio-message-content-text);
+
+      span:last-child {
+        line-height: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &.infoToast {
+    --studio-message-content-bg: var(--toast-info-bg);
+    --studio-message-content-text: var(--toast-info-text);
+    --studio-message-content-icon: var(--toast-info-icon);
+  }
+
+  &.successToast {
+    --studio-message-content-bg: var(--toast-success-bg);
+    --studio-message-content-text: var(--toast-success-text);
+    --studio-message-content-icon: var(--toast-success-icon);
+  }
+
+  &.warningToast {
+    --studio-message-content-bg: var(--toast-warning-bg);
+    --studio-message-content-text: var(--toast-warning-text);
+    --studio-message-content-icon: var(--toast-warning-icon);
+  }
+
+  &.errorToast {
+    --studio-message-content-bg: var(--toast-error-bg);
+    --studio-message-content-text: var(--toast-error-text);
+    --studio-message-content-icon: var(--toast-error-icon);
+  }
+
+  // 黑白版本都是一个样式
+  &.loadingToast {
+    --studio-message-content-bg: #fff;
+    --studio-message-content-text: #010101;
+  }
+
+  .icon {
+    margin-right: 8px;
+    color: var(--studio-message-content-icon);
+  }
+
+  .loadingIcon {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background: conic-gradient(from 217deg, #6E50FF 6%, rgba(110, 80, 255, 0.04) 89%);
+      mask: radial-gradient(farthest-side, transparent calc(100% - 2px), black calc(100% - 2px));
+      animation: loadingRotate 2s linear infinite;
+    }
+  }
+
+  @keyframes loadingRotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+// strong 类型：独立于 antd message，通过 Portal 全屏居中渲染
+.strongOverlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.strongOverlayVisible {
+  opacity: 1;
+}
+
+.strongBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 20px 20px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.75);
+  min-width: 120px;
+}
+
+.strongIcon {
+  color: #fff;
+}
+
+.strongText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+}

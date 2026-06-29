@@ -1,0 +1,44 @@
+{
+  "name": "react-component-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "pnpm packages:start",
+    "build": "pnpm packages:build",
+    "docusaurus": "docusaurus",
+    "packages:start": "pnpm --parallel -r run start",
+    "packages:build": "pnpm -r run build",
+    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
+    "eslint:fix": "pnpm eslint --fix",
+    "stylelint": "stylelint \"**/*.{css,scss,less}\"",
+    "stylelint:fix": "pnpm stylelint --fix",
+    "lint": "pnpm eslint && pnpm stylelint",
+    "lint:fix": "pnpm eslint:fix && pnpm stylelint:fix"
+  },
+  "devDependencies": {
+    "@alife/1688-chain-file-export": "workspace:*",
+    "@alife/1688-chain-file-import": "workspace:*",
+    "@alife/1688-chain-file-notification-center": "workspace:*",
+    "@alife/1688-chain-fatigue": "workspace:*",
+    "@alife/1688-chain-dialog-provider": "workspace:*",
+    "@alife/1688-chain-framework": "workspace:*",
+    "@alife/1688-chain-renderfield": "workspace:*",
+    "@alife/1688-chain-ui": "workspace:*",
+    "@applint/spec": "^1.2.3",
+    "@changesets/cli": "^2.27.12",
+    "@ice/pkg": "^1.6.0",
+    "eslint": "^8.57.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rimraf": "^4.4.1",
+    "stylelint": "^15.11.0"
+  },
+  "packageManager": "pnpm@8.6.0",
+  "repository": "git@gitlab.alibaba-inc.com:1688-global/chain-universal.git",
+  "dependencies": {
+    "ahooks": "^3.8.4"
+  },
+  "resolutions": {
+    "tsc-alias": "1.8.13"
+  }
+}

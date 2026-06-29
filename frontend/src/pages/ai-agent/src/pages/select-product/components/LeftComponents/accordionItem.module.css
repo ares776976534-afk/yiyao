@@ -1,0 +1,65 @@
+/* 折叠面板容器 */
+.accordionContainer {
+  border: 1px solid var(--border-secondary);
+  border-radius: 16px;
+}
+
+.accordionContainer.expanded {
+  background-color: var(--fill-secondary);
+}
+
+.accordionContainer.collapsed {
+  background-color: var(--fill-white);
+}
+
+/* 头部按钮 */
+.accordionHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  line-height: 20px;
+  border-radius: 16px;
+  text-align: left;
+  background-color: var(--fill-secondary);
+  transition: colors 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+/* 头部左侧内容 */
+.accordionHeaderLeft {
+  display: flex;
+  align-items: center;
+}
+
+/* 标题文本 */
+.accordionTitle {
+  margin-left: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+/* 图标容器 */
+.accordionIcon {
+  color: var(--icon-secondary);
+}
+
+/* 内容区域 */
+.accordionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--text-primary);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+
+.accordionContent.hidden {
+  display: none;
+}
+

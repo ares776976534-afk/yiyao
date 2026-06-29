@@ -1,0 +1,5 @@
+{
+  "type": "ice-app",
+  "builder": "@ali/builder-ice-v3",
+  "nodeVersion": 20
+}

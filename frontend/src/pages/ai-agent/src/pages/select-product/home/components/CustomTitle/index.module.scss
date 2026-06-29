@@ -1,0 +1,98 @@
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.titleContainerBreakLogo {
+  flex-direction: column;
+  row-gap: 24px;
+  margin-bottom: 20px;
+
+  .titleText, .colorTitleContainer {
+    font-size: 24px;
+  }
+
+  .titleLogo {
+    width: auto;
+    height: 36px;
+  }
+}
+
+.titleContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleImage1 {
+  width: 39.75px;
+  height: 29.01px;
+  margin-right: 9.28px;
+}
+
+.titleImage2 {
+  width: 78.02px;
+  height: 34.46px;
+  margin-right: 16px;
+}
+
+.titleDivider {
+  width: 0;
+  height: 12px;
+  border-left: 1px solid rgba(110, 80, 255, 0.4);
+  margin: 0 16px;
+  flex-shrink: 0;
+}
+
+.colorTitleContainer {
+  display: inline-flex;
+  align-items: center;
+  font-family: FZLTHProS;
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: normal;
+  background: linear-gradient(101deg, #FEA7FF -29%, #6E50FF 50%, rgba(110, 80, 255, 0.48) 67%, #6E50FF 87%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-right: 12px;
+}
+
+.colorTitleText {
+  font-family: FZLTHProS;
+}
+
+.colorTitleTextEnglish {
+  font-family: Poppins;
+}
+
+.colorTitleDot {
+  font-family: Poppins;
+  margin: 0 0.2em;
+}
+
+.titleTextContainer {
+  display: inline-flex;
+  align-items: center;
+}
+
+.titleText {
+  font-family: FZLTHProS;
+  font-size: 38px;
+  font-weight: 600;
+  color: #1B1C1D;
+}
+
+.titleTextAgent {
+  font-family: Poppins-Medium;
+  font-size: 42px;
+  color: #1B1C1D;
+}
+

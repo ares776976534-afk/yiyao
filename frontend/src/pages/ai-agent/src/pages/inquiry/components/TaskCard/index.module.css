@@ -1,0 +1,209 @@
+.createCard {
+  border-radius: 16px;
+  border: 1px dashed #e7e8ee;
+  background: var(--bg-primary);
+  height: 174px;
+  padding: 20px;
+  transition: box-shadow 0.2s ease;
+  cursor: pointer;
+  width: 100%;
+}
+
+.createCard:hover {
+  background: var(--fill-secondary);
+}
+
+.createContent {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.createIcon {
+  font-size: 20px;
+  color: var(--text-tertiary);
+}
+
+.createText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--text-tertiary);
+}
+
+.taskCard {
+  position: relative;
+  border-radius: 16px;
+  /* box-shadow: 4px 4px 20px 0px rgba(83, 99, 245, 0.12); */
+  box-sizing: border-box;
+  border: 1px solid #EEEFFE;
+  backdrop-filter: blur(4px);
+  padding: 20px;
+  cursor: pointer;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.taskCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.6));
+  /* backdrop-filter: blur(8px); */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+  border-radius: 16px;
+}
+
+.taskCard:hover::before {
+  opacity: 1;
+}
+
+.cardContent {
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+}
+
+.statusSection {
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.statusTag {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  width: fit-content;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+}
+
+.statusIcon {
+  width: 12px;
+  height: 12px;
+}
+
+.taskInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.taskTitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.taskMeta {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.metaText {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--text-secondary);
+}
+
+.separator {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--text-secondary);
+}
+
+.inquiryTaskMask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.taskCard:hover .inquiryTaskMask {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.imageContainer {
+  position: absolute;
+  right: -20px;
+  bottom: -16px;
+  width: 220px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cnImageContainer {
+  background-image: url('https://img.alicdn.com/imgextra/i3/O1CN01RieCwt1CBk8JGZAlT_!!6000000000043-2-tps-690-477.png');
+}
+
+.globalImageContainer {
+  background-image: url('https://img.alicdn.com/imgextra/i2/O1CN01BRgQDN1MCnD2w6y44_!!6000000001399-2-tps-440-318.png');
+}
+
+.taskImage {
+  position: absolute;
+  right: 52px;
+  bottom: 28px;
+  width: 68px;
+  height: auto;
+  max-width: 68px;
+  max-height: 68px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.loadingIcon {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingSpin {
+  animation: spin 1s linear infinite;
+  width: 16px !important;
+  height: 16px !important;
+  
+}

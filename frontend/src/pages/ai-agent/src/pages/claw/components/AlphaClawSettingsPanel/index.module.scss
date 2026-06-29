@@ -1,0 +1,2775 @@
+/* AlphaClaw 设置面板 - 设计稿 1772873151938 */
+
+$colorTextMain: #1b1c1d;
+$colorTextSecondary: #7c7f9a;
+$colorBorder: #f3f3f6;
+$colorMenuActive: #f4f4fc;
+$colorMenuActiveText: #6e50ff;
+
+:global {
+  * {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .studio-input,
+  .studio-input-password,
+  .studio-select-selector {
+    --studio-control-height: 36px;
+
+    border-radius: 8px;
+    border: 1px solid #e7e8ee;
+    height: 36px;
+  }
+
+  .studio-input-password .studio-input {
+    height: auto;
+  }
+
+  .studio-select {
+    --studio-control-height: 36px;
+  }
+
+  .studio-select-focused .studio-select-selector {
+    box-shadow: inset 0 0 0 1px #6e50ff !important;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 800px;
+  height: 540px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.sidebar {
+  background: #fff;
+  border-right: 1px solid $colorBorder;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 8px 0;
+  overflow: hidden;
+  width: 200px;
+  height: 540px;
+}
+
+.sidebarHeader {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 10px;
+  width: 184px;
+  min-height: 50px;
+}
+
+.sidebarTitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: $colorTextMain;
+  white-space: nowrap;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 6px;
+  align-items: center;
+  flex: 1;
+  width: 184px;
+  height: 466px;
+}
+
+.menuItem {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 12px;
+  width: 184px;
+  min-height: 40px;
+  cursor: pointer;
+  background: #fff;
+
+  &:hover {
+    background: $colorMenuActive;
+  }
+}
+
+.menuItemActive {
+  @extend .menuItem;
+  background: $colorMenuActive;
+}
+
+.menuItemLast {
+  border-radius: 12px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  width: 184px;
+  min-height: 40px;
+  cursor: pointer;
+
+  &:hover {
+    background: $colorMenuActive;
+  }
+}
+
+.menuContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 8px;
+  align-items: center;
+  flex: 1;
+  width: 160px;
+  min-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $colorTextMain;
+
+  &.active {
+    color: $colorMenuActiveText;
+  }
+}
+
+.menuItemIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  mask: no-repeat 0 / cover;
+  background-color: currentColor;
+}
+
+.iconSmall {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.basicActionIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 20px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    mask: var(--maskImage) no-repeat 0 / cover;
+    background-color: currentColor;
+  }
+}
+
+.menuText {
+  white-space: nowrap;
+}
+
+.mainContent {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  overflow: hidden;
+  flex: 1;
+  width: 600px;
+  height: 540px;
+}
+
+.contentHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 26px;
+}
+
+.contentTitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: $colorTextMain;
+}
+
+.headerIcon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.contentBody {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 24px;
+  align-items: center;
+  box-sizing: border-box;
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  overflow: auto;
+}
+
+.infoSectionWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 24px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  width: fit-content;
+  gap: 12px;
+  align-items: center;
+  min-width: 127px;
+  min-height: 98px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #e7e8ee;
+}
+
+.infoDetails {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  width: fit-content;
+  align-items: center;
+  min-width: 127px;
+  min-height: 38px;
+}
+
+.statusRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: 4px;
+  align-items: center;
+  min-width: 78px;
+  min-height: 20px;
+}
+
+.statusDot {
+  border-radius: 2px;
+  background: #21a84a;
+  width: 4px;
+  height: 4px;
+}
+
+.infoId {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $colorTextSecondary;
+  white-space: nowrap;
+}
+
+.actionList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  width: 100%;
+  border: 1px solid $colorBorder;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.actionItem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  min-height: 52px;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  background: #fff;
+  border-bottom: 1px solid $colorBorder;
+  overflow: hidden;
+  cursor: pointer;
+
+  &[data-disabled="true"] {
+    cursor: not-allowed;
+  }
+
+  &:hover:not([data-disabled="true"]) {
+    background: #f7f7fa;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.actionContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 8px;
+  align-items: center;
+  flex: 1;
+  min-height: 20px;
+  color: $colorTextMain;
+
+  [data-disabled="true"] & {
+    color: $colorTextSecondary;
+  }
+}
+
+.actionText {
+  flex: 1;
+}
+
+.actionTextSecondary {
+  flex-shrink: 0;
+  color: $colorTextSecondary;
+}
+
+.personalContentWrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  align-items: flex-start;
+}
+
+/* 个性化设定 - 修改配置表单 */
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  gap: 20px;
+  overflow: auto;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+}
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  height: fit-content;
+  gap: 6px;
+  width: 100%;
+  min-height: 146px;
+}
+
+.formLabel {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $colorTextMain;
+  white-space: nowrap;
+}
+
+.subFormLabel {
+  @extend .formLabel;
+  font-size: 12px;
+  line-height: 18px;
+  color: $colorTextSecondary;
+}
+
+.inputText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $colorTextMain;
+  display: inline-block;
+  max-width: 100%;
+  flex: 1;
+  min-width: 0;
+}
+
+.textareaContent {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $colorTextMain;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+  word-break: break-all;
+  flex: 1;
+  min-width: 0;
+  overflow: auto;
+}
+
+/* 个性化设定 - 保存配置 / 取消 按钮区 */
+.formFooter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 8px;
+  flex-shrink: 0;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.btnPrimary {
+  border-radius: 8px;
+  background: $colorMenuActiveText;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  min-width: 96px;
+  min-height: 36px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &[aria-disabled="true"] {
+    opacity: 0.55;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.btnPrimaryText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.btnSecondary {
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 1px #e7e8ee;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  min-width: 68px;
+  min-height: 36px;
+  cursor: pointer;
+
+  &:hover {
+    background: #f7f7fa;
+  }
+}
+
+.btnSecondaryText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $colorTextMain;
+  white-space: nowrap;
+}
+
+/* ========== 账号授权 ========== */
+.authContentWrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+}
+
+/* 无账号空状态 - 设计稿：暂无下游店铺账号 */
+.authEmptyWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+  padding: 120px 0;
+  min-width: 242px;
+}
+
+.authEmptyIcon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  mask: url("https://img.alicdn.com/imgextra/i4/O1CN01uYFyfu28nywHV8ab3_!!6000000007978-55-tps-16-16.svg")
+    no-repeat center / 32px 32px;
+  background-color: #bbbdca;
+}
+
+.authEmptyTitle {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: $colorTextMain;
+  white-space: nowrap;
+}
+
+.authEmptySub {
+  margin-top: 4px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $colorTextSecondary;
+  white-space: nowrap;
+}
+
+.authBtnAdd {
+  margin-top: 16px;
+  border-radius: 8px;
+  background: #6e50ff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  min-width: 110px;
+  min-height: 36px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  padding: 0 20px;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.authBtnAddText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* 账号列表 - 设计稿：卡片 + 已授权 + 账号标识/授权时间 + 删除 */
+.authListWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.authListScroll {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+
+.authCard {
+  border-radius: 16px;
+  box-shadow: inset 0 0 0 1px $colorBorder;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 16px;
+  width: 100%;
+  min-height: 100px;
+  background: #fff;
+}
+
+.authCardMain {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.authCardHead {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: center;
+  width: fit-content;
+}
+
+.authCardIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.authCardShopName {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: $colorTextMain;
+  white-space: nowrap;
+}
+
+.authCardTag {
+  border-radius: 4px;
+  background: #e7fced;
+  padding: 0 4px;
+  min-height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authCardTagText {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #21a84a;
+  white-space: nowrap;
+}
+
+.authCardMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: fit-content;
+}
+
+.authCardMetaRow {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.authCardMetaLabel {
+  color: $colorTextSecondary;
+  white-space: nowrap;
+}
+
+.authCardMetaValue {
+  color: $colorTextMain;
+  white-space: nowrap;
+}
+
+.authCardDelete {
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 1px #e7e8ee;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 46px;
+  min-height: 30px;
+  padding: 0 8px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  color: $colorTextMain;
+  flex-shrink: 0;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.authListFooter {
+  display: flex;
+  justify-content: center;
+}
+
+/* 新增账号弹窗 - 设计稿：渠道/店铺名称/APP Key/Client ID */
+.authAddModalWrap {
+  position: relative;
+  border-radius: 16px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  overflow: hidden;
+  width: 540px;
+  height: 448px;
+}
+
+.authAddModalHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 24px;
+}
+
+.authAddModalTitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: $colorTextMain;
+  white-space: nowrap;
+}
+
+.authAddModalClose {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.authAddModalBody {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  overflow: auto;
+}
+
+.authAddFormItem {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.authAddFormLabel {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $colorTextSecondary;
+  white-space: nowrap;
+}
+
+.authAddFormInput {
+  border-radius: 8px;
+  background: #fbfbfd;
+  box-shadow: inset 0 0 0 1px #e7e8ee;
+  box-sizing: border-box;
+  padding: 0 12px;
+  width: 100%;
+  min-height: 36px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $colorTextMain;
+  border: none;
+
+  &::placeholder {
+    color: $colorTextSecondary;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 1px #6e50ff;
+  }
+}
+
+.authAddFormInputWhite {
+  background: #fff;
+}
+
+.authAddFormInputError {
+  box-shadow: inset 0 0 0 1px #ff4d4f;
+
+  &:focus {
+    box-shadow: inset 0 0 0 1px #ff4d4f;
+  }
+}
+
+.authAddFormErrorMsg {
+  font-size: 12px;
+  line-height: 16px;
+  color: #ff4d4f;
+}
+
+.authAddModalFooter {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 36px;
+}
+
+.authAddModalCancel {
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 1px #e7e8ee;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  min-width: 68px;
+  min-height: 36px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $colorTextMain;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+  }
+}
+
+.authAddModalConfirm {
+  border-radius: 8px;
+  background: #6e50ff;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  min-width: 96px;
+  min-height: 36px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #fff;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+}
+
+/* ========== 聊天工具绑定 ========== */
+
+.chatToolTutorialLink {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $colorMenuActiveText;
+  white-space: nowrap;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #866cff;
+  }
+}
+
+.chatToolContentWrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  align-items: flex-start;
+}
+
+.chatToolScroll {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 24px;
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  overflow: auto;
+}
+
+.chatToolBlock {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 12px;
+  width: 100%;
+  height: fit-content;
+}
+
+.chatToolBlockHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  min-height: 24px;
+}
+
+.chatToolBlockTitleRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 6px;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.chatToolBlockDot {
+  border-radius: 2px;
+  background: #f55353;
+  width: 4px;
+  height: 4px;
+  flex-shrink: 0;
+}
+
+.chatToolBlockName {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: $colorTextMain;
+  min-width: 32px;
+}
+
+.chatToolSwitch {
+  border-radius: 24px;
+  background: #bbbdca;
+  width: 32px;
+  min-width: 32px;
+  height: 20px;
+  box-sizing: border-box;
+  padding: 0 2px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &[aria-disabled="true"] {
+    opacity: 0.45;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.chatToolSwitchThumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background: #fff;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.chatToolSwitchOn {
+  background: $colorMenuActiveText;
+}
+
+.chatToolSwitchThumbOn {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background: #fff;
+  flex-shrink: 0;
+  margin-left: auto;
+  transition: margin 0.2s ease;
+}
+
+.chatToolBlockCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 12px;
+  padding: 16px;
+  width: 100%;
+  min-height: fit-content;
+  border: 1px solid $colorBorder;
+  border-radius: 16px;
+}
+
+.chatToolFormRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  min-height: 36px;
+}
+
+.chatToolFormLabel {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $colorTextMain;
+  flex: 0 0 auto;
+  width: 140px;
+}
+
+.formLabelRequired {
+  &::before {
+    content: "*";
+    color: #ff4d4f;
+    margin-right: 4px;
+  }
+}
+
+.chatToolInput {
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.chatToolDivider {
+  height: 1px;
+  background: $colorBorder;
+}
+
+.chatToolFooter {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.chatToolHeaderRight {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.chatToolConnectHint {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #bbbdca;
+  white-space: nowrap;
+}
+
+.chatToolConnectHintOn {
+  color: $colorTextSecondary;
+}
+
+.wechatBindModalBody {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px 0 44px;
+  overflow: hidden;
+  width: 100%;
+  min-height: 468px;
+  background: #fff;
+}
+
+.wechatBindModalInner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  max-width: 294px;
+  min-width: 0;
+}
+
+/* 设计稿：标题与副标题间距 8px */
+.wechatBindModalHead {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 294px;
+  min-width: min(100%, 294px);
+}
+
+.wechatBindModalTitle {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #1b1c1d;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* 设计稿副标题 14 / 20，色 #7C7F9A，宽 294 */
+.wechatBindModalDesc {
+  margin: 0;
+  max-width: 294px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #7c7f9a;
+  text-align: center;
+  white-space: normal;
+}
+
+.wechatBindModalQrWrap {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: stretch;
+  overflow: hidden;
+  width: min(100%, 264px);
+  height: 264px;
+  max-width: 264px;
+  margin: 0 auto;
+}
+
+.wechatBindModalSpinNested {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  width: 100%;
+  min-height: 264px;
+
+  :global(.ant-spin-container) {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 264px;
+  }
+}
+
+.wechatBindModalQrSlot {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 260px;
+  border: 1px solid #F3F3F6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.wechatBindModalQrFrame {
+  position: relative;
+}
+
+.wechatBindModalQrFrameQr {
+}
+
+.wechatBindModalQrFrameDimmed {
+  opacity: 0.12;
+}
+
+.wechatQrOverlay {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+}
+
+.wechatQrOverlayScanedInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wechatQrOverlayScanedIcon {
+  font-size: 48px;
+  color: #52c41a;
+}
+
+.wechatQrOverlayAbnormalInner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: center;
+  padding: 16px;
+}
+
+.wechatQrOverlayAbnormalRow {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $colorTextMain;
+}
+
+.wechatQrOverlayAbnormalIcon {
+  font-size: 20px;
+  color: #ff4d4f;
+}
+
+.wechatQrOverlayRefresh {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  gap: 4px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #6e50ff;
+  background: transparent;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:hover {
+    color: #5a3ddb;
+  }
+}
+
+.wechatBindModalQrEmpty {
+  flex: 1 1 auto;
+  align-self: stretch;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 0;
+}
+
+.wechatBindModalQr {
+  display: block;
+  border: none;
+}
+
+.wechatBindModalFooter {
+  margin: 0;
+  max-width: 294px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  white-space: normal;
+}
+
+.wechatBindModalFooterMuted {
+  color: #7c7f9a;
+}
+
+.wechatBindModalRegen {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: #6e50ff;
+  background: transparent;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:hover {
+    color: #5a3ddb;
+  }
+}
+
+/* ========== 模型设置 ========== */
+.modelContentWrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  min-width: 0;
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+
+.modelSection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  min-height: fit-content;
+}
+
+.modelSectionTitleRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  min-height: 24px;
+  cursor: pointer;
+}
+
+.modelRadioIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.modelRadioUnchecked {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px #e7e8ee;
+}
+
+.modelSectionTitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: $colorTextMain;
+  flex: 1;
+  min-width: 0;
+}
+
+/* 使用默认模型配置 - 额度用完提示块 */
+.modelQuotaNotice {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  line-height: 20px;
+  background: #faf9ff;
+}
+
+.modelQuotaNoticeText {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: $colorTextMain;
+  text-align: left;
+}
+
+.modelQuotaNoticeText2 {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: $colorTextMain;
+  text-align: left;
+}
+
+.modelQuotaNoticeLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center;
+}
+
+.modelQuotaNoticeLink {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $colorMenuActiveText;
+  text-decoration: none;
+
+  &,
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    color: $colorMenuActiveText;
+    text-decoration: none;
+  }
+}
+
+.modelQuotaNoticeLinkIcon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.modelDefaultCard {
+  border-radius: 16px;
+  box-shadow: inset 0 0 0 1px $colorBorder;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px;
+  width: 100%;
+  min-height: fit-content;
+  box-sizing: border-box;
+}
+
+.modelDefaultCardHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 30px;
+}
+
+.modelCreditsLabel {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: $colorTextMain;
+}
+
+.modelLinkButton {
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 1px #e7e8ee;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  min-width: 98px;
+  min-height: 30px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $colorTextMain;
+  cursor: pointer;
+
+  &:hover {
+    background: #f7f7fa;
+  }
+}
+
+.modelCreditsRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  width: 100%;
+  min-height: 64px;
+}
+
+.modelCreditsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
+  max-width: 244px;
+}
+
+.modelCreditsValueWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.modelCreditsSubLabel {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $colorTextSecondary;
+}
+
+.modelCreditsValueRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 4px;
+  align-items: center;
+  min-height: 24px;
+}
+
+.modelCreditsValue {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: $colorTextMain;
+}
+
+.modelCreditsSlash {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $colorTextSecondary;
+}
+
+.modelProgressTrack {
+  border-radius: 999px;
+  background: #f3f3f6;
+  width: 100%;
+  height: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modelProgressFill {
+  border-radius: 999px;
+  background: $colorMenuActiveText;
+  height: 6px;
+  flex-shrink: 0;
+  transition: width 0.2s ease;
+}
+
+.modelCreditsDivider {
+  width: 2px;
+  min-width: 2px;
+  height: 66px;
+  background: $colorBorder;
+  flex-shrink: 0;
+}
+
+.modelRechargeLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $colorMenuActiveText;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.modelRechargeArrow {
+  width: 12px;
+  height: 12px;
+}
+
+.modelDivider {
+  width: 100%;
+  height: 1px;
+  background: $colorBorder;
+  flex-shrink: 0;
+}
+
+.modelInfoRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  min-height: 28px;
+}
+
+.modelInfoLabel {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $colorTextSecondary;
+  flex: 0 0 auto;
+  width: 140px;
+}
+
+.modelInfoValue {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $colorTextMain;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.modelInfoIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.modelSaveConfigLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  min-width: 74px;
+  min-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $colorMenuActiveText;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &[aria-disabled="true"] {
+    opacity: 0.55;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.modelSaveIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.modelCustomCard {
+  border-radius: 16px;
+  box-shadow: inset 0 0 0 1px $colorBorder;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px 16px;
+  width: 100%;
+  min-height: fit-content;
+  box-sizing: border-box;
+}
+
+.modelCustomCardDisabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.modelFormRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  min-height: 36px;
+  padding: 0;
+}
+
+.modelFormLabel {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $colorTextMain;
+  flex: 0 0 auto;
+  width: 140px;
+}
+
+.modelFormInputWrap,
+.modelFormPasswordWrap {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+
+.modelFormPasswordWrap {
+  padding-right: 12px;
+  border-radius: 8px;
+  border: 1px solid #e7e8ee;
+  height: 36px;
+
+  &:not([data-disabled]) {
+    background-color: var(--fill-secondary);
+  }
+
+  .modelFormInput {
+    border: none !important;
+    height: auto;
+  }
+}
+
+.modelFormInput {
+  flex: 1 0 auto;
+}
+
+.modelFormRowError {
+  align-items: flex-start;
+}
+
+.modelFormLabelError {
+  padding-top: 8px;
+}
+
+.modelFormInputColumn {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modelFormInputError {
+  &:global(.ant-input),
+  &:global(.ant-input-affix-wrapper) {
+    border-color: #ff4d4f !important;
+    box-shadow: none !important;
+
+    &:focus,
+    &:global(.ant-input-affix-wrapper-focused) {
+      border-color: #ff4d4f !important;
+      box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2) !important;
+    }
+  }
+}
+
+.modelFormErrorMsg {
+  font-size: 12px;
+  line-height: 16px;
+  color: #ff4d4f;
+}
+
+.modelInputSuffixIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+/* ========== 积分消耗明细面板 ========== */
+.creditsDetailWrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px 0;
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.creditsDetailHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: center;
+  width: 760px;
+  min-height: 26px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.creditsDetailBackIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.creditsDetailTitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: $colorTextMain;
+  white-space: nowrap;
+}
+
+.creditsTableWrap {
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 1px $colorBorder;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 760px;
+  flex: 1;
+  min-height: 0;
+}
+
+.creditsTableBody {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+
+.creditsTableHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  min-height: 44px;
+  background: #fbfbfd;
+  border-bottom: 1px solid $colorBorder;
+  flex-shrink: 0;
+}
+
+.creditsTableHeaderCell {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: $colorTextMain;
+  min-width: 0;
+}
+
+.creditsTableRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  min-height: 44px;
+  background: #fff;
+  border-bottom: 1px solid $colorBorder;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.creditsTableCell {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $colorTextMain;
+  min-width: 0;
+}
+
+.creditsPagination {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: center;
+  min-height: 32px;
+  flex-shrink: 0;
+}
+
+.creditsPaginationArrow {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.creditsPaginationPage {
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: pointer;
+
+  &:hover {
+    background: #f7f7fa;
+  }
+}
+
+.creditsPaginationPageActive {
+  border-radius: 6px;
+  background: $colorMenuActiveText;
+  color: #fff;
+}
+
+.creditsPaginationEllipsis {
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* ========== 终端操作界面 ========== */
+.terminalViewWrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.terminalViewHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: center;
+  width: 760px;
+  max-width: 100%;
+  min-height: 26px;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.terminalViewBackIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.terminalViewTitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: $colorTextMain;
+  white-space: nowrap;
+}
+
+.terminalViewBox {
+  border-radius: 12px;
+  box-shadow: inset 0 0 0 1px $colorBorder;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 760px;
+  max-width: 100%;
+  flex: 1;
+  min-height: 0;
+}
+
+.terminalViewTabBar {
+  background: #1b1c1d;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 12px;
+  min-height: 44px;
+  flex-shrink: 0;
+}
+
+.terminalViewTabIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+
+.terminalViewTabPath {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.terminalViewContent {
+  background: #1b1c1d;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.terminalViewPlaceholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #fff;
+}
+
+.terminalViewIframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.innerLoading {
+  color: #bbbdca !important;
+  background: transparent !important;
+}
+
+/* ========== 积分使用 ========== */
+.creditsTabWrap {
+  width: 100%;
+}
+
+.creditsSummaryCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 16px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  background: #faf9ff;
+}
+
+.creditsSummaryHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 6px;
+  align-items: center;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.creditsSummaryHeaderLabel {
+  color: $colorTextMain;
+}
+
+.creditsSummaryHeaderValue {
+  color: $colorMenuActiveText;
+}
+
+.creditsSummaryBody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+}
+
+.creditsSummaryItem {
+  flex: 1;
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.creditsSummaryItemVertical {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.creditsSummaryItemHorizontal {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.creditsSummaryItemMain {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.creditsSummaryBlockLabel {
+  line-height: 20px;
+  font-size: 14px;
+  color: $colorTextSecondary;
+}
+
+.creditsSummaryHint {
+  font-size: 12px;
+  line-height: 16px;
+  color: #bbbdca;
+}
+
+.creditsSummaryFreeValueWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.creditsSummaryFreeValueRow {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.creditsSummaryPurchasedRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.creditsSummaryBlockValue {
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: $colorTextMain;
+}
+
+.creditsSummarySlash {
+  line-height: 20px;
+  font-size: 14px;
+  color: $colorTextSecondary;
+}
+
+.creditsSummaryProgressTrack {
+  border-radius: 999px;
+  background: #efeff4;
+  width: 100%;
+  height: 6px;
+  overflow: hidden;
+}
+
+.creditsSummaryProgressFill {
+  border-radius: 999px;
+  background: $colorMenuActiveText;
+  width: 0;
+  height: 6px;
+}
+
+.creditsPurchaseButton {
+  border-radius: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 98px;
+  min-height: 36px;
+  padding: 0 16px;
+  border: none;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $colorTextMain;
+  cursor: pointer;
+  border: 1px solid rgba(110, 80, 255, 0.2);
+
+  &:hover {
+    background: #f7f7fa;
+  }
+}
+
+.creditsFilterWrap {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  background: #f3f3f6;
+}
+
+.creditsFilterSegmented:global(.studio-segmented) {
+  --studio-segmented-item-selected-color: #6e50ff;
+  width: 100%;
+  padding: 4px;
+  font-size: 13px;
+  color: $colorTextSecondary;
+  background: #f7f7fa;
+
+  :global {
+    .studio-segmented-group {
+      gap: 4px;
+    }
+    .studio-segmented-item-selected {
+      font-weight: 500;
+    }
+    .studio-segmented-item-label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 34px;
+    }
+  }
+}
+
+.creditsFilterButton {
+  flex: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #6f7083;
+  cursor: pointer;
+}
+
+.creditsFilterButtonActive {
+  background: #fff;
+  color: $colorTextMain;
+}
+
+.creditsRecordList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow: hidden;
+}
+
+.creditsRecordItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.creditsRecordLeft {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.creditsRecordRight {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 4px;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+
+.creditsRecordTitle {
+  line-height: 18px;
+  font-size: 13px;
+  color: $colorTextMain;
+}
+
+.creditsRecordTime,
+.creditsRecordExpire {
+  line-height: 16px;
+  font-size: 12px;
+  color: $colorTextSecondary;
+}
+
+.creditsRecordAmount {
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: $colorTextMain;
+  white-space: nowrap;
+}
+
+.creditsRecordAmountPositive {
+  color: $colorMenuActiveText;
+}
+
+/* ========== 积分购买 ========== */
+.creditsPurchaseTabWrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+.creditsPurchaseHeader {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.creditsPurchaseUserInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.creditsPurchaseAvatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.creditsPurchaseUserMeta {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex: 1;
+  min-width: 0;
+}
+
+.creditsPurchaseUserName {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: $colorTextMain;
+}
+
+.creditsPurchaseInfoRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 24px;
+  align-items: center;
+}
+
+.creditsPurchaseInfoPair {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.creditsPurchaseInfoLabel {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $colorTextSecondary;
+}
+
+.creditsPurchaseInfoValue {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: $colorTextMain;
+}
+
+.creditsPurchasePointsValue {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: $colorMenuActiveText;
+}
+
+.creditsPurchaseInfoIcon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.creditsPurchaseOrderButton {
+  border-radius: 8px;
+  border: 1px solid rgba(110, 80, 255, 0.2);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0 20px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $colorTextMain;
+  cursor: pointer;
+
+  &:hover {
+    background: #f7f7fa;
+  }
+}
+
+.creditsPurchaseDivider {
+  background: $colorBorder;
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.creditsPurchaseSegmentWrap {
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  background: #f7f7fa;
+}
+
+.creditsPurchaseSegmented {
+  :global {
+    .studio-segmented-item-selected {
+      font-weight: 500;
+    }
+
+    .studio-segmented-item-label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 34px;
+    }
+  }
+}
+
+.creditsPurchaseSegmentOption {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.creditsPurchaseSegmentIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  mask: no-repeat 0 / cover;
+  background-color: currentColor;
+}
+
+.creditsPurchaseCard {
+  position: relative;
+  border-radius: 16px;
+  width: 100%;
+  overflow: hidden;
+  margin: 16px 0;
+  border: 1px solid #eeeffe;
+  background: linear-gradient(180deg, #fafbff 29%, #fff);
+}
+
+.creditsPurchaseCardBgTop {
+  position: absolute;
+  inset: 0 0 auto auto;
+  width: 540px;
+  height: 200px;
+  z-index: 1;
+}
+
+.creditsPurchaseCardBgRight {
+  position: absolute;
+  inset: 0 0 auto auto;
+  width: 370px;
+  height: 200px;
+  z-index: 1;
+}
+
+.creditsPurchaseCardContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 24px;
+  width: 100%;
+  padding: 24px 20px;
+}
+
+.creditsPurchaseTitleBlock {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+
+.creditsPurchaseCardTitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: $colorTextMain;
+}
+
+.creditsPurchasePriceRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2px;
+  align-items: flex-end;
+  width: fit-content;
+}
+
+.creditsPurchasePrice {
+  font-family: AlibabaSans102-Medium;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 41px;
+  color: $colorTextMain;
+  white-space: nowrap;
+}
+
+.creditsPurchasePriceSuffix {
+  margin-bottom: 2px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $colorTextSecondary;
+}
+
+.creditsPurchaseFeatureList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+
+.creditsPurchaseFeatureItem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.creditsPurchaseFeatureIcon {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+.creditsPurchaseFeatureText {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $colorTextMain;
+}
+
+.creditsPurchaseSubmitButton {
+  border-radius: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 40px;
+  border: none;
+  background: $colorMenuActiveText;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.creditsPurchaseTips {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 4px;
+  align-items: center;
+  width: 100%;
+}
+
+.creditsPurchaseTipText {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #bbbdca;
+  white-space: nowrap;
+}
+
+.creditsPurchaseTipAgreement {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #bbbdca;
+}
+
+.creditsPurchaseAgreementLink {
+  color: $colorMenuActiveText;
+}
+
+.creditsPurchasePackageGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  width: 100%;
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+.creditsPurchasePackageCard {
+  border-radius: 16px;
+  box-shadow: inset 0 0 0 1px #eeeffe;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 24px;
+  padding: 24px 20px;
+  flex: 1;
+  min-height: 259px;
+  background: #fff;
+}
+
+.creditsPurchasePackageMain {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+
+.creditsPurchasePackageTitleBlock {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 2px;
+}
+
+.creditsPurchasePackageTitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: $colorTextMain;
+  white-space: nowrap;
+}
+
+.creditsPurchasePackageDesc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #bbbdca;
+  white-space: nowrap;
+}
+
+.creditsPurchasePackageBenefit {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.creditsPurchasePackageButton {
+  border-radius: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 40px;
+  border: none;
+  background: $colorMenuActiveText;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  cursor: pointer;
+}

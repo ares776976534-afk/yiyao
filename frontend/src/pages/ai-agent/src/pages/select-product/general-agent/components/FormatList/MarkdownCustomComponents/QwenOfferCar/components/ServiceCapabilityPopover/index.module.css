@@ -1,0 +1,156 @@
+.serviceCapabilityPopoverTitle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.serviceCapabilityPopoverTitleText {
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.serviceCapabilityPopoverTitleTextCount {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}
+
+.serviceCapabilityPopoverContent {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 8px;
+}
+
+.serviceCapabilityPopoverRow {
+  display: flex;
+  gap: 8px;
+}
+
+.serviceCapabilityPopoverContentItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: var(--fill-white);
+  box-sizing: border-box;
+  border: 1px solid var(--border-primary);
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  width: fit-content;
+  white-space: nowrap;
+}
+
+
+.supplierRecommendationBottomMore {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  justify-content: space-between;
+  border-radius: 6px;
+  background: var(--fill-primary);
+  cursor: pointer;
+}
+
+.supplierRecommendationBottomMoreLeft {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 282px;
+  position: relative;
+}
+
+.supplierRecommendationBottomMoreLeftItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.maskLayer {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  width: 20px;
+  height: 40px;
+  background: linear-gradient(270deg, #F7F7FA 0%, rgba(247, 247, 250, 0) 100%);
+}
+
+.supplierRecommendationBottomMoreLeftItemText {
+  font-family: PingFang SC;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.supplierRecommendationBottomMoreContent {
+  display: flex;
+  gap: 4px;
+}
+
+.supplierRecommendationBottomMoreContentItem {
+  display: flex;
+  padding: 1px 4px;
+  gap: 2px;
+  border-radius: 2px;
+  background: var(--fill-white);
+  filter: blur(0px);
+  font-family: PingFang SC;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 14px;
+  letter-spacing: normal;
+  color: #4D4D5F;
+  width: fit-content;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.supplierRecommendationBottomMoreRight {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.arrowIcon {
+  display: inline-flex;
+  transition: transform 0.2s ease;
+}
+
+.supplierRecommendationBottomMore:hover .arrowIcon {
+  transform: rotate(180deg);
+}
+
+.supplierRecommendationBottomMoreRightText {
+  font-family: PingFang SC;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: normal;
+  color: var(--text-accent);
+  white-space: nowrap;
+}
+
+.serviceCapabilityPopover :global(.ant-popover-inner) {
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.serviceCapabilityPopover :global(.ant-popover-title) {
+  margin-bottom: 16px;
+}

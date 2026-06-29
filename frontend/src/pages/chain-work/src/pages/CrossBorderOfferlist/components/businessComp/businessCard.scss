@@ -1,0 +1,119 @@
+.business-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc(100% / 3);
+  min-width: 260px;
+  margin-left: 20px;
+  border-radius: 6px;
+
+  .tag {
+    display: flex;
+    align-items: center;
+
+    .item-tag {
+      display: flex;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 12px;
+      color: #fff;
+      align-items: center;
+    }
+
+    .item-top-red {
+      padding: 0 8px;
+      width: fit-content;
+      height: 20px;
+      background: #ff5151;
+    }
+
+    .item-top-07f {
+      width: fit-content;
+      height: 20px;
+      padding: 0 8px;
+      background: #07f;
+    }
+  }
+
+  .item-content {
+    background: #fff;
+    padding: 16px;
+    width: 100%;
+    min-height: 160px;
+    border-radius: 0 6px 6px 6px;
+    border: 1px solid #ddd;
+
+    .title-box {
+      display: flex;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 14px;
+      color: #333;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 12px;
+      height: 60px;
+
+      .desc {
+        width: fit-content;
+        height: 60px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 20px;
+        color: #666;
+      }
+
+      img {
+        width: 48px;
+        height: 48px;
+        margin-left: 16px;
+      }
+    }
+
+    .footer {
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .item-botton {
+        border-color: #07f;
+        color: #07f;
+        font-size: 13px;
+      }
+
+      .disabled-button {
+        color: #999;
+        border-color: #999;
+      }
+    }
+
+  }
+
+  .redBorder {
+    border: 1px solid red;
+  }
+
+  .blueBorder {
+    border: 1px solid #07f;
+  }
+
+
+  .red {
+    border: 1px solid #ff5151;
+  }
+
+  .blue {
+    border: 1px solid #eff2f8;
+  }
+}

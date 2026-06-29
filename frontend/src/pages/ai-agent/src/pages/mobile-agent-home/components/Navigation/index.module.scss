@@ -1,0 +1,53 @@
+@import '../../../../style/utils.scss';
+
+.navigation {
+  display: flex;
+  gap: 8px 12rpx;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.navItem {
+  // transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx 16rpx;
+  border-radius: 36rpx;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0rpx 4rpx 8rpx 0rpx rgba(175, 175, 175, 0.2);
+  // @include border-1px(#E7E8EE, 72rpx);
+  @include border-1px-background(#E7E8EE, 72rpx);
+
+  &.active {
+    box-shadow: 0rpx 4rpx 8rpx 0rpx rgba(115, 87, 255, 0.16);
+    @include border-1px-background(linear-gradient(103deg, #FEA7FF -41%, #4456FF 103%), 72rpx);
+
+    .navIcon {
+      color: #6E50FF;
+    }
+
+    .navText {
+      color: #6E50FF;
+      font-weight: 600;
+    }
+  }
+}
+
+.navIcon {
+  width: 18rpx;
+  height: 18rpx;
+  color: #1B1C1D;
+}
+
+.navText {
+  font-family: PingFang SC;
+  font-size: 14rpx;
+  line-height: 16rpx;
+  letter-spacing: normal;
+  color: #1B1C1D;
+  margin-left: 4rpx;
+}

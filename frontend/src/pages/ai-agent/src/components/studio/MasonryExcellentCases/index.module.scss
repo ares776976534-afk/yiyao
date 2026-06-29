@@ -1,0 +1,42 @@
+.masonryExcellentCases {
+  width: 100%;
+
+  .excellentCasesTitle {
+    margin-bottom: 16rpx;
+    line-height: 28rpx;
+    font-size: 20rpx;
+    font-weight: 600;
+  }
+
+  .masonryGrid {
+    display: flex;
+    margin-left: -12rpx; /* 抵消列间距 */
+    width: auto;
+  }
+
+  .masonryColumn {
+    padding-left: 12rpx; /* 列间距 */
+    background-clip: padding-box;
+
+    /* 每个 item 的间距 */
+    > * {
+      margin-bottom: 10rpx;
+    }
+  }
+}
+
+.showCaseItem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6rpx;
+
+  .showCaseItemImage {
+    border-radius: 8rpx;
+  }
+
+  .showCaseItemInfoTitle {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

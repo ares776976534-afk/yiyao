@@ -1,0 +1,35 @@
+@import '../../responsive.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 vw(103);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-top: vw(295);
+}
+
+.headerTitle {
+  font-family: Alimama Agile VF;
+  font-size: vw(70);
+  font-weight: bold;
+  line-height: vw(100);
+  letter-spacing: normal;
+  color: #141B26;
+}
+
+.headerSubtitle {
+  font-size: vw(32);
+  font-weight: normal;
+  line-height: vw(36);
+  letter-spacing: normal;
+  color: #7B7B8D;
+  margin-top: vw(16);
+}
+
+.productCardsGrid {
+  margin-top: vw(118);
+}

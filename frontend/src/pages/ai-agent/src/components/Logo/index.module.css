@@ -1,0 +1,10 @@
+.alphashopLogo {
+  background-color: #fff;
+  mask-repeat: no-repeat;
+}
+
+[data-theme="light"] {
+  .alphashopLogo {
+    background-color: #000;
+  }
+}

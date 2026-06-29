@@ -1,0 +1,146 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.sectionTitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #1D2129;
+}
+
+.optionalLabel {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: #7C7F9A;
+    margin-left: -6px;
+}
+
+.questionsContainer {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 12px;
+    background: var(--fill-white);
+    box-sizing: border-box;
+    border: 1px solid var(--border-primary);
+}
+
+/* 覆盖 Ant Design 默认的 margin-bottom */
+.questionsContainer :global(.ant-form-item) {
+    margin-bottom: 0;
+}
+
+.questionsItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+}
+
+.questionsLabel {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--icon-primary);
+}
+
+.questionsInput {
+    width: 600px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid var(--border-primary);
+    padding: 6px 12px;
+}
+
+.questionsInput :global(.ant-input-number-input) {
+    padding: 0 !important;
+}
+
+.questionsInput :global(.ant-input::placeholder) {
+    color: #BBBDCA !important;
+}
+
+.divider {
+    border: .5px solid #F3F3F6;
+}
+
+.questionsSelect {
+    height: 36px;
+    border-radius: 8px;
+    width: 600px !important;
+}
+
+.questionsSelect :global(.ant-select-selector) {
+    border-color: var(--dt-colors-border-primary) !important;
+    border-radius: 8px !important;
+}
+
+.questionsSelect :global(.ant-select-selection-placeholder) {
+    color: #BBBDCA !important;
+}
+
+.questionsSelect :global(.ant-select.ant-select-outlined.ant-select-disabled:not(.ant-select-customize-input) .ant-select-selector) {
+    background: #FBFBFD !important;
+}
+
+.questionsSelect :global(.ant-select-arrow) {
+    transition: transform 0.3s;
+}
+
+.questionsSelect :global(.ant-select.ant-select-open .ant-select-arrow) {
+    transform: rotate(180deg);
+}
+
+/* 下拉框圆角 */
+:global(.basicInforDropdown) {
+    border-radius: 12px !important;
+}
+
+.add {
+    padding: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Brand/常规 color-brand-1 */
+    color: var(--text-accent);
+}
+
+.add:hover {
+    color: var(--text-accent) !important;
+    background-color: #fff !important;
+}
+
+.authorization {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0px;
+    gap: 10px;
+    border-radius: 8px;
+    background: #FAF9FF;
+    font-family: PingFang SC;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-accent);
+    cursor: pointer;
+}
+
+.authorization:hover {
+    background: #F4F4FC;
+}

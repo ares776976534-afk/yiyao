@@ -1,0 +1,32 @@
+.newWorkLayout {
+  min-height: 100vh;
+  padding: 24px 24px 104px 8px;
+  background: #f8f8f8;
+}
+
+.ae-order-create-container {
+  a {
+    &:link,
+    &:visited {
+      color: #07f;
+      text-decoration: none;
+    }
+  }
+
+  --table-th-font-size: 14px;
+  --table-header-corner-top: 6px;
+  --table-th-color: #333;
+  --table-cell-padding-left: 20px;
+  .next-table-header {
+    .next-table-cell {
+      border-bottom: none;
+    }
+    .next-table-cell-wrapper {
+      height: 38px;
+    }
+  }
+}
+
+.merchant-navigation .search-form {
+  display: none;
+}

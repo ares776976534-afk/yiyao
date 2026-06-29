@@ -1,0 +1,80 @@
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.carousel {
+  position: relative;
+  width: 300px;
+  height: 96px;
+}
+
+.carouselCard {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center center;
+  will-change: transform, filter;
+}
+
+.loadingCardSvg {
+  display: block;
+  width: 300px;
+  height: 96px;
+  pointer-events: none;
+}
+
+.carouselList {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tip {
+  margin: 20px 0;
+  line-height: 26px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkIcon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.checkDone {
+  color: #22ac60;
+}
+
+.checkPending {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.stepText {
+  line-height: 24px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}

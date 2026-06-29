@@ -1,0 +1,205 @@
+  .compositeChartWapper {
+
+    .compositeChartSelect {
+      :global {
+        .ant-select-selector {
+          border-color: #E7E8EE !important;
+          background: #FFFFFF !important;
+          box-shadow: none !important;
+        }
+
+        .ant-select-selection-item {
+          color: #4D4D5F !important;
+        }
+      }
+
+      &:global(.ant-select-open) {
+        :global {
+          .ant-select-selector {
+            background: #F7F7FA !important;
+          }
+        }
+      }
+    }
+
+    .compositeChartTabListWrapper {
+      position: relative;
+      margin-bottom: 18px;
+      padding-bottom: 4px;
+    }
+
+    .compositeChartTabList {
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+      // padding: 4px 1px;
+    }
+
+    .compositeChartSelectWrapper {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .compositeChartTabItem {
+      cursor: pointer;
+      height: 100%;
+      z-index: 1;
+
+      &.active {
+        .compositeChartTabItemLabel {
+          color: #6E50FF;
+          transition: color 0.3s ease;
+          font-weight: 500;
+        }
+      }
+
+      .compositeChartTabItemLabel {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 20px;
+        letter-spacing: normal;
+        color: #7C7F9A;
+        transition: color 0.3s ease;
+      }
+    }
+
+    .compositeChartTabLine {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      border-radius: 1px;
+      z-index: 0;
+
+      .compositeChartTabLineBar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #6E50FF;
+        height: 4px;
+        border-radius: 1px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+
+    .compositeChartContent {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+
+      .chartItem {
+        border-radius: 12px;
+        min-width: 0;
+      }
+
+      .chartTitle {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: normal;
+        color: #1B1C1D;
+        margin-bottom: 10px;
+      }
+    }
+
+    .compositeChartFooter {
+      display: flex;
+      justify-content: center;
+    }
+
+    .compositeChartLegend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      margin-top: 30px;
+      padding: 10px 30px;
+      border-radius: 8px;
+      background: #FBFBFD;
+
+      .legendItem {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: opacity 0.3s ease;
+
+        &.disabled {
+          opacity: 0.4;
+
+          .legendLabel {
+            color: rgba(0, 0, 0, 0.3);
+          }
+        }
+      }
+
+      .legendColor {
+        width: 8px;
+        height: 8px;
+        flex-shrink: 0;
+        transition: background-color 0.3s ease;
+      }
+
+      .legendLabel {
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 18px;
+        letter-spacing: normal;
+        color: rgba(0, 0, 0, 0.87);
+        transition: color 0.3s ease;
+      }
+    }
+  }
+
+  .compositeChartSelectDropdown {
+    border-radius: 16px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid #E7E8EE;
+    box-shadow: 0px 4px 16px 0px rgba(187, 189, 202, 0.16);
+    padding: 8px;
+
+
+    .compositeChartSelectDropdownItem {
+      min-width: 144px;
+      display: flex;
+      align-items: center;
+      padding: 10px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      // background: #F7F7FA;
+
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 20px;
+      letter-spacing: normal;
+      color: #1B1C1D;
+
+    }
+
+    .compositeChartSelectDropdownItemCheckmark {
+      margin-left: auto;
+      color: #7C7F9A;
+    }
+
+    :global {
+      .ant-select-item {
+        padding: 0;
+
+        &.ant-select-item-option-selected,
+        &.ant-select-item-option-active {
+          background: #F7F7FA;
+        }
+      }
+
+      .ant-select-item+.ant-select-item {
+        margin-top: 2px;
+      }
+
+    }
+  }

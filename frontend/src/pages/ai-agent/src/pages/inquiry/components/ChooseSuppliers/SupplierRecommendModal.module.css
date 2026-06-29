@@ -1,0 +1,516 @@
+.modalHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.modalTitle {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1b1c1d;
+}
+
+.headerSubtitle {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #7C7F9A;
+  margin-left: 8px;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 500px; /* 确保loading时也有高度 */
+}
+
+/* Table圆角和边框样式 */
+.modalContent :global(.ant-table-wrapper) {
+  border: 1px solid #F3F3F6;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 500px; /* 确保loading时也有高度 */
+  position: relative; /* 为loading定位提供参考 */
+}
+
+/* 调整loading位置，使其居中显示 */
+.modalContent :global(.ant-table-wrapper .ant-spin-nested-loading) {
+  min-height: 500px;
+  position: relative;
+}
+
+.modalContent :global(.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container) {
+  min-height: 500px;
+}
+
+/* loading指示器居中 */
+.modalContent :global(.ant-table-wrapper .ant-spin-nested-loading .ant-spin) {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 10;
+  max-height: none !important;
+}
+
+.modalContent :global(.ant-table) {
+  border: none !important;
+}
+
+.modalContent :global(.ant-table-thead > tr > th) {
+  border-bottom: 1px solid #F3F3F6 !important;
+  border-right: none !important;
+  border-left: none !important;
+  background-color: #FBFBFD !important;
+  font-size: 14px;
+}
+
+/* .modalContent :global(.ant-table-thead > tr > .ant-table-selection-column) {
+  display: none;
+} */
+
+.modalContent :global(.ant-table-thead > tr > th::before) {
+  display: none !important;
+}
+
+.modalContent :global(.ant-table-tbody > tr > td) {
+  border-bottom: 1px solid #F3F3F6 !important;
+  border-right: none !important;
+  border-left: none !important;
+}
+
+.modalContent :global(.ant-table-tbody > tr:last-child > td) {
+  border-bottom: none !important;
+}
+
+.modalContent :global(.ant-table-tbody > tr:last-child > td:first-child) {
+  border-bottom-left-radius: 8px;
+}
+
+.modalContent :global(.ant-table-tbody > tr:last-child > td:last-child) {
+  border-bottom-right-radius: 8px;
+}
+
+/* 限制第一列和第二列的宽度 */
+.modalContent :global(.ant-table-thead > tr > th:first-child),
+.modalContent :global(.ant-table-tbody > tr > td:first-child),
+.modalContent :global(.ant-table-thead > tr > th:nth-child(2)),
+.modalContent :global(.ant-table-tbody > tr > td:nth-child(2)) {
+  max-width: 240px;
+  width: 240px;
+}
+
+.selectedRow {
+  background: transparent !important;
+}
+
+.selectedRow:hover {
+  background: transparent !important;
+}
+
+/* 去掉表格行的hover背景色 */
+.modalContent :global(.ant-table-tbody > tr:hover > td) {
+  background: transparent !important;
+}
+
+/* 去掉表格行的选中背景色 */
+.modalContent :global(.ant-table-tbody > tr.ant-table-row-selected > td) {
+  background: transparent !important;
+}
+
+.modalContent :global(.ant-table-tbody > tr.ant-table-row-selected:hover > td) {
+  background: transparent !important;
+}
+
+.supplierInfoCell {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 0;
+  width: 100%;
+  max-width: 240px;
+  box-sizing: border-box;
+}
+
+.aiRecRow {
+  position: relative;
+}
+
+/* 让图标定位到整个行的左上角 */
+.aiRecRow :global(td:first-child) {
+  position: relative;
+}
+
+.aiRecommendIcon {
+  position: absolute;
+  top: 0;
+  left: -32px;
+  z-index: 10;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.aiRecommendIcon svg {
+  display: block;
+}
+
+.supplierInfoContent {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+}
+
+.supplierAvatar {
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 6px;
+}
+
+.supplierDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.companyName {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: #1B1C1D;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.specialTags {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6px;
+  width: 100%;
+}
+
+.generalTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  width: 100%;
+}
+
+.powerFactoryTag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.powerFactoryTag svg {
+  display: block;
+}
+
+.sourceFactoryTag {
+  font-family: Alibaba PuHuiTi 3.0;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+  color: #21A84A;
+  border-radius: 2px;
+  background: #E7FCED;
+  filter: blur(0px);
+  padding: 1px 3px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.generalTag {
+  font-family: Alibaba PuHuiTi 3.0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #7C7F9A;
+  border-radius: 2px;
+  background: #F7F7FA;
+  filter: blur(0px);
+  padding: 1px 3px;
+  display: inline-block;
+}
+
+/* 商品信息列样式 */
+.itemInfoCell {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 0;
+  width: 100%;
+  max-width: 240px;
+  box-sizing: border-box;
+}
+
+.itemImage {
+  width: 46px;
+  height: 46px;
+  object-fit: cover;
+  border-radius: 4.31px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.itemImagePreview {
+  padding: 0;
+}
+
+.itemImageLarge {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.itemImagePopover :global(.ant-popover-inner) {
+  padding: 12px !important;
+  background: #FFFFFF !important;
+  border-radius: 8px !important;
+}
+
+.itemImagePopover :global(.ant-popover-arrow) {
+  display: none !important;
+}
+
+.itemDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.itemTitle {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #1D1E29;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.itemPrice {
+  font-family: Alibaba Sans 102;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #FF4000;
+}
+
+.customTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.customTag {
+  font-size: 12px;
+  color: #7b7b8d;
+  background: #f5f5f5;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.expandLink {
+  font-size: 12px;
+  color: #6e50ff;
+  cursor: pointer;
+}
+
+/* 销售和订单指标 */
+.salesCell {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.salesItem {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.salesLabel {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: #7C7F9A;
+  flex-shrink: 0;
+  min-width: 48px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.salesTitle {
+  min-width: 85px;
+}
+
+.salesValue {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: #1B1C1D;
+  text-align: left;
+  flex: 1;
+}
+
+.collapse {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.collapseIcon, .expandIcon {
+  width: 12px;
+  height: 12px;
+}
+
+.expandIcon {
+  transform: rotate(180);
+}
+
+/* 采购信息和服务 */
+.purchaseCell {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.purchaseItem {
+  display: flex;
+  gap: 4px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.purchaseLabel {
+  color: #7b7b8d;
+}
+
+.purchaseValue {
+  color: #1b1c1d;
+}
+
+.customServices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.customServiceTag {
+  font-size: 12px;
+  color: #7b7b8d;
+  background: #f5f5f5;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+/* 绩效和发货详情 */
+.servicesCell {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.customCell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.serviceItem {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.serviceLabel {
+  min-width: 69px;
+  font-size: 13px;
+  color: #7b7b8d;
+}
+
+.serviceValue {
+  font-size: 13px;
+  color: #1b1c1d;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  /* border-top: 1px solid #e7e8ee; */
+}
+
+.modalFooterBtn {
+  height: 36px;
+  background-color: #6E50FF;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  transition: opacity 0.2s ease;
+}
+
+.modalFooterBtn:hover {
+  opacity: 0.85;
+  background-color: #6E50FF!important;
+  border: none!important;
+  color: #fff!important;
+  border-radius: 8px!important;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.footerText {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+}

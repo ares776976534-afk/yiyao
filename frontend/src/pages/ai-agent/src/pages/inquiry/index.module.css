@@ -1,0 +1,99 @@
+.container {
+  padding: 84px 40px 20px;
+  background-image: url('https://img.alicdn.com/imgextra/i4/O1CN01LVspWR1pOM2mDp8YU_!!6000000005350-2-tps-1958-424.png');
+  background-size: auto 212px;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.cardGridWrapper {
+  height: calc(100vh - 178px);
+  overflow-y: auto;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 80px;
+  min-height: 1000px; /* 确保即使没有内容也有足够高度进行滚动锚定 */
+}
+
+.taskCardWrapper {
+  display: flex;
+  width: 100%;
+}
+
+
+/* 响应式布局 */
+/* 大屏幕：>1088px，两列布局 */
+@media (min-width: 1089px) {
+  .container {
+    padding: 84px calc((100% - 1000px) / 2) 20px;
+  }
+  
+  .cardGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 中等屏幕：744px-1088px，两列布局 */
+@media (min-width: 744px) and (max-width: 1088px) {
+  .container {
+    padding: 84px 40px 20px;
+  }
+  
+  .cardGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 小屏幕：<744px，单列布局 */
+@media (max-width: 743px) {
+  .container {
+    padding: 84px 40px 20px;
+  }
+  
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.newHomeContent {
+  position: relative;
+  margin-bottom: 68px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -44px;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    width: 850px;
+    height: 211px;
+    background: url(https://img.alicdn.com/imgextra/i2/O1CN01Ss6wWf1m70Cd7s9s6_!!6000000004906-55-tps-850-211.svg) no-repeat;
+  
+  }
+}
+
+.myInquiryTasksTitle {
+  padding: 0 12px;
+  margin-bottom: 16px;
+  font-family: FZLTHProS;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: normal;
+  /* Text/Primary */
+  /* 样式描述：主要文字 */
+  color: #1d1e29;
+}

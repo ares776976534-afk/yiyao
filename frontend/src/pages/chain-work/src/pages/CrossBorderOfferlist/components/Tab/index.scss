@@ -1,0 +1,244 @@
+.offer-list-content {
+  margin-top: 16px;
+}
+
+// 已经入驻商品
+.joined-offer-table {
+  background-color: #fff;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  .next-table.only-bottom-border {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .next-table-cell-wrapper {
+    font-size: 13px;
+  }
+  .next-table-inner {
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+  }
+  // .next-table-header {
+  //   tr:first-child {
+  //     th:nth-child(4) {
+  //       border-width: 0 !important;
+  //     }
+  //   }
+  // }
+  .table-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 14px;
+    padding-top: 20px;
+
+    .title {
+      font-weight: 600;
+      font-size: 16px;
+      color: #333;
+      line-height: 16px;
+    }
+  }
+
+  .batch-join-qqjx {
+    padding: 6px 0 12px;
+
+    .batch-button {
+      color: #07f;
+      border-color: #07f;
+    }
+
+    .batch-button-disable {
+      color: #999;
+      border-color: transparent;
+    }
+  }
+
+  .baseInfo-cell {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    // img {
+    //   height: 80px;
+    //   width: 80px;
+    // }
+
+    .offer-info {
+      display: flex;
+      flex-direction: column;
+      margin-left: 8px;
+
+      .info-item {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        line-height: 20px;
+        margin-top: 8px;
+
+        .label {
+          color: #999;
+        }
+
+        .value {
+          color: #333;
+          font-size: 13px;
+          // margin-left: 6px;
+        }
+
+        .label1 {
+          margin-right: 4px;
+        }
+
+        .a-name {
+          height: 20px;
+        }
+
+        .name {
+          display: inline-block;
+          max-width: 260px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          width: fit-content;
+        }
+
+        .icon-img-box {
+          margin-left: 8px;
+          display: flex;
+          align-items: center;
+
+          .edit-offer {
+            width: 14px;
+            height: 14px;
+          }
+
+          .edit-1 {
+            margin-left: -14px;
+          }
+
+          .edit-1:hover {
+            display: none;
+          }
+        }
+      }
+
+      > :first-child {
+        margin-top: 0;
+      }
+
+      .tags {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .tag-item {
+          padding: 1px 3px;
+          border: 1px solid #07f;
+          color: #07f;
+          border-radius: 2px;
+          margin-left: 4px;
+          font-size: 12px;
+        }
+
+        .tag-item-FF7300 {
+          border-radius: 2px;
+          padding: 1px 3px;
+          font-size: 12px;
+          color: #ff7300;
+          border: 1px solid #ff7300;
+          margin-left: 4px;
+        }
+
+        > :first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+.pagination-content {
+  margin-top: 28px;
+  text-align: right;
+}
+
+.next-input.next-medium .next-icon:before,
+.next-input.next-medium .next-icon .next-icon-remote {
+  font-size: 21px;
+}
+
+.actionCell {
+  .action {
+    display: inline-block;
+    color: #07f;
+    cursor: pointer;
+    margin-top: 6px;
+  }
+}
+
+.next-table-header {
+  .actionBox {
+    width: 240px;
+  }
+}
+
+.more-balloon {
+  .action {
+    display: flex;
+    margin-top: 6px;
+    color: #07f;
+    cursor: pointer;
+    border-bottom: 1px solid #f5f5f5;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  .invite-join-container {
+    display: flex;
+    flex-direction: column;
+    color: #666;
+    cursor: default;
+    .invite-join-actions {
+      margin-top: 4px;
+      span {
+        &:first-child {
+          color: #07f;
+        }
+        cursor: pointer;
+      }
+      .refuse {
+        color: #666;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .next-balloon-content {
+    > :first-child {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+.dialog-result {
+  .next-dialog-body {
+    padding: 20px 20px 0;
+  }
+
+  .next-dialog-header {
+    padding-left: 20px !important;
+  }
+}
+
+.error-text {
+  margin-left: 8px;
+  color: red;
+  font-size: 12px;
+}

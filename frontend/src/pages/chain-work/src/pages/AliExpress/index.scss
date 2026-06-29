@@ -1,0 +1,25 @@
+.notic-borad-tooltip.notic-borad-tooltip {
+  .next-balloon-arrow {
+    .next-balloon-arrow-content {
+      background: #333;
+    }
+  }
+}
+.next-tabs-wrapped.next-tabs-top > .next-tabs-bar .next-tabs-tab + .next-tabs-tab {
+  margin-left: 4px;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  .next-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16px;
+  }
+  .next-icon.next-small:before {
+    font-size: 16px;
+    width: 16px;
+  }
+}

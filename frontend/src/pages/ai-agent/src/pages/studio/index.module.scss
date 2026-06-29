@@ -1,0 +1,86 @@
+@import "../../styles/studio/base.scss";
+
+:global {
+  * {
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-color) transparent;
+  }
+
+  body {
+    /* 禁止页面滚动 */
+    overflow: hidden;
+    background-color: var(--page-bg-color);
+    overscroll-behavior: none;
+  }
+}
+
+.studioContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+  background: #020202;
+}
+
+.chatWrapper {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 428px;
+  z-index: var(--z-index-ai-chat);
+
+  .chatContent {
+    position: static;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .lawDeclaration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2px;
+    padding: 8px 0;
+    line-height: 16px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 9px;
+      height: 1px;
+      background-image: linear-gradient(
+        270deg,
+        rgba(255, 255, 255, 0.2) -4%,
+        rgba(255, 255, 255, 0) 104%
+      );
+    }
+
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+[data-theme="light"] {
+  .chatWrapper .lawDeclaration {
+    color: #bbbdca;
+
+    &::before,
+    &::after {
+      background-image: linear-gradient(
+        270deg,
+        rgba(187, 189, 202, 0.38) -4%,
+        rgba(255, 255, 255, 0.3) 104%
+      );
+    }
+  }
+}

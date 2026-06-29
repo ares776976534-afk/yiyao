@@ -1,0 +1,146 @@
+.copywritingSummary {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 8px;
+}
+
+.copywritingSummary :global(.markdown-component) {
+    overflow-x: auto;
+}
+
+.copywritingSummaryTitle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.copywritingSummary hr {
+    display: none;
+}  
+
+.copywritingSummaryTitleText {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+}
+
+.copywritingSummaryContent {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contentTitle {
+    color: #1D2129;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.contentText {
+    color: #7B7B8D;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.copywritingSummary :global(.markdown-component p){
+    margin: 0;
+    padding: 4px 0px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+}
+
+.copywritingSummary :global(.markdown-component ul) {
+    padding: 4px 0px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.copywritingSummary :global(.markdown-component ul > li ) {
+    color: var(--text-primary);
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    list-style: none;
+}
+
+.copywritingSummary :global(.markdown-component strong) {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.copywritingSummary :global(.markdown-component ul > li::marker) {
+    font-size: 10px;
+    color: var(--icon-accent);
+}
+
+.copywritingSummary :global(.markdown-component ol > li::marker) {
+    font-size: 10px;
+    color: var(--icon-accent);
+}
+
+.copywritingSummary :global(.markdown-component ol > li ) {
+    color: var(--text-primary);
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    list-style: disc !important;
+}
+
+/* .copywritingSummary :global(.markdown-component table img) {
+    width: 80px !important;
+    height: 80px !important;
+    -o-object-fit: cover;
+    object-fit: contain;
+} */
+
+/* .copywritingSummary :global(.markdown-component table) {
+    display: block !important;
+    overflow-x: auto !important;
+    white-space: nowrap;
+} */
+
+/* 表格滚动条样式 - 强制覆盖全局display: none */
+/* .copywritingSummary :global(.markdown-component) table::-webkit-scrollbar {
+    display: block !important;
+    height: 16px !important;
+    background-color: transparent;
+}
+
+.copywritingSummary :global(.markdown-component) table::-webkit-scrollbar-track {
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 1px solid #F3F3F6;
+}
+
+.copywritingSummary :global(.markdown-component) table::-webkit-scrollbar-thumb {
+    background-color: #E7E8EE;
+    border-radius: 5px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    background-clip: padding-box;
+}
+
+.copywritingSummary :global(.markdown-component) table::-webkit-scrollbar-thumb:hover {
+    background-color: #E7E8EE;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    background-clip: padding-box;
+}
+
+
+.copywritingSummary :global(.markdown-component table th),
+.copywritingSummary :global(.markdown-component table td) {
+    min-width: 200px !important;
+    white-space: normal;
+    word-wrap: break-word;
+} */

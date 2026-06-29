@@ -1,0 +1,219 @@
+.demandSituation {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    border-radius: 12px;
+    background: var(--fill-secondary);
+}
+
+.demandSituationTitle {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+}
+
+.demandSituationContent {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
+    overflow-x: auto;
+    gap: 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+.demandSituationContent::-webkit-scrollbar {
+    height: 4px;
+}
+
+.demandSituationContent::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.demandSituationContent::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
+
+.demandSituationContent::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.demandSituationItem {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 8px;
+    flex: 1;
+    flex-shrink: 1; /* 允许收缩以适应小屏幕 */
+    min-width: 0; /* 确保能够收缩到更小的尺寸 */
+}
+
+.demandSituationItemTitle {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.demandSituationItemTitleIcon {
+    width: 12px;
+    height: 12px;
+}
+
+.demandSituationItemContent {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 16px;
+}
+
+.demandSituationItemContentItem {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 4px;
+}
+
+.demandSituationItemSubTitle {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+}
+
+.demandSituationItemValue {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--text-primary);
+    font-family: AlibabaSans102;
+}
+
+.demandSituationItemLine {
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 173px;
+    flex-shrink: 0;
+}
+
+.demandSituationItemArea {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 4px;
+    min-width: 0; /* 确保能够收缩 */
+    overflow: hidden; /* 防止内容溢出 */
+}
+
+.demandSituationItemAreaTitle {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+}
+
+.demandSituationItemAreaEmpty {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    height: 25px;
+    color: var(--text-tertiary-4);
+}
+
+/* 响应式自适应 - 保持水平排列 */
+@media (min-width: 1200px) {
+    
+    .demandSituationItemLine {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+    
+    .demandSituationItemLine {
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .demandSituation {
+        padding: 12px;
+        gap: 12px;
+    }
+    
+    .demandSituationItem {
+        gap: 6px;
+    }
+    
+    .demandSituationItemLine {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    
+    .demandSituationItemValue {
+        font-size: 16px;
+    }
+    
+    .demandSituationItemContent {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .demandSituation {
+        padding: 8px;
+        gap: 8px;
+    }
+    
+    .demandSituationItem {
+        gap: 4px;
+    }
+    
+    .demandSituationItemLine {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    
+    .demandSituationItemValue {
+        font-size: 14px;
+    }
+    
+    .demandSituationTitle,
+    .demandSituationItemTitle {
+        font-size: 12px;
+    }
+    
+    .demandSituationItemSubTitle,
+    .demandSituationItemAreaTitle {
+        font-size: 12px;
+    }
+    
+    .demandSituationItemContent {
+        gap: 8px;
+    }
+    
+    /* 小屏幕隐藏滚动条但保持滚动功能 */
+    .demandSituationContent {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    
+    .demandSituationContent::-webkit-scrollbar {
+        display: none;
+    }
+}

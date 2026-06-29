@@ -1,0 +1,80 @@
+.form-modals {
+  .next-dialog-header {
+    padding: 20px 20px 0 20px;
+  }
+  .next-dialog-body {
+    padding: 0 20px !important;
+    height: 512px !important;
+  }
+  .next-dialog-close .next-dialog-close-icon.next-icon {
+    margin-top: -3px;
+    margin-left: -16px;
+  }
+  .next-dialog-close .next-dialog-close-icon.next-icon:before {
+    font-size: 18px;
+    width: 16px;
+  }
+  .button-info {
+    .next-form-item {
+      margin-bottom: 0;
+    }
+    .next-btn.next-medium {
+      padding: 0 16px;
+      border-radius: 6px;
+    }
+  }
+  .width-style {
+    .next-select-trigger {
+      width: 100%;
+    }
+    .next-input-group {
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+    }
+    .next-input-group-addon {
+      min-width: 70px;
+      .next-select {
+        min-width: 70px;
+        .next-input {
+          min-width: 70px;
+          .next-select-values {
+            padding: 0 2px;
+          }
+        }
+      }
+    }
+  }
+  .next-dialog-footer {
+    padding: 20px 20px 20px 20px;
+  }
+  .manufacturerAddress {
+    .next-input {
+      border-radius: 6px !important ;
+      -webkit-border-radius: 6px !important ;
+      -moz-border-radius: 6px !important ;
+      -ms-border-radius: 6px !important ;
+      -o-border-radius: 6px !important ;
+    }
+  }
+  .phoneNumber {
+    .next-input-group {
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+    }
+    .next-input-group-addon {
+      .next-select {
+        min-width: 72px;
+        .next-input {
+          min-width: 72px;
+          width: 72px;
+        }
+      }
+    }
+  }
+}

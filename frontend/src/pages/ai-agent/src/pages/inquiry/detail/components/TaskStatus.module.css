@@ -1,0 +1,265 @@
+/* ============================================
+   任务状态容器样式
+   ============================================ */
+
+/* 基础容器 */
+.taskStatusBase {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 16px 24px 16px 16px;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+/* 已完成状态 */
+.taskStatus {
+  composes: taskStatusBase;
+  background: linear-gradient(180deg, rgba(34, 172, 96, 0.5) -500%, rgba(255, 255, 255, 0) 72%), #FFFFFF;
+  border: 1px solid rgba(34, 172, 96, 0.1);
+}
+
+/* 进行中状态 */
+.taskStatusRunning {
+  composes: taskStatusBase;
+  background: linear-gradient(180deg, rgba(83, 99, 245, 0.5) -500%, rgba(255, 255, 255, 0) 50%), #FFFFFF;
+  border: 1px solid rgba(83, 99, 245, 0.1);
+}
+
+/* 排队中状态 */
+.taskStatusUpcoming {
+  composes: taskStatusBase;
+  background: linear-gradient(180deg, #7B7B8D -500%, rgba(255, 255, 255, 0) 50%), #FFFFFF;
+  border: 1px solid #F3F3F6;
+}
+
+/* ============================================
+   状态头部样式
+   ============================================ */
+
+.statusHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.statusLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 状态图标 */
+.statusIcon,
+.statusLoadIcon {
+  width: 20px;
+  height: 20px;
+}
+
+/* 状态标题 - 基础样式 */
+.statusTitleBase {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: normal;
+}
+
+/* 已完成状态标题 */
+.statusTitle {
+  composes: statusTitleBase;
+  color: #22ac60;
+}
+
+/* 进行中状态标题 */
+.statusTitleRunning {
+  composes: statusTitleBase;
+  color: #6150FF;
+}
+
+/* 排队中状态标题 */
+.statusTitleUpcoming {
+  composes: statusTitleBase;
+  color: #7B7B8D;
+}
+
+/* 状态标题容器 */
+.statusTitleRunningContainer,
+.statusTitleUpcomingContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 状态描述文本 */
+.statusTitleRunningText{
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #7B7B8D;
+}
+
+.statusTitleUpcomingText {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #7B7B8D;
+}
+
+/* 完成时间 */
+.completionTime {
+  font-size: 14px;
+  color: rgba(34, 172, 96, 0.6);
+}
+
+/* ============================================
+   分割线样式
+   ============================================ */
+
+.dividerBase {
+  width: 100%;
+  margin: 16px 0;
+}
+
+.divider {
+  composes: dividerBase;
+  border-top: 1px solid rgba(34, 172, 96, 0.1);
+}
+
+.dividerRunning {
+  composes: dividerBase;
+  border: 0.5px solid rgba(83, 99, 245, 0.1);
+}
+
+.dividerUpcoming {
+  composes: dividerBase;
+}
+
+/* ============================================
+   任务内容样式
+   ============================================ */
+
+.taskContent {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.taskLeft {
+  display: flex;
+  gap: 16px;
+  flex: 1;
+}
+
+.taskImage {
+  border-radius: 8px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.taskInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+/* ============================================
+   任务信息样式
+   ============================================ */
+
+.taskNameRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.taskName {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1d2129;
+}
+
+.detailIcon {
+  width: 12px;
+  height: 12px;
+  color: #7B7B8D;
+}
+
+.createTime {
+  font-size: 14px;
+  color: #7b7b8d;
+}
+
+/* ============================================
+   任务元数据样式
+   ============================================ */
+
+.taskMeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.autoOrderTag {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.autoOrderIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.autoOrderText {
+  font-size: 14px;
+  color: #6150FF;
+}
+
+.metaDivider {
+  width: 1px;
+  height: 10px;
+  background: #e7e8ee;
+}
+
+.metaText {
+  font-size: 14px;
+  color: #1d2129;
+}
+
+/* ============================================
+   操作按钮样式
+   ============================================ */
+
+.detailButton {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+  border-radius: 20px;
+  border: 1px solid #E7E8EE;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  z-index: 1;
+  box-shadow: none;
+}
+
+.detailButton:hover {
+  background: #FBFBFD !important;
+  box-sizing: border-box !important;
+  border: 1px solid #E7E8EE !important;
+}
+
+.detailButtonText {
+  font-size: 16px;
+  color: #1d2129;
+}

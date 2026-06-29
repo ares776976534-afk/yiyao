@@ -1,0 +1,188 @@
+@import "@/styles/studio/base.scss";
+
+.mobileMaterial {
+  --inputChat-box-width: 335rpx;
+  margin-bottom: 42rpx;
+
+  .inputChatBox {
+    --padding-size: 16rpx;
+    --chat-caret-color: var(--color-brand-1);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -42rpx;
+      left: 50%;
+      z-index: -1;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+      background: url(https://img.alicdn.com/imgextra/i2/O1CN01Ss6wWf1m70Cd7s9s6_!!6000000004906-55-tps-850-211.svg)
+        no-repeat 0 /100%;
+    }
+
+    .inputChatInnerBox {
+      position: relative;
+      width: 100%;
+      border-radius: 24rpx;
+      border: 1px solid #f3f3f6;
+      // 背景颜色
+      background: #fff;
+    }
+
+    [class*="inputChatContainer"] {
+      min-height: 128rpx;
+
+      [class*="inputChatInner"] {
+        gap: 12rpx;
+
+        [class*="inputChat"] {
+          [class*="inputChatTextarea"] {
+            height: 52rpx;
+            font-size: 14rpx;
+            line-height: 20rpx;
+            color: #1d2129;
+
+            &::placeholder {
+              color: #bbbdca;
+            }
+          }
+        }
+
+        [class*="operateContainer"] {
+          [class*="smartModeContainer"],
+          [data-role="uploadOffer"],
+          [data-role="uploadImage"],
+          [data-role="uploadCompact"] {
+            height: 32rpx;
+            font-size: 13rpx;
+          }
+
+          [data-role="uploadOffer"] {
+            display: none;
+          }
+
+          [data-role="uploadCompact"] {
+            background-color: var(--color-white-12);
+          }
+        }
+
+        [class*="send"] {
+          width: 32rpx;
+          height: 32rpx;
+        }
+
+        [class*="sendDisabled"] {
+          --send-bg-color: rgba(0, 0, 0, 0.15);
+        }
+      }
+    }
+  }
+
+  .extraBox {
+    position: relative;
+    width: var(--inputChat-box-width);
+    margin: 0 auto;
+  }
+
+  .promptList {
+    margin-top: 32rpx;
+  }
+
+  .offerLinkAnalysisBox {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 235rpx;
+    margin-top: 12rpx;
+  }
+
+  .fitContainer {
+    --left-side-width: 0;
+
+    // 宽度不能使用100%，会因为父容器变化而抖动，直接撑开容器
+    width: 100%;
+  }
+
+  .excellentCaseContainer {
+    margin-top: 64rpx;
+
+    .excellentCasesTitle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8rpx;
+      margin-bottom: 12rpx;
+      font-size: 14rpx;
+      font-weight: normal;
+      line-height: 20rpx;
+      letter-spacing: normal;
+      color: #7c7f9a;
+
+      &::before,
+      &::after {
+        content: "";
+        width: 64rpx;
+        height: 1px;
+        background: linear-gradient(
+          270deg,
+          #e7e8ee 30%,
+          rgba(243, 243, 246, 0) 107%
+        );
+      }
+
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+
+    // .excellentCaseContent {
+    //   width: 100%;
+    //   min-width: unset;
+
+    //   [data-role="excellent-cases-list"] {
+    //     gap: 16rpx 0;
+
+    //     [data-role="show-case-item"] {
+    //       row-gap: 12rpx;
+    //       width: 100%;
+    //       padding: 16rpx;
+    //       border-radius: 16rpx;
+    //     }
+
+    //     [data-role="showCaseItemImageListWrapper"] {
+    //       height: 278rpx;
+    //       border-radius: 8rpx;
+    //     }
+
+    //     [data-role="show-case-item-image-list"] {
+    //       gap: 2rpx;
+    //       // grid-template-areas: none;
+
+    //       // >:not(:first-child) {
+    //       //   display: none;;
+    //       // }
+    //     }
+    //   }
+    // }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16rpx;
+    font-size: 14rpx;
+    line-height: 20rpx;
+    color: #bbbdca;
+  }
+}
+
+// 覆盖上传菜单的字体大小
+.uploadMenu {
+  --studio-font-size: 14rpx;
+}

@@ -1,0 +1,39 @@
+.selectionReportContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.selectionReport {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.selectionReportTitle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.selectionReportTitleText {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: #1D2129;
+}
+
+.selectionReportTitleSubText {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #7B7B8D;
+}
+
+.selectionReportDetail {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}

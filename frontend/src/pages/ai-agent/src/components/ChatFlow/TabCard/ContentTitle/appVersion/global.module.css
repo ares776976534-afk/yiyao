@@ -1,0 +1,31 @@
+.global {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.global__title {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+
+.global__scoreValue {
+  font-family: AlibabaSans102;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--text-primary);
+}
+
+.global__scoreUnit {
+  font-family: AlibabaSans102;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-primary);
+}

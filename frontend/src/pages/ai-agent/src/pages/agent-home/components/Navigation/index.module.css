@@ -1,0 +1,140 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  min-height: 40px;
+}
+
+.navItemActive::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border-radius: 36px;
+  padding: 1px;
+  background: linear-gradient(100deg, #FEA7FF -44%, #4456FF 103%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  border: none;
+}
+
+.navItem {
+  border-radius: 36px;
+  background: #FFFFFF;
+  border: 1px solid #E7E8EE;
+  box-shadow: 0px 4px 8px 0px rgba(175, 175, 175, 0.2);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 6px;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  min-width: 120px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  background-clip: padding-box;
+}
+
+.navItemActive {
+  box-shadow: 0px 4px 8px 0px rgba(115, 87, 255, 0.16) !important;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  border-color: transparent;
+}
+
+.navItem:hover {
+  background: #FFFFFF;
+  border-color: transparent;
+  box-shadow: 0px 4px 8px 0px rgba(115, 87, 255, 0.16);
+}
+
+.navItem:hover::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border-radius: 36px;
+  padding: 1px;
+  background: linear-gradient(100deg, #FEA7FF -44%, #4456FF 103%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  border: none;
+}
+
+.navItem:hover .navIcon {
+  color: #6E50FF;
+}
+
+.navItem:hover .navText {
+  color: #6E50FF;
+  /* font-weight: 500; */
+}
+
+.navIcon {
+  width: 20px;
+  height: 20px;
+  color: #1D1E29;
+  pointer-events: none;
+  display: flex;
+}
+
+.navIconActive {
+  width: 20px;
+  height: 20px;
+  color: #6E50FF;
+  pointer-events: none;
+}
+
+.navTextActive {
+  font-weight: 500 !important;
+  color: #6E50FF !important;
+}
+
+.navText {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #1D1E29;
+  white-space: nowrap;
+  pointer-events: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navigationLeftLine, .navigationRightLine {
+  width: 160px;
+  height: 1px;
+  transform: rotate(180deg);
+  z-index: 0;
+  background: linear-gradient(90deg, #E7E8EE 30%, rgba(243, 243, 246, 0) 107%) ;
+}
+
+.navigationRightLine {
+  transform: rotate(0deg);
+}
+
+.navigationLine {
+  /* 自动布局子元素 */
+  width: 24px;
+  height: 1px;
+  background: #E7E8EE;
+}

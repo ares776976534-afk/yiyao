@@ -1,0 +1,279 @@
+.feedbackCardContainer {
+  position: absolute;
+  top: 66px;
+  right: 0;
+  z-index: 1000;
+}
+
+.slideIn {
+  animation: slideInFromRight 300ms ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.container {
+  padding: 12px 16px;
+  width: 180px;
+  position: relative;
+  /* height: 98px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: var(--fill-white);
+  box-sizing: border-box;
+  border: 1px solid var(--border-secondary);
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.04);
+}
+
+.default {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 16px;
+}
+
+.feedbackCloseIcon {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+
+.container:hover .feedbackCloseIcon {
+  opacity: 1;
+}
+
+.container:has(.actionItem:hover) .feedbackCloseIcon {
+  opacity: 0;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--text-primary);
+  /* white-space: nowrap; */
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 16px;
+  align-items: center;
+  width: 148px;
+  min-height: 40px;
+}
+
+.actionItem {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 6px;
+  align-items: center;
+  flex: 1;
+  cursor: pointer;
+}
+
+.actionItem:hover svg {
+  color: var(--icon-accent);
+}
+
+.actionItem:hover .actionText {
+  color: var(--icon-accent);
+}
+
+.actionText {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.divider {
+  width: 1px;
+  height: 22px;
+  background: var(--border-primary);
+}
+
+.feedbackCheckHeartContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.feedbackCheckHeartText {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: #4D4D5F;
+}
+
+.feedPopoverTitle {
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.closeIcon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  gap: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.closeIcon:hover {
+  background: #F9F9FB;
+}
+
+.feedbackForm :global(.ant-form-item-label > label.ant-form-item-required::before) {
+  display: none !important;
+}
+
+.feedbackForm :global(.ant-form-item) {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  margin-right: 4px;
+}
+
+.required {
+  color: var(--semantic-warning-primary);
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+}
+
+/* Checkbox 自定义样式 */
+.radioGroup {
+  display: flex;
+  gap: 8px;
+  /* 每个按钮间隔8px */
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Checkbox 按钮样式 */
+.radioGroup :global(.ant-checkbox-wrapper) {
+  border-radius: 8px !important;
+  border: 1px solid var(--border-primary) !important;
+  margin-right: 0 !important;
+  transition: all 0.3s ease !important;
+  height: 36px !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  padding: 8px 12px !important;
+  color: var(--text-secondary) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+.radioGroup :global(.ant-checkbox-label) {
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+/* 隐藏默认的 checkbox 方框 */
+.radioGroup :global(.ant-checkbox-wrapper) :global(.ant-checkbox) {
+  display: none !important;
+}
+
+/* 选中状态样式 */
+.radioGroup :global(.ant-checkbox-wrapper-checked) {
+  color: var(--text-accent) !important;
+  border: 1px solid var(--icon-accent) !important;
+  background-color: var(--fill-white) !important;
+  z-index: 1 !important;
+  /* font-weight: 500 !important; */
+}
+
+/* 悬停状态 */
+.radioGroup :global(.ant-checkbox-wrapper:hover) {
+  border: 1px solid var(--icon-accent) !important;
+  color: var(--text-accent) !important;
+  background-color: var(--fill-white) !important;
+}
+
+/* 选中且悬停状态 */
+.radioGroup :global(.ant-checkbox-wrapper-checked:hover) {
+  color: var(--text-accent) !important;
+  border: 1px solid var(--icon-accent) !important;
+  background-color: var(--fill-white) !important;
+  z-index: 1 !important;
+}
+
+.feedbackFormInputTextarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border-primary);
+}
+
+.footerBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.feedbackFormItem {
+  margin-bottom: 16px !important;
+}
+
+.feedModal {
+  width: 400px;
+  height: 428px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 16px;
+  border-radius: 16px;
+  background: var(--fill-white);
+  box-sizing: border-box;
+  border: 1px solid var(--border-secondary);
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.04);
+}
+
+.feedPopoverTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

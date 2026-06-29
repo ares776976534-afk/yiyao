@@ -1,0 +1,87 @@
+// @import '@/style/utils.scss';
+
+.uploadArea {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8rpx;
+  margin-bottom: 12rpx;
+}
+
+.uploadItem,
+.uploadItemUploading {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 8rpx;
+  position: relative;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid #F3F3F6;
+  // @include border-1px(#F3F3F6, 16rpx);
+}
+
+
+.uploadItemImage {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8rpx;
+}
+
+.uploadItemDelete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 0px 4px 0px 4px;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  // background: url('https://img.alicdn.com/imgextra/i1/O1CN01JzBihh1zZwE6vg5Ms_!!6000000006729-2-tps-32-32.png') no-repeat center center;
+  // background-size: 100% 100%;
+}
+
+.uploadItemUploading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  // @include border-1px(#F3F3F6, 16rpx);
+  border: 1px solid #F3F3F6;
+}
+
+.uploadItemMask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8rpx;
+}
+
+.uploadItemUploadingIcon {
+  width: 20rpx;
+  height: 20rpx;
+  color: #FFFFFF;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

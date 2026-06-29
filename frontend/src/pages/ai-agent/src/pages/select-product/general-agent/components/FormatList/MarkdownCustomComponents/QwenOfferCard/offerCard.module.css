@@ -1,0 +1,374 @@
+.commonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+.expandedCard {
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 1px #F3F3F6;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  overflow: hidden;
+  min-height: 503px;
+}
+
+.productHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  min-height: 180px;
+  margin: -16px;
+}
+
+.productInfo {
+  background: #FBFBFD;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 16px;
+  align-items: center;
+  flex: 1;
+  min-height: 180px;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-end;
+  flex: 1;
+}
+
+.productTextContainer {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 8px;
+  min-width: 502px;
+}
+
+.productTitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #1B1C1D;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+  word-break: break-wordl;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  &:hover {
+    color: #6E50FF;
+  }
+}
+
+.categoryText {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #7C7F9A;
+}
+
+.metaText {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #7C7F9A;
+  white-space: nowrap;
+}
+
+.actionButtons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  min-width: 296px;
+  min-height: 36px;
+}
+
+
+.productContent {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.amazonSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+.sectionHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: 8px;
+  align-items: center;
+  min-width: 152px;
+}
+
+.sectionIndicator {
+  border-radius: 3px;
+  background: #6E50FF;
+  width: 6px;
+  height: 6px;
+}
+
+.positiveSectionIndicator {
+  border-radius: 3px;
+  background: #21A84A;
+  width: 6px;
+  height: 6px;
+}
+
+.negativeSectionIndicator {
+  border-radius: 3px;
+  background: #F55353;
+  width: 6px;
+  height: 6px;
+}
+
+.sectionTitle {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #1B1C1D;
+  white-space: nowrap;
+}
+
+.statsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 16px;
+  align-items: center;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 4px;
+  flex: 1;
+}
+
+.statLabel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: 4px;
+  align-items: center;
+  min-height: 20px;
+}
+
+.statLabelText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #7C7F9A;
+  white-space: nowrap;
+}
+
+.infoIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.statValue {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: 6px;
+  align-items: center;
+  min-height: 23px;
+}
+
+.statNumber {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  min-height: 23px;
+}
+
+.numberText {
+  font-size: 18px;
+  line-height: 25px;
+  color: #1B1C1D;
+  font-family: AlibabaSans102-Medium;
+  white-space: nowrap;
+}
+
+.trendIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.reviewsSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 8px;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: fit-content;
+  gap: 8px;
+  align-items: center;
+}
+
+.tag {
+  border-radius: 6px;
+  background: #FFFFFF;
+  box-shadow: inset 0 0 0 1px #E7E8EE;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: 8px;
+  box-sizing: border-box;
+  padding: 6px 10px;
+  align-items: center;
+  min-height: 32px;
+}
+
+.tagText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #1B1C1D;
+  white-space: nowrap;
+}
+
+.tagPercentage {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #7C7F9A;
+  white-space: nowrap;
+}
+
+.negativeReviewsSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: 8px;
+}
+
+.noReviewTag {
+  border-radius: 6px;
+  background: #FFFFFF;
+  box-shadow: inset 0 0 0 1px #E7E8EE;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 6px 10px;
+  align-items: center;
+  min-width: 76px;
+  min-height: 32px;
+}
+
+.noReviewText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #7C7F9A;
+  white-space: nowrap;
+}
+
+.collapsedCard {
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 1px #F3F3F6;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  align-items: flex-end;
+  overflow: hidden;
+  min-height: 180px;
+}
+
+.expandButton {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: 4px;
+  align-items: center;
+  min-width: 70px;
+  min-height: 18px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.expandButton:hover {
+  opacity: 0.8;
+}
+
+.expandText {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #6E50FF;
+  white-space: nowrap;
+  text-align: center;
+  width: 52px;
+}
+
+.expandIcon {
+  width: 14px;
+  height: 14px;
+}

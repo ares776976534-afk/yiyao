@@ -1,0 +1,12 @@
+.message-wrap {
+  display: flex;
+  align-items: center;
+  --message-size-m-border-radius: 6px;
+  --message-size-m-border-width: 0px;
+  .next-message-content {
+    padding: 0 !important;
+    --message-size-m-content-margin-top: 0px;
+  }
+
+}
+  

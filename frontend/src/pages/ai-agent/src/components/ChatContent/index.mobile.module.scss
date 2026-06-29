@@ -1,0 +1,68 @@
+.chatContent {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: var(--z-index-ai-chat);
+  width: 100vw;
+  height: 100vh;
+
+  .chatBody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: var(--color-chat-bg, #202020);
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .divider {
+    border-top: 1rpx solid var(--divider-color, rgba(255, 255, 255, 0.08));
+  }
+
+  .mobileEnd {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 20%, #FFFFFF 73%);
+    height: 151rpx;
+    width: 100%;
+  }
+
+  .replayEnd,
+  .replayPlaceHolder {
+    width: 100%;
+    height: 58rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Alibaba PuHuiTi 3;
+    font-size: 12rpx;
+    line-height: 18rpx;
+    color: var(--color-chat-placeholder-color);
+    border-top: 1rpx solid transparent;
+  }
+}
+
+.modalConfirm {
+  :global {
+    .studio-modal-confirm-paragraph {
+      gap: 12rpx;
+    }
+
+    .studio-modal-confirm-title,
+    .studio-modal-confirm-btns button {
+      font-size: 12rpx !important;
+    }
+
+    .ant-modal-body {
+      padding: 20rpx !important;
+    }
+
+    .studio-modal-confirm-btns {
+      gap: 10rpx;
+    }
+  }
+}
+

@@ -1,0 +1,29 @@
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  width: 100%;
+  .emptyContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    .emptyImage {
+      width: 120px;
+      height: 120px;
+    }
+    .emptyText {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: PingFang SC;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 22px;
+      text-align: center;
+      letter-spacing: normal;
+      color: var(--text-tertiary);
+    }
+  }
+}

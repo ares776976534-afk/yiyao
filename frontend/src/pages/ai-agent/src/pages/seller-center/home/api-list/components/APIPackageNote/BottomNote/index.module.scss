@@ -1,0 +1,46 @@
+@import '../../../../responsive.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: vw-1500(72);
+  height: vw-1500(72);
+}
+
+.textContainer {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  gap: vw-1500(20);
+  align-items: center;
+  min-width: vw-1500(462);
+  margin-top: vw-1500(31);
+}
+
+.title {
+  font-size: vw-1500(36);
+  font-weight: 600;
+  line-height: vw-1500(40);
+  color: #1D2129;
+  white-space: nowrap;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: vw-1500(22);
+  color: #7B7B8D;
+  white-space: nowrap;
+}
+
+.mainImage {
+  width: vw-1500(1352);
+  height: vw-1500(656);
+  margin-top: vw-1500(31);
+}

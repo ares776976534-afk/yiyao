@@ -1,0 +1,11 @@
+.selectProduct {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 800px;
+  /* align-items: center; */
+}
+
+.demoList {
+  margin-top: 76px;
+}

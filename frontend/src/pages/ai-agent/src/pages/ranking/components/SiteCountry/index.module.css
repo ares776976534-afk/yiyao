@@ -1,0 +1,157 @@
+.content {
+  display: flex;
+}
+
+.siteContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--text-primary);
+  white-space: nowrap;
+  margin-left: 12px;
+  display: block;
+}
+
+.siteRow {
+  padding: 0px 12px 0px 8px;
+  border-radius: 8px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+}
+
+.siteRow:hover {
+  background: #FFF3E4;
+}
+
+.siteItem {
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #D15700;
+  white-space: nowrap;
+  background: #FFF3E4;
+}
+
+.siteItem:hover {
+  background: var(--fill-white);
+}
+
+
+.popoverRoot {
+  width: 450px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.09);
+  :global(.ant-popover-inner) {
+    padding: 0;
+    border-radius: 16px;
+  }
+}
+
+.leftPanel {
+  width: 82px;
+  height: 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activeCountry {
+  background: #F3F3F6;
+  width: 82px;
+  height: 58px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.activeCountry:hover .tabText {
+  color: #D15700;
+}
+
+.activeCountry.selected {
+  background: var(--fill-white);
+}
+
+.activeCountry.selected .tabText {
+  color: var(--text-primary);
+}
+
+.activeCountry.selected:hover .tabText {
+  color: var(--text-primary);
+}
+
+.tabContent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  width: fit-content;
+  gap: 4px;
+  align-items: center;
+  min-width: 42px;
+  min-height: 26px;
+}
+
+.tabText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--text-tertiary-4);
+  white-space: nowrap;
+}
+
+.activeIndicator {
+  border-radius: 1px;
+  background: #D15700;
+  width: 24px;
+  height: 2px;
+}
+
+.rightPanel {
+  display: flex;
+  gap: 12px 20px;
+  padding: 16px 23px;
+  flex-wrap: wrap;
+  flex: 1;
+  align-content: flex-start;
+}
+
+.inactiveCountry {
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #666666;
+  flex-shrink: 0;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.inactiveCountry:hover {
+  color: #D15700;
+}
+
+.countrySelected {
+  color: #D15700;
+  font-weight: 500;
+}
+
+.countrySelected:hover {
+  color: #D15700;
+}

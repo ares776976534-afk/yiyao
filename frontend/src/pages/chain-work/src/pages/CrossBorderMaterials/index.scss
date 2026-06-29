@@ -1,0 +1,115 @@
+@import '@alife/image-bank/dist/index.scss';
+
+.ae-order-container {
+  padding-bottom: 76px;
+  
+  .next-card {
+    border: none;
+  }
+
+  .next-card-content-container {
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .ae-order-opeations {
+    --btn-size-m-padding: 33px;
+    --btn-size-m-height: 40px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px 6px 0 0;
+    background-color: #fff;
+    z-index: 2;
+
+    button:first-child {
+      margin-right: 8px;
+    }
+
+    .next-btn.next-medium {
+      padding: 12px;
+      height: 32px;
+      line-height: 0;
+      border-radius: 6px;
+    }
+  }
+}
+
+.piece-weight-table {
+  td {
+    height: 42px;
+    vertical-align: top;
+    .next-table-cell-wrapper {
+      padding: 0;
+    }
+  }
+  .next-table-header tr th:last-child {
+    border-right-width: 1px !important;
+  }
+  .next-input.next-medium .suggestPws input {
+    height: 17px;
+  }
+  .editable-pane input {
+    text-align: center;
+  }
+  th .next-table-cell-wrapper {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  .next-table-header tr:last-child th .next-table-cell-wrapper {
+    font-weight: 400;
+  }
+  .next-input.next-medium {
+    border: none;
+  }
+}
+.products-business-upload {
+  .ant-upload.ant-upload-select {
+    background-color: #fff !important;
+  }
+}
+
+.upload-container {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  vertical-align: top;
+  border: 1px dashed #d9d9d9;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+}
+.upload-container:hover {
+  border-color: #1677ff !important;
+}
+
+.upload-image {
+  .ant-upload {
+    width: 80px !important;
+    height: 80px !important;
+    border: 0 !important;
+  }
+  .ant-upload-list-item-container {
+    width: 80px !important;
+    height: 80px !important;
+  }
+}
+
+.products-business-tooltip {
+  .next-balloon-arrow-content {
+    background-color: #fff !important;
+    border: 1px solid #e5e5e5 !important;
+    box-shadow: var(--balloon-primary-shadow, 0 20px 30px 0 rgba(0, 0, 0, 0.15)) !important;
+  }
+}

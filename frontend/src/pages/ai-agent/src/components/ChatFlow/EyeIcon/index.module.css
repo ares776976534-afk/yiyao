@@ -1,0 +1,19 @@
+.differenceCardTitleImg {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-primary);
+}
+
+.differenceCardTitleImg:hover{
+    background: #F9F9FB;
+}
+
+.differenceCardTitleImgImg {
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}

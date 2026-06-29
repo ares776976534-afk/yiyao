@@ -1,0 +1,674 @@
+[
+    {
+        "messageType": "ASSISTANT",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "resp",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "attachments": [],
+        "offerInfos": [
+            {
+                "firstCateName": "家用电器",
+                "images": [
+                    "https://cbu01.alicdn.com/img/ibank/O1CN01RDIcPH1mH4uIgTsof_!!2213296224928-0-cib.jpg",
+                    "https://cbu01.alicdn.com/img/ibank/O1CN01pQhdax1mH4uJlbVeB_!!2213296224928-0-cib.jpg",
+                    "https://cbu01.alicdn.com/img/ibank/O1CN01w6YEA91mH4uIgWMcF_!!2213296224928-0-cib.jpg",
+                    "https://cbu01.alicdn.com/img/ibank/O1CN01vyItZk1mH4uJnU90J_!!2213296224928-0-cib.jpg",
+                    "https://cbu01.alicdn.com/img/ibank/O1CN01htKqDt1mH4uIZ9akh_!!2213296224928-0-cib.jpg"
+                ],
+                "secondCateName": "母婴电器",
+                "productSkuInfos": [
+                    {
+                        "skuAttributes": [
+                            {
+                                "skuImageUrl": "https://cbu01.alicdn.com/img/ibank/O1CN01XBxLi91mH4uIzu8Ib_!!2213296224928-0-cib.jpg",
+                                "attributeName": "规格",
+                                "value": "白色"
+                            }
+                        ],
+                        "skuId": 6109951683605
+                    },
+                    {
+                        "skuAttributes": [
+                            {
+                                "skuImageUrl": "https://cbu01.alicdn.com/img/ibank/O1CN01yOZm3X1mH4uJPeLIW_!!2213296224928-0-cib.jpg",
+                                "attributeName": "规格",
+                                "value": "蓝色"
+                            }
+                        ],
+                        "skuId": 6109951683607
+                    },
+                    {
+                        "skuAttributes": [
+                            {
+                                "skuImageUrl": "https://cbu01.alicdn.com/img/ibank/O1CN01HHnXyb1mH4uJRKLIg_!!2213296224928-0-cib.jpg",
+                                "attributeName": "规格",
+                                "value": "绿色"
+                            }
+                        ],
+                        "skuId": 6109951683606
+                    }
+                ],
+                "skuProps": [
+                    {
+                        "fid": "1234",
+                        "prop": "规格",
+                        "value": [
+                            {
+                                "imageUrl": "https://cbu01.alicdn.com/img/ibank/O1CN01yOZm3X1mH4uJPeLIW_!!2213296224928-0-cib.jpg",
+                                "name": "蓝色"
+                            },
+                            {
+                                "imageUrl": "https://cbu01.alicdn.com/img/ibank/O1CN01XBxLi91mH4uIzu8Ib_!!2213296224928-0-cib.jpg",
+                                "name": "白色"
+                            },
+                            {
+                                "imageUrl": "https://cbu01.alicdn.com/img/ibank/O1CN01HHnXyb1mH4uJRKLIg_!!2213296224928-0-cib.jpg",
+                                "name": "绿色"
+                            }
+                        ]
+                    }
+                ],
+                "offerId": 981657375712,
+                "thirdCateName": "婴儿理发器",
+                "title": "婴儿理发器超静音宝宝儿童专用电推剪低噪音自动吸发碎发剃头发",
+                "productAttribute": [
+                    {
+                        "attributeName": "产地",
+                        "value": "温州"
+                    },
+                    {
+                        "attributeName": "电源方式",
+                        "value": "充电式"
+                    },
+                    {
+                        "attributeName": "是否进口",
+                        "value": "否"
+                    },
+                    {
+                        "attributeName": "功率",
+                        "value": "5W"
+                    },
+                    {
+                        "attributeName": "品牌",
+                        "value": "磊鸟"
+                    },
+                    {
+                        "attributeName": "是否防水",
+                        "value": "是"
+                    },
+                    {
+                        "attributeName": "货源类别",
+                        "value": "现货"
+                    },
+                    {
+                        "attributeName": "最快出货时间",
+                        "value": "24h"
+                    },
+                    {
+                        "attributeName": "颜色",
+                        "value": "绿色"
+                    },
+                    {
+                        "attributeName": "货号",
+                        "value": "AC-0701"
+                    },
+                    {
+                        "attributeName": "是否跨境出口专供货源",
+                        "value": "是"
+                    },
+                    {
+                        "attributeName": "主要下游平台",
+                        "value": "ebay"
+                    },
+                    {
+                        "attributeName": "主要下游平台",
+                        "value": "亚马逊"
+                    },
+                    {
+                        "attributeName": "主要下游平台",
+                        "value": "wish"
+                    },
+                    {
+                        "attributeName": "主要下游平台",
+                        "value": "速卖通"
+                    },
+                    {
+                        "attributeName": "主要下游平台",
+                        "value": "独立站"
+                    },
+                    {
+                        "attributeName": "主要下游平台",
+                        "value": "LAZADA"
+                    },
+                    {
+                        "attributeName": "主要下游平台",
+                        "value": "其他"
+                    },
+                    {
+                        "attributeName": "主要销售地区",
+                        "value": "非洲"
+                    },
+                    {
+                        "attributeName": "主要销售地区",
+                        "value": "欧洲"
+                    },
+                    {
+                        "attributeName": "主要销售地区",
+                        "value": "南美"
+                    },
+                    {
+                        "attributeName": "主要销售地区",
+                        "value": "东南亚"
+                    },
+                    {
+                        "attributeName": "主要销售地区",
+                        "value": "北美"
+                    },
+                    {
+                        "attributeName": "主要销售地区",
+                        "value": "东北亚"
+                    },
+                    {
+                        "attributeName": "主要销售地区",
+                        "value": "中东"
+                    },
+                    {
+                        "attributeName": "主要销售地区",
+                        "value": "其他"
+                    },
+                    {
+                        "attributeName": "有可授权的自有品牌",
+                        "value": "否"
+                    },
+                    {
+                        "attributeName": "规格",
+                        "value": "白色"
+                    },
+                    {
+                        "attributeName": "规格",
+                        "value": "蓝色"
+                    },
+                    {
+                        "attributeName": "规格",
+                        "value": "绿色"
+                    }
+                ]
+            }
+        ],
+        "messageType": "USER",
+        "query": "把商品里的文字翻译成英文，生成新商品"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "statusChange",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "start"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "sessionId": null,
+        "type": "text",
+        "content": "已收到商品信息，将为您翻译商品标题和属性为英文并生成新商品。"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "statusChange",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "end"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "intent",
+        "intent": "offerMaterial",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "statusChange",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "start"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "icon": "https://img.alicdn.com/imgextra/i1/O1CN01lNtPAD22Y3RDffoE8_!!6000000007131-55-tps-14-14.svg",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "title": "任务规划",
+        "type": "plan_stream",
+        "contentType": "text",
+        "content": "{\"planTitle\":\"将商品文案及图片中的文字翻译成英文，生成新商品\",\"stepNum\":3,\"steps\":[{\"displayContent\":\"将商品标题、属性等所有文本信息翻译成英文，包括标题“婴儿理发器超静音宝宝儿童专用电推剪低噪音自动吸发碎发剃头发”及各项商品属性（如品牌、功率、颜色等）。\",\"displayTitle\":\"第1步：翻译商品文案为英文\",\"stepId\":1,\"stepTitle\":\"翻译商品文案为英文\"},{\"displayContent\":\"将商品主图中包含中文文字的图片（共5张）中的文字内容翻译成英文，生成新的主图图片。\",\"displayTitle\":\"第2步：翻译商品主图中的文字为英文\",\"stepId\":2,\"stepTitle\":\"翻译商品主图中的文字为英文\"},{\"displayContent\":\"将商品SKU图（蓝色、白色、绿色各一张）中包含中文文字的部分翻译成英文，生成对应颜色的新SKU图片。\",\"displayTitle\":\"第3步：翻译商品SKU图中的文字为英文\",\"stepId\":3,\"stepTitle\":\"翻译商品SKU图中的文字为英文\"}]}",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "statusChange",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "end"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "stepId": "2",
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "statusChange",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "start"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "stepId": "2",
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "text",
+        "contentType": "text",
+        "content": "# 【图像翻译】 \n",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "stepId": "2",
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "statusChange",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "end"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "stepId": "3",
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "statusChange",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "start"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "stepId": "3",
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "text",
+        "contentType": "text",
+        "content": "# 【图像翻译】 \n",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "stepId": "3",
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "statusChange",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "end"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "cardId": "IMAGE_AGENT:PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18:2:0",
+        "icon": "https://img.alicdn.com/imgextra/i1/O1CN01CBmcyC1qARdVKM6Yo_!!6000000005455-55-tps-14-14.svg",
+        "stepId": "2",
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "multi_media",
+        "mediaNum": 2,
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "cardId": "IMAGE_AGENT:PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18:2:0",
+        "stepId": "2",
+        "mediaIndex": 0,
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "startTime": 1766555642530,
+        "endTime": 1766555682863,
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "multi_percent_loading",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "cardId": "IMAGE_AGENT:PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18:2:0",
+        "stepId": "2",
+        "mediaIndex": 1,
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "startTime": 1766555642536,
+        "endTime": 1766555681869,
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "multi_percent_loading",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "stepId": "1",
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "statusChange",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "start"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "stepId": "1",
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "text",
+        "contentType": "text",
+        "content": "# 【文本翻译】 \n",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "stepId": "1",
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "statusChange",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "end"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "stepId": "1",
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "statusChange",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "start"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "stepId": "1",
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "title": "文本翻译",
+        "type": "design_analyzer",
+        "contentType": "text",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "context": {
+            "waitingUtil": 1766555646971
+        },
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "statusChange",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "stopForWaiting"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "cardId": "IMAGE_AGENT:PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18:3:0",
+        "icon": "https://img.alicdn.com/imgextra/i1/O1CN01CBmcyC1qARdVKM6Yo_!!6000000005455-55-tps-14-14.svg",
+        "stepId": "3",
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "multi_media",
+        "mediaNum": 2,
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "cardId": "IMAGE_AGENT:PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18:3:0",
+        "stepId": "3",
+        "mediaIndex": 0,
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "startTime": 1766555644071,
+        "endTime": 1766555686404,
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "multi_percent_loading",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "cardId": "IMAGE_AGENT:PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18:3:0",
+        "stepId": "3",
+        "mediaIndex": 1,
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "startTime": 1766555644573,
+        "endTime": 1766555683239,
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "multi_percent_loading",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "cardId": "IMAGE_AGENT:PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18:2:0",
+        "stepId": "2",
+        "mediaIndex": 2,
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "startTime": 1766555644726,
+        "endTime": 1766555687059,
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "multi_percent_loading",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "cardId": "IMAGE_AGENT:PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18:3:0",
+        "stepId": "3",
+        "mediaIndex": 2,
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "startTime": 1766555645881,
+        "endTime": 1766555686547,
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "multi_percent_loading",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "cardId": "IMAGE_AGENT:PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18:2:0",
+        "stepId": "2",
+        "mediaIndex": 3,
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "startTime": 1766555646890,
+        "endTime": 1766555683556,
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "multi_percent_loading",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "cardId": "IMAGE_AGENT:PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18:3:0",
+        "stepId": "3",
+        "mediaIndex": 2,
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "multi_media_content",
+        "contentType": "image",
+        "content": "{\"mediaModel\":{\"height\":800,\"mediaCoverUrl\":\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/36klmgbcPqiRYwVf2efxsf0x71OXGnGByi47sG0lq531LECt6KqnEIGSipMazPKgxqMGfZUvTfFWvyxsg.jpg\",\"mediaId\":\"0f252f5f-f976-4342-bae7-a52689e852a8\",\"mediaUrl\":\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/36klmgbcPqiRYwVf2efxsf0x71OXGnGByi47sG0lq531LECt6KqnEIGSipMazPKgxqMGfZUvTfFWvyxsg.jpg\",\"width\":800},\"toolResultType\":\"image\"}",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "cardId": "IMAGE_AGENT:PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18:2:0",
+        "stepId": "2",
+        "mediaIndex": 4,
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "startTime": 1766555648892,
+        "endTime": 1766555688558,
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "multi_percent_loading",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "icon": "",
+        "stepId": "1",
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "title": "",
+        "type": "design_analyzer",
+        "contentType": "text",
+        "content": "{\"content\":\"- Baby hair clipper, ultra-quiet, specially designed for infants and children, low-noise electric trimmer with automatic hair collection for clean haircuts  \\n- Place of Origin  \\n- Wenzhou  \\n- Power Source  \\n- Rechargeable  \\n- Imported  \\n- No  \\n- Power  \\n- 5W  \\n- Brand  \\n- Leiniao  \\n- Waterproof  \\n- Yes  \\n- Supply Type  \\n- In Stock  \\n- Fastest Shipping Time  \\n- 24h  \\n- Color  \\n- Green  \\n- Model Number  \\n- AC-0701  \\n- Cross-border Export Dedicated Supply  \\n- Yes  \\n- Main Downstream Platforms  \\n- eBay, Amazon, Wish, AliExpress, Independent Site, Lazada, Others  \\n- Main Sales Regions  \\n- Africa, Europe, South America, Southeast Asia, North America, Northeast Asia, Middle East, Others  \\n- Own Brand Available for Authorization  \\n- No  \\n- Specifications  \\n- White, Blue, Green\",\"toolResultType\":\"text\"}",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "stepId": "1",
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "statusChange",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "end"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "cardId": "IMAGE_AGENT:PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18:2:0",
+        "stepId": "2",
+        "mediaIndex": 4,
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "multi_media_content",
+        "contentType": "image",
+        "content": "{\"mediaModel\":{\"height\":800,\"mediaCoverUrl\":\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/MpnhknGwt3VlGdI3DaztLVG9QlRcBEutAZyOuwPVRONQwc3q7AnDvbJzizzHB3otKqZNYzFqSbOUWCuPRg.jpg\",\"mediaId\":\"b47e5f6a-fb93-43e1-ad83-a473a2ccfed5\",\"mediaUrl\":\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/MpnhknGwt3VlGdI3DaztLVG9QlRcBEutAZyOuwPVRONQwc3q7AnDvbJzizzHB3otKqZNYzFqSbOUWCuPRg.jpg\",\"width\":800},\"toolResultType\":\"image\"}",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "cardId": "IMAGE_AGENT:PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18:2:0",
+        "stepId": "2",
+        "mediaIndex": 1,
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "multi_media_content",
+        "contentType": "image",
+        "content": "{\"mediaModel\":{\"height\":800,\"mediaCoverUrl\":\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/0qjmjRAkqXiAqwgSkBGbtDaAjFVUEjSrgalBJ0kOwSSWqi7XwGDBLllumX7BvEdbQXVhgQjhsfQTk9YuSggrng.jpg\",\"mediaId\":\"d2a71319-4c34-421d-ab97-2edf8ec20bdd\",\"mediaUrl\":\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/0qjmjRAkqXiAqwgSkBGbtDaAjFVUEjSrgalBJ0kOwSSWqi7XwGDBLllumX7BvEdbQXVhgQjhsfQTk9YuSggrng.jpg\",\"width\":800},\"toolResultType\":\"image\"}",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "totalStepNum": 3,
+        "messageType": "ASSISTANT",
+        "finishedStepNum": 1,
+        "stepId": 1,
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "plan_status",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "FINISH"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "cardId": "IMAGE_AGENT:PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18:2:0",
+        "stepId": "2",
+        "mediaIndex": 3,
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "multi_media_content",
+        "contentType": "image",
+        "content": "{\"mediaModel\":{\"height\":800,\"mediaCoverUrl\":\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/cxA8fDcvuOG48ltJz5xbVV717gATynDWXVF2VwGXC6BFEqSBT8NbahoiFoHFK1XB1DwAbFkKez4PV0Cy0w.jpg\",\"mediaId\":\"363a8275-1748-4b83-81f1-1a79cc729156\",\"mediaUrl\":\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/cxA8fDcvuOG48ltJz5xbVV717gATynDWXVF2VwGXC6BFEqSBT8NbahoiFoHFK1XB1DwAbFkKez4PV0Cy0w.jpg\",\"width\":800},\"toolResultType\":\"image\"}",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "cardId": "IMAGE_AGENT:PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18:3:0",
+        "stepId": "3",
+        "mediaIndex": 1,
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "multi_media_content",
+        "contentType": "image",
+        "content": "{\"mediaModel\":{\"height\":800,\"mediaCoverUrl\":\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/bUlRbi3joLaURUqvsXI0kfQHvyxyxdQ1ZWfJw6VBN1m9qL57QcdNVtBW8SrjgEtKZxDrz4dJafxeZFPMRQBw.jpg\",\"mediaId\":\"c23a5a65-0d35-4107-b74e-c1c0e2a91b8c\",\"mediaUrl\":\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/bUlRbi3joLaURUqvsXI0kfQHvyxyxdQ1ZWfJw6VBN1m9qL57QcdNVtBW8SrjgEtKZxDrz4dJafxeZFPMRQBw.jpg\",\"width\":800},\"toolResultType\":\"image\"}",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "cardId": "IMAGE_AGENT:PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18:2:0",
+        "stepId": "2",
+        "mediaIndex": 0,
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "multi_media_content",
+        "contentType": "image",
+        "content": "{\"mediaModel\":{\"height\":800,\"mediaCoverUrl\":\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/NDks5VFVEAOCG3MQs9gFBuoUBYAB4QQABzI3lUaVrXCOC7R9YR53di1H1IzzTnjmS6VSn5IBYQNVoE0W37Xw.jpg\",\"mediaId\":\"a4cf9c8f-23ee-42bc-9599-27be448ee01c\",\"mediaUrl\":\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/NDks5VFVEAOCG3MQs9gFBuoUBYAB4QQABzI3lUaVrXCOC7R9YR53di1H1IzzTnjmS6VSn5IBYQNVoE0W37Xw.jpg\",\"width\":800},\"toolResultType\":\"image\"}",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "totalStepNum": 3,
+        "messageType": "ASSISTANT",
+        "finishedStepNum": 2,
+        "stepId": 3,
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "plan_status",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "FINISH"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "cardId": "IMAGE_AGENT:PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18:2:0",
+        "stepId": "2",
+        "mediaIndex": 2,
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "multi_media_content",
+        "contentType": "image",
+        "content": "{\"mediaModel\":{\"height\":800,\"mediaCoverUrl\":\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/WR2R1jkfNz3FC1A33m8D6XVeYwkgiUH08UFRpaYanSoYFvBmqlm00vXOa0lJijQ6edRLDmrgkMLiJjNZZtHg.jpg\",\"mediaId\":\"e811c5ac-9b9b-442b-a2da-17441acf02b4\",\"mediaUrl\":\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/WR2R1jkfNz3FC1A33m8D6XVeYwkgiUH08UFRpaYanSoYFvBmqlm00vXOa0lJijQ6edRLDmrgkMLiJjNZZtHg.jpg\",\"width\":800},\"toolResultType\":\"image\"}",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "totalStepNum": 3,
+        "messageType": "ASSISTANT",
+        "finishedStepNum": 3,
+        "stepId": 2,
+        "planId": "PLAN_71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "plan_status",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "FINISH"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "statusChange",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "start"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "offer",
+        "contentType": "text",
+        "content": "{\"offers\":[{\"offerId\":981657375712,\"firstCateName\":\"家用电器\",\"secondCateName\":\"母婴电器\",\"thirdCateName\":\"婴儿理发器\",\"title\":\"Baby hair clipper, ultra-quiet, specially designed for infants and children, low-noise electric trimmer with automatic hair collection for clean haircuts\",\"mainImages\":[\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/NDks5VFVEAOCG3MQs9gFBuoUBYAB4QQABzI3lUaVrXCOC7R9YR53di1H1IzzTnjmS6VSn5IBYQNVoE0W37Xw.jpg\",\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/0qjmjRAkqXiAqwgSkBGbtDaAjFVUEjSrgalBJ0kOwSSWqi7XwGDBLllumX7BvEdbQXVhgQjhsfQTk9YuSggrng.jpg\",\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/WR2R1jkfNz3FC1A33m8D6XVeYwkgiUH08UFRpaYanSoYFvBmqlm00vXOa0lJijQ6edRLDmrgkMLiJjNZZtHg.jpg\",\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/cxA8fDcvuOG48ltJz5xbVV717gATynDWXVF2VwGXC6BFEqSBT8NbahoiFoHFK1XB1DwAbFkKez4PV0Cy0w.jpg\",\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/MpnhknGwt3VlGdI3DaztLVG9QlRcBEutAZyOuwPVRONQwc3q7AnDvbJzizzHB3otKqZNYzFqSbOUWCuPRg.jpg\"],\"productAttribute\":[{\"attributeName\":\"Place of Origin\",\"value\":\"Wenzhou\"},{\"attributeName\":\"Power Source\",\"value\":\"Rechargeable\"},{\"attributeName\":\"Imported\",\"value\":\"No\"},{\"attributeName\":\"Power\",\"value\":\"5W\"},{\"attributeName\":\"Brand\",\"value\":\"Leiniao\"},{\"attributeName\":\"Waterproof\",\"value\":\"Yes\"},{\"attributeName\":\"Supply Type\",\"value\":\"In Stock\"},{\"attributeName\":\"Fastest Shipping Time\",\"value\":\"24h\"},{\"attributeName\":\"Color\",\"value\":\"Green\"},{\"attributeName\":\"Model Number\",\"value\":\"AC-0701\"},{\"attributeName\":\"Cross-border Export Dedicated Supply\",\"value\":\"Yes\"},{\"attributeName\":\"Main Downstream Platforms\",\"value\":\"eBay, Amazon, Wish, AliExpress, Independent Site, Lazada, Others\"},{\"attributeName\":\"Main Sales Regions\",\"value\":\"Africa, Europe, South America, Southeast Asia, North America, Northeast Asia, Middle East, Others\"},{\"attributeName\":\"Own Brand Available for Authorization\",\"value\":\"No\"},{\"attributeName\":\"Specifications\",\"value\":\"White, Blue, Green\"}],\"skuProps\":[{\"fid\":\"color\",\"prop\":\"Color\",\"value\":[{\"imageUrl\":\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/cLsT8N2IH1jn8mAjo4gixMZ3DYcS7LOl4hZnbweWbjihNfdAcrRR08zKZCknlP6CxZj4RiEMZ7kB8JYEsfg.jpg\",\"name\":\"Blue\"},{\"imageUrl\":\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/NDks5VFVEAOCG3MQs9gFBuoUBYAB4QQABzI3lUaVrXCOC7R9YR53di1H1IzzTnjmS6VSn5IBYQNVoE0W37Xw.jpg\",\"name\":\"White\"},{\"imageUrl\":\"https://alpha-material-agent.oss-accelerate.aliyuncs.com/image/WR2R1jkfNz3FC1A33m8D6XVeYwkgiUH08UFRpaYanSoYFvBmqlm00vXOa0lJijQ6edRLDmrgkMLiJjNZZtHg.jpg\",\"name\":\"Green\"}]}],\"description\":\"\",\"sellingPoints\":[],\"keywords\":[]}]}",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "statusChange",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "end"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "statusChange",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "start"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "text",
+        "contentType": "text",
+        "content": "小助手已经帮你把商品标题、属性等所有文案翻译成英文，还把主图和蓝/白/绿三色SKU图里的中文都换成英文啦！✨现在新商品已准备好，图文全英文，萌萌哒又专业～",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "statusChange",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "end"
+    },
+    {
+        "messageType": "ASSISTANT",
+        "sessionId": "c1c8062d-c42b-48d0-8ee3-29e084d4a7af",
+        "type": "statusChange",
+        "taskId": "71a6c1b2-861e-4ef6-8a02-b0447c0a7a18",
+        "status": "allDone"
+    }
+]

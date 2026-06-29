@@ -1,0 +1,39 @@
+.modeSwitch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modeSwitchTitle {
+  font-family: PingFang SC;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.modeSwitchRight {
+  display: flex;
+  padding: 2px;
+  gap: 2px;
+  border-radius: 6px;
+  background: rgba(110, 80, 255, 0.06);
+  .btn {
+    font-family: PingFang SC;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px 6px;
+    gap: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: rgba(110, 80, 255, 0.8);
+    &.btnActive {
+      background: #fff;
+      color: var(--text-accent);
+    }
+  }
+}

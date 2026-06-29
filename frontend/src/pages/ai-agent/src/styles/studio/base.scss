@@ -1,0 +1,154 @@
+@import "./antd-reset.scss";
+
+:global {
+  [data-root="studio"] {
+    /* 聊天 */
+    --z-index-ai-chat: 10;
+    /* 聊天历史下拉 */
+    --z-index-ai-chat-drop: 11;
+    /* 画布 */
+    --z-index-canvas: 1;
+    /* 画布工具栏 */
+    --z-index-canvas-toolbar: 5;
+    /* 画布调试工具 */
+    --z-index-canvas-debug: 11;
+    /* 画布图层面板 */
+    --z-index-canvas-layer-pannel: 12;
+    /* 画布元素菜单 */
+    --z-index-canvas-element-menu: 6;
+    /* 画布图片的编辑工具 */
+    --z-index-canvas-image-editor: 8;
+    /* 画布文字的编辑工具 */
+    --z-index-canvas-text-edit-menu: 8;
+
+    /* 用户信息浮标 */
+    --z-index-user-info: 13;
+
+    // switch 开关的阴影
+    --switch-handle-shadow: "0px 0px 3px 0px rgba(0, 0, 0, 0.2)";
+
+    /* 画布别名色 - 图层选中框 */
+    --color-canvas-element-selected: var(--color-brand-1);
+    /* 画布别名色 - 图层hover选框 */
+    --color-canvas-element-hovered: var(--color-brand-1);
+    /* 画布别名色 - 绘制区域选框 */
+    --color-canvas-element-drawing-border: var(--color-brand-1);
+    /* 画布别名色 - 绘制区域选框 */
+    --color-canvas-element-drawing-rect: rgba(83, 99, 245, 0.3);
+
+    input::placeholder,
+    textarea::placeholder {
+      color: var(--block-placeholder-color);
+    }
+  }
+
+  .studio-element-menu,
+  .studio-context-menu {
+    z-index: var(--z-index-canvas-element-menu);
+
+    .studio-menu {
+      --studio-menu-item-height: 32px;
+      --studio-menu-icon-margin-inline-end: 4px;
+      --studio-menu-item-color: #fff;
+      --studio-color-split: var(--color-white-8);
+
+      [data-theme="light"] & {
+        --studio-menu-item-color: #000 !important;
+        --studio-color-split: #E7E8EE !important;
+      }
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+      padding: 4px 6px;
+      border-radius: 12px;
+      background: var(--menu-bg);
+      backdrop-filter: var(--menu-backdrop-filter);
+      box-shadow: var(--menu-box-shadow);
+
+      .studio-menu-item {
+        --studio-menu-item-border-radius: 8px;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        width: 175px;
+        font-size: 13px;
+        line-height: 18px;
+        overflow: hidden;
+
+        .studio-menu-item-icon {
+          flex-shrink: 0;
+        }
+
+        .studio-menu-title-content {
+          flex: 1;
+          overflow: hidden;
+        }
+
+        .studio-menu-item-label-with-extra {
+          display: flex;
+          align-items: center;
+          flex: 1;
+          column-gap: 16px;
+        }
+
+        .studio-menu-item-label {
+          flex: 1;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        .studio-element-menu-extra {
+          display: flex;
+          align-items: center;
+          gap: 3px;
+          font-size: 12px;
+          color: var(--menu-item-extra-color);
+        }
+
+        &.studio-menu-item-disabled {
+          color: var(--studio-menu-item-color) !important;
+          opacity: 0.5;
+        }
+      }
+
+      .studio-menu-item-divider {
+        width: 160px;
+        margin: 4px 7px;
+      }
+    }
+  }
+
+  .studio-context-menu {
+    .studio-menu {
+      min-width: 210px;
+      padding: 4px 8px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      background: #161616;
+      box-shadow: none;
+
+      [data-theme="light"] & {
+        background: #FCFCFF;
+        border: 1px solid #F3F3F6;
+      }
+    }
+  }
+}
+
+.userSetting {
+  position: fixed;
+  top: 12px;
+  right: 20px;
+  z-index: var(--z-index-user-info);
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 8px 12px;
+  background: var(--menu-bg);
+  backdrop-filter: var(--menu-backdrop-filter);
+  box-shadow: var(--menu-box-shadow);
+  border-radius: var(--menu-border-radius);
+}

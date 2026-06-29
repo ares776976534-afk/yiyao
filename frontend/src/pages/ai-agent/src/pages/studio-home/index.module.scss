@@ -1,0 +1,327 @@
+@import "../../styles/studio/base.scss";
+
+:global {
+  * {
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-color) transparent;
+  }
+
+  body {
+    background-color: var(--page-bg-color);
+    overscroll-behavior: none;
+  }
+}
+
+.homePage {
+  --bg-color: #000;
+  --bg-image: url("https://img.alicdn.com/imgextra/i2/O1CN01h16w471dCC9Es2VNK_!!6000000003699-55-tps-1520-766.svg");
+  --title-image: url("https://img.alicdn.com/imgextra/i3/O1CN01bdzrNc1Jh4XBcTKY7_!!6000000001059-55-tps-620-41.svg");
+  --title-image-height: 41px;
+  --inputChat-box-width: 850px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 1280px;
+  min-height: 100vh;
+  padding-bottom: 60px;
+  background: var(--home-page-bg-color);
+  color: var(--block-color);
+
+  .homeHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 68px;
+    padding: 0 32px;
+    background: var(--bg-image) no-repeat center 0/100% auto;
+    overflow: hidden;
+  }
+
+  .homePageBg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--bg-image) no-repeat center 0/100% auto;
+    pointer-events: none;
+  }
+
+  .homePageContent {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    // padding-top: calc(68px + 96px);
+    padding-top: 130px;
+  }
+
+  // 内容实体，基于全屏幕居中
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .titleImage {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    height: var(--title-image-height);
+    object-fit: contain;
+  }
+
+  .homePageTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    font-size: 36px;
+    font-family: FZLTHProS;
+    line-height: 41px;
+    color: var(--block-color);
+
+    .strongText {
+      margin-left: 2px;
+      margin-right: 24px;
+      color: transparent;
+      background: linear-gradient(99deg, #6E50FF 7%, #2fbdff 75%, #2fbdff 101%);
+      background-clip: text;
+    }
+  }
+
+  .inputChatBox {
+    --padding-size: 16px;
+    position: relative;
+    display: flex;
+    width: var(--inputChat-box-width);
+
+    .inputChatInnerBox {
+      position: relative;
+      width: 100%;
+      border-radius: 18px;
+
+      [class*="inputChatContainer"] [class*="inputChatInner"] {
+        [class*="smartModeContainer"],
+        [data-role="uploadOffer"],
+        [data-role="uploadImage"] {
+          height: 36px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .extraBox {
+    position: relative;
+    width: var(--inputChat-box-width);
+    margin: 0 auto;
+  }
+
+  // 提示词列表
+  .promptList {
+    margin-top: 32px;
+  }
+
+  .offerLinkAnalysisBox {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 235px;
+    margin-top: 12px;
+  }
+
+  .excellentCases {
+    margin-top: 82px;
+  }
+
+  .pageBottomMask {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 259px;
+      background: linear-gradient(180deg,
+          rgba(7, 14, 26, 0) 0%,
+          rgba(1, 4, 9, 0.6644) 60%,
+          rgba(1, 5, 11, 0.8) 100%);
+      pointer-events: none;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .pageBottomMaskContent {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 36px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      column-gap: 8px;
+      cursor: pointer;
+
+      svg {
+        color: inherit;
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &[data-step="1"] {
+    .pageBottomMask::before {
+      opacity: 0;
+    }
+
+    .pageBottomMask {
+      transform: translateY(100%);
+    }
+  }
+}
+
+.userSetting {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  background: none;
+  border: none;
+  box-shadow: none;
+
+  .historyPortal {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    padding: 8px 10px;
+    font-size: 14px;
+    line-height: 20px;
+    background: var(--color-white-12);
+    border: var(--block-btn-border);
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--block-color);
+  }
+}
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+[data-theme="light"] {
+  --chat-caret-color: var(--color-brand-1);
+
+  .homePage {
+    --bg-color: #fff;
+    --bg-image: url("https://img.alicdn.com/imgextra/i4/O1CN01M61qKN1QLGzgp9ayH_!!6000000001959-55-tps-1520-1643.svg");
+  }
+
+  .inputChatInnerBox {
+    // 背景颜色
+    background: #fff;
+    box-shadow: 0px 4px 12px 0px rgba(42, 207, 223, 0.4);
+  }
+
+  .pageBottomMask::before {
+    background: linear-gradient(180deg,
+        rgba(243, 244, 246, 0) 0%,
+        rgba(243, 244, 246, 0.85) 67%,
+        #fff 100%);
+  }
+
+  .historyPortal:hover {
+    background-color: #f7f8fa;
+  }
+}
+
+[data-theme="dark"] {
+  --chat-caret-color: #39c0ff;
+
+  .inputChatBox {
+    --animation-duration: 1s;
+
+    .inputChatInnerBox {
+      --border-width: 2px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #050715;
+      transition: box-shadow var(--animation-duration);
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: calc(var(--border-width) * -1);
+        border-radius: 18px;
+        transition: opacity var(--animation-duration);
+      }
+
+      // 默认边框
+      &::before {
+        border: var(--border-width) solid #282a37;
+      }
+
+      // 渐变边框
+      &::after {
+        background: conic-gradient(from var(--rotate),
+            #6E50FF 0deg,
+            #2fbdff 120deg,
+            #27dbca 240deg,
+            #6E50FF 360deg);
+        opacity: 0;
+      }
+
+      &:focus-within,
+      &:hover {
+        box-shadow: 0px 4px 40px 0px rgba(42, 207, 223, 0.6);
+        border-radius: 16px;
+        background: #0d0b20;
+
+        &::before {
+          opacity: 0;
+        }
+
+        &::after {
+          opacity: 1;
+          animation: spin 2s linear infinite;
+        }
+      }
+    }
+  }
+
+  .historyPortal:hover {
+    background: var(--color-white-20);
+  }
+}

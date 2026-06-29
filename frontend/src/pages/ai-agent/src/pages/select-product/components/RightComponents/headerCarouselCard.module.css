@@ -1,0 +1,14 @@
+.keywordCard {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 42px;
+}
+
+.keywordListTitle {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+}

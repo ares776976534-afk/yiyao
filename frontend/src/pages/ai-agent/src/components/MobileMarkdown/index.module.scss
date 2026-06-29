@@ -1,0 +1,241 @@
+@import '@/style/utils.scss';
+
+.mobileMarkdownComponent {
+  // .markdown {
+  //   font-family: PingFang SC;
+  //   font-size: 13rpx;
+  //   font-weight: normal;
+  //   line-height: 15rpx;
+  //   letter-spacing: normal;
+  //   color: #1B1C1D;
+  // }
+
+  p {
+    font-family: PingFang SC;
+    font-size: 14rpx;
+    font-weight: normal;
+    // line-height: 22rpx;
+    letter-spacing: normal;
+    color: #1B1C1D;
+    margin: 6rpx 0;
+  }
+
+  h1 {
+    display: flex;
+    margin: 24rpx 0 6rpx;
+    padding: 0;
+    font-family: Alibaba PuHuiTi 3.0;
+    font-size: 18rpx;
+    font-weight: 600;
+    // line-height: 26px;
+    letter-spacing: normal;
+    color: #1B1C1D;
+  }
+
+  h2 {
+    font-family: PingFang SC;
+    font-size: 16rpx;
+    margin: 18rpx 0 6rpx;
+    padding: 0;
+    font-weight: 500;
+    // line-height: 20rpx;
+    letter-spacing: normal;
+    color: #1B1C1D;
+  }
+
+  h3 {
+    font-family: PingFang SC;
+    font-size: 14rpx;
+    font-weight: 500;
+    // line-height: 18rpx;
+    letter-spacing: normal;
+    color: #1B1C1D;
+    margin: 16rpx 0 8rpx;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-family: PingFang SC;
+    font-size: 13rpx;
+    font-weight: 500;
+    // line-height: 15rpx;
+    letter-spacing: normal;
+    color: #1B1C1D;
+    margin: 12rpx 0 6rpx;
+  }
+
+  ul {
+    padding: 4rpx 0;
+    list-style: none;
+
+    &>li {
+      padding: 2rpx 0 2rpx 24rpx;
+
+      font-family: PingFang SC;
+      font-size: 13rpx;
+      font-weight: normal;
+      line-height: 22rpx;
+      letter-spacing: normal;
+      color: #1B1C1D;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        background: #6E50FF;
+        width: 6rpx;
+        height: 6rpx;
+        border-radius: 50%;
+        content: " ";
+        left: 7rpx;
+        top: 10rpx;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  ol {
+    padding: 4rpx 0;
+    list-style: none;
+    counter-reset: item var(--start-value, 0);
+
+    &>li {
+      padding: 2rpx 0 2rpx 24rpx;
+      font-family: PingFang SC;
+      font-size: 13rpx;
+      font-weight: normal;
+      line-height: 22rpx;
+      letter-spacing: normal;
+      color: #1B1C1D;
+      counter-increment: item;
+      position: relative;
+
+      p {
+        margin: 0;
+      }
+
+      &::before {
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        width: 20rpx;
+        height: 26rpx;
+        text-align: center;
+        content: counter(item) ".";
+        font-family: PingFang SC;
+        font-size: 14rpx;
+        font-weight: normal;
+        line-height: 26rpx;
+        letter-spacing: normal;
+        color: #6E50FF;
+      }
+    }
+
+
+  }
+
+  ol+ol,
+  ul+ul,
+  ol+ul {
+    margin-left: 24rpx;
+  }
+
+  // <table class="qwen-table"><caption>跨境直邮与海外仓模式对比</caption><thead><tr><th>对比维度</th><th>跨境直邮（测试期）</th><th>海外仓（增长期）</th></tr></thead><tbody><tr><td>初始投入</td><td>低（无需备货）</td><td>高（仓储、人力、系统投入）</td></tr><tr><td>时效</td><td>7-9天（空运）</td><td>3天以内</td></tr><tr><td>成本</td><td>单件成本约18元</td><td>单件成本降至8元左右</td></tr><tr><td>库存风险</td><td>低</td><td>中高（需准确预测需求）</td></tr><tr><td>用户体验</td><td>一般</td><td>高（更快、更可靠）</td></tr><tr><td>复购率影响</td><td>基础水平</td><td>提升28%</td></tr><tr><td>退货率影响</td><td>较高</td><td>下降41%</td></tr><tr><td>适用阶段</td><td>测试期（&lt;50单/日）</td><td>增长期（&gt;50单/日）</td></tr></tbody></table>
+
+  .tableWrapper {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden; // 明确 Y 轴不滚动
+    -webkit-overflow-scrolling: touch; // iOS 平滑滚动
+    overscroll-behavior-x: none; // 禁用 iOS 弹性效果
+    border: 1px solid #F3F3F6;
+    border-radius: 12rpx;
+    margin: 12rpx 0;
+  }
+
+  table {
+    // display: grid;
+    width: 100%;
+    table-layout: auto; // 让表格根据内容自动调整
+
+    caption {
+      caption-side: top;
+      font-family: PingFang SC;
+      font-size: 14rpx;
+      font-weight: 500;
+      line-height: 20rpx;
+      color: #1B1C1D;
+      text-align: center;
+      padding: 12rpx;
+      border-bottom: 1px solid #F3F3F6;
+    }
+
+    // thead {
+    //   position: sticky;
+    //   top: 0;
+    //   z-index: 1;
+    // }
+
+    tbody {
+      tr {
+        &:last-child {
+          td {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+
+    th {
+      align-items: center;
+      padding: 12rpx;
+      box-sizing: border-box;
+      border-right: 1px solid #F3F3F6;
+      border-bottom: 1px solid #F3F3F6;
+      min-height: 76rpx;
+      min-width: 120rpx;
+      background: #FBFBFD;
+      font-family: PingFang SC;
+      font-size: 14rpx;
+      font-weight: 500;
+      line-height: 20rpx;
+      text-align: center;
+      letter-spacing: normal;
+      color: #1B1C1D;
+      word-break: break-word;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    td {
+      align-items: center;
+      padding: 12rpx;
+      box-sizing: border-box;
+      border-right: 1px solid #F3F3F6;
+      border-bottom: 1px solid #F3F3F6;
+      min-height: 38rpx;
+      min-width: 120rpx;
+
+      font-family: PingFang SC;
+      font-size: 13rpx;
+      font-weight: normal;
+      line-height: 18rpx;
+      letter-spacing: normal;
+      color: #1B1C1D;
+      text-align: center;
+      word-break: break-word;
+      white-space: normal;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+}

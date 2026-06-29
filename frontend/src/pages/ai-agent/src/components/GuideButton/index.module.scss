@@ -1,0 +1,36 @@
+@import '../../style/utils.scss';
+
+.guideButton {
+  width: max-content;
+  max-width: 343rpx;
+  min-height: 36rpx;
+  /* 自动布局 */
+  display: flex;
+  align-items: center;
+  padding: 7rpx 16rpx;
+
+  border-radius: 100rpx;
+  /* Icon/Accent */
+  background: #6E50FF;
+  box-sizing: border-box;
+  /* Button/Primary */
+  border: 1px solid #6E50FF;
+  // @include border-1px(#6E50FF, 200rpx);
+
+  text-align: center;
+  word-wrap: break-word;
+
+  font-family: PingFang SC;
+  font-size: 12rpx;
+  font-weight: 500;
+  line-height: 18rpx;
+  letter-spacing: normal;
+  /* Fill/White */
+  color: #FFFFFF;
+  position: fixed;
+  bottom: calc(40rpx + constant(safe-area-inset-bottom)); /* iOS < 11.2 */
+  bottom: calc(40rpx + env(safe-area-inset-bottom)); /* iOS >= 11.2 */
+  left: 50%;
+  z-index: 500;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,47 @@
+.commodityCard {
+  width: calc((100% - 22px) / 2);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255, 214, 80, 0.12) 0%, rgba(255, 255, 255, 0) 9%), #FFFFFF;
+  box-sizing: border-box;
+  border: 1px solid rgba(110, 80, 255, 0.1);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-bottom: 20px;
+  height: 1222px;
+  position: relative;
+}
+
+.commodityCardHeader {
+  display: flex;
+  flex-flow: column;
+  gap: 4px;
+  padding: 24px 24px 10px 24px;
+  width: 100%;
+}
+
+.commodityCardHeaderTitleText {
+  font-family: PingFang SC;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.commodityCardHeaderTitleTime {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-tertiary-4);
+}
+
+.commodityCardContent {
+  width: 100%;
+  flex: 1;
+}

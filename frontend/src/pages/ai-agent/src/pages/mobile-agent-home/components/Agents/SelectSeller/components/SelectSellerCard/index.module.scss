@@ -1,0 +1,72 @@
+@import '@/style/utils.scss';
+
+
+.selectSellerCard+.selectSellerCard {
+  margin-top: 12rpx;
+}
+
+.selectSellerCard {
+  padding: 16rpx;
+  width: 100%;
+  border-radius: 16rpx;
+  background: #FFFFFF;
+  box-sizing: border-box;
+
+  // @include border-1px(#F3F3F6, 16rpx);
+  border: 1px solid #F3F3F6;
+
+  .imageContainer {
+    width: 100%;
+    border-radius: 8rpx;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .contentContainer {
+    margin-top: 12rpx;
+  }
+
+  .modelContainer {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .modelIcon {
+    color: #7C7F9A;
+  }
+
+  .modelText {
+    margin-left: 4rpx;
+    font-family: PingFang SC;
+    font-size: 13rpx;
+    font-weight: normal;
+    line-height: 18rpx;
+    letter-spacing: normal;
+    color: #7C7F9A;
+  }
+
+  .title {
+    font-family: PingFang SC;
+    font-size: 14rpx;
+    font-weight: normal;
+    line-height: 22rpx;
+    letter-spacing: normal;
+    color: #1B1C1D;
+    margin-top: 6rpx;
+  }
+
+  // .description {
+  //   margin-top: 6rpx;
+  //   font-family: PingFang SC;
+  //   font-size: 13rpx;
+  //   font-weight: normal;
+  //   line-height: 20rpx;
+  //   letter-spacing: normal;
+  //   color: #7C7F9A;
+  // }
+}

@@ -1,0 +1,144 @@
+.tableWrapper {
+  width: 100%;
+}
+
+.tableWrapper :global(*::-webkit-scrollbar) {
+  display: block !important;
+}
+
+.antdTable table {
+  border: 0 !important;
+  margin: 0 !important;
+}
+
+.antdTable :global(.ant-table img) {
+  width: 80px !important;
+  height: 80px !important;
+  -o-object-fit: cover;
+  object-fit: contain;
+}
+
+.antdTable :global(.ant-table) {
+  border-radius: 8px;
+  border: 1px solid #F3F3F6;
+}
+
+.antdTable table {
+  overflow-x: auto !important;
+  overflow-y: hidden;
+}
+
+.antdTable :global(.ant-table-thead > tr > th) {
+  background: #FBFBFD;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #1B1C1D;
+  text-align: center;
+  padding: 12px;
+  height: 44px;
+  border: 0;
+}
+
+.antdTable :global(.ant-table-tbody > tr > td) {
+  background: #FFFFFF;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #1B1C1D;
+  padding: 16px 12px;
+  vertical-align: middle;
+  border-bottom: 1px solid #F3F3F6 !important;
+}
+
+.antdTable :global(.ant-table-tbody > tr:first-child > td) {
+  padding: 12px;
+}
+
+.antdTable :global(.ant-table-tbody > tr > td:first-child) {
+  font-weight: 500;
+}
+
+.antdTable :global(.ant-table-tbody > tr:last-child > td) {
+  border-bottom: none !important;
+}
+
+.antdTable :global(.ant-table-tbody > tr:hover > td) {
+  background: #FFFFFF;
+}
+
+.cellImage {
+  max-width: 100px;
+  max-height: 84px;
+  object-fit: contain;
+  display: block;
+}
+
+/* 表格滚动条样式 - 强制覆盖全局display: none */
+/* .antdTable table::-webkit-scrollbar {
+  display: block !important;
+  height: 16px !important;
+  background-color: transparent;
+}
+
+.antdTable table::-webkit-scrollbar-track {
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: 1px solid #F3F3F6;
+}
+
+.antdTable table::-webkit-scrollbar-thumb {
+  background-color: #E7E8EE;
+  border-radius: 5px;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+.antdTable table::-webkit-scrollbar-thumb:hover {
+  background-color: #E7E8EE;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+
+.antdTable :global(.ant-table th),
+.antdTable :global(.ant-table td) {
+  min-width: 200px !important;
+  white-space: normal;
+  word-wrap: break-word;
+} */
+
+.antdTable :global(.ant-table-body){
+  overflow-x: auto !important;
+  overflow-y: hidden;
+}
+
+/* 表格滚动条样式 - 使用更高特异性覆盖全局 */
+.antdTable :global(.ant-table-body::-webkit-scrollbar) {
+  display: block !important;
+  background: transparent;
+  width: 16px;
+  height: 16px;
+}
+
+.antdTable :global(.ant-table-body::-webkit-scrollbar-track) {
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: 1px solid #F3F3F6;
+}
+
+.antdTable :global(.ant-table-body::-webkit-scrollbar-thumb) {
+  background-color: #E7E8EE;
+  border-radius: 5px;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+.antdTable :global(.ant-table-body::-webkit-scrollbar-thumb:hover) {
+  background-color: #D4D5DB;
+}

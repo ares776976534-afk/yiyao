@@ -1,0 +1,160 @@
+.opportunityCardContent {
+  width: 100%;
+  flex: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 204px;
+  padding: 20px 24px 0px 24px;
+}
+
+.mainContent {
+  display: flex;
+  gap: 9px;
+}
+
+.mainContentRight {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.headerSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.titleArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.crownIcon {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.markNum {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  font-family: AlibabaSans102;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: normal;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productTitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--text-primary);
+  white-space: nowrap;
+  /* 超出1行省略 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  width: 338px;
+}
+
+.tagRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+.fireIcon {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.divider {
+  height: 10px;
+  width: 1px;
+  background-color: var(--border-primary);
+}
+
+.tagText {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.trendIcon:last-child {
+  margin-left: 2px;
+}
+
+.dividerLine {
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-secondary);
+  margin: 20px 0 0;
+}
+
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.loadingText {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--text-secondary);
+} 
+
+.emptyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  height: 100%;
+}
+
+.emptyText {
+  font-family: PingFang SC;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.emptyIcon {
+  width: 128px;
+  height: 128px;
+}

@@ -1,0 +1,226 @@
+.tableWrapper {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--border-secondary);
+  display: flex;
+  flex-direction: column;
+}
+
+.table {
+  width: 100%;
+  flex: 1;
+}
+
+.table :global(.ant-table) {
+  border-radius: 8px;
+}
+
+.table :global(.ant-table-cell::before) {
+  width: 0 !important;
+}
+  
+.table :global(.ant-table-thead > tr > th) {
+  background: var(--fill-white);
+  border-bottom: 1px solid var(--border-secondary);
+  padding: 15px 12px !important;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 2px;
+}
+
+.Icon {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.successIcon {
+  background-color: var(--semantic-success-primary);
+}
+
+.warningIcon {
+  background-color: var(--semantic-warning-primary);
+}
+
+.table :global(.ant-table-tbody > tr > td) {
+  border-bottom: 1px solid var(--border-secondary);
+  padding: 11px 12px !important;
+  vertical-align: middle;
+}
+
+.table :global(.ant-table-tbody > tr:last-child > td) {
+  border-bottom: none;
+}
+
+.table :global(.ant-table-tbody > tr:hover > td) {
+  background: var(--fill-white);
+}
+
+.reviewPointText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #1D2129;
+  white-space: nowrap;
+  margin-left: 2px;
+}
+
+.percentageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.percentageText {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: var(--text-primary);
+}
+
+.progressBar {
+  flex: 1;
+  font-size: 0px;
+}
+
+.progressBar :global(.ant-progress-bg) {
+  border-radius: 56px !important;
+  height: 4px !important;
+}
+
+.successProgressBar :global(.ant-progress-bg) {
+  background-color: var(--semantic-success-primary) !important;
+  --progress-line-stroke-color: var(--semantic-success-primary) !important;
+}
+
+.warningProgressBar :global(.ant-progress-bg) {
+  background-color: var(--semantic-warning-primary) !important;
+  --progress-line-stroke-color: var(--semantic-warning-primary) !important;
+}
+
+.progressBar :global(.ant-progress-inner) {
+  border-radius: 52px !important;
+  height: 4px !important;
+  background: #F3F4F6 !important;
+}
+
+.reviewCountText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #1D2129;
+  white-space: nowrap;
+}
+
+.eyeIcon {
+  width: 24px;
+  height: 24px;
+  color: #1D2129;
+  cursor: pointer;
+}
+
+.loadMoreWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+  flex-shrink: 0;
+  border-top: 1px solid var(--border-secondary);
+}
+
+.loadMoreIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  gap: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.loadMoreText {
+  width: 60px;
+  height: 20px;
+  /* 自动布局 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  /* Text/Secondary */
+  /* 样式描述：次要文字 */
+  color: var(--text-tertiary);
+}
+
+.LeftIcon svg {
+  transform: rotate(270deg);
+  color: #7C7F9A !important;
+  fill: #7C7F9A !important;
+}
+
+.RightIcon svg {
+  transform: rotate(90deg);
+  color: #7C7F9A !important;
+  fill: #7C7F9A !important;
+}
+
+.LeftIcon svg path {
+  fill: #7C7F9A !important;
+  stroke: #7C7F9A !important;
+}
+
+.RightIcon svg path {
+  fill: #7C7F9A !important;
+  stroke: #7C7F9A !important;
+}
+
+.LeftIcon:hover {
+  background: var(--fill-primary);
+}
+
+.RightIcon:hover {
+  background: var(--fill-primary);
+}
+
+.disabled {
+  cursor: not-allowed !important;
+}
+
+.disabled svg {
+  color: #BBBDCA !important;
+  fill: #BBBDCA !important;
+}
+
+.disabled svg path {
+  fill: #BBBDCA !important;
+  stroke: #BBBDCA !important;
+}
+
+.disabled:hover {
+  background: transparent !important;
+}
+
+.titleContainer {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  /* Text/Primary */
+  /* 样式描述：主要文字 */
+  color: var(--text-primary);
+}

@@ -1,0 +1,17 @@
+{
+  "type": "ice-app",
+  "builder": "@ali/builder-ice-app",
+  "cache": {
+    "build": {
+      "enable": true,
+      "cacheDir": [
+        "node_modules/.cache/webpack/**"
+      ],
+      "buildDependencies": [
+        "./build.config.js",
+        "./tailwind.config.js"
+      ]
+    }
+  },
+  "nodeVersion": 20
+}

@@ -1,0 +1,15 @@
+.progressive-image-container {
+  position: relative;
+  .progressive-image-skeleton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(143deg, #f9f9f9 0%, #ebebeb 101%);
+  }
+}
+
+[data-role="progressive-image"] {
+  object-fit: fill;
+}

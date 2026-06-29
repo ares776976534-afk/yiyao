@@ -1,0 +1,81 @@
+:global(.ant-table) {
+  border-radius: 6px !important;
+  overflow: hidden !important;
+  border: 1px solid #F3F3F6 !important;
+}
+
+:global(.ant-table-thead > tr > th) {
+  background: #FBFBFD !important;
+  height: 60px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+  color: #000000DE !important;
+  border-right: 1px solid #F3F3F6 !important;
+  border-bottom: 1px solid #F3F3F6 !important;
+  text-align: center !important;
+  padding: 12px !important;
+}
+
+:global(.ant-table-tbody > tr:not(:first-child) > td) {
+  height: 80px !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  color: #000000DE !important;
+  border-right: 1px solid #0000000A !important;
+  border-bottom: 1px solid #0000000A !important;
+  text-align: center !important;
+  padding: 12px !important;
+}
+
+:global(.ant-table-tbody > tr:hover > td) {
+  background: #fff !important;
+}
+
+.categoryTag {
+  border-radius: 24px !important;
+  padding: 6px 16px !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  border: none !important;
+}
+
+.categoryTag.image {
+  background: #ECEBFE !important;
+  color: #3323C4 !important;
+}
+
+.categoryTag.nlp {
+  background: #F8E9FC !important;
+  color: #FF06D8 !important;
+}
+
+.tableFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.tableSummary {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.summaryNumber {
+  color: #0072FD;
+}
+
+.summaryText {
+  color: #000000DE;
+}
+
+.lastUpdate {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #0000004D;
+}

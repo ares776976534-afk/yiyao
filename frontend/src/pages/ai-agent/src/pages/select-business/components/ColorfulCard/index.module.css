@@ -1,0 +1,106 @@
+.colorfulCard {
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+    padding: 20px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #6150FF -228%, rgba(255, 255, 255, 0) 26%), #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid #EEEFFE;
+    margin-bottom: 48px;
+}
+
+.colorfulCard__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.colorfulCard__image {
+    flex-shrink: 0;
+}
+
+.colorfulCard__content {
+    width: 100%;
+    flex: 1;
+}
+
+.colorfulCard__title {
+    /* 使用统一的字体系统 */
+    font-size: var(--dt-typography-fontSize-lg);
+    font-weight: var(--dt-typography-fontWeight-medium);
+    line-height: var(--dt-typography-lineHeight-normal);
+    letter-spacing: normal;
+    /* 使用统一的文字颜色 */
+    color: var(--icon-primary);
+    margin-bottom: var(--dt-spacing-3);
+}
+
+.colorfulCard__item {
+    display: flex;
+    gap: var(--dt-spacing-1-5);
+    flex-wrap: wrap;
+}
+
+.bmBtn {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.item_btn {
+    display: flex;
+    flex-direction: column;
+    padding: var(--dt-spacing-1) var(--dt-spacing-2);
+    z-index: 3;
+    /* 使用统一的圆角系统 */
+    border-radius: var(--dt-borderRadius-sm);
+    /* 使用统一的背景色 */
+    background: var(--fill-secondary);
+    /* 使用统一的字体系统 */
+    font-size: var(--dt-typography-fontSize-base);
+    font-weight: var(--dt-typography-fontWeight-normal);
+    line-height: var(--dt-typography-lineHeight-normal);
+    letter-spacing: normal;
+    /* 使用统一的次要文字颜色 */
+    color: var(--text-tertiary);
+    /* 添加过渡效果 */
+    transition: background-color var(--dt-transitions-duration-normal) var(--dt-transitions-easing-easeInOut);
+}
+
+/* 添加hover效果 */
+.item_btn:hover {
+    background: var(--fill-primary);
+}
+
+.confirmBtn:disabled {
+    /* Brand/常规 color-brand-1 */
+    background: var(--dt-colors-brand-primaryDisabled) !important;
+    color: var(--text-tertiary) !important;
+    cursor: not-allowed !important;
+}
+
+.colorfulCard__icon {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    letter-spacing: normal;
+    color: var(--icon-tertiary);
+    width: 285px;
+}
+
+.colorfulCard__iconText {
+    flex: 1;
+}
+.colorfulCard__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.colorfulCard__header {
+    
+}

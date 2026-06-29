@@ -1,0 +1,165 @@
+.tabCard {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 12px;
+    border-radius: 12px;
+    background: var(--fill-white);
+    box-sizing: border-box;
+    border: 1px solid var(--border-primary);
+    cursor: pointer;
+}
+
+.tabCard:hover {
+    border: 1px solid #866CFF;
+    box-shadow: 0px 4px 20px 0px #EDEFFF;
+}
+
+.active {
+    border: 1px solid var(--border-focus);
+    background: linear-gradient(173deg, #6E50FF -100%, rgba(255, 255, 255, 0) 21%), #FFFFFF; 
+    box-sizing: border-box;
+}
+
+.tabCardTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.tabCardTitleText {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+    text-overflow: ellipsis;
+    line-clamp: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.tabCardTitleTextCn {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+    text-overflow: ellipsis;
+    line-clamp: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.tabCardLine {
+    width: 208px;
+    height: 0px;
+    z-index: 1;
+    border: 0.5px solid var(--border-secondary);
+}
+
+.tabContentContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.tabContent {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.tabContentTitle {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+}
+
+.tabContentValue {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+}
+
+.tabContentChart {
+    width: 42px;
+    height: 42px;
+}
+
+.tabContentValueUnit {
+    font-family: AlibabaSans102;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--text-primary);
+}
+
+.tabContentValueUnitUnit {
+    font-family: AlibabaSans102;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-primary);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerKeyword {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.footerKeywordTitle {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: var(--text-secondary);
+}
+
+.footerKeywordContent {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.iconContent {
+    display: flex;
+    gap: 4px;
+}
+
+.footerKeywordContentIcon {
+    width: 10px;
+    height: 10px;
+    border-radius: 4px 4px 4px 0px;
+    background: var(--fill-primary);
+}
+
+.footerKeywordContentName {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: normal;
+}
+
+.footerKeywordContentEmpty {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+}

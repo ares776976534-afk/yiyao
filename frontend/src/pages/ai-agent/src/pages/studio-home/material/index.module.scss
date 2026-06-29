@@ -1,0 +1,50 @@
+@import "@/styles/studio/base.scss";
+
+.homePage {
+  --agentsContainer-width: 800px;
+
+  .homePageTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+    font-size: 38px;
+    font-weight: 600;
+    font-family: FZLTHProS;
+    line-height: 41px;
+    color: var(--block-color);
+
+    .strongText {
+      margin-right: 12px;
+      color: transparent;
+      background: linear-gradient(
+        108deg,
+        #fea7ff -30%,
+        #6e50ff 50%,
+        rgba(110, 80, 255, 0.48) 68%,
+        #6e50ff 89%
+      );
+      background-clip: text;
+    }
+  }
+
+  .titleLogo {
+    width: 40px;
+    height: 30px;
+    margin-right: 6px;
+  }
+
+  .materialHistory {
+    position: absolute;
+    top: 26px;
+    left: 24px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    color: var(--history-more-icon-color);
+    &:hover {
+      color: var(--color-brand-1);
+    }
+  }
+}

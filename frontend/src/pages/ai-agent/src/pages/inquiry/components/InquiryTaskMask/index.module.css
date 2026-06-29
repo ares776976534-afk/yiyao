@@ -1,0 +1,57 @@
+.inquiryTaskMask {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  box-sizing: border-box;
+  backdrop-filter: blur(4px);
+  height: 160px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.inquiryTaskMaskContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.endTask {
+  color: #EA0303;
+}
+
+.divider {
+  width: 1px;
+  height: 32px;
+  background: var(--border-accent);
+  flex-shrink: 0;
+}
+
+.inquiryTaskMaskItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 6px;
+  gap: 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: normal;
+  color: var(--text-primary);
+  cursor: pointer;
+  flex: 1;
+  min-width: 80px;
+}
+
+.inquiryTaskMaskItem:hover {
+  color: var(--text-accent);
+}

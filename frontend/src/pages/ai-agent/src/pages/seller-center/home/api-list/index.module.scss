@@ -1,0 +1,23 @@
+@import '../responsive.scss';
+
+// 设置页面级别的CSS变量
+.container {
+  --design-width: 1500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 vw-1500(74);
+  padding-top: vw-1500(252);
+}
+
+.apiPackage {
+  margin-top: vw-css(93);
+}
+
+:global(#ice-container) {
+  background: #F9F9FB;
+}
+
+.apiPackageCardSection {
+  margin-bottom: vw-1500(184);
+}

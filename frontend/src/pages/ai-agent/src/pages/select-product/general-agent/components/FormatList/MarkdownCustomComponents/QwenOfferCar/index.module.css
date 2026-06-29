@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cardWrapper {
+  width: calc(50% - 5px);
+}
+
+.divider {
+  margin: 8px 0;
+  border: .5px solid var(--border-primary);
+}

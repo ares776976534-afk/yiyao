@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './style/animate.css';
+
+/* 引入统一设计系统的CSS变量和工具类 */
+@import './styles/design-tokens.css';
+
+/* 引入 flag-icons 样式 */
+@import 'flag-icons/css/flag-icons.min.css';
+
+/* 引入 Antd 默认样式覆盖 */
+
+/**
+ * The global.css define the style of the entire project,
+ * ice.js will globally import this file by default.
+ */
+:root {
+  /* 保持向后兼容的同时，使用新的设计系统 */
+  --primary: var(--dt-colors-brand-primary);
+  /* 使用统一设计系统的主色 */
+  --bg-primary: var(--fill-white);
+  /* 使用统一设计系统的背景色 */
+  font-family: -apple-system, PingFang SC, BlinkMacSystemFont, Segoe UI Variable Display, Segoe UI, Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+body {
+  margin: 0;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.ant-select-dropdown {
+  box-shadow:  0px 4px 24px 0px rgba(0, 0, 0, 0.04);
+  border: 1px solid #F3F3F6;
+}
+
+@font-face {
+  font-family: "AlibabaSans102";
+  src: url("./assets/Alibaba Sans 102-Regular.ttf.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AlibabaSans102-Medium";
+  src: url("./assets/Alibaba Sans 102-Medium.ttf.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AlibabaSans102-Bold";
+  src: url("./assets/Alibaba Sans 102-Bold.ttf.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FZLTHProS";
+  src: url("./assets/FZLTHProJW_DB_1.ttf") format("truetype"),
+    url("./assets/FZLTHProJW_DB.woff") format("woff"),
+    url("./assets/FZLTHProJW_DB.woff2") format("woff2"),
+    url("./assets/FZLTHProJW_DB_1.ttf") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/Poppins-SemiBold.ttf") format("truetype"),
+    url("./assets/Poppins-SemiBold.ttf") format("woff"),
+    url("./assets/Poppins-SemiBold.ttf") format("woff2"),
+    url("./assets/Poppins-SemiBold.ttf") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("./assets/Poppins-Medium.ttf") format("truetype"),
+    url("./assets/Poppins-Medium.ttf") format("woff"),
+    url("./assets/Poppins-Medium.ttf") format("woff2"),
+    url("./assets/Poppins-Medium.ttf") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "FZLTHProSB";
+  src: url("./assets/FZLTHProJW_SB.TTF") format("truetype"),
+    url("./assets/FZLTHProJW_SB.TTF") format("woff"),
+    url("./assets/FZLTHProJW_SB.TTF") format("woff2"),
+    url("./assets/FZLTHProJW_SB.TTF") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "FZLTHProR";
+  src: url("./assets/FZLTHProJW_R.TTF") format("truetype"),
+    url("./assets/FZLTHProJW_R.TTF") format("woff"),
+    url("./assets/FZLTHProJW_R.TTF") format("woff2"),
+    url("./assets/FZLTHProJW_R.TTF") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "FZLTHProB";
+  src: url("./assets/FZLTHProJW_B.TTF") format("truetype"),
+    url("./assets/FZLTHProJW_B.TTF") format("woff"),
+    url("./assets/FZLTHProJW_B.TTF") format("woff2"),
+    url("./assets/FZLTHProJW_B.TTF") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("./assets/Poppins-Bold.ttf") format("truetype"),
+    url("./assets/Poppins-Bold.ttf") format("woff"),
+    url("./assets/Poppins-Bold.ttf") format("woff2"),
+    url("./assets/Poppins-Bold.ttf") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./assets/Poppins-Regular.ttf") format("truetype"),
+    url("./assets/Poppins-Regular.ttf") format("woff"),
+    url("./assets/Poppins-Regular.ttf") format("woff2"),
+    url("./assets/Poppins-Regular.ttf") format("embedded-opentype");
+}
+
+/* 覆盖 BasicInfor 组件中 Select 禁用状态的背景色 */
+.basic-infor-select.ant-select-outlined.ant-select-disabled:not(.ant-select-customize-input) .ant-select-selector {
+  background: #FBFBFD !important;
+}

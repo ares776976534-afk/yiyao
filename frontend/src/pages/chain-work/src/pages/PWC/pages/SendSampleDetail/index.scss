@@ -1,0 +1,69 @@
+.pwc-send-sample-detail.pwc-send-sample-detail {
+  .next-form {
+    .next-row {
+      display: flex;
+    }
+
+    .next-form-item {
+      .next-form-item-label {
+        text-align: left;
+        padding: 0;
+        font-size: 13px;
+        color: #333;
+        font-weight: 500;
+        flex-basis: 64px;
+        margin-right: 16px;
+      }
+
+      .next-form-preview.next-form-preview {
+        color: #333;
+        font-size: 13px;
+      }
+    }
+
+    &.next-form-preview.next-form-preview {
+
+      .next-form-item-label {
+        margin-right: 0;
+        flex-basis: 65px;
+
+        label[required]:before {
+          display: none;
+        }
+
+      }
+
+      .next-form-item-control {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  }
+
+  .next-table {
+    .next-table-cell {
+      // vertical-align: top;
+    }
+
+    td {
+      .next-table-cell-wrapper {
+        padding: 0 10px;
+      }
+
+      &.next-table-selection {
+        .next-table-cell-wrapper {
+          padding: 0 0 0 16px;
+        }
+      }
+    }
+  }
+
+  .next-message.next-message-notice.next-inline .next-message-symbol {
+    color: #07f;
+  }
+
+  .next-checkbox-wrapper {
+    margin-bottom: 8px;
+  }
+}

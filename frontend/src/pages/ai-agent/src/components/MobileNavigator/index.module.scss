@@ -1,0 +1,117 @@
+/* Write your style here. */
+.globaNavigator {
+  &.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--page-bg-color, #fff);
+  }
+
+  :global {
+    .adm-nav-bar {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 44rpx;
+      position: relative;
+      padding: 0;
+    }
+  
+    .adm-nav-bar-title {
+      flex-shrink: 1;
+      width: 100%;
+      padding: 0 4rpx;
+    }
+  
+  
+    .adm-nav-bar-left {
+      flex-shrink: 0;
+      margin-left: 10px;
+  
+      .adm-nav-bar-back {
+        margin: 0 0;
+        padding: 0 0;
+      }
+  
+      .adm-nav-bar-back-arrow {
+        margin: 0;
+      }
+    }
+  
+    .adm-nav-bar-right {
+      flex-shrink: 0;
+      margin-right: 12rpx;
+      color: var(--block-color, #1B1C1D);
+    }
+  }
+
+
+  .globalNavigatorTitle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 44rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .globalNavigatorTitleContent {
+    width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+    max-height: 100%;
+    font-size: 16rpx;
+    font-weight: 500;
+    line-height: 18rpx;
+    color: var(--block-color, #1B1C1D);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logoWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    // 深色模式下只反转 Logo 文字颜色，不反转图标
+    [data-theme="dark"] & {
+      .logoWrapper :global(.mobile-logo-text) {
+        fill: #ffffff;
+      }
+    }
+  }
+
+  .globalNavigatorBackIcon {
+    width: 24rpx;
+    height: 24rpx;
+    display: flex;
+    align-items: center;
+    color: var(--block-color, #1B1C1D);
+    justify-content: center;
+  }
+
+
+  .moreItems {
+
+  }
+  .moreIconItem {
+    padding-right: 4rpx;
+  }
+
+  .moreIcon {
+  }
+
+  .globalNavigatorTitleText {
+    margin-left: 4rpx;
+    font-family: FZLTHProS;
+    font-size: 18rpx;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--block-color, #1B1C1D);
+  }
+}

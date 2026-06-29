@@ -1,0 +1,286 @@
+.keywordsCard {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    z-index: 1;
+    border-radius: 16px;
+    background: var(--fill-white);
+    box-sizing: border-box;
+    border: 1px solid var(--border-secondary);
+}
+
+.keywordsCardHeader {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.keywordsCardHeaderTitle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+}
+
+/* Radio组件label宽度设置 */
+:global(.ant-radio-wrapper .ant-radio + span) {
+    width: 100% !important;
+    display: block !important;
+}
+
+:global(.ant-radio-group .ant-radio-wrapper .ant-radio + span) {
+    width: 100% !important;
+    display: block !important;
+}
+
+/* 更具体的选择器确保样式生效 */
+.keywordsCardContentItem :global(.ant-radio-wrapper) {
+    width: 100% !important;
+}
+
+.keywordsCardContentItem :global(.ant-radio-wrapper .ant-radio + span) {
+    width: 100% !important;
+    display: block !important;
+}
+
+/* 自定义Radio样式 */
+.customRadio {
+    width: 100% !important;
+    background: transparent !important;
+    line-height: 18px;
+}
+
+.customRadio :global(.ant-radio + span) {
+    flex: 1;
+    overflow: hidden;
+    width: 100% !important;
+    display: block !important;
+    background: transparent !important;
+}
+
+.keywordsCardHeaderTitleText {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+    flex: 1;
+}
+
+.keywordsCardHeaderTitleTextMobile {
+    font-size: 14rpx;
+    font-weight: 500;
+    line-height: 20rpx;
+    letter-spacing: normal;
+    color: var(--text-primary);
+    flex: 1;
+}
+
+.keywordsCardHeaderArrow {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.rotatedArrowIcon {
+    transform: rotate(-90deg);
+}
+
+.fastForwardIcon {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.fastForwardIconRotated {
+    transform: rotate(0deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.keywordsCardHeaderArrowText {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+}
+
+.keywordsCardFooter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keywordsCardContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.keywordsCardContentItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    border: 1px solid var(--border-secondary);
+}
+
+.keywordsCardContentItem:hover {
+    background: var(--fill-accent);
+    border: 1px solid var(--border-accent);
+}
+
+.itemContentContent {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 288px;
+    overflow-x: auto;
+    flex-shrink: 0;
+}
+
+.itemContentContentCate {
+    display: flex;
+    align-items: center;
+}
+
+.itemContent {
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+    min-width: 0;
+    justify-content: space-between;
+}
+
+.hasSelected .customRadio :global(.ant-radio-inner)::after{
+    background-color: #E7E8EE !important;
+}
+
+.keywordsCardContentItem:hover .customRadio :global(.ant-radio-inner) {
+    border-color: var(--icon-accent) !important;
+} 
+
+
+.itemContentItemTitle {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+}
+
+.itemContentItem {
+    min-width: 140px;
+    display: flex;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.itemContentItemValue {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: var(--text-primary);
+}
+
+.keywordsCardContentAll {
+    height: 20px;
+    cursor: pointer;
+    /* 自动布局 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+}
+
+/* 当 rightSideType 为空字符串时，keywordsCardHeaderTitle 的样式 */
+.keywordsCardHeaderEmpty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+
+.keywordsCardContentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.itemContentItemValueDisabled {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: var(--text-tertiary);
+}
+
+.keywordsCardContentItemChecked {
+    /* height: 42px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    background: var(--fill-accent);
+    border: 1px solid var(--border-accent);
+}
+
+.itemContentTitle {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    cursor: default;
+    flex-shrink: 1;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.itemContentTitleDisabled {
+    color: var(--text-secondary);
+}
+
+/* 只在选中时显示对勾，保持其他样式不变 */
+.customRadio :global(.ant-radio-checked .ant-radio-inner::after) {
+    content: '' !important;
+    transform: translate(0, 0) !important;
+    background-image: url(https://img.alicdn.com/imgextra/i3/O1CN015jvM241vejueNFEz1_!!6000000006198-2-tps-24-24.png) !important;
+    background-size: 12px !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-color: #6E50FF;
+    padding: 2.2px 2.2px 1.8px 1.8px !important;
+    transition: none !important;
+}
+
+.hasSelected .customRadio :global(.ant-radio-inner)::after {
+    transition: none !important;
+}
+
+.keywordsCardHeaderMobileEmpty {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

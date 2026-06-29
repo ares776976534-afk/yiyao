@@ -1,0 +1,60 @@
+export const imgIcon = {
+  // 地球
+  1: "https://img.alicdn.com/imgextra/i2/O1CN01pmNskQ1vW2NLbgVpF_!!6000000006179-2-tps-32-32.png",
+  // 放大镜
+  2: "https://img.alicdn.com/imgextra/i2/O1CN01U3RL7727yE8sycux3_!!6000000007865-2-tps-32-32.png",
+  // 两层
+  3: "https://img.alicdn.com/imgextra/i2/O1CN01JjuOaE1ipBvyc3ugz_!!6000000004461-2-tps-29-28.png",
+  // 箭头右上
+  4: "https://img.alicdn.com/imgextra/i1/O1CN01cnQ74L1JNNUK5D02S_!!6000000001016-2-tps-24-24.png",
+  // 眼睛 灰色
+  5: "https://img.alicdn.com/imgextra/i4/O1CN017nNScB1KWpH3A2Uy7_!!6000000001172-2-tps-24-24.png",
+  // 加载
+  6: "https://img.alicdn.com/imgextra/i1/O1CN01MlxNxK1Z5XuzMmt31_!!6000000003143-2-tps-32-32.png",
+  // 时间
+  7: "https://img.alicdn.com/imgextra/i2/O1CN01duLmpy1dT8mqW4Naq_!!6000000003736-2-tps-32-32.png",
+  // 问卷
+  8: "https://img.alicdn.com/imgextra/i2/O1CN0170Righ1H7ggh8Jexe_!!6000000000711-2-tps-32-32.png",
+  // 商品
+  9: "https://img.alicdn.com/imgextra/i1/O1CN01WrS5vv1lQrkI7DeY1_!!6000000004814-2-tps-32-32.png",
+  // 下载
+  10: "https://img.alicdn.com/imgextra/i4/O1CN01gHZ4oE1F8U97nFeh9_!!6000000000442-2-tps-40-40.png",
+  // 返回
+  11: "https://img.alicdn.com/imgextra/i3/O1CN01H41F111E44iUb8RYa_!!6000000000297-2-tps-40-40.png",
+  // 分享
+  12: "https://img.alicdn.com/imgextra/i2/O1CN01DXpkrc1nJelDveA60_!!6000000005069-2-tps-40-40.png",
+  // 描述
+  13: "https://gw.alicdn.com/imgextra/i4/O1CN01vGLgol1qmSWyrod8g_!!6000000005538-2-tps-36-36.png",
+  // 下降
+  14: "https://img.alicdn.com/imgextra/i2/O1CN01LkfoMR1eKj8DM3GIs_!!6000000003853-2-tps-24-24.png",
+  // 素材处理
+  15: "https://img.alicdn.com/imgextra/i2/O1CN01uKKD8r1v6OCGOd41t_!!6000000006123-2-tps-24-25.png",
+  // 找同款供应商
+  16: "https://img.alicdn.com/imgextra/i4/O1CN01ZODFB21ZXU53O8eid_!!6000000003204-2-tps-25-25.png",
+  // 直线
+  17: "https://img.alicdn.com/imgextra/i1/O1CN01BHTqrf1bKJveVaKyq_!!6000000003446-2-tps-2-346.png",
+  // 对勾
+  18: "https://img.alicdn.com/imgextra/i1/O1CN01YfWr5H1ZOmYYqfHw5_!!6000000003185-2-tps-32-32.png",
+  // 上升
+  19: "https://img.alicdn.com/imgextra/i1/O1CN01qQeWGe1QI4DCYWf1A_!!6000000001952-2-tps-24-24.png",
+  // 眼睛 黑色
+  20: "https://img.alicdn.com/imgextra/i2/O1CN01nHP4PG1kWzQcnV7yW_!!6000000004692-2-tps-27-21.png",
+  // 亚马逊
+  21: "https://img.alicdn.com/imgextra/i2/O1CN018lgt8z1S9wR8IcK6Y_!!6000000002205-2-tps-72-72.png",
+  // 刻度线
+  22: "https://img.alicdn.com/imgextra/i3/O1CN01Z6StvT1thMwpey7lK_!!6000000005933-2-tps-1082-18.png",
+  // 询盘任务
+  23: "https://img.alicdn.com/imgextra/i3/O1CN01tFiDwN1mzxiXJ0DsC_!!6000000005026-2-tps-28-28.png",
+
+  // 新ui
+  // 返回
+  24: "https://img.alicdn.com/imgextra/i1/O1CN01jvHl4A1lHhqMuMJoX_!!6000000004794-2-tps-80-80.png",
+  // 对勾
+  25: "https://img.alicdn.com/imgextra/i2/O1CN01h9rVeW1zI4mhu708T_!!6000000006690-2-tps-48-48.png",
+  // 抖音
+  26: 'https://img.alicdn.com/imgextra/i3/O1CN01qfg45k1WqlwG6fJ5w_!!6000000002840-2-tps-72-72.png',
+  // 叹号
+  27: 'https://img.alicdn.com/imgextra/i4/O1CN01TF8aiE1ZEFTqiPfzw_!!6000000003162-2-tps-28-28.png',
+  // 问号
+  28: 'https://img.alicdn.com/imgextra/i1/O1CN01ljp2eg1xfJfSvQQ04_!!6000000006470-2-tps-36-36.png',
+};

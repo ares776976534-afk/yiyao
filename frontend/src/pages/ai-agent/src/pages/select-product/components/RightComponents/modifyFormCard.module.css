@@ -1,0 +1,55 @@
+.modifyFormCard {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 16px;
+    /* Fill/白色 color-fill-3 */
+    background: var(--fill-white);
+    box-sizing: border-box;
+    /* Border/Primary */
+    border: 1px solid var(--border-primary);
+}
+
+.modifyFormCardTitle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/主要 color-text-1 */
+    color: #1D2129;
+}
+
+.modifyFormCardTitleExpand {
+    height: 20px;
+    cursor: pointer;
+    /* 自动布局 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    /* Text/Secondary */
+    /* 样式描述：次要文字 */
+    color: var(--text-tertiary);
+}
+
+.modifyFormCardContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fastForwardIcon {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.fastForwardIconRotated {
+    transform: rotate(0deg);
+    transition: transform 0.2s ease-in-out;
+}

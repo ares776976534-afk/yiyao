@@ -1,0 +1,33 @@
+.cross-border-offer-list {
+  background: #f3f6fd;
+  padding-right: 24px;
+
+  .title {
+    font-size: 18px;
+    color: #333;
+    line-height: 18px;
+    // padding-top: 20px;
+  }
+
+  .title-top {
+    height: 18px;
+    width: 72px;
+    font-family: PingFangSC;
+    font-weight: 500;
+    font-size: 18px;
+    color: #333;
+    line-height: 18px;
+    padding-top: 24px;
+    // margin-bottom: 16px;
+    box-sizing: content-box;
+  }
+}
+
+.fail-content {
+  .fail-detail-link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
+  }
+}

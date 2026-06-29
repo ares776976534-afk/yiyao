@@ -1,0 +1,40 @@
+@import '@/style/utils.scss';
+
+
+.commonChatCard+.commonChatCard {
+  margin-top: 12rpx;
+}
+
+.commonChatCard {
+  padding: 16rpx;
+  width: 100%;
+  border-radius: 16rpx;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  // @include border-1px(#F3F3F6, 16rpx);
+  border: 1px solid #F3F3F6;
+
+  .imageContainer {
+    width: 100%;
+    border-radius: 8rpx;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .contentContainer {
+    margin-top: 12rpx;
+  }
+
+  .title {
+    font-family: PingFang SC;
+    font-size: 14rpx;
+    font-weight: normal;
+    line-height: 22rpx;
+    letter-spacing: normal;
+    color: #1B1C1D;
+  }
+}

@@ -1,0 +1,88 @@
+.statsCard {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 11px 12px;
+  box-sizing: border-box;
+}
+
+.statsRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 40px;
+}
+
+.statItem {
+  width: auto;
+  min-width: 61px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.statItem:nth-child(3) {
+  padding: 0px 15px 0px 0px;
+}
+
+.statItem:nth-child(4) {
+  padding: 0px 4px 0px 0px;
+}
+
+.statLabel {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.statValue {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--text-primary);
+  font-family: AlibabaSans102-Medium;
+  white-space: nowrap;
+  margin-top: 2px;
+  height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.loginMask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginMaskBtn {
+  width: 156px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 8px;
+  gap: 4px;
+  border-radius: 6px;
+  background: #D15700;
+  font-family: PingFang SC;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: normal;
+  color: var(--text-white);
+  cursor: pointer;
+}

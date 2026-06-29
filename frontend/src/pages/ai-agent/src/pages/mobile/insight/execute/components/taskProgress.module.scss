@@ -1,0 +1,158 @@
+.taskProgress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.statusContainer {
+  display: inline-table;
+  padding: 16rpx;
+  gap: 8rpx;
+  border-radius: 16rpx;
+  /* Fill/White */
+  background: var(--fill-white);
+  box-sizing: border-box;
+  /* Border/Secondary */
+  border: 1rpx solid var(--border-secondary);
+  box-shadow: 0rpx 4rpx 24rpx 0rpx rgba(0, 0, 0, 0.04);
+  margin-bottom: 18rpx;
+}
+
+/* 等待用户执行 */
+.pendingTitle {
+  font-size: 14rpx;
+  font-weight: normal;
+  line-height: 20rpx;
+  letter-spacing: normal;
+  /* Text/主要 color-text-1 */
+  color: var(--icon-primary);
+}
+
+/* 通用状态标题样式 */
+.statusTitle {
+  font-size: 14rpx;
+  font-weight: normal;
+  line-height: 20rpx;
+  letter-spacing: normal;
+  /* Text/主要 color-text-1 */
+  color: var(--icon-primary);
+}
+
+/* 旋转动画 */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingIcon {
+  animation: spin 1s linear infinite;
+}
+
+.statusSuccessContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18rpx;
+  background: #F9F9FC;
+  width: 100%;
+  padding-bottom: 18rpx;
+  position: relative;
+}
+
+.statusCompletedRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rpx;
+}
+
+.statusSuccessContentItem {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+  height: 20rpx;
+}
+
+.statusContent {
+  display: flex;
+  align-items: center;
+  gap: 4rpx;
+  height: 20rpx;
+}
+
+.statusInfoContent {
+  display: flex;
+  align-items: center;
+  gap: 4rpx;
+  cursor: pointer;
+  padding: 0 !important;
+  color: var(--text-accent) !important;
+}
+
+.statusInfoContent:hover {
+  color: #866CFF !important;
+}
+
+.statusInfoContent:disabled {
+  color: var(--text-tertiary-4) !important;
+  cursor: not-allowed !important;
+}
+
+.statusInfoContent:disabled:hover {
+  color: var(--text-tertiary-4) !important;
+}
+
+.statusSuccessContentItemTitle {
+  font-size: 14rpx;
+  font-weight: normal;
+  line-height: 20rpx;
+  letter-spacing: normal;
+
+}
+
+.statusSuccessContentItemDivider {
+  width: 8rpx;
+  height: 0rpx;
+  transform: rotate(90deg);
+  z-index: 1;
+  /* Border/Primary */
+  border: .5rpx solid var(--border-primary);
+}
+
+/* ==================== 动画效果 ==================== */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 加载动画类 */
+.loadingSpin {
+  animation: spin 1s linear infinite;
+  width: 16rpx !important;
+  height: 16rpx !important;
+}
+
+.keywordsIcon {
+  width: 16rpx;
+  height: 16rpx;
+}
+
+.statusSuccessContentbg {
+  width: 100%;
+  position: absolute;
+  top: -24px;
+  height: 24px;
+  background: linear-gradient(180deg, rgba(249, 249, 252, 0) 0%, #F9F9FC 100%);
+}
