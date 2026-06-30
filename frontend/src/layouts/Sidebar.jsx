@@ -53,11 +53,15 @@ export default function Sidebar() {
 
   return (
     <Sider collapsible collapsed={collapsed} onCollapse={setCollapsed} theme="dark" width={220} style={{ height: '100vh', overflow: 'hidden' }}>
+      <style>{`
+        .sidebar-menu-wrap::-webkit-scrollbar { display: none; }
+        .sidebar-menu-wrap { scrollbar-width: none; -ms-overflow-style: none; }
+      `}</style>
       <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
         <div style={{ height: 48, margin: 16, color: '#fff', fontSize: 18, fontWeight: 600, lineHeight: '48px', textAlign: 'center', flexShrink: 0 }}>
           医药后台
         </div>
-        <div style={{ flex: 1, overflow: 'auto' }}>
+        <div className="sidebar-menu-wrap" style={{ flex: 1, overflow: 'auto' }}>
           <Menu
             theme="dark"
             mode="inline"
