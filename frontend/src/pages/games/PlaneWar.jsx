@@ -45,6 +45,10 @@ export default function PlaneWar() {
   const [best, setBest] = useState(() => Number(localStorage.getItem('planeWarBest') || 0));
   const [lives, setLives] = useState(3);
   const [status, setStatus] = useState('idle');
+  const [difficulty, setDifficulty] = useState(0);
+  const [bulletSpeed, setBulletSpeed] = useState(9);
+  const [bulletCount, setBulletCount] = useState(2);
+  const [bulletSize, setBulletSize] = useState(4);
 
   const gameRef = useRef({
     running: false,
@@ -52,6 +56,7 @@ export default function PlaneWar() {
     bullets: [],
     enemyBullets: [],
     enemies: [],
+    powerUps: [],
     particles: [],
     stars: [],
     frame: 0,
@@ -59,7 +64,10 @@ export default function PlaneWar() {
     spawnCd: 0,
     score: 0,
     lives: 3,
-    invincible: 0
+    invincible: 0,
+    bulletSpeed: 9,
+    bulletCount: 2,
+    bulletSize: 4
   });
 
   const initStars = useCallback(() => {
@@ -78,6 +86,7 @@ export default function PlaneWar() {
     g.bullets = [];
     g.enemyBullets = [];
     g.enemies = [];
+    g.powerUps = [];
     g.particles = [];
     g.frame = 0;
     g.shootCd = 0;
@@ -85,21 +94,38 @@ export default function PlaneWar() {
     g.score = 0;
     g.lives = 3;
     g.invincible = 120;
+    g.bulletSpeed = 9;
+    g.bulletCount = 2;
+    g.bulletSize = 4;
     initStars();
     setScore(0);
     setLives(3);
+    setDifficulty(0);
+    setBulletSpeed(9);
+    setBulletCount(2);
+    setBulletSize(4);
   }, [initStars]);
 
+  const getDifficulty = (score) => {
+    if (score >= 5000) return 6;
+    if (score >= 3500) return 5;
+    if (score >= 2000) return 4;
+    if (score >= 1000) return 3;
+    if (score >= 500) return 2;
+    if (score >= 200) return 1;
+    return 0;
+  };
+
   const spawnEnemy = (g) => {
-    const lvl = Math.min(8, Math.floor(g.score / 500));
+    const diff = getDifficulty(g.score);
     const roll = Math.random();
-    let type = 0, size = 0.7, hp = 1, sp = 1.2 + lvl * 0.08, score = 10;
-    if (roll > 0.92 - lvl * 0.01) {
-      type = 3; size = 1.4; hp = 6 + lvl; sp = 0.7; score = 80;
-    } else if (roll > 0.75) {
-      type = 2; size = 1.1; hp = 3 + Math.floor(lvl / 2); sp = 0.95; score = 30;
-    } else if (roll > 0.5) {
-      type = 1; size = 0.9; hp = 2; sp = 1.1; score = 20;
+    let type = 0, size = 0.7, hp = 1, sp = 1.2 + diff * 0.12, score = 10;
+    if (roll > 0.92 - diff * 0.015) {
+      type = 3; size = 1.4; hp = 6 + diff * 2; sp = 0.7 + diff * 0.05; score = 80;
+    } else if (roll > 0.78 - diff * 0.02) {
+      type = 2; size = 1.1; hp = 3 + Math.floor(diff / 2) * 2; sp = 0.95 + diff * 0.05; score = 30;
+    } else if (roll > 0.55 - diff * 0.02) {
+      type = 1; size = 0.9; hp = 2 + Math.floor(diff / 3); sp = 1.1 + diff * 0.05; score = 20;
     }
     g.enemies.push({
       x: 30 + Math.random() * (W - 60),
@@ -110,8 +136,32 @@ export default function PlaneWar() {
       maxHp: hp,
       sp,
       score,
-      shootCd: 40 + Math.random() * 60
+      shootCd: Math.max(20, 50 - diff * 5) + Math.random() * 40
     });
+  };
+
+  const spawnPowerUp = (g, x, y) => {
+    if (Math.random() > 0.18) return;
+    const roll = Math.random();
+    let type = 'life';
+    if (roll > 0.65) type = 'power';
+    else if (roll > 0.35) type = 'speed';
+    g.powerUps.push({ x, y, type, vy: 1.8, r: 12 });
+  };
+
+  const applyPowerUp = (g, p) => {
+    if (p.type === 'life') {
+      g.lives = Math.min(5, g.lives + 1);
+      setLives(g.lives);
+    } else if (p.type === 'speed') {
+      g.bulletSpeed = Math.min(16, g.bulletSpeed + 1.5);
+      setBulletSpeed(g.bulletSpeed);
+    } else if (p.type === 'power') {
+      g.bulletCount = Math.min(5, g.bulletCount + 1);
+      g.bulletSize = Math.min(10, g.bulletSize + 1);
+      setBulletCount(g.bulletCount);
+      setBulletSize(g.bulletSize);
+    }
   };
 
   const boom = (g, x, y, n = 12, c = '#ffd43b') => {
@@ -164,16 +214,30 @@ export default function PlaneWar() {
         g.frame++;
         if (g.invincible > 0) g.invincible--;
 
+        const diff = getDifficulty(g.score);
+        if (diff !== g.difficulty) {
+          g.difficulty = diff;
+          setDifficulty(diff);
+        }
+
         g.shootCd--;
         if (g.shootCd <= 0) {
-          g.shootCd = 6;
-          g.bullets.push({ x: g.player.x - 8, y: g.player.y - 24, vy: -9 });
-          g.bullets.push({ x: g.player.x + 8, y: g.player.y - 24, vy: -9 });
+          g.shootCd = Math.max(2, 7 - g.bulletCount);
+          const spacing = Math.min(20, 7 + g.bulletCount * 2);
+          const start = -(g.bulletCount - 1) * spacing / 2;
+          for (let i = 0; i < g.bulletCount; i++) {
+            g.bullets.push({
+              x: g.player.x + start + i * spacing,
+              y: g.player.y - 24,
+              vy: -g.bulletSpeed,
+              size: g.bulletSize
+            });
+          }
         }
 
         g.spawnCd--;
         if (g.spawnCd <= 0) {
-          g.spawnCd = Math.max(18, 45 - Math.floor(g.score / 300));
+          g.spawnCd = Math.max(12, 45 - diff * 6);
           spawnEnemy(g);
         }
 
@@ -187,8 +251,8 @@ export default function PlaneWar() {
           if (e.type >= 1) {
             e.shootCd--;
             if (e.shootCd <= 0) {
-              e.shootCd = 50 + Math.random() * 40;
-              g.enemyBullets.push({ x: e.x, y: e.y + 16, vy: 4 + e.type });
+              e.shootCd = Math.max(20, 50 - diff * 4) + Math.random() * 40;
+              g.enemyBullets.push({ x: e.x, y: e.y + 16, vy: 4 + e.type + diff * 0.2 });
             }
           }
         });
@@ -199,9 +263,12 @@ export default function PlaneWar() {
           return b.y < H + 10;
         });
 
+        g.powerUps.forEach(p => { p.y += p.vy; });
+        g.powerUps = g.powerUps.filter(p => p.y < H + 20);
+
         for (const b of g.bullets) {
           for (const e of g.enemies) {
-            if (hit(b, e, 4, 14 * e.size)) {
+            if (hit(b, e, b.size || 4, 14 * e.size)) {
               b.dead = true;
               e.hp--;
               if (e.hp <= 0) {
@@ -209,6 +276,7 @@ export default function PlaneWar() {
                 g.score += e.score;
                 setScore(g.score);
                 boom(g, e.x, e.y, 16);
+                spawnPowerUp(g, e.x, e.y);
               }
               break;
             }
@@ -216,6 +284,15 @@ export default function PlaneWar() {
         }
         g.bullets = g.bullets.filter(b => !b.dead);
         g.enemies = g.enemies.filter(e => !e.dead);
+
+        for (const p of g.powerUps) {
+          if (hit(g.player, p, 12, p.r)) {
+            p.dead = true;
+            applyPowerUp(g, p);
+            boom(g, p.x, p.y, 10, '#69db7c');
+          }
+        }
+        g.powerUps = g.powerUps.filter(p => !p.dead);
 
         if (g.invincible <= 0) {
           for (const e of g.enemies) {
@@ -252,7 +329,8 @@ export default function PlaneWar() {
 
       g.bullets.forEach(b => {
         ctx.fillStyle = '#ffe066';
-        ctx.fillRect(b.x - 2, b.y - 8, 4, 12);
+        const s = b.size || 4;
+        ctx.fillRect(b.x - s / 2, b.y - s * 1.5, s, s * 3);
       });
       g.enemyBullets.forEach(b => {
         ctx.fillStyle = '#ff8787';
@@ -261,6 +339,22 @@ export default function PlaneWar() {
         ctx.fill();
       });
       g.enemies.forEach(e => drawEnemy(ctx, e));
+      g.powerUps.forEach(p => {
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        ctx.shadowBlur = 10;
+        ctx.shadowColor = '#fff';
+        ctx.beginPath();
+        ctx.arc(0, 0, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = p.type === 'life' ? '#ff6b6b' : p.type === 'speed' ? '#74c0fc' : '#ffa94d';
+        ctx.fill();
+        ctx.fillStyle = '#fff';
+        ctx.font = 'bold 12px sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(p.type === 'life' ? '♥' : p.type === 'speed' ? '⚡' : '🔥', 0, 1);
+        ctx.restore();
+      });
       g.particles.forEach(p => {
         ctx.globalAlpha = p.life / 35;
         ctx.fillStyle = p.c;
@@ -296,10 +390,13 @@ export default function PlaneWar() {
     <div style={{ maxWidth: 440, margin: '0 auto' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12, flexWrap: 'wrap', gap: 8 }}>
         <h2 style={{ margin: 0, fontSize: 22 }}>飞机大战</h2>
-        <Space>
+        <Space wrap>
           <Statistic title="得分" value={score} valueStyle={{ fontSize: 18 }} />
           <Statistic title="最高" value={best} valueStyle={{ fontSize: 18 }} />
           <Statistic title="生命" value={lives} valueStyle={{ fontSize: 18, color: '#ff4d4f' }} />
+          <Statistic title="难度" value={difficulty} valueStyle={{ fontSize: 18, color: '#722ed1' }} />
+          <Statistic title="弹速" value={bulletSpeed.toFixed(1)} valueStyle={{ fontSize: 18, color: '#1890ff' }} />
+          <Statistic title="弹量" value={bulletCount} valueStyle={{ fontSize: 18, color: '#fa8c16' }} />
         </Space>
       </div>
       <Card bodyStyle={{ padding: 8 }}>
@@ -331,7 +428,7 @@ export default function PlaneWar() {
         </div>
       </Card>
       <p style={{ textAlign: 'center', color: '#8c8c8c', fontSize: 12, marginTop: 8 }}>
-        鼠标/手指拖动控制战机，自动射击
+        拖动战机自动射击；击落敌机掉落 ♥生命 ⚡弹速 🔥火力 道具
       </p>
     </div>
   );
