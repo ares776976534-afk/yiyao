@@ -448,5 +448,61 @@ app.get('/api/idcard/face-result', async (req, res) => {
   }
 });
 
+app.get('/api/health', (req, res) => {
+  res.json({ ok: true, time: new Date().toISOString() });
+});
+
+app.get('/api/candidates', (req, res) => {
+  const { keyword } = req.query;
+  let list = [...db.data.candidates].reverse();
+  if (keyword) {
+    const k = keyword.trim().toLowerCase();
+    list = list.filter(x =>
+      (x.name || '').toLowerCase().includes(k) ||
+      (x.phone || '').toLowerCase().includes(k) ||
+      (x.position || '').toLowerCase().includes(k) ||
+      (x.note || '').toLowerCase().includes(k)
+    );
+  }
+  res.json(list);
+});
+
+app.post('/api/candidates', (req, res) => {
+  const { name, experience, age, education, active_at, expected_salary, available_at, phone, wechat, note, status } = req.body;
+  const id = nextId(db.data.candidates);
+  db.data.candidates.push({
+    id,
+    name: name || '',
+    experience: experience || '',
+    age: age || '',
+    education: education || '',
+    active_at: active_at || '',
+    expected_salary: expected_salary || '',
+    available_at: available_at || '',
+    phone: phone || '',
+    wechat: wechat || '',
+    note: note || '',
+    status: status || '待沟通',
+    created_at: new Date().toISOString()
+  });
+  db.write();
+  res.json({ id });
+});
+
+app.put('/api/candidates/:id', (req, res) => {
+  const c = db.data.candidates.find(x => x.id === +req.params.id);
+  if (!c) return res.status(404).json({ msg: '不存在' });
+  const fields = ['name', 'experience', 'age', 'education', 'active_at', 'expected_salary', 'available_at', 'phone', 'wechat', 'note', 'status'];
+  fields.forEach(f => { if (req.body[f] !== undefined) c[f] = req.body[f]; });
+  db.write();
+  res.json({ ok: true });
+});
+
+app.delete('/api/candidates/:id', (req, res) => {
+  db.data.candidates = db.data.candidates.filter(x => x.id !== +req.params.id);
+  db.write();
+  res.json({ ok: true });
+});
+
 const PORT = 3001;
 app.listen(PORT, () => console.log(`API http://localhost:${PORT}`));

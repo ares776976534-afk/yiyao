@@ -82,7 +82,8 @@ export const menuConfig = [
     label: '人员管理',
     children: [
       { key: ROUTES.PERSONNEL, label: '员工管理' },
-      { key: ROUTES.RIDERS, label: '骑手管理' }
+      { key: ROUTES.RIDERS, label: '骑手管理' },
+      { key: ROUTES.CANDIDATES, label: '候选人管理' }
     ]
   },
   {

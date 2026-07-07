@@ -2797,6 +2797,14 @@
       "address": "武汉市东西湖区九州通大道",
       "phone": "15269121641",
       "created_at": "2026-01-18T07:02:00.000Z"
+    },
+    {
+      "id": 9,
+      "name": "撒打算大",
+      "contact": "阿斯顿",
+      "phone": "阿斯顿",
+      "address": "阿斯顿",
+      "created_at": "2026-07-07T07:01:10.248Z"
     }
   ],
   "franchisees": [
@@ -3952,5 +3960,22 @@
   "lottery_settings": {
     "daily_limit": 3,
     "points_cost": 10
-  }
+  },
+  "candidates": [
+    {
+      "id": 1,
+      "name": "1",
+      "experience": "",
+      "age": "",
+      "education": "",
+      "active_at": "",
+      "expected_salary": "",
+      "available_at": "",
+      "phone": "",
+      "wechat": "",
+      "note": "",
+      "status": "待沟通",
+      "created_at": "2026-07-07T07:25:04.802Z"
+    }
+  ]
 }

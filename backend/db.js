@@ -12,7 +12,8 @@ const defaultData = {
   purchase_orders: [], coupon_orders: [], orders: [],
   withdrawals: [], transactions: [], news: [],
   lottery: [], carousel: [], promotions: [],
-  settings: {}, lottery_settings: {}
+  settings: {}, lottery_settings: {},
+  candidates: []
 };
 
 const db = new Low(adapter, defaultData);

@@ -1,9 +1,24 @@
 const BASE = '/api';
 
-const handleRes = (r) => {
-  if (!r.ok) throw new Error(r.statusText || '请求失败');
+const handleRes = async (r) => {
+  if (!r.ok) {
+    let msg = r.statusText || `请求失败 (${r.status})`;
+    try {
+      const data = await r.json();
+      if (data && (data.msg || data.message)) msg = data.msg || data.message;
+    } catch {}
+    throw new Error(msg);
+  }
   return r.json().catch(() => { throw new Error('响应解析失败'); });
 };
+
+const wrapFetch = (promise) =>
+  promise.catch(e => {
+    if (e.name === 'TypeError' || e.message === 'Failed to fetch') {
+      throw new Error('无法连接后端服务，请确认 backend 已启动');
+    }
+    throw e;
+  });
 
 const pendingGet = new Map();
 
@@ -17,18 +32,18 @@ export const get = (path, params, opt) => {
 };
 
 export const post = (path, data) =>
-  fetch(`${BASE}${path}`, {
+  wrapFetch(fetch(`${BASE}${path}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
-  }).then(handleRes);
+  })).then(handleRes);
 
 export const put = (path, data) =>
-  fetch(`${BASE}${path}`, {
+  wrapFetch(fetch(`${BASE}${path}`, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
-  }).then(handleRes);
+  })).then(handleRes);
 
 export const del = (path) =>
-  fetch(`${BASE}${path}`, { method: 'DELETE' }).then(handleRes);
+  wrapFetch(fetch(`${BASE}${path}`, { method: 'DELETE' })).then(handleRes);

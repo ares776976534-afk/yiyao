@@ -2,6 +2,7 @@ import { Suspense } from 'react';
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
 import { Spin } from 'antd';
 import MainLayout from '../layouts/MainLayout';
+import CandidateForm from '../pages/CandidateForm';
 import { ROUTES, routeConfig } from './routes';
 
 const Fallback = () => (
@@ -27,6 +28,14 @@ const router = createBrowserRouter([
           )
         }))
     ]
+  },
+  {
+    path: ROUTES.CANDIDATE_FORM.slice(1),
+    element: (
+      <Suspense fallback={<Fallback />}>
+        <CandidateForm />
+      </Suspense>
+    )
   }
 ]);
 
