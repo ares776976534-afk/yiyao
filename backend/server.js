@@ -4,6 +4,7 @@ import cors from 'cors';
 import tencentcloud from 'tencentcloud-sdk-nodejs';
 import db from './db.js';
 import { tableSchema } from './schema.js';
+import { crawlPage } from './crawler.js';
 
 const app = express();
 app.use(cors());
@@ -450,6 +451,23 @@ app.get('/api/idcard/face-result', async (req, res) => {
 
 app.get('/api/health', (req, res) => {
   res.json({ ok: true, time: new Date().toISOString() });
+});
+
+app.post('/api/crawl', async (req, res) => {
+  const { url } = req.body;
+  if (!url || !url.trim()) {
+    return res.status(400).json({ msg: '请输入 URL' });
+  }
+  let target = url.trim();
+  if (!/^https?:\/\//i.test(target)) {
+    target = 'https://' + target;
+  }
+  try {
+    const data = await crawlPage(target);
+    res.json({ code: 0, data });
+  } catch (e) {
+    res.status(500).json({ code: 1, msg: e.message || '抓取失败' });
+  }
 });
 
 app.get('/api/candidates', (req, res) => {

@@ -2,7 +2,8 @@ import {
   DashboardOutlined, MedicineBoxOutlined, TeamOutlined, ShopOutlined,
   ShoppingCartOutlined, FileTextOutlined, DollarOutlined, BarChartOutlined,
   GiftOutlined, CarOutlined, BankOutlined, TrophyOutlined, SettingOutlined,
-  PictureOutlined, UserOutlined, NotificationOutlined, IdcardOutlined, PlayCircleOutlined
+  PictureOutlined, UserOutlined, NotificationOutlined, IdcardOutlined, PlayCircleOutlined,
+  GlobalOutlined
 } from '@ant-design/icons';
 import { ROUTES } from './routes';
 
@@ -96,6 +97,7 @@ export const menuConfig = [
   },
   { key: ROUTES.VISUALIZATION, icon: BarChartOutlined, label: '数据可视化' },
   { key: ROUTES.IDCARD, icon: IdcardOutlined, label: '身份证查询' },
+  { key: ROUTES.WEB_CRAWLER, icon: GlobalOutlined, label: '网页抓取' },
   {
     key: 'game-manage',
     icon: PlayCircleOutlined,
